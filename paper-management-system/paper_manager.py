@@ -11,12 +11,17 @@ from flask import Flask, render_template, request, jsonify, redirect, url_for, s
 from werkzeug.utils import secure_filename
 import markdown
 from collections import defaultdict, Counter
+import os
+from flask import send_from_directory, abort
+from urllib.parse import quote
 
 app = Flask(__name__)
 app.secret_key = 'paper-manager-secret-key'
 app.config['JSON_FOLDER'] = 'json_papers'  # JSON文件存储文件夹
 app.config['DATABASE'] = 'papers.db'
 
+# 配置PDF文件夹路径
+PDF_FOLDER = 'pdfs'
 # 确保必要的文件夹存在
 os.makedirs(app.config['JSON_FOLDER'], exist_ok=True)
 
@@ -263,6 +268,37 @@ class PaperManager:
         print(f"导入完成: {imported_count} 个成功, {len(failed_files)} 个失败")
         return imported_count, failed_files
     
+    def check_pdf_exists(self, pdf_filename):
+        """检查PDF文件是否存在"""
+        if not pdf_filename:
+            return False
+        
+        # 如果文件名以.json结尾，替换为.pdf
+        if pdf_filename.endswith('.json'):
+            pdf_filename = pdf_filename[:-5] + '.pdf'
+        elif not pdf_filename.endswith('.pdf'):
+            pdf_filename += '.pdf'
+        
+        pdf_path = os.path.join(PDF_FOLDER, pdf_filename)
+        return os.path.exists(pdf_path)
+
+    def get_pdf_filename(self, json_filename):
+        """从JSON文件名获取PDF文件名"""
+        if not json_filename:
+            return None
+        
+        # 如果文件名以.json结尾，替换为.pdf
+        if json_filename.endswith('.json'):
+            pdf_filename = json_filename[:-5] + '.pdf'
+        elif not json_filename.endswith('.pdf'):
+            pdf_filename = json_filename + '.pdf'
+        else:
+            pdf_filename = json_filename
+        
+        return pdf_filename
+
+
+
 
     def search_papers(self, query='', category='', author='', venue='', year_range=None, limit=50, offset=0):
         """搜索论文 - 增强版 (增加期刊搜索)"""
@@ -764,7 +800,7 @@ def api_author_suggestions():
 
 @app.route('/paper/<int:paper_id>')
 def paper_detail(paper_id):
-    """论文详情页 - 完全修复版"""
+    """论文详情页 - 增加PDF链接"""
     paper = paper_manager.get_paper_by_id(paper_id)
     if not paper:
         return "论文不存在", 404
@@ -775,7 +811,7 @@ def paper_detail(paper_id):
         paper['keywords'] = json.loads(paper['keywords']) if paper['keywords'] else []
         paper['authors'] = json.loads(paper['authors']) if paper['authors'] else []
         
-        # 解析分析内容 - 简化版本
+        # 解析分析内容
         analysis_raw = paper.get('analysis', '')
         if isinstance(analysis_raw, str):
             if analysis_raw.strip():
@@ -790,7 +826,10 @@ def paper_detail(paper_id):
         else:
             paper['analysis'] = {}
         
-        # 暂时不使用复杂的解析，直接传递原始数据
+        # 添加PDF信息
+        paper['pdf_filename'] = paper_manager.get_pdf_filename(paper['file_name'])
+        paper['pdf_exists'] = paper_manager.check_pdf_exists(paper['file_name'])
+        
         paper['parsed_analysis'] = None
         
     except Exception as e:
@@ -800,10 +839,84 @@ def paper_detail(paper_id):
         paper['authors'] = []
         paper['analysis'] = {}
         paper['parsed_analysis'] = None
+        paper['pdf_filename'] = None
+        paper['pdf_exists'] = False
     
     return render_template('paper_detail.html', paper=paper)
 
+# 添加PDF文件夹状态检查的API
+@app.route('/api/pdf-status')
+def pdf_status():
+    """检查PDF文件夹状态"""
+    try:
+        if not os.path.exists(PDF_FOLDER):
+            return jsonify({
+                'status': 'folder_not_exists',
+                'message': 'PDF文件夹不存在',
+                'pdf_count': 0
+            })
+        
+        pdf_files = [f for f in os.listdir(PDF_FOLDER) if f.lower().endswith('.pdf')]
+        
+        return jsonify({
+            'status': 'ok',
+            'message': f'PDF文件夹正常，共{len(pdf_files)}个文件',
+            'pdf_count': len(pdf_files),
+            'pdf_files': pdf_files
+        })
+    
+    except Exception as e:
+        return jsonify({
+            'status': 'error',
+            'message': str(e),
+            'pdf_count': 0
+        })
 
+
+
+
+
+
+
+
+# 添加PDF服务路由
+@app.route('/pdf/<filename>')
+def serve_pdf(filename):
+    """提供PDF文件下载/查看"""
+    try:
+        # 确保文件名安全
+        filename = os.path.basename(filename)
+        
+        # 检查文件是否存在
+        pdf_path = os.path.join(PDF_FOLDER, filename)
+        if not os.path.exists(pdf_path):
+            abort(404)
+        
+        # 返回文件，支持在线预览
+        return send_from_directory(PDF_FOLDER, filename, as_attachment=False)
+    
+    except Exception as e:
+        print(f"PDF服务错误: {e}")
+        abort(404)
+
+@app.route('/pdf/<filename>/download')
+def download_pdf(filename):
+    """下载PDF文件"""
+    try:
+        # 确保文件名安全
+        filename = os.path.basename(filename)
+        
+        # 检查文件是否存在
+        pdf_path = os.path.join(PDF_FOLDER, filename)
+        if not os.path.exists(pdf_path):
+            abort(404)
+        
+        # 返回文件作为附件下载
+        return send_from_directory(PDF_FOLDER, filename, as_attachment=True)
+    
+    except Exception as e:
+        print(f"PDF下载错误: {e}")
+        abort(404)
     
     return render_template('paper_detail.html', paper=paper)
 

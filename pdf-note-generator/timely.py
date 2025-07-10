@@ -2,7 +2,7 @@ import time
 from datetime import datetime
 import subprocess
 
-stop_time = datetime(2025, 7, 10, 0, 35, 00)
+stop_time = datetime(2025, 7, 11, 0, 35, 00)
 
 # 指定的特定指令
 def specific_command():
@@ -27,7 +27,7 @@ while True:
     seconds_remaining = int(time_remaining.total_seconds())  # 转换为秒数
 
     print("当前时间:", current_time.strftime("%Y-%m-%d %H:%M:%S"))
-    print("距离设定停止时间还有:", seconds_remaining, "秒")
+    print("距离开始读论文的时间还有:", seconds_remaining, "秒")
 
     if current_time >= stop_time:
         break

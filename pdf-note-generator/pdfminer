@@ -1,0 +1,30 @@
+{
+  "api": {
+    "base_url": "https://api.deepseek.com",
+    "api_key": "sk-167c209e92854627864c887ff8f7fd1a",
+    "model": "deepseek-chat",
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "prompts": {
+    "analysis_prompt": "请分析以下论文内容，提供详细的分析报告",
+    "extraction_prompt": "请从以下论文中提取关键信息"
+  },
+  "output": {
+    "md_template": "detailed_analysis",
+    "json_fields": [
+      "title_cn",
+      "title_en",
+      "category",
+      "topics",
+      "keywords",
+      "abstract",
+      "methodology",
+      "conclusion"
+    ]
+  },
+  "processing": {
+    "max_pages": 50,
+    "chunk_size": 4000
+  }
+}

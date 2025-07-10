@@ -1,0 +1,26 @@
+
+# HTTP请求库
+requests>=2.31.0
+
+# PDF处理库
+PyPDF2>=3.0.1
+pdfplumber>=0.10.0
+
+# 日期时间处理
+python-dateutil>=2.8.2
+
+# 日志处理
+colorlog>=6.7.0
+
+# 路径处理 (Python 3.4+内置，但为了兼容性)
+pathlib2>=2.3.7; python_version < '3.4'
+
+# JSON处理增强
+jsonschema>=4.17.0
+
+# 正则表达式增强
+regex>=2023.6.3
+
+# 进度条显示
+tqdm>=4.65.0
+

@@ -1,0 +1,94 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment (两个项目的venv)
+pdf-note-generator/venv/
+paper-management-system/venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 数据库文件
+*.db
+*.sqlite3
+
+# PDF生成器相关
+pdf-note-generator/output_notes/
+pdf-note-generator/web_outputs/
+pdf-note-generator/uploads/
+pdf-note-generator/input_pdfs/
+pdf-note-generator/processed_files.db
+pdf-note-generator/papers.db
+
+# 论文管理系统相关
+paper-management-system/json_papers/
+paper-management-system/papers.db
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+
+# 配置文件（如果包含敏感信息）
+config.local.py
+.env.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 测试覆盖率
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# 大文件和个人数据
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+

@@ -1,0 +1,110 @@
+
+
+<!-- templates/history.html -->
+{% extends "base.html" %}
+
+{% block title %}处理历史{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-history"></i> 处理历史</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>状态</th>
+                                <th>文件名</th>
+                                <th>处理时间</th>
+                                <th>耗时</th>
+                                <th>大小</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for record in history %}
+                            <tr>
+                                <td>
+                                    {% if record.success %}
+                                        <span class="badge bg-success">成功</span>
+                                    {% else %}
+                                        <span class="badge bg-danger">失败</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ record.file_name }}</td>
+                                <td>{{ record.processed_at }}</td>
+                                <td>
+                                    {% if record.processing_time %}
+                                        {{ "%.2f"|format(record.processing_time) }}s
+                                    {% else %}
+                                        -
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if record.file_size %}
+                                        {{ "%.2f"|format(record.file_size / 1024 / 1024) }} MB
+                                    {% else %}
+                                        -
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-chart-bar"></i> 处理统计</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h4 class="text-primary">{{ stats.total_processed }}</h4>
+                            <small class="text-muted">总处理数</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h4 class="text-success">{{ stats.successful_processed }}</h4>
+                            <small class="text-muted">成功处理</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h4 class="text-danger">{{ stats.failed_processed }}</h4>
+                            <small class="text-muted">失败处理</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h4 class="text-info">{{ "%.1f"|format(stats.success_rate) }}%</h4>
+                            <small class="text-muted">成功率</small>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h5 class="text-secondary">{{ "%.1f"|format(stats.avg_time) }}s</h5>
+                            <small class="text-muted">平均处理时间</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

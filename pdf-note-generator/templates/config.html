@@ -1,0 +1,137 @@
+
+
+<!-- templates/config.html -->
+{% extends "base.html" %}
+
+{% block title %}配置管理{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-cog"></i> 配置管理</h5>
+            </div>
+            <div class="card-body">
+                <form id="configForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>API配置</h6>
+                            <div class="mb-3">
+                                <label for="apiKey" class="form-label">API Key</label>
+                                <input type="password" class="form-control" id="apiKey" value="{{ config.api.api_key }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="baseUrl" class="form-label">Base URL</label>
+                                <input type="text" class="form-control" id="baseUrl" value="{{ config.api.base_url }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="model" class="form-label">模型</label>
+                                <input type="text" class="form-control" id="model" value="{{ config.api.model }}">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>处理配置</h6>
+                            <div class="mb-3">
+                                <label for="maxPages" class="form-label">最大页数</label>
+                                <input type="number" class="form-control" id="maxPages" value="{{ config.processing.max_pages }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="chunkSize" class="form-label">分块大小</label>
+                                <input type="number" class="form-control" id="chunkSize" value="{{ config.processing.chunk_size }}">
+                            </div>
+                            <div class="mb-3">
+                                <label for="delayBetweenRequests" class="form-label">请求间隔(秒)</label>
+                                <input type="number" class="form-control" id="delayBetweenRequests" value="{{ config.processing.delay_between_requests }}">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="extractionPrompt" class="form-label">提取提示词</label>
+                        <textarea class="form-control" id="extractionPrompt" rows="10">{{ config.prompts.extraction_prompt }}</textarea>
+                    </div>
+                    
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save"></i> 保存配置
+                        </button>
+                        <button type="button" class="btn btn-secondary" onclick="location.reload()">
+                            <i class="fas fa-undo"></i> 重置
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-info-circle"></i> 配置说明</h5>
+            </div>
+            <div class="card-body">
+                <h6>API配置</h6>
+                <ul>
+                    <li><strong>API Key:</strong> 大语言模型API密钥</li>
+                    <li><strong>Base URL:</strong> API基础URL</li>
+                    <li><strong>模型:</strong> 使用的模型名称</li>
+                </ul>
+                
+                <h6>处理配置</h6>
+                <ul>
+                    <li><strong>最大页数:</strong> 每个PDF最多处理的页数</li>
+                    <li><strong>分块大小:</strong> 文本分块的大小</li>
+                    <li><strong>请求间隔:</strong> API请求之间的延迟</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$('#configForm').on('submit', function(e) {
+    e.preventDefault();
+    
+    const config = {
+        api: {
+            api_key: $('#apiKey').val(),
+            base_url: $('#baseUrl').val(),
+            model: $('#model').val(),
+            timeout: 120,
+            max_retries: 3,
+            connect_timeout: 30,
+            read_timeout: 120
+        },
+        processing: {
+            max_pages: parseInt($('#maxPages').val()),
+            chunk_size: parseInt($('#chunkSize').val()),
+            delay_between_requests: parseInt($('#delayBetweenRequests').val())
+        },
+        prompts: {
+            extraction_prompt: $('#extractionPrompt').val()
+        }
+    };
+    
+    $.ajax({
+        url: '/save_config',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(config),
+        success: function(response) {
+            if (response.success) {
+                alert('配置保存成功');
+            } else {
+                alert('保存失败: ' + response.message);
+            }
+        },
+        error: function() {
+            alert('保存失败，请重试');
+        }
+    });
+});
+</script>
+{% endblock %}
+

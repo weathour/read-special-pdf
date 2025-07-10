@@ -1,0 +1,617 @@
+
+
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block title %}PDF处理器 - 主页{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <!-- 输入源选择 -->
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-folder-open"></i> 选择输入源</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="folder-section" id="folderSection">
+                            <h6><i class="fas fa-folder"></i> 选择文件夹</h6>
+                            <div class="mb-3">
+                                <label for="folderPath" class="form-label">文件夹路径</label>
+                                <input type="text" class="form-control path-input" id="folderPath" 
+                                       placeholder="例如: C:\Documents\PDFs 或 /home/user/documents">
+                            </div>
+                            <button class="btn btn-primary" id="scanFolder">
+                                <i class="fas fa-search"></i> 扫描文件夹
+                            </button>
+                            <div id="folderFileList" class="mt-3" style="display: none;">
+                                <h6>找到的PDF文件:</h6>
+                                <div class="file-list" id="folderFileItems"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="folder-section" id="uploadSection">
+                            <h6><i class="fas fa-upload"></i> 上传文件</h6>
+                            <div class="upload-area" id="uploadArea">
+                                <i class="fas fa-cloud-upload-alt fa-2x text-primary mb-2"></i>
+                                <p>拖拽文件到这里或点击选择</p>
+                                <input type="file" id="fileInput" multiple accept=".pdf" style="display: none;">
+                                <button class="btn btn-outline-primary" onclick="document.getElementById('fileInput').click()">
+                                    <i class="fas fa-folder-open"></i> 选择文件
+                                </button>
+                            </div>
+                            <div id="uploadFileList" class="mt-3" style="display: none;">
+                                <h6>已选择的文件:</h6>
+                                <div class="file-list" id="uploadFileItems"></div>
+                            </div>
+                            <button class="btn btn-warning mt-2" id="uploadFiles" disabled>
+                                <i class="fas fa-upload"></i> 上传文件
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 输出设置 -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5><i class="fas fa-folder-plus"></i> 输出设置</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label for="outputPath" class="form-label">输出文件夹路径（可选）</label>
+                            <input type="text" class="form-control path-input" id="outputPath" 
+                                   placeholder="留空则使用默认路径（自动生成时间戳文件夹）">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">&nbsp;</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="forceReprocess">
+                                <label class="form-check-label" for="forceReprocess">
+                                    强制重新处理
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 控制按钮 -->
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="d-flex gap-2">
+                    <button class="btn btn-success" id="startProcessing" disabled>
+                        <i class="fas fa-play"></i> 开始处理
+                    </button>
+                    <button class="btn btn-danger stop-btn" id="stopProcessing" style="display: none;">
+                        <i class="fas fa-stop"></i> 停止处理
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 进度显示 -->
+        <div class="card mt-4" id="progressCard" style="display: none;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5><i class="fas fa-tasks"></i> 处理进度</h5>
+                <div class="timer-display" id="timerDisplay">00:00:00</div>
+            </div>
+            <div class="card-body">
+                <div class="progress mb-3">
+                    <div class="progress-bar" id="progressBar" role="progressbar" style="width: 0%">
+                        <span id="progressText">0%</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>当前文件:</strong> <span id="currentFile">-</span></p>
+                        <p><strong>状态:</strong> <span id="statusMessage">-</span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>已处理:</strong> <span id="processedCount">0</span></p>
+                        <p><strong>失败:</strong> <span id="failedCount">0</span></p>
+                    </div>
+                </div>
+                
+                <div class="d-flex gap-2">
+                    <button class="btn btn-primary" id="downloadResults" style="display: none;">
+                        <i class="fas fa-download"></i> 下载结果
+                    </button>
+                    <button class="btn btn-info" id="openOutputFolder" style="display: none;">
+                        <i class="fas fa-folder-open"></i> 打开输出文件夹
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 处理日志 -->
+        <div class="card mt-4" id="logCard" style="display: none;">
+            <div class="card-header">
+                <h5><i class="fas fa-terminal"></i> 处理日志</h5>
+            </div>
+            <div class="card-body">
+                <div class="log-container" id="logContainer"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-info-circle"></i> 使用说明</h5>
+            </div>
+            <div class="card-body">
+                <h6>方式1: 选择文件夹</h6>
+                <ol>
+                    <li>输入包含PDF文件的文件夹路径</li>
+                    <li>点击"扫描文件夹"查看文件列表</li>
+                    <li>设置输出文件夹（可选）</li>
+                    <li>点击"开始处理"</li>
+                </ol>
+                
+                <h6>方式2: 上传文件</h6>
+                <ol>
+                    <li>拖拽或选择PDF文件</li>
+                    <li>点击"上传文件"</li>
+                    <li>设置输出文件夹（可选）</li>
+                    <li>点击"开始处理"</li>
+                </ol>
+                
+                <h6 class="mt-3">新功能:</h6>
+                <ul>
+                    <li><strong>计时器:</strong> 显示处理耗时</li>
+                    <li><strong>停止按钮:</strong> 可中断处理</li>
+                    <li><strong>指定输出:</strong> 自定义输出路径</li>
+                    <li><strong>文件夹扫描:</strong> 批量处理整个文件夹</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5><i class="fas fa-tools"></i> 快速操作</h5>
+            </div>
+            <div class="card-body">
+                <div class="btn-group-vertical w-100">
+                    <a href="{{ url_for('config_page') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-cog"></i> 修改配置
+                    </a>
+                    <a href="{{ url_for('history') }}" class="btn btn-outline-info">
+                        <i class="fas fa-history"></i> 查看历史
+                    </a>
+                    <a href="{{ url_for('cleanup') }}" class="btn btn-outline-warning">
+                        <i class="fas fa-trash"></i> 清理文件
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5><i class="fas fa-keyboard"></i> 路径格式</h5>
+            </div>
+            <div class="card-body">
+                <h6>Windows:</h6>
+                <code>C:\Users\用户名\Documents\PDFs</code>
+                
+                <h6>Linux/Mac:</h6>
+                <code>/home/用户名/documents/pdfs</code>
+                
+                <h6>相对路径:</h6>
+                <code>./pdfs</code> 或 <code>../documents</code>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let selectedFiles = [];
+let currentUploadFolder = null;
+let currentOutputFolder = null;
+let statusCheckInterval = null;
+let timerInterval = null;
+let startTime = null;
+let useScannedFolder = false;
+
+$(document).ready(function() {
+    // 文件选择处理
+    $('#fileInput').on('change', function(e) {
+        handleFileSelect(e.target.files);
+        selectInputMethod('upload');
+    });
+    
+    // 拖拽上传
+    $('#uploadArea').on('dragover', function(e) {
+        e.preventDefault();
+        $(this).addClass('dragover');
+    });
+    
+    $('#uploadArea').on('dragleave', function(e) {
+        e.preventDefault();
+        $(this).removeClass('dragover');
+    });
+    
+    $('#uploadArea').on('drop', function(e) {
+        e.preventDefault();
+        $(this).removeClass('dragover');
+        handleFileSelect(e.originalEvent.dataTransfer.files);
+        selectInputMethod('upload');
+    });
+    
+    // 按钮事件
+    $('#scanFolder').on('click', scanFolder);
+    $('#uploadFiles').on('click', uploadFiles);
+    $('#startProcessing').on('click', startProcessing);
+    $('#stopProcessing').on('click', stopProcessing);
+    $('#downloadResults').on('click', downloadResults);
+    $('#openOutputFolder').on('click', openOutputFolder);
+    
+    // 文件夹路径输入框回车事件
+    $('#folderPath').on('keypress', function(e) {
+        if (e.which === 13) {
+            scanFolder();
+        }
+    });
+});
+
+function selectInputMethod(method) {
+    if (method === 'folder') {
+        $('#folderSection').addClass('active');
+        $('#uploadSection').removeClass('active');
+        useScannedFolder = true;
+    } else {
+        $('#uploadSection').addClass('active');
+        $('#folderSection').removeClass('active');
+        useScannedFolder = false;
+    }
+    updateStartButton();
+}
+
+function scanFolder() {
+    const folderPath = $('#folderPath').val().trim();
+    if (!folderPath) {
+        alert('请输入文件夹路径');
+        return;
+    }
+    
+    $('#scanFolder').prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> 扫描中...');
+    
+    $.ajax({
+        url: '/scan_folder',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ folder_path: folderPath }),
+        success: function(response) {
+            if (response.success) {
+                displayFolderFiles(response.files, response.processing_summary);
+                selectInputMethod('folder');
+                
+                // 显示详细的扫描结果
+                const summary = response.processing_summary;
+                const detailMessage = `扫描完成！\n\n` +
+                    `📁 总文件数: ${summary.total_files}\n` +
+                    `✅ 已处理: ${summary.processed_files}\n` +
+                    `🆕 新文件: ${summary.new_files}\n` +
+                    `🔄 配置更改需重处理: ${summary.config_changed_files}\n` +
+                    `📝 需要处理: ${summary.need_process_files}\n\n` +
+                    `${summary.need_process_files === 0 ? '所有文件都已处理完成！' : `将处理 ${summary.need_process_files} 个文件`}`;
+                
+                alert(detailMessage);
+            } else {
+                alert('扫描失败: ' + response.message);
+            }
+        },
+        error: function() {
+            alert('扫描失败，请重试');
+        },
+        complete: function() {
+            $('#scanFolder').prop('disabled', false).html('<i class="fas fa-search"></i> 扫描文件夹');
+        }
+    });
+}
+
+function displayFolderFiles(files, summary) {
+    const fileItems = $('#folderFileItems');
+    fileItems.empty();
+    
+    // 添加统计信息
+    const summaryHtml = `
+        <div class="alert alert-info mb-3">
+            <h6><i class="fas fa-chart-pie"></i> 扫描统计</h6>
+            <div class="row">
+                <div class="col-6">
+                    <small><strong>总文件:</strong> ${summary.total_files}</small><br>
+                    <small><strong>已处理:</strong> <span class="text-success">${summary.processed_files}</span></small><br>
+                </div>
+                <div class="col-6">
+                    <small><strong>新文件:</strong> <span class="text-primary">${summary.new_files}</span></small><br>
+                    <small><strong>需重处理:</strong> <span class="text-warning">${summary.config_changed_files}</span></small><br>
+                </div>
+            </div>
+        </div>
+    `;
+    fileItems.append(summaryHtml);
+    
+    // 按状态分组显示文件
+    const statusGroups = {
+        'new': { title: '🆕 新文件', files: [], class: 'text-primary' },
+        'config_changed': { title: '🔄 需重处理', files: [], class: 'text-warning' },
+        'output_missing': { title: '📁 输出丢失', files: [], class: 'text-warning' },
+        'processed': { title: '✅ 已处理', files: [], class: 'text-success' }
+    };
+    
+    files.forEach(file => {
+        if (statusGroups[file.status]) {
+            statusGroups[file.status].files.push(file);
+        }
+    });
+    
+    // 显示各状态组的文件
+    Object.entries(statusGroups).forEach(([status, group]) => {
+        if (group.files.length > 0) {
+            fileItems.append(`<h6 class="mt-3 ${group.class}">${group.title} (${group.files.length})</h6>`);
+            
+            group.files.forEach(file => {
+                const fileItem = `
+                    <div class="d-flex justify-content-between align-items-center border-bottom py-1">
+                        <div>
+                            <i class="fas fa-file-pdf text-danger"></i>
+                            <small><strong>${file.name}</strong></small>
+                            ${file.parent_dir !== '根目录' ? `<br><small class="text-muted ms-3">${file.parent_dir}</small>` : ''}
+                        </div>
+                        <div class="text-end">
+                            <span class="text-muted">${file.size_mb} MB</span><br>
+                            <small class="badge bg-secondary">${file.status_text}</small>
+                        </div>
+                    </div>
+                `;
+                fileItems.append(fileItem);
+            });
+        }
+    });
+    
+    $('#folderFileList').show();
+    updateStartButton();
+}
+
+function handleFileSelect(files) {
+    selectedFiles = Array.from(files).filter(file => file.type === 'application/pdf');
+    
+    if (selectedFiles.length === 0) {
+        alert('请选择PDF文件');
+        return;
+    }
+    
+    displaySelectedFiles();
+    $('#uploadFiles').prop('disabled', false);
+}
+
+function displaySelectedFiles() {
+    const fileItems = $('#uploadFileItems');
+    fileItems.empty();
+    
+    selectedFiles.forEach(file => {
+        const fileSize = (file.size / 1024 / 1024).toFixed(2);
+        const fileItem = `
+            <div class="d-flex justify-content-between align-items-center border-bottom py-2">
+                <div>
+                    <i class="fas fa-file-pdf text-danger"></i>
+                    <strong>${file.name}</strong>
+                </div>
+                <span class="text-muted">${fileSize} MB</span>
+            </div>
+        `;
+        fileItems.append(fileItem);
+    });
+    
+    $('#uploadFileList').show();
+}
+
+function uploadFiles() {
+    if (selectedFiles.length === 0) {
+        alert('请先选择文件');
+        return;
+    }
+    
+    const formData = new FormData();
+    selectedFiles.forEach(file => {
+        formData.append('files', file);
+    });
+    
+    $('#uploadFiles').prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> 上传中...');
+    
+    $.ajax({
+        url: '/upload',
+        type: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(response) {
+            if (response.success) {
+                alert(response.message);
+                currentUploadFolder = response.upload_folder;
+                updateStartButton();
+            } else {
+                alert('上传失败: ' + response.message);
+            }
+        },
+        error: function() {
+            alert('上传失败，请重试');
+        },
+        complete: function() {
+            $('#uploadFiles').prop('disabled', false).html('<i class="fas fa-upload"></i> 上传文件');
+        }
+    });
+}
+
+function updateStartButton() {
+    const canStart = useScannedFolder ? $('#folderFileList').is(':visible') : currentUploadFolder;
+    $('#startProcessing').prop('disabled', !canStart);
+}
+
+function startProcessing() {
+    const data = {
+        input_folder: $('#folderPath').val().trim(),
+        output_folder: $('#outputPath').val().trim(),
+        force_reprocess: $('#forceReprocess').is(':checked'),
+        use_scanned_folder: useScannedFolder
+    };
+    
+    $.ajax({
+        url: '/process',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: function(response) {
+            if (response.success) {
+                currentOutputFolder = response.output_folder;
+                $('#progressCard').show();
+                $('#logCard').show();
+                $('#startProcessing').prop('disabled', true);
+                $('#stopProcessing').show();
+                startTime = Date.now();
+                startStatusCheck();
+                startTimer();
+            } else {
+                alert('处理启动失败: ' + response.message);
+            }
+        },
+        error: function() {
+            alert('处理启动失败，请重试');
+        }
+    });
+}
+
+function stopProcessing() {
+    if (confirm('确定要停止处理吗？')) {
+        $.ajax({
+            url: '/stop_processing',
+            type: 'POST',
+            success: function(response) {
+                if (response.success) {
+                    $('#stopProcessing').prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> 停止中...');
+                } else {
+                    alert('停止失败: ' + response.message);
+                }
+            },
+            error: function() {
+                alert('停止失败，请重试');
+            }
+        });
+    }
+}
+
+function startStatusCheck() {
+    statusCheckInterval = setInterval(updateStatus, 1000);
+}
+
+function startTimer() {
+    timerInterval = setInterval(updateTimer, 1000);
+}
+
+function updateTimer() {
+    if (startTime) {
+        const elapsed = Date.now() - startTime;
+        const hours = Math.floor(elapsed / 3600000);
+        const minutes = Math.floor((elapsed % 3600000) / 60000);
+        const seconds = Math.floor((elapsed % 60000) / 1000);
+        
+        const timerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        $('#timerDisplay').text(timerText);
+    }
+}
+
+function updateStatus() {
+    $.ajax({
+        url: '/status',
+        type: 'GET',
+        success: function(status) {
+            updateProgressDisplay(status);
+            updateLogDisplay(status);
+            
+            if (!status.is_processing) {
+                clearInterval(statusCheckInterval);
+                clearInterval(timerInterval);
+                $('#startProcessing').prop('disabled', false);
+                $('#stopProcessing').hide().prop('disabled', false).html('<i class="fas fa-stop"></i> 停止处理');
+                
+                if (status.processed_files > 0) {
+                    $('#downloadResults').show();
+                    $('#openOutputFolder').show();
+                }
+            }
+        }
+    });
+}
+
+function updateProgressDisplay(status) {
+    const progress = status.progress || 0;
+    $('#progressBar').css('width', progress + '%');
+    $('#progressText').text(progress + '%');
+    $('#currentFile').text(status.current_file || '-');
+    $('#statusMessage').text(status.message || '-');
+    $('#processedCount').text(status.processed_files || 0);
+    $('#failedCount').text(status.failed_files || 0);
+    
+    // 添加跳过文件数显示
+    if (status.skipped_files > 0) {
+        if ($('#skippedCount').length === 0) {
+            $('#failedCount').parent().after('<p><strong>跳过:</strong> <span id="skippedCount">0</span></p>');
+        }
+        $('#skippedCount').text(status.skipped_files);
+    }
+}
+
+function updateLogDisplay(status) {
+    const logContainer = $('#logContainer');
+    logContainer.empty();
+    
+    if (status.logs && status.logs.length > 0) {
+        status.logs.forEach(log => {
+            const logEntry = `
+                <div class="log-entry">
+                    <span class="text-muted">[${log.timestamp}]</span>
+                    <span>${log.message}</span>
+                </div>
+            `;
+            logContainer.append(logEntry);
+        });
+        
+        // 滚动到底部
+        logContainer.scrollTop(logContainer[0].scrollHeight);
+    }
+}
+
+function downloadResults() {
+    window.location.href = '/download_results';
+}
+
+function openOutputFolder() {
+    $.ajax({
+        url: '/open_output_folder',
+        type: 'POST',
+        success: function(response) {
+            if (response.success) {
+                alert(response.message);
+            } else {
+                alert('打开失败: ' + response.message);
+            }
+        },
+        error: function() {
+            alert('打开失败，请重试');
+        }
+    });
+}
+</script>
+{% endblock %}

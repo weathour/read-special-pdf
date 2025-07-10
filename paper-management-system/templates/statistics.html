@@ -1,0 +1,304 @@
+
+<!-- templates/statistics.html -->
+{% extends "base.html" %}
+
+{% block title %}统计分析{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-chart-pie"></i> 分类分布</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="categoryChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-chart-line"></i> 年份趋势</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="yearChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-chart-bar"></i> 期刊分布</h5>
+            </div>
+            <div class="card-body">
+                <canvas id="venueChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-tags"></i> 分类统计</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>分类</th>
+                                <th>论文数</th>
+                                <th>占比</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for category, count in stats.by_category.items() %}
+                                <tr>
+                                    <td>
+                                        <a href="{{ url_for('search', category=category) }}" 
+                                           class="text-decoration-none">{{ category }}</a>
+                                    </td>
+                                    <td>{{ count }}</td>
+                                    <td>
+                                        {% if stats.total_papers > 0 %}
+                                            {{ "%.1f"|format(count / stats.total_papers * 100) }}%
+                                        {% else %}
+                                            0%
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-calendar-alt"></i> 年份统计</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>年份</th>
+                                <th>论文数</th>
+                                <th>占比</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for year, count in stats.by_year.items() %}
+                                <tr>
+                                    <td>
+                                        <a href="{{ url_for('search', year_start=year, year_end=year) }}" 
+                                           class="text-decoration-none">{{ year }}</a>
+                                    </td>
+                                    <td>{{ count }}</td>
+                                    <td>
+                                        {% if stats.total_papers > 0 %}
+                                            {{ "%.1f"|format(count / stats.total_papers * 100) }}%
+                                        {% else %}
+                                            0%
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-journal-whills"></i> 期刊统计</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>期刊/会议</th>
+                                <th>论文数</th>
+                                <th>占比</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for venue, count in stats.top_venues %}
+                                <tr>
+                                    <td>
+                                        <a href="{{ url_for('venue_papers', venue_name=venue) }}" 
+                                           class="text-decoration-none" 
+                                           title="{{ venue }}">
+                                            {{ venue[:25] }}{% if venue|length > 25 %}...{% endif %}
+                                        </a>
+                                    </td>
+                                    <td>{{ count }}</td>
+                                    <td>
+                                        {% if stats.total_papers > 0 %}
+                                            {{ "%.1f"|format(count / stats.total_papers * 100) }}%
+                                        {% else %}
+                                            0%
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% if stats.by_venue|length > 15 %}
+                    <div class="text-center mt-2">
+                        <small class="text-muted">显示前15个期刊，共{{ stats.by_venue|length }}个</small>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-info-circle"></i> 数据库概况</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="text-primary">{{ stats.total_papers }}</h3>
+                            <p class="text-muted">总论文数</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="text-success">{{ stats.by_category|length }}</h3>
+                            <p class="text-muted">研究领域</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="text-warning">{{ stats.by_year|length }}</h3>
+                            <p class="text-muted">年份跨度</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <h3 class="text-info">{{ stats.by_venue|length }}</h3>
+                            <p class="text-muted">期刊/会议</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+// 分类分布饼图
+const categoryData = {{ stats.by_category | tojson }};
+const categoryLabels = Object.keys(categoryData);
+const categoryValues = Object.values(categoryData);
+
+if (categoryLabels.length > 0) {
+    const categoryCtx = document.getElementById('categoryChart').getContext('2d');
+    new Chart(categoryCtx, {
+        type: 'pie',
+        data: {
+            labels: categoryLabels,
+            datasets: [{
+                data: categoryValues,
+                backgroundColor: [
+                    '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF',
+                    '#FF9F40', '#FF6384', '#C9CBCF', '#4BC0C0', '#36A2EB'
+                ]
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                }
+            }
+        }
+    });
+} else {
+    document.getElementById('categoryChart').innerHTML = '<p class="text-center text-muted">暂无分类数据</p>';
+}
+
+// 年份趋势图
+const yearData = {{ stats.by_year | tojson }};
+const yearLabels = Object.keys(yearData).map(year => String(year)).sort();
+const yearValues = yearLabels.map(year => yearData[year]);
+
+if (yearLabels.length > 0) {
+    const yearCtx = document.getElementById('yearChart').getContext('2d');
+    new Chart(yearCtx, {
+        type: 'line',
+        data: {
+            labels: yearLabels,
+            datasets: [{
+                label: '论文数量',
+                data: yearValues,
+                borderColor: '#36A2EB',
+                backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+} else {
+    document.getElementById('yearChart').innerHTML = '<p class="text-center text-muted">暂无年份数据</p>';
+}
+
+// 期刊分布柱状图
+const venueData = {{ dict(stats.top_venues[:10]) | tojson }};
+const venueLabels = Object.keys(venueData);
+const venueValues = Object.values(venueData);
+
+if (venueLabels.length > 0) {
+    const venueCtx = document.getElementById('venueChart').getContext('2d');
+    new Chart(venueCtx, {
+        type: 'bar',
+        data: {
+            labels: venueLabels.map(label => label.length > 20 ? label.substr(0, 20) + '...' : label),
+            datasets: [{
+                label: '论文数量',
+                data: venueValues,
+                backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+} else {
+    document.getElementById('venueChart').innerHTML = '<p class="text-center text-muted">暂无期刊数据</p>';
+}
+</script>
+{% endblock %}

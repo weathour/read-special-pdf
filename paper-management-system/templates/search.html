@@ -1,0 +1,286 @@
+
+<!-- templates/search.html -->
+{% extends "base.html" %}
+
+{% block title %}搜索论文{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="search-form">
+            <form method="GET" action="{{ url_for('search') }}">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="query" class="form-label">关键词</label>
+                            <input type="text" class="form-control" id="query" name="q" 
+                                   value="{{ query }}" placeholder="标题、摘要、关键词...">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="author" class="form-label">作者</label>
+                            <input type="text" class="form-control" id="author" name="author" 
+                                   value="{{ author }}" placeholder="作者姓名..." 
+                                   autocomplete="off">
+                            <div id="author-suggestions" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="venue" class="form-label">期刊/会议</label>
+                            <input type="text" class="form-control" id="venue" name="venue" 
+                                   value="{{ venue }}" placeholder="期刊或会议名称..." 
+                                   autocomplete="off">
+                            <div id="venue-suggestions" class="list-group position-absolute w-100" style="z-index: 1000; display: none;"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="category" class="form-label">分类</label>
+                            <select class="form-select" id="category" name="category">
+                                <option value="">全部分类</option>
+                                <!-- 分类选项会通过JavaScript动态加载 -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="year_start" class="form-label">起始年份</label>
+                            <input type="number" class="form-control" id="year_start" name="year_start" 
+                                   value="{{ year_start }}" min="1900" max="2030">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="year_end" class="form-label">结束年份</label>
+                            <input type="number" class="form-control" id="year_end" name="year_end" 
+                                   value="{{ year_end }}" min="1900" max="2030">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">&nbsp;</label>
+                            <div>
+                                <button type="submit" class="btn btn-primary me-2">
+                                    <i class="fas fa-search"></i> 搜索
+                                </button>
+                                <a href="{{ url_for('search') }}" class="btn btn-secondary">
+                                    <i class="fas fa-eraser"></i> 清空
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4>搜索结果 ({{ total_count }} 篇)</h4>
+            <div>
+                <small class="text-muted">第 {{ (page-1)*20 + 1 }} - {{ [page*20, total_count]|min }} 条</small>
+            </div>
+        </div>
+        
+        {% if papers %}
+            {% for paper in papers %}
+                <div class="card paper-card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <h5 class="card-title">
+                                    <a href="{{ url_for('paper_detail', paper_id=paper.id) }}" class="text-decoration-none">
+                                        {{ paper.title_cn or paper.title_en or paper.file_name }}
+                                    </a>
+                                </h5>
+                                {% if paper.title_cn and paper.title_en %}
+                                    <p class="text-muted mb-2">{{ paper.title_en }}</p>
+                                {% endif %}
+                                {% if paper.abstract %}
+                                    <p class="card-text">{{ paper.abstract[:200] }}{% if paper.abstract|length > 200 %}...{% endif %}</p>
+                                {% endif %}
+                                <div class="paper-meta">
+                                    {% if paper.authors_list %}
+                                        <span class="author-list">
+                                            <i class="fas fa-user"></i> 
+                                            {% for author in paper.authors_list %}
+                                                <a href="{{ url_for('author_papers', author_name=author) }}" 
+                                                   class="text-decoration-none author-link">{{ author }}</a>{% if not loop.last %}, {% endif %}
+                                            {% endfor %}
+                                        </span>
+                                    {% endif %}
+                                    {% if paper.venue %}
+                                        <span class="ms-3">
+                                            <i class="fas fa-journal-whills"></i> 
+                                            <a href="{{ url_for('venue_papers', venue_name=paper.venue) }}" 
+                                               class="text-decoration-none venue-link">{{ paper.venue }}</a>
+                                        </span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-end">
+                                {% if paper.category %}
+                                    <span class="badge badge-category mb-2">{{ paper.category }}</span><br>
+                                {% endif %}
+                                {% if paper.publication_year %}
+                                    <span class="badge badge-year mb-2">{{ paper.publication_year }}</span><br>
+                                {% endif %}
+                                <small class="text-muted">{{ paper.file_name }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            
+            <!-- 分页 -->
+            {% if total_pages > 1 %}
+                <nav aria-label="分页导航">
+                    <ul class="pagination justify-content-center">
+                        {% if page > 1 %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ url_for('search', q=query, category=category, author=author, venue=venue, year_start=year_start, year_end=year_end, page=page-1) }}">上一页</a>
+                            </li>
+                        {% endif %}
+                        
+                        {% for p in range(1, total_pages + 1) %}
+                            {% if p == page %}
+                                <li class="page-item active">
+                                    <span class="page-link">{{ p }}</span>
+                                </li>
+                            {% elif p <= 3 or p >= total_pages - 2 or (p >= page - 2 and p <= page + 2) %}
+                                <li class="page-item">
+                                    <a class="page-link" href="{{ url_for('search', q=query, category=category, author=author, venue=venue, year_start=year_start, year_end=year_end, page=p) }}">{{ p }}</a>
+                                </li>
+                            {% elif p == 4 or p == total_pages - 3 %}
+                                <li class="page-item disabled">
+                                    <span class="page-link">...</span>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if page < total_pages %}
+                            <li class="page-item">
+                                <a class="page-link" href="{{ url_for('search', q=query, category=category, author=author, venue=venue, year_start=year_start, year_end=year_end, page=page+1) }}">下一页</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            {% endif %}
+        {% else %}
+            <div class="text-center py-5">
+                <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                <h4 class="text-muted">没有找到相关论文</h4>
+                <p class="text-muted">请尝试使用不同的关键词或调整搜索条件</p>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(document).ready(function() {
+    // 加载分类选项
+    $.get('/api/categories', function(categories) {
+        const categorySelect = $('#category');
+        const currentCategory = '{{ category }}';
+        
+        categories.forEach(function(category) {
+            const selected = category === currentCategory ? 'selected' : '';
+            categorySelect.append(`<option value="${category}" ${selected}>${category}</option>`);
+        });
+    });
+    
+    // 作者自动完成
+    $('#author').on('input', function() {
+        const query = $(this).val();
+        if (query.length < 2) {
+            $('#author-suggestions').hide();
+            return;
+        }
+        
+        $.get('/api/author_suggestions', { q: query }, function(suggestions) {
+            const suggestionsDiv = $('#author-suggestions');
+            suggestionsDiv.empty();
+            
+            if (suggestions.length > 0) {
+                suggestions.forEach(function(author) {
+                    suggestionsDiv.append(`
+                        <a href="#" class="list-group-item list-group-item-action suggestion-item" 
+                           data-value="${author}" data-target="author">${author}</a>
+                    `);
+                });
+                suggestionsDiv.show();
+            } else {
+                suggestionsDiv.hide();
+            }
+        });
+    });
+    
+    // 期刊自动完成
+    $('#venue').on('input', function() {
+        const query = $(this).val();
+        if (query.length < 2) {
+            $('#venue-suggestions').hide();
+            return;
+        }
+        
+        $.get('/api/venue_suggestions', { q: query }, function(suggestions) {
+            const suggestionsDiv = $('#venue-suggestions');
+            suggestionsDiv.empty();
+            
+            if (suggestions.length > 0) {
+                suggestions.forEach(function(venue) {
+                    suggestionsDiv.append(`
+                        <a href="#" class="list-group-item list-group-item-action suggestion-item" 
+                           data-value="${venue}" data-target="venue">${venue}</a>
+                    `);
+                });
+                suggestionsDiv.show();
+            } else {
+                suggestionsDiv.hide();
+            }
+        });
+    });
+    
+    // 选择建议
+    $(document).on('click', '.suggestion-item', function(e) {
+        e.preventDefault();
+        const value = $(this).data('value');
+        const target = $(this).data('target');
+        $(`#${target}`).val(value);
+        $(`#${target}-suggestions`).hide();
+    });
+    
+    // 点击其他地方隐藏建议
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#author, #author-suggestions').length) {
+            $('#author-suggestions').hide();
+        }
+        if (!$(e.target).closest('#venue, #venue-suggestions').length) {
+            $('#venue-suggestions').hide();
+        }
+    });
+});
+</script>
+
+<style>
+.author-link, .venue-link {
+    color: #007bff;
+    font-weight: 500;
+}
+.author-link:hover, .venue-link:hover {
+    color: #0056b3;
+    text-decoration: underline !important;
+}
+.suggestion-item {
+    cursor: pointer;
+}
+</style>
+{% endblock %}

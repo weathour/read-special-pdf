@@ -1,0 +1,489 @@
+
+<!-- templates/paper_detail.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ paper.title_cn or paper.title_en or paper.file_name }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h4>{{ paper.title_cn or paper.title_en or paper.file_name }}</h4>
+                {% if paper.title_cn and paper.title_en %}
+                    <p class="text-muted mb-0">{{ paper.title_en }}</p>
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <div class="markdown-content">
+                    {% if paper.abstract %}
+                        <div class="content-section">
+                            <h5 class="section-title">
+                                <i class="fas fa-file-alt text-primary"></i> 摘要
+                            </h5>
+                            <div class="content-text">
+                                {{ paper.abstract }}
+                            </div>
+                        </div>
+                    {% endif %}
+                    
+                    {% if paper.methodology %}
+                        <div class="content-section">
+                            <h5 class="section-title">
+                                <i class="fas fa-cogs text-success"></i> 方法
+                            </h5>
+                            <div class="content-text">
+                                {{ paper.methodology|safe }}
+                            </div>
+                        </div>
+                    {% endif %}
+                    
+                    {% if paper.conclusion %}
+                        <div class="content-section">
+                            <h5 class="section-title">
+                                <i class="fas fa-flag-checkered text-warning"></i> 结论
+                            </h5>
+                            <div class="content-text">
+                                {{ paper.conclusion|safe }}
+                            </div>
+                        </div>
+                    {% endif %}
+
+                    {% if paper.parsed_analysis %}
+                        <div class="content-section">
+                            <h5 class="section-title">
+                                <i class="fas fa-brain text-info"></i> 详细分析
+                            </h5>
+                            <div class="analysis-content">
+                                {% for section_title, section_data in paper.parsed_analysis.items() %}
+                                    <div class="analysis-section">
+                                        <h6 class="analysis-title">
+                                            <i class="fas fa-chevron-right text-muted"></i> {{ section_title }}
+                                        </h6>
+                                        <div class="analysis-body">
+                                            {% if section_data.type == 'text' %}
+                                                <p class="analysis-text">{{ section_data.content }}</p>
+                                            {% elif section_data.type == 'list' %}
+                                                <div class="analysis-list">
+                                                    {% for item in section_data['items'] %}
+                                                        {% if item.type == 'text' %}
+                                                            <div class="list-item">
+                                                                <i class="fas fa-circle text-primary list-bullet"></i>
+                                                                <span>{{ item.content }}</span>
+                                                            </div>
+                                                        {% elif item.type == 'sublist' %}
+                                                            <div class="sublist-container">
+                                                                <div class="sublist-header">
+                                                                    <i class="fas fa-layer-group text-secondary"></i>
+                                                                    <span class="fw-bold">核心要点：</span>
+                                                                </div>
+                                                                <div class="sublist-items">
+                                                                    {% for subitem in item.content %}
+                                                                        <div class="sublist-item">
+                                                                            <i class="fas fa-angle-right text-success"></i>
+                                                                            <span>{{ subitem }}</span>
+                                                                        </div>
+                                                                    {% endfor %}
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% elif paper.analysis %}
+                        <!-- 如果解析失败，显示原始分析内容 -->
+                        <div class="content-section">
+                            <h5 class="section-title">
+                                <i class="fas fa-brain text-info"></i> 详细分析
+                            </h5>
+                            <div class="analysis-content">
+                                {% for key, value in paper.analysis.items() %}
+                                    <div class="analysis-section">
+                                        <h6 class="analysis-title">
+                                            <i class="fas fa-chevron-right text-muted"></i> {{ key.replace('_', ' ').title() }}
+                                        </h6>
+                                        <div class="analysis-body">
+                                            {% if value is string %}
+                                                <p class="analysis-text">{{ value }}</p>
+                                            {% elif value is iterable and value is not string %}
+                                                <div class="analysis-list">
+                                                    {% for item in value %}
+                                                        <div class="list-item">
+                                                            <i class="fas fa-circle text-primary list-bullet"></i>
+                                                            <span>{{ item }}</span>
+                                                        </div>
+                                                    {% endfor %}
+                                                </div>
+                                            {% else %}
+                                                <p class="analysis-text">{{ value }}</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-info-circle"></i> 论文信息</h5>
+            </div>
+            <div class="card-body">
+                {% if paper.authors %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>作者：</strong></p>
+                        <div class="author-badges">
+                            {% for author in paper.authors %}
+                                <span class="badge bg-primary me-1 mb-1">
+                                    <a href="{{ url_for('author_papers', author_name=author) }}" 
+                                       class="text-white text-decoration-none">
+                                        <i class="fas fa-user"></i> {{ author }}
+                                    </a>
+                                </span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+                
+                {% if paper.venue %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>期刊/会议：</strong></p>
+                        <p class="info-value">
+                            <a href="{{ url_for('venue_papers', venue_name=paper.venue) }}" 
+                               class="text-decoration-none">
+                                <i class="fas fa-journal-whills"></i> {{ paper.venue }}
+                            </a>
+                        </p>
+                    </div>
+                {% endif %}
+                
+                {% if paper.publication_year %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>发表年份：</strong></p>
+                        <p class="info-value">{{ paper.publication_year }}</p>
+                    </div>
+                {% endif %}
+                
+                {% if paper.category %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>分类：</strong></p>
+                        <p class="info-value">
+                            <span class="badge badge-category">{{ paper.category }}</span>
+                        </p>
+                    </div>
+                {% endif %}
+                
+                {% if paper.doi %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>DOI：</strong></p>
+                        <p class="info-value">
+                            <a href="https://doi.org/{{ paper.doi }}" target="_blank" class="text-decoration-none">
+                                <i class="fas fa-external-link-alt"></i> {{ paper.doi }}
+                            </a>
+                        </p>
+                    </div>
+                {% endif %}
+                
+                {% if paper.keywords %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>关键词：</strong></p>
+                        <div class="keyword-container">
+                            {% for keyword in paper.keywords %}
+                                <span class="keyword-tag">{{ keyword }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+                
+                {% if paper.topics %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>主题：</strong></p>
+                        <div class="topic-container">
+                            {% for topic in paper.topics %}
+                                <span class="topic-tag">{{ topic }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+                
+                {% if paper.bibtex_citation %}
+                    <div class="info-section">
+                        <p class="info-label"><strong>BibTeX：</strong></p>
+                        <div class="bibtex-container">
+                            <pre class="bibtex-code"><code>{{ paper.bibtex_citation }}</code></pre>
+                            <button class="btn btn-sm btn-outline-secondary copy-bibtex" 
+                                    data-bibtex="{{ paper.bibtex_citation }}">
+                                <i class="fas fa-copy"></i> 复制
+                            </button>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="card mt-3">
+            <div class="card-header">
+                <h5><i class="fas fa-file"></i> 文件信息</h5>
+            </div>
+            <div class="card-body">
+                <div class="file-info">
+                    <p><strong>文件名：</strong><br><code>{{ paper.file_name }}</code></p>
+                    <p><strong>JSON路径：</strong><br><small class="text-muted">{{ paper.json_path }}</small></p>
+                    <p><strong>创建时间：</strong><br>{{ paper.created_at }}</p>
+                    <p><strong>更新时间：</strong><br>{{ paper.updated_at }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// 复制BibTeX功能
+$('.copy-bibtex').click(function() {
+    const bibtex = $(this).data('bibtex');
+    navigator.clipboard.writeText(bibtex).then(function() {
+        // 显示成功提示
+        const button = $('.copy-bibtex');
+        const originalText = button.html();
+        button.html('<i class="fas fa-check"></i> 已复制');
+        button.addClass('btn-success').removeClass('btn-outline-secondary');
+        
+        setTimeout(function() {
+            button.html(originalText);
+            button.removeClass('btn-success').addClass('btn-outline-secondary');
+        }, 2000);
+    });
+});
+</script>
+{% endblock %}
+
+{% block styles %}
+<style>
+/* 内容样式 */
+.content-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.content-text {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* 分析内容样式 */
+.analysis-content {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.analysis-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.analysis-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.analysis-title {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+}
+
+.analysis-body {
+    margin-left: 1rem;
+}
+
+.analysis-text {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.analysis-list {
+    margin-left: 0.5rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border-left: 3px solid #28a745;
+}
+
+.list-bullet {
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+    font-size: 0.5rem;
+}
+
+.sublist-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #e9ecef;
+    border-radius: 6px;
+    border-left: 4px solid #ffc107;
+}
+
+.sublist-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #495057;
+}
+
+.sublist-header i {
+    margin-right: 0.5rem;
+}
+
+.sublist-items {
+    margin-left: 1rem;
+}
+
+.sublist-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+}
+
+.sublist-item i {
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+/* 信息部分样式 */
+.info-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.info-section:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.info-value {
+    margin-bottom: 0;
+    color: #6c757d;
+}
+
+.author-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.keyword-container, .topic-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.keyword-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid #bbdefb;
+}
+
+.topic-tag {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid #e1bee7;
+}
+
+.bibtex-container {
+    position: relative;
+}
+
+.bibtex-code {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.copy-bibtex {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.file-info p {
+    margin-bottom: 0.75rem;
+}
+
+.file-info code {
+    background: #f8f9fa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 1rem;
+    }
+    
+    .analysis-content {
+        padding: 1rem;
+    }
+    
+    .analysis-body {
+        margin-left: 0.5rem;
+    }
+    
+    .sublist-items {
+        margin-left: 0.5rem;
+    }
+}
+</style>
+{% endblock %}

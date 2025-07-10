@@ -1,0 +1,85 @@
+<!-- templates/import.html -->
+{% extends "base.html" %}
+
+{% block title %}导入论文{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-upload"></i> 导入论文</h5>
+            </div>
+            <div class="card-body">
+                {% if success %}
+                    <div class="alert alert-success" role="alert">
+                        <i class="fas fa-check-circle"></i> {{ success }}
+                    </div>
+                {% endif %}
+                
+                {% if error %}
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle"></i> {{ error }}
+                    </div>
+                {% endif %}
+                
+                {% if failed_files %}
+                    <div class="alert alert-warning" role="alert">
+                        <h6><i class="fas fa-exclamation-triangle"></i> 部分文件导入失败：</h6>
+                        <ul class="mb-0">
+                            {% for file in failed_files %}
+                                <li>{{ file }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="folder_path" class="form-label">JSON文件夹路径</label>
+                        <input type="text" class="form-control" id="folder_path" name="folder_path" 
+                               placeholder="例如: /path/to/json/files" required>
+                        <div class="form-text">输入包含JSON文件的文件夹路径，系统会递归扫描所有子文件夹</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-upload"></i> 开始导入
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-info-circle"></i> 导入说明</h5>
+            </div>
+            <div class="card-body">
+                <h6>支持的JSON格式：</h6>
+                <ul>
+                    <li>包含 <code>structured_info</code> 字段</li>
+                    <li>包含 <code>file_name</code> 字段</li>
+                    <li>符合论文处理器输出格式</li>
+                </ul>
+                
+                <h6>导入功能：</h6>
+                <ul>
+                    <li>递归扫描子文件夹</li>
+                    <li>自动解析结构化信息</li>
+                    <li>支持重复导入（更新已存在的记录）</li>
+                    <li>创建搜索索引</li>
+                </ul>
+                
+                <h6>路径示例：</h6>
+                <ul>
+                    <li><strong>Windows：</strong> C:\papers\json</li>
+                    <li><strong>Linux/Mac：</strong> /home/user/papers/json</li>
+                    <li><strong>相对路径：</strong> ./json_output</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

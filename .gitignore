@@ -22,7 +22,9 @@ wheels/
 *.egg
 MANIFEST
 
-# Virtual Environment (两个项目的venv)
+# 统一的虚拟环境
+venv/
+# 原有的子项目虚拟环境（如果存在）
 pdf-note-generator/venv/
 paper-management-system/venv/
 
@@ -51,12 +53,9 @@ pdf-note-generator/output_notes/
 pdf-note-generator/web_outputs/
 pdf-note-generator/uploads/
 pdf-note-generator/input_pdfs/
-pdf-note-generator/processed_files.db
-pdf-note-generator/papers.db
 
-# 论文管理系统相关
+# 论文管理系统相关  
 paper-management-system/json_papers/
-paper-management-system/papers.db
 
 # 日志文件
 *.log
@@ -70,6 +69,7 @@ logs/
 # 配置文件（如果包含敏感信息）
 config.local.py
 .env.local
+.env
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -91,4 +91,9 @@ coverage.xml
 *.zip
 *.tar.gz
 *.rar
+
+# 输出文件
+output/
+outputs/
+results/
 

@@ -1,0 +1,551 @@
+============================================================
+📋 JSON文件验证报告
+============================================================
+📊 总体统计:
+  - 总文件数: 346
+  - 有效文件: 269
+  - 无效文件: 77
+  - 成功率: 77.7%
+
+❌ 无效文件详情:
+  📄 Razzaghpour 等 - 2023 - Predictive Model-Based and Control-Aware Communication Strategies for Cooperative Adaptive Cruise Co_20250710_061813.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Garzón 等 - 2022 - Machine Learning-Based Surrogate Modeling for Urban Water Networks Review and Future Research Direc_20250711_010744.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Chen 等 - 2024 - A Novel Reinforcement Learning Method for Autonomous Driving With Intermittent Vehicle-to-Everything_20250711_010437.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Sansana 等 - 2021 - Recent trends on hybrid modeling for Industry 4.0_20250710_012628.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Vimal 等 - 2024 - An Analysis on the Impact of 5G in Advanced Driver Assistance Systems (ADAS)_20250711_025929.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Ma 等 - 2024 - IEEE 802.11 VANETs for Safety of Autonomous Driving QoS Requirements & Benchmarking_20250711_095513.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Liu 等 - 2023 - A Systematic Survey of Control Techniques and Applications in Connected and Automated Vehicles_20250711_053845.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Zhong 等 - 2020 - Influence of CAV clustering strategies on mixed traffic flow characteristics An analysis of vehicle_20250711_045855.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Zardini 等 - 2023 - Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions_20250710_030932.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Prabowo - Enhancing Classification Performance Through the Synergistic Use of XGBoost, TABPFN, and LGBM Models_20250711_043004.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 S 等 - 2024 - Hybrid RF-VLC Technology for V2X in Platooning Applications Under Different Weather Conditions_20250711_072028.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Khan 等 - 2024 - Mobility Management in Heterogeneous Network of Vehicular Communication With 5G Current Status and_20250710_013631.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Ahangar 等 - 2021 - A Survey of Autonomous Vehicles Enabling Communication Technologies and Challenges_20250711_102015.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Rahmani和Patterson - Graph Neural Networks for Intelligent Transportation Systems A Survey_20250710_023428.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Shen 等 - 2024 - Distributed vehicular platoon control considering communication delays and packet dropouts_20250711_075417.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Rosário和Dias - 2023 - How has data-driven marketing evolved Challenges and opportunities with emerging technologies_20250711_082506.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Yang 等 - 2024 - Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses_20250710_042133.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Shakir 等 - 2024 - Vehicle-to-Everything (V2X) Communication in IoT via 5G_20250711_055449.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Zardini 等 - 2020 - On the Co-Design of AV-Enabled Mobility Systems_20250711_031654.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Industries - 2024 - Automotive Antenna Using Metamaterial Technology Suitable for 5G mmWave Communication_20250710_034734.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Zaman 等 - 2023 - On Batching Acknowledgements in C-V2X Services_20250710_051032.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Xiong 等 - 2020 - Communication and Computing Resource Optimization for Connected Autonomous Driving_20250711_083737.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Lehtinen - 2024 - Understanding V2X  a physical layer comparison between 5G NR and NR V2X sidelink_20250711_044720.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Okpok 等 - 2024 - An Empirical Heterogeneous Large and Short Frame Data Transmission Simulation in DSRC VANETs_20250711_035415.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Khatouri 等 - 2022 - Metamodeling techniques for CPU-intensive simulation-based design optimization a survey_20250711_092041.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Toscano 等 - 2025 - From PINNs to PIKANs recent advances in physics-informed machine learning_20250711_020641.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 WTC混合现实微观仿真评估平台_20250710_031305.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Jeong 等 - 2021 - A comprehensive survey on vehicular networking for safe and efficient driving in smart transportatio_20250711_051327.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Chiu 等 - 2022 - CAN-PINN A fast physics-informed neural network based on coupled-automatic–numerical differentiatio_20250710_020523.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Wang和Chung - 2021 - Artificial intelligence in safety-critical systems a systematic review_20250711_021019.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Herman Muraro Gularte 等 - 2024 - Integrating Cybersecurity in V2X A Review of Simulation Environments_20250710_062348.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Sharma和Liu - 2022 - A hybrid science-guided machine learning approach for modeling chemical processes A review_20250710_010626.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Balakrishna 等 - A SYSTEM FOR ANALYSING CALL DROP DYNAMICS IN THE TELECOM INDUSTRY USING MACHINE LEARNING AND FEATURE_20250710_050023.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Clancy 等 - 2024 - Wireless Access for V2X Communications Research, Challenges and Opportunities_20250711_065740.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Wen 等 - 2024 - A Co-simulation Digital Twin with SUMO and AirSim for Testing Lane-based UTM System Concept_20250711_041327.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Ouedraogo 等 - 2024 - Can Edge Computing Fulfill the Requirements of Automated Vehicular Services Using 5G Network _20250710_023118.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Noor-A-Rahim 等 - 2022 - 6G for Vehicle-to-Everything (V2X) Communications Enabling Technologies, Challenges, and Opportunit_20250711_095838.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Ju 等 - 2022 - A Survey on Attack Detection and Resilience for Connected and Automated Vehicles From Vehicle Dynam_20250710_045030.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Sun 等 - 2022 - Object Detection Based on Roadside LiDAR for Cooperative Driving Automation A Review_20250710_032316.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Li 等 - 2022 - Intelligent metasurfaces control, communication and computing_20250710_060732.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Schwarz和Wang - 2022 - The Role of Digital Twins in Connected and Automated Vehicles_20250711_062845.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Xing 等 - 2022 - Robust CACC in the Presence of Uncertain Delays_20250711_005506.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Segata 等 - 2014 - Plexe A platooning extension for Veins_20250711_055140.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Wang 等 - 2022 - A Review of Intelligent Connected Vehicle Cooperative Driving Development_20250710_030543.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Mir 等 - 2020 - Enabling DSRC and C-V2X Integrated Hybrid Vehicular Networks Architecture and Protocol_20250710_040152.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Li 等 - 2024 - When DSRC Meets With C-V2X How to Jointly Predict and Select Idle Channels_20250710_022055.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Tan 等 - 2024 - Adaptive Task Scheduling in Digital Twin Empowered Cloud-Native Vehicular Networks_20250711_050438.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Khalilnasl 等 - 2024 - Enhancing C-V2X Vehicle Platooning A Dual-Strategy of Time Synchronisation and Partition-Based Sche_20250711_044354.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Moradi-Pari 等 - 2023 - DSRC Versus LTE-V2X Empirical Performance Analysis of Direct Vehicular Communication Technologies_20250710_121112.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Xue 等 - 2024 - A Comparative Study of IEEE 802.11bd and IEEE 802.11p on the Data Dissemination Properties in Dynami_20250711_043008.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Sokhambi和Smith - 2024 - Investigating Massive MIMO-Based Resource Allocation Schemes for Autonomous Driving Applications_20250711_033714.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Rebello 等 - 2024 - A Survey on Blockchain Scalability From Hardware to Layer-Two Protocols_20250710_055727.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Hu 等 - 2024 - Physics-informed Neural Networks (PINN) for computational solid mechanics Numerical frameworks and_20250711_012216.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Barmpounakis 等 - 2022 - AI-driven, QoS prediction for V2X communications in beyond 5G systems_20250710_035333.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Skocaj 等 - 2023 - Vehicle-to-Everything (V2X) Datasets for Machine Learning-Based Predictive Quality of Service_20250711_073438.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Alabdouli 等 - 2025 - Enhancing Route Guidance with Integrated V2X Communication and Transportation Systems A Review_20250710_032933.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Tang 等 - 2021 - Comprehensive Survey on Machine Learning in Vehicular Network Technology, Applications and Challeng_20250711_051949.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Wang 等 - 2021 - A review of surrogate safety measures and their applications in connected and automated vehicles saf_20250711_092907.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Sivaranjani 等 - 2021 - Diabetes Prediction using Machine Learning Algorithms with Feature Selection and Dimensionality Redu_20250711_064203.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Rathore 等 - 2021 - A Cyber-Physical System and Graph-Based Approach for Transportation Management in Smart Cities_20250710_063533.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Soon 等 - 2024 - Grey Box Non-Recursive System Identification for a Third Order Electro-Hydraulic Actuator System Fr_20250711_013047.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Oliveira 等 - 2021 - Co-Design of Consensus-Based Approach and Reliable Communication Protocol for Vehicular Platoon Cont_20250711_091401.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Bazzi 等 - 2024 - Performance analysis of IEEE 802.11p preamble insertion in C-V2X sidelink signals for co-channel coe_20250710_004721.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Chakraborty 等 - 2025 - Malleable SNARKs and Their Applications_20250711_043013.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Adday 等 - 2024 - Investigating and Analyzing Simulation Tools of Wireless Sensor Networks A Comprehensive Survey_20250710_005034.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Lawal 等 - 2022 - Physics-Informed Neural Network (PINN) Evolution and Beyond A Systematic Literature Review and Bibl_20250711_095154.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Talpur和Gurusamy - 2022 - Machine Learning for Security in Vehicular Networks A Comprehensive Survey_20250711_014653.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Triwinarko - Cross-Layer design for vehicular ad-hoc networks (VANETs)_20250711_013553.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Al-Najjar 等 - 2024 - A Systematic Literature Review in Distributed Resource Allocation for C-V2X._20250711_085225.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Dept. of Electronics Communications, Sudan University of Science and Technology (SUST), Khartoum, Sudan 等 - 2020 - Evaluation of Performance Enhancement of OFDM Based on Cross Layer Design (CLD) IEEE 802.11p Standar_20250710_031646.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Mu 等 - 2021 - Integrated Sensing and Communication-Enabled Predictive Beamforming With Deep Learning in Vehicular_20250711_030930.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Razmi Rad 等 - 2020 - Design and operation of dedicated lanes for connected and automated vehicles on motorways A concept_20250711_102350.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Lee 等 - 2025 - Traffic Control via Connected and Automated Vehicles (CAVs) An Open-Road Field Experiment with 100_20250711_081054.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Tabassum和Oliveira - 2025 - Collision Probabilities Between User Equipment Using 5G NR Sidelink Time-Domain-Based Resource Alloc_20250710_025217.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Yazici和Gures - 2024 - NR-V2X Quality of Service Prediction Through Machine Learning with Nested Cross-Validation Scheme_20250710_021801.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Zang 等 - 2020 - A Priority-Based Cross-Layer Design for Future VANETs Through Full-Duplex Technology_20250711_085623.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+  📄 Wang 等 - 2021 - An Efficient Specific Emitter Identification Method Based on Complex-Valued Neural Networks and Netw_20250710_015626.json
+    - ❌ structured_info缺少必需字段: title_cn
+    - ❌ structured_info缺少必需字段: title_en
+    - ❌ structured_info缺少必需字段: authors
+    - ❌ structured_info缺少必需字段: abstract
+    - ❌ structured_info缺少必需字段: publication_year
+
+📈 错误类型统计:
+  - structured_info缺少必需字段: 385 次

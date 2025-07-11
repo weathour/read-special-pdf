@@ -1,6 +1,6 @@
 
 # paper_manager.py - 修复年份数据类型问题
-
+from json_validator import JSONValidator
 import os
 import json
 import sqlite3
@@ -138,6 +138,8 @@ class PaperManager:
         except (ValueError, TypeError):
             return default
     
+
+
     def import_json_file(self, json_path):
         """导入单个JSON文件到数据库"""
         data = self.load_json_file(json_path)
@@ -237,8 +239,83 @@ class PaperManager:
         conn.close()
         return True
     
+
+    def import_json_folder_with_validation(self, folder_path):
+        """从文件夹导入JSON文件，带验证功能"""
+        folder_path = Path(folder_path)
+        if not folder_path.exists():
+            return 0, [], f"路径不存在: {folder_path}"
+        
+        # 初始化验证器
+        validator = JSONValidator()
+        
+        # 首先验证所有文件
+        print(f"🔍 正在验证文件夹: {folder_path}")
+        validation_results = validator.validate_folder(str(folder_path))
+        
+        if 'error' in validation_results:
+            raise Exception(validation_results['error'])
+        
+        # 分离有效和无效文件
+        valid_files = []
+        invalid_files = []
+        
+        for result in validation_results['results']:
+            if result['is_valid']:
+                valid_files.append(result['file_path'])
+            else:
+                invalid_files.append({
+                    'file_path': result['file_path'],
+                    'errors': result['errors'],
+                    'warnings': result['warnings']
+                })
+        
+        print(f"✅ 验证完成: {len(valid_files)} 个有效文件, {len(invalid_files)} 个无效文件")
+        
+        # 导入有效文件
+        imported_count = 0
+        import_errors = []
+        
+        for json_file_path in valid_files:
+            try:
+                print(f"正在导入: {Path(json_file_path).name}")
+                if self.import_json_file(json_file_path):
+                    imported_count += 1
+                    print(f"成功导入: {Path(json_file_path).name}")
+                else:
+                    import_errors.append({
+                        'file_path': json_file_path,
+                        'errors': ['导入失败：可能已存在或数据库错误']
+                    })
+            except Exception as e:
+                import_errors.append({
+                    'file_path': json_file_path,
+                    'errors': [f'导入异常: {str(e)}']
+                })
+                print(f"导入异常: {Path(json_file_path).name}: {e}")
+        
+        # 合并失败文件列表
+        all_failed_files = invalid_files + import_errors
+        
+        # 生成验证报告
+        validation_summary = {
+            'total_files': validation_results['total_files'],
+            'valid_files': len(valid_files),
+            'invalid_files': len(invalid_files),
+            'imported_files': imported_count,
+            'import_failed': len(import_errors),
+            'success_rate': validation_results['success_rate']
+        }
+        
+        print(f"🎉 导入完成: {imported_count} 个成功，{len(all_failed_files)} 个失败")
+        
+        return imported_count, all_failed_files, validation_summary
+
+
+
+
     def import_json_folder(self, folder_path):
-        """批量导入JSON文件夹"""
+        """从文件夹导入JSON文件（原版本，无验证）"""
         folder_path = Path(folder_path)
         if not folder_path.exists():
             return 0, [f"路径不存在: {folder_path}"]
@@ -260,14 +337,19 @@ class PaperManager:
                     print(f"成功导入: {json_file}")
                 else:
                     failed_files.append(str(json_file))
-                    print(f"导入失败: {json_file}")
             except Exception as e:
                 failed_files.append(f"{json_file}: {e}")
-                print(f"导入异常: {json_file}: {e}")
+                print(f"导入失败: {json_file}: {e}")
         
-        print(f"导入完成: {imported_count} 个成功, {len(failed_files)} 个失败")
+        print(f"导入完成: {imported_count} 个成功，{len(failed_files)} 个失败")
         return imported_count, failed_files
     
+    def validate_json_folder(self, folder_path):
+        """仅验证文件夹中的JSON文件，不导入"""
+        validator = JSONValidator()
+        return validator.validate_folder(folder_path)
+
+
     def check_pdf_exists(self, pdf_filename):
         """检查PDF文件是否存在"""
         if not pdf_filename:
@@ -1124,15 +1206,24 @@ def import_papers():
             return render_template('import.html', error='请输入文件夹路径')
         
         try:
-            imported_count, failed_files = paper_manager.import_json_folder(folder_path)
+            # 使用验证器进行导入
+            imported_count, failed_files, validation_report = paper_manager.import_json_folder_with_validation(folder_path)
             
-            return render_template('import.html',
-                                 success=f'成功导入 {imported_count} 个论文',
-                                 failed_files=failed_files)
+            # 构建成功消息
+            success_message = f'成功导入 {imported_count} 个JSON文件'
+            if failed_files:
+                success_message += f'，跳过 {len(failed_files)} 个无效文件'
+            
+            return render_template('import.html', 
+                                 success=success_message,
+                                 failed_files=failed_files,
+                                 validation_report=validation_report)
+            
         except Exception as e:
             return render_template('import.html', error=f'导入失败: {str(e)}')
     
     return render_template('import.html')
+
 
 @app.route('/statistics')
 def statistics():

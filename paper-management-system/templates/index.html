@@ -7,16 +7,51 @@
 <div class="row">
     <div class="col-md-12">
         <div class="jumbotron bg-primary text-white p-5 rounded mb-4">
-            <h1 class="display-4">📚 论文管理系统</h1>
-            <p class="lead">高效管理和检索您的学术论文库</p>
+            <h1 class="display-4">📚 专用论文管理系统</h1>
+            <p class="lead">高效管理和检索个人的学术论文库</p>
             <hr class="my-4">
-            <p>支持全文搜索、分类管理、统计分析等功能</p>
-            <a class="btn btn-light btn-lg" href="{{ url_for('search') }}" role="button">
-                <i class="fas fa-search"></i> 开始搜索
-            </a>
+            
+            <p>
+                <strong>开发者：</strong> YXJ
+                <span class="ml-3">联系方式：<a href="mailto:mr.weathour@gmail.com" class="text-light">mr.weathour@gmail.com</a></span>
+            </p>
+            <hr class="my-4">
+
+            <p>
+                本项目聚焦于个人学术文献管理，核心亮点在于自动化的信息抽取能力。
+                <br>
+                <strong>自动化部分</strong> 基于 deepseekR1，通过大型语言模型结合结构化提示词，将PDF文献自动解析为JSON格式数据，实现信息的高效提取与规范化处理。<br>
+                项目整体分为两部分：一部分是自动转换系统（使用个人深度模型API，将PDF批量转为JSON）；另一部分是当前的网页管理系统，用于文献的导入、检索、管理与去重等功能。
+                <br>
+                由于自动化转换服务目前调用的是开发者个人API，暂未开放访问者自定义API的功能，因此转换系统尚未上线，当前公开上线的是文献管理系统部分。
+            </p>
+            <br>
+
+            <div class="btn-group mt-3" role="group" aria-label="项目操作按钮">
+                <a href="https://github.com/weathour/read-special-pdf" class="btn btn-light btn-lg" target="_blank">
+                    <i class="fab fa-github"></i> 查看项目源码
+                </a>
+                <a class="btn btn-light btn-lg" href="{{ url_for('search') }}" role="button">
+                    <i class="fas fa-search"></i> 开始搜索
+                </a>
+                <a href="{{ url_for('search') }}" class="btn btn-light btn-lg">
+                    <i class="fas fa-search"></i> 搜索论文
+                </a>
+                <a href="{{ url_for('import_papers') }}" class="btn btn-light btn-lg">
+                    <i class="fas fa-upload"></i> 导入论文
+                </a>
+                <a href="{{ url_for('statistics') }}" class="btn btn-light btn-lg">
+                    <i class="fas fa-chart-bar"></i> 查看统计
+                </a>
+                <a href="{{ url_for('search') }}?category=" class="btn btn-light btn-lg">
+                    <i class="fas fa-list"></i> 浏览全部
+                </a>
+            </div> 
         </div>
     </div>
 </div>
+
+
 
 <div class="row mb-4">
     <div class="col-md-3">
@@ -98,37 +133,5 @@
     </div>
 </div>
 
-<div class="row mt-4">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-header">
-                <h5><i class="fas fa-rocket"></i> 快速操作</h5>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-3">
-                        <a href="{{ url_for('search') }}" class="btn btn-primary btn-block w-100 mb-2">
-                            <i class="fas fa-search"></i> 搜索论文
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="{{ url_for('import_papers') }}" class="btn btn-success btn-block w-100 mb-2">
-                            <i class="fas fa-upload"></i> 导入论文
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="{{ url_for('statistics') }}" class="btn btn-info btn-block w-100 mb-2">
-                            <i class="fas fa-chart-bar"></i> 查看统计
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="{{ url_for('search') }}?category=" class="btn btn-warning btn-block w-100 mb-2">
-                            <i class="fas fa-list"></i> 浏览全部
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 {% endblock %}

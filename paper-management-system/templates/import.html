@@ -1,85 +1,121 @@
+
 <!-- templates/import.html -->
 {% extends "base.html" %}
 
 {% block title %}导入论文{% endblock %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-8">
-        <div class="card">
-            <div class="card-header">
-                <h5><i class="fas fa-upload"></i> 导入论文</h5>
-            </div>
-            <div class="card-body">
-                {% if success %}
-                    <div class="alert alert-success" role="alert">
-                        <i class="fas fa-check-circle"></i> {{ success }}
-                    </div>
-                {% endif %}
-                
-                {% if error %}
-                    <div class="alert alert-danger" role="alert">
-                        <i class="fas fa-exclamation-triangle"></i> {{ error }}
-                    </div>
-                {% endif %}
-                
-                {% if failed_files %}
-                    <div class="alert alert-warning" role="alert">
-                        <h6><i class="fas fa-exclamation-triangle"></i> 部分文件导入失败：</h6>
-                        <ul class="mb-0">
-                            {% for file in failed_files %}
-                                <li>{{ file }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                {% endif %}
-                
-                <form method="POST">
-                    <div class="mb-3">
-                        <label for="folder_path" class="form-label">JSON文件夹路径</label>
-                        <input type="text" class="form-control" id="folder_path" name="folder_path" 
-                               placeholder="例如: /path/to/json/files" required>
-                        <div class="form-text">输入包含JSON文件的文件夹路径，系统会递归扫描所有子文件夹</div>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fas fa-upload"></i> 开始导入
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
+<div class="container mt-4">
+    <h2><i class="fas fa-upload"></i> 导入论文</h2>
     
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-header">
-                <h5><i class="fas fa-info-circle"></i> 导入说明</h5>
-            </div>
-            <div class="card-body">
-                <h6>支持的JSON格式：</h6>
-                <ul>
-                    <li>包含 <code>structured_info</code> 字段</li>
-                    <li>包含 <code>file_name</code> 字段</li>
-                    <li>符合论文处理器输出格式</li>
-                </ul>
-                
-                <h6>导入功能：</h6>
-                <ul>
-                    <li>递归扫描子文件夹</li>
-                    <li>自动解析结构化信息</li>
-                    <li>支持重复导入（更新已存在的记录）</li>
-                    <li>创建搜索索引</li>
-                </ul>
-                
-                <h6>路径示例：</h6>
-                <ul>
-                    <li><strong>Windows：</strong> C:\papers\json</li>
-                    <li><strong>Linux/Mac：</strong> /home/user/papers/json</li>
-                    <li><strong>相对路径：</strong> ./json_output</li>
-                </ul>
+    <!-- 显示成功消息 -->
+    {% if success %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fas fa-check-circle"></i> {{ success }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% endif %}
+    
+    <!-- 显示错误消息 -->
+    {% if error %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-triangle"></i> {{ error }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% endif %}
+    
+    <!-- 导入表单 -->
+    <form method="POST" class="mb-4">
+        <div class="mb-3">
+            <label for="folder_path" class="form-label">
+                <i class="fas fa-folder"></i> JSON文件夹路径
+            </label>
+            <input type="text" class="form-control" id="folder_path" name="folder_path" 
+                   placeholder="输入包含JSON文件的文件夹路径" required>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-upload"></i> 开始导入
+        </button>
+    </form>
+    
+    <!-- 显示验证报告 -->
+    {% if validation_report %}
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5><i class="fas fa-chart-pie"></i> 验证报告</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>总文件数:</strong> {{ validation_report.total_files }}</p>
+                    <p><strong>有效文件:</strong> {{ validation_report.valid_files }}</p>
+                    <p><strong>无效文件:</strong> {{ validation_report.invalid_files }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>成功导入:</strong> {{ validation_report.imported_files }}</p>
+                    <p><strong>导入失败:</strong> {{ validation_report.import_failed }}</p>
+                    <p><strong>验证通过率:</strong> {{ "%.1f"|format(validation_report.success_rate) }}%</p>
+                </div>
             </div>
         </div>
     </div>
+    {% endif %}
+    
+    <!-- 显示失败文件列表 -->
+    {% if failed_files %}
+    <div class="card">
+        <div class="card-header">
+            <h5><i class="fas fa-exclamation-triangle"></i> 失败文件详情 ({{ failed_files|length }})</h5>
+        </div>
+        <div class="card-body">
+            <div class="accordion" id="failedFilesAccordion">
+                {% for failed_file in failed_files %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading{{ loop.index }}">
+                        <button class="accordion-button collapsed" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}" 
+                                aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                            <i class="fas fa-file-alt me-2"></i>
+                            {{ failed_file.file_path.split('/')[-1] }}
+                        </button>
+                    </h2>
+                    <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" 
+                         aria-labelledby="heading{{ loop.index }}" data-bs-parent="#failedFilesAccordion">
+                        <div class="accordion-body">
+                            <p><strong>文件路径:</strong> <code>{{ failed_file.file_path }}</code></p>
+                            
+                            {% if failed_file.errors %}
+                            <h6 class="text-danger">错误:</h6>
+                            <ul class="list-unstyled">
+                                {% for error in failed_file.errors %}
+                                <li><i class="fas fa-times text-danger"></i> {{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                            
+                            {% if failed_file.warnings %}
+                            <h6 class="text-warning">警告:</h6>
+                            <ul class="list-unstyled">
+                                {% for warning in failed_file.warnings %}
+                                <li><i class="fas fa-exclamation-triangle text-warning"></i> {{ warning }}</li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
 
+{% block extra_js %}
+<!-- 如果需要额外的JavaScript，可以在这里添加 -->
+<script>
+// 导入页面特定的JavaScript代码
+console.log('导入页面已加载');
+</script>
+{% endblock %}

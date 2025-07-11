@@ -579,6 +579,200 @@ class PaperManager:
 
 
 
+    def find_duplicate_papers(self):
+        """查找重复论文（基于DOI）"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # 查找有相同DOI的论文组
+        cursor.execute('''
+            SELECT doi, COUNT(*) as count, GROUP_CONCAT(id) as ids
+            FROM papers 
+            WHERE doi != '' AND doi IS NOT NULL
+            GROUP BY doi 
+            HAVING COUNT(*) > 1
+            ORDER BY count DESC
+        ''')
+        
+        duplicates = []
+        for row in cursor.fetchall():
+            doi, count, ids_str = row
+            ids = [int(id) for id in ids_str.split(',')]
+            
+            # 获取这些重复论文的详细信息
+            cursor.execute('''
+                SELECT id, title_cn, title_en, file_name, created_at, updated_at
+                FROM papers 
+                WHERE id IN ({})
+                ORDER BY updated_at DESC
+            '''.format(','.join(['?'] * len(ids))), ids)
+            
+            papers = cursor.fetchall()
+            duplicates.append({
+                'doi': doi,
+                'count': count,
+                'papers': papers
+            })
+        
+        conn.close()
+        return duplicates
+
+    def find_duplicate_papers_by_title(self):
+        """基于标题查找可能的重复论文"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # 查找有相同标题的论文
+        cursor.execute('''
+            SELECT title_en, COUNT(*) as count, GROUP_CONCAT(id) as ids
+            FROM papers 
+            WHERE title_en != '' AND title_en IS NOT NULL
+            GROUP BY LOWER(title_en)
+            HAVING COUNT(*) > 1
+            ORDER BY count DESC
+        ''')
+        
+        duplicates = []
+        for row in cursor.fetchall():
+            title, count, ids_str = row
+            ids = [int(id) for id in ids_str.split(',')]
+            
+            cursor.execute('''
+                SELECT id, title_cn, title_en, file_name, doi, created_at, updated_at
+                FROM papers 
+                WHERE id IN ({})
+                ORDER BY updated_at DESC
+            '''.format(','.join(['?'] * len(ids))), ids)
+            
+            papers = cursor.fetchall()
+            duplicates.append({
+                'title': title,
+                'count': count,
+                'papers': papers
+            })
+        
+        conn.close()
+        return duplicates
+
+    def auto_deduplicate_by_doi(self):
+        """自动去重：基于DOI，保留最新版本"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        removed_count = 0
+        duplicates = self.find_duplicate_papers()
+        
+        for duplicate in duplicates:
+            papers = duplicate['papers']
+            if len(papers) > 1:
+                # 保留最新的（第一个，因为已经按updated_at DESC排序）
+                keep_paper = papers[0]
+                remove_papers = papers[1:]
+                
+                # 删除旧版本
+                for paper in remove_papers:
+                    cursor.execute('DELETE FROM papers WHERE id = ?', (paper[0],))
+                    removed_count += 1
+                    print(f"删除重复论文: {paper[3]} (ID: {paper[0]})")
+        
+        conn.commit()
+        conn.close()
+        
+        return removed_count
+
+    def merge_paper_data(self, keep_id, remove_id):
+        """合并论文数据（保留较完整的数据）"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # 获取两篇论文的数据
+        cursor.execute('SELECT * FROM papers WHERE id = ?', (keep_id,))
+        keep_paper = cursor.fetchone()
+        
+        cursor.execute('SELECT * FROM papers WHERE id = ?', (remove_id,))
+        remove_paper = cursor.fetchone()
+        
+        if not keep_paper or not remove_paper:
+            conn.close()
+            return False
+        
+        # 合并数据的逻辑（选择非空的字段）
+        merged_data = {}
+        columns = [desc[0] for desc in cursor.description]
+        
+        for i, column in enumerate(columns):
+            if column == 'id':
+                merged_data[column] = keep_paper[i]
+            elif column in ['created_at', 'updated_at']:
+                # 保留较新的时间
+                merged_data[column] = max(keep_paper[i], remove_paper[i])
+            else:
+                # 选择非空的值，如果都非空则保留keep_paper的值
+                keep_value = keep_paper[i]
+                remove_value = remove_paper[i]
+                
+                if not keep_value and remove_value:
+                    merged_data[column] = remove_value
+                else:
+                    merged_data[column] = keep_value
+        
+        # 更新保留的论文
+        update_fields = [f"{col} = ?" for col in columns if col != 'id']
+        update_values = [merged_data[col] for col in columns if col != 'id']
+        update_values.append(keep_id)
+        
+        cursor.execute(f'''
+            UPDATE papers SET {', '.join(update_fields)}
+            WHERE id = ?
+        ''', update_values)
+        
+        # 删除要移除的论文
+        cursor.execute('DELETE FROM papers WHERE id = ?', (remove_id,))
+        
+        conn.commit()
+        conn.close()
+        
+        return True
+
+    def get_deduplication_stats(self):
+        """获取去重统计信息"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        stats = {}
+        
+        # 总论文数
+        cursor.execute('SELECT COUNT(*) FROM papers')
+        stats['total_papers'] = cursor.fetchone()[0]
+        
+        # 有DOI的论文数
+        cursor.execute('SELECT COUNT(*) FROM papers WHERE doi != "" AND doi IS NOT NULL')
+        stats['papers_with_doi'] = cursor.fetchone()[0]
+        
+        # DOI重复的论文组数
+        cursor.execute('''
+            SELECT COUNT(*) FROM (
+                SELECT doi FROM papers 
+                WHERE doi != "" AND doi IS NOT NULL
+                GROUP BY doi 
+                HAVING COUNT(*) > 1
+            )
+        ''')
+        stats['duplicate_doi_groups'] = cursor.fetchone()[0]
+        
+        # 标题重复的论文组数
+        cursor.execute('''
+            SELECT COUNT(*) FROM (
+                SELECT title_en FROM papers 
+                WHERE title_en != "" AND title_en IS NOT NULL
+                GROUP BY LOWER(title_en)
+                HAVING COUNT(*) > 1
+            )
+        ''')
+        stats['duplicate_title_groups'] = cursor.fetchone()[0]
+        
+        conn.close()
+        return stats
 
 
 
@@ -996,6 +1190,97 @@ def api_search_suggestions():
     conn.close()
     
     return jsonify(suggestions)
+
+@app.route('/deduplication')
+def deduplication_page():
+    """去重管理页面"""
+    stats = paper_manager.get_deduplication_stats()
+    doi_duplicates = paper_manager.find_duplicate_papers()
+    title_duplicates = paper_manager.find_duplicate_papers_by_title()
+    
+    return render_template('deduplication.html',
+                         stats=stats,
+                         doi_duplicates=doi_duplicates,
+                         title_duplicates=title_duplicates)
+
+@app.route('/api/auto-deduplicate', methods=['POST'])
+def auto_deduplicate():
+    """API: 自动去重"""
+    try:
+        removed_count = paper_manager.auto_deduplicate_by_doi()
+        return jsonify({
+            'success': True,
+            'message': f'成功删除 {removed_count} 篇重复论文',
+            'removed_count': removed_count
+        })
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'message': f'去重失败: {str(e)}'
+        })
+
+@app.route('/api/merge-papers', methods=['POST'])
+def merge_papers():
+    """API: 合并论文"""
+    try:
+        data = request.get_json()
+        keep_id = data.get('keep_id')
+        remove_id = data.get('remove_id')
+        
+        if not keep_id or not remove_id:
+            return jsonify({
+                'success': False,
+                'message': '缺少必要参数'
+            })
+        
+        success = paper_manager.merge_paper_data(keep_id, remove_id)
+        
+        if success:
+            return jsonify({
+                'success': True,
+                'message': '论文合并成功'
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'message': '论文合并失败'
+            })
+    
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'message': f'合并失败: {str(e)}'
+        })
+
+@app.route('/api/delete-paper/<int:paper_id>', methods=['DELETE'])
+def delete_paper(paper_id):
+    """API: 删除论文"""
+    try:
+        conn = sqlite3.connect(paper_manager.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('DELETE FROM papers WHERE id = ?', (paper_id,))
+        
+        if cursor.rowcount > 0:
+            conn.commit()
+            conn.close()
+            return jsonify({
+                'success': True,
+                'message': '论文删除成功'
+            })
+        else:
+            conn.close()
+            return jsonify({
+                'success': False,
+                'message': '论文不存在'
+            })
+    
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'message': f'删除失败: {str(e)}'
+        })
+
 
 if __name__ == '__main__':
     print("🚀 启动论文管理系统")

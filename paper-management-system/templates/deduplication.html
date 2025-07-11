@@ -1,0 +1,288 @@
+
+<!-- 创建 templates/deduplication.html -->
+{% extends "base.html" %}
+
+{% block title %}论文去重管理{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-copy"></i> 论文去重管理</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h4 class="text-primary">{{ stats.total_papers }}</h4>
+                            <p class="text-muted">总论文数</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h4 class="text-success">{{ stats.papers_with_doi }}</h4>
+                            <p class="text-muted">有DOI的论文</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h4 class="text-warning">{{ stats.duplicate_doi_groups }}</h4>
+                            <p class="text-muted">DOI重复组</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stat-card">
+                            <h4 class="text-info">{{ stats.duplicate_title_groups }}</h4>
+                            <p class="text-muted">标题重复组</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <button id="auto-deduplicate-btn" class="btn btn-danger">
+                        <i class="fas fa-magic"></i> 自动去重（基于DOI）
+                    </button>
+                    <button class="btn btn-secondary" onclick="location.reload()">
+                        <i class="fas fa-sync"></i> 刷新数据
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if doi_duplicates %}
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-exclamation-triangle text-warning"></i> DOI重复论文</h5>
+            </div>
+            <div class="card-body">
+                {% for duplicate in doi_duplicates %}
+                    <div class="duplicate-group mb-4">
+                        <h6 class="text-danger">
+                            <i class="fas fa-copy"></i> DOI: {{ duplicate.doi }}
+                            <span class="badge bg-danger">{{ duplicate.count }} 篇重复</span>
+                        </h6>
+                        <div class="row">
+                            {% for paper in duplicate.papers %}
+                                <div class="col-md-6 mb-3">
+                                    <div class="card duplicate-paper">
+                                        <div class="card-body">
+                                            <h6 class="card-title">
+                                                <a href="{{ url_for('paper_detail', paper_id=paper[0]) }}" 
+                                                   class="text-decoration-none">
+                                                    {{ paper[1] or paper[2] or '无标题' }}
+                                                </a>
+                                            </h6>
+                                            <p class="card-text">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-file"></i> {{ paper[3] }}<br>
+                                                    <i class="fas fa-clock"></i> 更新: {{ paper[5] }}
+                                                </small>
+                                            </p>
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="{{ url_for('paper_detail', paper_id=paper[0]) }}" 
+                                                   class="btn btn-outline-primary">
+                                                    <i class="fas fa-eye"></i> 查看
+                                                </a>
+                                                <button class="btn btn-outline-danger delete-paper-btn" 
+                                                        data-id="{{ paper[0] }}"
+                                                        data-title="{{ paper[1] or paper[2] or '无标题' }}">
+                                                    <i class="fas fa-trash"></i> 删除
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if title_duplicates %}
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="fas fa-exclamation-circle text-info"></i> 标题重复论文（可能重复）</h5>
+            </div>
+            <div class="card-body">
+                {% for duplicate in title_duplicates %}
+                    <div class="duplicate-group mb-4">
+                        <h6 class="text-info">
+                            <i class="fas fa-copy"></i> 标题: {{ duplicate.title[:100] }}...
+                            <span class="badge bg-info">{{ duplicate.count }} 篇可能重复</span>
+                        </h6>
+                        <div class="row">
+                            {% for paper in duplicate.papers %}
+                                <div class="col-md-6 mb-3">
+                                    <div class="card duplicate-paper">
+                                        <div class="card-body">
+                                            <h6 class="card-title">
+                                                <a href="{{ url_for('paper_detail', paper_id=paper[0]) }}" 
+                                                   class="text-decoration-none">
+                                                    {{ paper[1] or paper[2] or '无标题' }}
+                                                </a>
+                                            </h6>
+                                            <p class="card-text">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-file"></i> {{ paper[3] }}<br>
+                                                    <i class="fas fa-fingerprint"></i> DOI: {{ paper[4] or '无DOI' }}<br>
+                                                    <i class="fas fa-clock"></i> 更新: {{ paper[6] }}
+                                                </small>
+                                            </p>
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="{{ url_for('paper_detail', paper_id=paper[0]) }}" 
+                                                   class="btn btn-outline-primary">
+                                                    <i class="fas fa-eye"></i> 查看
+                                                </a>
+                                                <button class="btn btn-outline-danger delete-paper-btn" 
+                                                        data-id="{{ paper[0] }}"
+                                                        data-title="{{ paper[1] or paper[2] or '无标题' }}">
+                                                    <i class="fas fa-trash"></i> 删除
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if not doi_duplicates and not title_duplicates %}
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="alert alert-success text-center">
+            <i class="fas fa-check-circle fa-3x mb-3"></i>
+            <h4>恭喜！</h4>
+            <p>没有发现重复的论文。您的论文库很干净！</p>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+$(document).ready(function() {
+    // 自动去重按钮
+    $('#auto-deduplicate-btn').click(function() {
+        if (confirm('确定要自动去重吗？这将删除所有DOI重复的旧版本论文，且不可恢复！')) {
+            const btn = $(this);
+            const originalText = btn.html();
+            
+            btn.html('<i class="fas fa-spinner fa-spin"></i> 处理中...');
+            btn.prop('disabled', true);
+            
+            $.ajax({
+                url: '/api/auto-deduplicate',
+                type: 'POST',
+                success: function(response) {
+                    if (response.success) {
+                        alert(response.message);
+                        location.reload();
+                    } else {
+                        alert('去重失败: ' + response.message);
+                    }
+                },
+                error: function() {
+                    alert('去重失败: 服务器错误');
+                },
+                complete: function() {
+                    btn.html(originalText);
+                    btn.prop('disabled', false);
+                }
+            });
+        }
+    });
+    
+    // 删除论文按钮
+    $('.delete-paper-btn').click(function() {
+        const paperId = $(this).data('id');
+        const paperTitle = $(this).data('title');
+        
+        if (confirm(`确定要删除论文"${paperTitle}"吗？此操作不可恢复！`)) {
+            const btn = $(this);
+            const originalText = btn.html();
+            
+            btn.html('<i class="fas fa-spinner fa-spin"></i>');
+            btn.prop('disabled', true);
+            
+            $.ajax({
+                url: `/api/delete-paper/${paperId}`,
+                type: 'DELETE',
+                success: function(response) {
+                    if (response.success) {
+                        alert(response.message);
+                        location.reload();
+                    } else {
+                        alert('删除失败: ' + response.message);
+                    }
+                },
+                error: function() {
+                    alert('删除失败: 服务器错误');
+                },
+                complete: function() {
+                    btn.html(originalText);
+                    btn.prop('disabled', false);
+                }
+            });
+        }
+    });
+});
+</script>
+{% endblock %}
+
+{% block styles %}
+<style>
+.stat-card {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.stat-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.duplicate-group {
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.duplicate-paper {
+    height: 100%;
+}
+
+.duplicate-paper .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.duplicate-paper .btn-group {
+    margin-top: auto;
+}
+
+.badge {
+    font-size: 0.8rem;
+}
+</style>
+{% endblock %}

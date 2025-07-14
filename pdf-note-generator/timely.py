@@ -2,13 +2,13 @@ import time
 from datetime import datetime
 import subprocess
 
-stop_time = datetime(2025, 7, 11, 0, 35, 00)
+stop_time = datetime(2025, 7, 14, 0, 35, 00)
 
 # 指定的特定指令
 def specific_command():
     # 直接指定输入输出目录
-    input_dir = '/home/jia/snap/zotero-snap/common/Zotero/storage/'
-    output_dir = './output_notes/'
+    input_dir = '/home/jia/PaperReader/read-special-pdf/pdf-json-checker/output/orphaned_pdfs'
+    output_dir = '/home/jia/PaperReader/read-special-pdf/pdf-json-outputs'
 
     command = [
         'python3', 'main_optimized.py',

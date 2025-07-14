@@ -18,7 +18,7 @@ from urllib.parse import quote
 app = Flask(__name__)
 app.secret_key = 'paper-manager-secret-key'
 app.config['JSON_FOLDER'] = 'json_papers'  # JSON文件存储文件夹
-app.config['DATABASE'] = 'papers.db'
+app.config['DATABASE'] = '../papers.db'
 
 # 配置PDF文件夹路径
 PDF_FOLDER = 'pdfs'
@@ -28,7 +28,7 @@ os.makedirs(app.config['JSON_FOLDER'], exist_ok=True)
 class PaperManager:
     """论文管理核心类"""
     
-    def __init__(self, db_path='papers.db'):
+    def __init__(self, db_path='../papers.db'):
         self.db_path = db_path
         self.init_database()
     
@@ -661,17 +661,24 @@ class PaperManager:
 
 
 
+
     def find_duplicate_papers(self):
         """查找重复论文（基于DOI）"""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
         
-        # 查找有相同DOI的论文组
+        # 查找有相同DOI的论文组，排除空值和"Not available"
         cursor.execute('''
             SELECT doi, COUNT(*) as count, GROUP_CONCAT(id) as ids
             FROM papers 
-            WHERE doi != '' AND doi IS NOT NULL
-            GROUP BY doi 
+            WHERE doi IS NOT NULL 
+            AND doi != '' 
+            AND doi != 'Not available'
+            AND doi NOT LIKE '%Not available%'
+            AND doi NOT LIKE '%not available%'
+            AND doi NOT LIKE '%DOI: Not available%'
+            AND doi NOT LIKE '%DOI:Not available%'
+            GROUP BY LOWER(TRIM(doi))
             HAVING COUNT(*) > 1
             ORDER BY count DESC
         ''')
@@ -683,7 +690,7 @@ class PaperManager:
             
             # 获取这些重复论文的详细信息
             cursor.execute('''
-                SELECT id, title_cn, title_en, file_name, created_at, updated_at
+                SELECT id, title_cn, title_en, file_name, created_at, updated_at, doi
                 FROM papers 
                 WHERE id IN ({})
                 ORDER BY updated_at DESC

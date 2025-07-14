@@ -75,7 +75,7 @@ class NoteGenerator:
             # Force English output
             system_prompt = "You are a professional information extractor. Return only pure JSON in English, no extra text or code blocks."
             data = {
-                "model": self.api_config.get('model', 'deepseek-reasoner'),
+                "model": self.api_config.get('model', 'deepseek-chat'),
                 "messages": [
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": f"{prompt}\n\nPaper content:\n{content}"}

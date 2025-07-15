@@ -1,0 +1,79 @@
+{
+  "file_name": "Zhao 等 - 2021 - Stability Analysis of Vehicle Platooning With Limited Communication Range and Random Packet Losses.pdf",
+  "generated_at": "2025-07-11 00:58:28",
+  "structured_info": {
+    "title_cn": "有限通信范围和随机丢包下的车辆编队稳定性分析",
+    "title_en": "Stability Analysis of Vehicle Platooning With Limited Communication Range and Random Packet Losses",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicle Platooning",
+      "Stability Analysis",
+      "Wireless Communications"
+    ],
+    "keywords": [
+      "Internal stability",
+      "longitudinal control",
+      "random packet losses",
+      "string stability",
+      "vehicle platooning"
+    ],
+    "abstract": "Control performance of vehicle platooning relies on the information flow topology and quality of wireless communications. In this article, we investigate the constant-time-headway-spacing-policy-based vehicle platooning problem, where multiple predecessors' information is used by the following vehicles and communication impairments, i.e., limited communication range and random packet losses, are considered. In this article, first, when the leading vehicle moves at a constant speed, we obtain the sufficient and necessary conditions on sampling time, control gains, and internal lag, to ensure the stability of the vehicle platoon based on matrix polynomials' stability for ideal communications. Second, for time-independent homogeneous random packet losses, we provide the upper bound for the loss rate to maintain convergence in expectation by matrix eigenvalue perturbation theory when no input is set for lossy information. We also provide sufficient conditions to guarantee mean-square convergence for heterogeneous time-independent random packet losses and show the convergence time for any given accuracy and probability. Third, when historically latest information is used for input, the sufficient and necessary conditions are provided to ensure the internal stability and string stability by Markov jump linear system theory. Furthermore, we discuss the controller design when no feasible solution exists to guarantee the string stability. Extensive numerical results validate our analysis.",
+    "methodology": "Matrix polynomial stability analysis for ideal communications; matrix eigenvalue perturbation theory for time-independent packet losses; Markov jump linear system theory for time-dependent packet losses; numerical validation through simulations.",
+    "conclusion": "The paper establishes sufficient and necessary conditions for internal stability under ideal communications, provides bounds for packet loss rates to maintain convergence, and guarantees string stability using historical information. Numerical results confirm the theoretical analysis.",
+    "authors": [
+      "Chengcheng Zhao",
+      "Lin Cai",
+      "Peng Cheng"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Internet of Things Journal",
+    "doi": "10.1109/JIOT.2020.3004573",
+    "bibtex_citation": "Zhao_Stability_2021",
+    "analysis": {
+      "Overview": "The paper analyzes stability in vehicle platooning systems with limited communication range and random packet losses, providing conditions for internal and string stability under various communication scenarios.",
+      "Background_and_Motivation": [
+        "Vehicle platooning enhances traffic throughput and fuel efficiency in intelligent transportation systems but faces challenges from wireless communication impairments.",
+        "To address how packet losses and limited communication range affect platoon stability when vehicles use multiple predecessors' information for control.",
+        "The authors emphasize the necessity of reliable platooning for safety applications and highlight the lack of analysis for general information flow topologies under imperfect communications.",
+        "The specific problem of packet losses in vehicular networks is linked to broader challenges in networked control systems, establishing significance through fuel reduction and collision avoidance benefits.",
+        "Contributes to control theory, networked systems, intelligent transportation, and vehicular IoT."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) Internal stability (platoon stability without disturbances); 2) String stability (error amplification prevention along the platoon); 3) Markov jump linear systems (modeling time-dependent packet losses).",
+        "Stability depends on communication quality; packet losses disrupt information flow, requiring theoretical bounds to maintain convergence; Markov chains capture temporal correlation in losses.",
+        "Assumptions: Homogeneous vehicles, leader moves at constant speed for internal stability analysis, packet losses are independent or Markovian.",
+        "Contributes theoretical conditions for stability under communication impairments, expanding knowledge in networked control for vehicular systems."
+      ],
+      "Methodology": [
+        "Matrix polynomials analyze stability under ideal communications; eigenvalue perturbation theory handles time-independent losses; Markov jump linear systems address time-dependent losses with historical data.",
+        "Novelty: First unified framework for platoon stability under range limitations and packet losses. Applicability: Explicit bounds guide parameter tuning. Rationality: Methods align with communication randomness and control requirements.",
+        "Simulation data with parameters like sampling time, control gains, packet loss rates. Preprocessing: Discretized vehicle dynamics. Representativeness: Captures key platooning challenges but assumes homogeneous vehicles.",
+        "Rigorous experimental design: Varied loss rates, platoon sizes, and disturbance scenarios. Evaluation metrics: Mean convergence time, spacing errors, spectral radius.",
+        "Follows networked control systems paradigm, emphasizing stability and robustness, which shapes the focus on deterministic bounds and probabilistic convergence."
+      ],
+      "Results": [
+        "Key results: Sufficient/necessary conditions for internal stability; upper bounds for packet loss rates to ensure convergence; conditions for mean-square and string stability using historical data.",
+        "Results are significant for platoon safety and efficiency. Reliability: Validated through extensive simulations showing error convergence. Stability holds under derived bounds but degrades with higher loss rates."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured argument: Problem formulation → stability analysis (ideal/time-independent/time-dependent cases) → string stability → numerical validation.",
+        "Key steps: 1) Derive stability conditions via matrix polynomials; 2) Apply perturbation theory for lossy cases; 3) Use Markov models for historical data; 4) Formulate string stability as optimization.",
+        "Strengths: Comprehensive coverage of communication scenarios. Weaknesses: Simplified loss models. Rebuttals addressed via convergence proofs and simulation robustness checks."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel stability conditions for general topologies, dual analysis of internal/string stability, validation under heterogeneous losses.",
+        "Limitations: Homogeneous vehicle assumption, computational complexity in Markov models, simplified packet loss models ignoring burst correlations.",
+        "Linear control paradigm constrains conclusions to nominal dynamics; nonlinearities (e.g., collisions) require separate handling."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on platoon robustness in IoT/transportation communities. Positions as bridge between control theory and vehicular networks.",
+        "Terminology: Technical (e.g., \"mean-square convergence\", \"Laplacian matrix\"). Rhetoric: Emphasizes necessity via fuel savings and safety. Tone: Analytical/formal.",
+        "Builds authority through citations of foundational control/platooning works. Motivations: Highlight gaps in prior topology-limited studies."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Derived stability conditions enable reliable platooning under communication impairments; numerical results confirm theoretical bounds.",
+        "Future work: Heterogeneous vehicles, real-world data integration, collision avoidance strategies, and reduced-complexity algorithms for large-scale platoons."
+      ]
+    }
+  }
+}

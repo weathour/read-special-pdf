@@ -1,0 +1,79 @@
+{
+  "file_name": "Ma 等 - 2024 - IEEE 802.11 VANETs for Safety of Autonomous Driving QoS Requirements & Benchmarking.pdf",
+  "generated_at": "2025-07-14 12:35:17",
+  "structured_info": {
+    "title_cn": "IEEE 802.11 车载自组网络在自动驾驶安全中的服务质量要求与基准测试",
+    "title_en": "IEEE 802.11 VANETs for Safety of Autonomous Driving: QoS Requirements Benchmarking",
+    "category": "Vehicular Communication",
+    "topics": [
+      "VANETs",
+      "Autonomous Driving",
+      "QoS Requirements"
+    ],
+    "keywords": [
+      "vehicular ad hoc networks",
+      "autonomous driving vehicle",
+      "safety",
+      "quality of service"
+    ],
+    "abstract": "It is anticipated that wireless vehicular ad hoc networks (VANETs) can further enhance the safety of autonomous vehicles. Recently, two major standards for the next generation of VANET technologies have been suggested and tested: IEEE 802.11p bd and 3GPP NR-V2X. Compared with human driving VANET, autonomous driving VANET poses big challenges for more stringent requirements on reliability and delay of message transmissions. Up to date, the quality of service (QoS) requirements of VANETs for the safety services of autonomous driving vehicles have not been investigated systematically. Whether or not the current proposed communication systems can meet such high QoS requirements is unclear. This paper reviews the communication requirements for safety use cases, and the QoS requirements for level 5 autonomous driving VANETs are deduced. Then, the QoS of IEEE 802.11-based VANETs, including 802.11p, 802.11bd, and other 802.11 cutting-edge versions, are evaluated by simulations and analyses on a few selected safety use cases and benchmarked against the corresponding QoS requirements. The numerical results reveal that the current IEEE 802.11p bd cannot meet the QoS requirements for some selected safety applications in autonomous driving vehicles. However, IEEE 802.11 systems with new enhancements can potentially support safety services with assured QoS.",
+    "methodology": "Simulation and analytical modeling of IEEE 802.11-based VANETs (802.11p, 802.11bd, and 802.11ad) under various vehicular environments to evaluate QoS metrics such as reliability, delay, and channel busy percentage.",
+    "conclusion": "Current IEEE 802.11p/bd VANETs meet delay requirements but fail to meet stringent reliability requirements for some autonomous driving safety applications under adverse conditions. Enhanced IEEE 802.11 systems with higher bandwidth and advanced modulation can potentially support these requirements.",
+    "authors": [
+      "Xiaomin Ma",
+      "Shengli Ding",
+      "Tingyu Zhang"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall)",
+    "doi": "10.1109/VTC2024-Fall63153.2024.10757808",
+    "bibtex_citation": "Ma_IEEE802.11_2024",
+    "analysis": {
+      "Overview": "The paper investigates the QoS requirements for autonomous driving VANETs and benchmarks current IEEE 802.11-based systems against these requirements.",
+      "Background_and_Motivation": [
+        "Autonomous driving vehicles require highly reliable and low-latency communication for safety applications.",
+        "Existing VANET standards (IEEE 802.11p/bd and 3GPP NR-V2X) may not meet the stringent QoS needs of autonomous driving.",
+        "The authors highlight the gap in systematic evaluation of QoS requirements for autonomous driving VANETs.",
+        "The study connects specific safety use cases to broader challenges in vehicular communication.",
+        "Contributes to vehicular communication and autonomous driving research."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "QoS Requirements: Defined metrics like reliability, delay, and message update rate for autonomous driving.",
+        "VANET Technologies: Evaluates IEEE 802.11p, 802.11bd, and advanced versions.",
+        "Assumes Log-normal shadowing channel model and worst-case vehicular environments.",
+        "Provides empirical insights into the capabilities of current and future VANET technologies."
+      ],
+      "Methodology": [
+        "Combines NS2 simulations and analytical modeling to evaluate QoS metrics.",
+        "Novelty lies in benchmarking against deduced QoS requirements for autonomous driving.",
+        "Uses Log-normal shadowing channel model with empirical parameters.",
+        "Rigorous experimental design with worst-case scenarios and best-effort parameters.",
+        "Follows a performance evaluation paradigm common in communication systems research."
+      ],
+      "Results": [
+        "IEEE 802.11p/bd meets delay requirements but fails reliability requirements for some safety applications.",
+        "IEEE 802.11ad with higher bandwidth meets both delay and reliability requirements.",
+        "Results are significant for future VANET design but may vary under different environmental conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured argument: Review QoS requirements → Evaluate current systems → Benchmark results.",
+        "Key steps: Define requirements, simulate performance, compare with benchmarks.",
+        "Strengths: Comprehensive evaluation; Weaknesses: Limited to specific use cases and environments."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Systematic evaluation, clear benchmarking, and practical insights.",
+        "Limitations: Assumes worst-case scenarios, may not generalize to all environments.",
+        "Theoretical paradigm focuses on performance metrics, potentially overlooking other factors like cost or deployment challenges."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the paper within ongoing discussions on VANETs for autonomous driving.",
+        "Uses technical terminology and cites key standards and prior work.",
+        "Builds authority through references to IEEE and 3GPP standards."
+      ],
+      "Conclusions_and_Implications": [
+        "Current IEEE 802.11p/bd systems need enhancements to meet autonomous driving QoS requirements.",
+        "Future work should explore dynamic QoS requirements and advanced technologies like 1024-QAM or full-duplex communication."
+      ]
+    }
+  }
+}

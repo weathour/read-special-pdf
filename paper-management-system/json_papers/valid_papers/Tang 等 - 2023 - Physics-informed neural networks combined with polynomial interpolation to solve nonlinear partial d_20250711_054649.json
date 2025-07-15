@@ -1,0 +1,79 @@
+{
+  "file_name": "Tang 等 - 2023 - Physics-informed neural networks combined with polynomial interpolation to solve nonlinear partial d.pdf",
+  "generated_at": "2025-07-11 05:46:49",
+  "structured_info": {
+    "title_cn": "基于多项式插值的物理信息神经网络求解非线性偏微分方程",
+    "title_en": "Physics-informed neural networks combined with polynomial interpolation to solve nonlinear partial differential equations",
+    "category": "Machine Learning",
+    "topics": [
+      "Physics-Informed Neural Networks",
+      "Partial Differential Equations",
+      "Numerical Methods"
+    ],
+    "keywords": [
+      "Machine learning",
+      "Physics-informed neural networks",
+      "Partial differential equations",
+      "Polynomial interpolation"
+    ],
+    "abstract": "In this paper, we utilise the physics-informed neural networks (PINN) combined with interpolation polynomials to solve nonlinear partial differential equations and for simplicity, the resulted neural network is termed as polynomial interpolation physics-informed neural networks (PI-PINN). Classically, the neural network is expressed as a power series by optimization of the coefficients to get an approximate solution of the partial differential equations (PDEs). Due to well-defined approximate properties of orthogonal polynomials, orthogonal polynomials are used to construct the neural network. Compared with PINN, PI-PINN clearly has a simple structure and is easy to be understood. We carry out some numerical experiments, including parabolic partial differential equations, hyperbolic partial differential equations and an application in fluid mechanics. By these investigations, it is further demonstrated that the PI-PINN structure is effective in solving nonlinear partial differential equations. Further, investigations on reverse problems are taken and accurate results are obtained.",
+    "methodology": "Combines physics-informed neural networks (PINN) with polynomial interpolation, using power series or orthogonal polynomials (Legendre and Chebyshev) to construct neural networks for solving PDEs. PDE constraints are embedded in the loss function, optimized via gradient-based algorithms.",
+    "conclusion": "PI-PINN is effective for solving nonlinear PDEs, with a simpler structure than PINN, achieving high accuracy in forward and inverse problems across various PDE types, including Burgers, Sine-Gordon, and Allen-Cahn equations.",
+    "authors": [
+      "Siping Tang",
+      "Xinlong Feng",
+      "Wei Wu",
+      "Hui Xu"
+    ],
+    "publication_year": "2023",
+    "venue": "Computers and Mathematics with Applications",
+    "doi": "10.1016/j.camwa.2022.12.008",
+    "bibtex_citation": "Tang_Physics-informed_2023",
+    "analysis": {
+      "Overview": "Introduces PI-PINN, a method combining physics-informed neural networks with polynomial interpolation for solving nonlinear partial differential equations, demonstrating its effectiveness through numerical experiments.",
+      "Background_and_Motivation": [
+        "Research addresses challenges in solving PDEs using machine learning, such as slow convergence and complexity in traditional PINN.",
+        "Motivation is to develop a simpler neural network structure to reduce hyperparameter tuning and improve computational efficiency.",
+        "Authors emphasize the necessity by highlighting limitations in existing PINN approaches and the broad applicability of PDEs in science and engineering.",
+        "Relates the specific problem of PDE solving to the broader challenge of computational efficiency in scientific computing, establishing significance through real-world applications like fluid mechanics.",
+        "Contributes to Machine Learning, Computational Mathematics, and Fluid Dynamics."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: PI-PINN (Polynomial Interpolation Physics-Informed Neural Networks) uses polynomial basis functions; Orthogonal Polynomials (e.g., Legendre, Chebyshev) enhance approximation; Loss Function incorporates PDE constraints.",
+        "Logical relationships: PI-PINN replaces neural network layers with polynomial expansions, where orthogonal polynomials provide better approximation properties, and the loss function enforces physical laws.",
+        "Assumptions: PDE solutions can be approximated by polynomials; the method is applicable to various PDE types; synthetic data from exact solutions suffices for validation.",
+        "Contributes a novel methodology to the field by simplifying network architecture and improving accuracy for PDE solving."
+      ],
+      "Methodology": [
+        "Core methods involve constructing neural networks using polynomial series or orthogonal polynomials, embedding PDE residuals in the loss function, and optimizing with algorithms like Adam or L-BFGS.",
+        "Novelty lies in the simplicity and reduced parameter tuning; applicability is demonstrated for parabolic, hyperbolic PDEs, and fluid dynamics; rationality is supported by approximation theory.",
+        "Data sources are synthetic, derived from exact solutions; preprocessing includes random sampling via Latin Hypercube Sampling; representativeness is adequate for validation but limited to controlled scenarios.",
+        "Experimental design includes numerical tests on multiple PDEs with L2 error metrics; rigor is moderate, with clear test cases but no comparison to non-ML methods.",
+        "Follows the physics-informed machine learning paradigm, affecting the research by integrating physical laws directly into the learning process."
+      ],
+      "Results": [
+        "Key results: High accuracy in solving Burgers, Sine-Gordon, and Allen-Cahn equations; effective parameter discovery in inverse problems; improved pressure accuracy in Kovasznay flow.",
+        "Results are significant for demonstrating PI-PINN's efficiency; reliability is shown through low L2 errors; stability is consistent across different PDE types and Reynolds numbers."
+      ],
+      "Argumentation_and_Logic": [
+        "Argument structure: Introduces PINN limitations, proposes PI-PINN, validates with numerical experiments, and concludes effectiveness.",
+        "Key steps: Motivation from PINN drawbacks, description of PI-PINN methodology, experimental validation on forward/inverse problems, and future work.",
+        "Strengths: Clear logical flow and empirical support; weaknesses include limited discussion on failure cases; potential rebuttals on scalability are addressed by suggesting future work on complex geometries."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Simplified network structure, high accuracy in PDE solving, applicability to both forward and inverse problems.",
+        "Limitations: Untested on irregular geometries or high-dimensional problems; computational time varies with polynomial type.",
+        "Theoretical constraints: Assumption of polynomial approximability may limit conclusions for highly discontinuous solutions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances PINN research by introducing a polynomial-based variant; positioned within machine learning for scientific computing discourse.",
+        "Uses technical terminology (e.g., 'orthogonal polynomials', 'loss function'); tone is formal and optimistic; rhetorical strategies include empirical validation and citations to establish credibility.",
+        "Authors build authority by citing foundational PINN works and related methods; motivations include situating PI-PINN as an improvement over existing techniques."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: PI-PINN is a simple, effective method for nonlinear PDEs, validated through diverse numerical experiments.",
+        "Future research: Extend to complex geometries, higher dimensions, and real-world data; explore more orthogonal polynomials and irregular domains."
+      ]
+    }
+  }
+}

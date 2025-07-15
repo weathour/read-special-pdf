@@ -1,0 +1,77 @@
+{
+  "file_name": "Rosário和Dias - 2023 - How has data-driven marketing evolved Challenges and opportunities with emerging technologies.pdf",
+  "generated_at": "2025-07-14 12:43:54",
+  "structured_info": {
+    "title_cn": "数据驱动营销的演变：新兴技术的挑战与机遇",
+    "title_en": "How has data-driven marketing evolved: Challenges and opportunities with emerging technologies",
+    "category": "Marketing",
+    "topics": [
+      "Data-driven Marketing",
+      "Customer Relationship Management",
+      "Big Data"
+    ],
+    "keywords": [
+      "Data-driven Marketing",
+      "Customer relationship management",
+      "Customer data",
+      "Big data"
+    ],
+    "abstract": "This paper explores data-driven marketing, its benefits, and challenges to provide insights and a framework for business leaders and marketers to leverage in their marketing efforts. Using a systematic literature review with bibliometric analysis, we examined a sample of 98 studies indexed in SCOPUS to identify research activity on this topic until May 2023. Data-driven marketing and communications have gained popularity as companies and marketers prioritize leveraging consumer and market data to strategize and make informed decisions. Adopting and integrating various technologies into the company s systems is crucial for companies aiming to achieve a sustainable competitive advantage. By analyzing and interpreting customer data, companies can implement customer-centered marketing initiatives that enhance their experience and satisfaction with the brand, thus strengthening company-customer relationships. However, data-driven marketing faces several challenges, including consumer privacy concerns, data poisoning, information quality issues, and the need for adequate organizational changes.",
+    "methodology": "Systematic literature review with bibliometric analysis (SLRBA) of 98 studies indexed in SCOPUS.",
+    "conclusion": "Data-driven marketing enhances customer relationship management and facilitates customer journey mapping, personalization, data-driven decision-making, and value co-creation. However, it faces challenges such as consumer privacy concerns, data poisoning, information quality issues, and inadequate organizational changes.",
+    "authors": [
+      "Alb erico Travassos Ros ario",
+      "Joana Carmo Dias"
+    ],
+    "publication_year": "2023",
+    "venue": "International Journal of Information Management Data Insights",
+    "doi": "10.1016/j.jjimei.2023.100203",
+    "bibtex_citation": "Rosario_How_2023",
+    "analysis": {
+      "Overview": "The paper provides a comprehensive review of data-driven marketing, focusing on its evolution, benefits, challenges, and the role of emerging technologies. It employs a systematic literature review with bibliometric analysis to synthesize findings from 98 studies.",
+      "Background_and_Motivation": [
+        "The research addresses the rapid technological advancements and the increasing sophistication of modern-day customers, who resist standardization in favor of individualization.",
+        "The motivation is to explore how companies can leverage consumer and market data to make informed decisions and develop effective marketing strategies.",
+        "The authors argue for the necessity of data-driven marketing by highlighting its potential to improve company growth and performance.",
+        "The paper relates the specific problem of data-driven marketing to the broader challenge of achieving sustainable competitive advantage in a digital era.",
+        "The study contributes to the fields of marketing, business management, and information technology."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include data-driven marketing, customer relationship management, and big data analytics.",
+        "The logical relationship network shows how data-driven marketing leverages customer data to enhance marketing strategies and customer experiences.",
+        "Key assumptions include the availability of quality data and the willingness of organizations to adopt data-driven practices.",
+        "The paper contributes to the knowledge system by providing a framework for data-driven marketing and identifying gaps for future research."
+      ],
+      "Methodology": [
+        "The core research method is a systematic literature review with bibliometric analysis, using the Scopus database.",
+        "The methodology is novel in its comprehensive approach to synthesizing large volumes of data and identifying evolutionary trends in data-driven marketing.",
+        "Data sources include 98 studies from Scopus, with inclusion criteria focusing on peer-reviewed journal articles, conference papers, and other reputable sources.",
+        "The experimental design is rigorous, with a clear protocol for data extraction and analysis, and evaluation metrics include citation analysis and thematic clustering.",
+        "The research follows a data-driven paradigm, emphasizing the importance of empirical evidence in marketing decision-making."
+      ],
+      "Results": [
+        "Key results include the identification of major benefits (e.g., personalization, CRM) and challenges (e.g., privacy concerns, data quality) of data-driven marketing.",
+        "The results are significant as they provide actionable insights for marketers, and their reliability is supported by the systematic review process."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first defining data-driven marketing, then discussing its benefits and challenges, and finally concluding with future research directions.",
+        "Key steps include the systematic review process, bibliometric analysis, and thematic synthesis of findings.",
+        "Strengths include the comprehensive coverage of literature and clear presentation of findings. Weaknesses include the limitation to Scopus database only."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the systematic approach and the identification of key trends and gaps in data-driven marketing.",
+        "Limitations include the focus on Scopus database only, which may exclude relevant studies from other sources.",
+        "The theoretical paradigm constrains the conclusions by focusing primarily on empirical data-driven approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper plays a significant role in the disciplinary discourse by synthesizing existing research and identifying future directions.",
+        "The authors use specific terminology related to data-driven marketing and employ a formal, academic tone.",
+        "Authority is built through extensive citations and a clear, structured argument."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the benefits and challenges of data-driven marketing and the need for ethical considerations.",
+        "Future research should focus on developing sophisticated algorithms, better attribution models, and ethical guidelines for data-driven marketing."
+      ]
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "file_name": "Oliveira 等 - 2021 - Co-Design of Consensus-Based Approach and Reliable Communication Protocol for Vehicular Platoon Cont.pdf",
+  "generated_at": "2025-07-14 12:41:10",
+  "structured_info": {
+    "title_cn": "基于共识的车辆编队控制与可靠通信协议的协同设计",
+    "title_en": "Co-Design of Consensus-Based Approach and Reliable Communication Protocol for Vehicular Platoon Control",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicular Platoon Control",
+      "Consensus Algorithms",
+      "Reliable Communication Protocols"
+    ],
+    "keywords": [
+      "Vehicular Platoon",
+      "String Stability",
+      "VANET",
+      "Cooperative Adaptive Cruise Control",
+      "Reliable Data Dissemination"
+    ],
+    "abstract": "Automated and coordinated vehicle platoon driving is challenging as the complexity of vehicle control and the presence of unreliable wireless inter-vehicle communication. This subject has an interdisciplinary nature, involving control theories, vehicle dynamics, and communication. Due to the constant interaction between control logic and communication topology, a co-design approach for the controller and for reliable communication protocol becomes necessary. This paper describes the AddP-CACC - a consensus-based solution to vehicle platoons. The proposed solution turns the communication topology into a design parameter that dynamically reconfigures the controller. In addition, the controller automatically compensates for outdated information caused by network losses and delays. AddP-CACC was implemented in the PLEXE tool and was compared with other related works. Simulation results have shown the robustness and performance of the proposed solution in various scenarios that would include realistic propagation conditions with interference caused by other vehicles. The results have also evidenced the ability of the proposed solution to maintain a stable vehicular platoon by using different communication topologies, different vehicle flows, even in the presence of strong interferences, delays, and fading conditions.",
+    "methodology": "The paper proposes a co-design approach integrating a consensus-based decentralized cooperative control strategy with a reliable communication protocol (AddP). The control strategy dynamically reconfigures based on network conditions, and the protocol ensures reliable data dissemination under varying network densities.",
+    "conclusion": "The AddP-CACC solution demonstrates robustness and performance in maintaining vehicular platoon stability under various scenarios, including realistic propagation conditions and interference. The co-design approach effectively addresses communication delays and network losses, ensuring reliable platoon control.",
+    "authors": [
+      "Renê Oliveira",
+      "Carlos Montez",
+      "Azzedine Boukerche",
+      "Michelle S. Wangham"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2021.3101489",
+    "bibtex_citation": "Oliveira_Co-Design_2021",
+    "analysis": {
+      "Overview": "The paper presents a co-design approach for vehicular platoon control, integrating a consensus-based control strategy with a reliable communication protocol to address challenges in automated and coordinated vehicle platoon driving.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of vehicular platoon control in the presence of unreliable wireless communication, emphasizing the interdisciplinary nature of the problem involving control theories, vehicle dynamics, and communication.",
+        "The motivation stems from the need for a solution that dynamically reconfigures the controller based on communication topology and compensates for network losses and delays.",
+        "The authors highlight the necessity and urgency of the research by pointing out the limitations of existing approaches that do not adequately handle communication delays and network issues.",
+        "The problem is linked to broader challenges in Intelligent Transportation Systems (ITS), emphasizing safety, traffic efficiency, and reduced emissions.",
+        "The paper contributes to control theory, vehicular dynamics, and wireless communication disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include vehicular platoon control, consensus algorithms, and reliable data dissemination.",
+        "The logical relationship involves using consensus algorithms to achieve platoon stability while leveraging reliable communication to handle network uncertainties.",
+        "Key assumptions include the availability of real-time vehicle state information and the presence of a reliable communication infrastructure.",
+        "The paper contributes a novel co-design approach that integrates control and communication, enhancing the robustness of platoon control systems."
+      ],
+      "Methodology": [
+        "The methodology involves a consensus-based control strategy integrated with the AddP reliable communication protocol, tested using the PLEXE simulation tool.",
+        "The novelty lies in the dynamic reconfiguration of the controller based on network conditions and the use of a reliable protocol to handle communication uncertainties.",
+        "Data sources include simulated vehicular networks with varying traffic flows and communication conditions.",
+        "Experimental design includes comparisons with existing solutions under different scenarios, ensuring rigorous evaluation.",
+        "The research follows a control theory paradigm, focusing on stability and performance in networked systems."
+      ],
+      "Results": [
+        "Key results demonstrate the robustness of AddP-CACC in maintaining platoon stability under various communication topologies and traffic flows.",
+        "The results are significant for practical deployment, showing reliability and stability even in dense traffic and high interference scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors argue that existing solutions lack dynamic adaptation to network conditions, leading to potential instability.",
+        "Key steps include the design of the consensus-based controller, integration with the AddP protocol, and performance evaluation.",
+        "Strengths include the comprehensive evaluation under realistic conditions, while limitations include the reliance on simulation-based validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the dynamic adaptation of the controller and the reliable communication protocol.",
+        "Limitations include the simulation-based validation and the assumption of ideal sensor data.",
+        "The choice of control theory constrains the conclusions to scenarios where communication delays are within manageable limits."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on vehicular platoon control and reliable communication, emphasizing practical applicability.",
+        "Terminology includes technical terms from control theory and wireless communication, with a formal tone.",
+        "Citations are used to establish authority and contextualize the research within existing literature."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that AddP-CACC effectively addresses the challenges of platoon control in unreliable communication environments.",
+        "Future research could explore real-world deployment and security enhancements for the communication protocol."
+      ]
+    }
+  }
+}

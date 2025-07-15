@@ -1,0 +1,78 @@
+{
+  "file_name": "Goh 等 - 2019 - Toward Automated Vehicle Control Beyond the Stability Limits Drifting Along a General Path.pdf",
+  "generated_at": "2025-07-10 12:08:03",
+  "structured_info": {
+    "title_cn": "迈向稳定性极限之外的自动化车辆控制：沿一般路径的漂移",
+    "title_en": "Toward Automated Vehicle Control Beyond the Stability Limits: Drifting Along a General Path",
+    "category": "Control Systems",
+    "topics": [
+      "Automated Drifting",
+      "Vehicle Control",
+      "Path Tracking"
+    ],
+    "keywords": [
+      "Autonomous Vehicles",
+      "Drifting Control",
+      "Nonlinear Control",
+      "Vehicle Dynamics"
+    ],
+    "abstract": "Professional drivers in drifting competitions demonstrate accurate control over a car's position and sideslip while operating in an open-loop unstable region of state-space. Could similar approaches help autonomous cars contend with excursions past the stable handling limits, thereby improving overall safety outcomes? As a first step toward answering that question, this paper presents a novel controller framework for automated drifting along a path. The controller is derived for the general case, without reference to a nearby equilibrium point. This leads to the physically insightful result that one can use the rotation rate of the vehicle's velocity vector to track the path, while simultaneously using the yaw acceleration to stabilize sideslip. Nonlinear model inversion, in concert with low-level wheelspeed control, is then used to achieve these required state derivatives over a broad range of conditions. Experiments on MARTY, a modified 1981 DMC DeLorean, demonstrate excellent tracking of a path with varying curvature, speed, and sideslip. Comparisons to a test run without wheelspeed control highlight the importance of accounting for the rear saturated-tire wheelspeed dynamics.",
+    "methodology": "Development of a controller using nonlinear model inversion for path tracking and sideslip stabilization, cascaded with low-level wheelspeed control, and experimental validation on a modified vehicle.",
+    "conclusion": "The controller enables accurate automated drifting along general paths by leveraging velocity vector rotation for path tracking and yaw acceleration for sideslip stabilization. Experimental results confirm effectiveness across varying curvatures, speeds, and sideslip angles, with wheelspeed control critical for robustness. This approach expands autonomous vehicle capabilities beyond stable handling limits.",
+    "authors": [
+      "Jonathan Y. Goh",
+      "Tushar Goel",
+      "J. Christian Gerdes"
+    ],
+    "publication_year": "2020",
+    "venue": "Journal of Dynamic Systems, Measurement, and Control",
+    "doi": "10.1115/1.4045320",
+    "bibtex_citation": "Goh_Toward_2020",
+    "analysis": {
+      "Overview": "The paper presents a controller framework for autonomous vehicles to perform drifting maneuvers beyond stability limits, enabling path tracking and sideslip stabilization without relying on equilibrium points, validated experimentally.",
+      "Background_and_Motivation": [
+        "Research background involves challenges in autonomous vehicle control when exceeding handling limits, leading to instability due to input coupling and unstable sideslip dynamics.",
+        "Motivation stems from professional drivers' ability to drift accurately, suggesting automation could improve safety in extreme conditions like inclement weather or difficult terrain.",
+        "Authors argue necessity by highlighting limitations of prior controllers restricted to specific equilibriums, emphasizing the need for generalizable solutions to fully utilize state-space for autonomous vehicles.",
+        "The specific problem of tracking complex paths while drifting is linked to the broader challenge of expanding autonomous vehicle maneuverability, establishing significance through potential safety and performance benefits.",
+        "This paper contributes to control systems, robotics, and vehicle dynamics, with interdisciplinary relevance to autonomous driving technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include: (1) Path tracking using the rotation rate of the velocity vector, (2) Sideslip stabilization via yaw acceleration relative to the velocity vector, (3) Nonlinear model inversion to map state derivatives to actuator inputs.",
+        "The logical relationship shows that velocity vector rotation controls path tracking, while yaw rate adjustments stabilize sideslip; these are integrated through a cascaded control structure.",
+        "Key assumptions include rear tire saturation during drifting, small course errors, and negligible velocity derivative contributions in error dynamics.",
+        "The paper makes a methodological contribution by introducing a novel controller framework that enables general trajectory drifting, advancing knowledge in vehicle control beyond stable regimes."
+      ],
+      "Methodology": [
+        "Core methods involve deriving desired state derivatives for error dynamics, using nonlinear inversion of a force-based single-track model, and implementing cascaded wheelspeed control to handle saturated-tire dynamics.",
+        "Methodology is novel for generalizing drifting control without equilibrium assumptions, applicable and rational due to physical insights and experimental validation across diverse conditions.",
+        "Data comes from experiments on the MARTY test vehicle, with characteristics like varying curvature (1/7 to 1/20 m), speed (25-45 km/h), and sideslip (up to -40 deg); preprocessing includes numerical inversion and path generation, with data representative of real-world drifting scenarios.",
+        "Experimental design is rigorous, using quasi-equilibrium paths and comparisons with/without wheelspeed control; evaluation metrics (e.g., lateral error, sideslip tracking) are adequate for assessing performance.",
+        "The research follows a control theory paradigm, particularly dynamic surface control and zero-dynamics analysis, shaping the perspective to prioritize stability and physical interpretability."
+      ],
+      "Results": [
+        "Key results show excellent path tracking (RMS lateral error 0.18 m) and sideslip stabilization (RMS error 2.4 deg) in experiments, with stable velocity dynamics and reduced oscillations when wheelspeed control is active.",
+        "Results are significant for demonstrating feasible automated drifting; reliability is supported by empirical validation, and stability is evidenced by consistent performance across varying conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with problem motivation, derives the controller theoretically, details implementation, presents experimental validation, and concludes with implications.",
+        "Key steps include: (1) Deriving error dynamics for path and sideslip, (2) Using model inversion for actuator commands, (3) Validating with experiments and comparisons.",
+        "Strengths include clear physical insights and experimental evidence; weaknesses involve naive handling of infeasible commands. Authors address rebuttals by contrasting with prior work and showing wheelspeed control's importance."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel cascaded controller, experimental validation on a full-scale vehicle, and the insight that velocity stabilizes naturally in drifting regimes.",
+        "Limitations include assumptions like rear tire saturation, simplified vehicle modeling, and untested performance in all conditions (e.g., very high yaw rates at low speeds).",
+        "The control theory paradigm constrains conclusions to the modeled dynamics, limiting generalizability to unmodeled scenarios like varying friction coefficients."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper advances disciplinary discourse by enabling control beyond stability limits, positioning itself against prior equilibrium-based approaches and advocating for expanded autonomous capabilities.",
+        "Authors use specialized terminology (e.g., 'sideslip', 'yaw acceleration', 'nonlinear inversion'), a technical tone, and rhetorical strategies like analogies to normal driving to enhance clarity.",
+        "Authority is built through citations of foundational work (e.g., Velenis et al., Hindiyeh et al.), with motivations to contextualize innovations and highlight gaps filled by this research."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions confirm the controller's effectiveness for automated drifting on general paths, with wheelspeed control essential for robustness, and stable velocity dynamics emerging from coupling.",
+        "Future research should explore trajectory planning beyond quasi-equilibrium approximations, extend to more complex scenarios, and investigate applications like mitigating understeer or loose-surface driving."
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "Yang 等 - 2021 - A Survey of Autonomous Underwater Vehicle Formation Performance, Formation Control, and Communicati.pdf",
+  "generated_at": "2025-07-10 04:26:44",
+  "structured_info": {
+    "title_cn": "自主水下航行器编队综述：性能、编队控制与通信能力",
+    "title_en": "A Survey of Autonomous Underwater Vehicle Formation: Performance, Formation Control, and Communication Capability",
+    "category": "Robotics and Control",
+    "topics": [
+      "Autonomous Underwater Vehicles",
+      "Formation Control",
+      "Underwater Communication",
+      "Network Topologies",
+      "Survey"
+    ],
+    "keywords": [
+      "Autonomous underwater vehicle (AUV)",
+      "communication constraint",
+      "network topology",
+      "formation control"
+    ],
+    "abstract": "Autonomous underwater vehicles (AUVs) are submersible underwater vehicles controlled by onboard computers. AUV formation is a cooperative control which focuses on controlling multiple AUVs to move in a group while executing tasks. In contrast to a single AUV, multi-AUV formation represents higher efficiency and better stability for many applications, such as oil and gas industries, hydrographic surveys, and military missions, etc. To achieve better formation, there are several key factors, including AUV performance, formation control, and communication capability. However, most studies in the field of AUV formation mainly focus on formation control methods. We observe that the research of communication capability and AUV performance of multiple AUV formation is still in an early stage. It is beneficial to researchers to present a comprehensive survey of the state of the art of AUV formation research and development. In this paper, we study AUV, formation control, and underwater acoustic communication capability in detail. We propose a classification framework with three dimensions, including AUV performance, formation control, and communication capability. This framework provides a comprehensive classification method for future AUV formation research. It also can be used to compare different methods and help engineers choose suitable formation methods for various applications. Moreover, our survey discusses formation architecture with communication constraints and we identify some common misconceptions and questionable research for formation control related to communication.",
+    "methodology": "Literature survey and classification framework based on three dimensions: AUV performance, formation control, and communication capability.",
+    "conclusion": "This paper presents the first integrated survey on AUV formation for interdisciplinary audiences, proposing a three-dimensional classification framework. It identifies gaps in communication capability and AUV performance research, summarizes existing AUV configurations and acoustic modem products, highlights common misconceptions in formation control studies, and provides future research directions for practical implementation.",
+    "authors": [
+      "Yue Yang",
+      "Yang Xiao",
+      "Tieshan Li"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "doi": "10.1109/COMST.2021.3059998",
+    "bibtex_citation": "Yang_Survey_2021",
+    "analysis": {
+      "Overview": "This survey comprehensively analyzes AUV formation systems, focusing on performance metrics, control strategies, and communication constraints. It establishes a classification framework to integrate these dimensions and critiques existing research gaps.",
+      "Background_and_Motivation": [
+        "Underwater exploration faces challenges due to harsh environments (e.g., ocean currents, limited visibility), where single AUVs struggle with complex tasks like large-area surveys or military missions.",
+        "The paper addresses the lack of interdisciplinary integration in AUV formation research, where studies predominantly focus on control methods while neglecting communication limitations and AUV hardware capabilities.",
+        "The authors emphasize the urgency by highlighting impractical assumptions in existing literature (e.g., bounded delays, simplified noise models) that hinder real-world deployment.",
+        "The specific problem of fragmented research is linked to broader challenges in marine robotics: efficiency, reliability, and scalability of multi-AUV systems for critical applications like resource exploration and environmental monitoring.",
+        "Contributes to robotics, control theory, underwater acoustic communication, and marine engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "AUV Formation: Cooperative control of multiple AUVs maintaining predefined spatial patterns during task execution.",
+          "Formation Control: Strategies (e.g., leader-follower, virtual structure) to regulate relative position, velocity, and orientation.",
+          "Communication Capability: Underwater acoustic constraints (delay, noise, bandwidth) affecting information exchange."
+        ],
+        "Formation control depends on communication capability for coordination and AUV performance for maneuverability; communication constraints directly impact control stability and topology design.",
+        "Key assumptions: Acoustic communication is primary; AUVs are homogeneous in capability; formation improves task efficiency/stability over single-AUV operations.",
+        "Contributes a taxonomy framework for systematic comparison of methods and bridges knowledge gaps between control theory and communication engineering."
+      ],
+      "Methodology": [
+        "Core methods include literature synthesis, classification of AUVs (biomimetic, gliders, torpedo-shaped), formation control (architectures, strategies, controllability), and communication constraints (delay, noise, bandwidth).",
+        "The three-dimensional framework is novel for holistic analysis; methodology is applicable for method comparison but may oversimplify real-world variability.",
+        "Data from academic papers and manufacturer specs (e.g., Table II for modems); preprocessing involves categorizing technical features; representativeness is limited to surveyed sources.",
+        "Analysis is qualitative; lacks empirical validation; evaluation metrics focus on theoretical robustness rather than field performance.",
+        "Follows control theory and communication engineering paradigms, emphasizing mathematical modeling but constrained by idealized assumptions."
+      ],
+      "Results": [
+        "Key findings: Proposed classification framework; identified dominance of formation control research; summarized AUV/modem capabilities; highlighted communication misconceptions.",
+        "Results are significant for unifying interdisciplinary research; reliability is moderate (literature-based); stability concerns arise from unvalidated delay/noise models."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Background → Classification → Interdisciplinary analysis → Misconceptions → Future directions.",
+        "Key steps: Establish significance → Propose framework → Analyze interactions → Critique literature → Suggest improvements.",
+        "Strengths: Comprehensive structure; effective gap identification. Weaknesses: Limited empirical counterarguments; handles rebuttals via logical critique of assumptions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First integrated survey; practical framework; misconception identification; tutorial value.",
+        "Methodology boundaries exclude some real-world variables (e.g., dynamic oceanography); control theory paradigms constrain conclusions by assuming idealized communication."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as a corrective to fragmented research; advocates interdisciplinary rigor in marine robotics.",
+        "Uses technical terminology from control/communication; critical tone toward impractical assumptions; builds authority through extensive citations and manufacturer data.",
+        "Citations establish foundational knowledge; motivations include directing research toward practical solutions."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Interdisciplinary integration is essential; communication constraints must be realistically modeled; framework enables method comparison.",
+        "Future research: Robust control under communication uncertainties; improved protocols for varying delays; hardware-in-loop testing; scalability studies."
+      ]
+    }
+  }
+}

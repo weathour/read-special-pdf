@@ -1,0 +1,81 @@
+{
+  "file_name": "He 等 - 2023 - MFLP-PINN A physics-informed neural network for multiaxial fatigue life prediction.pdf",
+  "generated_at": "2025-07-11 08:06:10",
+  "structured_info": {
+    "title_cn": "MFLP-PINN: 基于物理信息的神经网络用于多轴疲劳寿命预测",
+    "title_en": "MFLP-PINN: A physics-informed neural network for multiaxial fatigue life prediction",
+    "category": "Mechanical Engineering / Machine Learning",
+    "topics": [
+      "Multiaxial Fatigue",
+      "Physics-Informed Neural Networks",
+      "Life Prediction"
+    ],
+    "keywords": [
+      "Critical plane approach",
+      "Life prediction",
+      "Multiaxial fatigue",
+      "Neural networks",
+      "Physics-informed"
+    ],
+    "abstract": "In this study, a physics-informed neural network (MFLP-PINN), combining multiaxial fatigue critical plane model and the neural network, is proposed for life prediction. First, a multiaxial fatigue life prediction model based on the critical plane approach is proposed, which takes the equivalent strain amplitude on the critical plane as the main damage parameter, and considers the normal strain energy on the critical plane. Then, a total of four prediction models including the new critical plane model are integrated into the loss function of a neural network to build the MFLP-PINN. The accuracy of the proposed critical plane criterion and the MFLP-PINN are respectively verified using multiaxial fatigue test data of three materials. Finally, the results show that the prediction model integrated into the loss function has a significant impact on the neural network prediction. For a specific material, integrating a life prediction model with good prediction ability to this material as the loss function into a neural network model is helpful to improve prediction accuracy. Conversely, integrating a life prediction model with poor prediction ability to this material as the loss function into a neural network model will reduce the prediction accuracy.",
+    "methodology": "Proposes a new critical plane model using equivalent strain amplitude and normal strain energy; integrates four fatigue models (SWT, Xue, FS, Proposed) into neural network loss functions to create Physics-Informed Neural Networks (PINNs); validates with experimental data from three materials (AISI316L, GH4169, TC4) under multiaxial loading.",
+    "conclusion": "1) New critical plane model outperforms SWT, Xue, and FS models. 2) PINNs improve accuracy when integrated with well-performing physical models. 3) Integrating poorly performing physical models reduces neural network accuracy. 4) Methodology provides a unified framework for physics-data integration.",
+    "authors": [
+      "GaoYuan He",
+      "YongXiang Zhao",
+      "ChuLiang Yan"
+    ],
+    "publication_year": "2023",
+    "venue": "European Journal of Mechanics A Solids",
+    "doi": "10.1016/j.euromechsol.2022.104889",
+    "bibtex_citation": "He_MFLP-PINN_2023",
+    "analysis": {
+      "Overview": "Proposes a physics-informed neural network (MFLP-PINN) for multiaxial fatigue life prediction by integrating critical plane models into neural network loss functions, validated with experimental data from three materials.",
+      "Background_and_Motivation": [
+        "Multiaxial fatigue failure is prevalent in engineering structures, with existing models (stress/strain/energy-based) having limitations in accuracy.",
+        "Need to improve prediction accuracy by combining physical models with data-driven approaches while reducing data dependency.",
+        "Critical plane approaches have physical significance but show material-dependent performance gaps; neural networks require large datasets without physical constraints.",
+        "Bridges solid mechanics with machine learning to address generalization issues in fatigue prediction.",
+        "Contributes to mechanical engineering, materials science, and applied machine learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Critical Plane: Plane of maximum shear strain with maximum normal strain where damage initiates.",
+        "Physics-Informed Neural Network (PINN): Embeds physical equations (fatigue models) as loss constraints to guide learning.",
+        "Damage Parameter (FP): Combines equivalent shear strain amplitude and normalized normal strain energy.",
+        "FP links shear/normal strains through energy dissipation; PINN couples physical laws with data-driven optimization.",
+        "Assumes crack initiation follows maximum shear planes; damage accumulation is energy-driven; material behavior is quantifiable via strain parameters.",
+        "Provides methodological innovation by hybridizing domain knowledge with deep learning for improved generalizability."
+      ],
+      "Methodology": [
+        "Develops new critical plane model; integrates four models (SWT/Xue/FS/Proposed) as PINN loss components; uses stratified sampling for dataset splitting.",
+        "Novelty: First integration of multiaxial fatigue models into PINNs. Applicable to low-cycle fatigue. Rationale: Physical constraints reduce data needs.",
+        "Data: Multiaxial tests on AISI316L, GH4169, TC4 alloys. Preprocessing: 80/20 split per loading path. Representativeness: Covers proportional/non-proportional loading.",
+        "Experimental design: Compares models via TRMS/TN errors. Metrics: Scatter bands and error indices validated rigor.",
+        "Follows energy-based damage mechanics paradigm, affecting focus on strain-energy relationships over crack-growth dynamics."
+      ],
+      "Results": [
+        "Proposed critical plane model achieved lowest TRMS errors (AISI316L:1.41, GH4169:1.65, TC4:1.38). PINNs outperformed NNs when integrated with accurate physical models (e.g., FS model reduced TRMS by 38% for GH4169).",
+        "Results significant: New model consistently outperformed benchmarks. Reliability: Verified across three materials. Stability: Maintained accuracy under varied loading paths."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: 1) Propose model 2) Validate model 3) Develop PINN 4) Compare PINN/NN.",
+        "Key steps: Derive damage parameter → verify with experimental data → integrate into loss function → test generalization.",
+        "Strengths: Clear causal chain from physics to ML. Weaknesses: Limited exploration of weight-tuning in loss functions. Rebuttals: Addresses model limitations via material-specific validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovations: Novel damage parameter; first PINN application in multiaxial fatigue; demonstrable accuracy gains.",
+        "Limitations: Model performance depends on material; mean stress effects not fully addressed; requires pre-validated physical models.",
+        "Energy-based paradigm restricts conclusions to strain-controlled failure, omitting fracture-mechanics perspectives."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances fatigue prediction discourse by merging ML with mechanics. Positions PINNs as solutions to data scarcity.",
+        "Technical terminology (e.g., 'non-proportional hardening'); authoritative tone; contrasts 'poor' vs 'good' models rhetorically.",
+        "Builds authority through 50+ citations spanning mechanics and ML literature, showing interdisciplinary grounding."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: 1) New critical plane model is superior 2) PINNs enhance accuracy when physical models are well-matched 3) Mismatched models degrade performance.",
+        "Future work: Incorporate loading-specific models; address mean stress effects; optimize loss-function weighting; extend to fracture-mechanics frameworks."
+      ]
+    }
+  }
+}

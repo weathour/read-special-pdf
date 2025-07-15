@@ -1,0 +1,78 @@
+{
+  "file_name": "Bai 等 - 2022 - The application of improved physics-informed neural network (IPINN) method in finance.pdf",
+  "generated_at": "2025-07-11 05:35:33",
+  "structured_info": {
+    "title_cn": "改进的物理信息神经网络（IPINN）方法在金融中的应用",
+    "title_en": "The application of improved physics-informed neural network (IPINN) method in finance",
+    "category": "Computational Finance",
+    "topics": [
+      "Neural Networks",
+      "Option Pricing Models",
+      "Numerical Solutions of PDEs"
+    ],
+    "keywords": [
+      "Neural network",
+      "Ivancevic option pricing",
+      "Black Scholes model",
+      "Numerical solution"
+    ],
+    "abstract": "With the development of computers and neural networks, the traditional methods of solving differential equations have been greatly developed. Typical examples are the differential equations of population, finance, infectious disease and traffic problems solved by neural network method. Recently, the popular physics-informed neural network (PINN) method has been proved to be able to solve the numerical solution of PDEs. Based on the PINN method, this paper proposes an improved PINN method (IPINN) that is to introduce local adaptive activation function of neurons into PINN network to improve the performance of neural network and successfully applies the IPINN method to the Ivancevic option pricing model and Black Scholes model in finance. The rogue wave solution and soliton solution of the Ivancevic option pricing model, and the numerical solution of the Black Scholes model are solved, respectively. At the same time, it can be shown that the IPINN method has the characteristics of faster convergence, more stability and higher accuracy than the PINN method by the results of numerical experiments.",
+    "methodology": "Improved Physics-Informed Neural Network (IPINN) with local adaptive activation functions and slope recovery term in loss function, optimized via Adam and L-BFGS algorithms.",
+    "conclusion": "IPINN successfully solved financial rogue waves and solitons in the Ivancevic model and European options in the Black-Scholes model, demonstrating faster convergence, greater stability, and higher accuracy than traditional PINN.",
+    "authors": [
+      "Yuexing Bai",
+      "Temuer Chaolu",
+      "Sudao Bilige"
+    ],
+    "publication_year": "2022",
+    "venue": "Nonlinear Dynamics",
+    "doi": "10.1007/s11071-021-07146-z",
+    "bibtex_citation": "Bai_The_2022",
+    "analysis": {
+      "Overview": "Proposes an improved neural network method (IPINN) to solve partial differential equations in finance, specifically targeting option pricing models with enhanced convergence and accuracy.",
+      "Background_and_Motivation": [
+        "Traditional PDE solution methods (e.g., Lie symmetry, Hirota bilinear) are complex and struggle with high-order/nonlinear equations; neural networks offer promising alternatives but face convergence issues in PINN implementations.",
+        "To address PINN's slow convergence and instability for complex financial PDEs like Ivancevic and Black-Scholes models by introducing neuron-wise adaptive activation functions.",
+        "Highlight computational inefficiencies of existing methods and demonstrate PINN's limitations through experimental failures, emphasizing the urgency for robust algorithms in financial mathematics.",
+        "Position financial PDE solutions as critical for market prediction and risk management, linking to broader challenges in computational physics and quantitative finance.",
+        "Computational mathematics, machine learning, and financial engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "IPINN: Modifies PINN by adding neuron-specific activation slopes; Activation Slope: Scalable parameter per neuron optimized during training; Slope Recovery Term: Regularization component in loss function accelerating convergence.",
+        "Adaptive activation parameters dynamically adjust neuron responses during optimization, interacting with loss terms to minimize PDE residuals and boundary errors.",
+        "Neural networks can approximate complex PDE solutions; financial models (Ivancevic/Black-Scholes) sufficiently represent market dynamics; adaptive activations universally improve convergence.",
+        "Methodological innovation: Enhances neural network architecture for PDE solving, contributing new techniques to physics-informed machine learning."
+      ],
+      "Methodology": [
+        "Core: IPINN architecture with local adaptive activations (hyperbolic tangent base), slope recovery term in loss function, Latin Hypercube Sampling for collocation points, and Adam/L-BFGS optimization.",
+        "Novelty: Neuron-wise activation slopes provide dynamic adaptability; applicability validated across financial PDEs; rational through error reduction and convergence speed metrics.",
+        "Data: Exact solutions for Ivancevic (rogue waves/solitons); finite difference methods for Black-Scholes. Preprocessing: Equidistant node discretization. Representativeness ensured via comparison to analytical solutions.",
+        "Rigorous experimental design: Relative L²-error comparisons between IPINN/PINN, fixed network layers/neurons, consistent training points. Evaluation: Convergence curves, pointwise solution accuracy, and loss minimization.",
+        "Follows physics-informed machine learning paradigm, prioritizing PDE residual minimization within neural network optimization frameworks."
+      ],
+      "Results": [
+        "Solved Ivancevic model's financial rogue waves (L²-error: 7.04e-02) and solitons (L²-error: 2.60e-03); Black-Scholes European options (call: 7.19e-03, put: 8.49e-03 errors). IPINN consistently outperformed PINN in speed/accuracy.",
+        "Results significant for financial wave modeling; reliability confirmed by exact solution alignment; stability evidenced by error reduction across varied architectures."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem introduction → PINN limitations → IPINN formulation → financial applications (Ivancevic/Black-Scholes) → comparative experiments → conclusions.",
+        "Steps: 1) Motivate IPINN via PINN shortcomings; 2) Derive architecture modifications; 3) Validate on finance models; 4) Quantify improvements against baselines.",
+        "Strength: Empirical validation across multiple models; weakness: Limited complexity scalability. Rebuttals: Acknowledge future challenges in high-order PDEs while demonstrating current efficacy."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: 20-30% faster convergence than PINN; novel applications to financial rogue waves; architectural innovation via adaptive activations.",
+        "Limitations: Performance degrades for highly nonlinear/high-order PDEs; training stability sensitive to initialization.",
+        "Physics-informed ML paradigm constrains solutions to data-driven approximations, limiting theoretical generality."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances computational finance discourse by merging neural networks with financial PDEs, positioning IPINN as a state-of-the-art solver.",
+        "Technical terminology (e.g., 'slope recovery term', 'collocation points'); persuasive tone emphasizing improvements; rhetorical contrast between PINN/IPINN performance.",
+        "Authority built through citations of foundational PINN work (Raissi et al.) and mathematical finance literature, establishing methodological lineage."
+      ],
+      "Conclusions_and_Implications": [
+        "IPINN effectively solves financial PDEs with superior speed/accuracy versus PINN, enabling new applications like rogue wave modeling.",
+        "Future work: Extend to high-dimensional/complex PDEs; explore hybrid optimization methods; test on real-market data."
+      ]
+    }
+  }
+}

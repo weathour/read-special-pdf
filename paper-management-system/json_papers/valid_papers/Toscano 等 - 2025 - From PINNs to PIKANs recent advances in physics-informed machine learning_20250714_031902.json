@@ -1,0 +1,86 @@
+{
+  "file_name": "Toscano 等 - 2025 - From PINNs to PIKANs recent advances in physics-informed machine learning.pdf",
+  "generated_at": "2025-07-14 03:19:02",
+  "structured_info": {
+    "title_cn": "从PINNs到PIKANs：物理信息机器学习的最新进展",
+    "title_en": "From PINNs to PIKANs: recent advances in physics-informed machine learning",
+    "category": "Machine Learning",
+    "topics": [
+      "Physics-Informed Neural Networks",
+      "Scientific Machine Learning",
+      "Differential Equations Solving"
+    ],
+    "keywords": [
+      "Physics-informed neural networks",
+      "Kolmogorov-Arnold networks",
+      "Optimization algorithms",
+      "Separable PINNs",
+      "Self-adaptive weights",
+      "Uncertainty quantification"
+    ],
+    "abstract": "Physics-Informed Neural Networks (PINNs) have emerged as a key tool in Scientific Machine Learning since their introduction in 2017, enabling the efficient solution of ordinary and partial differential equations using sparse measurements. Over the past few years, significant advancements have been made in the training and optimization of PINNs, covering aspects such as network architectures, adaptive refinement, domain decomposition, and the use of adaptive weights and activation functions. A notable recent development is the Physics-Informed Kolmogorov-Arnold Networks (PIKANS), which leverage a representation model originally proposed by Kolmogorov in 1957, offering a promising alternative to traditional PINNs. In this review, we provide a comprehensive overview of the latest advancements in PINNs, focusing on improvements in network design, feature expansion, optimization techniques, uncertainty quantification, and theoretical insights. We also survey key applications across a range of fields, including biomedicine, fluid and solid mechanics, geophysics, dynamical systems, heat transfer, chemical engineering, and beyond. Finally, we review computational frameworks and software tools developed by both academia and industry to support PINN research and applications.",
+    "methodology": "Review and synthesis of algorithmic developments in Physics-Informed Machine Learning (PIML), including modifications to representation models (MLPs, KANs), governing equation reformulations, and optimization techniques (adaptive weighting, domain decomposition). Focuses on Physics-Informed Neural Networks (PINNs) and Physics-Informed Kolmogorov-Arnold Networks (PIKANs) for solving forward/inverse problems in differential equations.",
+    "conclusion": "PINNs and PIKANs provide powerful frameworks for integrating physical laws with data-driven methods, enabling efficient solutions to differential equations in scenarios with incomplete knowledge and sparse measurements. Key advancements include novel network architectures, adaptive optimization, and uncertainty quantification, with broad applications across scientific domains. Future work should address scalability, high-dimensional problems, and theoretical guarantees.",
+    "authors": [
+      "Juan Diego Toscano",
+      "Vivek Oommen",
+      "Alan John Varghese",
+      "Zongren Zou",
+      "Nazanin Ahmadi Daryakenari",
+      "Chenxi Wu",
+      "George Em Karniadakis"
+    ],
+    "publication_year": "2025",
+    "venue": "Machine Learning for Computational Science and Engineering",
+    "doi": "10.1007/s44379-025-00015-1",
+    "bibtex_citation": "Toscano_From_2025",
+    "analysis": {
+      "Overview": "Comprehensive review of advancements in Physics-Informed Neural Networks (PINNs) and the introduction of Physics-Informed Kolmogorov-Arnold Networks (PIKANs) for solving ordinary/partial differential equations. Covers algorithmic improvements, applications across scientific domains, and software tools.",
+      "Background_and_Motivation": [
+        "Traditional numerical methods (e.g., FEM) struggle with data assimilation, incomplete boundary conditions, and high computational costs in real-world applications.",
+        "Need for frameworks that integrate physical laws with sparse/noisy data while avoiding mesh generation tyranny.",
+        "PINNs address the disconnect between physics-based models and purely data-driven methods by embedding governing equations as soft constraints via residual losses.",
+        "The rise of high-dimensional, multi-physics problems in science/engineering necessitates flexible, mesh-free solvers compatible with modern hardware.",
+        "Contributes to computational science, machine learning, and interdisciplinary fields (biomedicine, fluid dynamics, geophysics, etc.)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Physics-Informed Neural Networks (PINNs): MLPs incorporating PDE residuals via automatic differentiation.",
+        "Physics-Informed Kolmogorov-Arnold Networks (PIKANs): Leverage Kolmogorov's 1957 representation theorem for efficient function approximation.",
+        "Loss Function: Multi-objective formulation combining data residuals, PDE residuals, and boundary conditions.",
+        "Logical relationships: PIKANs extend PINNs via spline-based architectures; hard constraints (e.g., periodic BCs) link inputs to physical requirements; optimization balances residual terms.",
+        "Assumptions: Governing equations partially known; sparse/noisy data available; solutions continuous and differentiable.",
+        "Contribution: Synthesizes algorithmic advances and introduces PIKANs as a novel architecture, enhancing the field's knowledge base via review and innovation."
+      ],
+      "Methodology": [
+        "Core methods: Representation models (MLPs, KANs), automatic differentiation for derivatives, residual-based loss minimization. Techniques include domain decomposition, adaptive weighting, and sequential training.",
+        "Novelty: PIKANs reduce parameter counts; self-adaptive weights mitigate spectral bias; separable PINNs tackle high dimensions; fractional/stochastic extensions broaden applicability.",
+        "Data sources: Sparse/noisy experimental measurements (e.g., thermocouples, PIV/PTV). Preprocessing includes input normalization, Fourier feature expansions, and non-dimensionalization.",
+        "Rigor: Weak/variational formulations (vPINNs) and adaptive sampling improve stability; theoretical error bounds analyzed for fPINNs.",
+        "Theoretical paradigm: Rooted in universal approximation theory and numerical analysis; physics integration constrains solutions to physically plausible manifolds."
+      ],
+      "Results": [
+        "Key results: PINNs/PIKANs successfully solve forward/inverse problems in fluid mechanics, biomedicine, and materials science; achieve 60× speedups in high dimensions; infer hidden fields (e.g., temperature from velocity data).",
+        "Significance: Enable mesh-free solutions for complex geometries; outperform FEM in data assimilation. Reliability: Validated against DNS/FEM in turbulence and solid mechanics. Stability: Enhanced via causal training and residual connections."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Background → PIML framework → algorithmic pillars (representation, equations, optimization) → applications → theory/tools → outlook.",
+        "Key steps: Motivate PINNs via FEM limitations; introduce PIKANs as architecture upgrade; survey improvements; demonstrate cross-domain applicability; discuss scalability.",
+        "Strengths: Comprehensive coverage of 11,000+ citations; clear taxonomy. Weaknesses: Limited critique of reproducibility. Rebuttals: Contrasts with prior reviews by emphasizing algorithmic breadth and novel PIKANs."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Unifies physics with data; handles irregular domains/noisy inputs; open-source frameworks available. Innovations: PIKANs, adaptive weights, uncertainty quantification.",
+        "Limitations: Training instability in high-frequency regimes; high-order derivative inaccuracies; computational cost for fractional operators.",
+        "Paradigm constraints: Reliance on known governing equations limits purely discovery-based applications; mesh-free advantage diminishes with full-field data."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Positions as authoritative update to PINN literature, bridging algorithmic progress and applications. Cites 120+ papers to contextualize contributions.",
+        "Terminology: Uses \"residual loss,\" \"automatic differentiation,\" \"inverse problems\" to align with computational science. Rhetoric: Emphasizes urgency via real-world gaps (e.g., power electronics cooling).",
+        "Citations: Builds authority through foundational references (e.g., Raissi et al. 2019); motivates PIKANs via Kolmogorov's legacy."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: PINNs/PIKANs are transformative for scientific ML; algorithmic advances address training/expressivity issues; broad applicability proven across disciplines.",
+        "Future research: Scalability to exascale computing; theoretical guarantees for convergence; integration with symbolic AI; real-time control applications."
+      ]
+    }
+  }
+}

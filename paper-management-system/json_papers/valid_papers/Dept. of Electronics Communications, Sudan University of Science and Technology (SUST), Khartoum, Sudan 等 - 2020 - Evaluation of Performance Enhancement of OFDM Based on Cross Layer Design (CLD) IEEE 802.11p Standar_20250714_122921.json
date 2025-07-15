@@ -1,0 +1,79 @@
+{
+  "file_name": "Dept. of Electronics Communications, Sudan University of Science and Technology (SUST), Khartoum, Sudan 等 - 2020 - Evaluation of Performance Enhancement of OFDM Based on Cross Layer Design (CLD) IEEE 802.11p Standar.pdf",
+  "generated_at": "2025-07-14 12:29:21",
+  "structured_info": {
+    "title_cn": "基于跨层设计的IEEE 802.11p标准OFDM性能增强评估——车载自组网(VANETs)城市场景",
+    "title_en": "Evaluation of Performance Enhancement of OFDM Based on Cross Layer Design (CLD) IEEE 802.11p Standard for Vehicular Ad-hoc Networks (VANETs), City Scenario",
+    "category": "Wireless Communications",
+    "topics": [
+      "VANET",
+      "OFDM",
+      "Cross Layer Design"
+    ],
+    "keywords": [
+      "VANET",
+      "cross-layer",
+      "OFDM",
+      "DSRC",
+      "IEEE 802.11p"
+    ],
+    "abstract": "In recent years, Vehicular Ad hoc Network (VANET) plays an Intelligent important Transportation Systems (ITS) due to their impact in reducing traffic jams and increasing safety. Dissemination of emergency safety messages is an important function in VANET to realize safety applications. Therefore, short delay dissemination and reliable delivery are required in between vehicles. In fact, IEEE 802.11p is an IEEE physical and MAC standard which intended specially for vehicular communications. In this VANET standard, different physical layer transmission techniques are defined. The latest researches indicate the great potential of employing OFDM for VANET safety applications. In this paper, the performance of VANET city scenario is evaluated in terms of average throughput, delay and PDR. The proposed routing approach which named by Cross Layer Design (CLD) is based on sharing information between physical (PHY) and MAC layers in order to select the best path (route). From the simulation results, we can show that our proposed approach can achieve short delay and maximum Packet Deliver Ratio (PDR) in city environment by simultaneous transmission. The achieved results confirm the best PDR for our proposed technique when there is no movement of communicating vehicles. In addition, the proposed routing approach minimizes delay and hence maximizes comparing with other conventional routing protocols. In addition, a stable behaviour of PDR values is achieved by using CLD approach.",
+    "methodology": "Cross Layer Design (CLD) approach based on IEEE 802.11p OFDM, sharing information between physical (PHY) and MAC layers to select the best path (route). Simulation was conducted using MATLAB.",
+    "conclusion": "The proposed CLD approach based on OFDM improves VANET performance in city scenarios, achieving higher PDR and lower delay compared to conventional routing protocols, especially when vehicles are stationary.",
+    "authors": [
+      "Mayada Abdelgadir",
+      "Rashid A. Saeed"
+    ],
+    "publication_year": "2020",
+    "venue": "International Journal of Signal Processing Systems",
+    "doi": "10.18178/ijsps.8.1.1-7",
+    "bibtex_citation": "Abdelgadir_Evaluation_2020",
+    "analysis": {
+      "Overview": "The paper evaluates the performance of VANET in city scenarios using a Cross Layer Design (CLD) approach based on IEEE 802.11p OFDM, focusing on QoS metrics like PDR, throughput, and delay.",
+      "Background_and_Motivation": [
+        "VANETs are crucial for Intelligent Transportation Systems (ITS) to enhance safety and reduce traffic congestion.",
+        "The dynamic nature of VANETs and high vehicle speeds pose challenges for reliable communication, necessitating efficient routing protocols.",
+        "IEEE 802.11p is highlighted as a standard for vehicular communications, but traditional routing protocols perform poorly in VANETs.",
+        "The paper addresses the need for adaptive strategies to improve QoS in VANETs, particularly for safety applications.",
+        "The research contributes to wireless communications and vehicular network optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Cross Layer Design (CLD): Protocol design exploiting dependency between layers for performance gains.",
+        "Orthogonal Frequency Division Multiplexing (OFDM): PHY layer technique for robust communication in VANETs.",
+        "The logical relationship involves using CLD to enhance OFDM performance by optimizing routing decisions based on PHY and MAC layer information.",
+        "Assumes stable communication links and homogeneous node distribution in city scenarios.",
+        "The paper contributes a novel routing approach that improves QoS metrics in VANETs."
+      ],
+      "Methodology": [
+        "Simulation-based evaluation using MATLAB, focusing on PDR, throughput, and delay.",
+        "CLD approach integrates PHY and MAC layer information for routing decisions, offering novelty in VANET routing.",
+        "Uses Random Waypoint model for mobility and Two-ray propagation model for signal strength calculations.",
+        "Experimental design includes varying traffic density and vehicle movement scenarios to assess performance.",
+        "Follows IEEE 802.11p standards, ensuring relevance to vehicular communication paradigms."
+      ],
+      "Results": [
+        "Higher PDR and lower delay achieved with CLD, especially in stationary vehicle scenarios.",
+        "Results demonstrate stable PDR behavior and improved throughput under low traffic density."
+      ],
+      "Argumentation_and_Logic": [
+        "The paper argues that CLD enhances VANET performance by optimizing routing based on real-time PHY and MAC layer data.",
+        "Key steps include simulation setup, performance metric evaluation, and comparison with conventional protocols.",
+        "Strengths include clear performance improvements; limitations include assumptions about node distribution and mobility."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative CLD approach improves QoS metrics in VANETs.",
+        "Limitations include reliance on simulation and assumptions about urban traffic scenarios.",
+        "Theoretical focus on IEEE 802.11p may constrain applicability to other standards."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the research within VANET optimization discourse, citing prior work on OFDM and routing protocols.",
+        "Uses technical terminology and simulation results to build authority.",
+        "Citations emphasize the novelty and necessity of the proposed approach."
+      ],
+      "Conclusions_and_Implications": [
+        "CLD based on IEEE 802.11p OFDM improves VANET performance in city scenarios.",
+        "Future work could explore real-world implementations and hybrid routing protocols."
+      ]
+    }
+  }
+}

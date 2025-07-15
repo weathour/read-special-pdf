@@ -1,0 +1,81 @@
+{
+  "file_name": "Moradi-Pari 等 - 2023 - DSRC Versus LTE-V2X Empirical Performance Analysis of Direct Vehicular Communication Technologies.pdf",
+  "generated_at": "2025-07-14 12:37:17",
+  "structured_info": {
+    "title_cn": "DSRC与LTE-V2X：直接车辆通信技术的实证性能分析",
+    "title_en": "DSRC Versus LTE-V2X: Empirical Performance Analysis of Direct Vehicular Communication Technologies",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicular Communication",
+      "Wireless Communication",
+      "Road Safety"
+    ],
+    "keywords": [
+      "DSRC",
+      "LTE-V2X",
+      "V2V Communication",
+      "Performance Analysis",
+      "Field Tests"
+    ],
+    "abstract": "Vehicle-to-Vehicle (V2V) communication systems have an eminence potential to improve road safety and optimize traffic flow by broadcasting Basic Safety Messages (BSMs). Dedicated Short-Range Communication (DSRC) and LTE Vehicle-to-Everything (V2X) are two candidate technologies to enable V2V communication. DSRC relies on the IEEE 802.11p standard for its PHY and MAC layer while LTE-V2X is based on 3GPP’s Release 14 and operates in a distributed manner in the absence of cellular infrastructure. There has been considerable debate over the relative advantages and disadvantages of DSRC and LTE-V2X, aiming to answer the fundamental question of which technology is most effective in real-world scenarios for various road safety and traffic efficiency applications. In this paper, we present a comprehensive survey of these two technologies (i.e., DSRC and LTE-V2X) and related works. More specifically, we study the PHY and MAC layer of both technologies in the survey study and compare the PHY layer performance using a variety of field tests. First, we provide a summary of each technology and highlight the limitations of each in supporting V2X applications. Then, we examine their performance based on different metrics.",
+    "methodology": "The paper employs a combination of literature review and empirical field tests to compare DSRC and LTE-V2X technologies. Field tests were conducted using five connectivity-equipped test vehicles to evaluate reliability performances in various real driving scenarios, including different Line-Of-Sight (LOS) and Non-Line-Of-Sight (NLOS) channel scenarios.",
+    "conclusion": "The study concludes that enabling spatial diversity enhances both DSRC and LTE-V2X performance, extending communication ranges. LTE-V2X performs better with smaller packet sizes, while DSRC maintains reliability over longer distances with larger packets. Future research should focus on performance under congested scenarios and the integration of 5G technology for more bandwidth-demanding applications.",
+    "authors": [
+      "Ehsan Moradi-Pari",
+      "Danyang Tian",
+      "Mojtaba Bahramgiri",
+      "Samer Rajab",
+      "Sue Bai"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2023.3247339",
+    "bibtex_citation": "Moradi-Pari_DSRC_2023",
+    "analysis": {
+      "Overview": "The paper provides a comprehensive comparison between DSRC and LTE-V2X technologies for vehicular communication, focusing on their physical and MAC layer architectures, performance in various scenarios, and implications for road safety and traffic efficiency.",
+      "Background_and_Motivation": [
+        "The advent of V2X communication technologies aims to enhance situational awareness among road users by enabling information exchange among vehicles, infrastructure, and pedestrians.",
+        "The research is motivated by the debate over the relative advantages of DSRC and LTE-V2X, seeking to determine which technology is more effective for real-world V2X applications.",
+        "The authors argue for the necessity of this research by highlighting the limitations of each technology and the lack of comprehensive empirical comparisons.",
+        "The study relates the specific problem of technology selection to the broader challenge of improving road safety and traffic efficiency through reliable vehicular communication.",
+        "The paper contributes to the fields of wireless communication, intelligent transportation systems, and vehicular networks."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include DSRC (based on IEEE 802.11p) and LTE-V2X (based on 3GPP Release 14), focusing on their PHY and MAC layer designs.",
+        "The logical relationship between these concepts involves comparing their architectures, performance metrics, and suitability for different V2X applications.",
+        "Key assumptions include the reliability of field test results and the representativeness of the scenarios tested.",
+        "The paper contributes empirical data and performance analysis to the knowledge system of vehicular communication technologies."
+      ],
+      "Methodology": [
+        "The core methods include literature review, theoretical analysis, and empirical field tests using five test vehicles to evaluate communication range, packet delivery ratio, and reliability under various conditions.",
+        "The novelty lies in the comprehensive field tests comparing DSRC and LTE-V2X in real-world scenarios, including LOS and NLOS conditions.",
+        "Data sources include field test results from the Fowlerville Proving Ground in Michigan, with preprocessing steps ensuring consistency and representativeness.",
+        "Experimental design is rigorous, with multiple test scenarios and configurations to evaluate different performance metrics.",
+        "The research follows a practical engineering paradigm, focusing on real-world applicability and performance."
+      ],
+      "Results": [
+        "Key results show that LTE-V2X performs better with smaller packet sizes (200 bytes), while DSRC is more reliable with larger packets (1400 bytes). Spatial diversity enhances both technologies' performance.",
+        "The results are significant for designing V2X systems, demonstrating reliability and stability under various conditions, though limitations exist in NLOS scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first reviewing technologies, then presenting field test results, and finally discussing implications.",
+        "Key steps include technology overview, performance metrics definition, field test execution, and result analysis.",
+        "Strengths include comprehensive testing and clear presentation of results. Weaknesses include the lack of congestion scenario testing, which the authors acknowledge for future work."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include empirical field tests, detailed technology comparison, and practical insights for V2X deployment.",
+        "Limitations include the absence of congestion scenario testing and the focus on LTE-V2X without 5G integration.",
+        "The choice of theoretical paradigm constrains conclusions to current technologies, without exploring future advancements like 5G-NR."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within ongoing debates on V2X technologies, contributing empirical evidence to support technology selection.",
+        "Terminology is technical and precise, with a formal tone. Rhetorical strategies include comparative analysis and data-driven conclusions.",
+        "Citations build authority by referencing key standards, prior studies, and industry reports, establishing the paper's credibility."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the performance trade-offs between DSRC and LTE-V2X, emphasizing the need for scenario-specific technology selection.",
+        "Future research should explore congestion scenarios, 5G integration, and advanced applications like autonomous driving."
+      ]
+    }
+  }
+}

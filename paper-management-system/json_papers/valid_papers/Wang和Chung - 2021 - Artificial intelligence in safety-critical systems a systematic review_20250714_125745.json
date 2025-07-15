@@ -1,0 +1,83 @@
+{
+  "file_name": "Wang和Chung - 2021 - Artificial intelligence in safety-critical systems a systematic review.pdf",
+  "generated_at": "2025-07-14 12:57:45",
+  "structured_info": {
+    "title_cn": "安全关键系统中的人工智能：系统综述",
+    "title_en": "Artificial Intelligence in Safety-critical Systems: A Systematic Review",
+    "category": "Artificial Intelligence, Safety-critical Systems",
+    "topics": [
+      "Interpretable Method",
+      "Explain Model Behaviour",
+      "Safe Learning"
+    ],
+    "keywords": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Safety-critical System",
+      "Neural Network",
+      "Bayesian",
+      "Formal Verification",
+      "Adversarial Examples"
+    ],
+    "abstract": "Purpose This study is a systematic literature review of the application of Artificial Intelligence (AI) in safety-critical systems. The authors aim to present the current application status according to different AI techniques and propose some research directions and insights to promote its wider application. Design methodology approach A total of 92 articles were selected for this review through a systematic literature review along with a thematic analysis. Findings The literature is divided into three themes: interpretable method, explain model behaviour and safe learning. Among AI techniques, the most widely used are Bayesian networks and deep neural networks. In addition, given the huge potential in this field, four future research directions were also proposed. Practical implications This study is of vital interest to industry practitioners and regulators in safety-critical domain, as it provided a clear picture of the current status and pointed out that some AI techniques have great application potential. For those are inherently appropriate for use in safety-critical systems, regulators can conduct in-depth studies to validate and encourages their use in the industry. Originality value This is the first review of the application of AI in safety-critical systems in the literature. It marks the first step towards advancing AI in safety-critical domain.",
+    "methodology": "Systematic literature review and thematic analysis of 92 selected articles.",
+    "conclusion": "The review identified three main themes: interpretable methods, explain model behaviour, and safe learning. Bayesian networks and deep neural networks are the most widely used AI techniques. Future research directions include a holistic perspective, verification and validation, formal methods, and raising awareness of the term 'safety-critical'.",
+    "authors": [
+      "Yue Wang",
+      "Sai-Ho Chung"
+    ],
+    "publication_year": "2022",
+    "venue": "Industrial Management & Data Systems",
+    "doi": "10.1108/IMDS-07-2021-0419",
+    "bibtex_citation": "Wang_Artificial_2022",
+    "analysis": {
+      "Overview": "This paper provides a systematic review of the application of Artificial Intelligence (AI) in safety-critical systems, categorizing the literature into three themes: interpretable methods, explain model behaviour, and safe learning. It highlights the most widely used AI techniques and proposes future research directions.",
+      "Background_and_Motivation": [
+        "The rapid development of AI has realized its potential in various applications, but its reliability in safety-critical systems remains a challenge due to the 'black-box' nature and potential failures.",
+        "The research aims to address the limitations and challenges of applying AI in safety-critical systems, ensuring safety, reliability, and trustworthiness.",
+        "The authors argue for the necessity of understanding the current state of AI applications in safety-critical systems to avoid potential failures and promote wider adoption.",
+        "The paper relates the specific problem of AI reliability to broader challenges in system safety and dependability, emphasizing the significance of rigorous verification and validation.",
+        "The paper contributes to interdisciplinary fields including AI, computer science, engineering, and safety-critical systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Interpretable Method: AI techniques like Bayesian networks and decision trees that provide transparent decision-making processes.",
+        "Explain Model Behaviour: Focuses on neural networks, particularly addressing the 'black-box' problem through methods like rule extraction and formal verification.",
+        "Safe Learning: Reinforcement learning algorithms that ensure safety during exploration and interaction with the environment.",
+        "The logical relationship among these concepts involves ensuring transparency, reliability, and safety in AI applications for critical systems.",
+        "Key assumptions include the necessity of interpretability for trust, the vulnerability of neural networks to adversarial attacks, and the need for formal verification in safety-critical applications.",
+        "The paper contributes by providing a comprehensive review and thematic analysis, identifying gaps and proposing future directions for AI in safety-critical systems."
+      ],
+      "Methodology": [
+        "The core research method is a systematic literature review, following a four-stage process: planning, selection, extraction, and execution.",
+        "Thematic analysis was used to categorize the literature into three themes, ensuring a structured and reproducible approach.",
+        "Data sources include 92 articles from various scientific media, including conferences, journals, and arXiv preprints, covering a span of three decades.",
+        "The experimental design is rigorous, with clear criteria for article selection and quality appraisal, ensuring representativeness and relevance.",
+        "The research follows a qualitative thematic analysis paradigm, focusing on identifying and analyzing patterns within the literature."
+      ],
+      "Results": [
+        "Key results include the identification of Bayesian networks and deep neural networks as the most widely used AI techniques in safety-critical systems.",
+        "The literature is categorized into three themes: interpretable methods (35 papers), explain model behaviour (45 papers), and safe learning (8 papers), with additional discussion on a survey paper on ML assurance.",
+        "The results highlight the importance of formal verification, transparency, and safety in AI applications, with significant attention given to adversarial examples in DNNs."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a structured argument starting with the importance of AI in safety-critical systems, followed by challenges and current solutions, and concluding with future directions.",
+        "Key steps include the systematic review methodology, thematic analysis, and detailed discussion of each theme, supported by evidence from the selected literature.",
+        "Strengths include comprehensive coverage and clear categorization, while potential weaknesses may arise from the subjective nature of thematic analysis. The authors address potential rebuttals by emphasizing the rigor of their methodology and the breadth of literature covered."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First comprehensive review of AI in safety-critical systems, clear thematic categorization, and practical implications for industry and regulators.",
+        "Limitations: The review may not cover all emerging techniques due to the rapid evolution of AI, and the thematic analysis could be subjective.",
+        "The choice of focusing on interpretability and safety constrains the conclusions to these aspects, potentially overlooking other important factors in AI applications."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the disciplinary discourse by addressing the gap in systematic reviews of AI in safety-critical systems.",
+        "Specific terminology includes 'interpretable methods', 'black-box problem', and 'safe learning', with a formal and authoritative tone.",
+        "The authors build authority through extensive citations and references to prior work, emphasizing the novelty and significance of their review."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the current state of AI applications in safety-critical systems, the dominance of Bayesian networks and DNNs, and the need for further research in verification, formal methods, and interdisciplinary approaches.",
+        "Future research should focus on holistic lifecycle perspectives, scalable verification methods, and raising awareness of safety-critical terminology to avoid literature fragmentation."
+      ]
+    }
+  }
+}

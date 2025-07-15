@@ -1,0 +1,79 @@
+{
+  "file_name": "Tian 等 - 2022 - Multiagent Deep-Reinforcement-Learning-Based Resource Allocation for Heterogeneous QoS Guarantees fo.pdf",
+  "generated_at": "2025-07-10 01:33:31",
+  "structured_info": {
+    "title_cn": "基于多智能体深度强化学习的车载网络异构服务质量保障资源分配",
+    "title_en": "Multiagent Deep-Reinforcement-Learning-Based Resource Allocation for Heterogeneous QoS Guarantees for Vehicular Networks",
+    "category": "Wireless Communications and Networking",
+    "topics": [
+      "Resource Allocation",
+      "Vehicular Networks",
+      "Deep Reinforcement Learning"
+    ],
+    "keywords": [
+      "Deep reinforcement learning (DRL)",
+      "Heterogeneous applications",
+      "Multi-agent deep deterministic policy gradient (MADDPG)",
+      "Resource allocation"
+    ],
+    "abstract": "Vehicle-to-vehicle communications can offer direct information interaction, including security-centered information and entertainment information. However, the rapid proliferation of vehicles and the diversity of communications services demand for a more intelligent and efficient resource allocation framework to enhance network performance. In this article, a multi-agent deep reinforcement learning-based resource allocation framework is developed to jointly optimize the channel allocation and power control to satisfy the heterogeneous Quality-of-Service (QoS) requirements in heterogeneous vehicular networks. In the proposed framework, the utility maximization problem is formulated by considering two types of traffics, i.e., the strict ultrareliable and low-latency requirements for safety-centric applications and the high-capacity requirements for entertainment applications. The utility of each vehicular users is formulated as a multicriterion objective function by taking into account the heterogeneous traffic requirements. To overcome the drawbacks of the traditional totally centralized and distributed deep reinforcement learning-based resource allocation approaches, we propose a multi-agent deep deterministic policy gradient algorithm with centralized learning and decentralized execution to solve the formulated optimization problem. The normalization of the input states and reward functions is introduced to speed up the training and learning progress of the proposed algorithm. Simulation results show the superiority of the proposed algorithm in terms of the convergence and system performance through the comparison with the other methods and schemes for the delay-sensitive applications and delay-tolerant applications.",
+    "methodology": "Multi-agent deep deterministic policy gradient (MADDPG) algorithm with centralized learning and decentralized execution for joint channel allocation and power control optimization, using Markov Decision Process modeling and state/reward normalization.",
+    "conclusion": "The proposed MADDPG-based resource allocation framework effectively satisfies heterogeneous QoS requirements in vehicular networks, demonstrating superior convergence and system performance (throughput for delay-sensitive applications and transmission rate for delay-tolerant applications) compared to baseline methods.",
+    "authors": [
+      "Jie Tian",
+      "Qianqian Liu",
+      "Haixia Zhang",
+      "Dalei Wu"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Internet of Things Journal",
+    "doi": "10.1109/JIOT.2021.3089823",
+    "bibtex_citation": "Tian_Multiagent_2022",
+    "analysis": {
+      "Overview": "Proposes a multi-agent deep reinforcement learning framework for joint channel and power allocation in vehicular networks to satisfy heterogeneous QoS requirements for safety-critical (low-latency) and entertainment (high-capacity) applications.",
+      "Background_and_Motivation": [
+        "Vehicular networks face challenges in supporting diverse services with limited bandwidth; traditional optimization methods struggle with nonconvex problems and dynamic environments.",
+        "Need for intelligent resource allocation that handles heterogeneous QoS requirements in high-mobility scenarios where conventional approaches are computationally complex and model-dependent.",
+        "Authors highlight computational limitations of traditional methods and instability of single-agent RL in multi-vehicle environments, establishing urgency through growing vehicular service demands.",
+        "Specific resource allocation problem is positioned within broader challenges of 5G/ITS development, where efficient spectrum reuse and QoS differentiation are critical for safety and user experience.",
+        "Wireless communications, intelligent transportation systems, and machine learning (multi-agent reinforcement learning)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1) Heterogeneous QoS: Differentiated requirements for delay-sensitive (ultra-reliable low-latency) and delay-tolerant (high-capacity) applications. 2) MADDPG: Centralized training with decentralized execution for multi-agent coordination. 3) Utility function: Multicriterion objective combining throughput (delay-sensitive) and transmission rate (delay-tolerant).",
+        "Utility functions drive resource allocation decisions; MADDPG optimizes actions (channel/power) to maximize utility while respecting cellular user QoS constraints through centralized critic guidance.",
+        "Rayleigh fading channel model; Poisson packet arrival for delay-sensitive traffic; vehicular users share cellular uplink resources; each user accesses ≤1 channel.",
+        "Algorithmic contribution: First application of MADDPG to heterogeneous QoS in vehicular networks, introducing state/reward normalization for accelerated convergence."
+      ],
+      "Methodology": [
+        "MADDPG with actor-critic networks; states include normalized channel/power/neighbor information; actions combine discrete channel selection and continuous power control; rewards incorporate utility and QoS penalty.",
+        "Novel in handling mixed discrete-continuous actions via deterministic policy gradients; applicable to dynamic vehicular environments; rational through centralized training for coordination and normalization for stability.",
+        "Simulated data: Vehicles/CUs distributed via spatial Poisson process; Rayleigh fading channels; packet arrival modeled as Poisson. Preprocessing: Min-max state normalization. Representativeness validated through standard vehicular network parameters.",
+        "Rigorous comparison against DQN/DuDQN baselines; metrics include throughput (delay-sensitive), transmission rate (delay-tolerant), and convergence speed; constraints explicitly evaluated.",
+        "Reinforcement learning paradigm (actor-critic framework), enabling model-free optimization in complex environments but requiring careful reward shaping."
+      ],
+      "Results": [
+        "Superior convergence (stable after 200 episodes) and higher throughput/rates across varying vehicle densities and channel counts compared to baselines; maintains performance under high traffic loads.",
+        "Results significant for enabling heterogeneous QoS in dynamic networks; reliability shown via constraint satisfaction; stability demonstrated through consistent convergence and low loss variance."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Problem formulation → MADDPG solution → normalization technique → simulation validation.",
+        "Key steps: 1) Expose traditional methods' limitations 2) Formulate utility-driven optimization 3) Design MADDPG framework 4) Validate via comparative simulations.",
+        "Strengths: Clear technical progression and ablation (e.g., fixed-power comparison). Weaknesses: Limited real-world validation. Rebuttals: Addressed via extensive simulations across load/channel conditions."
+      ],
+      "Strengths_and_Limitations": [
+        "First MADDPG application to vehicular heterogeneous QoS; novel normalization accelerates training; outperforms baselines in throughput/rate while ensuring cellular QoS.",
+        "Simulation-only validation; assumes perfect channel knowledge; scalability to ultra-dense networks unverified.",
+        "RL paradigm restricts interpretability; Markov assumption may oversimplify long-term network dynamics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on learning-based resource allocation by solving mixed discrete-continuous optimization in multi-agent vehicular settings.",
+        "Technical terminology (e.g., 'MINLP', 'centralized learning/decentralized execution'); persuasive rhetoric emphasizing 'superiority' of proposed method; contrasts 'drawbacks' of existing approaches.",
+        "Authority built through citations of foundational RL works (e.g., MADDPG origin) and direct comparisons; motivations include addressing cited gaps in heterogeneous QoS handling."
+      ],
+      "Conclusions_and_Implications": [
+        "MADDPG-based framework efficiently allocates resources for heterogeneous vehicular services, outperforming baselines in convergence speed, throughput, and transmission rate while guaranteeing cellular user QoS.",
+        "Real-world implementation; integration with emerging technologies (e.g., V2X); handling more diverse service types; scalability enhancements."
+      ]
+    }
+  }
+}

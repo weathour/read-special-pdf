@@ -1,0 +1,79 @@
+{
+  "file_name": "Angione 等 - 2022 - Using machine learning as a surrogate model for agent-based simulations.pdf",
+  "generated_at": "2025-07-10 05:05:15",
+  "structured_info": {
+    "title_cn": "使用机器学习作为基于代理模拟的替代模型",
+    "title_en": "Using machine learning as a surrogate model for agent-based simulations",
+    "category": "Computational Modeling",
+    "topics": [
+      "Surrogate Modeling",
+      "Agent-Based Modeling",
+      "Machine Learning Applications"
+    ],
+    "keywords": [
+      "surrogate model",
+      "agent-based models",
+      "machine learning",
+      "sensitivity analysis",
+      "computational efficiency"
+    ],
+    "abstract": "In this proof-of-concept work, we evaluate the performance of multiple machine-learning methods as surrogate models for use in the analysis of agent-based models (ABMs). Analysing agent-based modelling outputs can be challenging, as the relationships between input parameters can be non-linear or even chaotic even in relatively simple models, and each model run can require significant CPU time. Surrogate modelling, in which a statistical model of the ABM is constructed to facilitate detailed model analyses, has been proposed as an alternative to computationally costly Monte Carlo methods. Here we compare multiple machine-learning methods for ABM surrogate modelling in order to determine the approaches best suited as a surrogate for modelling the complex behaviour of ABMs. Our results suggest that, in most scenarios, artificial neural networks (ANNs) and gradient-boosted trees outperform Gaussian process surrogates, currently the most commonly used method for the surrogate modelling of complex computational models. ANNs produced the most accurate model replications in scenarios with high numbers of model runs, although training times were longer than the other methods. We propose that agent-based modelling would benefit from using machine-learning methods for surrogate modelling, as this can facilitate more robust sensitivity analyses for the models while also reducing CPU time consumption when calibrating and analysing the simulation.",
+    "methodology": "Comparison of nine machine learning methods (linear regression, decision trees, random forests, gradient-boosted trees, k-nearest neighbors, Gaussian process emulation, linear SVM, non-linear SVM, neural networks) as surrogate models for the 'Linked Lives' agent-based model of UK social care provision. Methods evaluated using mean-squared error (MSE) on test sets across four datasets (200/400/800/1600 simulation runs) with LP-tau experimental design. Training performed with minimal hyperparameter optimization on consumer hardware.",
+    "conclusion": "Artificial neural networks (ANNs) and gradient-boosted trees outperform Gaussian process surrogates in accuracy for most scenarios. ANNs achieve highest accuracy with larger datasets (>800 runs) despite longer training times. Machine learning surrogates enable robust sensitivity analyses while significantly reducing computational costs, making them suitable for time-constrained policy modeling contexts.",
+    "authors": [
+      "Claudio Angione",
+      "Eric Silverman",
+      "Elisabeth Yaneske"
+    ],
+    "publication_year": "2022",
+    "venue": "PLOS ONE",
+    "doi": "10.1371/journal.pone.0263150",
+    "bibtex_citation": "Angione_Using_2022",
+    "analysis": {
+      "Overview": "The paper evaluates machine learning methods as surrogate models for agent-based simulations to enable efficient sensitivity analyses, using a UK social care ABM as a case study.",
+      "Background_and_Motivation": [
+        "Agent-based models (ABMs) face computational challenges in sensitivity analysis due to non-linear/chaotic parameter relationships and high CPU requirements.",
+        "To identify effective machine learning alternatives to Gaussian Process surrogates for ABM analysis, particularly in time-constrained policy contexts.",
+        "Highlight computational inefficiency of Monte Carlo methods and limitations of existing surrogate approaches for complex ABMs.",
+        "Position ABM surrogate modeling as critical for policy-relevant simulations requiring rapid analysis under resource constraints.",
+        "Computational social science, public health policy, machine learning, and complex systems modeling."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Surrogate modeling: Statistical approximation of ABM behavior; Agent-Based Modeling: Computational simulation of autonomous agents; Machine Learning Emulation: Using ML to replicate simulator outputs.",
+        "ML methods serve as functional approximations of ABMs → enable rapid sensitivity analysis → improve ABM validation and policy applicability.",
+        "ABM outputs are deterministic with sufficient runs; ML can capture complex ABM behaviors despite non-smooth response surfaces.",
+        "Provides empirical validation of ML for ABM emulation, establishing ANN superiority over traditional Gaussian processes in complex scenarios."
+      ],
+      "Methodology": [
+        "Comparative framework testing 9 ML algorithms on 'Linked Lives' ABM outputs (10 parameters, per-capita care cost). LP-tau experimental design for parameter space coverage. MSE evaluation with train/validation/test splits.",
+        "Novelty in comprehensive ML comparison for ABMs; Applicability demonstrated with minimal hyperparameter tuning; Rationale supported by universal approximation theorem for ANNs.",
+        "Data from 3,000 ABM runs across parameter ranges; Preprocessing via z-score normalization; Representativeness ensured by LP-tau space-filling design.",
+        "Rigorous three-way data splitting; MSE provides standardized evaluation but supplementary visual analysis used to contextualize results.",
+        "Data-driven paradigm focusing on predictive accuracy over mechanistic interpretation, prioritizing practical applicability in policy contexts."
+      ],
+      "Results": [
+        "Neural networks achieved lowest MSE (0.188-0.965) across datasets, particularly excelling with >800 runs. Gradient-boosted trees showed consistent performance. Gaussian processes failed with complex responses (MSE 37.02 at 1600 runs).",
+        "Results demonstrate ANN reliability in capturing ABM complexity; Stability confirmed through progressive accuracy improvements with larger datasets; Potential GPU acceleration noted for scalability."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem (ABM computational burden) → Solution (ML surrogates) → Validation (comparative study) → Implications (practical applications).",
+        "1. Establish ABM analysis challenges 2. Propose ML surrogate solution 3. Validate via empirical comparison 4. Demonstrate policy relevance.",
+        "Strength: Comprehensive method comparison with real-world ABM; Weakness: Acknowledges single-case study limitation; Rebuts interpretability concerns by emphasizing surrogate purpose."
+      ],
+      "Strengths_and_Limitations": [
+        "First comprehensive comparison of ML for ABM surrogates; Demonstrates ANN superiority over Gaussian processes; Validates feasibility under resource constraints.",
+        "ANN training computationally intensive without GPUs; Generalizability limited to moderately complex ABMs; Hyperparameter optimization not fully explored.",
+        "Focus on predictive accuracy over interpretability constrains theoretical insights into ABM mechanisms."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances methodological discourse in computational social science by bridging ML and ABM communities.",
+        "Technical terminology (e.g., 'LP-tau design', 'ergodicity'); Persuasive tone advocating ML adoption; Strategic citations of foundational ABM work (Schelling, Axelrod).",
+        "Builds authority through extensive method comparison and transparency (open code/data); Citation strategy establishes problem significance and positions solution as novel contribution."
+      ],
+      "Conclusions_and_Implications": [
+        "ML surrogates (especially ANNs) enable efficient ABM analysis; Neural networks provide highest accuracy while gradient-boosted trees offer speed-accuracy balance; Approach applicable in resource-constrained policy settings.",
+        "Extend to multi-output ABMs; Develop standardized ML surrogate frameworks; Incorporate explainability techniques (e.g., SHAP); Explore GPU-accelerated training; Test on high-complexity ABMs."
+      ]
+    }
+  }
+}

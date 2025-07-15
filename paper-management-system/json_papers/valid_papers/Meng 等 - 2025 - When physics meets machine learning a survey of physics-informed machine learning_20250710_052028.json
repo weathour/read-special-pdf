@@ -1,0 +1,80 @@
+{
+  "file_name": "Meng 等 - 2025 - When physics meets machine learning a survey of physics-informed machine learning.pdf",
+  "generated_at": "2025-07-10 05:20:28",
+  "structured_info": {
+    "title_cn": "当物理学遇上机器学习：物理信息机器学习综述",
+    "title_en": "When physics meets machine learning: a survey of physics-informed machine learning",
+    "category": "Machine Learning",
+    "topics": [
+      "Physics-Informed Machine Learning",
+      "Scientific Machine Learning",
+      "Computational Science"
+    ],
+    "keywords": [
+      "Machine learning",
+      "Data-driven modeling",
+      "Physics-informed machine learning",
+      "Simulation"
+    ],
+    "abstract": "Physics-informed machine learning (PIML), the combination of prior physics knowledge with data-driven machine learning models, has emerged as an effective means of mitigating a shortage of training data, increasing model generalizability, and ensuring physical plausibility of results. In this paper, we survey a wide variety of recent works in PIML and summarize them from three key aspects: 1) motivations of PIML, 2) physics knowledge in PIML, and 3) methods of physics knowledge integration in PIML. We additionally discuss current challenges and corresponding research opportunities in PIML.",
+    "methodology": "Comprehensive literature review and structured analysis of existing works in physics-informed machine learning.",
+    "conclusion": "PIML effectively integrates physics knowledge to enhance data efficiency, generalization, and physical plausibility of ML models. Challenges include manual selection of physics knowledge, lack of benchmarks, suboptimal NN architectures, and the need for foundation models. Future directions involve automatic knowledge identification, novel NN designs, and comprehensive benchmarks.",
+    "authors": [
+      "Chuizheng Meng",
+      "Sam Griesemer",
+      "Defu Cao",
+      "Sungyong Seo",
+      "Yan Liu"
+    ],
+    "publication_year": "2025",
+    "venue": "Machine Learning for Computational Science and Engineering",
+    "doi": "10.1007/s44379-025-00016-0",
+    "bibtex_citation": "Meng_When_2025",
+    "analysis": {
+      "Overview": "Survey paper on Physics-Informed Machine Learning (PIML), which integrates prior physics knowledge with machine learning models to address data scarcity, improve generalizability, and ensure physical plausibility in scientific and engineering applications.",
+      "Background_and_Motivation": [
+        "Research addresses challenges in applying ML to scientific domains where data is limited and physical plausibility is essential; traditional ML struggles with generalization and physical consistency.",
+        "Motivation: To systematize PIML approaches by surveying motivations (using ML for physics tasks vs. improving ML with physics), physics knowledge types, and integration methods.",
+        "Authors argue for necessity by highlighting ML's data inefficiency and physical implausibility in scientific contexts, positioning PIML as crucial for reliable scientific discovery.",
+        "Specific problem (integrating physics into ML) is linked to broader challenges of scientific modeling, emphasizing how PIML bridges domain knowledge and data-driven methods to enhance trust and efficiency.",
+        "Contributes to interdisciplinary fields: Machine Learning, Computational Physics, Engineering, and Scientific Computing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) Physics-Informed Machine Learning (PIML): Hybrid methodology leveraging physics rules; 2) Integration Methods: Data enhancement, model architecture design, optimization; 3) Physics Knowledge Categories: Classical mechanics, symmetries, PDEs, Koopman theory.",
+        "Logical relationships: PIML uses physics knowledge to constrain ML models; integration methods operationalize this via data, architecture, or loss functions; physics categories provide domain-specific rules.",
+        "Key assumptions: Physics knowledge is expressible in mathematical forms (e.g., PDEs), and its integration mitigates ML's data dependence while preserving interpretability.",
+        "Contribution: Taxonomical survey organizing the PIML landscape, identifying gaps, and proposing future research; advances the field's systematic understanding."
+      ],
+      "Methodology": [
+        "Core methods: Literature review categorized by motivations (Section 2), physics knowledge (Section 3), and integration techniques (Section 4). Challenges analyzed via identified limitations in current works.",
+        "Novelty: Comprehensive synthesis of disparate PIML works into a unified framework; applicability spans scientific simulations, control systems, and data-driven modeling; rationality stems from structured categorization.",
+        "Data sources: 100+ cited papers; characteristics: academic publications (2017–2025); preprocessing: thematic grouping; representativeness: covers major domains (fluid dynamics, climate, robotics).",
+        "Evaluation: Qualitative analysis of methods; rigor ensured by categorizing works into clear taxonomies; evaluation metrics not applicable (survey).",
+        "Follows theoretical paradigm of systematic literature review, influencing perspective by emphasizing categorization and gap analysis over empirical validation."
+      ],
+      "Results": [
+        "Key results: 1) Motivations split into ML-for-physics (e.g., surrogate simulation) and physics-for-ML (e.g., improving robustness); 2) Physics knowledge includes conservation laws, symmetries, PDEs; 3) Integration methods: data (synthetic data), model (PINNs), optimization (physics-based losses).",
+        "Significance: Framework enables targeted PIML design; reliability: derived from peer-reviewed works; stability: conclusions align across domains but face scalability challenges."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Introduction → Motivations → Physics knowledge → Integration methods → Challenges → Conclusion.",
+        "Key steps: 1) Establish PIML importance; 2) Classify motivations; 3) Detail physics knowledge; 4) Analyze integration methods; 5) Discuss limitations; 6) Propose future work.",
+        "Strengths: Clear taxonomy supported by examples; weaknesses: Limited critical assessment of method efficacy. Rebuttals addressed via challenge discussions (e.g., Section 5)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive taxonomy, identification of integration patterns, and forward-looking challenges/future directions.",
+        "Methodology limitations: Benchmarks lacking; manual physics selection heuristic; generalization constrained by domain specificity.",
+        "Theoretical paradigm (literature review) limits empirical validation; conclusions constrained to synthesized trends rather than novel techniques."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Organizes fragmented PIML field into a cohesive discourse, positioning as reference for researchers.",
+        "Terminology: Uses domain-specific terms (e.g., 'Koopman operators', 'equivariance'); tone: authoritative; rhetoric: builds credibility through extensive citations (100+).",
+        "Authority built by citing seminal works; citation motivations: substantiate claims, map field evolution, and highlight knowledge gaps."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: PIML successfully integrates physics to enhance ML in scientific domains via data, model, and optimization methods; unresolved issues include automation, evaluation, and scalability.",
+        "Future research: Automatic physics-knowledge identification, PIML-specific benchmarks, novel NN architectures for gradient preservation, and foundation models for PDEs."
+      ]
+    }
+  }
+}

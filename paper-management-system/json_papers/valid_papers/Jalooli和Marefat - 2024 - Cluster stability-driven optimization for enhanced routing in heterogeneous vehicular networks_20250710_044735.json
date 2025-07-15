@@ -1,0 +1,81 @@
+{
+  "file_name": "Jalooli和Marefat - 2024 - Cluster stability-driven optimization for enhanced routing in heterogeneous vehicular networks.pdf",
+  "generated_at": "2025-07-10 04:47:35",
+  "structured_info": {
+    "title_cn": "集群稳定性驱动的优化用于异构车载网络中的增强路由",
+    "title_en": "Cluster stability-driven optimization for enhanced routing in heterogeneous vehicular networks",
+    "category": "Vehicular Communications",
+    "topics": [
+      "Vehicular Ad-hoc Networks",
+      "Clustering Algorithms",
+      "Routing Protocols",
+      "Heterogeneous Networks",
+      "Connected Autonomous Vehicles"
+    ],
+    "keywords": [
+      "Vehicular ad-hoc networks",
+      "Internet of Things",
+      "Heterogeneous vehicular networks",
+      "Optimal clustering",
+      "Routing",
+      "Connected and autonomous vehicles"
+    ],
+    "abstract": "The new era of the Internet of Things is promoting the evolution of self-driving vehicles into connected and autonomous vehicles (CAVs). The deployment of CAVs in smart cities is highly dependent on the performance of their underlying networks known as vehicular networks. Designing an effective clustering approach is of great importance in such dynamic networks as it can significantly improve the reliability and scalability of the routing protocols. In this paper, we consider a heterogeneous vehicular network architecture that supports vehicle-to-vehicle and vehicle-to-infrastructure communications based on IEEE 802.11p and cellular networks (LTE 5G) with direct communications, namely cellular vehicle-to-everything (C-V2X) technologies. We introduce a novel clustering scheme for real-time routing based on the proposed network architecture. We formulate the problem of optimal clustering for connected and autonomous vehicles (OCCAV) and show that the problem is NP-hard. We then develop a clusters stability maximization algorithm (CSM), which utilizes the stability degree of vehicles over a prediction horizon to efficiently solve the optimization problem in real-time. The algorithm is used within a rolling horizon framework for continuously solving the problem, making the resulting clusters adaptive to future traffic dynamics. We propose a hybrid routing protocol based on our clustering scheme, aiming to improve the packet delivery ratio and reduce the average delivery delay. For evaluation purposes, we use extensive realistic simulations based on mobility scenarios validated using real vehicular trajectories. The results demonstrate that our clustering scheme improves the alternative algorithms in terms of the average cluster head duration, cluster head change rate, cluster member duration, and overall stability by 61%, 62%, 44%, and 52%, respectively. CSM also outperforms clustering overhead by 54%. Compared to the other cluster-based routing, our scheme also achieves a higher packet delivery ratio by up to 30%, and a lower average delay by up to 52%. To provide an in-depth analysis of the optimality of our scheme and its alternatives, we also use the Gurobi optimizer to find an optimal solution to the OCCAV problem. The results suggest that our scheme can achieve near-optimal cluster stability.",
+    "methodology": "Formulated the Optimal Clustering for Connected and Autonomous Vehicles (OCCAV) problem as an NP-hard optimization. Developed the Clusters Stability Maximization (CSM) algorithm using the stability degree of vehicles over a prediction horizon, implemented within a rolling horizon framework. Proposed a hybrid routing protocol for heterogeneous networks. Evaluated through realistic simulations using SUMO for mobility and NS2 for networking, with comparison to alternatives like VMaSC, PMC, SDPC, and an optimal solution via Gurobi.",
+    "conclusion": "The OCCAV problem is NP-hard, and the CSM algorithm achieves near-optimal cluster stability. The scheme significantly outperforms existing algorithms in cluster stability metrics (e.g., 61% improvement in cluster head duration) and network performance (up to 30% higher packet delivery ratio and 52% lower delay). It provides a benchmark for evaluating clustering algorithms and supports reliable CAV applications.",
+    "authors": [
+      "Ali Jalooli",
+      "Alireza Marefat"
+    ],
+    "publication_year": "2024",
+    "venue": "Vehicular Communications",
+    "doi": "10.1016/j.vehcom.2024.100745",
+    "bibtex_citation": "Jalooli_Cluster_2024",
+    "analysis": {
+      "Overview": "The paper focuses on improving routing reliability and scalability in heterogeneous vehicular networks by developing an optimal clustering scheme that maximizes cluster stability through prediction of vehicle mobility patterns, evaluated via realistic simulations.",
+      "Background_and_Motivation": [
+        "Addresses challenges of scalability and reliability in Vehicular Ad-hoc Networks (VANETs) due to high mobility dynamics, which compromise communications for Connected and Autonomous Vehicles (CAVs) applications.",
+        "Motivated by the limitations of existing clustering methods that ignore future vehicle mobility, leading to frequent re-clustering and unstable clusters, thereby affecting routing performance.",
+        "Argues necessity by highlighting that current approaches lack consideration of traffic dynamics and benchmarks, resulting in biased evaluations and unreliable communications for time-sensitive CAVs applications.",
+        "Relates the specific problem to broader challenges in VANETs by emphasizing how unstable clusters degrade network reliability, which is critical for smart city deployments and CAVs safety.",
+        "Contributes to vehicular networks, wireless communications, optimization, and interdisciplinary fields involving IoT and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 'Stability degree of vehicle' (number of stable neighbors over a prediction horizon), 'OCCAV problem' (NP-hard optimization to minimize cluster instability), 'CSM algorithm' (heuristic for real-time cluster stability maximization).",
+        "Logical relationships: Stability degree quantifies vehicle connectivity over time; used in OCCAV to form optimal clusters; CSM solves OCCAV efficiently; clusters adapt via rolling horizon to traffic changes.",
+        "Key assumptions: Vehicle driving states (position, velocity) can be accurately predicted using historical data; heterogeneous network architecture (IEEE 802.11p and C-V2X) supports reliable communications; clusters have a maximum size constraint.",
+        "Contribution type: Provides a novel predictive clustering framework that advances the knowledge system by introducing stability-driven optimization, offering near-optimal solutions and serving as a benchmark for future algorithms."
+      ],
+      "Methodology": [
+        "Core methods include the CSM algorithm for cluster formation based on stability degree, a rolling horizon framework for continuous adaptation, and a hybrid routing protocol combining proactive intra-cluster and reactive inter-cluster communications.",
+        "Novelty lies in incorporating future mobility predictions for stability, applicability to real-time CAVs scenarios, and rationality through NP-hard proof and heuristic efficiency. Methodology is novel for its prediction-integrated optimization.",
+        "Data sources: Realistic mobility traces from Luxembourg SUMO (LuST) scenario, validated with real vehicular trajectories. Preprocessing involves prediction using Intelligent Driver Model (IDM) calibrated on historical data. Representativeness is high due to real-world validation.",
+        "Experimental design is rigorous, with controlled simulations (NS2 for networking, SUMO for mobility), varied traffic scenarios (peak/normal), and metrics like cluster stability and packet delivery. Evaluation metrics are adequate, covering stability, overhead, PDR, and delay.",
+        "Follows optimization and vehicular network paradigms, affecting the research by emphasizing computational efficiency and practical adaptability over theoretical purity."
+      ],
+      "Results": [
+        "Key results: CSM improves average cluster head duration by 61%, cluster head change rate by 62%, cluster member duration by 44%, and overall stability by 52% versus alternatives; reduces clustering overhead by 54%; achieves up to 30% higher packet delivery ratio and 52% lower delay.",
+        "Results are significant for enabling reliable CAVs communications, reliable due to realistic simulations, and stable across different traffic scenarios with minimal performance degradation."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Introduces problem and motivation, formulates OCCAV and proves NP-hard, develops CSM and routing protocol, evaluates performance, and concludes.",
+        "Key steps: Problem formulation → NP-hard proof → Heuristic development (CSM) → Routing integration → Simulation validation → Comparison to optimal and alternatives.",
+        "Strengths include logical flow from problem to solution and addressing prediction gaps; weaknesses are potential rebuttals on prediction accuracy, addressed by using shorter rolling periods for higher accuracy."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel stability degree concept, near-optimal performance, real-time adaptability, and comprehensive evaluation showing superiority in stability and network metrics.",
+        "Limitations: Dependency on prediction accuracy for driving states; methodology constrained to highway scenarios; conclusions may not generalize to urban 2D networks without further testing.",
+        "Theoretical paradigm choice (optimization) constrains conclusions by focusing on computational feasibility over energy efficiency or other paradigms, limiting applicability to resource-constrained environments."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances VANET clustering discourse by introducing prediction-based stability, positioning as a solution to gaps in existing literature like ignoring future mobility.",
+        "Terminology: Uses formal terms (e.g., 'stability degree', 'rolling horizon'), technical tone, and rhetorical strategies such as contrasting with MANETs algorithms to highlight VANET-specific innovations.",
+        "Builds authority through citations of related work (e.g., VMaSC, PMC) to contextualize contributions and motivate research by critiquing limitations, with motivations to establish novelty and benchmark utility."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: CSM achieves near-optimal cluster stability, significantly enhances routing performance, and provides a benchmark; adaptive clustering is vital for reliable CAVs networks.",
+        "Future insights: Study trade-offs between cluster size and number; evaluate in large-scale urban networks; compare to machine learning-based clustering approaches."
+      ]
+    }
+  }
+}

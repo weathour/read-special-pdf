@@ -1,0 +1,84 @@
+{
+  "file_name": "Liu 等 - 2024 - A multistep cooperative lane change strategy for connected and autonomous vehicle platoons departing.pdf",
+  "generated_at": "2025-07-11 10:10:53",
+  "structured_info": {
+    "title_cn": "一种用于从专用车道出发的联网自动驾驶车辆编队的分步协作换道策略",
+    "title_en": "A multistep cooperative lane change strategy for connected and autonomous vehicle platoons departing from dedicated lanes",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Autonomous Vehicles",
+      "Traffic Control",
+      "Model Predictive Control"
+    ],
+    "keywords": [
+      "Connected and autonomous vehicles",
+      "CAV platoon",
+      "Cooperative lane change",
+      "Dedicated lane",
+      "Model predictive control"
+    ],
+    "abstract": "This study presents a Cooperative Mandatory Platoon Lane Change (CMPLC) strategy for Connected and Autonomous Vehicles (CAVs) navigating from a Dedicated Lane (DL) to an adjacent General-Purpose Lane (GPL) with Human-Driven Vehicles (HDVs). The CMPLC strategy involves two lane change steps and a gap widening step. Initially, a safety criterion for lane changes is proposed, integrating the merits of the Intelligent Driver Model (IDM) and the Gipps model, to constrain the gaps that the CAVs in the platoon can safely move into. Guided by this criterion, the strategy identifies the largest gap in the GPL near the platoon as the target gap in the first step. A subset of CAVs in the platoon performs rapid lane changes into the target gap, avoiding collision with HDVs. The following gap widening step employs a trajectory planning model based on Model Predictive Control (MPC) to widen two gaps in the GPL while considering the uncertain behavior of HDVs. Simultaneously, guided by another two trajectory planning models, the remaining CAVs in the DL sequentially move into their target gaps during the second lane change step. To validate the proposed strategy, a visual simulation platform integrating SUMO and MATLAB was developed.",
+    "methodology": "Three-step cooperative strategy (two lane changes + gap widening), safety criterion combining Intelligent Driver Model and Gipps model, trajectory planning using Model Predictive Control (MPC), simulation via SUMO-MATLAB integration.",
+    "conclusion": "The CMPLC strategy achieves higher lane change success rates (100% vs 75%) and shorter execution times (avg. 31.1s vs 57.6s) compared to Individual Vehicle Lane Change (IVLC) baseline. It maintains platoon formation after lane changes, minimizes HDV disruption, and identifies critical lane-change points for early warnings across traffic scenarios.",
+    "authors": [
+      "Chenglin Liu",
+      "Zhiguang Liu",
+      "Zhigang Xu",
+      "Xiaopeng Li"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "doi": "https://doi.org/10.1016/j.trc.2024.104720",
+    "bibtex_citation": "Liu_multistep_2024",
+    "analysis": {
+      "Overview": "Proposes a three-step cooperative strategy for CAV platoons transitioning from dedicated lanes to mixed-traffic general-purpose lanes, integrating safety constraints, MPC-based trajectory planning, and simulation validation.",
+      "Background_and_Motivation": [
+        "Transition period with mixed CAV-HDV traffic necessitates dedicated lanes (DLs) for CAV platooning efficiency and safety.",
+        "Urgent need for platoon-scale lane-change strategies that handle HDV uncertainty while preserving formation integrity.",
+        "Existing research focuses on single-CAV lane changes; platoon maneuvers require larger gaps and coordinated control absent in prior work.",
+        "Unsuccessful platoon lane changes cause traffic disruptions and safety risks, highlighting operational significance.",
+        "Transportation engineering, control systems, and intelligent vehicle technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Cooperative Mandatory Platoon Lane Change (CMPLC): Three-step strategy (initial lane change → gap widening → sequential lane change)",
+          "Lane change safety criterion: Hybrid model integrating IDM (response prediction) and Gipps (minimum safe distance)",
+          "MPC trajectory planning: Decoupled optimization for subplatoons during gap widening"
+        ],
+        "Safety criterion enables gap selection; MPC coordinates subplatoon trajectories to create target gaps while satisfying safety constraints.",
+        "CAV-HDV communication is instantaneous; lane changes are instantaneous movements; negligible inter-platoon interactions in DL.",
+        "Provides methodological framework for platoon-scale maneuvers in mixed traffic, advancing cooperative control theory."
+      ],
+      "Methodology": [
+        "Three-step CMPLC: 1) Subset lane change into largest safe gap, 2) MPC-based gap widening under HDV uncertainty, 3) Sequential lane change for remaining CAVs.",
+        "Novelty: First integrated platoon-scale strategy with formation preservation. MPC handles HDV uncertainty via rolling horizon optimization.",
+        "Simulated HDV arrivals via Poisson process; IDM for HDV car-following; parameters calibrated from literature (e.g., reaction time: 0.8s).",
+        "Four experiments: Effectiveness verification, HDV impact assessment, sensitivity analysis (platoon size/demand/distance), critical point identification.",
+        "Control theory (MPC) and traffic flow theory (IDM), enabling systematic handling of dynamics but limiting generalization to complex interactions."
+      ],
+      "Results": [
+        "CMPLC achieves 100% lane-change success vs 75% for IVLC; reduces execution time by 26s (avg.). HDV delay increases nonlinearly with platoon size/traffic demand.",
+        "Results validated via 10-repetition tests; critical lane-change points mapped for 95% success rate across scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Safety criterion → Three-step strategy → MPC formulation → Simulation validation → Comparative/impact analysis.",
+        "1) Establish platoon lane-change complexity, 2) Propose safety criterion, 3) Design sequential steps with MPC, 4) Validate superiority over IVLC, 5) Quantify HDV impact.",
+        "Strengths: Comprehensive validation across metrics. Weakness: Simplified lane-change instantaneity; addressed via sensitivity-focused experiment design."
+      ],
+      "Strengths_and_Limitations": [
+        "High success rate, formation preservation, real-time HDV uncertainty handling, and critical-point identification.",
+        "Assumptions (instantaneous lane changes, no communication latency) limit real-world applicability; single-lane focus.",
+        "MPC framework optimizes locally but may not scale to multi-lane changes; IDM-based HDV modeling may not capture all behaviors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances platoon control in mixed traffic, bridging gap between single-vehicle and platoon maneuvers.",
+        "Technical terminology (e.g., MPC, IDM, CACC); persuasive emphasis on strategy efficacy via comparative metrics.",
+        "Builds authority through 50+ targeted citations (e.g., Wang 2021b, Treiber 2000) and rigorous simulation validation."
+      ],
+      "Conclusions_and_Implications": [
+        "CMPLC enables efficient, safe platoon lane changes in mixed traffic while maintaining formation. Critical points guide operational deployment.",
+        "Extend to multi-lane changes; incorporate communication delays; real-world testing; cooperative HDV interactions."
+      ]
+    }
+  }
+}

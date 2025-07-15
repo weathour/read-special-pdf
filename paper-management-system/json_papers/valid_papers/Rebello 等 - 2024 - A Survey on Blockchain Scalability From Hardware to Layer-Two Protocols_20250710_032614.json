@@ -1,0 +1,81 @@
+{
+  "file_name": "Rebello 等 - 2024 - A Survey on Blockchain Scalability From Hardware to Layer-Two Protocols.pdf",
+  "generated_at": "2025-07-10 03:26:14",
+  "structured_info": {
+    "title_cn": "区块链可扩展性综述：从硬件到第二层协议",
+    "title_en": "A Survey on Blockchain Scalability: From Hardware to Layer-Two Protocols",
+    "category": "Blockchain",
+    "topics": [
+      "Blockchain Scalability",
+      "Payment Channel Networks",
+      "Transaction Rollups"
+    ],
+    "keywords": [
+      "Blockchain",
+      "Payment Channel Networks",
+      "Rollups"
+    ],
+    "abstract": "Despite the great success of blockchain systems in recent years, blockchains still struggle to provide the same level of latency and throughput as centralized financial systems. The core of this problem lies in the inefficiency of consensus protocols. In this paper, we provide a survey on recent efforts to improve the scalability of blockchains. We focus on layer-two protocols, such as payment channel networks and transaction rollups, which process computations off-chain and only use consensus for dispute resolution. Layer-two protocols are expected to process microtransactions with sub-second latency and reduced fees, allowing blockchains to scale. Much of this work addresses the open challenges of payment channel networks, such as payment routing, channel rebalancing, network design strategies, security and privacy, payment scheduling, congestion control, simulators, and support for light nodes. We also dedicate a section to the existing implementations of smart-contract-based transaction rollups. Our work systematizes the state-of-the-art layer-two protocols, paving the way for future advances.",
+    "methodology": "Survey methodology analyzing over 120 papers from 2013 to 2023, using a four-layer architecture (hardware, layer 0, layer 1, layer 2) to classify blockchain scalability solutions. Focuses on systematizing knowledge of layer-two protocols with qualitative analysis of technical approaches.",
+    "conclusion": "Layer-two protocols (especially payment channel networks and rollups) offer promising scalability improvements by offloading transactions from the blockchain. Payment channel networks face unresolved challenges like routing and rebalancing, while rollups enable efficient smart-contract computations. This survey provides a comprehensive taxonomy and identifies future research directions for blockchain scalability.",
+    "authors": [
+      "Gabriel Antonio F. Rebello",
+      "Gustavo F. Camilo",
+      "Lucas Airam C. de Souza",
+      "Maria Potop-Butucaru",
+      "Marcelo Dias de Amorim",
+      "Miguel Elias M. Campista",
+      "Luís Henrique M. K. Costa"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "doi": "10.1109/COMST.2024.3376252",
+    "bibtex_citation": "Rebello_Survey_2024",
+    "analysis": {
+      "Overview": "This paper surveys blockchain scalability solutions across hardware, network, consensus, and layer-two protocols, with emphasis on payment channel networks (PCNs) and transaction rollups. It systematizes over 120 works and identifies unresolved challenges.",
+      "Background_and_Motivation": [
+        "Blockchains face scalability limitations (e.g., Bitcoin: 7 tx/s, Ethereum: 15 tx/s) due to consensus inefficiencies, hindering adoption for microtransactions requiring sub-second latency.",
+        "Motivation is to enable everyday blockchain use by improving throughput/latency without compromising decentralization or security.",
+        "Authors argue urgency via comparison: credit cards process ~6,000 tx/s versus blockchain's orders-of-magnitude lower throughput, limiting real-world applications like IoT and finance.",
+        "The scalability problem is framed within Vitalik Buterin's trilemma (scalability vs. decentralization vs. security), where layer-two protocols offer a path to balance these properties.",
+        "Contributes to distributed systems, cryptography, network engineering, and interdisciplinary fields (e.g., IoT, fintech)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1. Layer-Two Protocols: Off-chain transaction validation using blockchain only for disputes (e.g., PCNs, rollups). 2. Payment Channel Networks (PCNs): Bidirectional channels secured via Hashed Timelock Contracts (HTLCs). 3. Blockchain Scalability Trilemma: Inherent trade-off preventing simultaneous optimization of scalability, decentralization, and security.",
+        "PCNs reduce consensus load by routing payments off-chain; HTLCs enable trustless multi-hop transfers; Rollups batch transactions for efficient on-chain verification.",
+        "Assumes rational actors in PCNs; trusts cryptographic guarantees in HTLCs; presumes blockchain finality for dispute resolution.",
+        "Systematizes fragmented knowledge, providing a unified taxonomy and gap analysis to advance scalability research."
+      ],
+      "Methodology": [
+        "Qualitative survey analyzing 120+ papers (2013–2023) across four layers: hardware (HW), network (L0), consensus (L1), and off-chain (L2).",
+        "Methodology is novel in comprehensive PCN challenge coverage; applicable to public blockchains; rational via layered classification.",
+        "Sources include academic papers, protocols (e.g., Lightning Network), and implementations. Data preprocessing involved categorizing by layer/solution type; representativeness ensured by temporal/technical breadth.",
+        "Evaluation uses comparative tables (e.g., Table II/III) assessing throughput, security, and limitations; rigor stems from multi-layer analysis.",
+        "Follows distributed systems paradigm, emphasizing tradeoffs in consensus design and its impact on scalability approaches."
+      ],
+      "Results": [
+        "Key results: HW/TEE solutions improve throughput but centralize; L0 optimizations (e.g., SegWit) offer limited gains; L1 solutions (sharding, DAGs) face security-throughput tradeoffs; PCNs enable microsecond latency but suffer routing/rebalancing issues.",
+        "Results are significant for guiding scalability efforts; reliability established via literature consensus; stability validated through protocol adoption (e.g., Lightning Network)."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: (1) problem formalization (trilemma), (2) layered solution taxonomy, (3) deep dive into PCNs/rollups, (4) open challenges.",
+        "Key steps: Establish scalability deficit → decompose layers → contrast solutions → prove layer-two superiority for micropayments → identify PCN/rollup limitations.",
+        "Strengths: Comprehensive comparisons; clear trilemma framing. Weaknesses: Limited empirical validation. Rebuttals addressed via tables contrasting prior surveys."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First survey covering all layers while focusing on PCN challenges; detailed rollup analysis; systematic taxonomy.",
+        "HW solutions require specialized hardware; L0 changes risk blockchain forks; PCNs need balanced channels and face privacy leaks.",
+        "Trilemma-centric view constraints conclusions: No solution achieves ideal scalability without tradeoffs in decentralization/security."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as definitive gap-bridging survey in blockchain scalability discourse, particularly for layer-two protocols.",
+        "Uses formal terminology (e.g., 'consensus protocols', 'HTLCs'); technical tone; rhetorical emphasis on novelty via comparative tables.",
+        "Builds authority by citing 120+ works; citation strategy highlights coverage gaps in prior surveys to justify contribution significance."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Layer-two protocols (PCNs, rollups) are vital for scalability; PCNs require solving routing/rebalancing; rollups expand smart-contract efficiency.",
+        "Future work: Decentralized PCN simulators; privacy-preserving routing; cross-layer optimizations; integration of TEEs with layer-two protocols."
+      ]
+    }
+  }
+}

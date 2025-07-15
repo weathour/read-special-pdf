@@ -1,0 +1,82 @@
+{
+  "file_name": "Wang 等 - 2022 - Model Predictive Control for Connected Vehicle Platoon Under Switching Communication Topology.pdf",
+  "generated_at": "2025-07-11 04:34:16",
+  "structured_info": {
+    "title_cn": "切换通信拓扑下互联车辆编队的模型预测控制",
+    "title_en": "Model Predictive Control for Connected Vehicle Platoon Under Switching Communication Topology",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicular Platoon Control",
+      "Model Predictive Control",
+      "V2X Communication"
+    ],
+    "keywords": [
+      "Connected vehicles",
+      "vehicular platoon control",
+      "model predictive control (MPC)",
+      "switching communication topologies",
+      "co-simulation"
+    ],
+    "abstract": "Vehicular platoon control can effectively achieve group consensus, improve vehicular running safety and increase road capacity. However, some constraints exist in practical situations due to the limitations of traffic environment in time-varying metrics (time-delay, packet-dropout or interruption) in wireless communication systems. In this work, a distributed model predictive control (MPC) algorithm is proposed for connected vehicle platoon with a focus on switching communication topologies and control strategy under abnormal communications. Firstly, the predecessor-leader following is selected as the basic communication topology, by which the switching communication topology and the desired vehicle spacing policy are established. Secondly, the platoon control algorithm of connected vehicles is established and a set of constraints is analyzed. Thirdly, the L2-norm string stability criterion and the asymptotic stability criterion are considered within the proposed MPC. Finally, a co-simulation platform for connected vehicle platoon is developed based on Prescan Matlab V2X communication simulator. In addition, the platoon control algorithm is tested in three traffic scenarios including normal communication, leading vehicle with abnormal communication and following vehicle with abnormal communication. The experiments demonstrate that the communication topologies in different communication environments can be switched well in real time through the proposed platoon control algorithm. In addition, the string stability, the consistency of vehicle spacing, speed and acceleration are proven to be guaranteed simultaneously.",
+    "methodology": "Distributed Model Predictive Control (MPC) with predecessor-leader following communication topology; Switching mechanisms for abnormal communications (leading/following vehicle failure); Co-simulation using Prescan, Matlab, and V2X simulator; L2-norm string stability and asymptotic stability analysis; Integration of Intelligent Driver Model (IDM) for vehicles with communication failures.",
+    "conclusion": "The proposed MPC-based platoon controller maintains string stability and safety across normal/abnormal communication scenarios. Real-time topology switching and spacing policy adjustments prevent collisions. Co-simulation confirms consistent speed/spacing under variable leader states and communication failures.",
+    "authors": [
+      "Pangwei Wang",
+      "Hui Deng",
+      "Juan Zhang",
+      "Li Wang",
+      "Mingfang Zhang",
+      "Yongfu Li"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2021.3073012",
+    "bibtex_citation": "Wang_Model_2022",
+    "analysis": {
+      "Overview": "Proposes an MPC-based controller for connected vehicle platoons that dynamically switches communication topologies and spacing policies during V2X communication failures (delay/packet loss/interruption) to maintain string stability and safety.",
+      "Background_and_Motivation": [
+        "Practical V2X communication suffers from time-varying disruptions (delay, packet loss) in traffic environments, which destabilize platoons.",
+        "Existing platoon controllers assume fixed topologies and lack robustness to communication abnormalities. This work solves real-time adaptation to communication failures.",
+        "Authors highlight collision risks and efficiency loss from communication failures, establishing urgency via traffic safety/throughput metrics.",
+        "Links specific problem to broader challenge of reliable cooperative driving in imperfect V2X networks.",
+        "Contributes to control theory, vehicular networks, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1) **Switching Communication Topology**: Dynamic reconfiguration (e.g., promoting follower to leader during leader failure). 2) **MPC-based Platoon Control**: Optimizes acceleration/spacing under constraints. 3) **String Stability**: L2-norm guarantees error attenuation along platoon.",
+        "Topology switching enables MPC to maintain stability when communications fail; MPC ensures optimal spacing/speed under constraints.",
+        "Assumes single-vehicle communication failures at a time; V2X sensors provide accurate state data; vehicle dynamics follow linear models.",
+        "Provides a novel control framework integrating topology switching and MPC, advancing robust platooning under real-world communication constraints."
+      ],
+      "Methodology": [
+        "Core: Distributed MPC with rolling horizon optimization. Uses vehicle kinematics models. Switches to IDM for vehicles with communication loss.",
+        "Novelty: Real-time topology/spacing adjustment during failures. Applicable to variable leader states. Rationale: MPC handles multi-constraint optimization; switching preserves stability.",
+        "Simulated data from Prescan/Matlab/V2X simulator. Preprocessing: Vehicle dynamics parameterization (acceleration limits: ±2m/s²; speed: 0-20m/s). Representativeness: Covers urban traffic scenarios with communication disruptions.",
+        "Rigorous design: Three scenarios (normal/leader abnormal/follower abnormal) with co-simulation. Metrics: spacing error, speed consistency, collision avoidance.",
+        "Follows predictive control paradigm, emphasizing constraint handling and robustness over theoretical consensus approaches."
+      ],
+      "Results": [
+        "1) Normal: Spacing error <0.2m; no collisions. 2) Leader failure: Increased spacing (vehicle 1→2) ensures safety. 3) Follower failure: IDM activation prevents cascading errors.",
+        "Results significant: Prove real-time topology switching feasibility. Reliability: Consistent stability across scenarios. Stability: Spacing errors converge to zero asymptotically."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem formulation → Controller design → Stability proof → Simulation validation.",
+        "Key steps: 1) Derive switching logic for failures. 2) Formulate MPC constraints (safety/acceleration). 3) Prove asymptotic stability via Lyapunov. 4) Validate via co-simulation.",
+        "Strength: Comprehensive stability proofs. Weakness: Assumes single-point failures. Rebuttals addressed via IDM fallback and spacing policy adjustments."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Real-time topology switching; handles variable leader states; extensive co-simulation.",
+        "Limitations: Assumes no simultaneous multi-vehicle failures; no lane-change scenarios; homogeneous platoons.",
+        "Theoretical paradigm (MPC) focuses on short-term predictions, potentially limiting global optimality in large-scale networks."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as a robustness-focused advancement beyond fixed-topology platooning. Engages with string stability literature.",
+        "Technical terminology (e.g., \"L2-norm string stability\", \"asymptotic stability\"); authoritative tone; emphasizes \"novel\" and \"guaranteed\" outcomes.",
+        "Builds authority via 51 citations spanning control theory and transportation. Motivations: Contrast with prior work (e.g., fixed-topology limitations in [9,10,16])."
+      ],
+      "Conclusions_and_Implications": [
+        "MPC with dynamic topology switching ensures platoon stability under communication abnormalities. Co-simulation validates safety and string stability.",
+        "Future work: Heterogeneous/manually-driven platoons; multi-failure handling; intersection applications; fuel efficiency optimization."
+      ]
+    }
+  }
+}

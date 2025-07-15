@@ -1,0 +1,85 @@
+{
+  "file_name": "Kim 等 - 2021 - LPS-induced epithelial barrier disruption via hyperactivation of CACC and ENaC.pdf",
+  "generated_at": "2025-07-10 06:04:45",
+  "structured_info": {
+    "title_cn": "LPS通过过度激活CACC和ENaC诱导上皮屏障破坏",
+    "title_en": "LPS-induced epithelial barrier disruption via hyperactivation of CACC and ENaC",
+    "category": "Cell Physiology",
+    "topics": [
+      "Epithelial Barrier Function",
+      "Ion Channel Regulation",
+      "Inflammatory Response"
+    ],
+    "keywords": [
+      "apical membrane depolarization",
+      "CACC",
+      "epithelial barrier disruption",
+      "LPS",
+      "tyrosine phosphorylation"
+    ],
+    "abstract": "Gram-negative bacterial lipopolysaccharide (LPS) increases the susceptibility of cells to pathogenic diseases, including inflammatory diseases and septic syndrome. In our experiments, we examined whether LPS induces epithelial barrier disruption in secretory epithelia and further investigated its underlying mechanism. The activities of Ca2+-activated Cl- channels (CACC) and epithelial Na+ channels (ENaC) were monitored with a short-circuit current using an Ussing chamber. Epithelial membrane integrity was estimated via transepithelial electrical resistance and paracellular permeability assays. We found that the apical application of LPS evoked short-circuit current (Isc) through the activation of CACC and ENaC. Although LPS disrupted epithelial barrier integrity, this was restored with the inhibition of CACC and ENaC, indicating the role of CACC and ENaC in the regulation of paracellular pathways. We confirmed that LPS, CACC, or ENaC activation evoked apical membrane depolarization. The exposure to a high-K+ buffer increased paracellular permeability. LPS induced the rapid redistribution of zonula occludens-1 (ZO-1) and reduced the expression levels of ZO-1 in tight junctions through apical membrane depolarization and tyrosine phosphorylation. However, the LPS-induced epithelial barrier disruption and degradation of ZO-1 were largely recovered by blocking CACC and ENaC. Furthermore, although LPS-impaired epithelial barrier became vulnerable to secondary bacterial infections, this vulnerability was prevented by inhibiting CACC and ENaC. We concluded that LPS induces the disruption of epithelial barrier integrity through the activation of CACC and ENaC, resulting in apical membrane depolarization and the subsequent tyrosine phosphorylation of ZO-1.",
+    "methodology": "Ussing chamber electrophysiology for short-circuit current (Isc) and transepithelial voltage (Vte) measurements; transepithelial electrical resistance (TER) and paracellular permeability assays; immunofluorescence and Western blot for protein localization/expression; co-immunoprecipitation for protein interactions; Fluo-4 AM for intracellular calcium concentration; cAMP ELISA; Limulus amebocyte lysate assay for bacterial susceptibility; SMG-C6 immortalized submandibular epithelial cell line.",
+    "conclusion": "LPS disrupts epithelial barrier integrity by hyperactivating CACC and ENaC, leading to apical membrane depolarization, tyrosine phosphorylation of ZO-1, and tight junction disassembly. Inhibition of CACC/ENaC restores barrier function and prevents secondary bacterial infections.",
+    "authors": [
+      "Minkyoung Kim",
+      "Sang-Woo Lee",
+      "Junchul Kim",
+      "Yonghwan Shin",
+      "Fengjiao Chang",
+      "Jin Man Kim",
+      "Xin Cong",
+      "Guang-Yan Yu",
+      "Kyungpyo Park"
+    ],
+    "publication_year": "2021",
+    "venue": "American Journal of Physiology - Cell Physiology",
+    "doi": "10.1152/ajpcell.00295.2020",
+    "bibtex_citation": "Kim_LPS_2021",
+    "analysis": {
+      "Overview": "This paper investigates how lipopolysaccharide (LPS) from Gram-negative bacteria disrupts epithelial barrier integrity in secretory epithelia. It identifies hyperactivation of calcium-activated chloride channels (CACC) and epithelial sodium channels (ENaC) as central mechanisms, linking ion channel activity to tight junction disassembly via apical membrane depolarization and tyrosine phosphorylation of ZO-1.",
+      "Background_and_Motivation": [
+        "LPS from Gram-negative bacteria compromises epithelial barriers in inflammatory diseases (e.g., Crohn's, cystic fibrosis, acute lung injury) and septic syndrome, but molecular mechanisms in secretory epithelia remain unclear.",
+        "To determine if LPS disrupts barriers via CACC/ENaC activation and elucidate downstream signaling pathways involving depolarization and ZO-1 phosphorylation.",
+        "Authors emphasize LPS prevalence in clinical pathologies and acute in vivo effects (e.g., sepsis), arguing that ion channel-mediated barrier disruption is an understudied therapeutic target with urgent clinical implications.",
+        "The specific problem (ion channel hyperactivation) is framed within broader challenges of infection-induced epithelial dysfunction, highlighting its significance in maintaining tissue homeostasis and preventing systemic inflammation.",
+        "Contributes to Cell Physiology, Molecular Biology, and Epithelial Barrier Research, with interdisciplinary relevance to Immunology and Infectious Disease."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "CACC (Ca2+-activated Cl- channels): Apical channels regulating Cl- secretion; ENaC (Epithelial Na+ channels): Apical channels for Na+ absorption; Apical membrane depolarization: Loss of membrane potential driving tyrosine phosphorylation.",
+        "LPS → TRPA1 activation/ER Ca2+ release → ↑ [Ca2+]i and cAMP → CACC/ENaC hyperactivation → depolarization → ZO-1 tyrosine phosphorylation → barrier disruption.",
+        "SMG-C6 cells accurately model salivary gland epithelium; LPS effects are TLR4-independent; depolarization directly triggers tyrosine kinase activity.",
+        "Provides a mechanistic link between ion channel activity and tight junction integrity, offering a novel therapeutic paradigm (CACC/ENaC inhibition) for barrier restoration."
+      ],
+      "Methodology": [
+        "Core methods: Ussing chamber (Isc/Vte), TER/permeability assays, immunofluorescence/Western blot for ZO-1 localization, co-IP for phosphorylation, Ca2+/cAMP quantification, and bacterial susceptibility tests.",
+        "Novelty: First to show CACC/ENaC mediate LPS barrier disruption via depolarization-induced ZO-1 phosphorylation. Applicability: SMG-C6 cells and inhibitors (e.g., NFA, amiloride) validate target specificity. Rationality: Stepwise inhibitor studies establish causality.",
+        "SMG-C6 rat submandibular epithelial cells; LPS (E. coli); FITC-dextran for permeability. Preprocessing: Standard cell culture and electrophysiological stabilization. Representativeness: Cells form confluent monolayers with functional tight junctions, though in vitro limitations apply.",
+        "Rigorous dose-response LPS experiments; multiple inhibitors per target; appropriate controls (basolateral LPS, viability assays). TER, Isc, Papp, and phosphorylation metrics adequately evaluated barrier and signaling outcomes.",
+        "Follows ion channel physiology and epithelial signaling paradigms, focusing on electrochemical gradients and second messengers, which direct mechanistic inquiry toward depolarization and phosphorylation events."
+      ],
+      "Results": [
+        "LPS activates TRPA1 → ↑ [Ca2+]i/cAMP → CACC/ENaC hyperactivation → Isc increase and TER decrease. Depolarization induces ZO-1 tyrosine phosphorylation, nuclear translocation, and degradation. CACC/ENaC inhibition reverses barrier disruption and prevents secondary infections.",
+        "Results are significant (p<0.05–0.001) and reliable: Consistent across electrophysiology, imaging, and biochemical assays. Stability: Demonstrated via concentration-dependence, inhibitor rescue, and multi-method validation."
+      ],
+      "Argumentation_and_Logic": [
+        "Linear progression: 1) LPS activates CACC/ENaC via Ca2+/cAMP; 2) Hyperactivation causes depolarization; 3) Depolarization phosphorylates ZO-1; 4) ZO-1 redistribution disrupts barriers; 5) Inhibition rescues function.",
+        "Key steps: Dose-dependent LPS effects → inhibitor specificity → depolarization-permeability link → ZO-1 phosphorylation → therapeutic validation via secondary infection assays.",
+        "Strengths: Multi-faceted evidence (electrophysiology to imaging). Weaknesses: TLR4-independence initially counterintuitive but addressed via TRPA1 validation. Rebuttals: Cell viability controls exclude cytotoxicity; multiple inhibitors confirm target roles."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Identifies novel CACC/ENaC-depolarization-ZO-1 axis; therapeutic potential shown via barrier restoration and infection prevention.",
+        "In vitro model may not fully recapitulate in vivo complexity; focus on acute LPS effects overlooks chronic inflammation; TRPA1 specificity warrants further study.",
+        "Emphasis on ion channels limits exploration of alternative pathways (e.g., cytokine signaling); conclusions are constrained to electrochemical disruption mechanisms."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions LPS-induced barrier disruption within ion channel physiology discourse, challenging TLR4-centric views and proposing TRPA1/CACC/ENaC as primary mediators.",
+        "Specialized terminology (e.g., 'apical membrane depolarization', 'paracellular permeability'); authoritative tone; rhetorical strategies include juxtaposing LPS pathology with inhibitor rescue data to emphasize therapeutic promise.",
+        "Builds authority through citations of foundational ion channel/TJ studies. Motivations: Support TRPA1's role over TLR4; contextualize ZO-1 phosphorylation within epithelial pathophysiology."
+      ],
+      "Conclusions_and_Implications": [
+        "LPS hyperactivates CACC/ENaC via Ca2+/cAMP, causing depolarization-dependent ZO-1 tyrosine phosphorylation and barrier disruption. Inhibition restores integrity and blocks secondary infections.",
+        "Future work: In vivo validation; clinical translation of CACC/ENaC inhibitors; explore similar mechanisms in other epithelia (e.g., intestine, lung); investigate ZO-1 recycling/degradation pathways."
+      ]
+    }
+  }
+}

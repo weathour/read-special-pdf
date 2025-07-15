@@ -1,0 +1,83 @@
+{
+  "file_name": "Lin 等 - 2025 - Edge-Assisted Collaborative Perception Against Jamming and Interference in Vehicular Networks.pdf",
+  "generated_at": "2025-07-11 02:21:00",
+  "structured_info": {
+    "title_cn": "抗干扰和干扰的车载网络中边缘辅助协同感知",
+    "title_en": "Edge-Assisted Collaborative Perception Against Jamming and Interference in Vehicular Networks",
+    "category": "Wireless Communications",
+    "topics": [
+      "Vehicular Networks",
+      "Edge Computing",
+      "Reinforcement Learning"
+    ],
+    "keywords": [
+      "Edge-assisted collaborative perception",
+      "LiDAR",
+      "vehicular networks",
+      "reinforcement learning",
+      "jamming"
+    ],
+    "abstract": "Collaborative perception of connected autonomous vehicles (CAVs) that offload the sensing data, such as the feature map extracted from light detection and ranging (LiDAR) point clouds, to an edge device such as the roadside unit (RSU) to detect traffic objects has severe performance degradation due to the offloading latency and packet loss rate (PLR) under jamming and interference. In this paper, we propose an edge-assisted reinforcement learning (RL)-based collaborative perception scheme for CAVs to enhance the accuracy and speed against jamming and interference in LiDAR-based object detection. Based on the spatial confidence score of the feature map, the data size, the channel gains, the received jamming power and interference level, this scheme chooses the critical regions of the feature map, radio channel and transmit power with the hierarchical structure to enhance the learning efficiency. The risk level of the selected policy evaluates the time asynchronization and information loss of the shared feature map using the multi-level risk function based on multiple thresholds of the offloading latency and PLR, with assigning different penalties to mitigate the selection of high-risk policies that degrade perception performance. The upper performance bound in terms of the perception accuracy, latency and utility is provided based on the Stackelberg equilibrium of the game between the jammer and CAVs. Experimental results based on the Robosense RS-LiDAR-16 sensors and the Raspberry Pi to detect 10 vehicles in an 8.5 × 4 × 3.5 m³ area show the performance gain with 22.4% higher perception accuracy and 41.3% less latency compared with the benchmark against a smart jammer.",
+    "methodology": "Proposes a hierarchical reinforcement learning (RL) scheme for collaborative perception. The method selects critical regions of LiDAR feature maps, radio channels, and transmit power based on spatial confidence scores, channel gains, jamming power, and interference levels. It uses a multi-level risk function to penalize high-latency/high-PLR policies and decomposes policy selection into three sub-policies (region, channel, power) via Markov decision processes. A deep RL variant handles quantization errors in large-scale networks.",
+    "conclusion": "The RL-based scheme significantly improves perception accuracy (22.4%) and reduces latency (41.3%) compared to benchmarks. The hierarchical structure enhances learning efficiency, and the risk-aware mechanism mitigates performance degradation. Upper performance bounds derived from Stackelberg game equilibrium show accuracy improves with feature map regions when channel gains exceed jamming-dependent thresholds.",
+    "authors": [
+      "Zhiping Lin",
+      "Liang Xiao",
+      "Hongyi Chen",
+      "Zefang Lv",
+      "Yunjun Zhu",
+      "Yanyong Zhang",
+      "Yong-Jin Liu"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "doi": "10.1109/TWC.2024.3510601",
+    "bibtex_citation": "Lin_Edge-Assisted_2025",
+    "analysis": {
+      "Overview": "Proposes a reinforcement learning framework for edge-assisted collaborative perception in vehicular networks to counter jamming and interference, enhancing LiDAR-based object detection accuracy and reducing latency.",
+      "Background_and_Motivation": [
+        "Jamming in vehicular networks degrades perception by increasing latency and packet loss, risking traffic safety. Broader challenges include sparse sensor coverage and limited sensing range in CAVs.",
+        "Specific problem: Offloading latency and PLR under jamming compromise real-time object detection. Motivation: Improve accuracy and speed of collaborative perception against adversarial interference.",
+        "Authors argue urgency by linking jamming to accidents and data integrity breaches, emphasizing vulnerability in V2X communication.",
+        "The problem relates to broader vehicular safety challenges; its significance lies in enabling reliable autonomous driving in adversarial environments.",
+        "Contributes to wireless communications, edge computing, autonomous systems, and adversarial machine learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Hierarchical RL: Decomposes action space (region/channel/power selection) to reduce complexity. (2) Multi-level risk function: Penalizes policies exceeding latency/PLR thresholds. (3) Stackelberg equilibrium: Models CAV-jammer interactions for performance bounds.",
+        "Relationships: Hierarchical RL selects actions → Risk function evaluates safety → Stackelberg game provides theoretical bounds.",
+        "Key assumptions: Jamming power estimable via energy detection; perception accuracy linearly correlates with confidence scores and inversely with latency.",
+        "Contribution: Novel integration of safe RL with risk mitigation and game theory, advancing robust perception in adversarial settings."
+      ],
+      "Methodology": [
+        "Hierarchical RL with Q-tables (utility) and E-tables (risk) for policy selection. Deep RL variant uses neural networks for state feature extraction.",
+        "Novelty: Joint optimization of perception and communication under jamming. Applicability: Validated via simulations and Raspberry Pi/LiDAR experiments. Rationality: Hierarchical design reduces sample complexity; risk aversion aligns with safety needs.",
+        "Data: Robosense RS-LiDAR-16 point clouds; V2X-Sim dataset (47,200 samples). Preprocessing: Feature maps partitioned via PointPillar backbone; confidence scores quantized. Representativeness: Real-world vehicular scenarios but limited to 10 objects in 119 m³ area.",
+        "Experiments used IoU≥0.5 for accuracy, latency, PLR metrics. Rigor: Compared against ABFRL benchmark; statistical averaging over 200 simulation/20 experimental runs.",
+        "Follows Markov decision process paradigm, integrating game theory (Stackelberg equilibrium) for theoretical grounding."
+      ],
+      "Results": [
+        "Key results: 22.4% higher accuracy, 41.3% lower latency vs. benchmark; converges in 4000 time slots. Deep RL outperforms vanilla RL.",
+        "Results significant: Statistically validated (200 runs), stable across CAV counts (1-5). Reliability: Hardware experiments confirm simulation trends."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem formulation → RL solution → Theoretical bounds → Evaluation.",
+        "Steps: (1) Motivate jamming impact; (2) Formulate MDP; (3) Propose hierarchical RL; (4) Derive Stackelberg bounds; (5) Validate via sims/experiments.",
+        "Strengths: Clear problem-solution alignment; weaknesses: Limited discussion on data fabrication attacks. Rebuttals: Hardware tests address real-world validity gaps."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First RL-based anti-jamming for collaborative perception; risk-aware exploration; hardware validation.",
+        "Limitations: Assumes linear accuracy-latency relationship; tested in small area (119 m³); scalability to high-speed CAVs unverified.",
+        "Theoretical paradigm (MDP) constraints: Assumes Markovian state transitions, may not capture long-term dependencies."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between wireless security and autonomous perception, critiquing prior RL methods (e.g., ABFRL) for ignoring jamming.",
+        "Terminology: \"Spatial confidence score\", \"multi-level risk\". Tone: Technical/assertive. Rhetoric: Emphasizes safety (\"traffic accidents\") to underscore urgency.",
+        "Builds authority via IEEE citations (e.g., DSRC standards) and theoretical proofs; motivation: Establish novelty in adversarial perception."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Hierarchical RL with risk mitigation improves perception accuracy/latency; Stackelberg bounds guide performance expectations.",
+        "Future work: Spatial consistency checks for data validation; adaptive compression; handling faster CAVs/larger networks; defenses against data fabrication attacks."
+      ]
+    }
+  }
+}

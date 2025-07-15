@@ -1,0 +1,80 @@
+{
+  "file_name": "Garzón 等 - 2022 - Machine Learning-Based Surrogate Modeling for Urban Water Networks Review and Future Research Direc.pdf",
+  "generated_at": "2025-07-14 12:30:11",
+  "structured_info": {
+    "title_cn": "基于机器学习的城市水网络替代建模：综述与未来研究方向",
+    "title_en": "Machine Learning-Based Surrogate Modeling for Urban Water Networks: Review and Future Research Directions",
+    "category": "Water Resources",
+    "topics": [
+      "Surrogate Modeling",
+      "Urban Water Networks",
+      "Machine Learning"
+    ],
+    "keywords": [
+      "Machine Learning",
+      "Surrogate Models",
+      "Urban Water Networks",
+      "Optimization",
+      "Uncertainty Analysis"
+    ],
+    "abstract": "Surrogate models replace computationally expensive simulations of physically-based models to obtain accurate results at a fraction of the time. These surrogate models, also known as metamodels, have been employed for analysis, control, and optimization of water distribution and urban drainage systems. With the advent of machine learning (ML), water engineers have increasingly resorted to these data-driven techniques to develop metamodels of urban water networks (UWNs). In this article, we review 31 recent articles on ML-based metamodeling of UWNs to outline the state-of-the-art of the field, identify outstanding gaps, and propose future research directions. For each article, we critically examined the purpose of the metamodel, the metamodel characteristics, and the applied case study. The review shows that current metamodels suffer several drawbacks, including (a) the curse of dimensionality, hindering implementation for large case studies; (b) black-box deterministic nature, limiting explainability and applicability; and (c) rigid architecture, preventing generalization across multiple case studies. We argue that researchers should tackle these issues by resorting to recent advancements in ML concerning inductive biases, robustness, and transferability. Recently developed neural network architectures, which extend deep learning methods to graph data structures, are preferred candidates for advancing surrogate modeling in UWNs. Furthermore, we foresee increasing efforts for complex applications where metamodels may play a fundamental role, such as uncertainty analysis and multi-objective optimization. Lastly, the development and comparison of ML-based metamodels can benefit from the availability of new benchmark datasets for urban drainage systems and realistic complex networks.",
+    "methodology": "Semi-systematic review of 31 recent articles on ML-based metamodeling of UWNs, analyzing purpose, case study, and metamodel characteristics.",
+    "conclusion": "Current ML-based surrogate models for UWNs face challenges related to dimensionality, explainability, and transferability. Future research should focus on advanced ML techniques like graph neural networks, robustness, and explainability, as well as developing benchmark datasets for urban drainage systems.",
+    "authors": [
+      "A. Garzón",
+      "Z. Kapelan",
+      "J. Langeveld",
+      "R. Taormina"
+    ],
+    "publication_year": "2022",
+    "venue": "Water Resources Research",
+    "doi": "10.1029/2021WR031808",
+    "bibtex_citation": "Garzón_ML-based_2022",
+    "analysis": {
+      "Overview": "The paper reviews the application of machine learning-based surrogate models in urban water networks, identifying current challenges and proposing future research directions.",
+      "Background_and_Motivation": [
+        "Urban water networks face challenges in design, optimization, and real-time control due to computational complexity.",
+        "The motivation is to reduce computational costs while maintaining accuracy through surrogate models.",
+        "The authors highlight the necessity of surrogate models for applications like optimization and uncertainty analysis.",
+        "The research problem is linked to broader challenges in urban water management under climate change.",
+        "The paper contributes to water resources engineering and machine learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: surrogate models, machine learning, urban water networks.",
+        "Logical relationships: surrogate models replace complex simulations, ML techniques improve surrogate model performance.",
+        "Assumptions: surrogate models can accurately approximate complex simulations with less computational effort.",
+        "The paper contributes by reviewing current practices and proposing advanced ML techniques for future research."
+      ],
+      "Methodology": [
+        "Review of 31 articles, focusing on purpose, case study, and metamodel characteristics.",
+        "Novelty lies in the comprehensive review and identification of gaps in current practices.",
+        "Data sources include peer-reviewed articles from the last two decades.",
+        "Experimental design involves qualitative analysis of existing studies.",
+        "The research follows a systematic review methodology."
+      ],
+      "Results": [
+        "Current metamodels suffer from dimensionality, explainability, and transferability issues.",
+        "Results are significant for guiding future research but are limited by the scope of reviewed studies."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around reviewing current practices, identifying gaps, and proposing future directions.",
+        "Key steps: literature review, gap analysis, future research proposals.",
+        "Strengths include comprehensive review; weaknesses include potential bias in article selection."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: thorough review, clear identification of gaps, actionable future research directions.",
+        "Limitations: reliance on existing studies, potential bias in article selection.",
+        "Theoretical paradigm constraints are not explicitly discussed."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on urban water management and machine learning.",
+        "Terminology is technical, targeting researchers in water resources and ML.",
+        "Citations are used to build authority and contextualize the review."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Current ML-based surrogate models need improvements in dimensionality, explainability, and transferability.",
+        "Future research should focus on advanced ML techniques and benchmark datasets."
+      ]
+    }
+  }
+}

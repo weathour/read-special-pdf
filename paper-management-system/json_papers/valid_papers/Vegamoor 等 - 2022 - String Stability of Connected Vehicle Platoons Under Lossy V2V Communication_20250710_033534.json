@@ -1,0 +1,80 @@
+{
+  "file_name": "Vegamoor 等 - 2022 - String Stability of Connected Vehicle Platoons Under Lossy V2V Communication.pdf",
+  "generated_at": "2025-07-10 03:35:34",
+  "structured_info": {
+    "title_cn": "丢包V2V通信下连接车辆队列的串稳定性",
+    "title_en": "String Stability of Connected Vehicle Platoons Under Lossy V2V Communication",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicle Platooning",
+      "String Stability",
+      "V2V Communication",
+      "Control Systems",
+      "Vehicle Safety"
+    ],
+    "keywords": [
+      "Intelligent vehicles",
+      "advanced driver assistance",
+      "vehicle dynamics",
+      "vehicle safety"
+    ],
+    "abstract": "Recent advances in vehicle connectivity have allowed formation of autonomous vehicle platoons for improved mobility and traffic throughput. In order to avoid a pile-up in such platoons, it is important to ensure platoon (string) stability, which is the focus of this work. As per conventional definition of string stability, the power (2-norm) of the spacing error signals should not amplify downstream in a platoon. But in practice, it is the infinity-norm of the spacing error signal that dictates whether a collision occurs. We address this discrepancy in the first part of our work, where we reconsider string stability from a safety perspective and develop an upper limit on the maximum spacing error in a homogeneous platoon as a function of the acceleration maneuver of the lead vehicle. In the second part of this paper, we extend our previous results by providing the minimum achievable time headway for platoons with two-predecessor lookup schemes experiencing burst-noise packet losses. Finally, we utilize throttle and brake maps to develop a longitudinal vehicle model and validate it against a Lincoln MKZ which is then used for numerical corroboration of the proposed time headway selection algorithms.",
+    "methodology": "Theoretical analysis of string stability using infinity-norm criteria; development of upper bounds for maximum spacing errors; Gilbert noise channel modeling for bursty packet losses; derivation of minimum time headway conditions; validation via high-fidelity longitudinal vehicle modeling and simulations.",
+    "conclusion": "1) Developed safety-oriented bounds for maximum spacing errors in homogeneous platoons. 2) Established sufficient conditions for minimum string-stable time headway under burst-noise packet losses. 3) Demonstrated that platoons can smoothly transition between communication modes (CACC++ → CACC → ACC) based on packet reception rates. 4) Validated theoretical results through simulations using a high-fidelity vehicle model.",
+    "authors": [
+      "Vamsi Vegamoor",
+      "Sivakumar Rathinam",
+      "Swaroop Darbha"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2021.3086809",
+    "bibtex_citation": "Vegamoor_String_2022",
+    "analysis": {
+      "Overview": "The paper analyzes string stability in connected vehicle platoons under unreliable V2V communication, focusing on collision prevention through infinity-norm error bounds and minimum time headway requirements for different communication topologies.",
+      "Background_and_Motivation": [
+        "Vehicle platooning improves traffic throughput but requires guaranteed safety to prevent pile-ups.",
+        "Traditional 2-norm string stability criteria inadequately address collision risks; packet losses degrade platoon stability.",
+        "Safety-critical nature of autonomous driving necessitates rigorous error bounds; arbitrary standstill distance selection compromises efficiency.",
+        "Connects specific control challenges to broader intelligent transportation goals of safety and efficiency.",
+        "Control theory, communication networks, automotive engineering, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1) Infinity-norm string stability: Maximum spacing error bounds for collision prevention. 2) Gilbert channel model: Bursty packet loss representation. 3) Deterministic equivalence: Approximation for stochastic systems.",
+        "Packet loss probability dictates minimum time headway → affects spacing error bounds → determines collision risk.",
+        "Homogeneous vehicle dynamics; independent communication links; acceleration maneuvers have finite duration.",
+        "Provides novel analytical bounds for safety-critical parameters and extends control paradigms to lossy communication environments."
+      ],
+      "Methodology": [
+        "Theoretical derivation of error bounds (Theorems 1-2); Gilbert channel modeling; deterministic system approximation; high-fidelity vehicle modeling with experimental validation.",
+        "Novel infinity-norm approach enhances safety relevance; Gilbert model captures realistic burst losses; validated vehicle model ensures practical applicability.",
+        "Throttle/brake maps from 2017 Lincoln MKZ; preprocessing via surface fitting; validated against real vehicle data.",
+        "Emergency braking scenarios with varied packet loss rates; spacing error and headway as primary metrics.",
+        "Follows linear system theory and control paradigms; focuses on actuation lags over communication delays."
+      ],
+      "Results": [
+        "Derived minimum headway: h_min = 2τ(1-γ)/(1-2γ)(1-γ(1-γ)K_a for CACC++; Validation shows <5% error between stochastic average and deterministic approximation.",
+        "Results enable safe platooning at 0.6s headway under lossy conditions (vs 0.8s for ACC); bounds remain valid across platoon sizes."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Establish safety-focused stability criterion 2) Derive error bounds 3) Model communication losses 4) Develop headway conditions 5) Validate experimentally.",
+        "Theorem 1 links lead acceleration to max spacing error → Theorem 2 extends to multi-vehicle lookups → Loss analysis derives minimum headway → Simulations validate bounds.",
+        "Strengths: Unified treatment of safety and communication imperfections. Weaknesses: Approximations for multi-vehicle lookups addressed via simulation validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Safety-oriented stability criterion; practical headway selection algorithms; validated high-fidelity simulations.",
+        "Assumes independent communication links; ignores sensor faults; approximation accuracy decreases with more predecessors.",
+        "Linear system framework constrains nonlinear dynamics analysis; point-mass model ignores aerodynamic effects."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on string stability by integrating communication imperfections and safety metrics.",
+        "Technical terminology (e.g., 'parasitic lag', 'infinity-norm'); formal mathematical tone; uses authority-building citations to California PATH and prior IEEE works.",
+        "Strategic citations establish foundation; contrast with prior works (e.g., Zeng et al.) positions contributions as improvements."
+      ],
+      "Conclusions_and_Implications": [
+        "Infinity-norm criteria better reflect safety needs; derived headway bounds enable stable platooning under realistic packet losses; approximations valid for engineering applications.",
+        "Extend to faulty sensor scenarios; incorporate ride comfort metrics; explore complex communication topologies; real-world multi-vehicle validation."
+      ]
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "file_name": "Deguine 等 - 2021 - Integrated pest management good intentions, hard realities. A review.pdf",
+  "generated_at": "2025-07-11 04:16:56",
+  "structured_info": {
+    "title_cn": "综合害虫管理：良好的意图，严峻的现实。一篇综述",
+    "title_en": "Integrated pest management: good intentions, hard realities. A review",
+    "category": "Sustainable Agriculture",
+    "topics": [
+      "Integrated Pest Management",
+      "Agroecology",
+      "Pesticide Reduction",
+      "Crop Protection",
+      "Sustainable Development"
+    ],
+    "keywords": [
+      "IPM",
+      "Crop protection",
+      "Agroecology",
+      "Agroecological crop protection",
+      "Reduction of pesticides",
+      "Social ecology",
+      "Food systems",
+      "Research approaches",
+      "Pesticides"
+    ],
+    "abstract": "Integrated Pest Management (IPM) provides an illustration of how crop protection has (or has not) evolved over the past six decades. Throughout this period, IPM has endeavored to promote sustainable forms of agriculture, pursued sharp reductions in synthetic pesticide use, and thereby resolved myriad socio-economic, environmental, and human health challenges. Global pesticide use has, however, largely continued unabated, with negative implications for farmer livelihoods, biodiversity conservation, and the human right to food. In this review, we examine how IPM has developed over time and assess whether this concept remains suited to present-day challenges. We believe that despite many good intentions, hard realities need to be faced.",
+    "methodology": "Critical literature review, historical analysis of IPM evolution, case studies of IPM implementation failures, and proposal of Agroecological Crop Protection (ACP) as an alternative paradigm. Includes interdisciplinary assessment spanning agronomy, ecology, and social sciences.",
+    "conclusion": "IPM has failed to significantly reduce global pesticide use due to definitional confusion, inconsistencies between concepts and practices, insufficient farmer engagement, and inadequate ecological focus. The authors propose Agroecological Crop Protection (ACP) as a paradigm shift prioritizing ecological health, biodiversity, and preventive measures while relegating chemical control to a last-resort option.",
+    "authors": [
+      "Jean-Philippe Deguine",
+      "Kris A.G. Wyckhuys",
+      "Alain Ratnadass",
+      "Jean-Noël Aubertot",
+      "Rica Joy Flor",
+      "Françoise Lescourret"
+    ],
+    "publication_year": "2021",
+    "venue": "Agronomy for Sustainable Development",
+    "doi": "10.1007/s13593-021-00689-w",
+    "bibtex_citation": "Deguine_Integrated_2021",
+    "analysis": {
+      "Overview": "This review critically examines the 60-year evolution of Integrated Pest Management (IPM), revealing its failure to reduce global pesticide use despite intentions. It analyzes systemic weaknesses in IPM implementation and proposes Agroecological Crop Protection (ACP) as a sustainable alternative. The research area spans crop protection, agroecology, and agricultural policy.",
+      "Background_and_Motivation": [
+        "Persistent global pesticide use causing biodiversity loss, health hazards, and economic burdens despite IPM's theoretical promise of sustainability.",
+        "To diagnose why IPM has not reduced pesticide dependency and to address gaps between ecological principles and field practices.",
+        "By highlighting socio-ecological crises (e.g., insect apocalypse, farmer debt) linked to pesticides and demonstrating IPM's conceptual degradation since the 1960s.",
+        "Authors frame IPM's failures as symptomatic of broader agricultural unsustainability, affecting UN Sustainable Development Goals (e.g., zero hunger, clean water).",
+        "Agronomy, Ecology, Social Sciences, and Sustainable Development."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1. Integrated Pest Management (IPM): Pest population management integrating multiple control tactics with minimal ecological disruption. 2. Agroecological Crop Protection (ACP): Application of agroecology principles to prioritize ecosystem health and preventive measures. 3. Ecosystem Services: Ecological functions (e.g., pest regulation) enhanced via biodiversity.",
+        "IPM's erosion led to pesticide dependency; ACP supersedes it by embedding crop protection within agroecology's triple framework (science, practices, social movement).",
+        "Chemical control is fundamentally incompatible with ecological sustainability; farmer participation is essential for effective knowledge co-creation.",
+        "Paradigm-shifting contribution: Critiques IPM's foundations and establishes ACP as a holistic alternative integrating ecological, agronomic, and socio-organizational dimensions."
+      ],
+      "Methodology": [
+        "Historical analysis of IPM literature, case studies (e.g., mango/chayote in Réunion), policy evaluation (e.g., EU Directive 2009/128), and ecological modeling.",
+        "Novel in synthesizing 60 years of IPM evidence; applicable to global agriculture but context-dependent; rational due to interdisciplinary triangulation.",
+        "Diverse academic publications, field trial data, and institutional reports. Representativeness limited by geographic bias (stronger Global North data). Minimal preprocessing beyond thematic organization.",
+        "Non-experimental review design; rigor demonstrated through systematic weakness identification. Evaluation metrics include pesticide reduction rates and agroecosystem biodiversity.",
+        "Follows agroecological theoretical paradigm, emphasizing systems thinking over pest-centric approaches and influencing redesign-oriented research perspectives."
+      ],
+      "Results": [
+        "1) Global pesticide use increased despite IPM; 2) >100 contradictory IPM definitions created confusion; 3) Chemical control remains primary in 78%+ field implementations; 4) ACP trials achieved 45-100% pesticide reduction without yield loss.",
+        "Results robustly challenge IPM's efficacy via historical trends. Reliability high for documented failures; stability of ACP successes requires long-term validation."
+      ],
+      "Argumentation_and_Logic": [
+        "Three-part structure: 1) IPM's historical failures, 2) Diagnosis of weaknesses (definitional, practical, ecological), 3) ACP as solution.",
+        "Key steps: Evolution review → weakness categorization (Section 3-6) → paradigm shift proposal (Section 7) → case validation.",
+        "Strengths: Interdisciplinary evidence integration. Weaknesses: Limited counterarguments about IPM successes. Rebuttals: Acknowledges isolated IPM wins but attributes them to context-specific factors, not scalable models."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive historical synthesis; innovative ACP framework; actionable policy insights.",
+        "ACP scalability unproven in large-scale monocultures; economic trade-offs understudied.",
+        "Agroecological paradigm may underestimate immediate economic pressures on farmers transitioning from chemical dependency."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Disruptive critique of IPM orthodoxy; positions ACP within contemporary sustainability discourse.",
+        "Terminology: 'Paradigm shift', 'hard realities', 'agroecological transition'. Rhetoric: Urgent, advocacy-oriented, contrasts 'good intentions' with empirical failures.",
+        "Builds authority through 200+ citations spanning six decades. Motivations include realigning crop protection with ecological integrity and human rights."
+      ],
+      "Conclusions_and_Implications": [
+        "IPM is irreparably compromised by pesticide industry influence and implementation gaps; ACP integrates ecological principles, farmer agency, and policy levers for sustainable crop protection.",
+        "Prioritize participatory ACP scaling; develop economic models for transition incentives; redefine policy metrics beyond pesticide quantity to ecosystem health."
+      ]
+    }
+  }
+}

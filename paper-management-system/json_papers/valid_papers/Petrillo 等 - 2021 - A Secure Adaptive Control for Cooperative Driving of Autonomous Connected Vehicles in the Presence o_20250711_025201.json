@@ -1,0 +1,83 @@
+{
+  "file_name": "Petrillo 等 - 2021 - A Secure Adaptive Control for Cooperative Driving of Autonomous Connected Vehicles in the Presence o.pdf",
+  "generated_at": "2025-07-11 02:52:01",
+  "structured_info": {
+    "title_cn": "在存在异构通信延迟和网络攻击的情况下，自主连接车辆协同驾驶的安全自适应控制",
+    "title_en": "A Secure Adaptive Control for Cooperative Driving of Autonomous Connected Vehicles in the Presence of Heterogeneous Communication Delays and Cyberattacks",
+    "category": "Control Systems",
+    "topics": [
+      "Autonomous Vehicles",
+      "Cooperative Driving",
+      "Cybersecurity",
+      "Adaptive Control",
+      "Vehicular Networks"
+    ],
+    "keywords": [
+      "Adaptive distributed resilient control protocol",
+      "autonomous connected vehicles",
+      "cyber-physical systems",
+      "cyber-secure control",
+      "Lyapunov Krasovskii",
+      "multiple time-varying communication delays"
+    ],
+    "abstract": "The development of autonomous connected vehicles, moving as a platoon formation, is a hot topic in the intelligent transportation system (ITS) research field. It is on the road and deployment requires the design of distributed control strategies, leveraging secure vehicular ad-hoc networks (VANETs). Indeed, wireless communication networks can be affected by various security vulnerabilities and cyberattacks leading to dangerous implications for cooperative driving safety. Control design can play an important role in providing both resilience and robustness to vehicular networks. To this aim, in this article, we tackle and solve the problem of cyber-secure tracking for a platoon that moves as a cohesive formation along a single lane undergoing different kinds of cyber threats, that is, application layer and network layer attacks, as well as network induced phenomena. The proposed cooperative approach leverages an adaptive synchronization-based control algorithm that embeds a distributed mitigation mechanism of malicious information. The closed-loop stability is analytically demonstrated by using the Lyapunov Krasovskii theory, while its effectiveness in coping with the most relevant type of cyber threats is disclosed by using PLEXE, a high fidelity simulator which provides a realistic simulation of cooperative driving systems.",
+    "methodology": "Adaptive synchronization-based control algorithm with distributed mitigation mechanism for malicious information. Closed-loop stability analyzed via Lyapunov-Krasovskii theory. Evaluated using PLEXE simulator integrating OMNeT++/MiXiM for communication emulation and SUMO for vehicle dynamics.",
+    "conclusion": "The proposed adaptive cooperative controller ensures secure platoon tracking under heterogeneous communication delays and cyberattacks (spoofing, message falsification, DoS, burst transmission). Analytical stability is proven when leader information is uncompromised, and simulations confirm effectiveness across multiple network topologies.",
+    "authors": [
+      "Alberto Petrillo",
+      "Antonio Pescapé",
+      "Stefania Santini"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Cybernetics",
+    "doi": "10.1109/TCYB.2019.2962601",
+    "bibtex_citation": "Petrillo_Secure_2021",
+    "analysis": {
+      "Overview": "Proposes a resilient adaptive control strategy for autonomous vehicle platoons to maintain cooperative driving under cyberattacks and communication delays.",
+      "Background_and_Motivation": [
+        "Autonomous vehicle platoons rely on vulnerable VANETs; cyberattacks can cause collisions and disrupt traffic flow.",
+        "Design distributed controllers resilient to delays and attacks (spoofing, falsification, DoS, burst transmission) while ensuring leader tracking.",
+        "Existing cryptographic solutions are insufficient; control-layer resilience provides critical safety redundancy without complex observers.",
+        "Securing platoons addresses broader challenges in CPS security for intelligent transportation systems.",
+        "Contributes to control theory, cyber-physical systems, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Secure Adaptive Cooperative Control: Adapts gains based on synchronization errors to counteract disturbances.",
+        "Distributed Mitigation Mechanism: Local detection/discarding of malicious data via residual thresholding (Algorithm 1).",
+        "Platoon Synchronization: Maintenance of desired inter-vehicle spacing despite attacks.",
+        "Assumes leader is uncompromised and globally reachable; communication topologies remain connected.",
+        "Provides methodological innovation: First adaptive controller simultaneously handling heterogeneous delays and multi-layer cyberattacks without state estimators."
+      ],
+      "Methodology": [
+        "Adaptive gains tuned via synchronization errors; Lyapunov-Krasovskii proofs for delay robustness; PLEXE for co-simulation.",
+        "Novelty: Combines adaptive control with embedded attack mitigation. Applicable to VANETs; rational through distributed error minimization.",
+        "Simulated in PLEXE: Realistic vehicle dynamics (SUMO) and IEEE 802.11p communications (OMNeT++/MiXiM). Data represents highway platooning scenarios.",
+        "Experimental design includes acceleration/deceleration maneuvers under four attack types across P-F/L-P-F/B-L-F/BR topologies.",
+        "Follows networked control systems paradigm, emphasizing robustness through Lyapunov-based stability criteria."
+      ],
+      "Results": [
+        "Maintains platoon cohesion during attacks: Position errors ≤0.6m vs. 22m in CACC baselines; handles packet loss up to 70%.",
+        "Results are significant for collision prevention; reliable across topologies (except P-F without sensors); stable under delay bounds (0.1s)."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Problem formulation → 2) Control design with mitigation → 3) Lyapunov stability proof → 4) Simulation validation.",
+        "Key steps: Leader reachability → Attack modeling → Adaptive gain derivation → Delay-bound LMI conditions.",
+        "Strengths: Comprehensive attack/delay coverage. Weakness: Leader vulnerability unaddressed; countered via leader-security assumption."
+      ],
+      "Strengths_and_Limitations": [
+        "Handles multiple attack types without estimators; delay-robust; topology-flexible.",
+        "Mitigation requires non-P-F topologies or additional sensors; leader must be secure.",
+        "Lyapunov framework restricts nonlinear extensions; assumes differentiable delays."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between control theory and automotive cybersecurity; critiques observer-based methods as overly complex.",
+        "Technical lexicon (e.g., 'Lyapunov-Krasovskii', 'resilience'); persuasive through analytical proofs and comparative simulations.",
+        "Builds authority via citations of foundational CPS/platooning works; motivation: Urgent need for attack-resistant control beyond cryptography."
+      ],
+      "Conclusions_and_Implications": [
+        "Strategy ensures secure platooning under delays/attacks; reduces mean-square position errors >10x vs. benchmarks.",
+        "Future: Experimental validation; gain adjustment post-attack; extend to sensor fusion in P-F topologies."
+      ]
+    }
+  }
+}

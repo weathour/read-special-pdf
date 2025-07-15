@@ -1,0 +1,80 @@
+{
+  "file_name": "Marcano 等 - 2020 - A Review of Shared Control for Automated Vehicles Theory and Applications.pdf",
+  "generated_at": "2025-07-11 06:34:33",
+  "structured_info": {
+    "title_cn": "自动驾驶共享控制综述：理论与应用",
+    "title_en": "A Review of Shared Control for Automated Vehicles: Theory and Applications",
+    "category": "Human-Machine Systems / Automated Vehicles",
+    "topics": [
+      "Shared Control",
+      "Driver Assistance Systems",
+      "Vehicle Automation"
+    ],
+    "keywords": [
+      "Arbitration",
+      "Driver-Vehicle Cooperation",
+      "Dynamic Authority",
+      "Haptic Guidance",
+      "Shared Steering Control"
+    ],
+    "abstract": "This article reviews shared control in automated vehicles, focusing on concept definitions, categories (coupled/uncoupled), algorithms (model-based/model-free), and technology status. It classifies literature into theory- and application-oriented contributions, highlighting that model-based controllers incorporating driver models reduce steering conflicts. Key findings include the impact of driver state, effort, and safety indicators on authority allocation. Most evaluations use driver-in-the-loop simulators, with real-vehicle implementations anticipated.",
+    "methodology": "Systematic literature review using keywords (e.g., shared control, haptic guidance) across databases (Google Scholar, Web of Science). Articles classified into theory-oriented (definitions, metaphors, frameworks) and application-oriented (steering control algorithms). Coupled systems analyzed via haptic torque; uncoupled via input-mixing. Algorithms further divided into model-free (no driver model) and model-based (driver-automation interaction modeled).",
+    "conclusion": "Inclusion of driver models reduces steering conflicts. Driver state (drowsiness/inattention), effort, and safety indicators (TTC/TLC) critically influence authority arbitration. Haptic guidance improves obstacle avoidance and reduces collisions. Most systems tested in simulators; real-vehicle implementation is emerging. Future work requires minimizing conflicts, integrating driver monitoring, and experimental validation.",
+    "authors": [
+      "Mauricio Marcano",
+      "Sergio Díaz",
+      "Joshué Pérez",
+      "Eloy Irigoyen"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Transactions on Human-Machine Systems",
+    "doi": "10.1109/THMS.2020.3017748",
+    "bibtex_citation": "Marcano_Review_2020",
+    "analysis": {
+      "Overview": "Comprehensive review of shared control in automated vehicles, covering theoretical foundations, algorithm classifications (coupled/uncoupled, model-based/model-free), application case studies (lane keeping, obstacle avoidance), and technology readiness. Emphasizes driver-automation interaction at the control level.",
+      "Background_and_Motivation": [
+        "Research addresses challenges in transitioning between partial (SAE L0-L2) and conditional automation (SAE L3-L4), including driver overtrust, legal liability, unsafe control transfers, and the desire for driver engagement.",
+        "Seeks to enhance driver performance/comfort in partially automated vehicles by designing cooperative ADAS where drivers interact continuously with automation at the control level.",
+        "Authors argue necessity via: high-profile autopilot accidents, legal responsibility gaps, poor driver takeover performance, and evidence that humans outperform automation in certain scenarios. Urgency stems from technological/social barriers and new sensor/control capabilities.",
+        "Specific problem (optimal low-level driver-automation cooperation) links to broader challenge of safe/comfortable human-machine interaction in dynamic systems. Significance lies in improving road safety and user acceptance.",
+        "Contributes to: Human-Robot Interaction, Vehicle Control Systems, Human Factors, Automotive Engineering, and interdisciplinary Human-Machine Systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1) **Shared Control**: Continuous, congruent driver-automation interaction on the same task where either agent could act alone ideally. 2) **Coupled Framework**: Mechanically linked systems (haptic guidance) where driver has final authority. 3) **Uncoupled Framework**: Drive-by-wire systems (input-mixing) where automation blends inputs and holds final authority.",
+        "Shared control enables bidirectional interaction. Coupled/uncoupled frameworks dictate authority allocation and conflict management. Driver models predict behavior to reduce conflicts. Arbitration (λ) dynamically balances control based on context.",
+        "Assumes: Drivers prefer control, automation should obey driver intent unless unsafe, assistance should scale with risk, bidirectional communication is essential, and human-centered automation behavior improves acceptance.",
+        "Contributes a taxonomy clarifying shared control vs. traded/cooperative control. Advances knowledge via systematic algorithm classification (model-based > model-free for conflict reduction) and driver-model integration. Provides synthesis for future ADAS development."
+      ],
+      "Methodology": [
+        "Core: Systematic literature review (100+ papers) categorized into theory (definitions, metaphors, arbitration) and applications (steering controllers). Algorithms classified by control framework (coupled/uncoupled) and method (model-free/model-based). Data sourced from academic databases; selection criteria include publication type, automotive focus, steering interface, and adherence to Abbink's shared control definition.",
+        "Novelty: First review synthesizing theory and applications while differentiating coupled/uncoupled frameworks. Applicability: Framework guides ADAS design for varied vehicle architectures. Rationality: Classification based on mechanical coupling and driver-model use addresses core interaction challenges.",
+        "Data: Peer-reviewed journal/conference papers (2010-2019). Preprocessing: Filtered by control interface (steering wheel), test platform (simulation/real vehicle), and shared control definition. Representativeness: Comprehensive within defined scope but excludes longitudinal/pedal-focused systems.",
+        "Experimental design: Tabulated model-based controllers tested with real drivers. Metrics: Tracking error, driver effort, conflict torque, safety indicators (TLC/TTC), subjective acceptance. Rigor: Clear inclusion criteria. Adequacy: Focuses on quantitative performance; more driver acceptance studies needed.",
+        "Follows **Human-Centered Automation** paradigm (Sheridan, Flemisch). This prioritizes driver state/acceptance, reducing conflicts via bidirectional interaction, and metaphors (rider-horse, instructor-student) influencing haptic feedback design."
+      ],
+      "Results": [
+        "Model-based controllers (especially MPC/LQR with driver models) significantly reduce steering conflicts and driver effort vs. model-free. Haptic guidance lowers collisions in obstacle avoidance (78% reduction in one test). Driver state (e.g., drowsiness) integration improves safety. Uncoupled control reduces physical workload but may cause transparency issues.",
+        "Results are reliable: Consistent findings across studies (e.g., driver models reduce conflicts). Stability: Model-based controllers ensure robustness via Lyapunov methods. Limitations: Most results from simulators; real-vehicle validation is sparse. Metrics show statistical significance in cited works."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall: 1) Define shared control and frameworks. 2) Classify algorithms. 3) Evaluate controller performance/trends. 4) Discuss technology status/future work.",
+        "Key steps: a) Motivate research via automation transition challenges. b) Establish definitions/theoretical foundations. c) Propose methodology for literature analysis. d) Present theory (metaphors, arbitration). e) Analyze application results by framework. f) Synthesize findings and identify gaps.",
+        "Strengths: Clear taxonomy resolves definition ambiguity. Logical progression from theory to practice. Weaknesses: Limited discussion of longitudinal control. Addressed rebuttals: Acknowledges simulator dominance but predicts real-vehicle testing growth; counters 'overwhelming feedback' concern via adaptive authority."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Pioneering global synthesis of shared control theory/applications. Novel algorithm classification (coupled/uncoupled, model-based/model-free). Identification of driver modeling benefits. Practical evaluation tables (Tables I/II).",
+        "Methodology boundaries: Excludes non-steering interfaces (pedals). Focuses on lateral control; limited obstacle avoidance/authority transition coverage. Driver acceptance studies are underrepresented.",
+        "Human-centered paradigm constraints: Conclusions emphasize conflict reduction/acceptance but may undervalue scenarios where full automation outperforms shared control (e.g., high-risk emergencies)."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions shared control as the solution to SAE L2-L3 transition challenges within Human-Machine Systems discourse. Cites foundational works (Sheridan, Abbink, Flemisch) to establish legitimacy.",
+        "Terminology: Technical (arbitration λ, H-Metaphor, sensorimotor model). Tone: Objective/analytical. Rhetoric: Uses metaphors to simplify concepts; tables for comparative analysis; emphasizes 'cooperation' and 'reducing conflicts'.",
+        "Builds authority through extensive citations (163 references), including key theorists and experimental studies. Motivations: Synthesize fragmented research, advocate for standardized definitions, and guide future ADAS development."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Driver models reduce conflicts. Key arbitration variables: driver state, effort, safety indicators. Haptic guidance improves safety. Tech readiness: Simulator-validated; real-vehicle deployment emerging. Acceptance is positive but needs study.",
+        "Future research: Real-vehicle validation, minimizing conflicts via driver-adaptive algorithms, integrating driver monitoring, tactical-level arbitration, and holistic cooperative frameworks combining steering with other modalities (e.g., vision)."
+      ]
+    }
+  }
+}

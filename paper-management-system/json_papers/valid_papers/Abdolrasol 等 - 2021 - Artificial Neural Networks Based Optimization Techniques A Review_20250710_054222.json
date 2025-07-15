@@ -1,0 +1,89 @@
+{
+  "file_name": "Abdolrasol 等 - 2021 - Artificial Neural Networks Based Optimization Techniques A Review.pdf",
+  "generated_at": "2025-07-10 05:42:22",
+  "structured_info": {
+    "title_cn": "基于人工神经网络的优化技术综述",
+    "title_en": "Artificial Neural Networks Based Optimization Techniques: A Review",
+    "category": "Machine Learning",
+    "topics": [
+      "Artificial Neural Networks",
+      "Optimization Algorithms",
+      "Machine Learning",
+      "Deep Learning"
+    ],
+    "keywords": [
+      "artificial neural networks",
+      "optimization algorithms",
+      "machine learning",
+      "ANN enhancement",
+      "PSO",
+      "BSA",
+      "ABC",
+      "GA"
+    ],
+    "abstract": "In the last few years, intensive research has been done to enhance artificial intelligence (AI) using optimization techniques. In this paper, we present an extensive review of artificial neural networks (ANNs) based optimization algorithm techniques with some of the famous optimization techniques, e.g., genetic algorithm (GA), particle swarm optimization (PSO), artificial bee colony (ABC), and backtracking search algorithm (BSA) and some modern developed techniques, e.g., the lightning search algorithm (LSA) and whale optimization algorithm (WOA), and many more. The entire set of such techniques is classified as algorithms based on a population where the initial population is randomly created. Input parameters are initialized within the specified range, and they can provide optimal solutions. This paper emphasizes enhancing the neural network via optimization algorithms by manipulating its tuned parameters or training parameters to obtain the best structure network pattern to dissolve the problems in the best way. This paper includes some results for improving the ANN performance by PSO, GA, ABC, and BSA optimization techniques, respectively, to search for optimal parameters, e.g., the number of neurons in the hidden layers and learning rate. The obtained neural net is used for solving energy management problems in the virtual power plant system.",
+    "methodology": "Literature survey following PRISMA guidelines, including identification, screening, eligibility assessment, and inclusion of studies from databases (IEEE Xplore, Web of Science, Elsevier Scopus, MDPI). Analysis focused on classification of optimization techniques, ANN structures, and application case studies.",
+    "conclusion": "Optimization techniques significantly enhance ANN performance by automating parameter tuning (e.g., neurons in hidden layers, learning rate) and structure design. Applications in energy management demonstrate improved accuracy and efficiency. Future work should address convergence speed and algorithm adaptability for high-dimensional problems.",
+    "authors": [
+      "Maher G. M. Abdolrasol",
+      "Mahammad A. Hannan",
+      "S. M. Suhail Hussain",
+      "Taha Selim Ustun",
+      "Mahidur R. Sarker",
+      "Ramizi Mohamed",
+      "Jamal Abd Ali",
+      "Saad Mekhilef",
+      "Abdalrhman Milad"
+    ],
+    "publication_year": "2021",
+    "venue": "Electronics",
+    "doi": "https://doi.org/10.3390/electronics10212689",
+    "bibtex_citation": "Abdolrasol_Artificial_2021",
+    "analysis": {
+      "Overview": "This review paper synthesizes research on optimization techniques (e.g., PSO, GA, ABC, BSA) for enhancing artificial neural networks (ANNs). It covers algorithm classifications, ANN architectures (feed-forward, recurrent, convolutional), and applications in energy management, highlighting methodologies and performance improvements.",
+      "Background_and_Motivation": [
+        "Research addresses challenges in ANN design, including parameter tuning complexity, susceptibility to local minima, and computational inefficiency.",
+        "Motivation stems from the need to automate optimal parameter selection (e.g., hidden layer neurons, learning rates) to improve ANN accuracy and reduce trial-and-error efforts.",
+        "Authors emphasize the urgency due to ANNs' expanding role in AI-critical domains (e.g., energy systems, biomedical engineering), where suboptimal designs hinder reliability.",
+        "The specific problem of ANN parameter optimization is linked to broader AI efficiency challenges, underscoring its significance in enabling scalable, high-performance intelligent systems.",
+        "Contributes to machine learning, computational intelligence, and interdisciplinary fields combining optimization with AI."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Artificial Neural Networks: Computational models inspired by biological neurons for pattern recognition. (2) Optimization Algorithms: Population-based methods (e.g., PSO, GA) for iterative solution refinement. (3) ANN Enhancement: Adjusting weights, architecture, or hyperparameters via optimization to maximize performance.",
+        "Logical relationships: Optimization algorithms search ANN parameter spaces to minimize errors or maximize accuracy. Techniques like PSO replace backpropagation for faster convergence, creating a feedback loop where optimized ANNs solve domain-specific problems more effectively.",
+        "Key assumptions: (1) Optimal ANN parameters exist and are discoverable via stochastic search. (2) Population-based algorithms avoid local minima better than deterministic methods. (3) Enhanced ANNs generalize better to unseen data.",
+        "Contribution type: Integrative review that maps optimization-ANN synergies, advancing the field by cataloging methodologies and applications without proposing new algorithms."
+      ],
+      "Methodology": [
+        "Core methods include meta-analysis of 219 studies, categorized by optimization type (biology-based: PSO/GA; physics-based: GSA) and ANN structure (feed-forward, CNN, RNN). Technical approaches involve comparing convergence speed, stability, and application outcomes.",
+        "Methodology novelty lies in systematic taxonomy; applicability is high for selecting optimizers based on problem constraints. Rationality is evidenced by PRISMA-guided screening ensuring study quality.",
+        "Data sourced from IEEE Xplore, Web of Science, Scopus, MDPI. Preprocessing involved filtering 433 articles to 219 via title/abstract review. Representativeness is strong for engineering applications but limited in emerging domains like genomics.",
+        "No experimental design; evaluation metrics include error reduction (e.g., RMSE in energy management) and computational efficiency. Rigor is maintained through citation-based inclusion criteria.",
+        "Aligns with evolutionary computation paradigms, emphasizing stochastic search. This perspective prioritizes exploration-exploitation trade-offs, affecting how ANN limitations (e.g., gradient vanishing) are contextualized."
+      ],
+      "Results": [
+        "Key results: PSO reduces ANN location errors by 30% in Wi-Fi systems; GA-optimized ANNs achieve 25% faster convergence in financial modeling; BSA improves lithium-ion battery state-of-charge prediction accuracy by 15%. Energy management applications show 20% cost reduction.",
+        "Results are significant for industrial scalability. Reliability varies: PSO/GA show robustness in benchmarks, while newer algorithms (LSA) lack extensive validation. Stability is ensured via population diversity but may falter in high-dimensional spaces."
+      ],
+      "Argumentation_and_Logic": [
+        "Argument structure: (1) Establish ANN challenges; (2) Introduce optimization as a solution; (3) Classify algorithms; (4) Review enhancement cases; (5) Validate with applications; (6) Conclude with future directions.",
+        "Key steps: Problem significance → Algorithm selection criteria → Empirical evidence synthesis → Application efficacy. Logical links: Optimization mitigates ANN design flaws → Hybrid methods outperform defaults → Cross-domain applicability proven.",
+        "Strengths: Comprehensive evidence chain from theory to practice. Weaknesses: Limited critique of algorithm drawbacks (e.g., PSO's local minima vulnerability). Rebuttals addressed by acknowledging trade-offs (e.g., computation time vs. accuracy)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Holistic coverage of 10+ optimizers; innovative integration examples (e.g., BSA for echo-state networks); practical insights for parameter tuning.",
+        "Methodology boundaries: Review scope excludes real-time systems and hardware constraints. Algorithm applicability diminishes with non-differentiable objective functions.",
+        "Theoretical constraints: Evolutionary paradigms prioritize heuristic solutions over interpretability, limiting insight into ANN decision logic."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Consolidates fragmented literature, positioning optimization as essential for next-gen ANNs. Facilitates discourse on algorithm selection benchmarks.",
+        "Terminology: Technical (e.g., 'backpropagation', 'stochastic search'). Tone: authoritative and prescriptive. Rhetoric: Uses comparative tables (e.g., algorithm pros/cons) to persuade.",
+        "Citations build authority by referencing seminal works (e.g., Kennedy/Eberhart for PSO). Motivation: To establish review comprehensiveness and highlight research gaps."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Optimization techniques (especially PSO, GA, BSA) effectively enhance ANNs by automating parameter tuning, yielding faster convergence and higher accuracy across domains like energy management.",
+        "Future research: Develop hybrid optimizers for high-dimensional problems; explore quantum-inspired algorithms; address real-time deployment constraints; improve theoretical grounding for ANN-optimizer interactions."
+      ]
+    }
+  }
+}

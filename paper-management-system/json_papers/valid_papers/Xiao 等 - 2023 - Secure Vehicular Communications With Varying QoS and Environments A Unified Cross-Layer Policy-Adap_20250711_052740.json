@@ -1,0 +1,79 @@
+{
+  "file_name": "Xiao 等 - 2023 - Secure Vehicular Communications With Varying QoS and Environments A Unified Cross-Layer Policy-Adap.pdf",
+  "generated_at": "2025-07-11 05:27:40",
+  "structured_info": {
+    "title_cn": "具有变化QoS和环境的安全车联网通信：一种统一的跨层策略自适应方法",
+    "title_en": "Secure Vehicular Communications With Varying QoS and Environments: A Unified Cross-Layer Policy-Adaptation Approach",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Secure Communications",
+      "V2X Communications",
+      "Cross-Layer Design"
+    ],
+    "keywords": [
+      "Physical security",
+      "Statistical security",
+      "Cross-layer design",
+      "V2X communications"
+    ],
+    "abstract": "With the ubiquitous connectivity in internet of vehicles, secure transmission is of vital importance for intelligent vehicle-to-everything (V2X) communications. However, to effectively guarantee secrecy performance, existing cryptography or physical-layer security (PLS) techniques weaken throughput when short-term channel quality statistics are low, frequently occurring due to high vehicle mobility. To improve secure data transmission throughput, we propose statistical security, leveraging time-sensitive information characteristics like vehicle positions. Time-sensitive information has an outdated rate; if the information leakage rate is below this outdated rate, eavesdroppers gain no useful information. We model the eavesdropping process using a queue system, where queue-length violation probability indicates secure transmission levels. Under this model, we investigate throughput maximization and derive an optimal power allocation scheme for legitimate vehicular users. Furthermore, as security QoS requirements and wireless environments vary in V2X communications, we propose a unified cross-layer policy-adaptation approach to guarantee varying security QoS while improving throughput. Simulation results confirm our approach significantly outperforms baseline schemes.",
+    "methodology": "Proposed statistical security using a queuing model to characterize eavesdropping; formulated throughput maximization under statistical security constraints; derived optimal power allocation via Karush-Kuhn-Tucker (KKT) conditions and effective bandwidth analysis; developed a cross-layer policy-adaptation framework with top-down and bottom-up optimizers for strategy switching; validated performance through simulations comparing with water-filling, secure water-filling, and statistical security schemes.",
+    "conclusion": "A unified cross-layer policy-adaptation approach enhances secure V2X communications by leveraging statistical security to improve throughput while adapting to varying QoS and environments. Simulations show significant throughput gains over existing schemes, balancing security and efficiency by exploiting time-sensitive information outdated rates.",
+    "authors": [
+      "Yuquan Xiao",
+      "Qinghe Du",
+      "Yunsheng Zhang",
+      "Chen Lu"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2023.3283259",
+    "bibtex_citation": "Xiao_Secure_2023",
+    "analysis": {
+      "Overview": "The paper addresses secure transmission in vehicle-to-everything (V2X) communications by proposing statistical security and a cross-layer adaptation approach to maximize throughput under varying quality-of-service (QoS) and wireless environments, contributing to intelligent transportation systems.",
+      "Background_and_Motivation": [
+        "Research focuses on security challenges in V2X communications, where high vehicle mobility degrades channel quality, reducing throughput with existing cryptography or physical-layer security (PLS) techniques.",
+        "Motivation stems from the need to improve throughput without compromising security, utilizing time-sensitive information (e.g., vehicle positions) that becomes outdated, allowing controlled information leakage.",
+        "Authors argue that current methods are inefficient under dynamic conditions, emphasizing urgency due to the rise of 6G networks and diverse V2X use cases like remote driving.",
+        "The problem is linked to broader challenges of balancing security and efficiency in mobile networks, establishing significance through simulations showing throughput degradation in baseline schemes.",
+        "Contributes to wireless communications, intelligent transportation systems, and cross-disciplinary fields like network security and queuing theory."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) Statistical security—security model where information leakage rate is bounded by outdated rate; 2) Queuing model—eavesdropping process modeled as a buffer queue with violation probability; 3) Cross-layer adaptation—unified framework switching between security strategies based on QoS and channel conditions.",
+        "Logical relationships: Statistical security uses queuing to quantify security levels; cross-layer adaptation integrates this with physical-layer strategies for dynamic optimization; concepts interrelate to maximize throughput while meeting security constraints.",
+        "Key assumptions: Block-fading channels with known channel state information (CSI), i.i.d. data arrival, constant information leakage rate, and time-sensitive information with fixed outdated rates.",
+        "Contribution type: Introduces a novel statistical security model and adaptive framework, advancing the field by enabling fine-grained security-throughput trade-offs in dynamic vehicular networks."
+      ],
+      "Methodology": [
+        "Core methods: Queuing theory for eavesdropping modeling (effective bandwidth analysis), optimization for throughput maximization (KKT conditions), and cross-layer design with iterative sub-optimizers for policy adaptation; simulations used Rayleigh fading channels.",
+        "Novelty lies in statistical security's queuing-based approach; applicability is high for V2X due to focus on mobility and time-sensitivity; rationality is supported by asymptotic queuing principles and optimization rigor.",
+        "Data sourced from simulated Rayleigh fading channels; characteristics include block-fading with continuous CDF; preprocessing not detailed; representativeness evaluated via performance comparisons against baselines.",
+        "Experimental design: Compared throughput under varying leakage rates and SNRs using normalized metrics; evaluation metrics (e.g., violation probability) were adequate, but reliance on simulation may limit real-world generalizability.",
+        "Follows queuing theory and physical-layer security paradigms, affecting perspective by emphasizing statistical guarantees over perfect security, enabling throughput-focused solutions."
+      ],
+      "Results": [
+        "Key results: Proposed approach achieved higher throughput than water-filling, secure water-filling, and statistical security schemes across varying leakage rates; adapted strategies dynamically, e.g., switching to secure water-filling under stringent constraints.",
+        "Significance: Demonstrates 20-30% throughput gains; reliability affirmed through consistent simulation outcomes; stability shown under channel quality changes, though sensitive to extreme leakage rates."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Introduction → Problem formulation (statistical security) → Solution (optimal power allocation) → Policy adaptation → Simulation → Conclusion.",
+        "Key steps: 1) Define statistical security via queuing; 2) Formulate throughput maximization; 3) Derive optimal power allocation; 4) Propose cross-layer adaptation; 5) Validate with simulations.",
+        "Strengths: Clear logical flow from concept to solution; addresses rebuttals (e.g., throughput-security trade-off) via adaptive switching. Weaknesses: Assumes perfect CSI, potentially overlooking estimation errors; mitigated by simulation robustness checks."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Throughput improvement via statistical security, adaptability to varying conditions, low complexity in deployment, and superior simulation performance over baselines.",
+        "Methodology limitations: Assumes i.i.d. channels and perfect CSI, may not generalize to non-time-sensitive data; boundaries include fixed outdated rates and specific queuing models.",
+        "Theoretical constraints: Queuing theory focus restricts conclusions to scenarios with quantifiable violation probabilities, limiting applicability to non-statistical security paradigms."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances vehicular network security discourse by introducing statistical security as an alternative to PLS and cryptography, positioning within 6G and IoT evolution.",
+        "Terminology: Technical terms like 'statistical security,' 'QoS,' 'effective bandwidth'; formal tone; rhetorical strategies include contrast with existing methods and simulation-based authority building.",
+        "Citations: Builds authority by referencing foundational works (e.g., Wyner's model, effective bandwidth); motivations include legitimizing novelty and contextualizing within prior PLS/cryptography research."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Statistical security and cross-layer adaptation significantly enhance throughput in V2X communications while meeting varying security QoS, validated by simulations.",
+        "Future research: Extend to finite blocklength transmissions, incorporate imperfect CSI, explore real-world deployments, and integrate AI for predictive adaptation."
+      ]
+    }
+  }
+}

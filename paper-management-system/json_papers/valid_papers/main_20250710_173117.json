@@ -1,0 +1,79 @@
+{
+  "file_name": "main.pdf",
+  "generated_at": "2025-07-10 17:31:17",
+  "structured_info": {
+    "title_cn": "基于竞争的V2X网络中QoS代理建模框架：以DSRC 802.11p为例",
+    "title_en": "A Framework for QoS Proxy Modeling in Contention-based V2X Networks: A Case Study for DSRC 802.11p",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicular Networks",
+      "Cyber-Physical Systems",
+      "Cooperative Control"
+    ],
+    "keywords": [
+      "Control theory",
+      "Communication engineering",
+      "Optimization theory"
+    ],
+    "abstract": "With the rapid advancement of vehicular networking (V2X) and autonomous driving technologies, the tight coupling between communication resources and physical control objectives in cyber-physical systems (CPS) has become a central challenge in intelligent transportation research. In resource-constrained DSRC network environments, achieving bi-directional adaptation and co-optimization between vehicle platoons (physical systems) and V2V communication networks (information systems) represents a theoretical frontier for intelligent platoon cooperative control. This study systematically investigates the complex interdependencies between dynamic variations in the communication layer subject to spectrum and power limitations and CACC-based platoon control at the physical layer, elucidating the mechanisms behind the failure of traditional decoupled design methodologies. We propose and formalize a unified framework that integrates feedback control theory, information-theoretic capacity limits, and multi-objective optimization trade-offs, enabling two-way adaptation between CACC control policies and information parameters driven by communication states. The proposed mechanism empowers vehicle platoons to sense real-time channel conditions and dynamically adjust both control actions and broadcast parameters, leading to significant improvements in safety, traffic throughput, and communication reliability. Theoretical analysis and simulation results demonstrate that our approach effectively mitigates the safety risks and performance degradation associated with fixed CACC settings under congested channels, providing critical insights for the development of future standards such as 5G-V2X.",
+    "methodology": "Unified framework integrating feedback control theory, information-theoretic capacity limits, and multi-objective optimization for bidirectional adaptation between communication states and CACC control policies",
+    "conclusion": "The proposed framework significantly improves safety, traffic throughput, and communication reliability by enabling dynamic adaptation to channel conditions, mitigating risks of fixed CACC settings in congested networks",
+    "authors": [
+      "Yang Xingjie"
+    ],
+    "publication_year": "nodate",
+    "venue": "",
+    "doi": "",
+    "bibtex_citation": "Yang_A_nodate",
+    "analysis": {
+      "Overview": "Proposes a unified co-design framework for QoS-aware vehicle platooning in DSRC networks, addressing interdependencies between V2V communication constraints and CACC control systems.",
+      "Background_and_Motivation": [
+        "Addresses tight coupling between communication resources and physical control objectives in vehicular cyber-physical systems",
+        "Solves performance degradation of traditional decoupled designs in resource-constrained DSRC environments",
+        "Highlights urgency through safety risks and throughput limitations in congested channels",
+        "Frames V2X network limitations as fundamental barrier to reliable platoon control",
+        "Contributes to intelligent transportation systems, communication engineering, and control theory"
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Bidirectional adaptation: Dynamic adjustment between CACC policies and communication parameters",
+          "Unified co-design framework: Integration of control theory, information theory, and optimization",
+          "QoS proxy modeling: Real-time channel sensing for control adaptation"
+        ],
+        "Communication constraints → Information parameters → CACC policy adjustments → Physical layer performance → Feedback to communication layer",
+        "Rational decision-making, vehicle homogeneity, spectrum/power limitations as primary constraints",
+        "Novel paradigm shift from decoupled to integrated CPS design for vehicular networks"
+      ],
+      "Methodology": [
+        "Feedback control theory with information-theoretic capacity bounds and multi-objective optimization",
+        "Novelty: First unified co-design approach for CACC-V2X; Applicable to DSRC/802.11p standards; Rational through physics-aware modeling",
+        "Simulation-based data; Characteristics: Channel contention dynamics, platoon control states; Preprocessing: Real-time sensing of channel conditions",
+        "Theoretical stability analysis combined with network simulations; Metrics: Safety margins, throughput, packet delivery rates",
+        "Follows cyber-physical systems paradigm, enabling cross-layer optimization perspective"
+      ],
+      "Results": [
+        "Significant mitigation of safety risks under channel congestion, improved traffic throughput, enhanced communication reliability",
+        "Results validated through theoretical proofs and simulations; Stable across varying network load conditions"
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Limitations of status quo → Proposed solution → Validation → Implications",
+        "1) Demonstrate decoupled design failures 2) Formalize adaptation mechanisms 3) Quantify co-design benefits 4) Benchmark against fixed CACC",
+        "Strength: Multi-disciplinary theoretical grounding; Weakness: Limited real-world validation; Addresses heterogeneity through future work mentions"
+      ],
+      "Strengths_and_Limitations": [
+        "First holistic CACC-communication co-design, practical implementation pathway for DSRC networks",
+        "Assumes vehicle homogeneity and rational actors; Limited scalability analysis for large platoons",
+        "CPS paradigm constraints overlook human driver behaviors in mixed autonomy scenarios"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between communication engineering and control theory communities",
+        "Technical terminology: 'bidirectional adaptation', 'co-optimization', 'decoupled design'; Persuasive through safety-critical arguments",
+        "Builds authority via control theory foundations; Selective citations establish CPS context"
+      ],
+      "Conclusions_and_Implications": [
+        "Co-designed adaptation framework essential for safety-critical V2X deployments, outperforms static control approaches",
+        "Extend to heterogeneous vehicle networks, human factor integration, and 5G-V2X standard development"
+      ]
+    }
+  }
+}

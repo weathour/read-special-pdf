@@ -1,0 +1,78 @@
+{
+  "file_name": "Nazib和Moh - 2020 - Routing Protocols for Unmanned Aerial Vehicle-Aided Vehicular Ad Hoc Networks A Survey.pdf",
+  "generated_at": "2025-07-11 01:19:17",
+  "structured_info": {
+    "title_cn": "无人机辅助车载自组织网络路由协议综述",
+    "title_en": "Routing Protocols for Unmanned Aerial Vehicle-Aided Vehicular Ad Hoc Networks: A Survey",
+    "category": "Networking",
+    "topics": [
+      "Routing Protocols",
+      "Vehicular Ad Hoc Networks (VANETs)",
+      "Unmanned Aerial Vehicles (UAVs)"
+    ],
+    "keywords": [
+      "Unmanned aerial vehicle",
+      "Vehicular ad hoc network",
+      "Routing protocol",
+      "Drone",
+      "Multihop routing"
+    ],
+    "abstract": "In intelligent transportation systems, a vehicular ad hoc network (VANET) has a significant impact in enhancing road safety, traffic management efficiency, and in-vehicle infotainment features. Routing in a VANET is hampered by frequent link disconnection for non-line-of-sight communication due to roadside obstacles, high mobility, and frequent topological changes. With the help of three-dimensional movement capability, an unmanned aerial vehicle (UAV) can drastically improve the routing experience of a VANET by increasing the line-of-sight probability, better connectivity, and efficient store-carry-forward mechanism. This survey paper presents a comprehensive review on state-of-the-art routing protocols for UAV-aided VANETs, categorizing them into seven groups based on their working mechanisms and design principles. The protocols are critically analyzed regarding advantages, disadvantages, application areas, and future improvements, with qualitative comparisons provided through tables. Open research issues and challenges are also summarized.",
+    "methodology": "Comprehensive literature review and qualitative analysis of routing protocols, categorized into seven groups (reactive, hybrid, position-based, DTN-based, security-based, clustering-based, SDN-based). Critical examination of protocols' operational principles, features, and performance metrics through comparative tables.",
+    "conclusion": "UAV-aided VANETs effectively address traditional VANET challenges like link disconnections and non-line-of-sight communication. The survey identifies seven protocol categories with distinct strengths and limitations, highlighting UAVs' role in enhancing connectivity through 3D mobility and store-carry-forward mechanisms. Key open challenges include energy efficiency, scalability, security, and real-time adaptability in dynamic environments.",
+    "authors": [
+      "Rezoan Ahmed Nazib",
+      "Sangman Moh"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2020.2989790",
+    "bibtex_citation": "Nazib_Routing_2020",
+    "analysis": {
+      "Overview": "Survey paper analyzing routing protocols for UAV-assisted vehicular networks, focusing on protocol categorization, comparative analysis, and research challenges in intelligent transportation systems.",
+      "Background_and_Motivation": [
+        "VANETs face challenges including frequent link disconnections due to obstacles, high mobility, and dynamic topologies, limiting reliability in safety-critical applications.",
+        "Need to leverage UAVs' 3D mobility for improved line-of-sight communication, connectivity, and store-carry-forward capabilities in sparse or obstructed environments.",
+        "Urgency stems from rapid UAV adoption in ITS and absence of dedicated surveys on UAV-VANET routing despite proliferation of specialized protocols.",
+        "Addresses broader intelligent transportation challenges by integrating aerial nodes to overcome ground-level limitations, enhancing emergency response and automated vehicle support.",
+        "Contributes to wireless networking, vehicular communication systems, and autonomous aerial-ground coordination."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: UAV-aided VANET architecture (heterogeneous network), Store-Carry-Forward (SCF) mechanism (delay-tolerant data relay), Routing protocol taxonomy (seven categories based on design paradigms).",
+        "Logical relationships: UAVs augment ground networks → enable SCF and LOS routing → categorized protocols optimize specific QoS parameters (e.g., delay, throughput, security) → collectively address VANET limitations.",
+        "Key assumptions: UAVs have sufficient energy/coverage; vehicles/UAVs share location data; network partitions are common in target environments.",
+        "Contributes a taxonomy framework for knowledge organization, enabling systematic comparison and gap identification in the field."
+      ],
+      "Methodology": [
+        "Qualitative analysis through protocol categorization and critical review using criteria like advantages/disadvantages, application suitability, and future improvements.",
+        "Methodology novelty lies in comprehensive taxonomy development; applicability demonstrated through protocol-specific use cases; rationality ensured via multi-perspective comparison tables.",
+        "Data sourced from 71 primary studies; preprocessing involved grouping by routing paradigms; representativeness ensured by covering diverse protocol types (reactive to SDN-based).",
+        "Evaluation rigor achieved via tabular comparisons across design aspects (overhead, scalability) and performance metrics (delay, PDR); lacks quantitative meta-analysis.",
+        "Follows networking/telecommunications paradigm, emphasizing protocol design and performance trade-offs over theoretical modeling."
+      ],
+      "Results": [
+        "Identified seven protocol categories with distinct mechanisms (e.g., reactive protocols reduce overhead; DTN-based handle sparsity; security-based counter jamming).",
+        "Results are significant for protocol selection/design; reliability ensured by systematic literature coverage; stability reflected in consistent taxonomy application across protocols."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Introduction → preliminaries (VANET/UAV routing) → protocol categorization → qualitative comparison → research challenges → conclusion.",
+        "Key steps: Establish survey necessity → define taxonomy → analyze protocols per category → comparative evaluation → identify unresolved problems.",
+        "Strengths: Clear categorization logic; weakness: Limited critical synthesis beyond individual protocol analysis. Rebuttals addressed via application-specific recommendations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First dedicated UAV-VANET routing survey; comprehensive taxonomy; practical application insights; structured qualitative comparisons.",
+        "Methodology limitations: No performance benchmarking; subjective protocol evaluation; lacks real-world validation.",
+        "Theoretical constraints: Networking paradigm focus overlooks cross-layer or AI/ML-based approaches in emerging research."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Establishes foundational knowledge for UAV-VANET routing research, positioning itself as a reference for new researchers.",
+        "Uses standardized networking terminology; persuasive tone emphasizing protocol diversity and research gaps; authority built through 71 citations demonstrating literature mastery.",
+        "Citation strategy: Motivations include crediting prior work, contrasting approaches, and validating problem significance."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: UAVs effectively mitigate VANET limitations; protocol choice depends on environment (urban/sparse) and QoS needs; open challenges include energy optimization and security.",
+        "Future research: Energy-efficient UAV deployment; machine learning for dynamic routing; standardization; integration with 5G/6G; real-world validation testbeds."
+      ]
+    }
+  }
+}

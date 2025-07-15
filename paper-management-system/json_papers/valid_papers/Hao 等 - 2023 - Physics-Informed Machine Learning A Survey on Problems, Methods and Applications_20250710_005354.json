@@ -1,0 +1,85 @@
+{
+  "file_name": "Hao 等 - 2023 - Physics-Informed Machine Learning A Survey on Problems, Methods and Applications.pdf",
+  "generated_at": "2025-07-10 00:53:54",
+  "structured_info": {
+    "title_cn": "物理信息机器学习：问题、方法与应用综述",
+    "title_en": "Physics-Informed Machine Learning: A Survey on Problems, Methods and Applications",
+    "category": "Machine Learning",
+    "topics": [
+      "Neural Simulation",
+      "Inverse Problems",
+      "Scientific Computing"
+    ],
+    "keywords": [
+      "Physics-Informed Machine Learning",
+      "PDE ODE",
+      "Symmetry"
+    ],
+    "abstract": "Recent advances of data-driven machine learning have revolutionized fields like computer vision, reinforcement learning, and many scientific and engineering domains. In many real-world and scientific problems, systems that generate data are governed by physical laws. Recent work shows that it provides potential benefits for machine learning models by incorporating the physical prior and collected data, which makes the intersection of machine learning and physics become a prevailing paradigm. By integrating the data and mathematical physics models seamlessly, it can guide the machine learning model towards solutions that are physically plausible, improving accuracy and efficiency even in uncertain and high-dimensional contexts. In this survey, we present this learning paradigm called Physics-Informed Machine Learning (PIML) which is to build a model that leverages empirical data and available physical prior knowledge to improve performance on a set of tasks that involve a physical mechanism. We systematically review the recent development of physics-informed machine learning from three perspectives of machine learning tasks, representation of physical prior, and methods for incorporating physical prior. We also propose several important open research problems based on the current trends in the field. We argue that encoding different forms of physical prior into model architectures, optimizers, inference algorithms, and significant domain-specific applications like inverse engineering design and robotic control is far from being fully explored in the field of physics-informed machine learning. We believe that the interdisciplinary research of physics-informed machine learning will significantly propel research progress, foster the creation of more effective machine learning models, and also offer invaluable assistance in addressing long-standing problems in related disciplines.",
+    "methodology": "Survey and analysis of physics-informed machine learning methods, including Physics-Informed Neural Networks (PINNs), neural operators (e.g., DeepONet), and techniques for incorporating physical priors (PDEs, symmetry, intuitive physics) via data, model architecture, loss functions, optimizers, and inference.",
+    "conclusion": "Physics-informed machine learning integrates data and physical laws to improve model performance, addressing challenges in scientific problems and traditional ML tasks. Open problems include developing better optimizers, novel architectures, and methods for high-dimensional PDEs.",
+    "authors": [
+      "Zhongkai Hao",
+      "Songming Liu",
+      "Yichi Zhang",
+      "Chengyang Ying",
+      "Yao Feng",
+      "Hang Su",
+      "Jun Zhu"
+    ],
+    "publication_year": "2023",
+    "venue": "arXiv preprint",
+    "doi": "arXiv:2211.08064v2",
+    "bibtex_citation": "Hao_Physics-Informed_2023",
+    "analysis": {
+      "Overview": "This survey reviews Physics-Informed Machine Learning (PIML), a paradigm integrating physical prior knowledge with data-driven machine learning to enhance performance on tasks involving physical mechanisms. It covers neural simulation, inverse problems, and applications in computer vision and reinforcement learning.",
+      "Background_and_Motivation": [
+        "Traditional scientific research combines theoretical derivation and experiments, but computational methods and abundant observational data have enabled data-driven ML. However, purely data-driven models lack robustness, interpretability, and adherence to physical constraints, especially with sparse or noisy data.",
+        "To address limitations like poor generalization outside training distributions and adversarial vulnerabilities in ML models, and to leverage physical laws for scientific discovery.",
+        "The authors argue that integrating physical priors improves accuracy, efficiency, and generalization in scientific and engineering domains, where data alone is insufficient.",
+        "PIML connects specific ML challenges (e.g., handling high-dimensional PDEs) to broader scientific problems, emphasizing its necessity for reliable real-world applications.",
+        "Machine Learning, Scientific Computing, Computational Physics, and interdisciplinary AI for Science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Physics-Informed Machine Learning (PIML): A paradigm using both empirical data and physical prior knowledge to improve task performance involving physical mechanisms.",
+          "Neural Solvers: Methods like PINNs that solve PDEs/ODEs using neural networks with physics-based loss constraints.",
+          "Neural Operators: Frameworks (e.g., DeepONet) that learn mappings for parametric PDE systems."
+        ],
+        "PIML encompasses neural solvers (for single systems) and neural operators (for parametric systems). Physical priors (PDEs, symmetry) are integrated into ML components (data, architecture, loss), creating a hierarchy from strong (equations) to weak (intuitive physics) constraints.",
+        "Key assumptions: Physical laws can be mathematically represented; neural networks can approximate complex functions; data and physics can be seamlessly integrated for improved generalization.",
+        "The paper contributes a comprehensive synthesis and categorization of PIML methods, establishing a unified framework and identifying open research directions."
+      ],
+      "Methodology": [
+        "Core methods include variants of PINNs (e.g., loss reweighting, variational formulations), neural operators (DeepONet, Fourier Neural Operators), and techniques for embedding physical priors via data augmentation, architecture design, or regularization.",
+        "Evaluated based on applicability: PINNs handle forward/inverse problems but face optimization challenges; neural operators generalize across parametric systems. Novelty lies in adaptive methods (e.g., NTK-based weighting), while rationality is assessed via theoretical alignment with physical laws.",
+        "Relies on literature examples; data sources include simulated or experimental observations. Preprocessing involves collocation point sampling. Representativeness is limited by sparse/noisy real-world data.",
+        "No original experiments; rigor is maintained through systematic review of existing methods. Evaluation metrics focus on residual errors and generalization, but benchmarks for method comparison are lacking.",
+        "Follows numerical analysis and statistical learning paradigms, emphasizing integration of physics-based inductive biases to constrain ML solutions."
+      ],
+      "Results": [
+        "Summarizes advancements: PINNs variants improve convergence for multi-scale PDEs; neural operators enable efficient surrogate modeling; physical priors enhance robustness in CV/RL.",
+        "Results are significant for scientific computing (e.g., replacing traditional solvers) but reliability depends on correct physics encoding. Stability issues persist in high-dimensional or chaotic systems."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured introduction to PIML, problem formulation (physical prior representation), method categorization (neural solvers/operators), application survey, and open challenges.",
+        "Key steps: Motivate PIML via ML limitations → formalize physical prior types → detail incorporation methods → review tasks/applications → identify future directions.",
+        "Strengths: Unified framework connects disparate methods. Weaknesses: Limited empirical validation of claims; open problems (e.g., optimizer design) lack solutions. Potential rebuttals (e.g., scalability) are acknowledged but not fully resolved."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive review unifying PIML concepts; extensive coverage of methods (PINNs, operators); identification of open problems for interdisciplinary research.",
+        "Methodology boundaries: Optimization difficulties in PINNs; architectural constraints for high-dimensional PDEs; data inefficiency in neural operators.",
+        "Theoretical reliance on known physics limits applicability to systems with partially unknown laws; numerical paradigms may overlook data-driven discovery aspects."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Establishes PIML as a distinct field, synthesizing prior work to frame future research. Positions itself as a foundational survey for ML and scientific communities.",
+        "Uses formal terminology (e.g., 'inductive bias', 'governing equations') and persuasive rhetoric to emphasize PIML's transformative potential. Tone is authoritative and forward-looking.",
+        "Builds authority through extensive citations (e.g., Karniadakis, Raissi). Motivations include legitimizing PIML and guiding resource allocation toward interdisciplinary challenges."
+      ],
+      "Conclusions_and_Implications": [
+        "PIML successfully integrates physical priors with ML to enhance performance in scientific and traditional tasks. Key conclusions: Hybrid learning improves generalizability; open problems include optimizer/architecture innovation and high-dimensional PDE solutions.",
+        "Future work: Develop physics-informed optimizers/inference; explore architectures (e.g., transformers) for scalability; address theoretical gaps in generalization; expand applications to robotics and inverse design."
+      ]
+    }
+  }
+}

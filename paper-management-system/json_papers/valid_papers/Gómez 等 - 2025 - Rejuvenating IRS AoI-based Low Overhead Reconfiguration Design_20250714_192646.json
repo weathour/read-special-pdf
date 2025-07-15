@@ -1,0 +1,82 @@
+{
+  "file_name": "Gómez 等 - 2025 - Rejuvenating IRS AoI-based Low Overhead Reconfiguration Design.pdf",
+  "generated_at": "2025-07-14 19:26:46",
+  "structured_info": {
+    "title_cn": "重振IRS：基于信息年龄的低开销重配置设计",
+    "title_en": "Rejuvenating IRS: AoI-based Low Overhead Reconfiguration Design",
+    "category": "Wireless Communications",
+    "topics": [
+      "Intelligent Reflecting Surfaces",
+      "Age of Information",
+      "Mobility"
+    ],
+    "keywords": [
+      "Age of information",
+      "intelligent reflecting surfaces",
+      "mobility",
+      "mmWave",
+      "WiFi"
+    ],
+    "abstract": "Intelligent reflective surface (IRS) technologies help mitigate undesirable effects in wireless links by steering the communication signal between transmitters and receivers. IRS elements are configured to adjust the phase of the reflected signal for a user's location and enhance the perceived signal-to-noise ratio (SNR). In this way, an IRS improves the communication link but inevitably introduces more communication overhead. This occurs especially in mobile scenarios, where the user's position must be frequently estimated to re-adjust the IRS elements periodically. Such an operation requires balancing the amount of training versus the data time slots to optimize the communication performance in the link. Aiming to study this balance with the age of information (AoI) framework, we address the question of how often an IRS needs to be updated with the lowest possible overhead and the maximum of freshness of information. We derive the corresponding analytical solution for a mobile scenario, where the transmitter is static and the mobile user (MU) follows a random waypoint mobility model. We provide a closed-form expression for the average peak age of information (PAoI), as a metric to evaluate the impact of the IRS update frequency. As for the performance evaluation, we consider a realistic scenario following the IEEE 802.11ad standard, targeting the mmWave band. Our results reveal that the minimum achievable average PAoI is in the microsecond range and the optimal IRS update period is in the seconds range, causing 9% overhead in the link when the MU moves at a velocity of 1 m/s.",
+    "methodology": "The paper employs a Markov regenerative process (MRGP) to model the dynamic behavior of an IRS-assisted link, accounting for MU mobility and the underlying transmission scheme. It formulates the trade-off between performance and overhead in an AoI-based framework, deriving analytical expressions to evaluate the minimum of the average PAoI metric.",
+    "conclusion": "The paper presents a methodology to evaluate the optimal update period for IRS elements in mobile scenarios using an average PAoI framework. This methodology allows for a reconfiguration design with low overhead, balancing the impact of overhead and MU mobility. The optimal update period is in the seconds range, with the minimum information freshness in the order of hundreds of microseconds.",
+    "authors": [
+      "Jorge Torres Gómez",
+      "Joana Angjo",
+      "Moritz Garkisch",
+      "Vahid Jamali",
+      "Robert Schober",
+      "Falko Dressler"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "doi": "10.1109/TWC.2025.3582582",
+    "bibtex_citation": "Torres_Gomez_Rejuvenating_2024",
+    "analysis": {
+      "Overview": "The paper investigates the optimal update period for IRS elements in mobile scenarios using an AoI framework to balance communication overhead and performance. It focuses on IRS-assisted wireless communication links, particularly in mmWave bands, and evaluates the impact of MU mobility on the system's performance.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of balancing communication overhead and performance in IRS-assisted wireless links, especially in mobile scenarios where frequent IRS reconfiguration is necessary.",
+        "The motivation stems from the need to minimize overhead while maintaining high communication performance, ensuring fresh information delivery in mobile environments.",
+        "The authors argue for the necessity of this research by highlighting the trade-off between IRS update frequency and communication performance, emphasizing the importance of information freshness in modern wireless systems.",
+        "The specific problem of IRS reconfiguration overhead is linked to broader challenges in wireless communication, such as mobility management and resource optimization.",
+        "The paper contributes to wireless communications, particularly in the areas of IRS technology, mobility management, and information freshness."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include IRS-assisted communication, Age of Information (AoI), and mobility models (Random Waypoint Mobility).",
+        "The logical relationship involves using AoI to evaluate the impact of IRS reconfiguration frequency on communication performance, considering MU mobility.",
+        "Key assumptions include NLOS conditions between AP and MU, error-free transmissions within the illuminated area, and deterministic IRS reconfiguration times.",
+        "The paper contributes a novel AoI-based framework for optimizing IRS reconfiguration periods, providing a closed-form solution for average PAoI."
+      ],
+      "Methodology": [
+        "The core research methods include MRGP modeling, AoI framework formulation, and analytical derivation of average PAoI.",
+        "The methodology is novel in applying AoI to IRS reconfiguration, applicable to various communication scenarios, and rational in balancing overhead and performance.",
+        "Data sources include IEEE 802.11ad standard parameters, with preprocessing steps focusing on SNR and BER evaluation within the illuminated area.",
+        "Experimental design is rigorous, with evaluation metrics including average PAoI and overhead percentage.",
+        "The research follows a theoretical paradigm of stochastic processes and optimization, affecting the perspective by focusing on probabilistic modeling and performance trade-offs."
+      ],
+      "Results": [
+        "Key results include the derivation of a closed-form expression for average PAoI and the identification of optimal IRS update periods in the seconds range.",
+        "Results are significant for practical IRS deployment, reliable under the assumed mobility models, and stable across different scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors' argument structure involves problem formulation, theoretical modeling, analytical derivation, and performance evaluation.",
+        "Key steps include MRGP modeling, AoI framework development, and practical scenario evaluation.",
+        "Strengths include comprehensive modeling and practical applicability, while potential weaknesses may arise from simplifying assumptions like deterministic reconfiguration times."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel application of AoI to IRS reconfiguration and the provision of a closed-form solution.",
+        "Limitations include assumptions like NLOS conditions and deterministic reconfiguration times, which may not hold in all practical scenarios.",
+        "The theoretical paradigm constrains conclusions by focusing on specific mobility models and communication scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on IRS and AoI, contributing a new perspective on reconfiguration optimization.",
+        "Terminology includes technical terms like MRGP and PAoI, with a formal tone and rhetorical strategies emphasizing the novelty and applicability of the proposed framework.",
+        "Citations build authority by referencing foundational works in IRS, AoI, and mobility models, with motivations including establishing the research gap and supporting methodological choices."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the optimal IRS update period and the balance between overhead and performance.",
+        "Future research directions include extending the framework to multi-link scenarios, optimizing other system parameters, and experimental validation."
+      ]
+    }
+  }
+}

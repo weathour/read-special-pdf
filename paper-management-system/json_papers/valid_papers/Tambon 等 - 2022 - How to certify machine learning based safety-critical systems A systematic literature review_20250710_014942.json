@@ -1,0 +1,89 @@
+{
+  "file_name": "Tambon 等 - 2022 - How to certify machine learning based safety-critical systems A systematic literature review.pdf",
+  "generated_at": "2025-07-10 01:49:42",
+  "structured_info": {
+    "title_cn": "如何认证基于机器学习的安全关键系统？系统性文献综述",
+    "title_en": "How to certify machine learning based safety critical systems? A systematic literature review",
+    "category": "Software Engineering",
+    "topics": [
+      "Machine Learning Certification",
+      "Safety-critical Systems",
+      "Systematic Literature Review"
+    ],
+    "keywords": [
+      "Machine learning",
+      "Certification",
+      "Safety-critical",
+      "Systematic literature review"
+    ],
+    "abstract": "Context Machine Learning (ML) has been at the heart of many innovations over the past years. However, including it in so-called safety-critical systems such as automotive or aeronautic has proven to be very challenging, since the shift in paradigm that ML brings completely changes traditional certification approaches. Objective This paper aims to elucidate challenges related to the certification of ML-based safety-critical systems, as well as the solutions that are proposed in the literature to tackle them, answering the question 'How to Certify Machine Learning Based Safety-critical Systems?'. Method We conduct a Systematic Literature Review (SLR) of research papers published between 2015 and 2020, covering topics related to the certification of ML systems. In total, we identified 217 papers covering topics considered to be the main pillars of ML certification: Robustness, Uncertainty, Explainability, Verification, Safe Reinforcement Learning, and Direct Certification. We analyzed the main trends and problems of each sub-field and provided summaries of the papers extracted. Results The SLR results highlighted the enthusiasm of the community for this subject, as well as the lack of diversity in terms of datasets and type of ML models. It also emphasized the need to further develop connections between academia and industries to deepen the domain study. Finally, it also illustrated the necessity to build connections between the above mentioned main pillars that are for now mainly studied separately. Conclusion We highlighted current efforts deployed to enable the certification of ML based software systems, and discuss some future research directions.",
+    "methodology": "Systematic Literature Review (SLR) following Kitchenham (2004) guidelines, analyzing 217 papers from 2015-2020",
+    "conclusion": "Current efforts show community enthusiasm but reveal limitations including dataset/model diversity gaps and disconnected research pillars. Future work requires stronger industry-academia collaboration and integrated approaches across robustness, uncertainty, explainability, verification, safe RL, and direct certification domains.",
+    "authors": [
+      "Florian Tambon",
+      "Paulina Stevia Nouwou Mindom",
+      "Yann Pequignot",
+      "Foutse Khomh",
+      "Giulio Antoniol",
+      "Ettore Merlo",
+      "François Laviolette",
+      "Gabriel Laberge",
+      "Le An",
+      "Amin Nikanjam"
+    ],
+    "publication_year": "2022",
+    "venue": "Automated Software Engineering",
+    "doi": "10.1007/s10515-022-00337-x",
+    "bibtex_citation": "Tambon_How_2022",
+    "analysis": {
+      "Overview": "Systematic literature review examining certification challenges for ML-based safety-critical systems (e.g., automotive/aeronautics), analyzing 217 papers across six research pillars to map solutions and identify gaps.",
+      "Background_and_Motivation": [
+        "Traditional safety certification standards (e.g., ISO 26262, DO-178C) are inadequate for ML systems due to inductive learning paradigms shifting from deductive rule-based programming.",
+        "Need to establish certification processes addressing ML-specific challenges (distributional shift, black-box decisions) preventing deployment in safety-critical domains.",
+        "Catastrophic failure risks (deaths, environmental damage) in transportation systems underscore urgency; EASA/ISO initiatives highlight regulatory recognition of the gap.",
+        "ML certification is framed as essential for enabling innovation while mitigating risks in critical infrastructure, linking to broader functional safety challenges.",
+        "Contributes to software engineering, machine learning, safety engineering, and interdisciplinary certification standards development."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Certification: Third-party assurance of conformance to specified requirements for products/processes.",
+          "Safety-critical systems: Systems where failures cause catastrophic harm (death, environmental damage).",
+          "ML pillars: Robustness, uncertainty, explainability, verification, safe RL, direct certification as foundational domains."
+        ],
+        "Pillars address distinct ML certification barriers; direct certification synthesizes them into holistic frameworks. Robustness/uncertainty handle operational safety, explainability/verification enable validation, safe RL tackles sequential decision risks.",
+        "Assumes ML components can be certified through measurable properties; current standards are adaptable; transportation domain insights generalize to other critical systems.",
+        "Synthesizes fragmented research into a unified taxonomy, identifying knowledge gaps and proposing interdisciplinary pathways for certifiable ML systems."
+      ],
+      "Methodology": [
+        "SLR protocol with rigorous search across 7 databases using transportation-focused terms (e.g., 'safety-critical', 'avionic'), inclusion/exclusion criteria, quality assessment, and snowballing.",
+        "Methodology ensures reproducibility and minimizes bias but prioritizes academic publications over industry practices; transportation focus may limit generalizability.",
+        "Primary datasets: MNIST/CIFAR (52%), ImageNet (15%), driving datasets (18%). Critiqued for low diversity, overrepresentation of vision tasks, and limited real-world operational data.",
+        "Quality assessment via 7-point criteria (e.g., clarity of objectives, experimental validity) ensured paper relevance; threat analysis addressed selection bias.",
+        "Follows empirical software engineering paradigm, emphasizing evidence-based synthesis over theoretical formalism."
+      ],
+      "Results": [
+        "Robustness (31%) and verification (28%) dominate research; neural networks comprise 74% of studied models. Limited industry co-authored works (40%) and direct certification proposals (6.5%).",
+        "Results reveal community momentum but lack reproducibility: homogeneous datasets, insufficient real-world validation, and fragmented solutions weaken reliability for certification."
+      ],
+      "Argumentation_and_Logic": [
+        "1. Establish certification gap → 2. Decompose into research pillars → 3. Analyze trends/gaps → 4. Propose integration pathways.",
+        "Key links: Paradigm shift necessitates new methods; pillar interdependencies are underdeveloped; industry collaboration is critical for validation.",
+        "Strength: Comprehensive taxonomy enables structured progress assessment. Weakness: Transportation focus risks overlooking domain-specific challenges. Rebuttals addressed via threat analysis (Sect. 9)."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovations: First SLR unifying ML certification pillars; dataset/industry engagement critiques; actionable research roadmap.",
+        "Methodology boundaries: Excludes hardware/security aspects; SLR timeframe (2015-2020) omits recent advances.",
+        "Software engineering lens prioritizes process certifiability over statistical ML guarantees, potentially undervaluing uncertainty quantification."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as foundational synthesis to accelerate ML certification standards; bridges academic research and regulatory needs.",
+        "Formal terminology (e.g., 'distributional shift', 'overarching properties'); persuasive tone emphasizing urgency; leverages ISO/EASA citations for authority building.",
+        "Strategic citations establish credibility and align with regulatory initiatives (e.g., DEEL Project), advocating for academic-industry co-development."
+      ],
+      "Conclusions_and_Implications": [
+        "Certification requires solving pillar-specific challenges (e.g., adversarial robustness, OOD detection) while integrating solutions across domains.",
+        "Future work: Develop diverse safety-critical datasets; foster industry partnerships; create unified evaluation frameworks; advance direct certification standards."
+      ]
+    }
+  }
+}

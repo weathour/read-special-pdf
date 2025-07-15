@@ -1,0 +1,86 @@
+{
+  "file_name": "Karthikeyan 等 - 2024 - Enhancing Vehicular Communication Efficiency Through DSRC and LTE-V2x Integration.pdf",
+  "generated_at": "2025-07-10 05:35:18",
+  "structured_info": {
+    "title_cn": "通过DSRC与LTE-V2X集成提升车辆通信效率",
+    "title_en": "Enhancing Vehicular Communication Efficiency through DSRC and LTE-V2x Integration",
+    "category": "Wireless Communication",
+    "topics": [
+      "Vehicular Ad-hoc Networks",
+      "Communication Technology Integration",
+      "Intelligent Transportation Systems"
+    ],
+    "keywords": [
+      "Vehicular communication integration",
+      "DSRC and LTE-V2X integration",
+      "Communication mode management",
+      "Data rate enhancement",
+      "Spectrum utilization optimization"
+    ],
+    "abstract": "With the remarkable development of vehicles on the road, the demand for efficient vehicular communication has surged. This has led to the rise of Vehicle-Based Ad-hoc Networks (VANETs), which offer innovative solutions to enhance street safety and traffic management. One prominent technology, Dedicated Short-Reach Communication (DSRC), operates within the dedicated 5.9 GHz band and is tailored for Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I) communication. While DSRC provides reliable performance, its data rates and communication range remain limited. To address these limitations, this project proposes integrating DSRC with Long-Term Evolution Vehicle-to-Everything (LTE-V2X) technology. By combining DSRC's consistency with LTE-V2X's cellular-based framework, the integration aims to deliver higher data rates, extended communication reach, and flexibility in spectrum use, thus fostering more efficient vehicular communication.",
+    "methodology": "Proposes integration of DSRC and LTE-V2X technologies with dynamic mode switching based on environmental factors and network availability. Leverages DSRC's reliability for short-range V2V/V2I communication and LTE-V2X's cellular infrastructure for extended coverage. Methodology includes literature review of comparable technologies and parameter analysis.",
+    "conclusion": "The integration of DSRC and LTE-V2X addresses vehicular communication limitations by extending data rates, communication range, and spectrum flexibility. This synergistic approach enhances road safety, traffic management efficiency, and lays the foundation for smarter transportation systems. Future research should address security concerns in 5G VANETs.",
+    "authors": [
+      "K.Karthikeyan",
+      "V.Parthipan",
+      "M.Ishwarya Niranjana",
+      "D.Prithvi",
+      "N.Raghul Franklin",
+      "N.Kaviarasu"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 International Conference on Science Technology Engineering and Management (ICSTEM)",
+    "doi": "10.1109/ICSTEM61137.2024.10560623",
+    "bibtex_citation": "Karthikeyan_Enhancing_2024",
+    "analysis": {
+      "Overview": "Proposes integration of DSRC and LTE-V2X technologies to overcome limitations in vehicular communication, enhancing data rates, coverage, and spectrum efficiency for improved transportation safety and management.",
+      "Background_and_Motivation": [
+        "Rapid vehicle growth demands advanced communication systems for road safety and traffic optimization. VANETs enable vehicle-to-vehicle/infrastructure communication but face technical constraints.",
+        "DSRC's limitations in data rates (5.9 GHz band) and coverage range necessitate complementary solutions. LTE-V2X's cellular infrastructure offers broader coverage but lacks DSRC's reliability for critical short-range communication.",
+        "Authors emphasize urgency through statistics on rising vehicle numbers and demonstrate how isolated technologies cannot meet evolving demands for safety-critical applications.",
+        "Specific problem (limited DSRC performance) is linked to broader challenge of scalable intelligent transportation systems, highlighting safety implications and spectrum inefficiencies.",
+        "Contributes to telecommunications, vehicular networking, and intelligent transportation systems through interdisciplinary approach."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "DSRC: Dedicated short-range communication using 5.9GHz band for reliable V2V/V2I communication",
+          "LTE-V2X: Cellular-based long-range communication leveraging existing infrastructure",
+          "Dynamic Mode Switching: Seamless transition between technologies based on environmental factors"
+        ],
+        "DSRC provides baseline reliability → LTE-V2X extends coverage → Mode switching optimizes performance based on real-time conditions → Integrated system overcomes individual limitations.",
+        "Assumes coexistence feasibility of both technologies; cellular infrastructure availability; and environmental factors can be accurately measured for mode switching.",
+        "Provides practical implementation framework for hybrid communication systems, advancing VANET architecture beyond single-technology paradigms."
+      ],
+      "Methodology": [
+        "Literature review and comparative analysis of DSRC/LTE-V2X performance parameters (data rate, bandwidth, efficiency). Proposes dynamic switching mechanism without new experimental validation.",
+        "Novelty lies in operational integration rather than new protocols. Applicability demonstrated through parameter comparisons. Rationality stems from complementary technology strengths.",
+        "Uses secondary data from referenced studies (2020 IEEE publications). Data represents simulation-based vehicular scenarios but lacks real-world diversity documentation.",
+        "Experimental rigor limited to theoretical proposal and parameter comparisons. Evaluation metrics (data rate, range) are industry-standard but not empirically tested in current study.",
+        "Follows telecommunications engineering paradigm, prioritizing technical interoperability over socioeconomic factors."
+      ],
+      "Results": [
+        "Theoretical results indicate integrated system achieves: 1) Higher data rates than standalone DSRC 2) Extended communication range 3) Optimized spectrum utilization through dynamic switching",
+        "Results are significant for safety-critical applications but reliability depends on unvalidated switching mechanisms. Stability requires further testing in diverse environments."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem-solution structure: 1) Identify DSRC limitations 2) Propose LTE-V2X integration 3) Validate through literature comparisons 4) Conclude synergistic benefits",
+        "Key steps: Technological gap identification → Complementary strength analysis → Integration proposal → Future research direction",
+        "Strengths: Clear comparative technology analysis. Weaknesses: No validation of switching mechanism. Potential rebuttals (coexistence challenges) acknowledged but not substantively addressed."
+      ],
+      "Strengths_and_Limitations": [
+        "Key innovation: Practical integration framework using existing technologies. Strengths include comprehensive literature review and clear parameter comparison.",
+        "Methodology boundaries: No implementation details or testing protocols. Limitations in addressing coexistence interference or infrastructure requirements.",
+        "Telecommunications focus constrains socioeconomic analysis of deployment costs or standardization barriers."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within V2X standardization debate by proposing hybrid solution. Engages with IEEE/3GPP discourse through extensive citations.",
+        "Uses technical terminology (V2V, V2I, spectrum utilization) with persuasive tone emphasizing urgency through vehicle growth statistics.",
+        "Builds authority through concentrated IEEE citations (2020-2021). Motivations include establishing solution viability within dominant research paradigms."
+      ],
+      "Conclusions_and_Implications": [
+        "DSRC-LTE-V2X integration enhances vehicular communication efficiency beyond standalone technologies, enabling safer transportation systems through extended coverage and adaptive resource use.",
+        "Future research: 1) Validate dynamic switching in real environments 2) Address 5G VANET security 3) Explore NR-V2X integration 4) Develop standardized coexistence protocols."
+      ]
+    }
+  }
+}

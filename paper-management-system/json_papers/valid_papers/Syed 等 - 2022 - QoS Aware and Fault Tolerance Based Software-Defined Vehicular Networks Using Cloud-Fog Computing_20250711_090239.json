@@ -1,0 +1,89 @@
+{
+  "file_name": "Syed 等 - 2022 - QoS Aware and Fault Tolerance Based Software-Defined Vehicular Networks Using Cloud-Fog Computing.pdf",
+  "generated_at": "2025-07-11 09:02:39",
+  "structured_info": {
+    "title_cn": "基于云-雾计算的QoS感知和容错软件定义车载网络",
+    "title_en": "QoS Aware and Fault Tolerance Based Software-Defined Vehicular Networks Using Cloud-Fog Computing",
+    "category": "Vehicular Networks",
+    "topics": [
+      "Software-Defined Networking",
+      "Fog Computing",
+      "Quality of Service"
+    ],
+    "keywords": [
+      "vehicular ad-hoc network",
+      "quality of service",
+      "fault-tolerance",
+      "priority basis scheduling",
+      "response time"
+    ],
+    "abstract": "Software-defined network (SDN) and vehicular ad-hoc network (VANET) combined provided a software-defined vehicular network (SDVN). To increase the quality of service (QoS) of vehicle communication and to make the overall process efficient, researchers are working on VANET communication systems. Current research work has made many strides, but due to the following limitations, it needs further investigation and research: Cloud computing is used for messages tasks execution instead of fog computing, which increases response time. Furthermore, a fault tolerance mechanism is used to reduce the tasks messages failure ratio. We proposed QoS aware and fault tolerance-based software-defined vehicular networks using Cloud-fog computing (QAFT-SDVN) to address the above issues. We provided heuristic algorithms to solve the above limitations. The proposed model gets vehicle messages through SDN nodes which are placed on fog nodes. SDN controllers receive messages from nearby SDN units and prioritize the messages in two different ways. One is the message nature way, while the other one is deadline and size way of messages prioritization. SDN controller categorized in safety and non-safety messages and forward to the destination. After sending messages to their destination, we check their acknowledgment; if the destination receives the messages, then no action is taken; otherwise, we use a fault tolerance mechanism. We send the messages again. The proposed model is implemented in CloudSim and iFogSim, and compared with the latest models. The results show that our proposed model decreased response time by 50% of the safety and non-safety messages by using fog nodes for the SDN controller. Furthermore, we reduced the execution time of the safety and non-safety messages by up to 4%. Similarly, compared with the latest model, we reduced the task failure ratio by 20%, 15%, 23.3%, and 22.5%.",
+    "methodology": "Proposed QAFT-SDVN architecture using fog nodes for SDN controllers; heuristic algorithms for message prioritization (nature-based and deadline/size-based) and fault tolerance; simulation via CloudSim/iFogSim with comparative analysis.",
+    "conclusion": "QAFT-SDVN reduces response time by 50%, execution time by 4%, and task failure ratio by 15-23.3% through fog-based processing and fault tolerance, enhancing QoS for safety/non-safety messages.",
+    "authors": [
+      "Sidra Abid Syed",
+      "Abdul Waheed",
+      "Munaf Rashid",
+      "Mahdi Zareei",
+      "Samreen Hussain",
+      "Cesar Vargas-Rosales",
+      "Fahad Azim",
+      "Hira Zahid",
+      "Asif Umer"
+    ],
+    "publication_year": "2022",
+    "venue": "Sensors",
+    "doi": "https://doi.org/10.3390/s22010401",
+    "bibtex_citation": "Syed_QoS_2022",
+    "analysis": {
+      "Overview": "Proposes a QoS-aware, fault-tolerant architecture for software-defined vehicular networks (SDVN) leveraging cloud-fog computing to reduce response time and message failure rates.",
+      "Background_and_Motivation": [
+        "Addresses limitations in existing SDVN models: high response time from cloud-based processing and lack of fault tolerance for critical vehicle messages.",
+        "Motivated by the need for reliable emergency communication (e.g., accidents, theft) where message failure endangers safety; fog computing reduces latency, while fault tolerance ensures delivery.",
+        "Argues that cloud-centric approaches delay safety-critical messages; urgency is established via scenarios where undelivered messages risk lives.",
+        "Links specific SDVN inefficiencies to broader vehicular network challenges: scalability, flexibility, and real-time QoS.",
+        "Contributes to vehicular networks, distributed systems, fog/cloud computing, and network reliability."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Fog Computing: Geographically distributed edge resources minimizing latency for message processing.",
+          "Message Prioritization: Dual-criteria (message nature + deadline/size) for safety/non-safety classification.",
+          "Fault Tolerance: Retransmission mechanism triggered by missing acknowledgments."
+        ],
+        "Fog hosts SDN controllers prioritizing messages; prioritized messages transmit first; fault tolerance resends failed messages, creating a closed-loop QoS system.",
+        "Assumes fog nodes are roadside-accessible; message types are pre-classifiable; acknowledgments reliably indicate delivery failure.",
+        "Provides an architectural innovation improving practical QoS metrics (response time, failure rate) in SDVN systems."
+      ],
+      "Methodology": [
+        "Heuristic algorithms for message prioritization (Algorithms 1-2) and fault tolerance (Algorithm 4); simulation in CloudSim/iFogSim with vehicles, fog nodes, cloud; metrics: response time, execution time, failure ratio.",
+        "Novelty: Fog-based SDN controllers replace cloud; dual-message prioritization. Applicable to urban VANETs; prioritization rationalized for emergency scenarios.",
+        "Simulated data: 40 messages (safety/non-safety) with deadlines/sizes; random task generation. Representativeness limited by synthetic data (no real-world traces).",
+        "Compared with prior models via controlled simulations; metrics align with QoS goals but lack real-world validation.",
+        "Follows systems engineering/simulation paradigm; emphasizes empirical optimization over theoretical formalism."
+      ],
+      "Results": [
+        "50% lower response time for safety messages; 4% reduced execution time; 15-23.3% lower task failure versus benchmarks.",
+        "Results significant for emergency communications; reliability demonstrated via fault tolerance; stability inferred from consistent simulation outcomes."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem-Solution structure: Identifies cloud/fault-tolerance gaps → Proposes QAFT-SDVN → Validates via simulation.",
+        "Steps: 1) Critique existing SDVN, 2) Introduce fog/fault-tolerance, 3) Algorithms for prioritization/resend, 4) Comparative simulation.",
+        "Strengths: Clear comparative metrics; weaknesses: No security/mobility analysis. Rebuts limitations via fault tolerance and fog efficiency."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: 50% response time reduction; novel dual-prioritization; practical fault tolerance.",
+        "Limitations: Simulation-only validation; ignores network load from retransmissions; no real-world dynamics (e.g., mobility).",
+        "System engineering focus constrains theoretical generalization; conclusions apply to static/topology-controlled scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as QoS/fault-tolerance improvement in SDVN; contrasts with 'cloud-only' models via citations.",
+        "Technical terminology (e.g., SDN, QoS); persuasive tone emphasizing urgency; rhetorical focus on 'reduction' metrics (time/failure).",
+        "Builds authority through VANET/SDN citations; motivations include addressing cited gaps (e.g., response time in Refs 27,28)."
+      ],
+      "Conclusions_and_Implications": [
+        "QAFT-SDVN enhances QoS via fog-based processing and fault tolerance, reducing response time (50%), execution time (4%), and failure rates (15-23.3%).",
+        "Future work: Integrate vehicle mobility; add security; real-world deployment; energy consumption analysis."
+      ]
+    }
+  }
+}

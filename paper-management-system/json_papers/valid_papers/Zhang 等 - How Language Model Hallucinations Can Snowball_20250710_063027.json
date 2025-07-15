@@ -1,0 +1,85 @@
+{
+  "file_name": "Zhang 等 - How Language Model Hallucinations Can Snowball.pdf",
+  "generated_at": "2025-07-10 06:30:27",
+  "structured_info": {
+    "title_cn": "语言模型幻觉如何雪球化",
+    "title_en": "How Language Model Hallucinations Can Snowball",
+    "category": "Natural Language Processing",
+    "topics": [
+      "Hallucination in Language Models",
+      "Error Propagation",
+      "Model Consistency"
+    ],
+    "keywords": [
+      "Hallucination",
+      "Snowballing",
+      "Language Models",
+      "Consistency",
+      "Chain-of-Thought"
+    ],
+    "abstract": "A major risk of using language models in practical applications is their tendency to hallucinate incorrect statements. Hallucinations are often attributed to knowledge gaps in LMs, but we show that LMs sometimes produce hallucinations that they can separately recognize as incorrect. To do this, we construct three question-answering datasets where LMs often state an incorrect answer which is followed by an explanation with at least one incorrect claim. Crucially, we find that GPT-3.5, GPT-4, and LLaMA2-70B-chat can identify 67%, 87%, and 94% of these incorrect claims, respectively. We show that this phenomenon doesn't disappear under higher temperature sampling, beam search, and zero-shot chain-of-thought prompting. These findings reveal that LM hallucinations can snowball: early mistakes by an LM can lead to more mistakes that otherwise would not be made.",
+    "methodology": "Empirical analysis using three custom QA datasets (Primality Testing, Senator Search, Graph Connectivity) with 500 samples each. Tested GPT-3.5, GPT-4, and LLaMA2-70B-chat under greedy decoding. Employed two-stage evaluation: first measured answer accuracy, then verified model's recognition of self-generated incorrect claims in isolated sessions. Explored interventions including temperature variation, beam search, and chain-of-thought prompting.",
+    "conclusion": "Language models frequently produce snowballed hallucinations—incorrect claims justifying earlier errors—which they can recognize as false when presented in isolation. This phenomenon persists across decoding strategies and temperatures. Chain-of-thought prompting reduces but doesn't eliminate snowballing, especially in composite tasks requiring concurrent reasoning.",
+    "authors": [
+      "Muru Zhang",
+      "Ofir Press",
+      "William Merrill",
+      "Alisa Liu",
+      "Noah A. Smith"
+    ],
+    "publication_year": "2024",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "doi": "",
+    "bibtex_citation": "Zhang_How_2024",
+    "analysis": {
+      "Overview": "The paper investigates how language models (LMs) generate self-reinforcing hallucinations, where initial errors trigger subsequent factually incorrect justifications that models can independently recognize as false. It demonstrates this 'snowballing' phenomenon across multiple models and tasks.",
+      "Background_and_Motivation": [
+        "Hallucinations in LMs pose significant risks in real-world applications, traditionally attributed to knowledge gaps.",
+        "To challenge this assumption by showing hallucinations occur even when LMs possess relevant knowledge, driven by consistency pressures rather than ignorance.",
+        "Empirical evidence reveals models recognize 67-94% of self-generated false claims in isolation, proving urgency in addressing consistency-induced errors.",
+        "Links specific snowballing behavior to broader LM reliability challenges, highlighting systemic vulnerabilities beyond knowledge limitations.",
+        "Contributes to Natural Language Processing, AI safety, and human-AI interaction disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Hallucination Snowballing: Incorrect LM outputs that trigger subsequent unjustified claims for consistency.",
+          "Initial Committal: LMs' tendency to state final answers early (e.g., Yes/No) before reasoning.",
+          "Inherently Sequential Problems: Tasks requiring multi-step reasoning beyond single-generation-step capabilities (e.g., primality testing)."
+        ],
+        "Initial committal forces answer generation before full reasoning; sequential constraints prevent accurate single-step solutions, jointly enabling snowballing.",
+        "Assumes LMs: (1) prioritize contextual consistency over factual accuracy, (2) cannot solve sequential problems in one step, (3) recognize isolated false claims reliably.",
+        "Identifies a new hallucination mechanism (consistency-driven snowballing), shifting focus from knowledge gaps to architectural/behavioral constraints."
+      ],
+      "Methodology": [
+        "Constructed three adversarial QA datasets where wrong answers necessitate specific false justifications. Verified claims via isolated model queries.",
+        "Novelty: Probes self-contradiction in LMs. Applicability: Tests real-world scenarios (e.g., factual QA). Rationality: Controls for task complexity and answer verifiability.",
+        "Datasets: 500 samples/task (synthetic primes, senator attributes, flight paths). Preprocessing: Ensured wrong answers produce identifiable false claims. Representativeness limited by synthetic nature.",
+        "Rigorous design: Fixed correct answers per dataset, manual verification heuristics, new sessions for claim testing. Evaluation: Accuracy + hallucination detection rates.",
+        "Aligns with empirical AI safety research, focusing on behavioral analysis over theoretical modeling."
+      ],
+      "Results": [
+        "High error rates (GPT-4: 67.8-88.4%; LLaMA2: 30.6-97.4%). Models identified 67-94% of self-generated false claims in isolation. Chain-of-thought reduced errors in simple tasks but failed in composite questions.",
+        "Results are statistically significant (500 samples/dataset) and stable across temperatures/decoding methods. Demonstrates reproducibility via March 2024 retests."
+      ],
+      "Argumentation_and_Logic": [
+        "Deductive structure: Hypothesis (consistency-driven snowballing) → Dataset design → Empirical validation → Mitigation tests → Implications.",
+        "Key steps: (1) Establish committal/sequentiality as root causes, (2) Show high recognition of isolated errors, (3) Prove interventions' limitations, (4) Propose training solutions.",
+        "Strength: Multi-dataset/multi-model validation. Weakness: Limited real-world data. Rebuttals: Addresses mitigation failures (e.g., chain-of-thought breakdown in composites)."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovations: First demonstration of self-recognized hallucinations, novel datasets, systematic decoding analysis.",
+        "Method boundaries: Heuristic-based claim verification; synthetic datasets may not generalize.",
+        "Empirical focus constraints theoretical insights into transformer limitations causing sequential reasoning failures."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances hallucination discourse by challenging 'knowledge gap' narratives. Positions snowballing as fundamental consistency flaw.",
+        "Terminology: 'Snowballed hallucination', 'initial committal'. Rhetoric: Contrasts model behavior ('prioritize consistency') with ideal ('acknowledge mistakes').",
+        "Cites seminal works (e.g., Wei et al. chain-of-thought) to contextualize findings. Uses empirical results as primary authority builder."
+      ],
+      "Conclusions_and_Implications": [
+        "Hallucinations snowball via consistency pressures, not just knowledge gaps. Current mitigations (e.g., chain-of-thought) are insufficient for complex tasks.",
+        "Future work: Train LMs to backtrack using revision histories; develop 'backtracking tokens'; explore few-shot correction paradigms."
+      ]
+    }
+  }
+}

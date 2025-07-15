@@ -1,0 +1,79 @@
+{
+  "file_name": "Yang 等 - 2024 - Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses.pdf",
+  "generated_at": "2025-07-14 03:52:57",
+  "structured_info": {
+    "title_cn": "分布式后门攻击在联邦图学习中的研究与认证防御",
+    "title_en": "Distributed Backdoor Attacks on Federated Graph Learning and Certified Defenses",
+    "category": "Security and Privacy",
+    "topics": [
+      "Federated Learning",
+      "Backdoor Attacks",
+      "Graph Neural Networks"
+    ],
+    "keywords": [
+      "Federated Graph Learning",
+      "Backdoor Attacks",
+      "Certified Defenses"
+    ],
+    "abstract": "Federated graph learning (FedGL) is an emerging federated learning (FL) framework that extends FL to learn graph data from diverse sources without accessing the data. FL for non-graph data has shown to be vulnerable to backdoor attacks, which inject a shared backdoor trigger into the training data such that the trained backdoored FL model can predict the testing data containing the trigger as the attacker desires. However, FedGL against backdoor attacks is largely unexplored, and no effective defense exists. In this paper, we aim to address such significant deficiency. First, we propose an effective, stealthy, and persistent backdoor attack on FedGL. Our attack uses a subgraph as the trigger and designs an adaptive trigger generator that can derive the effective trigger location and shape for each graph. Our attack shows that empirical defenses are hard to detect remove our generated triggers. To mitigate it, we further develop a certified defense for any backdoored FedGL model against the trigger with any shape at any location. Our defense involves carefully dividing a testing graph into multiple subgraphs and designing a majority vote-based ensemble classifier on these subgraphs. We then derive the deterministic certified robustness based on the ensemble classifier and prove its tightness. We extensively evaluate our attack and defense on six graph datasets. Our attack results show our attack can obtain >90% backdoor accuracy in almost all datasets. Our defense results show, in certain cases, the certified accuracy for clean testing graphs against an arbitrary trigger with size 20 can be close to the normal accuracy under no attack, while there is a moderate gap in other cases.",
+    "methodology": "1) Proposes Opt-GDBA attack with adaptive trigger generator comprising three modules: node importance scoring, trigger location learning (Definable-Trigger/Customized-Trigger schemes), and trigger shape learning. 2) Develops certified defense via deterministic graph division using cryptographic hashing and majority-vote ensemble classifier.",
+    "conclusion": "1) Opt-GDBA achieves >90% backdoor accuracy with improved stealthiness. 2) Certified defense provides deterministic robustness guarantees for clean graphs and breaks backdoored graphs (0% certified BA). 3) Defense maintains utility (high certified MA) while provably mitigating attacks.",
+    "authors": [
+      "Yuxin Yang",
+      "Qiang Li",
+      "Jinyuan Jia",
+      "Yuan Hong",
+      "Binghui Wang"
+    ],
+    "publication_year": "2024",
+    "venue": "Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security (CCS '24)",
+    "doi": "10.1145/3658644.3690187",
+    "bibtex_citation": "Wang_Distributed_2024",
+    "analysis": {
+      "Overview": "The paper addresses vulnerabilities in Federated Graph Learning (FedGL) by proposing an optimized distributed backdoor attack (Opt-GDBA) and a certified defense. It bridges gaps in graph-specific backdoor research, demonstrating high attack efficacy and provable defense guarantees.",
+      "Background_and_Motivation": [
+        "FedGL enables collaborative training on distributed graph data without data sharing, but its security against backdoor attacks is unexplored.",
+        "Existing non-graph FL defenses fail for graphs due to variable sizes, absence of spatial consistency, and critical role of edge features.",
+        "Urgency is established through safety-critical applications (e.g., healthcare/finance) using vulnerable FedGL frameworks like FederatedScope-GNN.",
+        "The problem is linked to broader FL security challenges, emphasizing unique graph vulnerabilities.",
+        "Contributes to distributed systems security, adversarial machine learning, and graph learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Adaptive Trigger Generator: Learns graph-specific triggers via importance scoring and shape optimization.",
+        "Certified Defense: Uses deterministic graph division and majority voting for robustness guarantees.",
+        "Assumes attacker controls malicious clients and knows local data/global model; defense assumes bounded trigger size.",
+        "Advances knowledge by introducing graph-adaptive attacks and deterministic certifications for FedGL."
+      ],
+      "Methodology": [
+        "Opt-GDBA: EdgeView/NodeView modules compute node importance; Customized-Trigger uses k-means/Gap statistics for dynamic size; Trigger-Shape employs attention for stealth.",
+        "Novelty: First adaptive trigger for graphs; applicability shown across six datasets; rationality via ablation studies.",
+        "Uses six real-world graph datasets; preprocessed via standard FedGL partitioning; representativeness validated through diverse domains (social, bioinformatics).",
+        "Rigorous evaluation: Compares against baselines (Rand-GCBA/Rand-GDBA), tests hyperparameters (ρ, n_tri), and measures persistence/stealth.",
+        "Follows adversarial ML paradigm, focusing on threat modeling and certified robustness."
+      ],
+      "Results": [
+        "Opt-GDBA achieves 78-99% BA (30-46% gain vs. baselines) with fewer edges; defense achieves 0% certified BA and 44-100% certified MA for m≤20.",
+        "Results are significant (consistent across datasets), reliable (extensive experiments), and stable (tested under varying parameters)."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Motivate FedGL vulnerabilities → 2) Design adaptive attack → 3) Show empirical defenses fail → 4) Propose certified defense → 5) Prove guarantees.",
+        "Key steps: Trigger optimization necessity (Fig 3), defense design via non-overlapping subgraphs, tightness proof (Theorem 2).",
+        "Strengths: Theorems support claims; weaknesses: Certified MA gap in dense graphs. Rebuttals: Augmentation improves sparse-graph performance."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: High-attack stealth, persistence; first certified defense for FedGL with tight guarantees.",
+        "Defense limitations: Certified MA drops for large/dense graphs; trigger size bound required.",
+        "Theoretical paradigm (certifiable robustness) limits defense to bounded perturbations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational work for FedGL security, critiquing prior random-trigger approaches.",
+        "Uses adversarial ML terminology; formal tone with empirical/theoretical validation.",
+        "Builds authority via comparisons to 16 baselines/defenses and 98 references; citations contextualize contributions."
+      ],
+      "Conclusions_and_Implications": [
+        "Opt-GDBA exposes FedGL vulnerabilities; certified defense offers provable security.",
+        "Future work: Enhance certified MA for dense graphs, explore client-collusion attacks, improve defense efficiency."
+      ]
+    }
+  }
+}

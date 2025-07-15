@@ -1,0 +1,84 @@
+{
+  "file_name": "Lin 等 - 2023 - Mobility 5.0 Smart Logistics and Transportation Services in Cyber-Physical-Social Systems.pdf",
+  "generated_at": "2025-07-10 01:38:59",
+  "structured_info": {
+    "title_cn": "移动5.0：信息-物理-社会系统中的智能物流与运输服务",
+    "title_en": "Mobility 5.0: Smart Logistics and Transportation Services in Cyber-Physical-Social Systems",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Mobility 5.0",
+      "Smart Logistics",
+      "Cyber-Physical-Social Systems"
+    ],
+    "keywords": [
+      "Mobility",
+      "Logistics",
+      "Transportation",
+      "Cyber-Physical-Social Systems"
+    ],
+    "abstract": "The logistics and transportation industry has made significant progress in improving sustainability, efficiency, and accessibility, primarily due to the continuous development of technologies, including clean energy, advanced algorithms, unmanned vehicles, and privacy-enhancing techniques. Along with these advancements, the Mobility 5.0 paradigm has been proposed in the ITSS Intelligent Vehicle 5.0 project meeting. This letter discusses the changes in the supply and demand of mobility resources and looks at the basic components on which the implementation of the Mobility 5.0 relies on. By integrating emerging technologies into Cyber-Physical-Social Systems (CPSS), we believe that Mobility 5.0 has tremendous potential in shaping a new era of intelligent logistics and transportation services and will bring significant benefits to individuals, businesses, the government, and the entire society.",
+    "methodology": "Conceptual framework development integrating socio-technical analysis with emerging technologies in CPSS. Analyzes supply-demand dynamics through qualitative assessment of green energy, AI algorithms, unmanned systems, and privacy-preserving data platforms.",
+    "conclusion": "Mobility 5.0 as a CPSS paradigm can efficiently organize technologies to address resource mismatches. Human-centric design is crucial for achieving intelligent, sustainable transportation systems with improved efficiency and equity.",
+    "authors": [
+      "Yilun Lin",
+      "Xiaoxiang Na",
+      "Ding Wang",
+      "Xingyuan Dai",
+      "Fei-Yue Wang"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/TIV.2023.3286995",
+    "bibtex_citation": "Lin_Mobility_2023",
+    "analysis": {
+      "Overview": "Proposes Mobility 5.0 as a society-centric paradigm for logistics/transportation, integrating AI, IoT, and privacy tech within Cyber-Physical-Social Systems to resolve resource allocation inefficiencies.",
+      "Background_and_Motivation": [
+        "Historical mobility evolution (1.0-4.0) created resource mismatches despite efficiency gains; current systems face local scarcity amid global oversupply.",
+        "Address tool-centric limitations by shifting to society-focused optimization using real-time data and AI.",
+        "Urgency emphasized via urban transport capacity limits and fragmented demand data due to privacy/commercial barriers.",
+        "Positions local resource scarcity as microcosm of broader systemic inefficiency, impacting economic/social welfare.",
+        "Contributes to intelligent transportation systems, AI ethics, urban informatics, and socio-technical systems engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Mobility 5.0: Society-centric paradigm leveraging CPSS for resource optimization.",
+          "CPSS: Integration layer merging cyber, physical, and social dimensions.",
+          "TDEP: Transparent Data Exchange Platform using blockchain/PETs for privacy-compliant demand matching."
+        ],
+        "CPSS enables Mobility 5.0 → TDEP supplies demand data → Mobility 5.0 optimizes allocation via MOOS/MOLMs.",
+        "Assumes technological integration can overcome social barriers; data ownership incentivizes sharing.",
+        "Proposes novel socio-technical framework advancing theory of human-AI collaboration in transportation."
+      ],
+      "Methodology": [
+        "Qualitative analysis of supply (green energy, algorithms, unmanned systems) and demand (PETs, blockchain) technologies; framework synthesis without empirical validation.",
+        "Conceptually novel but untested applicability; rational alignment with CPSS principles but lacks implementation details.",
+        "No primary data; relies on secondary examples (e.g., Shenzhen drones). Representativeness limited to conceptual scenarios.",
+        "No experiments; uses descriptive case studies without defined evaluation metrics.",
+        "Follows CPSS theoretical paradigm, emphasizing social integration but potentially overlooking institutional barriers."
+      ],
+      "Results": [
+        "Conceptual validation of Mobility 5.0 components (MOOS, MOSE, MOLMs); no empirical results.",
+        "Theoretical significance in unifying technologies; reliability/stability unassessed."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem (resource mismatch) → Solution (Mobility 5.0/CPSS) → Implementation (supply-demand tech → MOOS/MOLMs).",
+        "1. Historical analysis justifies paradigm shift; 2. Tech review supports feasibility; 3. Framework integrates components.",
+        "Strengths: Comprehensive tech integration. Weaknesses: No rebuttal to implementation complexity or social adoption barriers."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative CPSS integration; holistic supply-demand analysis; cross-disciplinary synthesis.",
+        "Conceptual nature; no scalability assessment; ignores governance/policy dimensions.",
+        "CPSS focus overemphasizes technical solutions, underrepresenting socio-political constraints."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational for next-gen mobility; responds to fragmentation in smart transportation research.",
+        "Uses paradigm-shift rhetoric; authoritative tone via IEEE references; constructs urgency through statistics (e.g., 96% logistics growth).",
+        "Builds authority through prolific self-citations (Fei-Yue Wang); motivated by establishing CPSS leadership."
+      ],
+      "Conclusions_and_Implications": [
+        "Mobility 5.0 enables sustainable, equitable transport via CPSS-integrated technologies.",
+        "Future work: Safety/equity mechanisms; empirical validation; incentive model refinement for TDEP; human-AI interaction protocols."
+      ]
+    }
+  }
+}

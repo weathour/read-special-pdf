@@ -1,0 +1,83 @@
+{
+  "file_name": "Soon 等 - 2024 - Grey Box Non-Recursive System Identification for a Third Order Electro-Hydraulic Actuator System Fr.pdf",
+  "generated_at": "2025-07-14 12:51:47",
+  "structured_info": {
+    "title_cn": "灰色盒子非递归系统辨识在第三阶电液执行器系统中的应用：从仿真到实践方法",
+    "title_en": "Grey Box Non-Recursive System Identification for a Third Order Electro-Hydraulic Actuator System: From Simulation to Practical Approaches",
+    "category": "Control Systems",
+    "topics": [
+      "System Identification",
+      "Electro-Hydraulic Actuator",
+      "Grey Box Modeling"
+    ],
+    "keywords": [
+      "Electro-Hydraulic Actuator System",
+      "Non-recursive",
+      "Grey Box",
+      "System Identification",
+      "Simulation and Experiment"
+    ],
+    "abstract": "Engineering systems heavily rely on mathematical modeling, significantly influencing both system performance and the design of control systems. This paper thoroughly investigates the establishment of a third-order mathematical model for heavy machinery systems, with a specific emphasis on the Electro-Hydraulic Actuator (EHA) system. The formulation of a double-acting EHA system model using a grey box system identification approach is outlined, encompassing the system's dynamics and behavior. In addition, the details of the EHA system experimental setup that is used for system identification are described. The identification process demonstrates promising performance, achieving an impressive accuracy of 89.1%, as highlighted in the results and discussion sections.",
+    "methodology": "The research employs a grey box modeling approach for system identification, specifically using a non-recursive least squares algorithm. The methodology includes input signal selection (sum of sinusoidal signals), model validation through graphical and statistical approaches (R-squared and RMSE), and experimental design with a 1 ms sampling interval.",
+    "conclusion": "The study concludes that the system identification technique yields a satisfactory accuracy level for the EHA system model, achieving an R-squared value of 89.1%. The derived third-order transfer function model effectively represents the dynamic nature of the EHA system and will be used for tracking performance assessment in future simulations and experiments.",
+    "authors": [
+      "Chong Chee Soon",
+      "Rozaimi Ghazali",
+      "Muhamad Fadli Ghani",
+      "Siaw-Hong Liew",
+      "Howe Cheng Teng",
+      "Nur Farhanah Zulkipli",
+      "Chong You Beh",
+      "Mohd Saidi Hanaffi"
+    ],
+    "publication_year": "2024",
+    "venue": "20th IEEE International Colloquium on Signal Processing & Its Applications (CSPA)",
+    "doi": "10.1109/CSPA60979.2024.10525350",
+    "bibtex_citation": "Chong_Grey_2024",
+    "analysis": {
+      "Overview": "The paper focuses on developing a third-order mathematical model for an Electro-Hydraulic Actuator (EHA) system using a grey box non-recursive system identification approach. It combines simulation and experimental methods to achieve high accuracy in model representation.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of accurately modeling complex engineering systems, particularly heavy machinery systems like EHA, which are critical for control system design.",
+        "The motivation stems from the limitations of traditional modeling approaches, which are either time-consuming (physics-based) or less accurate (data-driven).",
+        "The authors argue that system identification offers a balanced solution, providing reasonable accuracy with manageable effort.",
+        "The problem is significant for contemporary engineering simulations and control system designs, contributing to the fields of control systems and mechanical engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include grey box modeling (combining prior knowledge with data-driven estimation), non-recursive system identification (offline parameter estimation), and third-order linear models for EHA systems.",
+        "The logical relationship involves using prior knowledge of the system's order (grey box) to guide the data-driven identification process, improving accuracy.",
+        "Key assumptions include the EHA system being adequately represented by a third-order linear model and the proportional valve dynamics being negligible compared to the actuator's response.",
+        "The paper contributes a practical methodology for system identification in hydraulic systems, validated through experimental results."
+      ],
+      "Methodology": [
+        "The core methods include grey box non-recursive least squares estimation, input signal design (sum of sinusoidal signals), and model validation using R-squared and RMSE metrics.",
+        "The novelty lies in the combination of grey box modeling with non-recursive least squares, leveraging prior knowledge to improve accuracy.",
+        "Data is collected from a real EHA system with specifications detailed in the paper, including hydraulic cylinder dimensions, pressure settings, and sensor details.",
+        "Experimental design is rigorous, with a 1 ms sampling interval and careful consideration of signal preprocessing to mitigate noise and outliers.",
+        "The research follows a control systems paradigm, focusing on practical applicability for industrial systems."
+      ],
+      "Results": [
+        "Key results include a third-order transfer function model with an R-squared accuracy of 89.1%, validated through both graphical and statistical methods.",
+        "The results are significant as they demonstrate the model's ability to accurately represent the EHA system's dynamics, with reliable performance across different input signals."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the limitations of existing methods, introduces the proposed grey box approach, and validates it through experimental results.",
+        "Key steps include input signal selection, model estimation, and validation. The authors address potential rebuttals by comparing their method's accuracy to traditional approaches.",
+        "Strengths include clear experimental validation; weaknesses include the assumption of linearity in the EHA system, which may not hold under all conditions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: High accuracy (89.1% R-squared), practical experimental validation, and clear methodology.",
+        "Limitations: Assumes linearity and third-order dynamics, which may not capture all nonlinearities in real-world EHA systems.",
+        "The theoretical paradigm (linear control systems) constrains the conclusions to systems where linear approximations are valid."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on system identification for hydraulic systems, citing prior work extensively.",
+        "Terminology is technical but accessible to control systems researchers. The tone is objective, with a focus on empirical validation.",
+        "Citations are used to establish the methodological foundation and justify choices (e.g., sampling intervals, input signals)."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: The grey box non-recursive approach achieves high accuracy in modeling the EHA system, validated experimentally.",
+        "Future research could explore nonlinear extensions or adaptive control applications based on the identified model."
+      ]
+    }
+  }
+}

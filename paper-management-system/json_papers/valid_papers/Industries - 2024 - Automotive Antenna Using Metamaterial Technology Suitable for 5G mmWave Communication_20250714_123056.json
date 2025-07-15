@@ -1,0 +1,78 @@
+{
+  "file_name": "Industries - 2024 - Automotive Antenna Using Metamaterial Technology Suitable for 5G mmWave Communication.pdf",
+  "generated_at": "2025-07-14 12:30:56",
+  "structured_info": {
+    "title_cn": "适用于5G毫米波通信的基于超材料技术的汽车天线",
+    "title_en": "Automotive Antenna Using Metamaterial Technology Suitable for 5G mmWave Communication",
+    "category": "Wireless Communications",
+    "topics": [
+      "5G",
+      "Automotive Antennas",
+      "Metamaterials"
+    ],
+    "keywords": [
+      "5G",
+      "automotive antenna",
+      "mmWave",
+      "metamaterial"
+    ],
+    "abstract": "This paper reports on the development of an antenna suitable for 5G millimeter wave (mmWave) communication, incorporating metamaterial technologies such as Electromagnetic Band Gap (EBG) and Artificial Magnetic Conductor (AMC). The goal is to achieve automated driving by utilizing 5G, which offers high-speed, large-capacity, and low-latency features. To enable efficient data communication, particularly for sensing information, the use of mmWave band with a bandwidth of several hundred MHz is required. However, the use of an array antenna consisting of multiple patch antenna elements on the roof of a vehicle poses challenges in terms of radiation characteristics. This study aims to address these challenges through the development of an antenna suitable for 5G mmWave communication.",
+    "methodology": "The study employs metamaterial technologies, specifically Electromagnetic Band Gap (EBG) and Artificial Magnetic Conductor (AMC), to address challenges in radiation characteristics of array antennas on vehicle roofs. Simulation and prototype evaluation are used to validate the designs.",
+    "conclusion": "The developed antenna, incorporating EBG and AMC, successfully mitigates irregular directivity in the horizontal plane caused by surface wave modes and prevents nulls in vertical plane directivity due to roof reflections. This technology supports the advancement of automated driving by enabling efficient 5G mmWave communication.",
+    "authors": [
+      "Yutaro MIKI",
+      "Suguru YAMAGISHI",
+      "Ichiro KUWAYAMA",
+      "Kunio SAKAKIBARA"
+    ],
+    "publication_year": "2024",
+    "venue": "SUMITOMO ELECTRIC TECHNICAL REVIEW",
+    "doi": "Not available",
+    "bibtex_citation": "Miki_Automotive_2024",
+    "analysis": {
+      "Overview": "The paper presents the development of an automotive antenna for 5G mmWave communication, addressing challenges in radiation characteristics through metamaterial technologies.",
+      "Background_and_Motivation": [
+        "The research addresses the need for high-speed, large-capacity, and low-latency communication in automated driving, utilizing the 5G mmWave band.",
+        "Challenges include irregular directivity and nulls in radiation patterns when using array antennas on vehicle roofs.",
+        "The authors highlight the necessity of solving these issues to enable reliable communication for automated driving.",
+        "The study connects specific antenna challenges to broader 5G communication needs in automotive applications.",
+        "The paper contributes to wireless communications and automotive technology fields."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: Electromagnetic Band Gap (EBG), Artificial Magnetic Conductor (AMC), and surface wave modes.",
+        "EBG and AMC are used to control wave propagation and reflection, improving antenna performance.",
+        "Assumptions include the feasibility of integrating metamaterials into automotive antenna designs.",
+        "The paper contributes practical solutions for 5G mmWave antenna design in automotive applications."
+      ],
+      "Methodology": [
+        "The study uses simulation and prototype evaluation to test EBG and AMC integration in patch array antennas.",
+        "Novelty lies in applying metamaterials to automotive antennas; methods are validated through rigorous testing.",
+        "Data sources include simulation models and prototype measurements, ensuring representativeness.",
+        "Experimental design is rigorous, with clear evaluation metrics for directivity and gain.",
+        "The research follows applied engineering principles, focusing on practical solutions."
+      ],
+      "Results": [
+        "Key results: EBG mitigates irregular directivity; AMC prevents nulls in vertical plane directivity.",
+        "Results are significant for automotive 5G communication, showing reliability through simulation and prototype validation."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure: identify challenges, propose solutions (EBG/AMC), validate through simulation/prototype.",
+        "Logical steps: problem description, solution design, simulation, prototype testing, results analysis.",
+        "Strengths: clear problem-solution alignment; weaknesses: limited discussion on manufacturing challenges."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: innovative use of metamaterials, validated solutions for automotive antennas.",
+        "Limitations: potential constraints in mass production and cost-effectiveness.",
+        "Theoretical paradigm focuses on practical engineering, possibly limiting broader theoretical insights."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper contributes to discourse on 5G automotive antennas, using technical terminology and authoritative citations.",
+        "Rhetoric emphasizes practical innovation and solution-oriented research."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: EBG and AMC effectively solve key antenna challenges for 5G mmWave communication.",
+        "Future research: explore cost-effective manufacturing and broader applicability in automotive designs."
+      ]
+    }
+  }
+}

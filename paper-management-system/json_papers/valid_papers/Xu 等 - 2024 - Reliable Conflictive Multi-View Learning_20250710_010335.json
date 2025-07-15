@@ -1,0 +1,86 @@
+{
+  "file_name": "Xu 等 - 2024 - Reliable Conflictive Multi-View Learning.pdf",
+  "generated_at": "2025-07-10 01:03:35",
+  "structured_info": {
+    "title_cn": "可靠冲突多视图学习",
+    "title_en": "Reliable Conflictive Multi-View Learning",
+    "category": "Machine Learning",
+    "topics": [
+      "Multi-View Learning",
+      "Uncertainty Estimation",
+      "Evidential Deep Learning"
+    ],
+    "keywords": [
+      "Conflictive Multi-View Data",
+      "Decision Reliability",
+      "Evidential Deep Learning",
+      "Opinion Aggregation",
+      "Uncertainty Modeling"
+    ],
+    "abstract": "Multi-view learning aims to combine multiple features to achieve more comprehensive descriptions of data. Most previous works assume multiple views are strictly aligned, but real-world data may contain low-quality conflictive instances. We propose a Reliable Conflictive Multi-View Learning (RCML) problem requiring models to provide decisions and reliabilities for conflictive data. Our Evidential Conflictive Multi-View Learning (ECML) method learns view-specific evidence, constructs opinions with belief masses and reliabilities, and uses a conflictive opinion aggregation strategy proven to model multi-view reliability relations. Experiments on 6 datasets verify ECML's effectiveness in accuracy, reliability, and robustness.",
+    "methodology": "ECML uses view-specific evidential DNNs to collect evidence (support per category), models class probabilities via Dirichlet distributions, constructs opinions (belief mass + reliability), and employs conflictive opinion aggregation via average pooling evidence fusion. A consistency loss minimizes inter-view conflicts during training.",
+    "conclusion": "ECML effectively addresses RCML by providing reliable decisions for conflictive instances. Theoretical proofs show the aggregation strategy correctly models reliability relations, while experiments demonstrate superior accuracy and uncertainty awareness compared to baselines.",
+    "authors": [
+      "Cai Xu",
+      "Jiajun Si",
+      "Ziyu Guan",
+      "Wei Zhao",
+      "Yue Wu",
+      "Xiyue Gao"
+    ],
+    "publication_year": "2024",
+    "venue": "AAAI Conference on Artificial Intelligence (AAAI-24)",
+    "doi": null,
+    "bibtex_citation": "Xu_Reliable_2024",
+    "analysis": {
+      "Overview": "Proposes ECML for reliable decision-making with uncertainty estimates in multi-view learning when views contain conflicting information.",
+      "Background_and_Motivation": [
+        "Real-world multi-view data (e.g., sensors, user reviews) often contain misaligned/conflicting views, causing standard multi-view methods to fail.",
+        "Existing solutions eliminate conflictive instances rather than deciding on them, which is insufficient for applications requiring decisions on all data.",
+        "Authors argue that providing decisions with reliability scores is critical for trustworthy AI systems handling imperfect data.",
+        "Conflictive instances reflect broader challenges of data noise and misalignment in real applications like recommender systems.",
+        "Contributes to machine learning, multi-view fusion, and uncertainty-aware deep learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Reliable Conflictive Multi-View Learning (RCML): Problem requiring decisions + reliability scores for conflictive instances.",
+          "Evidential Multi-View Fusion: Aggregates opinions (belief + uncertainty) from views, increasing uncertainty during conflicts.",
+          "Conflictive Degree Metric: Quantifies disagreement between views using projected distance and conjunctive certainty."
+        ],
+        "Evidence → Dirichlet distributions → Opinions → Aggregation. Conflictive degree minimizes during training to align views.",
+        "Assumes conflictive instances are common; reliability should increase for consensus and decrease for conflicts.",
+        "Novel problem definition (RCML), theoretical framework for opinion aggregation, and method advancing uncertainty-aware multi-view learning."
+      ],
+      "Methodology": [
+        "View-specific evidential DNNs collect evidence; Dirichlet distributions model probabilities; opinions fuse via evidence averaging.",
+        "Novelty: Conflictive aggregation increases uncertainty during disagreements. Applicable to classification with noisy/misaligned views.",
+        "Six datasets (HandWritten, CUB, etc.); conflictive test sets generated via Gaussian noise or label misalignment. Standard datasets ensure representativeness.",
+        "Compared against 5 baselines; evaluated accuracy/reliability on normal/conflictive sets; uncertainty visualized under varying noise.",
+        "Follows evidential deep learning (subjective logic); uses Dirichlet distributions to model second-order uncertainty."
+      ],
+      "Results": [
+        "ECML outperforms baselines on all 6 datasets (e.g., +2.64% accuracy on HMDB). Uncertainty increases with noise intensity, and conflictive degree effectively captures view disagreements.",
+        "Results are statistically significant (10 runs), reliable (theoretically proven aggregation), and stable (consistent gains across datasets and noise levels)."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Motivate RCML problem; 2) Propose ECML with theory; 3) Validate empirically.",
+        "Steps: Prior work eliminates conflicts → RCML requires decisions → ECML provides reliability → Propositions prove correctness → Experiments confirm superiority.",
+        "Strengths: Theoretical proofs and ablation studies. Weaknesses: Limited discussion on computational overhead. Rebuttals addressed via proposition proofs."
+      ],
+      "Strengths_and_Limitations": [
+        "Novel problem formulation; theoretically sound aggregation; SOTA results; code released.",
+        "Assumes view evidence is accurately modeled by Dirichlet distributions; simple averaging may not capture complex view dependencies.",
+        "Evidential framework constrains uncertainty modeling to Dirichlet parameterizations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridging multi-view learning and uncertainty estimation; critiques prior fusion methods for reducing uncertainty indiscriminately.",
+        "Technical terminology (e.g., 'aleatoric uncertainty', 'Dempster’s rule'); formal tone; uses propositions/theorems for authority.",
+        "Cites seminal works (e.g., EDL, TMC) to contextualize innovations; contrasts methods to highlight ECML's conflict-aware uncertainty."
+      ],
+      "Conclusions_and_Implications": [
+        "ECML reliably handles conflictive multi-view data via evidence-based opinions and conflict-aware aggregation, proven theoretically and empirically.",
+        "Extend to regression/other tasks; explore complex view interactions; integrate domain-specific priors in evidence modeling."
+      ]
+    }
+  }
+}

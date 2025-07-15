@@ -1,0 +1,84 @@
+{
+  "file_name": "Ray 等 - 2021 - Various dimension reduction techniques for high dimensional data analysis a review.pdf",
+  "generated_at": "2025-07-11 05:10:07",
+  "structured_info": {
+    "title_cn": "高维数据分析的各种降维技术：综述",
+    "title_en": "Various dimension reduction techniques for high dimensional data analysis: a review",
+    "category": "Machine Learning",
+    "topics": [
+      "Dimension Reduction",
+      "Feature Extraction",
+      "Feature Selection"
+    ],
+    "keywords": [
+      "Canonical correlation analysis",
+      "Feature extraction",
+      "Feature selection",
+      "Local Fisher's discriminate analysis",
+      "Locally linear embedding",
+      "Principle component analysis"
+    ],
+    "abstract": "In the era of healthcare, and its related research fields, the dimensionality problem of high dimensional data is a massive challenge as it contains a huge number of variables forming complex data matrices. The demand for dimension reduction of complex data is growing immensely to improvise data prediction, analysis and visualization. In general, dimension reduction techniques are defined as a compression of dataset from higher dimensional matrix to lower dimensional matrix. Several computational techniques have been implemented for data dimension reduction, which is further segregated into two categories such as feature extraction and feature selection. In this review, a detailed investigation of various feature extraction and feature selection methods has been carried out with a systematic comparison of several dimension reduction techniques for the analysis of high dimensional data and to overcome the problem of data loss. Then, some case studies are also cited to verify the better approach for data dimension reduction by considering few advances described in the technical literature. This review paper may guide researchers to choose the most effective method for satisfactory analysis of high dimensional data.",
+    "methodology": "Comprehensive review and systematic comparison of feature extraction (PCA, LFDA, CCA, NMF, manifold learning) and feature selection (HGAPSO, ReliefF) methods, validated through case studies.",
+    "conclusion": "The review guides researchers in selecting optimal dimension reduction techniques to mitigate data loss and improve analysis efficiency for high-dimensional data, emphasizing context-dependent method choices.",
+    "authors": [
+      "Papia Ray",
+      "S. Surender Reddy",
+      "Tuhina Banerjee"
+    ],
+    "publication_year": "2021",
+    "venue": "Artificial Intelligence Review",
+    "doi": "10.1007/s10462-020-09928-0",
+    "bibtex_citation": "Ray_Various_2021",
+    "analysis": {
+      "Overview": "A review paper surveying dimension reduction techniques for high-dimensional data analysis, focusing on feature extraction and feature selection methods to address data loss and computational challenges.",
+      "Background_and_Motivation": [
+        "High-dimensional data (HDD) in healthcare and data science faces the 'Curse of Dimensionality', leading to data sparsity, storage inefficiencies, and classification difficulties.",
+        "To systematize knowledge on dimension reduction techniques, enabling researchers to select optimal methods for accurate data analysis and avoiding information loss.",
+        "Authors highlight HDD's vulnerability to redundancy and sparsity, which wastes memory and compromises analysis, establishing urgency through real-world impacts in healthcare informatics.",
+        "Positions dimension reduction as essential for managing big data subsets, linking data loss to broader challenges in data security, transparency, and computational feasibility.",
+        "Contributes to machine learning, data mining, and interdisciplinary healthcare data analysis."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Feature extraction: Transformation of raw data into lower-dimensional features (e.g., PCA, LFDA).",
+          "Feature selection: Identification of optimal feature subsets without transformation (e.g., ReliefF, HGAPSO).",
+          "Curse of Dimensionality: Challenges from data sparsity and redundancy in high-dimensional spaces."
+        ],
+        "Feature extraction and selection are complementary strategies under dimension reduction; both aim to reduce data complexity while preserving essential attributes for analysis.",
+        "Assumes data can be compressed without significant information loss and that local/global structures are preservable via linear/non-linear methods.",
+        "Provides a taxonomic synthesis and comparative evaluation, advancing pedagogical clarity and methodological selection for practitioners."
+      ],
+      "Methodology": [
+        "Systematic review of feature extraction (PCA, LFDA, CCA, NMF, manifold learning) and feature selection (filter, wrapper, embedded methods) algorithms, with case-study validation.",
+        "Novelty lies in holistic comparison across techniques; applicability is demonstrated for healthcare and big data; rationality stems from addressing data-specific constraints like sparsity.",
+        "Uses conceptual examples (e.g., Swiss Roll dataset) and theoretical data matrices; representativeness is limited to cited literature, lacking empirical datasets.",
+        "Evaluation metrics include algorithmic efficiency, classification accuracy, and preservation of data attributes; rigor relies on conceptual validation via flowcharts and mathematical formulations.",
+        "Rooted in machine learning paradigms; affects perspective by prioritizing computational efficiency and structural preservation over theoretical novelty."
+      ],
+      "Results": [
+        "Identifies PCA for linear data, manifold learning for nonlinear contexts, and HGAPSO for efficient feature selection as effective; case studies validate technique-dependent performance.",
+        "Results are significant for method selection but reliability is constrained by review nature; stability depends on data characteristics and implementation contexts."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: problem introduction → technique categorization (extraction/selection) → detailed method descriptions → comparative analysis → case studies → conclusions.",
+        "Key steps: Motivate dimension reduction necessity → classify techniques → explain algorithms → compare strengths → validate via cases → recommend methods.",
+        "Strengths: Comprehensive coverage and logical flow; weaknesses include subjective comparisons and lack of quantitative benchmarks. Potential rebuttals (e.g., method applicability) are addressed via context-dependent recommendations."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive taxonomy of techniques, clear algorithmic explanations, and practical guidance for researchers.",
+        "Limited empirical validation; comparisons lack standardized metrics; manifold methods may overfit with insufficient data.",
+        "Focus on existing methods constrains conclusions to synthesizing known approaches rather than proposing novel solutions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Serves as an integrative resource, bridging gaps for interdisciplinary researchers in biomedicine and data science.",
+        "Technical terminology (e.g., 'Curse of Dimensionality', 'geodesic distance'), didactic tone, and rhetorical emphasis on real-world urgency (e.g., healthcare data loss).",
+        "Builds authority through extensive citations (e.g., 30+ references), motivated by legitimizing review scope and contextualizing method evolution."
+      ],
+      "Conclusions_and_Implications": [
+        "Dimension reduction is critical for HDD analysis; optimal method selection depends on data linearity, structure, and problem context, with feature extraction/selection being complementary.",
+        "Future work should develop hybrid techniques, address nonlinear data challenges, and establish standardized evaluation benchmarks for real-world applications."
+      ]
+    }
+  }
+}

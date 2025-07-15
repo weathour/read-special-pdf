@@ -1,0 +1,78 @@
+{
+  "file_name": "Triwinarko - Cross-Layer design for vehicular ad-hoc networks (VANETs).pdf",
+  "generated_at": "2025-07-14 03:22:45",
+  "structured_info": {
+    "title_cn": "车用自组织网络（VANETs）的跨层设计",
+    "title_en": "Cross-Layer design for vehicular ad-hoc networks (VANETs)",
+    "category": "Wireless Communications",
+    "topics": [
+      "Vehicular Networks",
+      "Cross-Layer Design",
+      "Next-Generation V2X"
+    ],
+    "keywords": [
+      "ITS",
+      "V2X",
+      "NGV",
+      "IEEE 802.11bd",
+      "PHY MAC NET cross-layer design"
+    ],
+    "abstract": "Vehicular communication, or vehicular ad-hoc networks (VANETs), is a wireless vehicular networking technology that can support the development of Intelligent Transportation Systems (ITS). Nowadays, ITS is not only discussing about connected cars on the road but also a fully automated smart vehicle as well. Many emerging vehicle-to-everything (V2X) applications such as collision warning, traffic management, platooning, remote vehicle control, cooperative driving, and autonomous driving are already in the implementation or development phase. The new task group IEEE 802.11bd (TGbd) was recently formed to explore the future roadmap for V2X and is working toward a new standard called next-generation V2X (NGV). NGV is expected to target larger future applications that require higher throughput, operate in a higher mobility environment, and have extended communication range. Cross-Layer design is an emerging solution that supports new NGV applications. Thus, in this thesis, we propose a new cross-layer PHY MAC NET architecture to improve the performance of NGV applications. We begin this research by identifying enhancements to the PHY and MAC layers of other IEEE 802.11 Wi-Fi standards that could be adopted for the 802.11bd standard. Next, we propose our first contribution using a multi-layered design at the PHY MAC NET layers to improve the performance of NGV applications in a higher mobility environment. The simulation results show that our proposed cross-layer solution could achieve twice the throughput improvement at MAC layer level and also could work in environment with relative speed between vehicles of up to 500 km/h, as requested by the NGV standard. However, the throughput performance decreased in dense VANETs due to the blocking problem in the MAC layer. We propose our second contribution to solve this problem by using a cross-layer design based on the selection of transmitting antennas and the adaptation of the transmitted power. The simulation results show that the proposed cross-layer design allows more vehicles to communicate simultaneously and significantly improves the average network throughput, especially for high density VANETs.",
+    "methodology": "Cross-layer design combining PHY, MAC, and NET layers; simulation using MATLAB/WLAN Toolbox; theoretical PER and throughput calculations; MIMO-STBC techniques; transmit antenna selection (TAS) and transmit power adaptation (TPA) algorithms.",
+    "conclusion": "The proposed PHY MAC NET cross-layer architecture doubles MAC-layer throughput in high-mobility environments (up to 500 km/h) and resolves blocking issues in dense VANETs through antenna selection and power adaptation, significantly improving network throughput.",
+    "authors": [
+      "Andy Triwinarko"
+    ],
+    "publication_year": "2021",
+    "venue": "Université Polytechnique Hauts-de-France; Institut national des sciences appliquées Hauts-de-France",
+    "doi": "tel-03578166",
+    "bibtex_citation": "Triwinarko_Cross-Layer_2021",
+    "analysis": {
+      "Overview": "Proposes a cross-layer architecture for next-generation vehicular networks (NGV) to enhance throughput and reliability in high-mobility and dense environments.",
+      "Background_and_Motivation": [
+        "Emerging V2X applications require high throughput, extended range, and operation in high-mobility scenarios exceeding current standards' capabilities.",
+        "Addresses throughput degradation in dense VANETs due to MAC-layer blocking and performance limitations under high relative vehicle speeds (≤500 km/h).",
+        "Urgency is established through NGV standardization efforts (IEEE 802.11bd) and the critical safety implications of unreliable vehicular communication.",
+        "Specific MAC-layer blocking and PHY-layer mobility challenges directly impact broader ITS goals like autonomous driving and collision avoidance.",
+        "Wireless communications, intelligent transportation systems, and network protocol design."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Cross-layer design: Integration of physical (PHY), medium access control (MAC), and network (NET) layers for optimized performance.",
+        "NGV (Next-Generation V2X): Enhanced vehicular communication standard targeting higher throughput and mobility.",
+        "Blocking problem: MAC-layer issue in dense networks where excessive transmissions cause collisions.",
+        "Cross-layer interactions enable PHY-layer adaptations (antenna selection/power control) to resolve MAC-layer blocking.",
+        "Contributes a novel architecture and algorithms advancing VANET protocol design, directly addressing NGV requirements."
+      ],
+      "Methodology": [
+        "Simulation-based evaluation using MATLAB and WLAN Toolbox; theoretical PER/throughput modeling; enhanced TDL channel models for vehicular environments.",
+        "Novelty in combining PHY-MAC-NET optimizations; applicability validated for NGV scenarios; assumptions about channel models and interference representativeness.",
+        "Channel models include enhanced highway LOS; data represents high-mobility (500 km/h) and dense topologies; preprocessing aligns with IEEE 802.11 standards.",
+        "Rigorous scenario testing (density/mobility variations); metrics include PER, throughput, and network efficiency; comparisons against legacy standards.",
+        "Follows cross-layer design paradigm, breaking traditional OSI layering to optimize VANET-specific constraints."
+      ],
+      "Results": [
+        "Twofold MAC-layer throughput improvement at 500 km/h; 30-50% throughput gain in dense networks via TAS/TPA; reliable operation across tested channel models.",
+        "Results meet NGV requirements; reliability confirmed through varied environments; stability demonstrated in high-density simulations."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured progression: Problem identification → PHY enhancements → Cross-layer architecture → Dense-network solutions.",
+        "Key steps: 1) Baseline limitations 2) PHY-layer proposals 3) Integrated PHY-MAC-NET design 4) TAS/TPA for blocking mitigation.",
+        "Strengths: Simulation-backed claims; addressing NGV requirements. Weaknesses: Limited real-world validation. Rebuttals: Performance gains across diverse scenarios justify approach."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovations: First cross-layer architecture for NGV; effective blocking resolution; compliance with 500 km/h mobility requirements.",
+        "Assumed channel models may not capture all real-world variability; scalability of TAS/TPA in ultra-dense networks unverified.",
+        "Focus on IEEE 802.11bd constraints conclusions to specific standardization framework."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances VANET discourse by bridging PHY/MAC/NET layers for next-generation standards; critiques legacy protocol limitations.",
+        "Technical terminology (e.g., PER, MCS, TDL); authoritative tone; strategic citations of IEEE standards and prior cross-layer research.",
+        "Builds authority through alignment with IEEE 802.11bd working group; citation motivations emphasize standardization relevance."
+      ],
+      "Conclusions_and_Implications": [
+        "Cross-layer PHY-MAC-NET design doubles throughput in high-mobility contexts; TAS/TPA resolves dense-network blocking.",
+        "Extend to ultra-dense/urban scenarios; hardware implementation; integration with 5G-V2X; security considerations for cross-layer systems."
+      ]
+    }
+  }
+}

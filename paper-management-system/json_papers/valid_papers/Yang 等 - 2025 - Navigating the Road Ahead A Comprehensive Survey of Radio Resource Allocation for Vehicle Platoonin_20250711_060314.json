@@ -1,0 +1,82 @@
+{
+  "file_name": "Yang 等 - 2025 - Navigating the Road Ahead A Comprehensive Survey of Radio Resource Allocation for Vehicle Platoonin.pdf",
+  "generated_at": "2025-07-11 06:03:14",
+  "structured_info": {
+    "title_cn": "前路导航：C-V2X通信中车辆编队无线电资源分配综合调查",
+    "title_en": "Navigating the Road Ahead: A Comprehensive Survey of Radio Resource Allocation for Vehicle Platooning in C-V2X Communications",
+    "category": "Wireless Communications",
+    "topics": [
+      "Vehicle Platooning",
+      "C-V2X Communications",
+      "Radio Resource Allocation"
+    ],
+    "keywords": [
+      "ITS",
+      "C-V2X",
+      "sidelink",
+      "radio resource allocation",
+      "vehicle platooning"
+    ],
+    "abstract": "This paper provides a comprehensive examination of Radio Resource Allocation (RRA) tailored specifically to the context of vehicle platooning. It presents an overview of V2X communications, vehicle platooning, and RRA standards, followed by an in-depth review of the state-of-the-art categorized by communication technologies, RRA modes, and coverage conditions. The paper identifies key research challenges and opportunities, offering guidance for future research.",
+    "methodology": "Survey methodology involving comprehensive literature review, categorization of existing works based on communication technologies (D2D, LTE-V2X, NR-V2X), RRA modes (centralized/distributed), and coverage conditions. Analysis includes comparative evaluation of approaches and identification of research gaps.",
+    "conclusion": "Vehicle platooning requires specialized RRA strategies distinct from generic V2X due to unique requirements like centralized management via Platoon Leaders, geographical proximity of vehicles, and need for ultra-low latency. Current standards lack platoon-specific RRA mechanisms, necessitating focused research on cooperative resource allocation, interference management, and dynamic scheduling.",
+    "authors": [
+      "Chenyu Yang",
+      "Chiew Foong Kwong",
+      "David Chieng",
+      "Pushpendu Kar",
+      "Kok-Lim Alvin Yau",
+      "Yusen Chen"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "doi": "10.1109/COMST.2024.3440033",
+    "bibtex_citation": "Yang_Navigating_2024",
+    "analysis": {
+      "Overview": "Comprehensive survey examining RRA strategies for vehicle platooning in C-V2X communications, covering fundamentals, state-of-the-art techniques, research challenges, and future directions in intelligent transportation systems.",
+      "Background_and_Motivation": [
+        "V2X communications enable critical ITS applications but face spectrum limitations. Vehicle platooning requires optimized spectrum efficiency due to stringent latency/reliability needs.",
+        "Existing RRA standards don't address platoon-specific challenges like centralized PL management and geographical proximity of vehicles.",
+        "Urgency stems from C-V2X's global adoption momentum and platooning's potential to enhance road capacity and energy efficiency.",
+        "Platooning introduces unique RRA flexibility compared to generic V2X, necessitating specialized solutions within broader spectrum efficiency challenges.",
+        "Contributions span telecommunications, intelligent transportation systems, and wireless networking disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Vehicle Platooning: Cooperative convoy movement with small inter-vehicle distances managed by Platoon Leader (PL).\nRadio Resource Allocation (RRA): Optimization of time-frequency resources for spectral efficiency.\nC-V2X Sidelink: Direct PC5-interface communication enabling V2V/V2I links.",
+        "RRA enables reliable C-V2X communications, which support platoon control operations. Geographical proximity in platoons simplifies RRA but introduces specialized requirements.",
+        "Assumes C-V2X superiority over DSRC for platooning; spectrum separation between sidelink/uplink; and centralized PL management capability.",
+        "Organizes fragmented knowledge into structured taxonomy; identifies domain-specific challenges; establishes foundation for future RRA designs in platooning."
+      ],
+      "Methodology": [
+        "Systematic categorization of literature by communication technology (D2D/LTE-V2X/NR-V2X), RRA mode (centralized/distributed), and coverage (in/out/border). Comparative analysis of approaches.",
+        "Novelty in holistic platoon-focused RRA examination; applicability to real-world deployments; rationality in structure reflecting 3GPP standards evolution.",
+        "Sources: Academic papers, 3GPP standards (TR 37.985, TS 36.211), field trial reports. Represented by comprehensive coverage of seminal works up to 2024.",
+        "Rigorous categorical framework; evaluation via performance metrics (latency, reliability, spectral efficiency) from original studies.",
+        "Follows telecommunications systems paradigm, influencing focus on PHY/MAC layers and standardization-compliant solutions."
+      ],
+      "Results": [
+        "Centralized BS scheduling outperforms distributed approaches in reliability but incurs signaling overhead. RL-based autonomous selection achieves near-optimal performance with local CSI. Platoon partitioning enhances spectral efficiency by 20-35%.",
+        "Results significant for practical system design; reliability validated through simulation comparisons; stability demonstrated across mobility scenarios in field trials."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured progression: Motivation → Background → State-of-art review → Challenges/opportunities → Conclusion.",
+        "Key steps: 1) Establish platooning's RRA uniqueness 2) Classify existing solutions 3) Identify gaps 4) Propose research directions.",
+        "Strengths: Clear categorical organization; comprehensive coverage. Weaknesses addressed by explaining why generic V2X RRA fails for platooning and validating through comparative analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "First comprehensive survey on platoon-specific RRA; novel taxonomy; practical insights from field trials.",
+        "Limited quantitative comparison of approaches; rapidly evolving standards may outdate some content.",
+        "Telecommunications paradigm focus constraints cross-layer optimization with control systems."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational reference for platoon RRA research; fills critical gap in vehicular communications literature.",
+        "Specialized terminology (e.g., SB-SPS, PLF topology); authoritative tone; persuasive rhetoric emphasizing C-V2X superiority.",
+        "Builds authority through extensive 3GPP standard citations; strategic referencing demonstrates technological evolution and industry alignment."
+      ],
+      "Conclusions_and_Implications": [
+        "Specialized RRA mechanisms essential for platooning due to unique requirements. Current standards lack platoon optimization. Future requires cooperative algorithms, handover robustness, and AI integration.",
+        "Develop PL-centric RRA protocols; investigate RL for distributed coordination; standardize platoon-specific resource management; explore 6G-V2X integration."
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "file_name": "Zhao 等 - 2025 - ACCCACC Vehicle Car-Following Model Based on a Time-Varying Expected Spacing and a Stability Analys.pdf",
+  "generated_at": "2025-07-11 03:22:03",
+  "structured_info": {
+    "title_cn": "基于时变期望间距的ACC CACC车辆跟驰模型及混合交通流稳定性分析",
+    "title_en": "ACC CACC Vehicle Car-Following Model Based on a Time-Varying Expected Spacing and a Stability Analysis of Mixed Traffic Flow",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Car-Following Models",
+      "Adaptive Cruise Control",
+      "Cooperative Adaptive Cruise Control",
+      "Traffic Flow Stability",
+      "Mixed Traffic Flow"
+    ],
+    "keywords": [
+      "car-following model",
+      "adaptive cruise control",
+      "cooperative adaptive cruise control",
+      "mixed traffic flow",
+      "traffic flow stability"
+    ],
+    "abstract": "Connected automated vehicles (CAVs) are essential for future intelligent transportation systems and will coexist with human-driven vehicles on roads. To accurately characterize the behavior of CAVs, real-world data are utilized as the trajectory information of the lead vehicle, and a trajectory simulation is conducted using the adaptive cruise control (ACC) and cooperative adaptive cruise control (CACC) models proposed by the PATH laboratory. The simulated vehicle trajectories indicate problems such as collisions, reversing behaviors, and large speed fluctuations. To address these shortcomings, a time-varying desired spacing is introduced into the ACC model to produce the time-varying ACC (TV-ACC) model. Considering the differences between the CACC and ACC, a time-varying desired spacing is incorporated in conjunction with velocity and acceleration information from multiple preceding vehicles into the CACC model to propose the TV-CACC model. Numerical simulations and theoretical derivations demonstrate that compared to the original models, the improved models can overcome deficiencies such as collisions, reversing behaviors, and large speed fluctuations, exhibiting better performance. The improved models exhibit enhanced stability and ride comfort in traffic flow. Increasing the CAVs penetration rate gradually improves the stability and ride comfort in mixed traffic. The stability of mixed traffic flow deteriorates as the maximum platoon size of CAVs increases.",
+    "methodology": "Real-world trajectory data for the lead vehicle under various driving scenarios (acceleration, deceleration, congestion, signalized intersections) are used. MATLAB simulations model following vehicles using original PATH ACC and CACC models, revealing issues. Improved TV-ACC and TV-CACC models are developed by incorporating time-varying desired spacing and multi-vehicle data. Theoretical derivations of stability conditions for homogeneous and heterogeneous traffic flows are performed using discriminant values. Numerical simulations validate stability and ride comfort across different CAV penetration rates and maximum platoon sizes.",
+    "conclusion": "The TV-ACC and TV-CACC models eliminate collisions, reversing behaviors, and large speed fluctuations, providing smoother and more realistic vehicle speeds. They enhance traffic flow stability and ride comfort compared to the original models. Stability and ride comfort improve with higher CAV penetration rates but deteriorate with larger maximum platoon sizes of CAVs. The improved models outperform the original PATH models in stability and comfort.",
+    "authors": [
+      "Zhao Hongxing",
+      "Liu Shuying",
+      "Liang Ruiyan",
+      "He Ruichun"
+    ],
+    "publication_year": "2025",
+    "venue": "Journal of Shanghai Jiao Tong University (Science)",
+    "doi": "10.1007/s12204-025-2805-9",
+    "bibtex_citation": "Zhao_ACC-CACC_2025",
+    "analysis": {
+      "Overview": "This paper analyzes the limitations of existing ACC and CACC car-following models from the PATH laboratory, proposes improved models with time-varying desired spacing, and evaluates their impact on stability and ride comfort in mixed traffic flows involving human-driven vehicles, automated vehicles, and connected automated vehicles.",
+      "Background_and_Motivation": [
+        "Traffic congestion has increased due to rising vehicle numbers, necessitating advanced car-following models to describe microscopic driving behavior and interactions between vehicles.",
+        "The research aims to address deficiencies in PATH's ACC and CACC models, such as unrealistic collisions, reversing behaviors, and large speed fluctuations observed in full-speed domain simulations, by developing enhanced models for better real-world alignment.",
+        "The authors argue that previous studies are limited by incomplete speed range analyses and the use of identical models for different vehicle types, highlighting the urgency for models that account for dynamic spacing and real data to improve safety and stability.",
+        "The specific problem of model inaccuracies is linked to broader challenges in intelligent transportation systems, such as reducing traffic jams and enhancing CAV integration, establishing its significance through empirical evidence of model failures.",
+        "This paper contributes to transportation engineering, control systems, and traffic flow theory, with interdisciplinary elements in vehicle automation and communication technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Time-Varying Desired Spacing (hc(t)) - dynamically adjusts inter-vehicle distance based on speed to prevent collisions. (2) TV-ACC Model - enhances ACC by incorporating hc(t) for responsive following. (3) TV-CACC Model - extends CACC with hc(t) and multi-vehicle data (velocity, acceleration) for improved coordination.",
+        "The logical network: Time-varying spacing addresses constant headway limitations in ACC/CACC. TV-ACC focuses on single-leader adjustments, while TV-CACC integrates multi-leader data via V2V communication, creating a hierarchy where TV-CACC builds on TV-ACC for CAV-specific enhancements.",
+        "Key assumptions: Real-world data accurately represent lead vehicle behavior; CAVs can communicate with multiple preceding vehicles; driver focus parameters (e.g., β1, β2) are static; and maximum deceleration is constant across scenarios.",
+        "The paper makes an applied contribution by developing practical models that improve upon existing theories, enhancing the knowledge system in traffic flow modeling through empirical validation and stability derivations."
+      ],
+      "Methodology": [
+        "Core methods include MATLAB trajectory simulations using real-world data for lead vehicles, application of original and improved car-following models (EFVD for HDVs, TV-ACC for AVs, TV-CACC for CAVs), and theoretical stability analysis via discriminant formulas for homogeneous and heterogeneous flows.",
+        "The methodology is novel in introducing time-varying spacing for full-speed domain coverage, applicable to mixed traffic scenarios, and rational through parameter calibration from real data and iterative experimental verification.",
+        "Data sources are real trajectories collected in Lanzhou, China, under acceleration, deceleration, congestion, and signalized intersection conditions. Preprocessing involves selecting typical scenarios; representativeness is high due to diverse driving conditions but limited to one region.",
+        "Experimental design is rigorous with 100-vehicle simulations, varied CAV penetration rates (0 to 1), and multiple platoon sizes (N=2,4,6,8). Evaluation metrics include stability discriminant values and comfort index (based on ISO 2631-1), which are adequate for assessing performance but could be expanded with more metrics like energy consumption.",
+        "The research follows a control-theoretical paradigm, emphasizing feedback mechanisms in car-following, which affects the perspective by focusing on dynamic adjustments and stability constraints, aligning with traffic flow optimization schools."
+      ],
+      "Results": [
+        "Key results: Trajectory simulations show TV-ACC and TV-CACC eliminate collisions, reversals, and speed fluctuations present in original models. Stability analysis confirms TV-ACC stabilizes above 9.28 m/s and TV-CACC outperforms CACC above 13.96 m/s. Mixed traffic stability improves with CAV penetration but worsens with larger platoon sizes. Ride comfort (CI) improves by 8.14% on average in enhanced models.",
+        "Results are significant for enabling safer and smoother traffic flow, reliable through MATLAB validations and theoretical consistency, and stable across varied scenarios as demonstrated in simulations under different driving conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with identifying PATH model flaws via full-range simulations, proposes TV-ACC/TV-CACC as solutions, validates through numerical and theoretical analyses, and concludes with implications for traffic stability.",
+        "Key steps: (1) Demonstrate ACC/CACC issues using real data. (2) Develop improved models with time-varying spacing. (3) Validate enhancements via trajectory comparisons. (4) Derive stability conditions. (5) Analyze mixed traffic effects. Logical links connect model deficiencies to improvements and empirical results to theoretical insights.",
+        "Strengths include clear cause-effect reasoning from simulations to solutions. Weaknesses involve limited rebuttal to potential delays (e.g., reaction times). Authors address this by acknowledging it as a limitation for future work but do not counter it directly in the analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths and innovations: Introduction of time-varying spacing resolves key PATH model flaws; enhanced stability and comfort validated across penetration rates; first full-speed domain trajectory analysis for ACC/CACC.",
+        "Methodology boundaries: Simulations assume ideal V2V communication; data limited to Lanzhou; no consideration of driver reaction delays or external disturbances.",
+        "The control-theoretical paradigm constrains conclusions by focusing on dynamic adjustments and stability, potentially overlooking human factors or economic impacts, limiting generalizability to non-control-based approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper engages in disciplinary discourse by critiquing PATH lab models and extending prior work (e.g., Lai et al.'s time-varying spacing), positioning itself as a corrective contribution to traffic flow modeling.",
+        "Terminology is technical (e.g., 'penetration rate', 'stability discriminant'), with a formal tone and rhetorical strategies like empirical validation to build credibility. Citations (e.g., Milanés and Shladover) establish authority and contextualize innovations.",
+        "Authors build authority through extensive referencing of foundational studies (e.g., PATH laboratory) and empirical data, with motivations to legitimize their models and highlight practical applicability in real-world CAV deployment."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: TV-ACC and TV-CACC models outperform original versions by eliminating unrealistic behaviors and enhancing stability/comfort. CAV penetration increases mixed traffic stability, but larger platoons degrade it. The models provide a foundation for CAV integration.",
+        "Future research suggestions: Investigate effects of delays (reaction/communication times) on models; expand data to multiple regions; optimize CAV platooning under diverse traffic scenarios."
+      ]
+    }
+  }
+}

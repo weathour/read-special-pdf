@@ -1,0 +1,78 @@
+{
+  "file_name": "Li 等 - 2022 - Out-Of-Distribution Generalization on Graphs A Survey.pdf",
+  "generated_at": "2025-07-11 01:49:32",
+  "structured_info": {
+    "title_cn": "图上的分布外泛化：一项综述",
+    "title_en": "Out-Of-Distribution Generalization on Graphs: A Survey",
+    "category": "Machine Learning",
+    "topics": [
+      "Out-Of-Distribution Generalization",
+      "Graph Neural Networks",
+      "Survey"
+    ],
+    "keywords": [
+      "Graph Machine Learning",
+      "Graph Neural Network",
+      "Out-Of-Distribution Generalization"
+    ],
+    "abstract": "Graph machine learning has been extensively studied in both academia and industry. Although booming with a vast number of emerging methods and techniques, most of the literature is built on the in-distribution hypothesis, i.e., testing and training graph data are identically distributed. However, this in-distribution hypothesis can hardly be satisfied in many real-world graph scenarios where the model performance substantially degrades when there exist distribution shifts between testing and training graph data. To solve this critical problem, out-of-distribution (OOD) generalization on graphs, which goes beyond the in-distribution hypothesis, has made great progress and attracted ever-increasing attention from the research community. In this paper, we comprehensively survey OOD generalization on graphs and present a detailed review of recent advances in this area. First, we provide a formal problem definition of OOD generalization on graphs. Second, we categorize existing methods into three classes from conceptually different perspectives, i.e., data, model, and learning strategy, based on their positions in the graph machine learning pipeline, followed by detailed discussions for each category. We also review the theories related to OOD generalization on graphs and introduce the commonly used graph datasets for thorough evaluations. Finally, we share our insights on future research directions. This paper is the first systematic and comprehensive review of OOD generalization on graphs, to the best of our knowledge.",
+    "methodology": "The survey categorizes existing methods into three classes: data (graph augmentation techniques including structure-wise, feature-wise, and mixed-type), model (disentanglement-based and causality-based graph models), and learning strategy (graph invariant learning, adversarial training, and self-supervised learning). It reviews theoretical analyses and evaluation datasets.",
+    "conclusion": "The survey summarizes advancements in OOD generalization on graphs, categorizes methods, reviews theories and datasets, and highlights future challenges such as theoretical guarantees, GNN architecture design, environment split issues, test-time training, and broader applications.",
+    "authors": [
+      "Haoyang Li",
+      "Xin Wang",
+      "Ziwei Zhang",
+      "Wenwu Zhu"
+    ],
+    "publication_year": "2022",
+    "venue": "arXiv preprint",
+    "doi": "arXiv:2202.07987v2",
+    "bibtex_citation": "Li_Out-Of-Distribution_2022",
+    "analysis": {
+      "Overview": "This survey comprehensively reviews out-of-distribution generalization on graphs, covering problem definitions, categorization of methods (data, model, learning strategy), theoretical analyses, evaluation datasets, and future research directions.",
+      "Background_and_Motivation": [
+        "Graph data is ubiquitous in real-world applications like social networks and molecular structures, but most graph machine learning methods rely on the in-distribution hypothesis, which fails under distribution shifts.",
+        "The research aims to address performance degradation caused by distribution shifts in testing and training graph data, such as shifts in graph sizes, node features, or structural properties.",
+        "Authors argue that distribution shifts are inevitable in real-world scenarios (e.g., due to uncontrollable data generation mechanisms), making OOD generalization crucial for high-stake applications like drug discovery and financial analysis.",
+        "The specific problem of OOD generalization on graphs is linked to the broader challenge of reliable machine learning under distribution shifts, emphasizing its significance for deploying models in dynamic environments.",
+        "The paper contributes to machine learning, graph representation learning, and interdisciplinary fields involving graph-structured data such as chemistry, biology, and social sciences."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include: (1) OOD generalization - learning models that generalize under unknown distribution shifts; (2) Distribution shifts - disparities between training and testing data distributions; (3) Graph rationales/invariant subgraphs - predictive subgraphs stable across distributions.",
+        "Logical relationships: Distribution shifts necessitate OOD generalization methods; graph rationales enable invariant predictions; disentanglement and causality frameworks help isolate stable features from spurious correlations.",
+        "Key assumptions include the invariance principle (stable relationships between features and labels across environments), existence of causal subgraphs, and non-Euclidean nature of graph data complicating direct adoption of Euclidean-based OOD methods.",
+        "The paper makes a systematization contribution by categorizing existing literature, identifying gaps, and unifying knowledge, advancing the field's understanding without proposing new algorithms."
+      ],
+      "Methodology": [
+        "Core methods involve categorizing approaches into data (e.g., graph augmentation), model (e.g., disentangled or causal GNNs), and learning strategies (e.g., invariant learning). Technical approaches include adversarial training, contrastive learning, and causal inference.",
+        "The methodology's novelty lies in its comprehensive taxonomy; applicability is broad across node-, link-, and graph-level tasks; rationality is supported by addressing graph-specific challenges like non-Euclidean data and complex shift types.",
+        "Data sources are existing literature and graph datasets (e.g., OGB, DrugOOD); preprocessing includes categorizing methods and evaluating datasets; representativeness is ensured by covering diverse shift types and real-world applications.",
+        "Experimental design is rigorous through dataset splits simulating distribution shifts; evaluation metrics include accuracy, AUC, and robustness checks, but adequacy depends on dataset-specific benchmarks.",
+        "The research follows causal inference and invariant learning paradigms, influencing perspectives by emphasizing stable feature learning and reducing reliance on spurious correlations."
+      ],
+      "Results": [
+        "Key results include: data augmentation improves diversity; disentanglement-based models capture latent factors; causality-based methods enhance stability; invariant learning and self-supervision boost generalization across shifts.",
+        "Results are significant for advancing OOD capabilities; reliability is supported by theoretical bounds (e.g., generalization guarantees); stability varies across methods, with causality-based approaches showing consistent performance."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with problem definition, categorizes methods, reviews each category, discusses theories/datasets, and concludes with future directions.",
+        "Key steps: Define graph OOD generalization; categorize methods into data/model/strategy; review each with examples; analyze theories; evaluate datasets; identify limitations and opportunities.",
+        "Strengths include logical flow and comprehensive coverage; weaknesses involve potential oversights in less-studied shift types. Authors address rebuttals by discussing challenges like environment split needs and theoretical gaps."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First systematic review, comprehensive taxonomy, coverage of theories/datasets, identification of future research directions.",
+        "Limitations: Theoretical guarantees are underdeveloped; methods often rely on environment splits; applicability is constrained by assumptions like invariance; scalability to large graphs is not thoroughly addressed.",
+        "Theoretical paradigms (e.g., causal inference) constrain conclusions by assuming identifiable causal mechanisms, limiting generalizability to non-causal shifts."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself as the first survey on graph OOD generalization, filling a gap and catalyzing further research.",
+        "Terminology includes 'distribution shifts,' 'invariant rationales,' 'spurious correlations'; tone is authoritative; rhetorical strategies include emphasizing urgency via real-world applications.",
+        "Authors build authority through extensive citations (e.g., 148 references) and systematic analysis; motivations include establishing foundational knowledge and promoting interdisciplinary applications."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: OOD generalization on graphs is vital for real-world deployment; methods are categorized into data, model, and learning strategies; future work needs theoretical guarantees and broader applications.",
+        "Future research suggestions: Develop theoretical guarantees for OOD optimality; design GNN architectures for generalization; address environment split challenges; explore test-time training; apply methods to domains like healthcare and finance."
+      ]
+    }
+  }
+}

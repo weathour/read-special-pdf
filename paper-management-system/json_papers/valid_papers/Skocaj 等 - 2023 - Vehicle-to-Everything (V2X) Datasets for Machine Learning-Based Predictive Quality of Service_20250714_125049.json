@@ -1,0 +1,89 @@
+{
+  "file_name": "Skocaj 等 - 2023 - Vehicle-to-Everything (V2X) Datasets for Machine Learning-Based Predictive Quality of Service.pdf",
+  "generated_at": "2025-07-14 12:50:49",
+  "structured_info": {
+    "title_cn": "机器学习在无线通信和网络中的数据集：用于基于机器学习的预测服务质量的车联网（V2X）数据集",
+    "title_en": "DATA SETS FOR MACHINE LEARNING IN WIRELESS COMMUNICATIONS AND NETWORKS Vehicle-to-Everything (V2X) Datasets for Machine Learning-Based Predictive Quality of Service",
+    "category": "Wireless Communications",
+    "topics": [
+      "Machine Learning",
+      "Predictive Quality of Service",
+      "Vehicle-to-Everything (V2X)"
+    ],
+    "keywords": [
+      "V2X",
+      "Machine Learning",
+      "Predictive Quality of Service",
+      "V2V",
+      "V2I"
+    ],
+    "abstract": "We present two datasets for Machine Learning (ML)-based Predictive Quality of Service (PQoS) comprising Vehicle-to-Infrastructure (V2I) and Vehicle-to-Vehicle (V2V) radio channel measurements. As V2V and V2I are both indispensable elements for providing connectivity in Intelligent Transport Systems (ITS), we argue that a combination of the two datasets enables the study of Vehicle-to-Everything (V2X) connectivity in its entire complexity. We describe in detail our methodologies for performing V2V and V2I measurement campaigns, and we provide illustrative examples on the use of the collected data. Specifically, we showcase the application of approximate Bayesian Methods using the two presented datasets to portray illustrative use cases of uncertainty-aware Quality of Service and Channel State Information forecasting. Finally, we discuss novel exploratory research direction building upon our work. The V2I and V2V datasets are available on IEEE Dataport, and the code utilized in our numerical experiments is publicly accessible via CodeOcean.",
+    "methodology": "The paper describes methodologies for performing V2V and V2I measurement campaigns, including detailed testbed designs and measurement setups. It also employs approximate Bayesian Methods for uncertainty-aware Quality of Service and Channel State Information forecasting.",
+    "conclusion": "The paper presents two datasets for V2I and V2V measurements, demonstrating their utility for PQoS using similar algorithmic approaches. It highlights the potential for proactive decision-making in adaptive transmission systems and discusses future research directions, including extending the framework to a swarm of vehicles collaboratively collecting data.",
+    "authors": [
+      "Marco Skocaj",
+      "Nicola Di Cicco",
+      "Tommaso Zugno",
+      "Mate Boban",
+      "Jiri Blumenstein",
+      "Ales Prokes",
+      "Tomas Mikulasek",
+      "Josef Vychodil",
+      "Konstantin Mikhaylov",
+      "Massimo Tornatore",
+      "Vittorio Degli-Esposti"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Communications Magazine",
+    "doi": "10.1109/MCOM.004.2200723",
+    "bibtex_citation": "Skocaj_DATASETS_2023",
+    "analysis": {
+      "Overview": "The paper presents two datasets for Machine Learning-based Predictive Quality of Service (PQoS) in Vehicle-to-Everything (V2X) communications, focusing on Vehicle-to-Infrastructure (V2I) and Vehicle-to-Vehicle (V2V) radio channel measurements. It discusses methodologies for data collection and showcases applications of the datasets for uncertainty-aware QoS forecasting.",
+      "Background_and_Motivation": [
+        "The research addresses the need for autonomous capabilities and proactive decision-making in network management for next-generation wireless systems like B5G and 6G.",
+        "The motivation stems from the lack of high-quality publicly-available datasets for PQoS in V2X applications, which hinders progress in this domain.",
+        "The authors argue that integrating autonomous capabilities in network management is crucial for services like autonomous driving, which require high reliability and guaranteed QoS.",
+        "The specific problem of PQoS is linked to the broader challenge of minimizing human intervention in network management, emphasizing its significance for future wireless systems.",
+        "The paper contributes to wireless communications, machine learning, and intelligent transport systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Predictive Quality of Service (PQoS): A real-time mechanism for providing autonomous systems with advance notifications about upcoming QoS changes.",
+        "Vehicle-to-Everything (V2X): Encompasses both V2V and V2I communications, enabling comprehensive study of connectivity in ITS.",
+        "Approximate Bayesian Methods: Used for uncertainty-aware QoS and Channel State Information forecasting.",
+        "The logical relationship involves using PQoS to enable proactive decision-making in V2X applications, supported by ML techniques.",
+        "Key assumptions include the necessity of field trials for realistic V2X results and the importance of LoS communication in V2V scenarios.",
+        "The paper contributes empirical datasets and methodologies for ML-based PQoS, advancing the field of autonomous network management."
+      ],
+      "Methodology": [
+        "The core methods include detailed testbed designs for V2V and V2I measurement campaigns, employing time-domain sounders and KPI-oriented measurements.",
+        "The novelty lies in combining V2V and V2I datasets for comprehensive V2X study, and using approximate Bayesian Methods for uncertainty-aware forecasting.",
+        "Data sources include field measurements in Munich for V2I and Brno for V2V, with preprocessing steps like synchronization and filtering.",
+        "Experimental design is rigorous, with repeated traversals for consistency and multiple metrics monitored (e.g., throughput, SINR).",
+        "The research follows a data-driven paradigm, leveraging ML for predictive modeling in wireless communications."
+      ],
+      "Results": [
+        "Key results include successful forecasting of UL throughput and CIRs, demonstrating the utility of the datasets for PQoS.",
+        "The results are significant for proactive decision-making in adaptive transmission systems, with reliable uncertainty estimates."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the need for PQoS in V2X, presents the datasets and methodologies, and showcases their applications.",
+        "Key steps include detailing measurement campaigns, describing datasets, and illustrating ML use cases.",
+        "Strengths include comprehensive datasets and innovative ML applications; weaknesses may include limited environmental variability in measurements."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: High-quality datasets, innovative ML applications, and detailed methodologies.",
+        "Limitations: Field measurements may not cover all environmental scenarios, and the focus on LoS in V2V may restrict applicability.",
+        "The data-driven approach may constrain conclusions to the specific measurement conditions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on autonomous network management and ML in wireless communications.",
+        "Terminology includes technical terms like PQoS, V2X, and CIR, with a formal tone and emphasis on reproducibility.",
+        "Citations build authority by referencing prior work in V2X communications and ML techniques."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the utility of the datasets for PQoS and the potential for extending the framework to collaborative vehicular networks.",
+        "Future research could explore highway scenarios and swarm-based data collection for enhanced predictive capabilities."
+      ]
+    }
+  }
+}

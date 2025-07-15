@@ -1,0 +1,82 @@
+{
+  "file_name": "Dimce 等 - 2025 - Reconsidering Sparse Sensing Techniques for Channel Sounding Using Splicing.pdf",
+  "generated_at": "2025-07-14 19:25:41",
+  "structured_info": {
+    "title_cn": "重新考虑用于信道探测的稀疏感知技术：使用拼接技术",
+    "title_en": "Reconsidering Sparse Sensing Techniques for Channel Sounding using Splicing",
+    "category": "Wireless Communications",
+    "topics": [
+      "Channel Sounding",
+      "Multi-band Splicing",
+      "Compressed Sensing"
+    ],
+    "keywords": [
+      "Channel splicing",
+      "multi-band splicing",
+      "channel sounder",
+      "joint communication and sensing",
+      "OFDM",
+      "Wi-Fi"
+    ],
+    "abstract": "Multi-band splicing offers a promising solution to extend existing band-limited communication systems to support high-precision sensing applications. This technique involves performing narrow-band measurements at multiple center frequencies, which are then combined to effectively increase the bandwidth without changing the sampling rate. In this paper, we introduce a mmWave channel sounder based on multi-band splicing, leveraging the sparse nature of wireless channels through compressed sensing and sparse recovery techniques for channel reconstruction. We focus on three sparse recovery methods: the widely used grid-based orthogonal matching pursuit (OMP) algorithm as a baseline, our newly developed two-stage mmSplicer algorithm, which extends the OMP method by introducing an additional stage for improving its performance for our application, and our adaptation of sparse reconstruction by separable approximation (SpaRSA), named Net-SpaRSA, optimized for wireless applications. All three algorithms are integrated into an experimental OFDM-based IEEE 802.11ac system. Our analysis centers on evaluating the performance of these algorithms under limited number of narrow-band measurements, demonstrating that accurate CIR estimation is achievable even using only 50% of the full wideband spectrum. Additionally, we analyze and compare the computational complexity of these algorithms to assess their practical feasibility.",
+    "methodology": "The paper introduces three sparse recovery methods for channel reconstruction: OMP, mmSplicer (a two-stage extension of OMP), and Net-SpaRSA (an adaptation of SpaRSA for wireless applications). These methods are integrated into an experimental OFDM-based IEEE 802.11ac system and evaluated through simulations and lab experiments.",
+    "conclusion": "The study demonstrates that accurate CIR estimation is achievable using only 50% of the full wideband spectrum. The mmSplicer and Net-SpaRSA algorithms show similar performance, with mmSplicer offering a better trade-off between performance and complexity. Future work includes exploring grid-less approaches and extending the application to MIMO setups.",
+    "authors": [
+      "Sigrid Dimce",
+      "Anatolij Zubow",
+      "Alireza Bayesteh",
+      "Giuseppe Caire",
+      "Falko Dressler"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "doi": "10.1109/TMC.2025.3581446",
+    "bibtex_citation": "Dimce_Reconsidering_2025",
+    "analysis": {
+      "Overview": "The paper explores multi-band splicing techniques for channel sounding in wireless communications, focusing on sparse recovery algorithms to reconstruct wideband channels from narrow-band measurements.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of achieving high-resolution sensing in wireless systems with limited bandwidth.",
+        "The motivation is to extend existing communication systems to support high-precision sensing applications without altering the sampling rate.",
+        "The authors argue for the necessity of this research by highlighting the limitations of current systems in distinguishing closely spaced multipath components.",
+        "The problem is linked to broader challenges in 6G and IoT, emphasizing the need for accurate positioning and environmental sensing.",
+        "The paper contributes to wireless communications, signal processing, and IoT."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include multi-band splicing, compressed sensing, and sparse recovery algorithms.",
+        "The logical relationship involves using narrow-band measurements to reconstruct wideband channels through sparse recovery techniques.",
+        "Key assumptions include the sparsity of wireless channels and the feasibility of combining measurements from non-contiguous bands.",
+        "The paper contributes novel algorithms (mmSplicer and Net-SpaRSA) and evaluates their performance in practical scenarios."
+      ],
+      "Methodology": [
+        "The core methods include OMP, mmSplicer, and Net-SpaRSA for sparse recovery.",
+        "The novelty lies in the two-stage mmSplicer algorithm and the adaptation of SpaRSA for wireless applications.",
+        "Data sources include simulations and lab experiments with SDRs and phased array antennas.",
+        "Experimental design involves comparing algorithms under different sub-band distributions and evaluating their computational complexity.",
+        "The research follows a compressed sensing paradigm, leveraging the sparsity of wireless channels."
+      ],
+      "Results": [
+        "Key results show that accurate CIR estimation is possible with only 50% of the spectrum.",
+        "The results are significant for practical deployments, demonstrating robustness under varying spectrum loads."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with the problem statement, introduces the algorithms, and validates them through experiments.",
+        "Key steps include algorithm development, integration into a practical system, and performance evaluation.",
+        "Strengths include the practical feasibility of the methods, while weaknesses involve computational complexity for large-scale problems."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel mmSplicer algorithm and comprehensive experimental validation.",
+        "Limitations include the grid-based approach's potential inaccuracies and the need for further validation in dynamic scenarios.",
+        "The theoretical paradigm of compressed sensing constrains the conclusions to sparse channel scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on joint communication and sensing, citing relevant works in the field.",
+        "The authors use technical terminology and a formal tone, building authority through citations to prior research.",
+        "Citations are used to establish the foundation for the proposed methods and highlight gaps in existing work."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that multi-band splicing with sparse recovery algorithms can effectively reconstruct wideband channels.",
+        "Future research should explore grid-less approaches and extend the methods to MIMO systems."
+      ]
+    }
+  }
+}

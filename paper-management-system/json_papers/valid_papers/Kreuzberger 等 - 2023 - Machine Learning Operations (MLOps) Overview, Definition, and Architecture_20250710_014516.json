@@ -1,0 +1,81 @@
+{
+  "file_name": "Kreuzberger 等 - 2023 - Machine Learning Operations (MLOps) Overview, Definition, and Architecture.pdf",
+  "generated_at": "2025-07-10 01:45:16",
+  "structured_info": {
+    "title_cn": "机器学习运维（MLOps）：概述、定义与架构",
+    "title_en": "Machine Learning Operations (MLOps): Overview, Definition, and Architecture",
+    "category": "Machine Learning",
+    "topics": [
+      "MLOps",
+      "DevOps",
+      "Machine Learning Systems",
+      "Workflow Orchestration"
+    ],
+    "keywords": [
+      "CI/CD",
+      "DevOps",
+      "machine learning",
+      "MLOps",
+      "operations",
+      "workflow orchestration"
+    ],
+    "abstract": "The final goal of all industrial machine learning (ML) projects is to develop ML products and rapidly bring them into production. However, it is highly challenging to automate and operationalize ML products, and thus many ML endeavors fail to deliver on their expectations. The paradigm of Machine Learning Operations (MLOps) addresses this issue. MLOps includes several aspects, such as best practices, sets of concepts, and development culture. However, MLOps is still a vague term, and its consequences for researchers and professionals are ambiguous. To address this gap, we conduct mixed-method research, including a literature review, a tool review, and expert interviews. As a result of these investigations, we contribute to the body of knowledge by providing an aggregated overview of the necessary principles, components, and roles, as well as the associated architecture and workflows. Furthermore, we provide a comprehensive definition of MLOps and highlight open challenges in the field. Finally, this work provides guidance for ML researchers and practitioners who want to automate and operate their ML products with a designated set of technologies.",
+    "methodology": "Mixed-method research comprising: 1) Systematic literature review across scientific databases using defined search queries; 2) Review of open-source tools, frameworks, and commercial cloud ML services; 3) Semi-structured expert interviews with eight global ML professionals until theoretical saturation was reached.",
+    "conclusion": "MLOps addresses the gap between ML development and production deployment by establishing principles (CI/CD automation, reproducibility, versioning), technical components (feature stores, model registries), roles (ML engineers, data scientists), and an end-to-end architecture. This framework enables automation, operationalization, and scalability of ML systems, increasing the success rate of industrial ML projects.",
+    "authors": [
+      "Dominik Kreuzberger",
+      "Niklas Kühl",
+      "Sebastian Hirschl"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2023.3262138",
+    "bibtex_citation": "Kreuzberger_Machine_2023",
+    "analysis": {
+      "Overview": "The paper conceptualizes Machine Learning Operations (MLOps) as a paradigm bridging machine learning, DevOps, and data engineering. It provides a holistic framework including principles, technical components, roles, and architecture to operationalize ML systems in production environments.",
+      "Background_and_Motivation": [
+        "Industrial ML projects frequently fail to transition from proof-of-concept to production due to manual workflows and lack of coordination between ML components.",
+        "To establish a standardized definition of MLOps and resolve ambiguities causing miscommunication and system design errors.",
+        "By demonstrating high failure rates of ML projects and emphasizing the absence of academic focus on production-ready ML systems.",
+        "Links specific operationalization challenges to broader industry needs for scalable, automated ML deployment, highlighting economic and innovation impacts.",
+        "Contributes to Machine Learning, Software Engineering (DevOps), and Data Engineering as an interdisciplinary field."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1) MLOps: Paradigm integrating best practices, concepts, and culture for operationalizing ML; 2) Principles: CI/CD automation, workflow orchestration, reproducibility; 3) Components: Feature stores, model registries, metadata tracking systems.",
+        "Principles guide component implementation; components enable roles; roles execute workflows within the architecture to achieve automated ML lifecycle management.",
+        "Assumes automation and interdisciplinary collaboration are essential for production ML; presupposes DevOps practices are adaptable to ML contexts.",
+        "Provides a foundational conceptual framework, unifying fragmented knowledge into a standardized definition and architecture for MLOps."
+      ],
+      "Methodology": [
+        "Mixed-methods: Systematic literature review (27 peer-reviewed articles), tool analysis (e.g., Kubeflow, MLflow), and semi-structured expert interviews (n=8) analyzed via open coding.",
+        "Novel synthesis of academic/practical insights; applicable to industrial ML workflows; rational through triangulation ensuring comprehensive coverage.",
+        "Data from scientific databases (Scopus, Web of Science) and practitioner tools; preprocessing via inclusion/exclusion criteria; evaluated for representativeness via theoretical sampling and saturation.",
+        "Rigorous with defined search queries, interview protocols, and expert validation; metrics included principle/component mapping and challenge categorization.",
+        "Aligns with design science and empirical software engineering paradigms, emphasizing practical artifact creation and validation through expert input."
+      ],
+      "Results": [
+        "Identified 9 core principles (e.g., CI/CD automation, feedback loops), 9 technical components (e.g., feature stores, model registries), 7 roles (e.g., ML engineers), and an end-to-end technology-agnostic architecture.",
+        "Results are significant for standardizing MLOps; reliable via method triangulation; stable as components/principles recurred across literature, tools, and interviews."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Research question (What is MLOps?) → Methodology → Results (principles/components/roles/architecture) → Definition → Challenges → Conclusion.",
+        "1) Identify operationalization failures; 2) Propose MLOps as solution; 3) Validate via mixed-methods; 4) Synthesize framework; 5) Define MLOps; 6) Discuss limitations.",
+        "Strengths: Empirical grounding through expert input; weaknesses: Limited peer-reviewed literature. Addressed via tool reviews and non-peer-reviewed sources."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive MLOps definition; practical architecture; role delineation; identification of open challenges.",
+        "Technology-agnostic design may lack implementation specifics; interview sample size (n=8) limits generalizability.",
+        "The software engineering/DevOps perspective constrains solutions to automation-centric approaches, potentially underemphasizing data-centric challenges."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions MLOps as an essential evolution of DevOps for ML, aiming to unify academic and industrial discourse.",
+        "Uses standardized terminology (e.g., 'continuous training', 'model lineage'); authoritative tone; rhetorical emphasis on 'bridging gaps' and 'holistic understanding'.",
+        "Builds authority through 50+ citations of academic/industry sources; motivations include legitimizing MLOps as a research domain and guiding practitioners."
+      ],
+      "Conclusions_and_Implications": [
+        "MLOps is an interdisciplinary paradigm enabling ML operationalization via principles, components, roles, and architecture. It resolves ambiguities and reduces system failures.",
+        "Future work: Address organizational/skill gaps; improve auto-scaling for ML training; validate architecture in diverse domains; explore data-centric AI integration."
+      ]
+    }
+  }
+}

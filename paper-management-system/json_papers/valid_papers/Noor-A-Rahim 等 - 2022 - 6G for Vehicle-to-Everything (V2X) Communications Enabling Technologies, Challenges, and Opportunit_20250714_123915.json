@@ -1,0 +1,92 @@
+{
+  "file_name": "Noor-A-Rahim 等 - 2022 - 6G for Vehicle-to-Everything (V2X) Communications Enabling Technologies, Challenges, and Opportunit.pdf",
+  "generated_at": "2025-07-14 12:39:15",
+  "structured_info": {
+    "title_cn": "6G用于车联网（V2X）通信：使能技术、挑战与机遇",
+    "title_en": "6G for Vehicle-to-Everything (V2X) Communications: Enabling Technologies, Challenges, and Opportunities",
+    "category": "Wireless Communications",
+    "topics": [
+      "6G",
+      "V2X",
+      "Machine Learning"
+    ],
+    "keywords": [
+      "Blockchain",
+      "Brain-controlled vehicle (BCV)",
+      "Federated learning",
+      "Intelligent reflective surfaces (IRSs)",
+      "Machine learning (ML)",
+      "Nonorthogonal multiple access (NOMA)",
+      "Quantum",
+      "Radio frequency (RF)-visible light communication (VLC)",
+      "Vehicle-to-everything (V2X)",
+      "Sixth-generation (6G)-V2X",
+      "Tactile-V2X",
+      "Terahertz (THz)"
+    ],
+    "abstract": "This article provides a comprehensive overview of the scientific and technological advances that have the capability to shape future 6G vehicle-to-everything (6G-V2X) communications. By MD. NOOR-A-RAHIM, ZILONG LIU, HAEYOUNG LEE, Member IEEE, MOHAMMAD OMAR KHYAM, JIANHUA HE, Senior Member IEEE, DIRK PESCH, Senior Member IEEE, KLAUS MOESSNER, Senior Member IEEE, WALID SAAD, Fellow IEEE, AND H. VINCENT POOR, Life Fellow IEEE.",
+    "methodology": "The paper outlines a series of key enabling technologies from a range of domains, such as new materials, algorithms, and system architectures. It also provides an overview of the recent advances of machine learning (ML) in 6G vehicular networks.",
+    "conclusion": "The article concludes by summarizing the main contributions and highlighting the potential of 6G-V2X to revolutionize intelligent transportation systems (ITS) through enhanced communication, computing, and security technologies.",
+    "authors": [
+      "Md. Noor-A-Rahim",
+      "Zilong Liu",
+      "Haeyoung Lee",
+      "Mohammad Omar Khyam",
+      "Jianhua He",
+      "Dirk Pesch",
+      "Klaus Moessner",
+      "Walid Saad",
+      "H. Vincent Poor"
+    ],
+    "publication_year": "2022",
+    "venue": "Proceedings of the IEEE",
+    "doi": "10.1109/JPROC.2022.3173031",
+    "bibtex_citation": "Noor-A-Rahim_6G_2022",
+    "analysis": {
+      "Overview": "The paper provides a comprehensive overview of the scientific and technological advances that will shape future 6G-V2X communications, focusing on enabling technologies, challenges, and opportunities.",
+      "Background_and_Motivation": [
+        "The research addresses the need for enhanced V2X communication networks to support connected autonomous vehicles with improved road safety, air quality, and diverse transportation environments.",
+        "The motivation stems from the limitations of current 5G NR-based V2X networks in meeting the wide range of requirements and use cases anticipated for future autonomous vehicles.",
+        "The authors argue for the necessity of 6G-V2X by highlighting the explosive growth of communication devices and digital applications, as well as the rising demand for emerging services in autonomous vehicles.",
+        "The paper relates the specific problem of V2X communication to the broader challenge of achieving intelligent and ubiquitous V2X systems with significantly enhanced reliability, security, and data rates.",
+        "The paper contributes to the fields of wireless communications, intelligent transportation systems, and machine learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include intelligent reflective surfaces (IRSs), tactile communication, brain vehicle interfacing, blockchain-based V2X, terahertz-assisted V2X networks, and quantum computing-aided V2X.",
+        "These concepts are logically related through their roles in enhancing communication, computing, and security in 6G-V2X networks.",
+        "Key assumptions include the feasibility of integrating these technologies into 6G-V2X systems and their ability to meet stringent QoS requirements.",
+        "The paper makes a significant contribution by proposing a forward-looking and inclusive approach to 6G-V2X, emphasizing the instrumental role of machine learning."
+      ],
+      "Methodology": [
+        "The core research methods include a survey of enabling technologies, analysis of their strengths and challenges, and discussion of their potential applications in 6G-V2X.",
+        "The methodology is novel in its comprehensive and forward-looking approach, covering a wide range of technologies from new materials to algorithms and system architectures.",
+        "Data sources include recent advances in ML, IRSs, tactile communication, and other emerging technologies, evaluated for their representativeness and applicability to 6G-V2X.",
+        "The experimental design is rigorous, with a focus on evaluating the maturity and enhancing areas of these technologies.",
+        "The research follows a theoretical paradigm of integrating multiple disruptive technologies to achieve intelligent and autonomous V2X systems."
+      ],
+      "Results": [
+        "Key results include the identification of revolutionary and evolutionary technologies for 6G-V2X, their potential applications, and open challenges.",
+        "The results are significant for their potential to shape future 6G-V2X communications, with reliability and stability demonstrated through theoretical analysis and recent advancements."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors' argument is structured around the need for 6G-V2X, the enabling technologies, and their potential applications.",
+        "Key steps include outlining the limitations of current V2X technologies, introducing 6G-V2X, and discussing each enabling technology in detail.",
+        "Strengths include a comprehensive and forward-looking approach, while weaknesses may include the speculative nature of some technologies. The authors address potential rebuttals by highlighting ongoing research and practical challenges."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the comprehensive coverage of enabling technologies and their potential applications, as well as the emphasis on machine learning.",
+        "Limitations include the boundaries of current technologies, such as the feasibility of quantum computing and the integration of multiradio access technologies.",
+        "The choice of theoretical paradigm constrains the conclusions by focusing on technologies that are still in development or early stages of deployment."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper plays a key role in the disciplinary discourse by providing a vision for 6G-V2X and stimulating future research.",
+        "The authors use specific terminology related to wireless communications and ITS, with a tone that is both technical and forward-looking.",
+        "Authority is built through extensive citations of recent research and the authors' affiliations with reputable institutions."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusions highlight the potential of 6G-V2X to revolutionize ITS through enhanced communication, computing, and security technologies.",
+        "Future research should focus on addressing the open challenges and enhancing the maturity of these technologies for practical deployment."
+      ]
+    }
+  }
+}

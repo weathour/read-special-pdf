@@ -1,0 +1,85 @@
+{
+  "file_name": "Wang 等 - 2021 - Analysis of the Intra-Platoon Message Delivery Delay in a Platoon of Vehicles.pdf",
+  "generated_at": "2025-07-11 01:40:46",
+  "structured_info": {
+    "title_cn": "车队内消息传递延迟分析",
+    "title_en": "Analysis of the Intra-Platoon Message Delivery Delay in a Platoon of Vehicles",
+    "category": "Vehicular Networks",
+    "topics": [
+      "Connected Vehicles",
+      "Message Delivery Delay",
+      "Vehicular Communication"
+    ],
+    "keywords": [
+      "delay",
+      "platoon",
+      "intra-platoon",
+      "message delivery",
+      "vehicle"
+    ],
+    "abstract": "This paper studies the intra-platoon message delivery delay for connected and automated vehicles (CAVs) moving on a highway. A theoretical model analyzes the impact of system parameters like platoon size, intra-platoon spacing, and non-platoon vehicle density on delay. The model considers V2V hop-by-hop communication, channel access contention from platoon/non-platoon vehicles, and hidden node effects. Validation via simulations shows the model's accuracy, and it provides guidelines for parameter settings to maintain platoon stability.",
+    "methodology": "Derived an analytical model for mean intra-platoon message delivery delay using IEEE 802.11 CSMA/CA channel access mechanisms. The model incorporates vehicle spatial distributions (Poisson for non-platoon, equidistant for platoon), contention domains, hidden nodes, and Bianchi's saturation model for channel access probability. Validated through NS-2.35 simulations and Matlab numerical analysis.",
+    "conclusion": "The analytical model accurately quantifies delay dependencies on key parameters (spacing, platoon size, non-platoon density). Larger spacing, platoon size, non-platoon density, or contention range increase delay, while higher transmission rates reduce it. The model enables optimal parameter tuning for platoon stability.",
+    "authors": [
+      "Bingying Wang",
+      "Jun Zheng",
+      "Qilei Ren",
+      "Yuying Wu",
+      "Cheng Li"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2021.3076157",
+    "bibtex_citation": "Wang_Analysis_2021",
+    "analysis": {
+      "Overview": "The paper analyzes communication delays in vehicle platoons for autonomous driving. It develops a theoretical model to quantify message delivery delays from the leading to the last vehicle, considering highway scenarios with mixed platoon and non-platoon traffic.",
+      "Background_and_Motivation": [
+        "Autonomous driving requires reliable low-latency communication; platoons enhance traffic efficiency but depend on timely message delivery for stability.",
+        "Existing work inadequately addresses impacts of non-platoon vehicles and hidden nodes on intra-platoon delays.",
+        "Delays directly affect safety-critical maneuvers; unmodeled contention from external vehicles risks destabilization.",
+        "Intra-platoon delay is a microcosm of broader V2V challenges in heterogeneous traffic, crucial for collision avoidance.",
+        "Contributes to vehicular ad hoc networks (VANETs), wireless communications, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Intra-platoon delay: Time from message contention start at leader to reception at last vehicle.",
+          "Contention domain: Transmission range (100-200m) where nodes compete for channel access.",
+          "Hidden nodes: Vehicles outside sender's range but within receiver's range, causing collisions."
+        ],
+        "Delay depends on contention from neighbors/hidden nodes; both are functions of spacing, platoon size, and non-platoon density.",
+        "Assumes Poisson-distributed non-platoon vehicles, equidistant platoon spacing, and saturated traffic (Bianchi model).",
+        "Provides a novel analytical framework integrating non-platoon vehicles and hidden nodes—factors omitted in prior art."
+      ],
+      "Methodology": [
+        "Theoretical delay model decomposes delay into channel access (using Bianchi's Markov chain) and transmission components. Validated via NS-2.35 simulations with VanetMobiSim traces.",
+        "Model novelty lies in incorporating non-platoon contention and hidden nodes. Applicability is demonstrated for highway V2V; saturation assumption may overestimate non-congested scenarios.",
+        "Non-platoon vehicles generated via Poisson process; platoon vehicles equidistant. Data represents typical highway traffic; message sizes align with 3GPP V2X standards (50-1200 bytes).",
+        "Rigorous validation across parameter variations (spacing, density). Metrics include mean delay and neighbor/hidden node counts; captures worst-case saturation.",
+        "Rooted in stochastic network theory; Bianchi's model shapes contention perspective but limits non-saturated scenarios."
+      ],
+      "Results": [
+        "Delay increases with larger spacing, platoon size, non-platoon density, or contention range; decreases with higher transmission rates. Model closely matches simulations (e.g., ±5% error in delay vs. spacing).",
+        "Results are reliable (validated across parameters) and stable (consistent trends). Hidden nodes contribute significantly to delay at larger spacings."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Problem motivation → system model → delay derivation → validation → implications.",
+        "Key steps: 1) Define delay components, 2) Model neighbors/hidden nodes, 3) Derive channel access probabilities, 4) Integrate into end-to-end delay, 5) Validate empirically.",
+        "Strengths: Comprehensive parameter sensitivity analysis. Weakness: Saturation model may not reflect real-world burstiness; authors justify it as a worst-case bound."
+      ],
+      "Strengths_and_Limitations": [
+        "First model to integrate non-platoon vehicles and hidden nodes; validated simulations; practical parameter guidelines.",
+        "Assumes two-lane highway and hop-by-hop communication; ignores broadcast mode. Saturation model may overestimate delay.",
+        "Bianchi's model constraints limit generalizability to non-saturated traffic, though this provides conservative estimates."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as filling gaps in platoon communication literature by modeling real-world contention factors.",
+        "Uses VANET-specific terminology (e.g., 'contention domain', 'hidden nodes'); persuasive through safety urgency and mathematical rigor.",
+        "Builds authority via IEEE 802.11/3GPP citations; motivationally cites prior omissions (e.g., non-platoon impacts) to highlight novelty."
+      ],
+      "Conclusions_and_Implications": [
+        "Derived model enables parameter optimization for delay-constrained platoon stability. Highlights spacing and platoon size as critical levers.",
+        "Future work: Study broadcast-based delivery; extend to multi-lane/mixed-mode scenarios; explore adaptive contention windows."
+      ]
+    }
+  }
+}

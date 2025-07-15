@@ -1,0 +1,77 @@
+{
+  "file_name": "Vladyko 等 - 2024 - Simulation System for V2X Applications.pdf",
+  "generated_at": "2025-07-10 11:57:19",
+  "structured_info": {
+    "title_cn": "V2X应用的仿真系统",
+    "title_en": "Simulation System for V2X Applications",
+    "category": "Vehicular Networks",
+    "topics": [
+      "V2X通信",
+      "边缘计算",
+      "雾计算"
+    ],
+    "keywords": [
+      "vehicular communications",
+      "vehicle-to-everything",
+      "simulation system"
+    ],
+    "abstract": "The issue of organizing efficient interaction between V2X system elements has become increasingly critical in recent years. Utilizing vehicle-to-everything (V2X) technology enables achieving the necessary balance of safety, reducing system load, and ensuring a high degree of vehicle automation. This study aims to develop a simulation system for V2X applications in various element placement configurations and conduct a numerical analysis of several V2X system interaction schemes. The research analyzes various methods, including clustering, edge computing, and fog computing, aimed at minimizing system losses. The results demonstrate that each proposed model can be effectively implemented on mobile nodes. Results also provide insights into the average expected request processing times, thereby enhancing V2X system organization. The authors propose a comprehensive model that enables the distribution and prediction of system parameters and resources for diverse computational tasks, essential for the successful implementation and utilization of V2X technology.",
+    "methodology": "Mathematical modeling of V2X interactions, simulation system development using Godot Engine and GDScript with OpenStreetMap data integration, comparative analysis of three scenarios: OBU-RSU-MEC-Cloud model, floating mRSUs, and on-call mRSUs with Hungarian and greedy algorithms.",
+    "conclusion": "The simulation system demonstrates that direct RSU-MEC connections minimize data loss but are costly. Clustering offers cost-effective alternatives with higher losses. mRSUs improve efficiency at higher speeds, though gains are limited under uniform RSU coverage. System stabilization occurs within 100 seconds, enabling reduced simulation times.",
+    "authors": [
+      "Andrei Vladyko",
+      "Pavel Plotnikov",
+      "Gleb Tambovtsev"
+    ],
+    "publication_year": "2024",
+    "venue": "Preprints.org",
+    "doi": "10.20944/preprints202410.0662.v1",
+    "bibtex_citation": "Vladyko_Simulation_2024",
+    "analysis": {
+      "Overview": "Presents a simulation system for V2X applications evaluating RSU/mRSU deployment schemes, clustering, and fog/edge computing to optimize vehicular network performance.",
+      "Background_and_Motivation": [
+        "Rising demands for intelligent transportation systems requiring low latency, high reliability, and efficient resource allocation in dynamic vehicular networks.",
+        "Address computational limitations of vehicles and infrastructure costs while ensuring safety-critical application responsiveness.",
+        "Highlights safety risks and recovery costs from system instability, emphasizing urgency for reliable V2X implementations.",
+        "Links specific OBU-RSU interaction challenges to broader ITS automation goals through fog/edge computing solutions.",
+        "Contributes to vehicular networks, edge computing, simulation methodologies, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "V2X Architecture: OBU-RSU-mRSU-Cloud hierarchy with fog nodes; Clustering: RSU grouping for shared caching; Simulation Framework: Godot-based system with OSM integration.",
+        "V2X architecture enables fog computing → Clustering optimizes RSU resources → Simulation validates deployment schemes → mRSUs enhance dynamic coverage.",
+        "Assumes constant mRSU travel times on dedicated lanes, Zipf-distributed data requests, and no overtaking in traffic flow.",
+        "Provides novel simulation tools and deployment strategies advancing V2X system design and optimization methodologies."
+      ],
+      "Methodology": [
+        "Mathematical models for data loss/transmission; Godot Engine with GDScript for real-time simulation; OpenStreetMap data processing via Python; Scenario testing with Hungarian/greedy algorithms.",
+        "Godot/GDScript offers performance advantages over Python; OSM integration enables realistic maps; ETA-based routing balances practicality and computational efficiency.",
+        "OSM-derived road networks (nodes/edges CSV); Data preprocessing via osmnx library; Assumed 30-50km/h vehicle speeds; 106 content requests (4-8Mb size).",
+        "Three scenarios with 10 iterations each; Metrics: loss percentage, stabilization time; Comparative RSU schemes (dense vs. clustered).",
+        "Follows discrete-event simulation paradigm, influencing dynamic system modeling and network interaction perspectives."
+      ],
+      "Results": [
+        "Direct RSU-MEC connections show lowest losses (≈0%); Clustered schemes increase losses but reduce costs; mRSUs reduce losses at higher speeds (50km/h); System stabilizes after 100 seconds.",
+        "Results demonstrate speed-dependent efficacy of mRSUs; Stabilization patterns confirm model reliability; Limited loss reduction under uniform RSU coverage questions mRSU cost-benefit."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Literature review → Mathematical modeling → Simulation development → Scenario testing → Conclusion.",
+        "1) Motivate V2X optimization needs 2) Propose Godot/OSM solution 3) Validate via comparative scenarios 4) Quantify mRSU impact 5) Conclude cost-performance tradeoffs.",
+        "Strengths: Novel toolchain, public GitHub implementation. Weaknesses: Simplified mobility model; Addressed through statistical route attractiveness weighting."
+      ],
+      "Strengths_and_Limitations": [
+        "First Godot-based V2X simulator; Public code availability; Integrated OSM processing; Three-tier fog architecture validation.",
+        "2D simulation limits radio interference modeling; Assumed constant mRSU speeds ignore traffic dynamics; Zipf distribution may not capture all request patterns.",
+        "Discrete-event focus constrains real-world unpredictability; Graph-based road model limits non-urban scenario applicability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between theoretical models and practical V2X deployment challenges.",
+        "Technical terminology (OBU/RSU/mRSU); Assertive tone; Emphasis on 'comprehensive model' as key innovation.",
+        "Cites IEEE/3GPP standards to establish technical rigor; References Russian Science Foundation funding to underscore credibility."
+      ],
+      "Conclusions_and_Implications": [
+        "Godot/OSM enables flexible V2X simulation; mRSUs optimize higher-speed networks; Clustering balances cost and performance; Direct RSU-MEC remains most reliable.",
+        "Extend to 3D interference modeling; Investigate energy efficiency; Develop ML-based offloading algorithms; Explore public transport integration strategies."
+      ]
+    }
+  }
+}

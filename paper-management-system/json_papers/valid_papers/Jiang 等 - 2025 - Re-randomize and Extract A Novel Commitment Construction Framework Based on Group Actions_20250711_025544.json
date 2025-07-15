@@ -1,0 +1,86 @@
+{
+  "file_name": "Jiang 等 - 2025 - Re-randomize and Extract A Novel Commitment Construction Framework Based on Group Actions.pdf",
+  "generated_at": "2025-07-11 02:55:44",
+  "structured_info": {
+    "title_cn": "重新随机化与提取：基于群作用的新型承诺构造框架",
+    "title_en": "Re-randomize and Extract: A Novel Commitment Construction Framework Based on Group Actions",
+    "category": "Cryptography",
+    "topics": [
+      "Cryptographic Group Actions",
+      "Commitment Schemes",
+      "Lattice-Based Cryptography"
+    ],
+    "keywords": [
+      "Cryptographic group action",
+      "Dual-mode commitment",
+      "Homomorphic commitment",
+      "Lattice isomorphism problem"
+    ],
+    "abstract": "Cryptographic group actions have attracted growing attention as a useful tool for constructing cryptographic schemes. Among their applications, commitment schemes are particularly interesting as fundamental primitives, playing a crucial role in protocols such as zero-knowledge proofs, multi-party computation, and more. In this paper, we introduce a novel framework to construct commitment schemes based on cryptographic group actions. Specifically, we propose two key techniques for general group actions: re-randomization and randomness extraction. Roughly speaking, a re-randomization algorithm introduces randomness within an orbit for any input element, while a randomness extractor maps this randomness to uniformity over the message space. We demonstrate that these techniques can significantly facilitate the construction of commitment schemes, providing a flexible framework for constructing either perfectly hiding or perfectly binding commitments, depending on the type of extractor involved. Moreover, we extend our framework to support the construction of commitments with additional desirable properties beyond hiding and binding, such as dual-mode commitments and enhanced linkable commitments. These extensions are achieved by further adapting the extractor to satisfy trapdoor or homomorphic properties. Finally, we instantiate all our proposed commitment schemes using lattices, specifically leveraging the lattice isomorphism problem (LIP) and the lattice automorphism problem (LAP) as underlying cryptographic assumptions. To the best of our knowledge, this is the first commitment scheme construction based on LIP/LAP. Additionally, we use LIP to provide a repair and improvement to the tensor isomorphism-based non-interactive commitment scheme proposed by D'Alconzo, Flamini, and Gangemi (ASIACRYPT 2023), which was recently shown to be insecure by an attack from Gilchrist, Marco, Petit, and Tang (CRYPTO 2024).",
+    "methodology": "Proposes a framework using re-randomization and randomness extraction for cryptographic group actions. Introduces deterministic, local constant, and homomorphic extractors to construct commitment schemes. Instantiates constructions with lattice problems (LIP and LAP) via group actions on quadratic forms.",
+    "conclusion": "The framework enables flexible construction of perfectly hiding, perfectly binding, dual-mode, and enhanced linkable commitments. Lattice instantiations using LIP/LAP are the first of their kind and repair a prior insecure tensor isomorphism-based scheme. Results demonstrate the versatility of group actions for post-quantum commitment schemes.",
+    "authors": [
+      "Kaijie Jiang",
+      "Anyu Wang",
+      "Hengyi Luo",
+      "Guoxiao Liu",
+      "Gang Tang",
+      "Yanbin Pan",
+      "Xiaoyun Wang"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT 2025",
+    "doi": "10.1007/978-3-031-91124-8_5",
+    "bibtex_citation": "Jiang_Re-randomize_2025",
+    "analysis": {
+      "Overview": "Proposes a novel framework for constructing commitment schemes using cryptographic group actions, featuring re-randomization and randomness extraction techniques. Demonstrates constructions for basic and advanced commitments, with lattice-based instantiations.",
+      "Background_and_Motivation": [
+        "Commitment schemes are fundamental cryptographic primitives but challenging to construct under post-quantum assumptions. Cryptographic group actions unify various algebraic structures but lack flexible commitment frameworks.",
+        "Need for versatile commitment schemes supporting hiding/binding trade-offs, dual-mode functionality, and enhanced linkability. Prior schemes (e.g., tensor isomorphism-based) were recently broken, necessitating repairs.",
+        "Authors argue that group actions' re-randomizability enables efficient randomness extraction, addressing limitations of ad-hoc constructions. Urgency stems from post-quantum security demands and vulnerabilities in existing schemes.",
+        "Specific problem (commitment construction) is linked to broader challenges in post-quantum cryptography via group actions, which generalize lattice/isogeny assumptions and resist quantum attacks.",
+        "Contributes to cryptography, lattice-based security, and algebraic protocol design, with implications for zero-knowledge proofs and multi-party computation."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Re-randomization: Algorithm adding randomness within a group orbit.",
+          "Randomness extraction: Maps group randomness to uniform message space.",
+          "Trapdoor/homomorphic extractors: Enable dual-mode and linkable commitments."
+        ],
+        "Re-randomization enables orbit-agnostic processing; extraction interfaces with message space. Homomorphic extractors link group operations to message differences for enhanced linkability.",
+        "Assumes hardness of group action problems (e.g., s-GASP, d-GAOP), efficient re-randomization, and extractibility. Implicitly assumes group actions resist quantum attacks.",
+        "Provides a unified framework for commitment schemes, advancing knowledge by generalizing prior ad-hoc constructions and enabling new properties like dual-mode functionality."
+      ],
+      "Methodology": [
+        "Core methods: Re-randomization within orbits and randomness extraction via deterministic/local constant/homomorphic variants. Security proofs under group action assumptions (e.g., s-GASP for binding).",
+        "Novelty: First general framework for group action-based commitments. Applicability: Supports multiple commitment types. Rationality: Extensions (dual-mode, linkable) naturally derive from extractor adaptations.",
+        "Uses mathematical structures (no empirical data). Preprocessing involves sampling quadratic forms for lattice instantiations. Representativeness: Lattices exemplify group actions but framework is general.",
+        "Rigor: Security reductions to standard assumptions (s-GASP, d-GAOP). Evaluation: Hiding/binding properties formally proven; enhanced linkability defined via games.",
+        "Follows cryptographic group action paradigm, influencing focus on orbit-based randomness and algebraic extraction. Constrains conclusions to computationally hard problems."
+      ],
+      "Results": [
+        "Key results: Constructions for perfectly hiding/binding, dual-mode, and enhanced linkable commitments; lattice instantiations using LIP/LAP; repair of tensor isomorphism scheme.",
+        "Significance: First LIP/LAP-based commitments. Reliability: Security proofs under standard assumptions. Stability: Framework generalizes across extractor types; lattice instantiation resists known attacks."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Define group actions → introduce techniques → construct basic schemes → extend to advanced properties → instantiate with lattices → repair prior work.",
+        "Key steps: 1) Re-randomization extracts orbit-invariant randomness. 2) Extractors enable hiding/binding. 3) Homomorphic extractors support linkability. 4) Lattices instantiate via quadratic form actions.",
+        "Strengths: Modular proofs via computational assumptions. Weaknesses: Efficiency not quantified. Rebuttals: Security reductions address binding/hiding; lattice repairs counter prior attacks."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: General framework unifies commitment constructions; novel dual-mode/linkable schemes; first lattice-based instantiations; repairs insecure prior work.",
+        "Limitations: Assumes hard group action problems; concrete efficiency unverified; homomorphic commitments remain challenging.",
+        "Theoretical constraints: Dependence on group action structure limits applicability to non-algebraic settings; extractor designs assume specific orbit properties."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within cryptographic commitments literature: Generalizes prior group action schemes (e.g., Brassard-Yung) and repairs broken constructions (D'Alconzo et al.).",
+        "Terminology: Formal cryptographic definitions (e.g., hiding/binding). Tone: Technical/assertive. Rhetoric: Emphasizes 'first' and 'novel' contributions; contrasts with vulnerable schemes.",
+        "Builds authority via citations to foundational work (e.g., Brassard-Yung) and relevant attacks. Motivations: Highlight gaps in group action applications and post-quantum practicality."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Framework enables diverse commitment schemes from group actions; lattice instantiations validate feasibility; enhanced linkability offers homomorphic-like functionality.",
+        "Future work: Explore instantiations beyond lattices (e.g., isogenies); optimize efficiency; strengthen security models; apply to zero-knowledge protocols."
+      ]
+    }
+  }
+}

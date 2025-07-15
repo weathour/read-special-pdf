@@ -1,0 +1,80 @@
+{
+  "file_name": "Fan 等 - 2024 - Generalizing Graph Neural Networks on Out-of-Distribution Graphs.pdf",
+  "generated_at": "2025-07-10 05:47:15",
+  "structured_info": {
+    "title_cn": "在分布外图上泛化图神经网络",
+    "title_en": "Generalizing Graph Neural Networks on Out-of-Distribution Graphs",
+    "category": "Machine Learning",
+    "topics": [
+      "Graph Neural Networks",
+      "Out-of-Distribution Generalization",
+      "Causal Representation Learning"
+    ],
+    "keywords": [
+      "Causal representation learning",
+      "Graph neural networks (GNNs)",
+      "Out-of-distribution generalization (OOD)",
+      "Stable learning"
+    ],
+    "abstract": "Graph Neural Networks (GNNs) are proposed without considering the agnostic distribution shifts between training graphs and testing graphs, inducing the degeneration of the generalization ability of GNNs in Out-Of-Distribution (OOD) settings. The fundamental reason for such degeneration is that most GNNs are developed based on the I.I.D hypothesis. In such a setting, GNNs tend to exploit subtle statistical correlations existing in the training set for predictions, even though it is a spurious correlation. This learning mechanism inherits from the common characteristics of machine learning approaches. However, such spurious correlations may change in the wild testing environments, leading to the failure of GNNs. Therefore, eliminating the impact of spurious correlations is crucial for stable GNN models. To this end, in this paper, we argue that the spurious correlation exists among subgraph-level units and analyze the degeneration of GNN in causal view. Based on the causal view analysis, we propose a general causal representation framework for stable GNN, called StableGNN. The main idea of this framework is to extract high-level representations from raw graph data first and resort to the distinguishing ability of causal inference to help the model get rid of spurious correlations. Particularly, to extract meaningful high-level representations, we exploit a differentiable graph pooling layer to extract subgraph-based representations by an end-to-end manner. Furthermore, inspired by the confounder balancing techniques from causal inference, based on the learned high-level representations, we propose a causal variable distinguishing regularizer to correct the biased training distribution by learning a set of sample weights. Hence, GNNs would concentrate more on the true connection between discriminative substructures and labels. Extensive experiments are conducted on both synthetic datasets with various distribution shift degrees and eight real-world OOD graph datasets. The results well verify that the proposed model StableGNN not only outperforms the state-of-the-arts but also provides a flexible framework to enhance existing GNNs. In addition, the interpretability experiments validate that StableGNN could leverage causal structures for predictions.",
+    "methodology": "The main research method is the StableGNN framework, which integrates graph high-level variable learning and causal variable distinguishing. It uses a differentiable graph pooling layer (e.g., DiffPool) to extract subgraph-based representations by clustering nodes and aligning semantic meanings across graphs. A causal variable distinguishing regularizer based on Hilbert-Schmidt Independence Criterion (HSIC) is employed to decorrelate subgraph-level representations by learning sample weights, enabling GNNs to focus on invariant causal relationships.",
+    "conclusion": "StableGNN outperforms state-of-the-art methods on synthetic and real-world OOD graph datasets, demonstrating superior generalization under distribution shifts. It provides a flexible framework that enhances existing GNNs by leveraging causal structures for predictions, as validated through interpretability experiments. The approach effectively reduces spurious correlations and improves stability across diverse testing environments.",
+    "authors": [
+      "Shaohua Fan",
+      "Xiao Wang",
+      "Chuan Shi",
+      "Peng Cui",
+      "Bai Wang"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "doi": "10.1109/TPAMI.2023.3321097",
+    "bibtex_citation": "Fan_Generalizing_2023",
+    "analysis": {
+      "Overview": "The paper addresses the challenge of generalizing Graph Neural Networks (GNNs) under out-of-distribution (OOD) settings, where distribution shifts between training and testing data degrade performance. It proposes StableGNN, a causal representation learning framework that mitigates spurious correlations by extracting subgraph-level representations and applying causal inference techniques.",
+      "Background_and_Motivation": [
+        "Research background involves GNNs' susceptibility to performance degeneration in non-IID scenarios due to reliance on spurious correlations, which are unstable across environments.",
+        "Motivation stems from the need to enhance GNN robustness for real-world applications with uncontrolled distribution shifts, such as molecular property prediction where substructures determine labels but spurious correlations mislead predictions.",
+        "Authors argue for necessity by demonstrating that spurious correlations, like those between irrelevant subgraphs and labels, cause GNN failures in OOD settings, emphasizing urgency for methods that ensure stable predictions in dynamic environments.",
+        "The specific problem of subgraph-level spurious correlations is linked to broader challenges in machine learning, such as distribution shifts and causal invariance, establishing significance through examples like molecular graph classification.",
+        "The paper contributes to machine learning, specifically graph representation learning and causal inference, with interdisciplinary relevance to chemistry and network science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Spurious correlation - unintended dependencies between subgraph features and labels that change across distributions. (2) Causal view - analysis of GNN degeneration via a causal graph where confounders bias predictions. (3) High-level variables - subgraph-based representations extracted via graph pooling.",
+        "Logical relationships: Spurious correlations arise from confounders in the data generation process; high-level variables enable explicit modeling of subgraphs; causal inference decorrelates variables to isolate true causal effects.",
+        "Key assumptions: Subgraphs are meaningful units for representation; causal relationships (P(Y|Z)) are invariant across environments; distribution shifts primarily affect irrelevant variables (M).",
+        "The innovation lies in a novel framework combining graph pooling for high-level representation learning with causal variable distinguishing, advancing knowledge by enabling GNNs to generalize better under OOD shifts."
+      ],
+      "Methodology": [
+        "Core methods include graph pooling (e.g., DiffPool) for hierarchical subgraph extraction and a causal variable distinguisher using HSIC to decorrelate variables via sample reweighting.",
+        "Methodology novelty: Integrates causal inference with GNNs for the first time in OOD graph generalization. Applicability: Flexible for various GNN architectures. Rationality: Supported by theoretical proofs (e.g., semantic alignment of high-level variables) and handles non-linear dependencies.",
+        "Data sources: Synthetic datasets with controlled distribution shifts and eight real-world OOD graph datasets (e.g., from OGB). Preprocessing involves scaffold splitting for distribution shifts. Representativeness is high, covering binary/multi-label classification and regression tasks.",
+        "Experimental design includes ablation studies, comparisons with baselines, and interpretability analysis (e.g., GNNExplainer). Evaluation metrics (Accuracy, F1, ROC-AUC) are rigorous and adequate for assessing OOD generalization.",
+        "The research follows a causal inference paradigm, influencing the perspective by framing spurious correlations as confounding effects and promoting invariant learning."
+      ],
+      "Results": [
+        "Key results: StableGNN outperforms state-of-the-art methods on synthetic datasets (up to 19.64% improvement) and real-world datasets across tasks. It achieves superior OOD generalization, e.g., higher accuracy on scaffold-split molecular data.",
+        "Results are significant as they validate the framework's ability to leverage causal structures. Reliability is confirmed through extensive experiments and standard deviations; stability is evidenced by consistent performance across varying distribution shifts."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall argument structure: Problem formulation (OOD degeneration) → Causal analysis → Proposed framework (StableGNN) → Experimental validation → Conclusions.",
+        "Key steps: (1) Identify spurious correlations as the root cause. (2) Introduce causal graph. (3) Develop StableGNN with pooling and distinguisher. (4) Theoretically prove semantic alignment. (5) Demonstrate efficacy via experiments.",
+        "Strengths: Clear causal reasoning and theoretical grounding. Weaknesses: Limited to subgraph-level correlations. Authors address rebuttals by comparing alternatives and showing StableGNN's superiority."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel integration of causal inference with GNNs; flexibility to enhance existing models; validated effectiveness on diverse datasets; interpretable results.",
+        "Methodology limitations: Assumes a specific causal structure; may not handle complex inter-variable dependencies; computational overhead from HSIC.",
+        "Theoretical paradigm constraints: Causal assumptions may not hold in all scenarios, potentially limiting conclusions to datasets where subgraphs are primary discriminative units."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within machine learning discourse as a pioneer in OOD generalization for GNNs, challenging IID-based approaches and advocating for causal methods.",
+        "Terminology includes 'spurious correlation,' 'causal invariance,' and 'subgraph-level units.' Rhetorical strategies: Emphasizes urgency via failure cases; builds credibility through citations of foundational works (e.g., DiffPool, IRM).",
+        "Authors establish authority by citing key literature in GNNs and causal inference. Motivations include addressing gaps in existing methods (e.g., IRM's need for environment labels) and promoting stable learning."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: StableGNN effectively improves GNN generalization under OOD shifts by eliminating spurious correlations through causal representation learning, outperforming baselines and offering interpretability.",
+        "Future research suggestions: Extend to other domains like proteins; discover causal structures among high-level variables; address more complex causal relationships; apply to multimodal data or autonomous driving."
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "file_name": "Xiong 等 - 2020 - Communication and Computing Resource Optimization for Connected Autonomous Driving.pdf",
+  "generated_at": "2025-07-14 12:58:41",
+  "structured_info": {
+    "title_cn": "面向联网自动驾驶的通信与计算资源优化",
+    "title_en": "Communication and Computing Resource Optimization for Connected Autonomous Driving",
+    "category": "Vehicular Technology",
+    "topics": [
+      "Connected Autonomous Vehicles",
+      "Resource Management",
+      "Vehicle String Stability"
+    ],
+    "keywords": [
+      "Connected Autonomous Vehicles",
+      "Driving Safety",
+      "Resource Management",
+      "Road Traffic Throughput",
+      "Vehicle String Stability"
+    ],
+    "abstract": "Transportation system is facing a sharp disruption since the Connected Autonomous Vehicles (CAVs) can free people from driving and provide good driving experience with the aid of Vehicle-to-Vehicle (V2V) communications. Although CAVs bring benefits in terms of driving safety, vehicle string stability, and road traffic throughput, most existing work aims at improving only one of these performance metrics. However, these metrics may be mutually competitive, as they share the same communication and computing resource in a road segment. From the perspective of joint optimizing driving safety, vehicle string stability, and road traffic throughput, there is a big research gap to be filled on the resource management for connected autonomous driving. In this paper, we first explore the joint optimization on driving safety, vehicle string stability, and road traffic throughput by leveraging on the consensus Alternating Directions Method of Multipliers algorithm (ADMM). However, the limited communication bandwidth and on-board processing capacity incur the resource competition in CAVs. We next analyze the multiple tasks competition in the contention based medium access to attain the upper bound delay of V2V-related application offloading. An efficient sleeping multi-armed bandit tree-based algorithm is proposed to address the resource assignment problem. A series of simulation experiments are carried out to validate the performance of the proposed algorithms.",
+    "methodology": "The paper proposes a mathematical model for string stability considering safety distance and leverages the consensus Alternating Directions Method of Multipliers (ADMM) algorithm for joint optimization. It also uses network calculus theory to derive the upper bound delay of V2V offloading and proposes a sleeping multi-armed bandit tree-based algorithm for resource allocation.",
+    "conclusion": "The paper concludes that driving safety, vehicle string stability, and road traffic throughput are interdependent and can be optimized through effective resource management. The proposed algorithms demonstrate significant improvements in performance metrics through simulation experiments.",
+    "authors": [
+      "Kai Xiong",
+      "Supeng Leng",
+      "Xiaosha Chen",
+      "Chongwen Huang",
+      "Chau Yuen",
+      "Yong Liang Guan"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2020.3029109",
+    "bibtex_citation": "Xiong_Communication_2020",
+    "analysis": {
+      "Overview": "The paper addresses the joint optimization of driving safety, vehicle string stability, and road traffic throughput in connected autonomous vehicles (CAVs) through communication and computing resource management.",
+      "Background_and_Motivation": [
+        "The research is motivated by the need to optimize multiple interdependent performance metrics in CAVs, which traditionally have been addressed in isolation.",
+        "The authors highlight the competition for communication and computing resources among CAVs and the impact on road traffic metrics.",
+        "They argue that existing work lacks a comprehensive approach to jointly optimize these metrics, leading to suboptimal performance.",
+        "The paper establishes the significance of the problem by linking resource management to critical aspects of CAV performance, such as safety and efficiency.",
+        "The research contributes to the fields of vehicular technology, resource management, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include safety distance, vehicle string stability, and road traffic throughput, which are defined and mathematically modeled.",
+        "The logical relationship between these concepts is analyzed, showing how they compete for shared resources.",
+        "Key assumptions include the use of V2V communications, the continuum road traffic model, and the impact of resource allocation on performance metrics.",
+        "The paper contributes to the knowledge system by providing a novel joint optimization framework and resource allocation algorithm."
+      ],
+      "Methodology": [
+        "The core methods include the ADMM algorithm for optimization and network calculus for delay analysis.",
+        "The novelty lies in the joint optimization approach and the proposed sleeping multi-armed bandit tree-based algorithm.",
+        "Data sources and characteristics are derived from simulation experiments, with preprocessing steps detailed in the methodology.",
+        "Experimental design is rigorous, with evaluation metrics including execution time, offloading delay, acceptance ratio, and rewards.",
+        "The research follows a theoretical paradigm rooted in optimization and network calculus, influencing the analytical perspective."
+      ],
+      "Results": [
+        "Key results include the validation of the proposed algorithms through simulations, showing improved performance in resource allocation and delay reduction.",
+        "The results are significant for practical applications, demonstrating reliability and stability in various scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first establishing the problem, then proposing solutions, and finally validating through simulations.",
+        "Key steps include problem formulation, algorithm design, and performance evaluation.",
+        "Strengths include comprehensive analysis and innovative solutions, while potential weaknesses may include assumptions about resource availability and vehicle behavior."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel joint optimization framework and efficient resource allocation algorithm.",
+        "Limitations include assumptions about resource distribution and the impact of high vehicle mobility on V2V communications.",
+        "The choice of theoretical paradigms may constrain conclusions to idealized scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the disciplinary discourse by addressing gaps in existing research and proposing innovative solutions.",
+        "Terminology is specific to vehicular technology and resource management, with a formal tone and technical rhetoric.",
+        "Citations are used to build authority and contextualize the research within existing literature."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the effectiveness of the proposed algorithms in optimizing CAV performance metrics.",
+        "Future research directions include extending the framework to Cellular-based Vehicle-to-Everything (C-V2X) communications."
+      ]
+    }
+  }
+}

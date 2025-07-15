@@ -1,0 +1,81 @@
+{
+  "file_name": "Hapanchak 等 - 2024 - An intelligent path management in heterogeneous vehicular networks.pdf",
+  "generated_at": "2025-07-10 03:56:38",
+  "structured_info": {
+    "title_cn": "异构车载网络中的智能路径管理",
+    "title_en": "An intelligent path management in heterogeneous vehicular networks",
+    "category": "Vehicular Communications",
+    "topics": [
+      "Heterogeneous Vehicular Networks",
+      "Multipath TCP",
+      "Network Selection"
+    ],
+    "keywords": [
+      "V2X",
+      "MPTCP",
+      "Multipath",
+      "Vehicular heterogeneous networks",
+      "Network selection",
+      "Connected vehicles"
+    ],
+    "abstract": "Achieving reliable connectivity in heterogeneous vehicular networks is a challenging task, owing to rapid topological changes and unpredictable vehicle speeds. As vehicular communication demands continue to evolve, multipath connectivity is emerging as an important tool, which promises to enhance network interoperability and reliability. Given the limited coverage area of serving access technologies, frequent disconnections are to be expected as the vehicle moves. To ensure seamless communication in dynamic vehicular environments, an intelligent path management algorithm for Multipath TCP (MPTCP) has been proposed. The algorithm utilizes a network selection mechanism based on Fuzzy Analytic Hierarchy Process (FAHP), which dynamically assigns the most appropriate underlying network for each running application. The selection process takes into account multiple factors, such as path quality, vehicle mobility, and service characteristics. In contrast to existing solutions, our proposed method offers a dynamic and comprehensive approach to network selection that is tailored to the specific needs of each service to ensure that it is always paired with the optimal access technology. The results of the evaluation demonstrate that the proposed method is highly effective in maintaining service continuity during vertical handover. By tailoring the network selection to the specific needs of each application, our path manager is able to ensure optimal connectivity and performance, even in challenging vehicular environments, delivering a better user experience, with more reliable connections, and smoother data transfers.",
+    "methodology": "Proposes an intelligent path management algorithm for Multipath TCP (MPTCP) using a network selection mechanism based on Fuzzy Analytic Hierarchy Process (FAHP) that considers path quality, vehicle mobility, and service characteristics to dynamically assign optimal networks per application.",
+    "conclusion": "The proposed method effectively maintains service continuity during vertical handover, ensures optimal connectivity in dynamic vehicular environments, and enhances user experience through reliable connections and smoother data transfers by tailoring network selection to individual application requirements.",
+    "authors": [
+      "Vadym S. Hapanchak",
+      "António Costa",
+      "João Pereira",
+      "Maria João Nicolau"
+    ],
+    "publication_year": "2024",
+    "venue": "Vehicular Communications",
+    "doi": "10.1016/j.vehcom.2023.100690",
+    "bibtex_citation": "Hapanchak_An_2024",
+    "analysis": {
+      "Overview": "Proposes an intelligent path management scheme using Multipath TCP (MPTCP) and Fuzzy Analytic Hierarchy Process (FAHP) for dynamic network selection in heterogeneous vehicular networks to ensure seamless connectivity and application-specific QoS.",
+      "Background_and_Motivation": [
+        "Vehicular networks face challenges due to rapid topological changes, unpredictable speeds, and frequent disconnections, hindering reliable connectivity.",
+        "Addresses the need for seamless vertical handovers and application-specific network selection in multipath environments to maintain service continuity.",
+        "Argues that existing solutions inadequately handle high mobility, rarely consider multipath approaches, and fail to address unique QoS requirements per service, creating urgency for adaptive methods.",
+        "Links the specific problem of suboptimal handovers to broader challenges in vehicular communication reliability, emphasizing its significance for safety-critical applications and user experience.",
+        "Contributes to Vehicular Communications, Networking, and Intelligent Transportation Systems through interdisciplinary integration of decision-making algorithms and transport protocols."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: Multipath TCP (enables parallel connections), Fuzzy Analytic Hierarchy Process (dynamic network scoring), Path Manager (subflow control based on real-time attributes).",
+        "FAHP evaluates network attributes to assign scores; Path Manager uses scores to activate/deactivate subflows, creating a feedback loop for adaptive connectivity.",
+        "Assumes real-time availability of cross-layer attributes (e.g., RSS, latency), vehicular mobility predictability, and distinct QoS requirements per service profile.",
+        "Provides a novel algorithmic contribution by enabling per-application network selection and dynamic subflow control, advancing MPTCP adaptability in mobile environments."
+      ],
+      "Methodology": [
+        "Employs FAHP for multi-criteria network scoring and a userspace Path Manager for MPTCP subflow control, validated via ns-3/SUMO emulation.",
+        "FAHP's novelty lies in handling attribute uncertainty; its applicability is rationalized through real-time adaptability, but rationality depends on accurate attribute measurement.",
+        "Uses simulated network/mobility data from ns-3/SUMO; preprocessing includes utility normalization and low-pass filtering. Data representativeness is limited by emulation constraints.",
+        "Experimental design compares proposed method with standard MPTCP using throughput, delay, and handover metrics. Evaluation metrics are adequate but lack real-world validation.",
+        "Follows a pragmatic engineering paradigm, integrating cross-layer design without explicit theoretical alignment, focusing on solving immediate vehicular challenges."
+      ],
+      "Results": [
+        "Reduces application delay by 50% during handovers, maintains throughput during network transitions, and enables dynamic subflow activation/deactivation based on FAHP scores.",
+        "Results demonstrate statistical significance in emulations; reliability is supported by consistent performance across mobility scenarios, though stability depends on attribute fluctuation thresholds."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: problem identification → FAHP-based solution design → emulation-based validation → performance comparison.",
+        "Key steps: Critique existing handover methods → introduce FAHP scoring → detail Path Manager → validate via metrics. Logical links connect mobility challenges to algorithmic adaptability.",
+        "Strengths: Clear cause-effect between dynamic scoring and performance gains. Weaknesses: Limited rebuttal of real-world deployment hurdles. Addresses limitations by comparing against baseline MPTCP."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Per-application network selection, dynamic FAHP adaptation, and seamless handover demonstrated in emulations.",
+        "Methodology boundaries: Assumes perfect attribute availability; limitations include emulation-based evaluation and no real-world interference tests.",
+        "Theoretical constraints: TCP-centric design limits applicability to non-TCP services; FAHP weights may not generalize across all vehicular scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions itself as an improvement over static handover methods, contributing to vehicular network resilience discourse.",
+        "Uses specialized terminology (e.g., subflow, VHO), persuasive tone emphasizing novelty, and rhetorical contrast between proposed method and 'inadequate' existing solutions.",
+        "Builds authority through extensive citations (33 references) and comparative analysis; citation motivations include contextualizing gaps and benchmarking performance."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: FAHP-based path management ensures application-specific connectivity, reduces handover delays, and improves QoE in dynamic vehicular environments.",
+        "Future work: Real-world testing, integration of additional RATs (e.g., 5G), and exploration of machine learning for attribute prediction."
+      ]
+    }
+  }
+}

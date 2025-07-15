@@ -1,0 +1,79 @@
+{
+  "file_name": "Negrin 等 - 2023 - Metamodel-assisted design optimization in the field of structural engineering A literature review.pdf",
+  "generated_at": "2025-07-11 05:16:34",
+  "structured_info": {
+    "title_cn": "结构工程领域的元模型辅助设计优化：文献综述",
+    "title_en": "Metamodel-assisted design optimization in the field of structural engineering: A literature review",
+    "category": "Structural Engineering",
+    "topics": [
+      "Structural Design Optimization",
+      "Metamodel-Assisted Optimization",
+      "Surrogate-Based Optimization"
+    ],
+    "keywords": [
+      "State-of-the-art",
+      "Structural design optimization",
+      "Metamodel-assisted optimization",
+      "Surrogate-based optimization",
+      "Structural engineering"
+    ],
+    "abstract": "Metamodel-assisted optimization is a valuable alternative to handle structural design optimization procedures, which are usually quite expensive and sometimes even prohibitive. This paper presents an up-to-date literature review on metamodel-assisted structural design optimization (MASDO) in the structural engineering field. The period analyzed is from 2000 to the present, involving 111 publications and 169 case studies. In order to provide practical recommendations on best practices to perform MASDO, eight categorical variables are analyzed, and underlying relationships between them are detected by applying simple and multiple correspondence analysis. Surprisingly, there are fewer published papers on the subject than expected. Most focus on improving or developing metamodeling strategies using simple (benchmark) case studies to validate the proposed methodologies. Consequently, the originality and value of this study lie in the conclusions obtained from the statistical analysis, which serve as a practical guide for incorporating metamodeling strategies in future projects related to structural design optimization.",
+    "methodology": "Literature review with statistical analysis (correspondence analysis) of 111 publications and 169 case studies. Examined eight categorical variables: type of formulation, objective functions, variables, design of experiment (DoE), metamodel techniques, optimization strategies, case studies, and calculation engines.",
+    "conclusion": "Metamodel-assisted optimization reduces computational costs in structural design. Kriging and Latin Hypercube Sampling are dominant strategies. Most research focuses on benchmark problems rather than real-world applications. Statistical analysis provides practical guidelines for implementing metamodeling, with future directions emphasizing sustainability criteria and complex case studies.",
+    "authors": [
+      "Iván Negrin",
+      "Moacir Kripka",
+      "Víctor Yepes"
+    ],
+    "publication_year": "2023",
+    "venue": "Structures",
+    "doi": "https://doi.org/10.1016/j.istruc.2023.04.006",
+    "bibtex_citation": "Negrin_Metamodel-assisted_2023",
+    "analysis": {
+      "Overview": "Comprehensive literature review on metamodel-assisted structural design optimization (MASDO), analyzing 111 publications from 2000-2023 to identify best practices through statistical evaluation of eight categorical variables.",
+      "Background_and_Motivation": [
+        "Structural optimization is computationally expensive due to high-fidelity simulations (e.g., finite element analysis), exacerbated by sustainability demands and climate change challenges.",
+        "To provide practical recommendations for implementing metamodeling strategies in structural optimization by identifying relationships between methodological variables.",
+        "Computational complexity makes optimization prohibitive for real-world structures; metamodels offer cost-effective alternatives with growing urgency in resource-constrained engineering contexts.",
+        "Addresses the gap in practical guidelines for selecting metamodeling approaches, linking efficient design optimization to broader sustainability goals in construction.",
+        "Contributes to Structural Engineering, Optimization Theory, Computational Mechanics, and Sustainable Design."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Metamodel: Approximates complex simulations (e.g., FEA) to reduce computational costs; DoE: Strategy for initial sampling points; MASDO: Integration of metamodels into optimization workflows.",
+        "DoE selects sample points → High-fidelity simulations generate data → Metamodel approximates system behavior → Optimization algorithms use metamodel for efficient search.",
+        "Assumes metamodels accurately represent high-fidelity models; initial sampling sufficiently covers design space; categorical variables capture essential aspects of MASDO implementation.",
+        "Provides a statistical foundation for metamodel selection, advancing the field from ad-hoc implementations to evidence-based methodology."
+      ],
+      "Methodology": [
+        "Statistical correspondence analysis of eight categorical variables across 169 case studies, supplemented by literature synthesis.",
+        "Novel application of correspondence analysis reveals hidden variable relationships; methodology is rational for deriving field-wide recommendations but limited by literature bias toward simple benchmarks.",
+        "Data from 111 publications (2000-2023) via Google Scholar, ScienceDirect, Springer; preprocessing involved filtering duplicates/irrelevant studies. Data represent academic literature but underrepresent complex real-world applications.",
+        "Rigorous variable categorization and correspondence analysis; evaluation relies on statistical inference rather than experimental validation.",
+        "Follows empirical research paradigm, emphasizing data-driven insights over theoretical modeling, which enables practical guidance but constrains theoretical generalization."
+      ],
+      "Results": [
+        "Kriging (42% usage) and Latin Hypercube Sampling (LHS) are dominant; 70% case studies are benchmark problems; deterministic/reliability-based formulations prevail; computational savings up to 99% reported.",
+        "Results statistically significant via correspondence analysis but reliability limited by literature bias toward simplified validation studies; stability evidenced through consistent patterns across 169 cases."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: problem framing → literature analysis → variable categorization → statistical validation → practical guidelines.",
+        "1. Establish MASDO necessity via computational cost challenges; 2. Categorize variables from literature; 3. Apply correspondence analysis; 4. Derive field-wide recommendations; 5. Identify future research needs.",
+        "Strengths: Comprehensive variable analysis reveals novel relationships. Weaknesses: Underrepresentation of complex case studies limits robustness; addressed by emphasizing need for real-world validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Pioneering statistical framework for MASDO decision-making; practical guidelines applicable across optimization formulations.",
+        "Recommendations based primarily on simple benchmarks; limited data on sustainability-focused or complex structures.",
+        "Empirical approach prioritizes observable trends over theoretical models, potentially overlooking emerging metamodeling innovations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Consolidates fragmented MASDO research into a coherent decision-making framework, positioning as reference for practitioners.",
+        "Technical terminology (e.g., Kriging, LHS) with objective tone; uses statistical results to establish authority; frequent citations demonstrate exhaustive literature coverage.",
+        "Builds credibility through analysis of 111 sources; citation patterns suggest emphasis on foundational metamodeling papers and recent applications."
+      ],
+      "Conclusions_and_Implications": [
+        "MASDO effectively reduces computational costs; Kriging+LHS is optimal for reliability-based optimization; future work must address real-world complexity and sustainability metrics.",
+        "Extend MASDO to life-cycle sustainability objectives; integrate with commercial FEA/BIM platforms; develop sequential optimization for multi-criteria problems; validate in additive manufacturing contexts."
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "file_name": "Yu 等 - 2025 - DAPO An Open-Source LLM Reinforcement Learning System at Scale.pdf",
+  "generated_at": "2025-07-10 00:40:40",
+  "structured_info": {
+    "title_cn": "DAPO：大规模开源的LLM强化学习系统",
+    "title_en": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "category": "Natural Language Processing",
+    "topics": [
+      "Reinforcement Learning",
+      "Large Language Models",
+      "Reasoning"
+    ],
+    "keywords": [
+      "Reinforcement Learning",
+      "Policy Optimization",
+      "Reasoning",
+      "Large Language Models",
+      "Open-Source"
+    ],
+    "abstract": "Inference scaling empowers LLMs with unprecedented reasoning ability, with reinforcement learning as the core technique to elicit complex reasoning. However, key technical details of state-of-the-art reasoning LLMs are concealed, thus the community still struggles to reproduce their RL training results. We propose the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm, and fully open-source a state-of-the-art large-scale RL system that achieves 50 points on AIME 2024 using Qwen2.5-32B base model. We introduce four key techniques of our algorithm that make large-scale LLM RL a success, open-source our training code built on the verl framework, along with a carefully curated and processed dataset.",
+    "methodology": "Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) with four key techniques: 1) Clip-Higher to avoid entropy collapse, 2) Dynamic Sampling to improve training efficiency, 3) Token-Level Policy Gradient Loss for long-chain reasoning scenarios, 4) Overlong Reward Shaping to reduce reward noise. Implemented using verl framework with Qwen2.5-32B base model.",
+    "conclusion": "DAPO achieves state-of-the-art performance (50 points on AIME 2024) with 50% fewer training steps than previous methods. The fully open-sourced system (algorithm, code, dataset) enables reproducibility and advances research in large-scale LLM reinforcement learning.",
+    "authors": [
+      "Qiying Yu",
+      "Zheng Zhang"
+    ],
+    "publication_year": "2025",
+    "venue": "arXiv",
+    "doi": "arXiv:2503.14476v1",
+    "bibtex_citation": "Yu_DAPO_2025",
+    "analysis": {
+      "Overview": "Proposes DAPO, an open-source reinforcement learning system for large language models that addresses reproducibility challenges in complex reasoning tasks, achieving state-of-the-art results on the AIME math benchmark.",
+      "Background_and_Motivation": [
+        "Existing state-of-the-art reasoning LLMs (e.g., OpenAI, DeepSeek) conceal key RL implementation details, hindering reproducibility.",
+        "Community struggles with entropy collapse, reward noise, and training instability when replicating results.",
+        "Authors demonstrate urgency through baseline GRPO achieving only 30 AIME points versus DeepSeek's 47 points.",
+        "Problem framed as democratizing access to industry-level RL systems for complex reasoning tasks.",
+        "Contributes to NLP, reinforcement learning, and scalable AI systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Clip-Higher: Decouples clipping ranges (ε_low=0.2, ε_high=0.28) to prevent entropy collapse",
+          "Dynamic Sampling: Filters zero-gradient prompts to maintain effective batch size",
+          "Token-Level Loss: Replaces sample-level loss to handle long reasoning chains"
+        ],
+        "Techniques sequentially address training stability (Clip-Higher), efficiency (Dynamic Sampling), and long-sequence optimization (Token-Level Loss). Overlong Reward Shaping reduces noise from truncated outputs.",
+        "Assumes rule-based rewards are effective; RL can elicit complex reasoning; Qwen2.5-32B is suitable base model.",
+        "Provides algorithmic innovations (DAPO), open-source implementation, and curated dataset advancing reproducible RL research."
+      ],
+      "Methodology": [
+        "DAPO algorithm with four novel techniques integrated into verl framework. Group-relative advantage estimation without KL divergence.",
+        "Clip-Higher is novel for maintaining exploration; Token-Level Loss specifically addresses long-chain reasoning; techniques validated through ablation studies.",
+        "DAPO-Math-17K dataset curated from AoPS, manually transformed to integer answers. Evaluated on AIME 2024 benchmark.",
+        "Rigorous experimental design: 32 evaluation repetitions, ablation studies per technique, hyperparameters specified (batch size 512, 16 samples/prompt).",
+        "Builds on PPO/GRPO paradigms but removes KL divergence constraint for greater policy flexibility."
+      ],
+      "Results": [
+        "Achieves 50 AIME points (vs DeepSeek's 47) with 50% fewer steps. Ablation shows: Clip-Higher (+6pts), Dynamic Sampling (+8pts), Token-Level Loss (+4pts), Overlong Reward (+3pts).",
+        "Results validated through repeated evaluations; entropy/length metrics confirm training stability; consistent outperformance demonstrated."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem-solution structure: Identify reproducibility gap → propose DAPO techniques → validate improvements.",
+        "1) Baseline failure analysis → 2) Technique motivation → 3) Algorithm design → 4) Experimental validation → 5) Open-source release.",
+        "Strengths: Clear causal links between techniques and metric improvements. Weakness: Limited discussion of generalizability beyond math tasks. Addresses rebuttals via ablation studies."
+      ],
+      "Strengths_and_Limitations": [
+        "First open-source SOTA RL system; novel solutions to entropy collapse/reward noise; comprehensive technical disclosure.",
+        "Math-task focus; rule-based reward limits task scope; no human preference integration.",
+        "Value-free paradigm enables policy divergence but may limit alignment capabilities."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as transparency catalyst in response to proprietary models. Uses 'democratize', 'reproducibility' as key rhetoric.",
+        "Technical terminology (entropy collapse, reward hacking); authoritative tone through empirical results and system metrics.",
+        "Builds authority by critiquing opaque practices (OpenAI/DeepSeek) and citing foundational RL work (PPO, GRPO)."
+      ],
+      "Conclusions_and_Implications": [
+        "DAPO enables performant, reproducible LLM RL training. Key innovations address stability/efficiency in long-reasoning tasks.",
+        "Extend to non-math domains; study emergent reasoning patterns; explore hybrid reward systems."
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "file_name": "Yazici和Gures - 2024 - NR-V2X Quality of Service Prediction Through Machine Learning with Nested Cross-Validation Scheme.pdf",
+  "generated_at": "2025-07-14 12:59:42",
+  "structured_info": {
+    "title_cn": "基于嵌套交叉验证的机器学习方法预测NR-V2X服务质量",
+    "title_en": "NR-V2X Quality of Service Prediction Through Machine Learning with Nested Cross-Validation Scheme",
+    "category": "Machine Learning",
+    "topics": [
+      "Vehicle-to-Everything (V2X)",
+      "Quality of Service (QoS)",
+      "Nested Cross-Validation"
+    ],
+    "keywords": [
+      "machine learning",
+      "V2X",
+      "nested cross-validation",
+      "Quality of Service prediction"
+    ],
+    "abstract": "The proliferation of connected vehicles and the advent of New Radio (NR) technologies have ushered in a new era of intelligent transportation systems. Ensuring reliable and low-latency communication between vehicles and their surrounding environment is of utmost importance for the success of these systems. This paper presents a novel approach to predict Quality of Service (QoS) in Vehicle-to-Everything (V2X) communications through nested cross-validation. Our methodology employs several machine learning (ML) methods to predict some QoS metrics, such as packet delivery ratio (PDR), and throughput, in NR-based V2X scenarios. In ML employment, nested cross-validation approach, unlike conventional cross-validation approach, prevents information leakage from parameter selection into hyperparameter selection, and this results in getting more robust results in terms of overfitting. The study utilizes real-world NR-V2X datasets to train and validate the proposed ML methods. Through extensive experiments, we demonstrate the efficacy of our approach in accurately predicting QoS parameters, even in dynamic and challenging vehicular environments. In summary, our research contributes to the advancement of NR-based V2X communication systems by introducing employment of ML methods with a novel approach for QoS prediction. The combination of accurate predictions through nested cross-validation not only enhances the reliability of communication in connected vehicles landscape but also has a supportive role for stakeholders to make informed decisions for the optimization and management of vehicular networks.",
+    "methodology": "The paper employs several machine learning methods (SVR, ANN, GBR, RF, LGBM, CBR) with nested cross-validation to predict QoS metrics like PDR and throughput in NR-V2X scenarios. The dataset is pre-processed to remove duplicates and missing values, and normalization is applied for ANN and SVR. Nested cross-validation is used to prevent information leakage and overfitting.",
+    "conclusion": "The research demonstrates that RF, GBR, and CBR perform best in predicting QoS metrics, with RF leading in MAE metrics and CBR in RMSE metrics. The nested cross-validation approach enhances robustness and prevents overfitting, making the methodology suitable for real-time V2X applications. Future work should focus on expanding the dataset size and exploring more advanced ML methods.",
+    "authors": [
+      "Ibrahim Yazici",
+      "Emre Gures"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 6th International Conference on Communications, Signal Processing, and their Applications (ICCSPA)",
+    "doi": "10.1109/ICCSPA61559.2024.10794205",
+    "bibtex_citation": "Yazici_NR-V2X_2024",
+    "analysis": {
+      "Overview": "The paper presents a novel approach to predict QoS in NR-V2X communications using machine learning with nested cross-validation, focusing on metrics like PDR and throughput.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of ensuring reliable and low-latency communication in connected vehicles, which is critical for intelligent transportation systems.",
+        "The motivation is to enhance V2X communication by accurately predicting network conditions, enabling proactive optimization and adaptation of V2X applications.",
+        "The authors argue that existing literature lacks ML deployment with nested cross-validation, which prevents information leakage and overfitting, making their approach novel and necessary.",
+        "The problem is linked to broader challenges in 5G and B5G networks, emphasizing the need for robust QoS prediction in dynamic vehicular environments.",
+        "The paper contributes to the fields of wireless communication, machine learning, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include NR-V2X, QoS prediction, and nested cross-validation.",
+        "The logical relationship involves using ML methods to predict QoS metrics in V2X communications, validated through nested cross-validation to ensure robustness.",
+        "Key assumptions include the suitability of tabular data for conventional ML methods and the effectiveness of nested cross-validation in preventing overfitting.",
+        "The paper contributes a novel methodology for QoS prediction in V2X communications, advancing both research and practical applications."
+      ],
+      "Methodology": [
+        "The core methods include SVR, ANN, GBR, RF, LGBM, and CBR, with nested cross-validation for robust model evaluation.",
+        "The novelty lies in the use of nested cross-validation to prevent information leakage, enhancing the reliability of predictions.",
+        "The dataset is sourced from simulations using SUMO and 5G-LENA, pre-processed to remove duplicates and missing values, and normalized for specific methods.",
+        "Experimental design is rigorous, with 8-fold outer and 6-fold inner cross-validation, and evaluation metrics include MAE, RMSE, and R2 score.",
+        "The research follows a machine learning paradigm, focusing on empirical validation and comparative analysis of methods."
+      ],
+      "Results": [
+        "RF performs best in MAE metrics for throughput and PDR predictions, while CBR leads in RMSE for throughput and GBR for PDR.",
+        "Results are significant and reliable, with ensemble methods consistently outperforming ANN and SVR, demonstrating the robustness of the nested cross-validation approach."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the importance of QoS in V2X, reviews existing methods, introduces the novel nested cross-validation approach, and validates it through experiments.",
+        "Key steps include problem definition, methodology description, experimental validation, and comparative analysis.",
+        "Strengths include the novel use of nested cross-validation and comprehensive comparison of ML methods. Weaknesses include dataset size limitations, which the authors acknowledge and suggest addressing in future work."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel nested cross-validation approach and robust performance of ensemble methods.",
+        "Limitations include dataset size and the suitability of tabular data for conventional ML methods, which may not leverage advanced deep learning techniques.",
+        "The choice of ML paradigm constrains the conclusions to empirical validation, potentially overlooking theoretical insights."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on QoS prediction in V2X, emphasizing the novelty of nested cross-validation.",
+        "Terminology is technical and specific to ML and V2X, with a formal tone and empirical focus.",
+        "Citations build authority by referencing prior work in V2X and ML, supporting the novelty and necessity of the proposed approach."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that nested cross-validation with ensemble ML methods provides robust QoS prediction in NR-V2X, with RF, GBR, and CBR performing best.",
+        "Future research should expand the dataset and explore advanced ML methods, with practical implications for real-time V2X deployment."
+      ]
+    }
+  }
+}

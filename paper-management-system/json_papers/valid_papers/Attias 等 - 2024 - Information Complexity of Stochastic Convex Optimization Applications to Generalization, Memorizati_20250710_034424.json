@@ -1,0 +1,84 @@
+{
+  "file_name": "Attias 等 - 2024 - Information Complexity of Stochastic Convex Optimization Applications to Generalization, Memorizati.pdf",
+  "generated_at": "2025-07-10 03:44:24",
+  "structured_info": {
+    "title_cn": "随机凸优化的信息复杂度：泛化、记忆和追踪的应用",
+    "title_en": "Information Complexity of Stochastic Convex Optimization: Applications to Generalization, Memorization, and Tracing",
+    "category": "Machine Learning",
+    "topics": [
+      "Stochastic Convex Optimization",
+      "Generalization",
+      "Memorization",
+      "Conditional Mutual Information",
+      "Information Complexity"
+    ],
+    "keywords": [
+      "Stochastic Convex Optimization",
+      "Generalization",
+      "Memorization",
+      "Conditional Mutual Information",
+      "Information Complexity",
+      "Learning Algorithms"
+    ],
+    "abstract": "In this work, we investigate the interplay between memorization and learning in the context of stochastic convex optimization (SCO). We define memorization via the information a learning algorithm reveals about its training data points. We then quantify this information using the framework of conditional mutual information (CMI) proposed by Steinke and Zakynthinou [SZ20]. Our main result is a precise characterization of the tradeoff between the accuracy of a learning algorithm and its CMI, answering an open question posed by Livni [Liv23]. We show that, in the L2 Lipschitz bounded setting and under strong convexity, every learner with an excess error ε has CMI bounded below by Ω(1/ε²) and Ω(1/ε), respectively. We further demonstrate the essential role of memorization in learning problems in SCO by designing an adversary capable of accurately identifying a significant fraction of the training samples in specific SCO problems. Finally, we enumerate several implications of our results, such as a limitation of generalization bounds based on CMI and the incompressibility of samples in SCO problems.",
+    "methodology": "Information-theoretic analysis using conditional mutual information (CMI) to quantify memorization; fingerprinting lemmas from privacy literature to establish lower bounds; construction of adversarial distributions for memorization proofs; theoretical proofs for CMI-accuracy tradeoffs in Lipschitz-bounded and strongly convex SCO settings.",
+    "conclusion": "A fundamental tradeoff exists between the accuracy of a learning algorithm and its conditional mutual information (CMI): achieving excess error ε requires Ω(1/ε²) CMI in Lipschitz-bounded SCO and Ω(1/ε) under strong convexity. Memorization is necessary for learning in SCO, as demonstrated by an adversary that identifies training samples. CMI-based generalization bounds are vacuous for optimal SCO algorithms, and constant-sized sample compression schemes are impossible for SCO.",
+    "authors": [
+      "Idan Attias",
+      "Gintare Karolina Dziugaite",
+      "Mahdi Haghifam",
+      "Roi Livni",
+      "Daniel M. Roy"
+    ],
+    "publication_year": "2024",
+    "venue": "International Conference on Machine Learning (ICML)",
+    "doi": "",
+    "bibtex_citation": "Attias_Information_2024",
+    "analysis": {
+      "Overview": "The paper investigates the interplay between memorization and generalization in stochastic convex optimization (SCO) using information-theoretic measures. It establishes a tradeoff between algorithm accuracy and conditional mutual information (CMI), demonstrating that high accuracy necessitates significant memorization, quantified via CMI.",
+      "Background_and_Motivation": [
+        "The relationship between generalization and memorization in machine learning remains incompletely characterized, with modern overparameterized models (e.g., deep neural networks) achieving strong generalization despite memorizing data.",
+        "To address whether memorization is necessary for learning and to resolve an open question by Livni (2023) on the information complexity of ε-learners in SCO.",
+        "The authors argue that understanding this tradeoff is urgent due to the empirical success of memorization-dependent models and theoretical gaps in explaining generalization.",
+        "The specific problem of memorization in SCO is linked to broader challenges in understanding generalization, particularly in overparameterized regimes where dimension-independent sample complexity is achievable.",
+        "Contributes to machine learning, optimization, and information theory, with implications for statistical learning theory and privacy."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Conditional Mutual Information (CMI): Measures information leaked about training samples; (2) ε-learner: An algorithm achieving excess error ≤ ε with high probability; (3) Memorization: Defined via an adversary's ability to identify training samples.",
+        "CMI quantifies memorization, and low excess error implies high CMI. This tradeoff is inherent and unavoidable in SCO.",
+        "Key assumptions: Loss functions are convex, Lipschitz, and/or strongly convex; data is i.i.d.; problem domains are high-dimensional.",
+        "The paper provides foundational theoretical contributions by characterizing fundamental limits (lower bounds) on CMI for SCO, introducing a memorization framework, and revealing limitations of existing generalization bounds."
+      ],
+      "Methodology": [
+        "Uses CMI to quantify memorization; employs fingerprinting lemmas from differential privacy to prove information-theoretic lower bounds; constructs adversarial distributions and SCO problem instances for tight bounds.",
+        "The fingerprinting-based approach is novel for SCO and provides tight, non-asymptotic bounds. The methodology is applicable to both proper and improper learners.",
+        "Data sources: Synthetic distributions over {±1/√d}^d for lower-bound constructions. Data characteristics include bounded support and product distributions. Preprocessing is not applicable; representativeness is ensured via adversarial design.",
+        "Theoretical proofs replace empirical evaluation; experimental design focuses on mathematical rigor. Evaluation metrics include CMI, excess error, and adversary recall rates.",
+        "Follows the information-theoretic and statistical learning theory paradigms, emphasizing minimax lower bounds and information leakage, which constrains the analysis to mutual-information-based generalization."
+      ],
+      "Results": [
+        "For Lipschitz-bounded SCO, every ε-learner has CMI ≥ Ω(1/ε²); under strong convexity, CMI ≥ Ω(1/ε). An adversary identifies Ω(1/ε²) (or Ω(1/ε)) training samples with high confidence.",
+        "Results are significant as they resolve an open problem, prove memorization is necessary for learning, and expose vacuity in CMI generalization bounds. Reliability is ensured via matching upper bounds and rigorous proofs."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Defines CMI and memorization; proves CMI lower bounds via fingerprinting; designs an adversary for memorization; derives implications for generalization bounds and compression schemes.",
+        "Key steps: (1) Relate learner output to data correlations; (2) Apply fingerprinting lemmas to lower-bound CMI; (3) Construct adversary using CMI framework; (4) Extend results to sample compression and individual-sample CMI.",
+        "Strengths: Tight bounds, generality across problem classes. Weaknesses: Dimensionality requirements in constructions. Authors address rebuttals by proving tightness and providing adversarial examples."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First precise CMI-accuracy tradeoff for SCO; resolves Livni's open question; demonstrates memorization necessity; exposes limitations in CMI generalization bounds.",
+        "Methodology boundaries: Lower bounds require high dimensionality; results specific to convex losses. Extensions to non-convex settings are unexplored.",
+        "The information-theoretic paradigm constrains conclusions to mutual information, potentially overlooking other generalization mechanisms."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the paper as resolving a key open problem (Livni, 2023) and challenging the sufficiency of CMI for explaining generalization in SCO.",
+        "Uses formal terminology (e.g., 'tradeoff,' 'lower bound,' 'adversary'); adopts a technical tone; employs rhetorical strategies like contrasting classical memorization views with modern deep learning successes.",
+        "Builds authority through extensive citations (e.g., Steinke and Zakynthinou for CMI, Livni for open questions) and by deriving implications that question existing generalization frameworks."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: High-accuracy learning in SCO requires high CMI (memorization); CMI-based generalization bounds are vacuous for optimal learners; constant-size sample compression schemes are impossible; memorization is quantifiable via adversaries.",
+        "Future work: Extend to non-convex problems (e.g., deep learning); explore alternative information measures; investigate practical implications for algorithm design and privacy."
+      ]
+    }
+  }
+}

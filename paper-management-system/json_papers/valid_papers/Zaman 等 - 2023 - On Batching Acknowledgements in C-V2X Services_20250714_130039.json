@@ -1,0 +1,84 @@
+{
+  "file_name": "Zaman 等 - 2023 - On Batching Acknowledgements in C-V2X Services.pdf",
+  "generated_at": "2025-07-14 13:00:39",
+  "structured_info": {
+    "title_cn": "关于C-V2X服务中批量确认的研究",
+    "title_en": "On Batching Acknowledgements in C-V2X Services",
+    "category": "Vehicular Communication",
+    "topics": [
+      "Cellular V2X",
+      "Vehicular Networks",
+      "Infrastructure-assisted Services"
+    ],
+    "keywords": [
+      "Batching",
+      "Cellular-V2X",
+      "Infrastructure-assisted tolling",
+      "intelligent transportation",
+      "service",
+      "transaction",
+      "V2I",
+      "queue management"
+    ],
+    "abstract": "Cellular Vehicle-to-Everything (C-V2X) is a frontier in the evolution of distributed communication introduced in 3GPP release 14 to advanced use cases. While research efforts continue to optimize the accessible bandwidth for transportation ecosystem, a bottom up analysis from the application layer perspective is necessary prior to deployment, as it can expose potential issues that can emerge in a dynamic road environment. This emphasizes on assessing the network using application- oriented metrics to evaluate its capacity of providing advanced vehicular services with stringent latency and throughput require- ments. C-V2X enables advanced applications like autonomous driving and on-the-go transaction services where consecutive exchange of messages is required. For such services, the network level metrics fails to capture the edge case service quality as they express an average measure of performance. In this paper, we present an application-oriented analysis of a transaction service built on C-V2X protocol. We analyze different design choices that affects quality of service both from network-oriented and user-centric metrics and we highlight the issues regarding packet dissemination from infrastructures for vehicle-to-infrastructure (V2I) based service applications. We also present our study on the impact of batching in disseminating acknowledgement packets (ACK) and its consequence on both the service reliability and network congestion. Our results show that time-sensitive and mission-sensitive vehicular applications should aim for a balance between achieving the mission utility in shortest duration impact on the system-wide possible, while keeping minimal stability.",
+    "methodology": "The paper presents an application-oriented analysis of a transaction service built on C-V2X protocol, focusing on different design choices affecting quality of service. It includes experimental setups with varying traffic flow rates and batch sizes for ACK packets.",
+    "conclusion": "The study concludes that infrastructure-based communication services should avoid static batching policies for acknowledgement packets. Instead, adaptive schemes adjusting to traffic conditions ensure quality of service. It also highlights issues with medium access for aperiodic packets and coexistence of multi-priority packets in C-V2X networks.",
+    "authors": [
+      "Mahdi Zaman",
+      "Md Saifuddin",
+      "Mahdi Razzaghpour",
+      "Yaser Fallah",
+      "Jayanthi Rao"
+    ],
+    "publication_year": "2023",
+    "venue": "arXiv preprint",
+    "doi": "arXiv:2303.06696v1",
+    "bibtex_citation": "Zaman_On_2023",
+    "analysis": {
+      "Overview": "The paper presents an application-oriented analysis of a transaction service in C-V2X networks, focusing on the impact of batching ACK packets on service reliability and network congestion.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of providing reliable and low-latency communication in vehicular environments using C-V2X.",
+        "The motivation is to optimize the quality of service for advanced vehicular applications like autonomous driving and transaction services.",
+        "The authors argue that network-level metrics fail to capture edge-case service quality, necessitating an application-oriented evaluation.",
+        "The study relates specific issues in C-V2X services to broader challenges in vehicular communication, emphasizing the need for adaptive solutions.",
+        "The paper contributes to vehicular communication, intelligent transportation systems, and network performance optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include batching ACK packets, service completion time (SCT), and packet error rate (PER).",
+        "The logical relationship involves how batching affects SCT and PER, influencing overall service reliability.",
+        "Key assumptions include the use of distributed mode (mode-4) communication and the prioritization of safety messages over service messages.",
+        "The paper contributes empirical insights into optimizing ACK batching for better service performance in C-V2X networks."
+      ],
+      "Methodology": [
+        "The core methods include simulation-based experiments with varying traffic flow rates and batch sizes for ACK packets.",
+        "The novelty lies in the application-oriented evaluation, focusing on user-centric metrics like SCT.",
+        "Data sources include simulated vehicular traffic scenarios with varying densities. Preprocessing involves configuring traffic flow rates and batch sizes.",
+        "Experimental design includes rigorous testing across different traffic conditions, with evaluation metrics like SCT, PER, and attempt count.",
+        "The research follows the 3GPP C-V2X standards, influencing the focus on distributed communication and resource allocation."
+      ],
+      "Results": [
+        "Key results show that batching ACK packets can reduce network congestion but may increase service completion time for some vehicles.",
+        "The results are significant for designing adaptive batching policies, though reliability depends on traffic conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the limitations of network-level metrics, proceeds to experimental validation, and concludes with recommendations for adaptive batching.",
+        "Key steps include defining performance metrics, simulating scenarios, and analyzing results.",
+        "Strengths include comprehensive testing across traffic conditions. Weaknesses include reliance on simulations without real-world validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the application-oriented approach and detailed analysis of batching impacts.",
+        "Limitations include the simulation-based methodology and assumptions about traffic behavior.",
+        "The focus on 3GPP standards may constrain the applicability to other communication paradigms."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper contributes to ongoing discourse on optimizing C-V2X for advanced services.",
+        "Terminology includes technical terms like SCT, PER, and CBR, with a formal tone.",
+        "Citations build authority by referencing 3GPP standards and prior research in vehicular networks."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions advocate for adaptive batching policies in C-V2X services.",
+        "Future research should explore real-world validation and integration with other vehicular communication technologies."
+      ]
+    }
+  }
+}

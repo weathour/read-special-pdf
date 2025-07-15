@@ -1,0 +1,82 @@
+{
+  "file_name": "Davoodi 等 - 2023 - Machine-learning predictions of solubility and residual trapping indexes of carbon dioxide from glob.pdf",
+  "generated_at": "2025-07-10 02:47:09",
+  "structured_info": {
+    "title_cn": "基于机器学习的全球地质封存点二氧化碳溶解度和残余捕获指数预测",
+    "title_en": "Machine-learning predictions of solubility and residual trapping indexes of carbon dioxide from global geological storage sites",
+    "category": "Machine Learning",
+    "topics": [
+      "Geological Carbon Storage",
+      "Machine Learning Applications",
+      "Environmental Sustainability"
+    ],
+    "keywords": [
+      "Machine learning",
+      "Geological carbon dioxide storage",
+      "Solubility trapping index",
+      "Residual trapping index",
+      "Least square support vector machine"
+    ],
+    "abstract": "This study models the solubility trapping index (STI) and residual trapping index (RTI) of CO2 in saline aquifers by applying four robust machine learning (ML) and deep learning (DL) algorithms. Extreme learning machine (ELM), least square support vector machine (LSSVM), general regression neural network (GRNN), and convolutional neural network (CNN) are applied to 6811 compiled simulation records. The LSSVM model delivered the lowest RMSE values (0.0043 for STI and 0.0105 for RTI) and highest prediction scores, establishing it as the most credible model. Key influential variables include time elapsed (strongest for STI) and injection rate (strongest for RTI). The approach enables rapid feasibility assessments for geological CO2 storage projects.",
+    "methodology": "Four ML/DL algorithms (ELM, LSSVM, GRNN, CNN) were applied to predict STI and RTI using 8 input variables (porosity, permeability, thickness, salinity, depth, residual gas saturation, injection rate, time elapsed). Data from 6811 simulation records was normalized, split 80:20 for training/testing, and evaluated using RMSE, R², and AARE metrics. Model parameters were optimized via trial-and-error sensitivity analysis.",
+    "conclusion": "LSSVM outperformed other models with RMSE 0.0043 (STI) and 0.0105 (RTI). Time elapsed and injection rate were most influential for STI and RTI respectively. The framework enables efficient CO2 storage feasibility assessments without complex simulations.",
+    "authors": [
+      "Shadfar Davoodi",
+      "Hung Vo Thanh",
+      "David A. Wood",
+      "Mohammad Mehrad",
+      "Valeriy S. Rukavishnikov",
+      "Zhenxue Dai"
+    ],
+    "publication_year": "2023",
+    "venue": "Expert Systems with Applications",
+    "doi": "https://doi.org/10.1016/j.eswa.2023.119796",
+    "bibtex_citation": "Davoodi_Machine-learning_2023",
+    "analysis": {
+      "Overview": "The paper applies ML/DL algorithms to predict CO2 trapping efficiency in saline aquifers for geological carbon storage, addressing computational efficiency gaps in traditional reservoir simulations.",
+      "Background_and_Motivation": [
+        "Anthropogenic CO2 emissions drive climate change, requiring solutions like geological CO2 storage (GCS) for emission reduction.",
+        "Existing reservoir simulations for trapping efficiency assessment are computationally intensive and time-consuming.",
+        "Urgency stems from global net-zero goals requiring rapid site feasibility tools; ML avoids complex simulations.",
+        "Specific trapping efficiency prediction is linked to broader GCS success through secure long-term carbon containment.",
+        "Contributes to machine learning, environmental engineering, and geoscience disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: Solubility Trapping Index (mass dissolved CO2/injected CO2), Residual Trapping Index (mass residually trapped CO2/injected CO2), ML surrogate modeling.",
+        "Variables influence trapping mechanisms; ML maps input parameters to trapping indexes via learned relationships.",
+        "Assumes compiled data represents real aquifers; trapping mechanisms dominate storage security; input variables are sufficient.",
+        "Provides empirical ML framework for fast trapping efficiency prediction, advancing GCS project screening capabilities."
+      ],
+      "Methodology": [
+        "ELM, LSSVM, GRNN, CNN models trained on 6811 records with 8 geological/operational variables. Data normalized and split 80:20.",
+        "LSSVM's RBF kernel novelty validated; applicability shown through diverse global datasets; normalization ensures rational input scaling.",
+        "Data compiled from 32 published studies; variables span realistic ranges; preprocessing included normalization and outlier removal via Williams plot.",
+        "Rigorous experimental design: hyperparameter tuning, statistical metrics (RMSE/R²/AARE), score analysis, and noise-based robustness testing.",
+        "Follows data-driven ML paradigm, prioritizing predictive accuracy over physical modeling, influencing solution-focused research perspective."
+      ],
+      "Results": [
+        "LSSVM achieved best performance: RMSE 0.0043 (STI), 0.0105 (RTI); 93% of predictions within applicability domain.",
+        "Results are significant for rapid site screening; reliability confirmed via error distribution analysis and robustness to input noise."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: Problem significance → ML solution → model comparison → optimal model validation → practical implications.",
+        "Key steps: Data justification → methodology selection → performance benchmarking → sensitivity analysis → applicability verification.",
+        "Strengths: Comprehensive model comparison and large dataset. Addressed CNN underperformance via robustness analysis and score metrics."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: High LSSVM accuracy; multi-field dataset generalizability; computational efficiency versus simulations.",
+        "Methodology limited to variable ranges in training data; cannot predict complex stratigraphic trapping beyond indexes.",
+        "Data-driven approach constrains extrapolation; assumes trapping mechanisms are primary containment factors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions ML as essential for GCS advancement; contrasts with simulation-heavy prior work through computational efficiency claims.",
+        "Technical terminology (e.g., 'residual trapping', 'kernel functions'); persuasive strategies emphasizing model scores and real-field applicability.",
+        "Authority built via 56 citations; motivations include filling gaps in multi-field data modeling and DL/ML comparisons for trapping indexes."
+      ],
+      "Conclusions_and_Implications": [
+        "LSSVM optimally predicts STI/RTI; time elapsed and injection rate are dominant variables; framework enables rapid GCS feasibility analysis.",
+        "Future work: Expand dataset complexity; test hybrid ML models; develop predictions for additional trapping mechanisms."
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "file_name": "Khattak 等 - 2023 - Impact of Communications Delay on Safety and Stability of Connected and Automated Vehicle Platoons.pdf",
+  "generated_at": "2025-07-11 03:26:07",
+  "structured_info": {
+    "title_cn": "通信延迟对网联自动驾驶车辆队列安全性与稳定性的影响：来自实验数据的实证证据",
+    "title_en": "Impact of Communications Delay on Safety and Stability of Connected and Automated Vehicle Platoons: Empirical Evidence From Experimental Data",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicle Platooning",
+      "Communication Delay",
+      "Driving Volatility",
+      "Cooperative Adaptive Cruise Control",
+      "Traffic Safety"
+    ],
+    "keywords": [
+      "Connectivity and automation",
+      "communication delay",
+      "switching regime",
+      "volatility",
+      "platoon safety and stability"
+    ],
+    "abstract": "Advances in communications and sensing technology have enabled the development of cooperative ITS technologies such as connected and automated vehicle (CAV) applications including adaptive cruise control (ACC) and cooperative adaptive cruise control (CACC) that could perform driving tasks with little human feedback. However, there are some key concerns and knowledge gaps regarding the impact of delay in communicated messages on CAV platoon safety and stability. This study contributes by analyzing the impact of delay while controlling for other factors on CAV platoon safety and stability using the concept of driving volatility. Real-world experimental data from a field test were used to examine the lead vehicle (LV) and following vehicles (FVs) behavior in a five-vehicle platoon with multiple scenarios by developing switching regime models. Results show that CACC reduces volatility in both LV and FVs compared to ACC system which can be attributed to the vehicular communication and motion synchronization of CACC. However, delay is observed to increase the likelihood of volatility and contribute to instability of platoons. FVs have more volatile behavior as compared to LV since the instability is transmitted through the string of the platoon. Further, Bayesian model reveals that a unit increase in delay is observed to increase the collision risk by 4%. Other confounding factors such as disengagement and ACC override contribute to higher volatility of platoon while the likelihood of high volatility in both LV and FVs decreases with increases in gap to the preceding vehicle. The risk of collision is expected to increase by 6.2% in response to a unit increase in disengagements. Likewise, ACC override increases the risk of collisions by 5.4%. These results have practical implications for considering delays in CAV performance analysis and for designing robust CACC algorithms with minimum delays in the future.",
+    "methodology": "Switching regime models and Bayesian Poisson-lognormal framework applied to real-world experimental data from field tests with five-vehicle platoons. Driving volatility (measured via mean absolute deviation and coefficient of variation) used as a surrogate for safety and stability. Controlled for confounding factors including disengagement, ACC override, and gap distance.",
+    "conclusion": "CACC reduces platoon volatility compared to ACC, but communication delays increase volatility and collision risk (4% per delay unit). Following vehicles exhibit higher volatility than lead vehicles due to instability propagation. Disengagements and ACC overrides significantly increase collision risk (6.2% and 5.4% respectively). Gap distance reduces volatility likelihood.",
+    "authors": [
+      "ZULQARNAIN H. KHATTAK",
+      "JACKELINE RIOS-TORRES",
+      "MICHAEL D. FONTAINE"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2023.3324056",
+    "bibtex_citation": "Khattak_Impact_2023",
+    "analysis": {
+      "Overview": "Investigates how communication delays affect safety and stability in connected automated vehicle platoons using real-world experimental data and volatility metrics.",
+      "Background_and_Motivation": [
+        "CAVs can reduce traffic oscillations but face communication reliability challenges in unpredictable environments.",
+        "To quantify how message transmission delays impact platoon stability and collision risk using empirical evidence.",
+        "Delays degrade CACC performance and may cause safety-critical failures, yet real-world impacts remain understudied.",
+        "Links micro-level delay effects to macro-level platoon instability, emphasizing safety implications for CAV deployment.",
+        "Transportation engineering, control systems, and data science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Driving Volatility: Surrogate measure for safety/stability via acceleration-deceleration variations.",
+          "Communication Delay: Time from message transmission to receipt.",
+          "Platoon Instability: Propagation of erratic vehicle behavior through follower vehicles."
+        ],
+        "Delays → Increased volatility → Reduced platoon stability → Higher collision risk.",
+        "Volatility accurately reflects safety risks; experimental data represents real-world conditions; switching regimes capture LV-FV behavioral differences.",
+        "Empirical validation of delay impacts using novel volatility metrics and real-world data, advancing CAV safety assessment."
+      ],
+      "Methodology": [
+        "Field experiments with five-vehicle platoons under ACC/CACC scenarios; switching regime models to address LV-FV heterogeneity; Bayesian analysis for collision risk.",
+        "Novel application of volatility metrics to platoon dynamics; methodologically robust for capturing delay impacts; accounts for unobserved heterogeneity via Bayesian priors.",
+        "600K observations at 20Hz from 72 test runs on a 4.5-mile track. Data smoothed via moving averages. Limited by small fleet size but enhanced by sensor fusion (GPS/IMU).",
+        "Rigorous scenario design (ACC/hybrid/CACC); volatility and Time-to-Collision as primary metrics; controls for confounders like disengagement.",
+        "Data-driven approach without explicit theoretical alignment; focuses on empirical patterns over control theory."
+      ],
+      "Results": [
+        "CACC reduces volatility by 20-30% vs ACC; 0.08s delay increases FV volatility by 3.2%; delay increases collision risk by 4.2% per unit; disengagements raise collision risk by 5.8%.",
+        "Statistically significant via switching regime models (p<0.01); results consistent across volatility measures; validated against simulation literature."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem (delay) → Data (experiments) → Modeling (volatility/risk) → Validation (comparisons) → Implications (design).",
+        "1) Establish delay as critical variable → 2) Show volatility as stability proxy → 3) Quantify delay-volatility relationship → 4) Link volatility to collision risk → 5) Control confounders.",
+        "Strength: Causal chain from delay to risk via volatility; controls for unobserved heterogeneity. Weakness: Limited generalizability due to small-scale experiments. Rebuttals: Acknowledge fleet size limits but highlight rarity of field data."
+      ],
+      "Strengths_and_Limitations": [
+        "First real-world evidence of delay impacts; innovative volatility metrics; robust modeling of LV-FV dynamics.",
+        "Test track not fully representative; small vehicle cohort; omits AoI (Age of Information) analysis.",
+        "Data-driven paradigm constrains theoretical insights into control system dynamics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions itself as bridging simulation-reality gap in CAV safety literature.",
+        "Technical terms (volatility, switching regimes); authoritative tone; contrasts with prior simulation studies to highlight novelty.",
+        "Cites 38 works to contextualize delay problem; uses GCDC challenges to establish experimental benchmarks."
+      ],
+      "Conclusions_and_Implications": [
+        "Delays increase platoon volatility and collision risk; FVs are more vulnerable; CACC outperforms ACC but remains delay-sensitive.",
+        "Test larger fleets in mixed traffic; integrate AoI; study driver-vehicle interaction during disengagements; develop delay-resistant CACC algorithms."
+      ]
+    }
+  }
+}

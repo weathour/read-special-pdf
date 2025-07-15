@@ -1,0 +1,79 @@
+{
+  "file_name": "Rivinius - 2025 - MPC with Publicly Identifiable Abort from Pseudorandomness and Homomorphic Encryption.pdf",
+  "generated_at": "2025-07-10 02:58:21",
+  "structured_info": {
+    "title_cn": "基于伪随机性和同态加密的具有公开可识别中止的安全多方计算",
+    "title_en": "MPC with Publicly Identifiable Abort from Pseudorandomness and Homomorphic Encryption",
+    "category": "Cryptography",
+    "topics": [
+      "Secure Multiparty Computation",
+      "Identifiable Abort",
+      "Outsourced Computation"
+    ],
+    "keywords": [
+      "Publicly Identifiable Abort",
+      "Secure Multiparty Computation",
+      "Homomorphic Encryption",
+      "Pseudorandomness",
+      "Outsourced Computation"
+    ],
+    "abstract": "Publicly identifiable abort is a critical feature for ensuring accountability in outsourced computations using secure multiparty computation (MPC). Despite its importance, no prior work has specifically addressed identifiable abort in the context of outsourced computations. In this paper, we present the first MPC protocol that supports publicly identifiable abort with minimal overhead for external clients. Our approach minimizes client-side computation by requiring only a few pseudorandom function evaluations per input. On the server side, the verification process involves lightweight linear function evaluations using homomorphic encryption. This results in verification times of a few nanoseconds per operation for servers, with client overhead being approximately two orders of magnitude lower. Additionally, the public verifiability of our protocol reduces client input output costs compared to SPDZ-based protocols, on which we base our protocol. For example, in secure aggregation use cases, our protocol achieves over twice the efficiency during the offline phase and up to an 18× speedup in the online phase, significantly outperforming SPDZ.",
+    "methodology": "Novel combination of pseudorandom functions (PRFs) and homomorphic encryption (HE) to achieve publicly identifiable abort; client-server MPC architecture with lightweight clients; authenticated secret-sharing with global MAC keys; multi-stage verification protocol.",
+    "conclusion": "The proposed MPC protocol achieves publicly identifiable abort for outsourced computations with minimal client overhead (nanosecond-scale verification). It outperforms SPDZ by 2-18× in key scenarios and enables public accountability through efficient cryptographic techniques.",
+    "authors": [
+      "Marc Rivinius"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT 2025",
+    "doi": "10.1007/978-3-031-91092-0_10",
+    "bibtex_citation": "Rivinius_MPC_2025",
+    "analysis": {
+      "Overview": "Presents the first MPC protocol for outsourced computations with publicly identifiable abort, combining pseudorandomness and homomorphic encryption to minimize client overhead while ensuring accountability.",
+      "Background_and_Motivation": [
+        "Rising computational demands in fields like machine learning necessitate outsourced computations, but privacy and correctness concerns persist.",
+        "Existing MPC protocols lack publicly verifiable identifiable abort, limiting accountability in client-server settings.",
+        "Without identifiable abort, malicious servers face no consequences for sabotage, hindering real-world adoption in sensitive applications.",
+        "The protocol bridges the gap between MPC theory and practical outsourced computation needs by introducing efficient public verifiability.",
+        "Cryptography, secure computation, and distributed systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Publicly Identifiable Abort: Security property enabling public identification of malicious parties causing protocol abortion.",
+        "Authenticated Secret-Sharing: Augments shares with globally verifiable MACs using PRFs and HE.",
+        "Multi-Stage Verification: Stepwise key revelation for efficient, parallelizable validation.",
+        "MACs authenticate shares via linear relationships; HE enables oblivious tag generation; verification leverages key decommitment.",
+        "Adversarial model assumes malicious majority; cryptographic hardness of PRFs/HE; authenticated channels.",
+        "Novel protocol construction advancing MPC's functionality-efficiency tradeoff for accountable outsourced computation."
+      ],
+      "Methodology": [
+        "PRF-based MACs with homomorphic encryption for tag generation; client-server optimized SPDZ variant; UC security proofs.",
+        "Global MAC keys reduce complexity vs. pairwise schemes; deferred verification minimizes ZKP usage; symmetric encryption prevents tag leakage.",
+        "No external datasets; preprocessing material (masks/triples) generated via cryptographic protocols; pseudorandomness ensures representativity.",
+        "Asymptotic complexity analysis (communication/computation); nanosecond-scale benchmarks; comparison to SPDZ/Overdrive.",
+        "Follows SPDZ's arithmetic circuit paradigm; UC framework ensures composability and formalizes identifiable abort."
+      ],
+      "Results": [
+        "Server verification: 19-34ns/op; client verification: 0.384-1ns/input; 2-4× slower than non-identifiable protocols (vs. 4-18× in prior work); 2.3× faster preprocessing and 18× online speedup in aggregation use cases.",
+        "Efficiency gains statistically significant via implementation; robustness validated through UC security proof; results generalize to arithmetic circuits."
+      ],
+      "Argumentation_and_Logic": [
+        "1. Motivate need for identifiable abort in outsourcing → 2. Review prior limitations → 3. Introduce cryptographic innovations → 4. Prove security → 5. Validate efficiency.",
+        "Problem significance → Technical novelty (PRF/HE synergy) → Security reductions → Performance benchmarks → Superiority claims.",
+        "Strengths: Clear complexity comparisons; rebuts overhead concerns via nanosecond metrics. Weakness: HE dependency partially offset by parallelization."
+      ],
+      "Strengths_and_Limitations": [
+        "First practical outsourced-MPC with public identifiable abort; client efficiency; open-source implementation; asymptotic/complexity improvements.",
+        "HE usage limits scalability vs. symmetric-only protocols; output verification requires additional keys.",
+        "UC framework ensures strong security but necessitates PKI/authenticated channels."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as breakthrough in accountable outsourced computation; contrasts with SPDZ/BOS/CFY to highlight efficiency gains.",
+        "Technical lexicon (e.g., 'drowning encryption', 'Beaver triples'); authoritative tone; strategic citations to establish lineage (SPDZ) and differentiation (prior identifiable abort work).",
+        "Builds credibility via EUROCRYPT venue; citations contextualize contributions while underscoring gaps in related work."
+      ],
+      "Conclusions_and_Implications": [
+        "Protocol enables publicly accountable outsourced MPC with nanosecond-scale verification and significant speedups over SPDZ.",
+        "Extend to non-arithmetic computations; optimize HE operations; explore hardware acceleration; apply to federated learning/cloud services."
+      ]
+    }
+  }
+}

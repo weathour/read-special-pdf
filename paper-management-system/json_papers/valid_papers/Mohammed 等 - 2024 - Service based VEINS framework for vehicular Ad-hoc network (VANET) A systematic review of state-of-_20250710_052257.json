@@ -1,0 +1,88 @@
+{
+  "file_name": "Mohammed 等 - 2024 - Service based VEINS framework for vehicular Ad-hoc network (VANET) A systematic review of state-of-.pdf",
+  "generated_at": "2025-07-10 05:22:57",
+  "structured_info": {
+    "title_cn": "基于服务的车辆自组织网络（VANET）VEINS框架：最新技术的系统综述",
+    "title_en": "Service based VEINS framework for vehicular Ad hoc network (VANET): A systematic review of state of the art",
+    "category": "Vehicular Networks",
+    "topics": [
+      "VANET Simulations",
+      "VEINS Framework",
+      "Systematic Literature Review"
+    ],
+    "keywords": [
+      "VEINS Framework",
+      "VANET Service",
+      "VEINS solution",
+      "VEINS application",
+      "VEINS network"
+    ],
+    "abstract": "The state-of-the-art framework for VANETs, Vehicles in Network Simulation (VEINS), is primarily sparse and fragmented. The combination of VANETs and VEINS can improve road safety, efficiency, and user experience for connected and autonomous vehicles. This research examined existing trends and knowledge gaps to provide actionable insights for technical contexts and researchers. Therefore, this systematic literature evaluation was conducted to create a full classification of the article ecosystem. The literature applies the VEINS framework to simulate and evaluate in-vehicle personalized entertainment recommendations based on real-time traffic data and user preferences. We examine service metrics for VANET-integrated vehicle content exchange. Three databases were consulted throughout this study: Scopus, ScienceDirect, and IEEE Xplore. The databases had extensive VANET-related research built on the VEINS framework. Then, screening was completed based on the services considerations. The topic is thoroughly covered in this categorization. Taxonomy proposes categories and subcategories. The initial group includes papers discussing different aspects of VANET-based VEINS framework applications (35/98 total). The second group consists of pieces that focus on the solution (15/98 total). Network-related articles (48/98 total) make up the final section.",
+    "methodology": "Systematic Literature Review (SLR) using three databases (Scopus, ScienceDirect, IEEE Xplore) with keyword-based searches, multi-stage screening, and taxonomy-based classification. Inclusion/exclusion criteria applied to 640 initial papers, resulting in 280 analyzed studies.",
+    "conclusion": "VEINS framework enables VANET service simulation but has realism and scalability limitations. Research gaps exist in security, privacy, and real-world validation. Future directions include enhancing mobility models, integrating edge computing, and developing privacy-preserving protocols for practical deployment.",
+    "authors": [
+      "Badiea Abdulkarem Mohammed",
+      "Mahmood A. Al Shareeda",
+      "Abeer Abdullah Alsadhan",
+      "Zeyad Ghaleb Al Mekhlafi",
+      "Amer A. Sallam",
+      "Bassam Ali Al Qatab",
+      "Mohammad T. Alshammari",
+      "Abdulaziz M. Alayba"
+    ],
+    "publication_year": "2024",
+    "venue": "Peer-to-Peer Networking and Applications",
+    "doi": "10.1007/s12083-024-01692-0",
+    "bibtex_citation": "Mohammed_Service_2024",
+    "analysis": {
+      "Overview": "This systematic review analyzes the VEINS simulation framework's application in Vehicular Ad Hoc Networks (VANETs), focusing on service-oriented research. It classifies existing studies into a taxonomy, identifies knowledge gaps, and evaluates opportunities/challenges for safety, efficiency, and infotainment services.",
+      "Background_and_Motivation": [
+        "VANETs emerged in 2000 to address urban congestion and accidents but face security vulnerabilities and high deployment costs. Simulators like VEINS (integrating SUMO and OMNeT++) are essential for research yet underutilized.",
+        "To address fragmentation in VEINS-based VANET research by creating a unified taxonomy and identifying critical gaps in infotainment, network scalability, and security applications.",
+        "Authors highlight VEINS' rising adoption and untapped potential for connected/autonomous vehicles, emphasizing urgency due to real-world transportation challenges.",
+        "Specific problems (e.g., simulating large-scale deployments, real-time infotainment) are framed within broader challenges of intelligent transportation systems and 5G integration.",
+        "Contributes to computer networking, transportation engineering, and cybersecurity through interdisciplinary VANET research."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "VEINS Framework: Open-source simulator combining SUMO (traffic) and OMNeT++ (network) for VANET simulations.",
+          "VANET Services: Applications like infotainment, traffic control, and platooning enabled by vehicle-to-vehicle/infrastructure communication.",
+          "Taxonomy Classification: Three-tier structure (Application, Solution, Network) with subcategories for research categorization."
+        ],
+        "VEINS enables VANET service simulations → Services are categorized via taxonomy → Taxonomy reveals gaps → Guides future VEINS enhancements.",
+        "Assumes databases (Scopus, IEEE Xplore, ScienceDirect) comprehensively represent research; VEINS accurately models real-world VANET behavior; English publications suffice for state-of-the-art coverage.",
+        "Provides a structured knowledge organization system and gap analysis, advancing methodological rigor in VANET simulation research."
+      ],
+      "Methodology": [
+        "Systematic Literature Review (SLR) with keyword searches, multi-stage screening (title/abstract/full-text), and taxonomy-based classification. Data extracted from 280 papers.",
+        "SLR methodology is standard but effective for synthesis. Taxonomy novelty lies in service-oriented categorization. Rationality ensured via inclusion/exclusion criteria.",
+        "Data from Scopus (166 papers), IEEE Xplore (70), ScienceDirect (179). Covered 2011-2022. Preprocessing involved deduplication and relevance filtering. Representativeness limited by English-only sources and selected databases.",
+        "Rigorous three-stage screening with clear eligibility criteria. Evaluation metrics include paper counts per taxonomy category. No statistical validation beyond descriptive analysis.",
+        "Follows evidence-based research paradigm, emphasizing reproducibility. Network simulation perspective influences focus on technical over socio-economic factors."
+      ],
+      "Results": [
+        "Taxonomy results: Application (35 papers), Solution (15), Network (48). Subcategories include Entertainment (8), Fog Computing (6), Clustering Formation (16). Identified VEINS limitations in realism and scalability.",
+        "Results significant for mapping research distribution; reliability ensured by multi-reviewer process. Stability validated through database cross-comparison but constrained by simulation-artifact nature."
+      ],
+      "Argumentation_and_Logic": [
+        "1. Motivate review → 2. Describe SLR methodology → 3. Present taxonomy results → 4. Detail VEINS framework → 5. Discuss gaps → 6. Conclude with future directions.",
+        "Key steps: Problem significance → Methodology transparency → Empirical classification → Framework analysis → Gap validation → Research agenda.",
+        "Strengths: Clear logical flow, evidence-based claims. Weaknesses: Limited rebuttal to selection bias. Addressed limitations via future work recommendations."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive taxonomy; identification of understudied areas (privacy, ethics); practical VEINS extension analysis.",
+        "VEINS' idealized channel/mobility models limit real-world applicability; scalability constrained by computational resources.",
+        "Network simulation paradigm prioritizes technical metrics over human factors, restricting socio-technical insights."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational synthesis for VANET simulation research, bridging tool development and service optimization.",
+        "Technical terminology (e.g., 'EDCA queues', 'Rician K-Factor'); objective tone; rhetorical emphasis on research gaps.",
+        "Builds authority through 100+ citations demonstrating field coverage. Citation patterns reveal focus on simulation and networking literature."
+      ],
+      "Conclusions_and_Implications": [
+        "VEINS is vital but limited for VANET service research. Critical gaps exist in security, scalability, and real-world validation.",
+        "Enhance VEINS with realistic mobility models; integrate hardware-in-the-loop testing; develop privacy-by-design protocols; explore 5G-V2X integration."
+      ]
+    }
+  }
+}

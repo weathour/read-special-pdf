@@ -1,0 +1,85 @@
+{
+  "file_name": "Meng 等 - 2023 - PINN-FORM A new physics-informed neural network for reliability analysis with partial differential.pdf",
+  "generated_at": "2025-07-11 03:44:25",
+  "structured_info": {
+    "title_cn": "PINN-FORM：一种用于偏微分方程可靠性分析的新型物理信息神经网络",
+    "title_en": "PINN-FORM: A new physics-informed neural network for reliability analysis with partial differential equation",
+    "category": "Computational Mechanics",
+    "topics": [
+      "Structural Reliability Analysis",
+      "Physics-Informed Neural Networks",
+      "Partial Differential Equations"
+    ],
+    "keywords": [
+      "Reliability",
+      "Partial differential equations",
+      "First-order reliability method",
+      "Physics-informed neural network"
+    ],
+    "abstract": "The first-order reliability method (FORM) is commonly used in structural reliability analysis but faces computational challenges with complex limit state functions (LSFs), especially implicit partial differential equations (PDEs). This study introduces PINN-FORM, combining physics-informed neural networks (PINN) with FORM to avoid direct computation of structural responses. An adaptive weight strategy balances loss function components, enhancing accuracy. Five benchmark examples demonstrate PINN-FORM's effectiveness in predicting PDE solutions and reliability indices within a single training process.",
+    "methodology": "Developed PINN-FORM by integrating Physics-Informed Neural Networks (PINN) with the First-Order Reliability Method (FORM). Designed a novel loss function incorporating PDE residuals, boundary conditions, and FORM optimization objectives. Implemented an adaptive weight strategy to dynamically balance loss components during training. Validated through five benchmark cases including 2D/3D structures and steady/transient PDEs.",
+    "conclusion": "PINN-FORM effectively addresses reliability problems with implicit PDE-based limit state functions, eliminating direct computation of structural responses. The method reduces computational burden by solving reliability and PDEs simultaneously during training. Validation across five examples confirms high accuracy and zero function-call requirements compared to traditional methods.",
+    "authors": [
+      "Zeng Meng",
+      "Qiaochu Qian",
+      "Mengqiang Xu",
+      "Bo Yu",
+      "Ali Rıza Yıldız",
+      "Seyedali Mirjalili"
+    ],
+    "publication_year": "2023",
+    "venue": "Computer Methods in Applied Mechanics and Engineering",
+    "doi": "10.1016/j.cma.2023.116172",
+    "bibtex_citation": "Meng_PINN-FORM_2023",
+    "analysis": {
+      "Overview": "Proposes PINN-FORM, a hybrid method integrating Physics-Informed Neural Networks with the First-Order Reliability Method for efficient structural reliability analysis of systems governed by partial differential equations.",
+      "Background_and_Motivation": [
+        "Traditional FORM methods require repeated computation of complex PDE-based limit state functions, incurring prohibitive computational costs",
+        "Need for efficient reliability analysis of engineering systems with implicit PDE constraints where conventional methods fail",
+        "Prior surrogate methods (e.g., ANN) demand extensive training data, which is costly for physical systems",
+        "Physics-informed learning leverages known physical constraints to reduce data requirements while maintaining accuracy",
+        "Contributes to computational mechanics, structural reliability engineering, and physics-informed machine learning"
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Physics-Informed Neural Network (PINN): Deep learning framework incorporating PDE constraints into loss function",
+        "PINN-FORM: Novel integration of PINN with FORM reliability analysis",
+        "Adaptive Weight Strategy: Dynamically balances PDE satisfaction and reliability optimization objectives during training",
+        "PINN provides PDE solutions while FORM handles reliability mapping; adaptive weights mediate their interaction",
+        "Assumes PDEs governing physical systems are known and quantifiable; neural networks can approximate high-dimensional solutions",
+        "Provides methodological innovation by enabling single-training reliability assessment for PDE-constrained systems"
+      ],
+      "Methodology": [
+        "Augmented loss function combining PDE residuals (MSE_f), boundary conditions (MSE_u), limit state constraints (MSE_g), and FORM objective (UᵀU)",
+        "Novelty: First integration of PINN with reliability methods; adaptive weighting dynamically scales loss components based on magnitude",
+        "Data: Synthetic collocation points (5,000-10,000) and boundary points generated for PDE domains; representativeness ensured through spatial coverage",
+        "Validation: Rigorous comparison against MCS, HL-RF, and other reliability methods across five benchmark cases with quantitative error metrics",
+        "Follows physics-informed machine learning paradigm, leveraging known physical laws to constrain solution space"
+      ],
+      "Results": [
+        "Achieved <1% relative error in reliability indices across all 5 benchmarks while eliminating function calls",
+        "Simultaneously predicted PDE solutions (e.g., displacements, temperatures) and reliability indices",
+        "Results demonstrate stability across 2D/3D, steady/transient systems with maximum displacement/temperature errors <0.01% in critical regions"
+      ],
+      "Argumentation_and_Logic": [
+        "Premise: PINN can replace expensive PDE solvers; FORM provides reliability framework → Integration solves computational bottleneck",
+        "1) Characterize limitations of existing reliability methods → 2) Propose PINN-FORM architecture → 3) Develop adaptive weighting → 4) Validate across diverse benchmarks",
+        "Strengths: Clear ablation (adaptive weighting impact); weakness: Limited discussion on PINN training instability mitigation beyond convergence criterion",
+        "Addresses efficiency rebuttals by demonstrating zero function calls despite PINN's training costs"
+      ],
+      "Strengths_and_Limitations": [
+        "Eliminates direct PDE solving; handles high-order and transient PDEs; unified framework for reliability and physics simulation",
+        "Boundaries: Requires known PDE formulations; performance dependent on PINN convergence; oscillatory training behavior observed",
+        "Physics-informed paradigm constrains applicability to systems with quantifiable governing equations"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between computational mechanics and emerging ML techniques; cites seminal works in both domains",
+        "Technical terminology emphasizes mathematical rigor (e.g., U-space transformation, collocation points, loss function composition)",
+        "Authority built through: 1) Methodological innovation 2) Comprehensive validation 3) Citations of foundational PINN/reliability papers"
+      ],
+      "Conclusions_and_Implications": [
+        "PINN-FORM enables efficient reliability analysis for PDE-constrained systems without direct PDE solving",
+        "Future work: Address training instability; extend to stochastic PDEs; investigate real-time control applications"
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "file_name": "Malik 等 - 2021 - Collaborative Autonomous Driving—A Survey of Solution Approaches and Future Challenges.pdf",
+  "generated_at": "2025-07-10 04:55:50",
+  "structured_info": {
+    "title_cn": "协作式自动驾驶：解决方案方法与未来挑战综述",
+    "title_en": "Collaborative Autonomous Driving: A Survey of Solution Approaches and Future Challenges",
+    "category": "Autonomous Driving",
+    "topics": [
+      "Cooperative Driving",
+      "Platooning",
+      "Intersection Management"
+    ],
+    "keywords": [
+      "cooperative driving",
+      "collaboration",
+      "lane change",
+      "platooning",
+      "leader election"
+    ],
+    "abstract": "Sooner than expected, roads will be populated with a plethora of connected and autonomous vehicles serving diverse mobility needs. Rather than being stand-alone, vehicles will be required to cooperate and coordinate with each other, referred to as cooperative driving executing the mobility tasks properly. Cooperative driving leverages Vehicle to Vehicle (V2V) and Vehicle to Infrastructure (V2I) communication technologies aiming to carry out cooperative functionalities: (i) cooperative sensing and (ii) cooperative maneuvering. To better equip the readers with background knowledge on the topic, we firstly provide the detailed taxonomy section describing the underlying concepts and various aspects of cooperation in cooperative driving. In this survey, we review the current solution approaches in cooperation for autonomous vehicles, based on various cooperative driving applications, i.e., smart car parking, lane change and merge, intersection management, and platooning. The role and functionality of such cooperation become more crucial in platooning use-cases, which is why we also focus on providing more details of platooning use-cases and focus on one of the challenges, electing a leader in high-level platooning. Following, we highlight a crucial range of research gaps and open challenges that need to be addressed before cooperative autonomous vehicles hit the roads. We believe that this survey will assist the researchers in better understanding vehicular cooperation, its various scenarios, solution approaches, and challenges.",
+    "methodology": "Literature review and taxonomy development, analyzing solution approaches for cooperative driving applications such as smart car parking, lane change and merge, intersection management, and platooning, with a focus on leader election challenges. The methodology includes systematic searches of academic databases (e.g., IEEE Xplore, ACM Digital Library) using keywords like cooperative autonomous driving and platooning.",
+    "conclusion": "Cooperative driving is essential for enhancing traffic efficiency, safety, and reducing fuel consumption and emissions in autonomous vehicles. Key challenges include leader election in platooning, heterogeneous cooperation, communication reliability, and decision-making frameworks. Future work must address research gaps in multi-objective optimization, standardization, and trust mechanisms to enable real-world deployment.",
+    "authors": [
+      "Sumbal Malik",
+      "Manzoor Ahmed Khan",
+      "Hesham El-Sayed"
+    ],
+    "publication_year": "2021",
+    "venue": "Sensors",
+    "doi": "10.3390/s21113783",
+    "bibtex_citation": "Malik_Collaborative_2021",
+    "analysis": {
+      "Overview": "The paper surveys collaborative autonomous driving, focusing on taxonomy, solution approaches for applications like smart parking, lane change, intersection management, and platooning, with emphasis on leader election challenges. It identifies research gaps and future directions in vehicular cooperation.",
+      "Background_and_Motivation": [
+        "Addresses traffic problems such as congestion, accidents, and inefficiencies in transportation systems, exacerbated by urbanization and land scarcity.",
+        "Motivated by the need for autonomous vehicles to cooperate via V2V/V2I communication to enhance sensing, maneuvering, and decision-making, overcoming limitations of standalone systems.",
+        "Argues that cooperation is urgent to maximize road capacity (up to 20% via ITS), improve safety, and reduce costs, as current solutions are fragmented and insufficient for dynamic environments.",
+        "Links specific problems like platoon leader election to broader challenges in ITS, establishing significance through statistics on accidents and congestion costs.",
+        "Contributes to Intelligent Transportation Systems, Vehicular Networks, Autonomous Driving, and interdisciplinary fields involving control systems and communication technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: Cooperative Driving (vehicles coordinate via V2V/V2I for shared goals), Platooning (vehicles travel in close formation), Leader Election (selecting a vehicle to lead and coordinate a platoon).",
+        "Logical relationships: Cooperative driving enables applications like platooning; platooning relies on leader election for stability and control; leader election involves trust and incentivization to ensure efficiency.",
+        "Assumptions: Reliable V2V/V2I communication, vehicles can share real-time data, cooperation inherently improves traffic outcomes, and automation levels (e.g., SAE levels) support coordination.",
+        "Contributes a comprehensive taxonomy organizing cooperative driving aspects and provides a survey that synthesizes existing knowledge, highlighting under-explored areas like leader election."
+      ],
+      "Methodology": [
+        "Core methods include literature review from sources like IEEE Xplore and Springer, keyword-based searches, and taxonomy development categorizing cooperation into background (objectives, motivations) and architecture (interaction types, maneuvers).",
+        "Novelty lies in the taxonomy's breadth; applicability is demonstrated through real-world use cases; rationality is ensured by systematic data extraction and analysis of solution approaches.",
+        "Data sources are academic publications; characteristics include relevance to cooperative applications; preprocessing involves filtering for up-to-date studies; representativeness is evaluated as high due to broad database coverage.",
+        "No experimental design; evaluation is qualitative based on literature synthesis, with adequacy assessed through coverage of key applications and challenges.",
+        "Follows survey methodology in ITS, emphasizing practical applications; this paradigm focuses on compiling empirical studies, shaping the research through a problem-solution lens."
+      ],
+      "Results": [
+        "Summarizes solution approaches for cooperative applications: smart parking (e.g., tree-based algorithms), lane change (e.g., reinforcement learning models), intersection management (e.g., reservation-based systems), and platooning leader election (e.g., consensus algorithms).",
+        "Results are significant for framing future research; reliability is supported by literature consensus; stability is noted in consistent benefits like traffic efficiency, but vulnerabilities exist in communication delays and security."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Introduces problems, presents taxonomy, reviews applications, details platooning and leader election, discusses challenges, and concludes with recommendations.",
+        "Key steps: Establish background → Define taxonomy → Analyze applications → Focus on platooning challenges → Identify gaps → Propose future work. Logical links connect cooperation types to specific solutions and unresolved issues.",
+        "Strengths: Clear progression and comprehensive coverage; weaknesses include limited depth in some applications. Rebuttals address gaps by suggesting multi-objective frameworks and standardization."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Original taxonomy, detailed focus on leader election, identification of critical gaps (e.g., heterogeneous cooperation), and practical insights for real-world deployment.",
+        "Methodology limitations: Taxonomy may not encompass all emerging aspects; reliance on literature limits empirical validation; solution comparisons are qualitative.",
+        "Theoretical constraints: Assumes cooperation is always beneficial, potentially overlooking scenarios where individual goals conflict, thus limiting generalizability of conclusions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Serves as a tutorial and survey, positioning within ITS discourse by educating on cooperative driving fundamentals and advocating for standardized approaches.",
+        "Uses formal terminology (e.g., 'V2V communication', 'string stability'), persuasive tone emphasizing urgency, and rhetorical strategies like categorizing benefits to highlight importance.",
+        "Builds authority through extensive citations of foundational and recent works; motivations include consolidating fragmented knowledge and directing community efforts toward unresolved challenges."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: Cooperative driving is vital for autonomous vehicles but faces challenges in leader election, decision-making, and scalability; platooning requires trustworthy leader selection mechanisms.",
+        "Future research: Develop generic cooperative frameworks, address multi-objective optimization, improve communication robustness, establish standards, and explore incentivization for heterogeneous fleets."
+      ]
+    }
+  }
+}

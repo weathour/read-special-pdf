@@ -1,0 +1,78 @@
+{
+  "file_name": "Lee和Hess - 2020 - Regulations for on-road testing of connected and automated vehicles Assessing the potential for glo.pdf",
+  "generated_at": "2025-07-10 05:39:59",
+  "structured_info": {
+    "title_cn": "联网和自动化车辆道路测试法规：评估全球安全协调化的潜力",
+    "title_en": "Regulations for on-road testing of connected and automated vehicles: Assessing the potential for global safety harmonization",
+    "category": "Transportation Policy",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Regulatory Harmonization",
+      "Safety and Liability"
+    ],
+    "keywords": [
+      "Connected and automated vehicles",
+      "Autonomous vehicles",
+      "Regulations",
+      "Harmonization",
+      "Safety"
+    ],
+    "abstract": "Although there is great media attention to connected and automated vehicles (CAVs) and strong public interest in the technology, it is still under development. Their deployment to the broader public will require new regulations and road traffic rules that are also under development, and there is not yet a globally harmonized approach. This paper reviews the main safety and liability issues for CAVs with a focus on the rules developed for on-road testing to date in Australia, the United States, and Germany. It also reviews government policies from Victoria, Australia, and California, the United States, and it provides an appendix on European Union (E.U.) regulations. After a review of similarities and differences regarding safety and liability provisions, the study suggests how the current provisions can be brought together toward a globally harmonized approach to safety issues that builds on best practices in the three countries.",
+    "methodology": "Qualitative comparative analysis of regulations in Australia, the U.S., and Germany. Data collected from government documents, academic literature, and media reports using keyword searches and snowball sampling. Over 150 sources were analyzed to assess safety, liability, and data-reporting policies.",
+    "conclusion": "Current CAV testing regulations in Australia, the U.S., and Germany show significant overlaps. Ten best practices are proposed for global harmonization, including mandatory safety drivers during testing, standardized disengagement reporting, real-time monitoring, and substantial insurance requirements. Harmonization could improve safety and public trust while facilitating technological deployment.",
+    "authors": [
+      "Dasom Lee",
+      "David J. Hess"
+    ],
+    "publication_year": "2020",
+    "venue": "Transportation Research Part A: Policy and Practice",
+    "doi": "https://doi.org/10.1016/j.tra.2020.03.026",
+    "bibtex_citation": "Lee_Regulations_2020",
+    "analysis": {
+      "Overview": "The paper compares regulatory frameworks for on-road testing of connected and automated vehicles (CAVs) in Australia, the U.S., and Germany, focusing on safety and liability provisions. It identifies convergence points and proposes a harmonized global approach.",
+      "Background_and_Motivation": [
+        "The transition to CAVs represents a technological shift comparable to the internal combustion engine, with potential safety and mobility benefits but requiring new regulations.",
+        "To address the lack of global regulatory harmonization for CAV testing and identify best practices for safety and liability management.",
+        "Fatal accidents during testing (e.g., Arizona 2018) highlight urgent safety risks. Public skepticism demands transparent regulations to build trust.",
+        "Uncoordinated regulations could fragment global deployment. Harmonization leverages collective expertise to mitigate safety risks while supporting innovation.",
+        "Contributes to transportation policy, automotive safety engineering, and regulatory studies, with interdisciplinary links to law and urban planning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Connected and Automated Vehicles (CAVs): Vehicles with SAE Level 3-5 automation and communication capabilities; On-road Testing: Controlled public deployment of CAVs under regulatory oversight; Harmonization: Alignment of disparate regulations into a unified global framework.",
+        "CAV testing necessitates safety regulations to address liability risks. Harmonization links these regulations across nations to create scalable safety standards.",
+        "Assumes CAVs will achieve widespread adoption and that regulatory alignment is feasible despite national differences in legal systems.",
+        "Provides a policy blueprint for global harmonization, advancing knowledge in regulatory design for emerging technologies."
+      ],
+      "Methodology": [
+        "Comparative case study of Australia (Victoria), U.S. (federal and California), and Germany. Analyzed government guidelines, academic literature, and disengagement reports using thematic coding.",
+        "Novel in directly comparing safety/liability provisions across leading regulatory regimes. Applicable to policymakers; rational as it builds on documented best practices.",
+        "Sources: Government acts, policy documents, and peer-reviewed articles. Preprocessing involved filtering for safety/liability focus. Representativeness limited to three advanced regulatory jurisdictions.",
+        "No experimental design; evaluation relied on qualitative assessment of regulatory rigor. Standardized metrics (e.g., disengagement reports) were critiqued for inconsistency.",
+        "Follows policy analysis paradigm, emphasizing regulatory frameworks. This focuses the study on governance structures over technical performance."
+      ],
+      "Results": [
+        "Key differences: Australia mandates safety management plans and real-time monitoring; California allows driverless testing with remote supervision; Germany requires black boxes but limits automation to VDA Level 3. Common focus on data recording and insurance.",
+        "Results are significant for identifying harmonization pathways. Reliability is high as derived from primary documents; stability is moderate due to rapidly evolving regulations."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: problem framing → comparative analysis → harmonization proposal. Argues that divergent regulations impede safety, while shared best practices enable global standards.",
+        "Steps: 1) Establish CAV safety urgency; 2) Compare country-specific rules; 3) Identify regulatory gaps; 4) Propose ten best practices; 5) Advocate harmonization.",
+        "Strengths: Comprehensive policy inventory. Weaknesses: Excludes Asian markets. Rebuttals addressed by focusing on jurisdictions with mature regulations."
+      ],
+      "Strengths_and_Limitations": [
+        "First systematic comparison of CAV testing regulations; ten evidence-based best practices for harmonization.",
+        "Geographically limited to three countries; does not address long-term deployment challenges like cybersecurity or urban infrastructure.",
+        "Policy-oriented framework underemphasizes technical constraints (e.g., sensor limitations) affecting regulatory feasibility."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within transportation policy discourse as a bridge between technical standards and governance, advocating for international cooperation.",
+        "Uses precise terminology (e.g., 'operational design domain', 'disengagement') with a persuasive tone. Rhetoric emphasizes 'public trust' and 'best practices' to align stakeholders.",
+        "Builds authority through extensive government document citations (e.g., NHTSA, EU Commission). Motivations include influencing global regulatory agendas."
+      ],
+      "Conclusions_and_Implications": [
+        "Harmonization of CAV testing regulations is feasible using ten best practices, including mandatory safety drivers, standardized reporting, and liability insurance. This could reduce accidents and build public trust.",
+        "Future research should expand to more countries, examine human-AI interaction risks, and explore user-centered design principles for regulatory frameworks."
+      ]
+    }
+  }
+}

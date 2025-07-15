@@ -1,0 +1,79 @@
+{
+  "file_name": "Saleem 等 - 2021 - A Vehicle-to-Infrastructure Data Offloading Scheme for Vehicular Networks with QoS Provisioning.pdf",
+  "generated_at": "2025-07-11 02:27:48",
+  "structured_info": {
+    "title_cn": "一种支持QoS的车联网车辆到基础设施数据卸载方案",
+    "title_en": "A Vehicle-to-Infrastructure Data Offloading Scheme for Vehicular Networks with QoS Provisioning",
+    "category": "Wireless Communications and Mobile Computing",
+    "topics": [
+      "Vehicular Networks",
+      "Data Offloading",
+      "Quality of Service"
+    ],
+    "keywords": [
+      "Data offloading",
+      "Road-side Unit (RSU)",
+      "Quality of Service (QoS) provisioning",
+      "vehicular network",
+      "Vehicle-to-Infrastructure (V2I) Communication"
+    ],
+    "abstract": "In vehicular networks, vehicles carry various types of data that need to be offloaded to the RoadSide Units (RSUs) through Vehicle-to-Infrastructure (V2I) communications when vehicles come into their coverage. Since RSUs are not widely deployed, vehicles have intermittent connectivity with RSUs. The data could be urgent (e.g., accident or emergency health data) requiring immediate offloading. This paper proposes V2I-Q, a V2I data offloading scheme with QoS provisioning using three functions: traffic classification (prioritizing data as high, medium, low), overload control (preventing RSU congestion), and admission control (stopping low-priority offloading to accommodate high-priority data). Performance evaluation shows V2I-Q offloads more high-priority data with lower maximum delay than traditional schemes.",
+    "methodology": "Proposes V2I-Q scheme with QoS functions: traffic classification, overload control via load thresholds, and admission control. Models vehicle-RSU connectivity time and offloading capacity. Implements and evaluates in OMNeT++ 5.5.1 with Veins 5.0 and SUMO 1.7.0 frameworks using IEEE 802.11p standard.",
+    "conclusion": "V2I-Q outperforms traditional V2I offloading by prioritizing and offloading more high-priority data with lower delay. It achieves similar medium-priority offloading but sacrifices low-priority data performance. Future work will extend the scheme to V2V communications.",
+    "authors": [
+      "Yasir Saleem",
+      "Nathalie Mitton",
+      "Valeria Loscri"
+    ],
+    "publication_year": "2021",
+    "venue": "International Wireless Communications and Mobile Computing (IWCMC)",
+    "doi": "10.1109/IWCMC51323.2021.9498708",
+    "bibtex_citation": "Saleem_A_2021",
+    "analysis": {
+      "Overview": "Proposes V2I-Q, a QoS-based data offloading scheme for vehicular networks that prioritizes urgent data transmission through traffic classification, overload control, and admission control to address intermittent RSU connectivity.",
+      "Background_and_Motivation": [
+        "Sparse RSU deployment causes intermittent vehicle connectivity, delaying urgent data (e.g., accident/health data) offloading.",
+        "To ensure timely offloading of high-priority data by managing RSU congestion and prioritizing traffic.",
+        "Urgent data requires immediate action; existing schemes lack integrated QoS mechanisms for V2I offloading.",
+        "Connects sparse RSU infrastructure to broader vehicular network efficiency challenges, emphasizing QoS necessity for safety-critical applications.",
+        "Vehicular networks, edge computing, and wireless communication systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Traffic Classification: Organizes data into high/medium/low priorities; Overload Control: Sets RSU load thresholds; Admission Control: Preempts low-priority sessions for high-priority data.",
+        "Classification enables prioritization → Overload control prevents congestion → Admission control ensures high-priority access during capacity limits.",
+        "Assumes intermittent RSU connectivity, variable vehicle speeds, and edge-equipped RSUs with processing capabilities.",
+        "Novel integration of QoS functions into V2I offloading, addressing a literature gap for prioritized data transmission."
+      ],
+      "Methodology": [
+        "Algorithmic design for RSU request processing (Algorithm 1), connectivity time/offloading capacity modeling (Equations 1-2), and simulation in OMNeT++/SUMO.",
+        "Novel in combining three QoS functions; applicable to highway scenarios; rational for handling data prioritization under connectivity constraints.",
+        "Simulated 30km highway with 30 RSUs and 100–250 vehicles. Data types/priorities randomized; parameters: DSRC, 6Mbps data rate, 357m range. Data representativeness limited to highway environments.",
+        "Rigorous comparison with traditional V2I; metrics: offloaded data per priority and maximum delay. Adequate for QoS evaluation.",
+        "Follows networking QoS paradigms, focusing on resource allocation and prioritization, shaping the congestion-management perspective."
+      ],
+      "Results": [
+        "V2I-Q offloads 10-15% more high-priority data with lower delay vs. traditional V2I. Similar medium-priority offloading but 20-25% less low-priority data with higher delay.",
+        "Significant for urgent data transmission; reliability confirmed across vehicle density (50-250), speed (15-35m/s), and RSU capacity (2000-10000Mb) variations."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Problem motivation → Scheme design → Simulation validation.",
+        "Steps: Intermittent connectivity problem → QoS solution design → Performance proof via comparative metrics.",
+        "Strengths: Clear problem-solution alignment; weaknesses: Limited discussion on real-world interference. Rebuttals addressed via threshold tuning in overload control."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative QoS integration; effective high-priority data handling; simulation-backed validation.",
+        "Highway-only scenario; low-priority data penalized; assumes perfect beacon-based acknowledgments.",
+        "QoS paradigm prioritizes urgency over fairness, limiting generalizability to non-safety applications."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances vehicular network QoS discourse by filling V2I offloading gaps; positions against prior works (e.g., Huang et al., Xiangming et al.).",
+        "Technical terminology (e.g., 'admission control', 'overload thresholds'); persuasive rhetoric emphasizing urgency; authoritative tone via simulations.",
+        "Cites domain literature (e.g., Huang et al. 2020) to establish novelty; motivations include differentiating from cellular/V2V-focused approaches."
+      ],
+      "Conclusions_and_Implications": [
+        "V2I-Q enables efficient high-priority data offloading via QoS mechanisms, reducing delays in sparse RSU environments.",
+        "Extend to V2V communications; test urban scenarios; integrate MAC-layer challenges; explore fairness-QoS trade-offs."
+      ]
+    }
+  }
+}

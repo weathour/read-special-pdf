@@ -1,0 +1,78 @@
+{
+  "file_name": "Baggio 等 - 2021 - Data-driven control of complex networks.pdf",
+  "generated_at": "2025-07-11 08:53:37",
+  "structured_info": {
+    "title_cn": "复杂网络的数据驱动控制",
+    "title_en": "Data-driven control of complex networks",
+    "category": "Complex Networks",
+    "topics": [
+      "Network Control",
+      "Data-Driven Methods",
+      "Complex Systems"
+    ],
+    "keywords": [
+      "data-driven control",
+      "complex networks",
+      "optimal control",
+      "network dynamics",
+      "model-free"
+    ],
+    "abstract": "Our ability to manipulate the behavior of complex networks depends on efficient control algorithms and accurate network models. This paper develops a data-driven framework to control complex networks optimally without knowledge of network dynamics. Optimal controls are constructed using finite experimental data where the network is stimulated with arbitrary inputs. The method is provably correct for linear networks and characterized for noisy data and nonlinear dynamics in power grids and brain networks.",
+    "methodology": "Derives closed-form data-driven expressions for optimal control inputs using experimental data matrices. Focuses on point-to-point control for linear network dynamics with quadratic costs. Validates performance against noise and nonlinear systems.",
+    "conclusion": "Data-driven controls overcome model uncertainty limitations, offer computational advantages, and enable accurate network manipulation. Applications include synchronization control in oscillators, power-grid fault recovery, and fMRI-based brain network control. Future work should address nonlinearities and closed-loop strategies.",
+    "authors": [
+      "Giacomo Baggio",
+      "Danielle S. Bassett",
+      "Fabio Pasqualetti"
+    ],
+    "publication_year": "2021",
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-021-21554-0",
+    "bibtex_citation": "Baggio_Data-driven_2021",
+    "analysis": {
+      "Overview": "Proposes a data-driven framework for optimal control of complex networks without prior knowledge of dynamics. Focuses on finite-time point-to-point control using experimental data.",
+      "Background_and_Motivation": [
+        "Model uncertainty limits practical control of large-scale networks; traditional model-based controls are sensitive to errors.",
+        "To design reliable controls directly from data, bypassing system identification.",
+        "Highlights unreliability of model-based controls in Fig. 1c, showing error growth with network size due to reconstruction inaccuracies.",
+        "Links specific control challenges to broader issues of scalability and robustness in network engineering.",
+        "Contributes to control theory, network science, and interdisciplinary applications in power systems and neuroscience."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Data-driven control: Optimal inputs derived solely from experimental data.",
+        "Output controllability: Assessed directly from data via rank conditions.",
+        "Implicit assumption: Network dynamics can be excited sufficiently by arbitrary inputs.",
+        "Provides exact closed-form solutions for linear systems and novel suboptimal expressions with asymptotic guarantees."
+      ],
+      "Methodology": [
+        "Uses input/output data matrices from episodic experiments to derive optimal controls (Eq. 4). Minimum-energy controls simplified to Eqs. 5–6.",
+        "Novelty: Eliminates system identification; applicability shown for noisy/nonlinear cases; rationality via controllability guarantees.",
+        "Data: Arbitrary/random inputs; outputs measured. Representativeness ensured by exciting dynamics sufficiently.",
+        "Rigorous error analysis for noisy data (Eqs. 8–9); metrics include control effort and target-state error.",
+        "Follows behavioral systems theory, enabling direct data-to-control synthesis."
+      ],
+      "Results": [
+        "Exact optimal control achieved with N ≥ mT linearly independent experiments (Fig. 2c). Noisy data handled via variance-corrected expressions.",
+        "Results reliable: Proven for linear systems; stable under noise. Numerical stability superior to model-based methods (Fig. 3b–e)."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Derives data-driven controls mathematically, validates numerically.",
+        "Key steps: (1) Formulate control problem; (2) Derive data-based solutions; (3) Characterize minimal data requirements; (4) Extend to noise/nonlinearity.",
+        "Strengths: Theorems guarantee correctness; weaknesses addressed via suboptimal approximations for large networks. Rebuts model dependency by showing computational advantages."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Computationally efficient (Fig. 3e), applicable to noisy/nonlinear systems, enables controllability analysis without models.",
+        "Limitations: Assumes linear dynamics; closed-loop stabilization not addressed.",
+        "Theoretical paradigm restricts conclusions to finite-horizon point-to-point control; stabilization requires extensions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within network controllability literature, contrasting model-based approaches. Uses control-theoretic terminology (e.g., Gramians, LQR) to build authority.",
+        "Tone: Technical/assertive; rhetorical emphasis on 'overcoming limitations'. Cites foundational work (e.g., Kailath, Liu-Barabási) to contextualize contributions."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Data-driven controls are exact, efficient, and robust. Enable novel applications in power grids and neuroscience.",
+        "Future work: Address nonlinear dynamics, closed-loop control, and theoretical guarantees for finite-data noise."
+      ]
+    }
+  }
+}

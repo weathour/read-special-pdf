@@ -1,0 +1,82 @@
+{
+  "file_name": "Mu 等 - 2021 - Integrated Sensing and Communication-Enabled Predictive Beamforming With Deep Learning in Vehicular.pdf",
+  "generated_at": "2025-07-14 01:53:53",
+  "structured_info": {
+    "title_cn": "基于深度学习的车联网中集成传感与通信的预测性波束赋形",
+    "title_en": "Integrated Sensing and Communication-Enabled Predictive Beamforming With Deep Learning in Vehicular Networks",
+    "category": "Communication Systems",
+    "topics": [
+      "Integrated Sensing and Communication",
+      "Beam Tracking",
+      "Deep Learning",
+      "Vehicular Networks"
+    ],
+    "keywords": [
+      "Integrated sensing and communication",
+      "Deep learning",
+      "Beam tracking",
+      "Vehicular networks"
+    ],
+    "abstract": "Accurate beam tracking in high-mobility vehicular networks has become a key issue for reliable communication link establishment. Recent work on integrated sensing and communication has shown the superiority of the sensing-assisted beam tracking. By estimating the angular parameters of vehicles based on the radar echoes, the roadside unit (RSU) can perform a so-called predictive beamforming to pair the beams with high accuracy as well as low latency. To further reduce the estimation error due to the nonlinear measurements, in this letter, we develop a deep learning-based approach to exploit the dependency between the angles and the measurements, and to obtain the angle estimates. Simulation results show that our proposed approach can improve the estimation performance and maintain reliable communications in high-mobility vehicular networks.",
+    "methodology": "Deep learning-based approach using a fully connected neural network for angular parameter estimation, followed by predictive beamforming based on a geometric state evolution model. The neural network includes dropout layers, sigmoid activation functions, mean squared error loss, and the Adam optimizer.",
+    "conclusion": "The proposed deep learning approach improves angle estimation accuracy and beam tracking performance in high-mobility vehicular networks, leading to higher achievable sum rates and reliable communications compared to existing methods like factor graph or communication-only schemes.",
+    "authors": [
+      "Junsheng Mu",
+      "Yi Gong",
+      "Fangpei Zhang",
+      "Yuanhao Cui",
+      "Feng Zheng",
+      "Xiaojun Jing"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Communications Letters",
+    "doi": "10.1109/LCOMM.2021.3098748",
+    "bibtex_citation": "Mu_Integrated_2021",
+    "analysis": {
+      "Overview": "The paper proposes a deep learning-based predictive beamforming scheme for vehicular networks, leveraging integrated sensing and communication to enhance beam tracking accuracy and reduce latency in high-mobility scenarios.",
+      "Background_and_Motivation": [
+        "The research addresses challenges in high-mobility vehicular networks where traditional communication-based beam tracking schemes incur high latency and resource overhead.",
+        "Motivation stems from the need to overcome estimation errors due to nonlinear measurements in sensing-assisted beam tracking, which existing methods like extended Kalman filtering approximate poorly.",
+        "Authors argue necessity by highlighting the inefficiency of pilot-based approaches in dynamic environments and the urgency for low-latency solutions to support applications like autonomous driving.",
+        "The problem is linked to broader challenges of spectrum efficiency and reliable mmWave communication in vehicles, emphasizing its significance for future intelligent transportation systems.",
+        "This paper contributes to communication systems, signal processing, and machine learning, with interdisciplinary elements in vehicular technology."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) Predictive beamforming (using predicted angles to design beams ahead of time), 2) Deep learning-based angle estimation (using neural networks to map radar echoes to angles), 3) State evolution model (geometric relationship for angle prediction based on vehicle motion).",
+        "Logical relationships: Radar echoes are input to a neural network for angle estimation; estimated angles feed into a state evolution model to predict future angles for beamforming, enabling low-latency communication.",
+        "Key assumptions: Line-of-sight dominated channels, orthogonal steering vectors with massive antennas, perfect knowledge of delay and Doppler for matched filtering.",
+        "The contribution is methodological innovation, introducing a deep learning approach that avoids approximations to improve estimation accuracy in ISAC systems."
+      ],
+      "Methodology": [
+        "Core methods: A fully connected neural network processes received radar signals to estimate angles; predictive beamforming uses a geometric state evolution model. Adam optimizer and mean squared error loss are employed for training.",
+        "Novelty lies in applying deep learning to directly learn nonlinear dependencies without approximations; applicability is high for real-time systems due to low overhead; rationality is supported by simulation validation.",
+        "Data sources are simulated vehicular scenarios with parameters like carrier frequency (30 GHz) and antenna counts; inputs are radar echo signals preprocessed via matched filtering. Representativeness is limited to idealized LoS conditions.",
+        "Experimental design uses simulations with 200 time instants and comparisons to benchmarks; evaluation metrics (e.g., tracking error, sum rate) are adequate but lack complexity analysis.",
+        "The research follows signal processing and machine learning paradigms, focusing on data-driven solutions without explicit theoretical schools, which enables flexibility but may overlook channel uncertainties."
+      ],
+      "Results": [
+        "Key results: The proposed approach achieves better angle tracking accuracy (Fig. 3) and higher achievable sum rates (Fig. 4) compared to factor graph and communication-only methods.",
+        "Results are significant for reliable beam alignment in mobility; reliability and stability are demonstrated through consistent performance gains in simulations, but depend on idealized assumptions."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Problem motivation, system model, proposed method, simulations, and conclusion, with clear progression from limitations of prior work to solution and validation.",
+        "Key steps: Introduce ISAC benefits, critique approximation-based methods, propose neural network for accurate estimation, predict angles for beamforming, and validate via simulations.",
+        "Strengths include coherent logic and addressing rebuttals through benchmark comparisons; weaknesses are understated limitations like simulation constraints and no complexity analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel integration of deep learning for angle estimation, reduced latency by eliminating feedback, and improved accuracy over existing ISAC methods.",
+        "Limitations: Methodology assumes perfect delay/Doppler knowledge and ideal orthogonality; boundaries include simulation-only validation and lack of real-world data.",
+        "Theoretical paradigm constraints: Reliance on mmWave massive MIMO assumptions may limit applicability in NLOS or interference-rich environments."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances ISAC discourse by introducing machine learning to address nonlinear estimation, positioning as a superior alternative to traditional signal processing.",
+        "Terminology: Technical (e.g., beamforming, SNR); tone: authoritative; rhetorical strategies: Contrast with prior work (e.g., EKF/factor graph) to highlight innovations.",
+        "Authors build authority by citing foundational ISAC and beam tracking papers, motivated by establishing context and demonstrating comparative superiority."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: The deep learning approach enhances angle estimation and beam tracking, enabling reliable, low-latency communications in vehicular networks.",
+        "Future research suggestions: Extend to non-ideal scenarios (e.g., multipath, interference), evaluate computational complexity, and test with real-world data."
+      ]
+    }
+  }
+}

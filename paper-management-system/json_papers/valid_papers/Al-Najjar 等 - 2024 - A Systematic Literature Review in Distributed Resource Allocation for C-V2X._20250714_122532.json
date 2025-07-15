@@ -1,0 +1,82 @@
+{
+  "file_name": "Al-Najjar 等 - 2024 - A Systematic Literature Review in Distributed Resource Allocation for C-V2X..pdf",
+  "generated_at": "2025-07-14 12:25:32",
+  "structured_info": {
+    "title_cn": "C-V2X分布式资源分配的系统文献综述",
+    "title_en": "A Systematic Literature Review in Distributed Resource Allocation for C-V2X",
+    "category": "Vehicular Networks",
+    "topics": [
+      "Distributed Resource Allocation",
+      "C-V2X",
+      "Machine Learning"
+    ],
+    "keywords": [
+      "distributed resource allocation",
+      "long-term evolution-V2X",
+      "new radio-V2X",
+      "cellular vehicle to everything",
+      "machine learning",
+      "congestion control"
+    ],
+    "abstract": "Vehicular networks are the key paradigm of the Internet of Vehicles (IoV) as the extension of the Internet of Things (IoT) notion in Intelligent Transportation Systems (ITS) which can assist in the development of autonomous driving in smart cities. This technology can provide a wide variety of onboard data services, such as road safety, and increase traffic efficiency by connecting vehicles with road infrastructure and pedestrians. However, it is a challenging task to provide a satisfactory quality of service (QoS) to this network due to a number of limiting factors such as resource collision, resource interference, and congested channels because of the network topology and rapid changes produced by the high mobility as well as hardware imperfections and the anticipated growth of vehicular network devices. As a result, it will be essential to ensure that the resources of the available cellular network are allocated and used in the most efficient possible way. To achieve these goals, 3GPP has standardized the cellular vehicle to everything (C-V2X) with two versions, the long-term evolution-V2X (LTE-V2X) in Release 14 and the new radio-V2X (NR-V2X) in Release 16, as prominent technologies to improve resource allocation for vehicular networks. In order to capture the continuous effort for improving resource allocation, we present a systematic literature review (SLR) on distributed resource allocation (DRA) schemes for the two cellular-based vehicular network technologies. First, we discuss the technical configuration of resource allocation in the light of LTE-V2X and NR-V2X technologies and classify the state-of-the-art for each technology. Afterward, we explain the impact of machine learning (ML) and congestion control (CC) on the DRA. Then, we point out the primary performance metrics and simulation tools that were used in the related work. Ultimately, we highlight the challenges, open issues, and opportunities for DRA in C-V2X and outline several promising future research directions.",
+    "methodology": "Systematic Literature Review (SLR)",
+    "conclusion": "The paper concludes by highlighting the challenges, open issues, and opportunities for DRA in C-V2X and outlines several promising future research directions. It emphasizes the need for efficient resource allocation to ensure reliable and effective communication among vehicles and infrastructure.",
+    "authors": [
+      "Ali Nihad Al-Najjar",
+      "Abbas Jamalipour",
+      "Mohd Fadlee A Rasid",
+      "Fazirulhisyam Hashim",
+      "Faisul Arif Ahmad"
+    ],
+    "publication_year": "2024",
+    "venue": "Ingénierie des Systèmes d'Information",
+    "doi": "10.18280/isi.290301",
+    "bibtex_citation": "Al-Najjar_Systematic_2024",
+    "analysis": {
+      "Overview": "The paper presents a systematic literature review on distributed resource allocation (DRA) schemes for LTE-V2X and NR-V2X technologies. It discusses the technical configurations, state-of-the-art methods, and the impact of machine learning and congestion control on DRA.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges in vehicular networks, such as resource collision, interference, and congested channels, due to high mobility and network topology.",
+        "The motivation stems from the need to ensure efficient resource allocation in C-V2X networks to support autonomous driving and smart city applications.",
+        "The authors argue for the necessity of DRA by highlighting the limitations of centralized resource allocation and the benefits of distributed approaches in dynamic vehicular environments.",
+        "The paper relates the specific problem of resource allocation to the broader challenge of ensuring reliable and efficient communication in ITS.",
+        "The paper contributes to the fields of vehicular networks, IoT, and ITS."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include DRA, LTE-V2X, NR-V2X, and the SB-SPS algorithm.",
+        "The logical relationship involves the use of DRA to improve resource allocation in LTE-V2X and NR-V2X, with SB-SPS being a key algorithm.",
+        "Key assumptions include the dynamic nature of vehicular environments and the need for scalable and responsive resource allocation.",
+        "The paper contributes to the knowledge system by providing a comprehensive review of DRA schemes and proposing future research directions."
+      ],
+      "Methodology": [
+        "The core research method is a systematic literature review (SLR) focusing on DRA schemes for LTE-V2X and NR-V2X.",
+        "The novelty lies in the comprehensive review and classification of state-of-the-art DRA schemes, including the impact of ML and CC.",
+        "Data sources include high-quality journals and conferences from 2017 onwards, ensuring relevance to the latest 3GPP standards.",
+        "The experimental design involves a PRISMA flowchart for article selection, ensuring rigorous and systematic review.",
+        "The research follows the SLR methodology, providing a structured and comprehensive analysis of DRA in C-V2X."
+      ],
+      "Results": [
+        "Key results include the classification of DRA schemes into three groups: evaluation of SB-SPS parameters, modifications to SB-SPS, and new alternative methods.",
+        "The results highlight the strengths and limitations of various DRA schemes, providing insights into their reliability and performance."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a structured argument starting with the challenges in vehicular networks, followed by the need for DRA, and concluding with future research directions.",
+        "Key steps include the review of LTE-V2X and NR-V2X configurations, the impact of ML and CC, and the classification of DRA schemes.",
+        "Strengths include comprehensive coverage and systematic analysis, while limitations include the focus on specific modes (LTE mode 4 and NR mode 2)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the systematic review of DRA schemes and the identification of future research directions.",
+        "Limitations include the focus on specific modes and the exclusion of non-English articles.",
+        "The choice of SLR methodology constrains the conclusions to the reviewed literature, potentially missing emerging trends."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper plays a role in advancing the discourse on DRA in C-V2X by providing a comprehensive review.",
+        "The authors use technical terminology and a formal tone, building authority through citations to relevant literature.",
+        "Citations are used to support arguments and provide context, demonstrating the authors' engagement with the field."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusions highlight the challenges and opportunities in DRA for C-V2X, emphasizing the need for efficient and scalable solutions.",
+        "Future research should explore the integration of ML, address interference and collision issues, and consider emerging technologies in vehicular networks."
+      ]
+    }
+  }
+}

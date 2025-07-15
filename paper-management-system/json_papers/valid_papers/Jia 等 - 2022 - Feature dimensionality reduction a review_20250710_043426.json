@@ -1,0 +1,79 @@
+{
+  "file_name": "Jia 等 - 2022 - Feature dimensionality reduction a review.pdf",
+  "generated_at": "2025-07-10 04:34:26",
+  "structured_info": {
+    "title_cn": "特征降维：综述",
+    "title_en": "Feature dimensionality reduction: a review",
+    "category": "Machine Learning",
+    "topics": [
+      "Dimensionality Reduction",
+      "Feature Selection",
+      "Feature Extraction"
+    ],
+    "keywords": [
+      "Curse of dimensionality",
+      "Dimension reduction",
+      "Feature selection",
+      "Feature extraction"
+    ],
+    "abstract": "As basic research, it has also received increasing attention from people that the 'curse of dimensionality' will lead to increase the cost of data storage and computing; it also influences the efficiency and accuracy of dealing with problems. Feature dimensionality reduction as a key link in the process of pattern recognition has become one hot and difficulty spot in the field of pattern recognition, machine learning and data mining. It is one of the most challenging research fields, which has been favored by most of the scholars' attention. How to implement 'low loss' in the process of feature dimension reduction, keep the nature of the original data, find out the best mapping and get the optimal low dimensional data are the keys aims of the research. In this paper, two-dimensionality reduction methods, feature selection and feature extraction, are introduced; the current mainstream dimensionality reduction algorithms are analyzed, including the method for small sample and method based on deep learning. For each algorithm, examples of their application are given and the advantages and disadvantages of these methods are evaluated.",
+    "methodology": "Review and analysis of dimensionality reduction algorithms, including feature selection (e.g., filter, wrapper methods) and feature extraction (linear methods like PCA, LDA; nonlinear methods like kernel PCA, manifold learning). Evaluation based on application examples and algorithmic trade-offs.",
+    "conclusion": "Dimensionality reduction is essential for mitigating the curse of dimensionality. Feature selection and extraction methods each have strengths: selection retains interpretability, while extraction efficiently compresses features. Challenges include preserving data integrity and optimizing mappings. Future work should focus on scalable, adaptable algorithms for emerging data complexities.",
+    "authors": [
+      "Weikuan Jia",
+      "Meili Sun",
+      "Jian Lian",
+      "Sujuan Hou"
+    ],
+    "publication_year": "2022",
+    "venue": "Complex & Intelligent Systems",
+    "doi": "10.1007/s40747-021-00637-x",
+    "bibtex_citation": "Jia_Feature_2022",
+    "analysis": {
+      "Overview": "The paper reviews techniques for reducing feature dimensionality in high-dimensional data, categorizing methods into feature selection and feature extraction. It covers linear/nonlinear approaches, small-sample adaptations, and applications across pattern recognition, machine learning, and data mining.",
+      "Background_and_Motivation": [
+        "High-dimensional data increases storage/computational costs and reduces analytical accuracy due to the curse of dimensionality, where redundant features obscure essential information.",
+        "The need to achieve 'low-loss' dimensionality reduction—preserving original data integrity while finding optimal low-dimensional mappings—to enhance efficiency in recognition and mining tasks.",
+        "Urgency is argued via the proliferation of unstructured, high-dimensional data in critical domains (e.g., genomics, image processing), where inefficiencies impede timely insights.",
+        "The problem links to broader challenges in AI scalability; effective dimensionality reduction enables practical deployment of models in resource-constrained environments.",
+        "Contributes to machine learning, pattern recognition, and interdisciplinary fields like bioinformatics and computer vision."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Feature Selection: Selecting relevant feature subsets (e.g., via filters/wrappers). (2) Feature Extraction: Transforming features into lower dimensions (e.g., PCA, manifold learning). (3) Curse of Dimensionality: Performance degradation as feature count increases.",
+        "Selection identifies critical features; extraction creates new representations. Both aim to minimize information loss while reducing computational burden.",
+        "Assumes data contains redundant/irrelevant features; low-dimensional embeddings retain intrinsic structures; linearity/nonlinearity dictates method choice.",
+        "Provides a taxonomy and comparative evaluation of algorithms, advancing the field by synthesizing scattered methodologies into a coherent framework."
+      ],
+      "Methodology": [
+        "Core methods include filter/wrapper/heuristic searches for selection; PCA/LDA (linear) and kernel/ICA/manifold learning (nonlinear) for extraction. Small-sample techniques (e.g., PLS, Lasso) are detailed.",
+        "Novelty lies in categorizing methods by sample size and linearity. Applicability is evaluated via real-world examples (e.g., DNA microarrays); rationality via algorithmic strengths/weaknesses.",
+        "Data sources: Gene expression, image, and sensor datasets. Preprocessing includes normalization; representativeness is inferred from cited applications but not empirically validated.",
+        "Analytical evaluation based on theoretical rigor and case studies; lacks controlled experiments. Metrics include computational efficiency, preservation of discriminative power.",
+        "Rooted in statistical learning and linear algebra; this paradigm emphasizes mathematical optimization over heuristic approaches."
+      ],
+      "Results": [
+        "Key outcomes: Feature selection excels in interpretability but struggles with high correlations; extraction methods like PCA are efficient but linear. Nonlinear techniques (e.g., ISOMAP) handle complex structures but are computationally intensive.",
+        "Results are significant for guiding method selection; reliability is derived from literature consensus. Stability varies—linear methods are robust; nonlinear/manifold learning sensitive to parameters."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: Problem introduction → taxonomy of methods → algorithmic details → evaluation → conclusions.",
+        "Key steps: Define curse of dimensionality; categorize selection/extraction; analyze algorithms via examples; discuss trade-offs; suggest future directions.",
+        "Strengths: Comprehensive coverage and practical examples. Weaknesses: Limited empirical validation. Rebuttals addressed by acknowledging method-specific constraints (e.g., PCA’s linearity)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Broad algorithm coverage, clear taxonomy, real-world application examples, and identification of emerging areas (e.g., deep learning).",
+        "Methodology limitations: Linear methods fail on nonlinear data; manifold learning requires careful parameter tuning; small-sample methods may overfit.",
+        "Theoretical constraints: Focus on variance/information preservation overlooks task-specific optimization, limiting generalizability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Integrates existing knowledge into a pedagogical review, positioning dimensionality reduction as foundational for efficient AI.",
+        "Technical terminology (e.g., 'geodesic distance', 'kernelization'); expository tone with evaluative comparisons. Rhetoric emphasizes practicality through application cases.",
+        "Authority built via extensive citations (e.g., PCA, LDA origins); motivations include consolidating fragmented research and guiding practitioners."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Dimensionality reduction is vital for handling high-dimensional data. Method choice depends on data linearity, sample size, and interpretability needs.",
+        "Future research: Scalable deep-learning integrations, adaptive nonlinear techniques, and robustness to noise. Interdisciplinary applications (e.g., real-time systems) recommended."
+      ]
+    }
+  }
+}

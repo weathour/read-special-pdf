@@ -1,0 +1,88 @@
+{
+  "file_name": "Zuo 等 - 2021 - MPC-Based Cooperative Control Strategy of Path Planning and Trajectory Tracking for Intelligent Vehi.pdf",
+  "generated_at": "2025-07-10 04:44:51",
+  "structured_info": {
+    "title_cn": "基于模型预测控制的智能车辆路径规划与轨迹跟踪协同控制策略",
+    "title_en": "MPC-Based Cooperative Control Strategy of Path Planning and Trajectory Tracking for Intelligent Vehicles",
+    "category": "Autonomous Vehicles",
+    "topics": [
+      "Model Predictive Control",
+      "Path Planning",
+      "Trajectory Tracking"
+    ],
+    "keywords": [
+      "APF",
+      "Local Planning",
+      "NMPC",
+      "PMPCS",
+      "PSO",
+      "Path Tracking"
+    ],
+    "abstract": "In this paper, we propose a progressive model predictive control scheme (PMPCS) by considering the cooperative control of local planning and path tracking for intelligent vehicles. An improved particle swarm optimization (IPSO) based model predictive control (MPC) method is developed to solve the planning and tracking problem. With the PMPCS, the total computational burden can be reduced sharply because of the seamless connection and mutual promotion between the optimization of two layers. Besides we also propose a novel planning algorithm, which can take traffic lights and overtaking time constraint into account. Simulation results show the reliability of the proposed algorithm and the advantages of the scheme compared with general hierarchical algorithm.",
+    "methodology": "Improved Particle Swarm Optimization (IPSO) based Model Predictive Control (MPC) with artificial potential field (APF) for obstacle representation, pseudo-velocity planning for traffic light constraints, and cooperative double-layer optimization framework.",
+    "conclusion": "The PMPCS effectively reduces computational burden while handling traffic constraints. Simulations confirm algorithm reliability and superiority over hierarchical approaches, with reduced computation time (under 0.1s total) and low tracking error (0.0272m average lateral error).",
+    "authors": [
+      "Zhiqiang Zuo",
+      "Xu Yang",
+      "Zheng Li",
+      "Yijing Wang",
+      "Qiaoni Han",
+      "Li Wang",
+      "Xiaoyuan Luo"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/TIV.2020.3045837",
+    "bibtex_citation": "Zuo_MPC-Based_2021",
+    "analysis": {
+      "Overview": "Proposes a cooperative control strategy integrating path planning and trajectory tracking for autonomous vehicles using a Progressive Model Predictive Control Scheme (PMPCS) with IPSO optimization.",
+      "Background_and_Motivation": [
+        "Addresses computational inefficiency in traditional hierarchical autonomous driving frameworks where planning and tracking operate independently.",
+        "Solves infeasible solutions from hard obstacle constraints in MPC and computational challenges from nonlinear vehicle models.",
+        "Highlights safety-critical needs in overtaking scenarios and traffic light constraints requiring real-time responsiveness.",
+        "Connects specific path-tracking deviations to broader autonomous vehicle reliability challenges in dynamic environments.",
+        "Contributes to control systems, optimization algorithms, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "PMPCS: Progressive scheme enabling information exchange between planning and tracking layers",
+          "APF integration: Obstacles represented via repulsive force fields instead of hard constraints",
+          "IPSO: PSO variant with linear inertia factor for faster MPC optimization convergence"
+        ],
+        "Planning layer generates reference paths using APF; tracking layer follows paths via IPSO; both share kinematics model and optimization parameters to reduce computation.",
+        "Assumes rigid vehicle body with zero sideslip angle, perfect environment sensing (V2X/sensors), and simplified obstacle kinematics.",
+        "Provides methodological innovation in real-time optimization for autonomous driving through algorithmic co-design."
+      ],
+      "Methodology": [
+        "Double-layer MPC: Upper layer handles planning with APF-based obstacle avoidance; lower layer executes tracking via IPSO. Pseudo-velocity planning incorporates traffic lights.",
+        "Novelty: APF soft constraints replace traditional hard barriers. Applicability: Structured roads with known obstacles. Rationality: Reduced computation suits real-time control.",
+        "Simulation-based validation using vehicle kinematics model. Data: Obstacle positions, traffic light timings. Representativeness: Limited to overtaking and traffic scenarios.",
+        "Experimental rigor: Compares IPSO convergence (84.9 vs 339.3 iterations) and computational burden (0.0486s vs 0.0511s) against baselines. Metrics: Tracking error, computation time.",
+        "Follows model predictive control paradigm, emphasizing prediction and optimization over reactive control."
+      ],
+      "Results": [
+        "Collision-free paths generated under overtaking/traffic light constraints; 0.0272m average lateral tracking error; 50% computational reduction versus non-cooperative approaches.",
+        "Results demonstrate real-time feasibility (<0.1s total computation). Stability: Consistent performance across simulations with varying velocities."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Methodology → Simulation Validation → Benefits",
+        "1) Expose MPC limitations 2) Formulate PMPCS 3) Integrate APF/PSO 4) Validate via co-simulation",
+        "Strength: Clear computational metrics. Weakness: Limited real-world validation. Rebuttals: Addressed via comparative simulation analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Computational efficiency via cooperative layers; traffic light integration; IPSO acceleration (3.5× faster convergence).",
+        "Assumes idealized vehicle dynamics; untested in unstructured environments; simulation-only validation.",
+        "Kinematic model simplification restricts generalizability to high-dynamics scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as efficiency optimizer within MPC literature, contrasting with 'general hierarchical algorithms'.",
+        "Technical terminology (e.g., 'asymmetrical lane potential field'); authoritative tone; emphasizes 'novel', 'improved', and 'reduction' rhetorically.",
+        "Builds authority through 27 citations covering MPC variants. Motivations: Contextualize contributions against established methods."
+      ],
+      "Conclusions_and_Implications": [
+        "PMPCS with IPSO reduces computational burden while handling traffic constraints, validated in simulations.",
+        "Implement on physical platforms; extend to complex scenarios (multi-obstacle, unstructured roads); integrate dynamics models."
+      ]
+    }
+  }
+}

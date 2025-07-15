@@ -1,0 +1,78 @@
+{
+  "file_name": "Manshaei 等 - 2024 - Performance Evaluation of DSRC and C-V2X Coexistence in the 5.895-5.925 GHz Spectrum.pdf",
+  "generated_at": "2025-07-11 10:07:57",
+  "structured_info": {
+    "title_cn": "DSRC与C-V2X在5.895-5.925 GHz频谱中共存的性能评估",
+    "title_en": "Performance Evaluation of DSRC and C-V2X Coexistence in the 5.895-5.925 GHz Spectrum",
+    "category": "Wireless Networking",
+    "topics": [
+      "Vehicular Communication Systems",
+      "Spectrum Sharing",
+      "Performance Simulation"
+    ],
+    "keywords": [
+      "DSRC",
+      "C-V2X",
+      "ITS Services",
+      "Shared Spectrum"
+    ],
+    "abstract": "Two competing radio access technologies (RATs) are presently available for intelligent transportation systems: Dedicated short-range communication (DSRC) and cellular vehicle-to-everything (C-V2X). Recent FCC rulings allocate 30 MHz worth of spectrum (5.895–5.925 GHz) for both RATs, recommending 20 MHz (2 channels) for C-V2X and 10 MHz (one channel) for DSRC. However, significant debate has ensued on the optimality of such a split, not to mention the fact that it does not consider the possibility of both DSRC and C-V2X coexisting over the same channel. In this paper, we study various performance metrics related to the coexistence of DSRC and C-V2X, considering different configuration parameters under both highway and urban scenarios. Extensive simulations are conducted using WiLabV2XSim, a discrete-event simulation tool for modeling vehicular networks. Our results reveal that, contrary to common wisdom, in highway scenarios it is more efficient to assign two channels for DSRC and one channel for C-V2X. Conversely, in urban scenarios, allocating one channel for DSRC and two channels for C-V2X leads to superior performance. The paper also discusses various challenges for coexistence between DSRC and C-V2X, including interference and differences in the MAC layer designs. Overall, the study provides insights into optimizing the allocation of channels between DSRC and C-V2X to mitigate the effects of coexistence and improve the performance of vehicular communication systems.",
+    "methodology": "Discrete-event simulation using WiLabV2XSim for modeling vehicular networks, evaluating performance metrics (e.g., packet reception rate, channel busy rate) under highway and urban scenarios with varying channel allocations, modulation schemes, and vehicle densities.",
+    "conclusion": "Optimal channel allocation depends on the environment: two channels for DSRC and one for C-V2X in highway scenarios, while one channel for DSRC and two for C-V2X in urban scenarios improves performance and mitigates coexistence effects.",
+    "authors": [
+      "Mohammad Hossein Manshaei",
+      "Marwan Krunz",
+      "Amal Yousseef"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 International Conference on Computing, Networking and Communications (ICNC)",
+    "doi": "10.1109/ICNC59896.2024.10556134",
+    "bibtex_citation": "Manshaei_Performance_2024",
+    "analysis": {
+      "Overview": "The paper evaluates the coexistence performance of DSRC and C-V2X radio technologies in shared spectrum for intelligent transportation systems, focusing on optimal channel allocation to enhance vehicular communication in highway and urban environments.",
+      "Background_and_Motivation": [
+        "Global growth in intelligent transportation systems (ITS) and connected autonomous vehicles (CAVs) faces challenges in spectrum allocation and interference between heterogeneous radio access technologies (RATs).",
+        "Motivated by FCC rulings that allocate 30 MHz of spectrum for both DSRC and C-V2X without clear coexistence guidelines, the study aims to solve the problem of inefficient resource sharing that degrades communication reliability and safety.",
+        "Authors argue necessity by highlighting the impracticality of replacing existing DSRC-equipped vehicles, regional preferences for DSRC, and ongoing enhancements, making coexistence inevitable and urgent for widespread ITS adoption.",
+        "The specific problem of channel allocation is linked to the broader challenge of spectrum scarcity in ITS, establishing significance through potential communication failures and unsafe driving conditions if unaddressed.",
+        "Contributes to wireless communications, vehicular networking, and spectrum management disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: DSRC (contention-based MAC using CSMA/CA), C-V2X (scheduled MAC using semi-persistent scheduling), Coexistence Interference (mutual disruption from shared spectrum).",
+        "Logical relationships: Differences in MAC layer designs (contention vs. scheduling) cause interference; optimal channel allocation balances these to minimize collisions and improve metrics like packet reception rate.",
+        "Key assumptions include periodic beacon transmissions (100 ms interval, 350 bytes), uniform transmission power (23 dBm), and WINNER propagation models for realistic simulation.",
+        "Contributes empirical evidence to the knowledge system by providing scenario-specific allocation strategies, advancing practical solutions for vehicular network optimization."
+      ],
+      "Methodology": [
+        "Core methods involve discrete-event simulations with WiLabV2XSim, testing three channel allocation modes (shared, dedicated) under highway and urban scenarios, varying parameters like vehicle density and modulation schemes.",
+        "Novelty lies in being the first to address optimal channel allocation for coexistence; applicability is high for real-world ITS deployments; rationality is supported by parameterized simulations mirroring FCC spectrum rules.",
+        "Data from synthetic mobility models (e.g., highway speeds 120 km/h ±20 km/h, urban speeds 30 km/h ±15 km/h); preprocessing includes equal vehicle distribution per channel; representativeness is evaluated through LOS/NLOS conditions in WINNER models.",
+        "Experimental design is rigorous with controlled variables (e.g., MCS indices, vehicle counts) and adequate metrics (PRR, CBR, packet age); evaluation uses awareness ranges and statistical analysis.",
+        "Follows a simulation-based paradigm, affecting research by prioritizing empirical performance over theoretical models, focusing on practical interference mitigation."
+      ],
+      "Results": [
+        "Key results: Highway scenario favors two DSRC channels and one C-V2X channel (lower CBR, higher PRR); urban scenario favors one DSRC channel and two C-V2X channels; DSRC outperforms C-V2X at 200m awareness distance in tested settings.",
+        "Results are significant for optimizing real-world deployments, reliable due to repeated simulations across densities, and stable with consistent trends across MCS variations."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall argument structure: Introduce coexistence problem, detail RATs and challenges, present simulation methodology, show results by scenario, conclude with optimal allocations.",
+        "Key steps: Motivate coexistence urgency, describe simulation setup, compare results for highway/urban, validate with metrics, recommend allocations; logical links tie interference challenges to empirical solutions.",
+        "Strengths include clear data-driven conclusions; weaknesses involve limited consideration of dynamic environments; authors address rebuttals by contrasting results with 'common wisdom' and suggesting future work."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First study on optimal channel allocation for coexistence, comprehensive simulations across scenarios, actionable insights for spectrum management.",
+        "Limitations: Assumes static channel assignments and specific MCS settings; boundaries include no evaluation of mixed traffic or advanced interference models.",
+        "Theoretical paradigm constraints: Reliance on current standards (e.g., C-V2X Mode 4) may limit applicability to future technologies like NR V2X or adaptive scheduling."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Fills a gap in coexistence literature by providing empirical allocation strategies, positioning itself as a practical guide for ITS spectrum optimization.",
+        "Uses technical terminology (e.g., PRR, CBR), formal tone, and rhetorical strategies like contrasting results with 'common wisdom' to emphasize novelty.",
+        "Builds authority through citations of foundational works (e.g., 3GPP standards, prior simulations), with motivations to validate methods and contextualize contributions."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: Environment-dependent channel allocation optimizes performance—highways favor DSRC-heavy splits, urban areas favor C-V2X-heavy splits—reducing coexistence effects.",
+        "Future research suggestions: Develop solutions for interference minimization and fair resource allocation, extend to dynamic environments, and explore hybrid technologies."
+      ]
+    }
+  }
+}

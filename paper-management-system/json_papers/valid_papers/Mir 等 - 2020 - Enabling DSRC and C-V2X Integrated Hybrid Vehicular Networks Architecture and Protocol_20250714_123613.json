@@ -1,0 +1,80 @@
+{
+  "file_name": "Mir 等 - 2020 - Enabling DSRC and C-V2X Integrated Hybrid Vehicular Networks Architecture and Protocol.pdf",
+  "generated_at": "2025-07-14 12:36:13",
+  "structured_info": {
+    "title_cn": "支持DSRC和C-V2X集成的混合车载网络：架构与协议",
+    "title_en": "Enabling DSRC and C-V2X Integrated Hybrid Vehicular Networks: Architecture and Protocol",
+    "category": "Vehicular Networks",
+    "topics": [
+      "Radio Resource Management",
+      "Vertical Handover",
+      "Hybrid Vehicular Networks"
+    ],
+    "keywords": [
+      "DSRC",
+      "C-V2X",
+      "Hybrid Vehicular Networks",
+      "RAT selection",
+      "Vertical Handover"
+    ],
+    "abstract": "Emerging Vehicle-to-Everything (V2X) applications such as Advanced Driver Assistance Systems (ADAS) and Connected and Autonomous Driving (CAD) requires an excessive amount of data by vehicular sensors, collected, processed, and exchanged in real-time. A heterogeneous wireless network is envisioned where multiple Radio Access Technologies (RATs) can coexist to cater for these and other future applications. The primary challenge in such systems is the Radio Resource Management (RRM) strategy and the RAT selection algorithm. In this article, a Hybrid Vehicular Network (HVN) architecture and protocol stack is proposed, which combines Dedicated Short-Range Communication (DSRC) technology-enabled ad hoc network and infrastructure-based Cellular V2X (C-V2X) technologies. To this end, we address the design and performance evaluation of a distributed RRM entity that manages and coordinates Radio Resources (RR) in both RATs. Central to distributed RRM are adaptive RAT selection and Vertical Handover (VHO) algorithms supported by two procedures. (1) Measurement of Quality of Service (QoS) parameters and associated criteria to select the suitable RAT according to the network conditions. (2) Dynamic communication management (DCM) via implementing RR-QoS negotiation. The simulation results show the effectiveness of the proposed architecture and protocol suite under various parameter settings and performance metrics such as the number of VHOs, packet delivery ratio, and throughput, and latency.",
+    "methodology": "The paper proposes a Hybrid Vehicular Network (HVN) architecture combining DSRC and C-V2X technologies. It introduces a distributed Radio Resource Management (RRM) entity, adaptive RAT selection, and Vertical Handover (VHO) algorithms. The methodology includes QoS parameter measurement, dynamic communication management, and simulation-based performance evaluation.",
+    "conclusion": "The proposed hybrid architecture and protocol suite effectively manage radio resources in DSRC and C-V2X networks, demonstrating improved performance in terms of VHOs, packet delivery ratio, throughput, and latency. The adaptive RAT selection and VHO algorithms ensure seamless connectivity and efficient resource utilization.",
+    "authors": [
+      "Zeeshan Hameed Mir",
+      "Jamal Toutouh",
+      "Fethi Filali",
+      "Young-Bae Ko"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2020.3027074",
+    "bibtex_citation": "Mir_Enabling_2020",
+    "analysis": {
+      "Overview": "The paper presents a hybrid vehicular network architecture integrating DSRC and C-V2X technologies, focusing on radio resource management and RAT selection to meet the QoS requirements of emerging V2X applications.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of heterogeneous wireless networks in vehicular environments, where multiple RATs coexist.",
+        "The motivation stems from the need to support real-time data exchange for advanced V2X applications like ADAS and CAD.",
+        "The authors highlight the necessity of efficient RRM and RAT selection to ensure seamless connectivity and performance.",
+        "The problem is linked to broader challenges in vehicular communications, emphasizing the significance of hybrid network solutions.",
+        "The paper contributes to the fields of vehicular networks, wireless communications, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include Hybrid Vehicular Network (HVN), Radio Resource Management (RRM), and Vertical Handover (VHO).",
+        "The logical relationship involves distributed RRM coordinating between DSRC and C-V2X RATs, supported by adaptive algorithms.",
+        "Key assumptions include the coexistence of DSRC and C-V2X, distributed RRM implementation, and QoS-aware RAT selection.",
+        "The paper contributes a novel architecture and protocol suite for hybrid vehicular networks, advancing the knowledge in RRM and VHO."
+      ],
+      "Methodology": [
+        "The core methods include distributed RRM, adaptive RAT selection, VHO algorithms, and dynamic communication management.",
+        "The methodology is novel in its distributed approach and applicability to hybrid vehicular networks.",
+        "Data sources include simulation parameters for DSRC and LTE networks, with preprocessing steps for QoS measurement.",
+        "Experimental design is rigorous, with performance metrics like VHOs, PDR, throughput, and latency.",
+        "The research follows a hybrid network paradigm, integrating ad hoc and infrastructure-based communication."
+      ],
+      "Results": [
+        "Key results show the effectiveness of the proposed architecture in reducing VHOs and improving reliability and latency.",
+        "The results are significant for hybrid vehicular networks, demonstrating stable performance under various conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with problem identification, followed by solution design and performance evaluation.",
+        "Key steps include architecture proposal, algorithm design, and simulation validation.",
+        "Strengths include comprehensive simulation results; weaknesses may include limited real-world validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel hybrid architecture, adaptive algorithms, and comprehensive performance evaluation.",
+        "Limitations: Simulation-based validation may not capture all real-world scenarios.",
+        "Theoretical constraints include assumptions about network conditions and QoS requirements."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on hybrid vehicular networks and RRM.",
+        "Terminology includes technical terms like RAT, VHO, and QoS; the tone is formal and technical.",
+        "Citations build authority by referencing prior work in vehicular networks and RRM."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the efficacy of the proposed hybrid architecture and protocols.",
+        "Future research could explore real-world deployment and integration with 5G technologies."
+      ]
+    }
+  }
+}

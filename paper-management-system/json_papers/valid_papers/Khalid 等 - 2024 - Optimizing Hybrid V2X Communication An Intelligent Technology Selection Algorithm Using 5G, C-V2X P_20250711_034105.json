@@ -1,0 +1,90 @@
+{
+  "file_name": "Khalid 等 - 2024 - Optimizing Hybrid V2X Communication An Intelligent Technology Selection Algorithm Using 5G, C-V2X P.pdf",
+  "generated_at": "2025-07-11 03:41:05",
+  "structured_info": {
+    "title_cn": "优化混合V2X通信：一种使用5G、C-V2X PC5和DSRC的智能技术选择算法",
+    "title_en": "Optimizing Hybrid V2X Communication: An Intelligent Technology Selection Algorithm Using 5G, C-V2X PC5 and DSRC",
+    "category": "Vehicular Communication",
+    "topics": [
+      "Hybrid V2X",
+      "Wireless Communication",
+      "Intelligent Transportation Systems"
+    ],
+    "keywords": [
+      "hybrid",
+      "5G",
+      "C-V2X PC5",
+      "DSRC",
+      "technology selection",
+      "communication",
+      "CAMINO",
+      "CAM",
+      "DENM",
+      "V2X"
+    ],
+    "abstract": "Cooperative communications advancements in Vehicular-to-Everything (V2X) are bolstering the autonomous driving paradigm. Conventional vehicular networks employ static wireless vehicular communication technology without considering traffic load or dynamics, leading to inefficiency. This study investigates hybrid V2X communication and proposes an autonomous and intelligent technology selection algorithm using a decision tree. The algorithm uses statistics from received Cooperative Awareness Messages (CAMs)—inter-vehicular distance, one-way end-to-end latency, and CAM density—to select the optimal technology (DSRC, C-V2X PC5, or 5G) for subsequent transmissions. Experimental validation demonstrates enhancements in latency, reliability, and packet delivery rate compared to static technology usage.",
+    "methodology": "Decision tree-based algorithm utilizing real-time statistics (latency, distance, CAM density, message type, speed) for dynamic technology selection. Implemented and tested on a V2X testbed with DSRC, C-V2X PC5, and 5G capabilities.",
+    "conclusion": "The intelligent hybrid V2X algorithm improves one-way end-to-end latency, reliability, and packet delivery rate by dynamically selecting optimal communication technologies based on real-time conditions, outperforming static technology assignments.",
+    "authors": [
+      "Ihtisham Khalid",
+      "Vasilis Maglogiannis",
+      "Dries Naudts",
+      "Adnan Shahid",
+      "Ingrid Moerman"
+    ],
+    "publication_year": "2024",
+    "venue": "Future Internet",
+    "doi": "10.3390/fi16040107",
+    "bibtex_citation": "Khalid_Optimizing_2024",
+    "analysis": {
+      "Overview": "Proposes a real-time decision tree algorithm for dynamically selecting optimal V2X communication technologies (DSRC, C-V2X PC5, 5G) based on traffic statistics to enhance latency, reliability, and packet delivery in vehicular networks.",
+      "Background_and_Motivation": [
+        "Conventional static V2X technology assignments ignore traffic load and dynamics, causing inefficiency in safety-critical applications.",
+        "Need for adaptive technology selection to handle dynamic vehicular environments and ensure low-latency communication for safety messages.",
+        "Rising connected/autonomous vehicles and accident risks underscore urgency; static approaches cannot accommodate real-time traffic variability.",
+        "Specific problem of inefficient resource use in hybrid V2X is linked to broader challenges of road safety and network scalability in intelligent transportation.",
+        "Contributes to wireless communication, intelligent transportation systems, and edge computing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Hybrid V2X: Integration of short-range (DSRC, C-V2X PC5) and long-range (5G) technologies.",
+          "Intelligent Technology Selection: Decision tree algorithm using latency, distance, density, message type, and speed.",
+          "CAM/DENM Messages: Cooperative Awareness Messages for vehicle state data; Decentralized Environmental Notification Messages for hazard alerts."
+        ],
+        "Statistics from CAMs inform technology selection; dynamic adaptation based on speed/density optimizes message routing and frequency.",
+        "Assumes all nodes support multiple technologies; synchronized clocks via GPS; CAM statistics accurately represent network conditions.",
+        "Provides a novel experimental framework for decentralized hybrid V2X, advancing adaptive resource allocation in vehicular networks."
+      ],
+      "Methodology": [
+        "Decision tree algorithm processes real-time CAM statistics (latency, distance, density) alongside node speed and message type to select technology(ies) and adapt transmission frequency.",
+        "Novelty: First to integrate three technologies (DSRC, PC5, 5G) with real-world validation; applicability demonstrated in dynamic road environments; rationality via threshold-based optimization.",
+        "Data from OBU log files in testbed (two nodes); preprocessing includes averaging latency/distance per technology over sliding windows; representativeness limited to controlled scenarios but addresses real-world constraints.",
+        "Rigorous testbed design (stationary/mobile OBUs, synchronized clocks); KPIs (latency, PDR, reliability) adequately measure performance improvements.",
+        "Follows applied engineering paradigm, focusing on empirical validation over theoretical modeling."
+      ],
+      "Results": [
+        "Hybrid approach reduced latency (CDF shows improvement), achieved near-100% PDR, and enhanced reliability versus single technologies; DSRC optimal <125m, PC5 for 125–250m, 5G beyond.",
+        "Results significant for safety-critical applications; reliability validated via threshold adherence (20ms); stability confirmed through repeated trials."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem (static inefficiency) → Algorithm design → Testbed implementation → Results validation.",
+        "Key steps: Motivate hybrid necessity; design decision tree; test in real environment; compare KPIs; address scalability via decentralization.",
+        "Strengths: Logical flow from gap to solution; real-world evidence counters simulation limitations. Weaknesses: Limited node scale; rebuttals addressed by emphasizing first multi-technology experimental validation."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First three-technology hybrid approach; real-road validation; dynamic rate adaptation; improved KPIs.",
+        "Methodology boundaries: Testbed limited to two nodes; thresholds (distance, latency) scenario-specific; dense traffic scalability unverified.",
+        "Engineering focus constraints theoretical generalization; conclusions apply to decentralized edge-based decisions but not cloud-centric models."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as pioneering work in multi-technology hybrid V2X with experimental rigor, filling gaps in prior simulation-based studies.",
+        "Technical terminology (e.g., 'SPS', 'geocasting'); persuasive tone highlighting 'novelty' and 'real-world'; rhetoric emphasizes urgency via accident statistics.",
+        "Citations build authority by critiquing prior limitations (e.g., lack of 5G integration); motivations include establishing empirical leadership in the field."
+      ],
+      "Conclusions_and_Implications": [
+        "Dynamic technology selection improves latency, reliability, and PDR; decentralized algorithm enables real-time adaptability for safety-critical V2X applications.",
+        "Future work: Large-scale testing; integrate machine learning; explore 5G network slicing; extend to cross-border scenarios."
+      ]
+    }
+  }
+}

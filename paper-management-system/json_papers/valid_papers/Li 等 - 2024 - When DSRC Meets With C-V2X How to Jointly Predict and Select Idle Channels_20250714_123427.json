@@ -1,0 +1,79 @@
+{
+  "file_name": "Li 等 - 2024 - When DSRC Meets With C-V2X How to Jointly Predict and Select Idle Channels.pdf",
+  "generated_at": "2025-07-14 12:34:27",
+  "structured_info": {
+    "title_cn": "当DSRC与C-V2X相遇：如何联合预测和选择空闲信道？",
+    "title_en": "When DSRC Meets With C-V2X: How to Jointly Predict and Select Idle Channels?",
+    "category": "Vehicular Communications",
+    "topics": [
+      "Spectrum Access",
+      "Deep Reinforcement Learning",
+      "Indian Buffet Process"
+    ],
+    "keywords": [
+      "DSRC",
+      "C-V2X",
+      "spectrum access",
+      "deep Q-learning network",
+      "Indian buffet process"
+    ],
+    "abstract": "The Dedicated Short Range Communications (DSRC) terminator requires extra idle channels to ensure reliable broadcasting of safety information, especially when traffic congestion occurs under high vehicle density. In the DSRC and Cellular Vehicle-to-Everything (C-V2X) mixed vehicular communication networks, it is straightforward to adopt the dynamic spectrum access of the DSRC over idle C-V2X channels. In this paper, we propose a novel joint spectrum prediction and selection scheme for DSRC users (DUEs), aiming to improve the data rate of DUEs and mitigate the interference to C-V2X terminators (CUEs). Firstly, we define the process of DUEs' spectrum selection as an Indian buffet process (IBP), which fits the practical scenarios and also implies that the channel's availability is predictable. Secondly, we integrate channels' available probability predicted by IBP with the corresponding historical reward obtained by deep reinforcement learning (DRL) to acquire a more accurate available channel list. Finally, we exploit a deep Q-learning network (DQN) to select high-profit channels for DSRC communications in the candidate channels. Simulation results show that the proposed algorithm can improve the average data rate of DUEs by 15% and maintain low interference to CUEs under different transmission power levels and densities of DUEs, compared with the other four typical methods.",
+    "methodology": "The paper proposes a joint spectrum prediction and selection scheme combining Indian Buffet Process (IBP) for channel idle probability prediction and Deep Q-Learning Network (DQN) for high-profit channel selection.",
+    "conclusion": "The proposed DQN-IBPR algorithm improves the average data rate of DUEs by 15% and reduces interference with CUEs compared to other methods. Future work includes designing a collaborative and adaptive spectrum access scheme in mixed vehicular scenarios.",
+    "authors": [
+      "Pengfei Li",
+      "Xin-Lin Huang",
+      "Fei Hu"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2024.3399211",
+    "bibtex_citation": "Li_When_2024",
+    "analysis": {
+      "Overview": "The paper addresses the challenge of spectrum access in mixed DSRC and C-V2X vehicular networks, proposing a novel joint spectrum prediction and selection scheme to improve DUE data rates while minimizing interference with CUEs.",
+      "Background_and_Motivation": [
+        "The research addresses the need for reliable broadcasting of safety information in vehicular networks, particularly under high vehicle density conditions.",
+        "The specific problem is improving data rates for DSRC users (DUEs) while minimizing interference with C-V2X terminators (CUEs) in mixed networks.",
+        "The authors argue the necessity by highlighting the limitations of existing methods in dynamic vehicular environments.",
+        "The problem is significant as it impacts road safety and communication efficiency in intelligent transportation systems.",
+        "The paper contributes to vehicular communications and wireless spectrum management fields."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) Indian Buffet Process (IBP) for channel selection modeling, 2) Deep Q-Learning Network (DQN) for spectrum selection, 3) Channel availability prediction combining IBP and DRL rewards.",
+        "The IBP models historical channel selections, while DQN optimizes current selections, with their outputs combined for final channel selection.",
+        "Key assumptions: Channel availability follows predictable patterns, and historical selection data can inform future selections.",
+        "The paper contributes a novel hybrid approach to spectrum management in vehicular networks."
+      ],
+      "Methodology": [
+        "Combines IBP for channel idle probability prediction with DQN for channel selection based on historical rewards.",
+        "Novelty lies in integrating probabilistic prediction with reinforcement learning. Applicable to dynamic vehicular environments.",
+        "Uses simulated vehicular network data with parameters like transmission power and vehicle density varied for evaluation.",
+        "Rigorous experimental design comparing against four baseline methods with multiple performance metrics.",
+        "Follows a machine learning paradigm, specifically reinforcement learning, for adaptive spectrum management."
+      ],
+      "Results": [
+        "The proposed DQN-IBPR algorithm improves D-V2V link data rates by 15% over DQN alone.",
+        "Results show consistent performance across different transmission power levels and vehicle densities, demonstrating reliability."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument progresses from problem identification to solution proposal, validation, and comparison.",
+        "Key steps: 1) Problem formulation, 2) IBP modeling, 3) DQN integration, 4) Performance evaluation.",
+        "Strengths: Comprehensive evaluation against multiple baselines. Potential weakness: Real-world validation needed."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative combination of IBP and DRL for spectrum management.",
+        "Methodology may be computationally intensive for real-time implementation.",
+        "The machine learning approach assumes stationarity in channel selection patterns."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the work within vehicular communications literature, citing relevant prior work.",
+        "Uses technical terminology specific to wireless communications and machine learning.",
+        "Builds authority through citations to established works and IEEE publications."
+      ],
+      "Conclusions_and_Implications": [
+        "The DQN-IBPR algorithm effectively improves DUE data rates while controlling interference.",
+        "Future work could explore real-world implementation and computational efficiency improvements."
+      ]
+    }
+  }
+}

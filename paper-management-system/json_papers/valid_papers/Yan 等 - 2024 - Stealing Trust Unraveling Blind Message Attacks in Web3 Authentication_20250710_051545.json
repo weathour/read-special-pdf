@@ -1,0 +1,79 @@
+{
+  "file_name": "Yan 等 - 2024 - Stealing Trust Unraveling Blind Message Attacks in Web3 Authentication.pdf",
+  "generated_at": "2025-07-10 05:15:45",
+  "structured_info": {
+    "title_cn": "窃取信任：揭示Web3认证中的盲消息攻击",
+    "title_en": "Stealing Trust: Unraveling Blind Message Attacks in Web3 Authentication",
+    "category": "Cybersecurity",
+    "topics": [
+      "Web3 Security",
+      "Authentication Vulnerabilities",
+      "Blockchain Applications"
+    ],
+    "keywords": [
+      "Web3",
+      "Authentication",
+      "Blind Message Attacks",
+      "Blockchain Security",
+      "Vulnerability Detection"
+    ],
+    "abstract": "As the field of Web3 continues its rapid expansion, the security of Web3 authentication, often the gateway to various Web3 applications, becomes increasingly crucial. Despite its widespread use as a login method by numerous Web3 applications, the security risks of Web3 authentication have not received much attention. This paper investigates the vulnerabilities in the Web3 authentication process and proposes a new type of attack, dubbed blind message attacks. In blind message attacks, attackers trick users into blindly signing messages from target applications by exploiting users' inability to verify the source of messages, thereby achieving unauthorized access to the target application. We have developed Web3AuthChecker, a dynamic detection tool that interacts with Web3 authentication-related APIs to identify vulnerabilities. Our evaluation of real-world Web3 applications shows that a staggering 75.8% (22/29) of Web3 authentication deployments are at risk of blind message attacks. In response to this alarming situation, we implemented Web3AuthGuard on the open-source wallet MetaMask to alert users of potential attacks. Our evaluation results show that Web3AuthGuard can successfully raise alerts in 80% of the tested Web3 authentications. We have responsibly reported our findings to vulnerable websites and have been assigned two CVE IDs.",
+    "methodology": "Dynamic vulnerability detection via Web3AuthChecker tool interacting with authentication APIs; empirical evaluation on 29 real-world Web3 applications; implementation of client-side mitigation (Web3AuthGuard) in MetaMask wallet.",
+    "conclusion": "Blind message attacks exploit critical vulnerabilities in 75.8% of tested Web3 authentications; Web3AuthGuard effectively alerts users to 80% of attacks; protocol flaws in EIP-191 enable exploitation requiring new authentication standards.",
+    "authors": [
+      "Kailun Yan",
+      "Xiaokuan Zhang",
+      "Wenrui Diao"
+    ],
+    "publication_year": "2024",
+    "venue": "Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security (CCS '24)",
+    "doi": "https://doi.org/10.1145/3658644.3670323",
+    "bibtex_citation": "Yan_Stealing_2024",
+    "analysis": {
+      "Overview": "Investigates security vulnerabilities in Web3 authentication protocols, introduces blind message attacks enabling unauthorized access, develops detection/mitigation tools, and validates findings through real-world evaluations.",
+      "Background_and_Motivation": [
+        "Web3's rapid growth involves significant financial transactions ($592M monthly volume), but authentication security remains overlooked despite being the gateway to applications.",
+        "Users cannot verify message sources during authentication, allowing attackers to trick them into signing target application messages for unauthorized access.",
+        "75.8% of tested deployments are vulnerable, risking asset loss and anonymity compromise, demanding urgent attention due to widespread adoption (e.g., MetaMask's 30M users).",
+        "Blind message attacks represent a systemic flaw in decentralized identity verification, undermining trust in Web3's foundational security model.",
+        "Contributes to cybersecurity, blockchain technology, and authentication systems through interdisciplinary analysis of Web3 infrastructure."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Blind Message Attack: Tricking users to sign unauthorized messages; Web3AuthChecker: Dynamic API-based vulnerability detector; Web3AuthGuard: Client-side attack-alert mechanism.",
+        "Attacks exploit message-design flaws → Detection identifies vulnerabilities → Mitigation alerts users; forming a threat-prevention lifecycle.",
+        "Assumes attackers cannot compromise browsers/wallets but exploit authentication flaws; users reuse keys across applications.",
+        "Introduces novel attack taxonomy (Critical/High/Medium/Low risk) and tools advancing vulnerability detection/mitigation in decentralized systems."
+      ],
+      "Methodology": [
+        "Web3AuthChecker sends crafted API requests to test message integrity, nonce verification, and signature validation; Web3AuthGuard uses regex matching against message templates.",
+        "Novel dynamic testing bypasses front-ends; FlexRequest library handles diverse API structures; template extraction adapts to message variations.",
+        "29 cases from 27 websites (DappRadar/Google) covering marketplaces/games/services; 1.29M unique wallets; data preprocessing included attack payload injection.",
+        "Rigorous multi-payload testing (1,319 requests); manual verification confirmed zero false positives/negatives; curl-impersonate ensured request legitimacy.",
+        "Follows practical security research paradigm: vulnerability modeling → tool development → empirical validation → mitigation proposal."
+      ],
+      "Results": [
+        "75.8% (22/29) deployments vulnerable to blind message attacks; 11 replay attacks; 7 blind multi-message attacks; Web3AuthGuard prevented 80% of attacks.",
+        "Results validated through manual checks; vulnerabilities assigned CVEs (CVE-2023-50053/CVE-2023-50059); high-risk sites had >89k active wallets demonstrating impact severity."
+      ],
+      "Argumentation_and_Logic": [
+        "Vulnerability taxonomy (V1: missing fields → V3: flawed verification) enables attacks → Detection proves prevalence → Mitigation offers protection.",
+        "1. Identify attack surfaces 2. Classify risk levels 3. Develop detector 4. Validate empirically 5. Implement guard 6. Disclose responsibly.",
+        "Strengths: Comprehensive real-world validation; limitations exclude MitM/browser exploits. Rebuttals addressed via responsible disclosure and CVE assignments."
+      ],
+      "Strengths_and_Limitations": [
+        "First systematic analysis of Web3 auth flaws; novel attacks; open-source tools; high vulnerability discovery rate (75.8%).",
+        "Web3AuthGuard ineffective against arbitrary message modification (5/25 cases); theoretical paradigms limit generalizability beyond Ethereum-based systems.",
+        "EIP-191 protocol constraints obscure message origins, inherently enabling attacks without protocol-level changes."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Establishes Web3 authentication as critical attack vector; challenges assumption that cryptographic signing ensures security.",
+        "Technical terminology (e.g., 'nonce verification', 'message body integrity'); urgent tone emphasizing exploit prevalence; strategic citations position work within smart contract/DeFi security research.",
+        "Builds authority via 2 CVEs and responsible disclosure; citation choices highlight gaps in prior authentication-focused literature."
+      ],
+      "Conclusions_and_Implications": [
+        "Blind message attacks are pervasive threats; protocol redesign (e.g., mandatory domain/nonce fields) and unique per-site keys needed for long-term security.",
+        "Future work: Standardize Web3 authentication protocols; expand detection to mobile wallets; integrate zero-knowledge proofs for enhanced privacy."
+      ]
+    }
+  }
+}

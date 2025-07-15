@@ -1,0 +1,83 @@
+{
+  "file_name": "Annu和Rajalakshmi - 2024 - Distance-Based Queue Modeling in Sidelink C-V2X Communication for Platooning Towards 6G-V2X.pdf",
+  "generated_at": "2025-07-11 06:13:49",
+  "structured_info": {
+    "title_cn": "基于距离的队列建模在侧链C-V2X通信中用于编队：面向6G-V2X",
+    "title_en": "Distance-Based Queue Modeling in Sidelink C-V2X Communication for Platooning: Towards 6G-V2X",
+    "category": "Vehicular Communications",
+    "topics": [
+      "Sidelink Communication",
+      "V2V Platooning",
+      "Resource Allocation"
+    ],
+    "keywords": [
+      "6G-V2X",
+      "C-V2X",
+      "Sidelink Communication",
+      "V2V Platooning",
+      "Distance-Based Queue Modeling",
+      "Resource Allocation Efficiency"
+    ],
+    "abstract": "This paper investigates resource allocation optimization for sidelink Cellular Vehicle-to-Everything (C-V2X) communication, focusing on platooning during the 5G to 6G transition. We emphasize the importance of Vehicle-to-Vehicle (V2V) communication in C-V2X Mode 4 optimization, incorporating significant enhancements such as distance-based queue modeling. Despite Mode 4's similarities to 5G V2X Mode 2, our approach maintains a Markov chain perspective. Our primary contribution is a tailored distance-based queue model for C-V2X platooning scenarios, vital for advanced V2X applications in 6G environments. By integrating spatial considerations into the semi-persistent scheduling (SPS) algorithm, we demonstrate the impact of distance and queue dynamics on resource allocation efficiency. This research sets a standard for future vehicular communication systems. Initial parameter selection for the proposed queue model relies on empirical data from the TiHAN testbed at IIT Hyderabad.",
+    "methodology": "Distance-based queue modeling integrated into C-V2X Mode 4 framework, Markov chain adjustments with distance-based enhancements, semi-persistent scheduling (SPS) algorithm modifications, simulations using empirical data from the TiHAN testbed.",
+    "conclusion": "The study enhances C-V2X sidelink communication with a distance-based queue model, improving resource allocation and vehicle prioritization for 6G-V2X. Future research may integrate AI for dynamic platooning optimization to bolster vehicular network reliability.",
+    "authors": [
+      "Annu",
+      "P. Rajalakshmi"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall)",
+    "doi": "10.1109/VTC2024-Fall63153.2024.10757993",
+    "bibtex_citation": "Annu_Distance-Based_2024",
+    "analysis": {
+      "Overview": "The paper introduces a distance-based queue model for sidelink C-V2X communication in vehicle platooning, optimizing resource allocation during the transition to 6G-V2X by incorporating spatial dynamics into existing protocols.",
+      "Background_and_Motivation": [
+        "The evolution from 5G to 6G-V2X highlights challenges in achieving efficient, reliable, and scalable vehicular networks for complex use cases like platooning.",
+        "Addresses the gap in optimizing resource allocation for spatial dynamics within platoons, specifically improving communication efficiency and safety.",
+        "Authors argue necessity by citing limitations in prior queuing models and emphasizing the urgency for 6G advancements to support autonomous vehicle coordination.",
+        "Relates the specific problem of platoon communication inefficiencies to the broader challenge of 6G-V2X scalability, establishing significance through potential safety and performance enhancements.",
+        "Contributes to vehicular communications, wireless networking, and interdisciplinary fields involving autonomous systems and queuing theory."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Distance-Based Queue Modeling: A model adjusting queue dynamics based on inter-vehicle distances to prioritize communication.",
+          "Deffect (Distance Effect): A parameter modulating communication probabilities (e.g., collision, delay) exponentially based on distance, defined as Deffect(Di,i+1) = e^(-λdecay * Di,i+1) with normalization.",
+          "Markov Chain Adjustments: Modifications to steady-state probabilities in queuing models to incorporate spatial considerations."
+        ],
+        "Deffect influences queue states and resource selection in the SPS algorithm, which in turn affects metrics like collision probability and channel utilization, creating a feedback loop for optimized platoon communication.",
+        "Key assumptions include the convergence of Markov chains to steady states, exponential decay of signal strength with distance, and empirical validity of testbed data for parameter tuning.",
+        "The paper makes an applied contribution by introducing a novel model that enhances existing C-V2X protocols, advancing the field's knowledge through practical, simulation-validated innovations."
+      ],
+      "Methodology": [
+        "Core methods include deriving and integrating Deffect into the SPS algorithm and Markov chain-based queue model, with simulations using parameters from TiHAN testbed data.",
+        "The methodology is novel for its distance-based spatial integration, applicable to platooning scenarios, and rational due to empirical grounding and alignment with signal decay principles.",
+        "Data from TiHAN testbed includes Packet Error Rate (PER), Packet Reception Rate (PRR), latency, and inter-packet gap; preprocessing involves normalization and parameter extraction; representativeness is validated through real-world vehicular communication metrics.",
+        "Experimental design is rigorous with controlled simulations varying distance and λ/µ ratios; evaluation metrics (e.g., average delay, collision probability) are standard and adequate for assessing communication efficiency.",
+        "Follows the Markov chain theoretical paradigm for queuing systems, constraining the research to probabilistic models but providing a structured framework for dynamic analysis."
+      ],
+      "Results": [
+        "Key results show Deffect reduces collision probability and average delay while improving channel utilization; higher λ/µ ratios enhance performance at larger distances; collision probability increases with platoon size but channel utilization also rises.",
+        "Results are significant for demonstrating efficiency gains in 6G-V2X, reliable due to empirical parameterization, and stable across simulated variations in distance and traffic intensity."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure progresses from problem identification (spatial dynamics gap) to solution (Deffect integration), mathematical derivation, simulation validation, and conclusion.",
+        "Key steps include justifying Deffect via signal decay, modifying Markov chain equations, simulating impacts on metrics, and analyzing trends like distance-dependent performance improvements.",
+        "Strengths include clear logical links to prior work and robust derivation; weaknesses involve assumptions like steady-state convergence. Authors address rebuttals by validating with testbed data and suggesting future AI enhancements."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include innovative distance-based modeling, practical validation via simulations, and setting a benchmark for 6G-V2X.",
+        "Limitations include reliance on specific empirical data (TiHAN testbed), potential unrepresentativeness for all environments, and simplified assumptions in Markov models.",
+        "The Markov chain paradigm constrains conclusions to probabilistic scenarios, limiting generalizability to non-stationary or highly dynamic vehicular conditions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself as advancing 6G-V2X discourse by addressing spatial inefficiencies, building on foundational C-V2X studies.",
+        "Uses technical terminology (e.g., SPS, Deffect), formal tone, and rhetorical strategies like contrasting with prior work to emphasize novelty.",
+        "Authors build authority through citations of related studies (e.g., [6], [7]), motivated by establishing credibility and contextualizing contributions within existing literature."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions confirm the distance-based model enhances C-V2X resource allocation for platooning, with Deffect optimizing key metrics like collision probability.",
+        "Future research should integrate AI for dynamic adaptation and extend validation to diverse real-world scenarios for broader applicability."
+      ]
+    }
+  }
+}

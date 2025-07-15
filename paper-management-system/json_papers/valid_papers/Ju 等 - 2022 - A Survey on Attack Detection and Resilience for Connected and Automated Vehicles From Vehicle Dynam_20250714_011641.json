@@ -1,0 +1,84 @@
+{
+  "file_name": "Ju 等 - 2022 - A Survey on Attack Detection and Resilience for Connected and Automated Vehicles From Vehicle Dynam.pdf",
+  "generated_at": "2025-07-14 01:16:41",
+  "structured_info": {
+    "title_cn": "关于网联自动驾驶车辆攻击检测与恢复能力的综述：基于车辆动力学与控制视角",
+    "title_en": "A Survey on Attack Detection and Resilience for Connected and Automated Vehicles: From Vehicle Dynamics and Control Perspective",
+    "category": "Intelligent Vehicles",
+    "topics": [
+      "Attack Detection",
+      "Resilience Strategies",
+      "Vehicle Dynamics",
+      "Control Systems",
+      "Cybersecurity"
+    ],
+    "keywords": [
+      "Connected and Automated Vehicles",
+      "Attack Detection",
+      "Resilience Strategy",
+      "Vehicle Dynamics",
+      "Control Perspective"
+    ],
+    "abstract": "Recent advances in attack anomaly detection and resilience strategies for connected and automated vehicles (CAVs) are reviewed from vehicle dynamics and control perspective. Compared to traditional vehicles, CAVs are featured in the increasing number of perception sensors, advanced intra-vehicle communication technologies, capabilities of driving automation and connectivity between single vehicles. These features bring about safety issues which are not encountered in traditional vehicle systems. One main type of these issues is the attack or anomaly launched onto the perception sensors and the communication channels. With such a consideration, this survey summarizes and reviews the existing results on attack anomaly detection and resilience of CAVs in control frameworks. This paper reviews the results according to the positions at which the attacks anomalies occur. These positions are divided into three categories, namely, intra-vehicle communication network, perception sensors and inter-vehicle communication network. From this perspective, the recent attack anomaly detection and resilience results are reviewed according to different positions attacked. After reviewing existing results, some potential research directions and challenges are identiﬁed.",
+    "methodology": "Literature review and systematic categorization of attack detection and resilience approaches based on attack positions (intra-vehicle networks, sensors, inter-vehicle networks). Analysis includes vehicle dynamic modeling, attack impact assessment, and evaluation of control-based countermeasures.",
+    "conclusion": "Control-based approaches are essential for CAV security due to cyber-physical interactions. The survey identifies gaps in handling complex nonlinear dynamics, real-time detection requirements, and integration with path planning. Future research should address unknown inputs, extend methods to planar platoons, and develop strategies for multi-vehicle communication topologies.",
+    "authors": [
+      "Zhiyang Ju",
+      "Hui Zhang",
+      "Xiang Li",
+      "Xiaoguang Chen",
+      "Jinpeng Han",
+      "Manzhi Yang"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/TIV.2022.3186897",
+    "bibtex_citation": "Ju_Survey_2022",
+    "analysis": {
+      "Overview": "Comprehensive review of attack detection and resilience strategies for CAVs, focusing on control-based approaches. Categorizes research by attack locations: intra-vehicle networks, sensors, and inter-vehicle networks, covering both cyber and physical attacks.",
+      "Background_and_Motivation": [
+        "CAVs' increased sensors and connectivity introduce vulnerabilities not present in traditional vehicles, leading to safety risks like hijacking and collisions.",
+        "Motivated by the insufficiency of information security tools alone for cyber-physical systems, requiring integrated control-based defenses to address attack impacts on vehicle dynamics.",
+        "Authors emphasize urgency through real-world attack examples (e.g., Jeep hijacking, sensor spoofing) and emerging standards like ISO 21434 for vehicle cybersecurity.",
+        "Position attacks within broader CPS security challenges, highlighting CAV-specific vulnerabilities in perception, communication, and control systems.",
+        "Contributes to control theory, vehicle dynamics, cybersecurity, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) Attack positions (intra-vehicle networks, sensors, inter-vehicle networks); 2) Attack types (DoS, replay, FDI); 3) Resilience strategies (detection, recovery, secure estimation).",
+        "Logical relationships: Attacks are modeled as disturbances (e.g., delays, false data injections) affecting vehicle dynamics; countermeasures leverage model-based detection and redundancy.",
+        "Key assumptions: Linearized vehicle models; bounded noise/disturbances; attack sparsity for secure estimation; known communication topologies.",
+        "Organizes fragmented knowledge into a position-based taxonomy, providing structural innovation for the field and identifying gaps for future research."
+      ],
+      "Methodology": [
+        "Core methods: Dynamic watermarking, observer/filter-based detection (e.g., Luenberger, SMO, KF/EKF), secure estimation, and resilient control (e.g., attack-tolerant hybrid control).",
+        "Novelty: Position-based categorization (vs. attack-type focus); applicability to CAV-specific dynamics; rationality validated through case studies (e.g., platooning, lane keeping).",
+        "Data: Synthesizes existing literature; representativeness ensured by covering major control journals/conferences. No primary data collection or preprocessing.",
+        "Evaluation: Analyzes rigor via theoretical guarantees (e.g., stability proofs) and compares method limitations (e.g., noise sensitivity, computational burden).",
+        "Follows control-theoretical paradigms (e.g., robust control, estimation theory), focusing on model-based approaches over data-driven techniques."
+      ],
+      "Results": [
+        "Key findings: 1) Active detection (e.g., dynamic watermarking) outperforms passive methods against stealthy attacks; 2) Observer/filter-based methods show promise but depend on noise assumptions; 3) Resilience requires trade-offs (e.g., performance vs. security in MTD).",
+        "Results are reliable within modeled constraints but show sensitivity to unmodeled dynamics and long-duration attacks; stability proven for specific scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Introduction → attack modeling → review by position (intra-vehicle, sensors, inter-vehicle) → conclusions/future work.",
+        "Key steps: 1) Establish CAV vulnerabilities; 2) Categorize attacks by location; 3) Review detection/resilience methods per category; 4) Evaluate strengths/limitations.",
+        "Strengths: Clear taxonomy; comprehensive coverage. Weaknesses: Simplified attack/vehicle models. Rebuttals: Acknowledge gaps as future directions (e.g., nonlinear dynamics)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel position-based framework; coverage of both cyber-physical attacks; integration of control theory with CAV-specific challenges.",
+        "Methodology boundaries: Simplified vehicle models (e.g., linearized dynamics); limited real-time validation; assumptions on noise/attack distributions constrain conclusions.",
+        "Control-theoretical focus underemphasizes AI/ML approaches and practical implementation barriers like cost/complexity."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions work as bridging control theory and automotive security, contrasting with network-centric surveys to assert necessity of dynamics-based approaches.",
+        "Uses precise control terminology (e.g., \"string stability\", \"observers\"); authoritative tone; rhetorical emphasis on \"imperative\" need for control-based defenses.",
+        "Builds authority through extensive citations (140+ references) of foundational CPS/control works, motivated by standard gaps (e.g., ISO 21434)."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: 1) Control-based methods are vital for CAV security; 2) Current limitations include handling nonlinear dynamics and unknown inputs; 3) Position-based categorization effectively organizes research.",
+        "Future directions: Security-aware path planning; real-time detection algorithms; extensions to nonlinear coupled dynamics; integration with V2X communication protocols."
+      ]
+    }
+  }
+}

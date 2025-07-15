@@ -1,0 +1,80 @@
+{
+  "file_name": "Tian 等 - Visual Autoregressive Modeling Scalable Image Generation via Next-Scale Prediction.pdf",
+  "generated_at": "2025-07-10 00:55:58",
+  "structured_info": {
+    "title_cn": "视觉自回归建模：通过下一尺度预测实现可扩展图像生成",
+    "title_en": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+    "category": "Computer Vision",
+    "topics": [
+      "Image Generation",
+      "Autoregressive Models",
+      "Scaling Laws"
+    ],
+    "keywords": [
+      "autoregressive modeling",
+      "image generation",
+      "scaling laws",
+      "zero-shot generalization"
+    ],
+    "abstract": "We present Visual AutoRegressive modeling (VAR), a new generation paradigm that redefines autoregressive learning on images as coarse-to-fine 'next-scale prediction' instead of raster-scan 'next-token prediction'. VAR enables GPT-style autoregressive transformers to surpass diffusion transformers in image generation for the first time. On ImageNet 256×256, VAR improves FID from 18.65 to 1.73 and IS from 80.4 to 350.2 with 20× faster inference. It exhibits power-law scaling laws (Pearson coefficients near -0.998) and zero-shot generalization for tasks like in-painting and editing.",
+    "methodology": "Multi-scale autoregressive framework using next-scale prediction. Images are encoded into hierarchical token maps via a multi-scale VQVAE. A GPT-2 transformer predicts each higher-resolution token map conditioned on coarser scales. Parallel token generation within each scale replaces sequential raster-scan prediction.",
+    "conclusion": "VAR outperforms diffusion transformers (DiT) in image quality, speed, data efficiency, and scalability while exhibiting LLM-like properties: power-law scaling laws and zero-shot generalization. Autoregressive models can surpass diffusion models in image synthesis when using hierarchical generation.",
+    "authors": [
+      "Keyu Tian",
+      "Yi Jiang",
+      "Zehuan Yuan",
+      "Bingyue Peng",
+      "Liwei Wang"
+    ],
+    "publication_year": "2024",
+    "venue": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+    "doi": "",
+    "bibtex_citation": "Tian_Visual_2024",
+    "analysis": {
+      "Overview": "Proposes Visual AutoRegressive (VAR) modeling, a novel paradigm for image generation using multi-scale coarse-to-fine prediction. Replaces traditional raster-scan token prediction with resolution-based autoregression, enabling transformers to outperform diffusion models.",
+      "Background_and_Motivation": [
+        "Autoregressive models lag behind diffusion models in visual generation despite success in NLP. Standard image tokenization and raster-scan order violate autoregressive assumptions and limit performance.",
+        "To unlock autoregressive potential in vision by aligning generation with human perception (coarse-to-fine) and resolving computational inefficiencies.",
+        "Highlight performance gap: Diffusion models dominate benchmarks while AR models underperform despite NLP successes. Emphasize inefficiency (O(n⁶) complexity) and structural limitations.",
+        "Position image generation as critical for multimodal AGI. Relate poor AR scalability to disrupted spatial dependencies and bidirectional token correlations in VQVAEs.",
+        "Computer vision, generative modeling, and multimodal machine learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Next-scale prediction: Autoregressive unit is an entire token map; generation progresses from low to high resolution. Multi-scale VQVAE: Encodes images into hierarchical discrete token maps with residual design.",
+        "Token maps form resolution hierarchy. Each scale conditions subsequent scales, preserving spatial locality. VAR transformer generates scales sequentially with intra-scale parallelism.",
+        "Human perception follows coarse-to-fine progression. Token dependencies are constrained to prefix scales. Shared codebook enables cross-scale consistency.",
+        "Introduces new generative model class. Contributes theoretical framework for visual autoregression and empirical validation of scaling laws in vision."
+      ],
+      "Methodology": [
+        "Two-stage training: 1) Train multi-scale VQVAE with residual quantization. 2) Train VAR transformer via next-scale prediction with block-wise causal masking. GPT-2 architecture with adaptive layer norm.",
+        "Novelty: First coarse-to-fine autoregressive image generation. Applicability: Natural alignment with visual structure. Rationality: Resolves raster-scan limitations (spatial degradation, bidirectional dependencies).",
+        "ImageNet (1.28M images) tokenized via multi-scale VQVAE. Preprocessing: Hierarchical discretization. Representativeness: Standard benchmark; VQVAE trained on OpenImages.",
+        "Rigorous FID/IS metrics across model sizes. Experiments compare against diffusion models (DiT), GANs, and masked-prediction models. Adequate evaluation includes ablation studies.",
+        "Follows autoregressive language modeling paradigm. GPT-style architecture influences token prediction approach, enabling scalability analysis."
+      ],
+      "Results": [
+        "FID 1.73 and IS 350.2 on ImageNet 256×256, surpassing L-DiT-7B. 20× faster inference than VQGAN. Power-law scaling observed (L ∝ N⁻⁰.²³). Zero-shot success in in-painting/editing.",
+        "Results demonstrate state-of-the-art quality and diversity. Reliability confirmed via multi-scale token dependency preservation. Stability evidenced by consistent scaling across model sizes."
+      ],
+      "Argumentation_and_Logic": [
+        "Premise: Raster-scan AR has fundamental flaws. Thesis: Next-scale prediction solves these. Evidence: Superior metrics, scaling laws, and generalization.",
+        "1) Identify AR limitations 2) Propose hierarchical formulation 3) Validate via multi-scale VQVAE 4) Benchmark against SOTA 5) Analyze scaling behavior 6) Demonstrate zero-shot capabilities.",
+        "Strengths: Clear causal chain from problem to solution. Weaknesses: Limited ablation on VQVAE alternatives. Rebuttals: Address efficiency mathematically; counter diffusion superiority with metrics."
+      ],
+      "Strengths_and_Limitations": [
+        "First AR model to surpass diffusion transformers; 20× speedup; scaling laws; zero-shot generalization; open-sourced implementation.",
+        "VQVAE architecture unchanged from baseline; no video/text-to-image implementation; reliance on ImageNet benchmark.",
+        "Autoregressive paradigm constraints limit handling of global image context. Scaling laws assume sufficient data, which may not generalize to smaller datasets."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions VAR as bridge between NLP successes and vision. Challenges diffusion model dominance by reclaiming autoregressive superiority.",
+        "Technical terminology (e.g., 'next-scale prediction', 'power-law scaling'). Confident tone emphasizing breakthroughs. Rhetorical contrast: 'diverging from conventional...' highlights innovation.",
+        "Authorities: Cites GPT, VQGAN, DiT to establish lineage. Motivations: Legitimize AR approach by linking to LLM successes; differentiate from masked-prediction models."
+      ],
+      "Conclusions_and_Implications": [
+        "VAR enables GPT-like transformers to outperform diffusion models in image synthesis. Exhibits LLM-like scaling laws and zero-shot generalization, advancing visual autoregression.",
+        "Explore advanced tokenizers; extend to video via 3D next-scale prediction; integrate with LLMs for text-to-image generation; investigate larger-scale models."
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "file_name": "Belamri 等 - 2021 - A survey on QoS routing protocols in Vehicular Ad Hoc Network (VANET).pdf",
+  "generated_at": "2025-07-11 04:09:27",
+  "structured_info": {
+    "title_cn": "车载自组织网络（VANET）中QoS路由协议综述",
+    "title_en": "A survey on QoS routing protocols in Vehicular Ad Hoc Network (VANET)",
+    "category": "Computer Networks",
+    "topics": [
+      "Vehicular Ad Hoc Networks",
+      "Quality of Service",
+      "Routing Protocols",
+      "Survey",
+      "Optimization"
+    ],
+    "keywords": [
+      "Vehicular Ad-Hoc Network",
+      "Routing protocols",
+      "QoS",
+      "Meta-heuristics",
+      "Optimization"
+    ],
+    "abstract": "Vehicular Ad Hoc Network (VANET) is an emerging new technology and a promising approach for Intelligent Transportation Systems (ITS) domain. Many researchers focused on the creation of reliable, scalable and efficient routing protocols for VANET and improve their Quality of Service (QoS). Communication among vehicular nodes which enable drivers to take appropriate decision needs a high reliability, therefore the design of a routing protocol that ensures a certain level of QoS represents one of the most important challenges of the vehicular networks, because VANET are characterized by specific features, such as restricted mobility, high node speed and a very dynamic topology. Keeping in view of the above, this paper provides a detailed description of various existing QoS routing protocols in literature with an aim to classify them. Based on the optimization methods used to improve routing protocols in VANET, we have surveyed and classified the routing protocols into two classes: QoS routing protocols not based on meta-heuristics and QoS routing protocols based on meta-heuristics.",
+    "methodology": "Literature survey and classification of existing QoS routing protocols in VANET, focusing on optimization techniques and comparative analysis of protocols.",
+    "conclusion": "The survey classifies QoS routing protocols into two main categories (non-meta-heuristic and meta-heuristic-based), highlighting their strengths, limitations, and optimization approaches. Meta-heuristic protocols effectively address the NP-hard nature of QoS routing in VANETs, while future research should focus on scalability, security, real-world testing, and hybrid optimization methods.",
+    "authors": [
+      "Fatima Belamri",
+      "Samra Boulfekhar",
+      "Djamil Aissani"
+    ],
+    "publication_year": "2021",
+    "venue": "Telecommunication Systems",
+    "doi": "10.1007/s11235-021-00797-8",
+    "bibtex_citation": "Belamri_A_2021",
+    "analysis": {
+      "Overview": "This paper surveys and classifies QoS routing protocols in VANETs, focusing on optimization methods. It categorizes protocols into two classes (non-meta-heuristic and meta-heuristic-based) and analyzes their methodologies, strengths, and limitations to address VANET's dynamic topology challenges.",
+      "Background_and_Motivation": [
+        "VANETs face challenges like high mobility, dynamic topology, and frequent path disruptions, making QoS routing NP-hard and critical for safety/comfort applications.",
+        "To address the lack of surveys classifying VANET QoS protocols by optimization methods and provide researchers with tools to solve routing optimization problems.",
+        "Authors emphasize VANET's unique constraints (e.g., rapid topology changes) that render traditional routing inefficient, necessitating optimized solutions for reliability.",
+        "The specific problem of QoS routing is linked to broader VANET challenges by highlighting how protocol optimization directly impacts network reliability and application performance.",
+        "Computer Networks, Optimization Algorithms, Intelligent Transportation Systems, and Vehicular Communications."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "QoS Routing Protocols: Methods ensuring performance metrics (e.g., low delay, high PDR) in dynamic VANETs; Meta-heuristics: Nature-inspired optimization algorithms (e.g., ACO, ABC); Classification Framework: Taxonomy dividing protocols into non-meta-heuristic and meta-heuristic categories.",
+        "Meta-heuristics solve QoS routing (an NP-hard problem) by exploring solution spaces; protocols leverage these to optimize route selection, while non-meta-heuristic protocols use alternative techniques like game theory or graph theory.",
+        "VANET topology is predictable via mobility patterns; optimization methods can feasibly approximate optimal routes despite dynamic changes.",
+        "Provides a novel classification framework based on optimization methods, consolidating fragmented literature and highlighting meta-heuristics' role in advancing VANET routing."
+      ],
+      "Methodology": [
+        "Qualitative survey methodology: systematic review and classification of 41 protocols based on optimization techniques, supplemented by comparative analysis of performance metrics.",
+        "The classification is novel for its optimization-centric approach; methodologies are applicable to VANET constraints but may lack scalability validation in real-world dense networks.",
+        "Data sourced from academic literature (2008–2021); protocols are categorized by optimization type. Representativeness is high but limited to published works, excluding industry implementations.",
+        "No experimental design; evaluation relies on qualitative comparison of protocol mechanisms and reported metrics (e.g., PDR, delay). Rigor is maintained through comprehensive protocol descriptions.",
+        "Follows network optimization and systems engineering paradigms, emphasizing algorithmic solutions to routing problems, which shapes the focus on computational efficiency."
+      ],
+      "Results": [
+        "Protocols are classified into two categories: 10 non-meta-heuristic (e.g., MURU, TLRC) and 31 meta-heuristic-based (e.g., ACO-EG, QoS BeeVANET). Meta-heuristic protocols show better adaptation to dynamic topologies and QoS guarantees.",
+        "Results are significant for structuring VANET research; reliability stems from protocol diversity analysis, but stability depends on simulation environments not always reflecting real-world conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "Argues that optimization-based classification fills a gap in VANET surveys and demonstrates meta-heuristics' superiority for NP-hard routing problems.",
+        "Steps: (1) Establish VANET challenges; (2) Review prior surveys; (3) Propose classification; (4) Analyze protocols; (5) Compare performances; (6) Identify future directions.",
+        "Strengths: Clear taxonomy and protocol coverage. Weaknesses: Limited critical assessment of simulation methodologies. Rebuttals addressed via emphasis on optimization novelty."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive protocol classification, detailed methodology descriptions, and identification of meta-heuristics as key enablers for QoS routing.",
+        "Methodologies often lack real-world validation; scalability in ultra-dense networks and security aspects are under-explored.",
+        "Optimization focus may overlook non-algorithmic factors (e.g., hardware constraints), limiting generalizability of conclusions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions itself as a reference for VANET routing research, bridging optimization theory and networking practice while critiquing prior survey gaps.",
+        "Technical terminology (e.g., 'NP-hard', 'meta-heuristics'); persuasive tone advocating optimization; rhetorical strategies include comparative tables and problem-solution framing.",
+        "Builds authority through extensive citations (100+ references), motivated by establishing scholarly comprehensiveness and contextualizing contributions."
+      ],
+      "Conclusions_and_Implications": [
+        "Meta-heuristic protocols (e.g., ACO, ABC) effectively address VANET's QoS routing challenges; non-meta-heuristic approaches offer niche solutions. Future work must tackle scalability, security, and real-world testing.",
+        "Suggests hybrid optimization methods, UAV integration, and cross-layer designs for future protocols. Recommends standardized simulations for equitable comparisons."
+      ]
+    }
+  }
+}

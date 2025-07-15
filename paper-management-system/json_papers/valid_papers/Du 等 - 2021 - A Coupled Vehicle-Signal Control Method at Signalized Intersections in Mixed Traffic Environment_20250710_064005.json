@@ -1,0 +1,81 @@
+{
+  "file_name": "Du 等 - 2021 - A Coupled Vehicle-Signal Control Method at Signalized Intersections in Mixed Traffic Environment.pdf",
+  "generated_at": "2025-07-10 06:40:05",
+  "structured_info": {
+    "title_cn": "混合交通环境下信号交叉口的车辆-信号耦合控制方法",
+    "title_en": "A Coupled Vehicle-Signal Control Method at Signalized Intersections in Mixed Traffic Environment",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Traffic Signal Optimization",
+      "Connected and Automated Vehicles",
+      "Eco-Driving Trajectory"
+    ],
+    "keywords": [
+      "Connected and automated vehicle",
+      "Cooperative vehicle infrastructure control",
+      "Eco-driving trajectory",
+      "Mixed traffic flow",
+      "Signalized intersection optimization"
+    ],
+    "abstract": "Signalized intersections play a vital role in addressing transportation efficiency and vehicle fuel economy in urban areas. With the development of Connected and Automated Vehicles (CAVs), mixed traffic environments become important for intelligent transportation systems. This paper proposes a Coupled Vehicle-Signal Control (CVSC) method to simultaneously optimize traffic signal timing and CAV trajectories, aiming to improve traffic efficiency and energy savings. Simulation results show CVSC saves 6-14% fuel consumption and increases average speed by 1-5% when CAV penetration exceeds 40%.",
+    "methodology": "Proposes a two-component approach: 1) Continuous traffic signal optimization minimizing total intersection delay using fundamental diagram modeling of mixed traffic flow (HDVs and CAVs), 2) Eco-driving trajectory generation for CAVs using piecewise trigonometric functions based on planned arrival times derived from signal timing and stop-start wave analysis.",
+    "conclusion": "CVSC significantly improves intersection performance in mixed traffic environments. At >40% CAV penetration, it reduces fuel consumption by 6-14% and increases average speed by 1-5%. The method outperforms traditional CACC control and GlidePath eco-driving models.",
+    "authors": [
+      "Yu Du",
+      "Wei ShangGuan",
+      "Linguo Chai"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2021.3056457",
+    "bibtex_citation": "Du_Coupled_2021",
+    "analysis": {
+      "Overview": "Proposes a cooperative control system optimizing traffic signals and connected vehicle trajectories simultaneously in mixed human-driven/automated traffic environments to reduce delays and fuel consumption at signalized intersections.",
+      "Background_and_Motivation": [
+        "Urban traffic congestion causes significant delays (e.g., 7 wasted workdays annually per US commuter) and transportation accounts for 28% of greenhouse gas emissions.",
+        "Signalized intersections exacerbate congestion and energy waste through stop-start waves. Existing research treats signal control and vehicle trajectory optimization as separate problems.",
+        "Mixed traffic environments (HDVs and CAVs) are transitional phases toward full automation but lack integrated control methods accounting for random vehicle mixing.",
+        "Unaddressed cooperative optimization in mixed traffic represents a critical gap for urban mobility and sustainability goals.",
+        "Transportation engineering, vehicular technology, and control systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Coupled Vehicle-Signal Control (CVSC): Integrates macro-level signal timing optimization with micro-level CAV trajectory control.",
+        "Fundamental Diagram Model of Mixed Traffic Flow: Derives traffic flow relationships based on CAV penetration rates.",
+        "Planned Arrival Time: Uses stop-start wave analysis to determine CAV crossing times.",
+        "CVSC links signal optimization (minimizing delays) with CAV trajectory planning (minimizing fuel use) through the fundamental diagram model. Planned arrival time connects vehicle dynamics with signal phases.",
+        "No lane-changing near intersections; perfect V2I communication; uniform driver behavior; negligible air resistance effects on fuel consumption.",
+        "Provides a novel methodological framework for cooperative infrastructure-vehicle control in mixed traffic, advancing intelligent transportation systems."
+      ],
+      "Methodology": [
+        "Signal optimization: Minimizes delays via sequential least squares programming using real-time traffic data and fundamental diagram models. Eco-driving: Generates smooth CAV trajectories via trigonometric acceleration profiles constrained by safety and planned arrival times.",
+        "Novelty: First integrated approach for mixed traffic. Applicability: Validated across penetration rates (0-100%). Rationality: Combines established models (IDM, CACC) with new coordination logic.",
+        "SUMO simulations with HBEFA emission model. Data includes vehicle positions, speeds, and types. Preprocessing: Calibrated car-following models (IDM for HDVs, CACC/ACC for CAVs). Representativeness: Models real-world intersection dynamics with parameter values from empirical studies.",
+        "Comprehensive parameter sensitivity analysis (communication range, cycle length). Metrics: Fuel consumption, CO2 emissions, average speed, waiting time, delay. Rigor: 500-second simulations repeated 3 times per scenario.",
+        "Follows traffic flow theory and control systems paradigms, emphasizing system-level optimization through V2X communication constraints."
+      ],
+      "Results": [
+        "At >40% CAV penetration: 6-14% fuel reduction, 1-5% speed increase, near-zero waiting times at full automation. Outperforms CACC and GlidePath baselines across all metrics.",
+        "Results show statistical significance in SUMO simulations. Stability confirmed through parameter variation tests (communication range 400-1000m, cycle lengths 40-80s)."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: 1) Problem significance 2) Gap in existing methods 3) CVSC framework 4) Validation 5) Performance gains.",
+        "Key steps: Mixed traffic fundamentals → signal optimization formulation → trajectory planning algorithm → simulation experiments → parameter/penetration rate analysis.",
+        "Strengths: Clear causal chain from methodology to results. Weaknesses: Limited rebuttal addressing communication failures or extreme traffic scenarios. Mitigation: Explicitly assumes perfect communication."
+      ],
+      "Strengths_and_Limitations": [
+        "First cooperative method for mixed traffic; Novel local penetration rate adaptation; Demonstrated 14% fuel savings at full CAV penetration.",
+        "Single-intersection focus; No lane-changing or driver-style variations; Unverified in real-world communication environments.",
+        "Traffic flow theory assumptions constrain generalizability to unconventional intersection layouts or extreme congestion events."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on CAV integration by solving the mixed traffic coordination problem. Positions against decoupled optimization approaches.",
+        "Technical terminology from transportation engineering; Persuasive tone emphasizing efficiency gaps; Rhetorical contrast between 'traditional' and 'proposed' methods.",
+        "Builds authority through 34 citations of foundational works (e.g., IDM, GlidePath). Motivations: Establish scholarly grounding while highlighting methodological innovations."
+      ],
+      "Conclusions_and_Implications": [
+        "CVSC enables significant fuel savings and delay reduction in mixed traffic environments, particularly above 40% CAV penetration. Performance gains increase with automation rates.",
+        "Extend to multi-intersection networks; Incorporate routing optimization; Study driver-style heterogeneity; Validate via real-world prototypes."
+      ]
+    }
+  }
+}

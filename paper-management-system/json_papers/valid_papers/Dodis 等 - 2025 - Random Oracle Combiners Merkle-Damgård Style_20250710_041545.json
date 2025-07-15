@@ -1,0 +1,79 @@
+{
+  "file_name": "Dodis 等 - 2025 - Random Oracle Combiners Merkle-Damgård Style.pdf",
+  "generated_at": "2025-07-10 04:15:45",
+  "structured_info": {
+    "title_cn": "随机预言机组合器：Merkle-Damgård 风格",
+    "title_en": "Random Oracle Combiners: Merkle-Damgård Style",
+    "category": "Cryptography",
+    "topics": [
+      "Hash Functions",
+      "Combiners",
+      "Random Oracle Model",
+      "Indifferentiability Framework"
+    ],
+    "keywords": [
+      "hash functions",
+      "combiners",
+      "random oracle model",
+      "indifferentiability framework"
+    ],
+    "abstract": "A Random Oracle Combiner (ROC), introduced by Dodis et al. (CRYPTO 22), takes two hash functions h1, h2 from m bits to n bits and outputs a new hash function C from m' to n' bits. This function C is guaranteed to be indifferentiable from a fresh random oracle as long as one of h1 and h2 (say, h1) is a random oracle, while the other h2 can arbitrarily depend on h1. The work of Dodis et al. also built the first length-preserving ROC, where n' = n. Unfortunately, despite this feasibility result, this construction has several deficiencies. From the practical perspective, it could not be directly applied to existing Merkle-Damgård-based hash functions, such as SHA2 or SHA3. From the theoretical perspective, it required h1 and h2 to have input length m ≥ 3λ, where λ is the security parameter. To overcome these limitations, Dodis et al. conjectured and left as the main open question that the following (salted) construction is a length-preserving ROC: Ĉ^{h1,h2}_{Z1,Z2}(M) = h1^*(M, Z1) ⊕ h2^*(M, Z2), where Z1, Z2 are random salts of appropriate length, and f^* denotes the Merkle-Damgård-extension of a given compression function f. As our main result, we resolve this conjecture in the affirmative. For practical use, this makes the resulting combiner applicable to existing, Merkle-Damgård-based hash functions. On the theory side, it shows the existence of ROCs only requiring optimal input length m ≥ λ + O(1).",
+    "methodology": "Proposes a Merkle-Damgård-based combiner construction and proves its security using the indifferentiability framework. The core methodology involves constructing a simulator to demonstrate indifferentiability from a random oracle, with combinatorial analysis to bound simulator runtime and security probabilities.",
+    "conclusion": "The proposed Merkle-Damgård-style combiner Ĉ(M) = h1^*(M, Z1) ⊕ h2^*(M, Z2) is a secure random oracle combiner when |Z1| = |Z2| = |M| + λ. This resolves the open conjecture, achieves optimal input length m ≥ λ + O(1), and enables practical application to standard hash functions (e.g., SHA2/SHA3) without internal modifications.",
+    "authors": [
+      "Yevgeniy Dodis",
+      "Eli Goldin",
+      "Peter Hall"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT 2025",
+    "doi": "10.1007/978-3-031-91107-1_10",
+    "bibtex_citation": "Dodis_Random_2025",
+    "analysis": {
+      "Overview": "The paper proposes and analyzes a Merkle-Damgård-based random oracle combiner (ROC) that securely combines two hash functions into a single hash function indifferentiable from a random oracle if at least one input function is ideal. It addresses limitations of prior ROCs by enabling direct use with standard hash functions (e.g., SHA2/SHA3) and achieving optimal input length requirements.",
+      "Background_and_Motivation": [
+        "Research background involves cryptographic hash combiners, which aim to produce a secure hash function from two candidates where at least one is trustworthy. Broader challenges include output-length inflation in collision-resistant combiners and impracticality for real-world standards.",
+        "Motivation stems from deficiencies in prior ROCs: inability to integrate with Merkle-Damgård-based functions and suboptimal input length (m ≥ 3λ). The specific problem is to build a length-preserving ROC that works with existing hash functions and minimizes m.",
+        "The authors argue necessity by highlighting practical scenarios (e.g., mutually untrusted parties choosing hash standards) and theoretical gaps, emphasizing that prior solutions double output length or require impractical compression-function-level access.",
+        "The problem is linked to broader challenges by showing how output-length constraints cripple applications (e.g., hash-then-sign signatures) and how Merkle-Damgård structure complicates security proofs. Significance is established via real-world applicability and optimality.",
+        "Contributes to cryptography, specifically cryptographic hash functions, combiners, and the indifferentiability framework, with interdisciplinary impact on security protocols."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Random Oracle Combiner (ROC) – a construction indifferentiable from a RO if one input is a RO; (2) Indifferentiability – a security framework for composability; (3) Merkle-Damgård Transform – a method to extend compression functions to variable-input-length hashes.",
+        "Logical relationships: ROCs rely on indifferentiability for security; the Merkle-Damgård transform enables practical implementation by processing inputs iteratively. The combiner uses salts to break dependencies between h1 and h2.",
+        "Key assumptions: (1) At least one hash function (h1) is a random oracle; (2) Adversarial h2 can depend arbitrarily on h1; (3) Salts are chosen after the adversarial function is fixed.",
+        "Contribution type: Provides a novel construction that advances theoretical feasibility (optimal m ≥ λ + O(1)) and practical utility, extending the knowledge system by solving an open conjecture and enabling new applications."
+      ],
+      "Methodology": [
+        "Core methods: Uses the indifferentiability framework to prove security. Constructs a stateful simulator that 'fakes' h1 responses to align with a true random oracle H, while handling adversarial h2 defined via a bounded-query circuit g. Technical analysis includes path-tracking for Merkle-Damgård computations and recursion control.",
+        "Novelty: First proof for a Merkle-Damgård-based ROC. Applicability: Directly compatible with SHA2/SHA3. Rationality: Simulator design ensures combiner consistency; salt lengths are minimized (|Zi| = |M| + λ).",
+        "Data sources: Theoretical; no empirical data. Representativeness: Models h1 as a random oracle and h2 via adversarial circuits, capturing worst-case dependencies.",
+        "Experimental design: Security proof via hybrid games bounds simulator runtime and adversarial advantage. Evaluation metrics: Indifferentiability advantage ε, with rigorous probability bounds derived from collision resistance and guessing lemmas.",
+        "Follows the random oracle model and indifferentiability paradigm, which constrains analysis to idealized settings but provides composability guarantees for cryptographic applications."
+      ],
+      "Results": [
+        "Key result: The combiner Ĉ(M) = h1^*(M, Z1) ⊕ h2^*(M, Z2) is indifferentiable from a random oracle when |Zi| = |M| + λ, with security loss ε = O(T²/2ⁿ) for query complexity T.",
+        "Significance: Resolves the main open conjecture from Dodis et al. (2022). Reliability: Proof uses standard cryptographic techniques (e.g., birthday bounds) and simulator termination arguments. Stability: Bounds hold for all polynomial-time adversaries."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Introduces ROCs and prior limitations, proposes the combiner, outlines proof challenges, and details simulator construction with termination analysis.",
+        "Key steps: (1) Define ROC security via indifferentiability; (2) Show prior combiner's impracticality; (3) Conjecture Merkle-Damgård variant; (4) Construct simulator; (5) Prove termination via query coloring; (6) Bound adversarial advantage.",
+        "Strengths: Clear reduction to simulator properties; addresses recursion via path-tracking. Weaknesses: Simulator complexity requires careful termination analysis. Authors address rebuttals (e.g., recursion risks) via combinatorial bounds and salt-dependent adversarial constraints."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Length-preserving output; optimal input length; black-box compatibility with Merkle-Damgård functions; resolves open problem.",
+        "Methodology limitations: Security proof assumes random oracles; simulator efficiency depends on query complexity; salts add overhead.",
+        "Theoretical constraints: Conclusions rely on idealized models (random oracles), limiting real-world guarantees; Merkle-Damgård structure necessitates careful path management in proofs."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances ROC research by solving a key conjecture, positioning itself as a bridge between theoretical feasibility and practical cryptography.",
+        "Terminology: Technical (e.g., 'indiﬀerentiability', 'Merkle-Damgård'); tone: formal and persuasive; rhetorical strategies: contrast prior deficiencies with new solution, emphasize optimality/applicability.",
+        "Citations build authority by referencing foundational work (e.g., Coron et al. for indifferentiability) and directly addressing Dodis et al.'s open question. Motivations: Establish problem significance and position contribution as essential."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: The Merkle-Damgård-style ROC is secure and practical, enabling combiners for standards like SHA2/SHA3 with minimal salt overhead and optimal parameters.",
+        "Future research: Explore implementations with concrete hash functions; reduce salt lengths; extend to other iterated constructions or quantum-secure settings."
+      ]
+    }
+  }
+}

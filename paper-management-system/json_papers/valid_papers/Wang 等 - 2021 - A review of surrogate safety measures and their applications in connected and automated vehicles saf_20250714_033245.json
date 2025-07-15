@@ -1,0 +1,84 @@
+{
+  "file_name": "Wang 等 - 2021 - A review of surrogate safety measures and their applications in connected and automated vehicles saf.pdf",
+  "generated_at": "2025-07-14 03:32:45",
+  "structured_info": {
+    "title_cn": "代用安全措施及其在网联自动驾驶车辆安全建模中的应用综述",
+    "title_en": "A review of surrogate safety measures and their applications in connected and automated vehicles safety modeling",
+    "category": "Transportation Safety",
+    "topics": [
+      "Surrogate Safety Measures",
+      "Connected and Automated Vehicles",
+      "Traffic Simulation"
+    ],
+    "keywords": [
+      "Surrogate safety measure",
+      "Connected vehicles",
+      "Automated vehicles",
+      "Simulation",
+      "Safety"
+    ],
+    "abstract": "Surrogate Safety Measures (SSM) are important for safety performance evaluation, since crashes are rare events and historical crash data does not capture near crashes that are also critical for improving safety. This paper focuses on SSM and their applications, particularly in Connected and Automated Vehicles (CAV) safety modeling. It aims to provide a comprehensive and systematic review of significant SSM studies, identify limitations and opportunities for future SSM and CAV research, and assist researchers and practitioners with choosing the most appropriate SSM for safety studies.",
+    "methodology": "Literature review and critical analysis of SSM classifications (time-based, deceleration-based, energy-based), simulation-based safety evaluation, and trajectory optimization methods for CAV.",
+    "conclusion": "SSM are vital for CAV safety evaluation due to rare crash events. Key challenges include SSM validity in mixed autonomy traffic, threshold sensitivity, and need for CAV-specific SSM. Future research should focus on universal SSM frameworks, new data sources (connected vehicle data), and high-dimensional safety metrics like MPrISM.",
+    "authors": [
+      "Chen Wang",
+      "Yuanchang Xie",
+      "Helai Huang",
+      "Pan Liu"
+    ],
+    "publication_year": "2021",
+    "venue": "Accident Analysis and Prevention",
+    "doi": "https://doi.org/10.1016/j.aap.2021.106157",
+    "bibtex_citation": "Wang_review_2021",
+    "analysis": {
+      "Overview": "Comprehensive review of Surrogate Safety Measures (SSM) and their application in evaluating safety impacts of Connected and Automated Vehicles (CAV), addressing limitations in crash data availability and simulation-based approaches.",
+      "Background_and_Motivation": [
+        "Traditional crash-based safety evaluation is ineffective for new treatments/facilities lacking historical data and for emerging CAV technologies not yet deployed at scale.",
+        "To systematically categorize SSM, evaluate their applicability in CAV contexts, and address gaps in mixed-traffic safety assessment.",
+        "Argues that rare crash events and ethical concerns necessitate proxy measures; urgency is heightened by rapid CAV development without real-world safety validation.",
+        "Posits that CAV safety modeling challenges reflect broader transportation safety evaluation limitations, emphasizing SSM's role in proactive risk assessment.",
+        "Contributes to traffic engineering, vehicle automation, safety science, and data analytics through interdisciplinary integration."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Surrogate Safety Measures (SSM): Indicators derived from traffic conflicts to quantify crash proximity/severity (e.g., TTC, DRAC).",
+          "Traffic Conflicts: Observable near-crash events etiologically linked to collisions via uncorrected failures.",
+          "Mixed Autonomy Traffic: Environments where CAV and Human-Driven Vehicles (HDV) interact, altering behavioral dynamics."
+        ],
+        "SSM identify conflicts that predict crashes; CAV alter conflict dynamics, requiring re-evaluation of SSM validity; mixed traffic compounds uncertainty in traditional SSM thresholds.",
+        "Assumes conflicts are valid crash proxies; simulation can replicate critical interactions after calibration; CAV behaviors are programmable and predictable.",
+        "Synthesizes existing knowledge, identifies research gaps, and proposes directions—primarily an integrative review advancing methodological discourse."
+      ],
+      "Methodology": [
+        "Categorizes SSM into time-based (e.g., TTC, PET), deceleration-based (e.g., DRAC), and energy-based (e.g., Delta-V) metrics; reviews simulation tools (VISSIM, SSAM) for CAV safety evaluation.",
+        "Novel in critiquing SSM transferability to CAV contexts; applicable for simulation-based studies but limited by threshold sensitivity and calibration dependencies.",
+        "Data from literature (no primary collection); includes field observations (video/LiDAR), connected vehicle datasets (SPMD), and simulation outputs. Representativeness varies by data source fidelity.",
+        "No original experiments; synthesizes validation studies. Evaluation adequacy relies on cited calibration efforts (e.g., EVT models), but thresholds remain subjective.",
+        "Follows traffic conflict theory paradigm, emphasizing causal links between conflicts and crashes. This perspective prioritizes observable interactions but may overlook systemic risk factors."
+      ],
+      "Results": [
+        "Identifies dominance of TTC in CAV studies; reveals calibration challenges in simulating mixed traffic; highlights SSM limitations in lateral safety assessment.",
+        "Results are significant for guiding CAV safety research but reliability depends on unverified assumptions about SSM transferability to automated environments."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: (1) SSM classification → (2) CAV simulation challenges → (3) Critical research gaps → (4) Future directions.",
+        "Key steps: Define SSM → Evaluate simulation validity → Analyze CAV-specific limitations → Propose universal SSM/data innovations.",
+        "Strengths: Systematic categorization and clear gap identification. Weaknesses: Limited empirical counterarguments to simulation critiques. Addresses rebuttals by advocating rigorous calibration and new metrics (e.g., MPrISM)."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive SSM taxonomy; identification of CAV-specific research gaps; practical guidance for SSM selection.",
+        "Overreliance on simulation without resolving fundamental validity debates; minimal coverage of real-world CAV data applications.",
+        "Conflict-theory focus constraints conclusions to interaction-level risks, neglecting macro-level safety impacts (e.g., network-wide CAV penetration effects)."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational reference for CAV safety research, bridging traffic engineering and automation disciplines.",
+        "Technical terminology (e.g., 'string stability', 'mixed autonomy'); authoritative tone; rhetorical emphasis on 'critical gaps' and 'urgent needs'.",
+        "Builds authority through extensive citations (e.g., Tarko, Hayward) and alignment with USDOT/NHTSA frameworks. Motivations include standardizing CAV safety evaluation."
+      ],
+      "Conclusions_and_Implications": [
+        "SSM remain essential for CAV safety, but require revalidation for mixed traffic; simulation needs calibration; new universal SSM and high-dimensional metrics are needed.",
+        "Future work: Develop CAV-specific SSM; leverage connected vehicle data; integrate lateral safety metrics; establish thresholds for automated driving contexts."
+      ]
+    }
+  }
+}

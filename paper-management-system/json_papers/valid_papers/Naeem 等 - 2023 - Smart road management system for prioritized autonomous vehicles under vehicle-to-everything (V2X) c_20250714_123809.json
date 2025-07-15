@@ -1,0 +1,78 @@
+{
+  "file_name": "Naeem 等 - 2023 - Smart road management system for prioritized autonomous vehicles under vehicle-to-everything (V2X) c.pdf",
+  "generated_at": "2025-07-14 12:38:09",
+  "structured_info": {
+    "title_cn": "基于车联网（V2X）通信的优先自动驾驶车辆智能道路管理系统",
+    "title_en": "Smart road management system for prioritized autonomous vehicles under vehicle to everything (V2X) communication",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Autonomous Vehicles",
+      "Traffic Management",
+      "V2X Communication"
+    ],
+    "keywords": [
+      "Vehicle-To-Everything Communication",
+      "Emergence Autonomous Vehicles",
+      "Smart Transportation System",
+      "SUMO"
+    ],
+    "abstract": "This paper works on smart transportation strategy for emergency autonomous and normal autonomous vehicles under the vehicle-to-every-things circumstance. All vehicles are fully autonomous, and all EAV communicate with the help of autonomous intersection management to handle traffic situations. When an autonomous emergency vehicle enters the road, then an autonomous intersection management system assigns this vehicle a high priority and all other autonomous vehicles with low priority. Following the priority queue principle and FIFO rule, all vehicles run smoothly so that there will not be too many collisions occurring on the road. Simulation works are conducted by using Simulation of Urban Mobility (SUMO), in which all proposed strategies are performed on different Pakistani routes By-pass Multan, M2-motorway, and Nishtar routes. According to our strategy Simulation result, the M2-motorway route takes 8.50 sec to complete its route for autonomous emergency vehicles, and normal autonomous vehicles take 10.55 sec to complete the route. The results identify that the proposed algorithm for different autonomous vehicles significant in reducing the average time delay caused by the algorithms and the corresponding variance, which shows the efficiency and fairness of the proposed strategy in autonomous intersection management.",
+    "methodology": "The study uses Simulation of Urban Mobility (SUMO) to simulate traffic scenarios on different routes in Pakistan (By-pass Multan, M2-motorway, and Nishtar routes). The Autonomous Intersection Management System (AIMS) is employed to manage vehicle priorities and traffic flow, utilizing priority queue and FIFO rules.",
+    "conclusion": "The proposed system effectively manages emergency autonomous vehicles (EAV) and normal autonomous vehicles (NAV) under V2X communication, reducing average delay times and collisions. The M2-motorway route showed the best performance with EAV completing routes in 8.50 seconds compared to NAV's 10.55 seconds. Future work includes enhancing the system for bus vehicles and flying cars.",
+    "authors": [
+      "Awad Bin Naeem",
+      "Hassaan Malik",
+      "Abdul Majid Soomro",
+      "Hafiz Muhammad Saim"
+    ],
+    "publication_year": "2024",
+    "venue": "Multimedia Tools and Applications",
+    "doi": "10.1007/s11042-023-16950-1",
+    "bibtex_citation": "Naeem_Smart_2024",
+    "analysis": {
+      "Overview": "The paper presents a smart road management system for prioritizing autonomous emergency vehicles (EAV) under V2X communication, using SUMO simulations to validate the approach on real-world routes in Pakistan.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of managing emergency autonomous vehicles in smart transportation systems, where efficient traffic flow and collision avoidance are critical.",
+        "The motivation stems from the need to provide clear passage for EAVs while maintaining smooth traffic flow for normal autonomous vehicles (NAVs).",
+        "The authors highlight the urgency by emphasizing the potential reduction in traffic congestion and accidents through autonomous vehicle management.",
+        "The problem is linked to broader challenges in intelligent transportation systems (ITS) and smart city development.",
+        "The paper contributes to the fields of autonomous vehicles, traffic management, and V2X communication."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include Autonomous Intersection Management System (AIMS), priority queue principle, and FIFO rule.",
+        "AIMS acts as a database managing vehicle information and assigning priorities, while the priority queue and FIFO rules ensure orderly traffic flow.",
+        "Key assumptions include the full autonomy of vehicles and the reliability of V2X communication.",
+        "The paper contributes a novel algorithm for managing EAVs and NAVs, demonstrating efficiency in reducing delays and collisions."
+      ],
+      "Methodology": [
+        "The core method involves SUMO simulations on real-world routes, with AIMS managing vehicle priorities.",
+        "The methodology is novel in its application to Pakistani routes and its focus on EAV prioritization.",
+        "Data sources include real routes from Multan and Lahore, with preprocessing steps involving route mapping and vehicle prioritization.",
+        "Experimental design is rigorous, with clear metrics for delay time and collision avoidance.",
+        "The research follows a practical paradigm, focusing on real-world applicability rather than theoretical abstraction."
+      ],
+      "Results": [
+        "Key results show EAVs completing the M2-motorway route in 8.50 seconds, compared to NAVs' 10.55 seconds.",
+        "The results are significant for traffic management, demonstrating reliability and stability in reducing delays."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around the need for EAV prioritization, the design of AIMS, and validation through simulations.",
+        "Key steps include problem formulation, simulation setup, and result analysis.",
+        "Strengths include clear validation through simulations; weaknesses may include limited route diversity."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel algorithm and practical validation on real routes.",
+        "Limitations include the focus on specific Pakistani routes, which may not generalize globally.",
+        "The choice of SUMO and AIMS constrains conclusions to simulated environments."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within ITS and smart city discourse, using technical terminology and a formal tone.",
+        "Citations build authority by referencing prior work in autonomous vehicles and traffic management."
+      ],
+      "Conclusions_and_Implications": [
+        "The system effectively reduces delays for EAVs and NAVs, with implications for future smart transportation systems.",
+        "Future research could expand to more routes and integrate flying cars or bus vehicles."
+      ]
+    }
+  }
+}

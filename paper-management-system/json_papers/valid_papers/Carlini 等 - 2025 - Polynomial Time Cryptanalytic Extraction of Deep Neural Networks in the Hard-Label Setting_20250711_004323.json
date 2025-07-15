@@ -1,0 +1,80 @@
+{
+  "file_name": "Carlini 等 - 2025 - Polynomial Time Cryptanalytic Extraction of Deep Neural Networks in the Hard-Label Setting.pdf",
+  "generated_at": "2025-07-11 00:43:23",
+  "structured_info": {
+    "title_cn": "硬标签设置下深度神经网络的多项式时间密码分析提取",
+    "title_en": "Polynomial Time Cryptanalytic Extraction of Deep Neural Networks in the Hard-Label Setting",
+    "category": "Cryptography and Machine Learning Security",
+    "topics": [
+      "Neural Network Security",
+      "Model Extraction",
+      "Cryptanalysis"
+    ],
+    "keywords": [
+      "ReLU-Based Deep Neural Networks",
+      "Neural Network Extraction",
+      "Hard-label Attack",
+      "Polynomial Query and Polynomial Time Attack"
+    ],
+    "abstract": "This paper introduces new techniques for cryptanalytic extraction of deep neural network (DNN) parameters in the hard-label setting, where only the final classification label is accessible. Unlike prior attacks that required exponential time or exact numeric outputs, our method uses a polynomial number of queries and polynomial time. We validate the approach by extracting nearly one million parameters from a DNN trained on CIFAR-10, demonstrating that weights of a ReLU-based DNN can be efficiently determined by analyzing the geometric shape of its decision boundaries.",
+    "methodology": "The attack leverages dual points (intersections of decision boundaries and critical hyperplanes) to recover neuron signatures (weights up to a scalar) and signs via statistical analysis of decision boundary patch widths. Key components include dual point finding, signature recovery through subspace unification, and sign recovery using measurable patch-width differentials.",
+    "conclusion": "The paper achieves efficient DNN parameter extraction in the hard-label setting using polynomial resources, revealing vulnerabilities in deployed models. Experimental validation on a CIFAR-10 network (832 neurons, 4 hidden layers) confirms practicality.",
+    "authors": [
+      "Nicholas Carlini",
+      "Jorge Chávez-Saab",
+      "Anna Hambitzer",
+      "Francisco Rodríguez-Henríquez",
+      "Adi Shamir"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "https://doi.org/10.1007/978-3-031-91107-1_13",
+    "bibtex_citation": "Carlini_Polynomial_2025",
+    "analysis": {
+      "Overview": "The paper presents a cryptanalytic attack to extract all weights and biases of ReLU-based DNNs when only hard labels (final classification decisions) are available. It bridges cryptographic techniques with neural network analysis, achieving polynomial-time extraction by exploiting decision boundary geometry.",
+      "Background_and_Motivation": [
+        "Deep Neural Networks (DNNs) are costly to train and valuable, but often exposed via public APIs, enabling malicious extraction. Prior attacks required exact output logits (scenario S5) or had exponential complexity in hard-label settings (S1).",
+        "The authors address the challenge of efficient parameter extraction when only class labels are accessible, which leaks minimal information (log2 N bits per query).",
+        "They argue that existing hard-label attacks (e.g., Chen et al., Asiacrypt 24) are impractical for real networks due to exponential time, architectural restrictions, and small-scale demonstrations.",
+        "The problem is linked to broader issues in AI security: extracting proprietary models compromises intellectual property and enables adversarial attacks. The work establishes significance by targeting a realistic threat model.",
+        "Contributes to cryptography (differential cryptanalysis) and machine learning security (model extraction, adversarial robustness)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Dual points: Points simultaneously on a decision boundary (class transition) and critical hyperplane (neuron ReLU flip). Signature recovery: Extracting neuron weights up to an unknown scalar. Sign recovery: Determining the sign of weights to resolve ReLU activation regions.",
+        "Dual points connect decision boundaries (observable) to critical hyperplanes (unobservable in S1). Signature recovery uses dual subspaces to infer weights; sign recovery correlates patch-width statistics with neuron activity.",
+        "Assumes ReLU activations, fully connected layers, high-precision computation, and no adversarial model hardening. Implicitly relies on geometric properties of decision boundaries being neuron-dependent.",
+        "Provides a foundational advancement: First polynomial-time hard-label extraction for large DNNs, introducing dual points as a substitute for critical points in prior S5 attacks."
+      ],
+      "Methodology": [
+        "Core methods: (1) Dual point finding via decision boundary traversal; (2) Signature recovery by unifying dual subspaces; (3) Sign recovery using patch-width differentials (Δ_on vs. Δ_off) to infer ReLU activation regions.",
+        "Novelty: Replaces unobservable critical points with dual points. Applicability: Handles multi-class networks and deep architectures. Rationality: Geometric approach aligns with DNN piecewise-linear structure.",
+        "Uses synthetic queries to the DNN oracle. Data: Validated on CIFAR-10 DNN (3072 inputs, layers: 256-256-256-64-10 outputs). Preprocessing: Projects points to decision boundaries via binary search. Representativeness: Trained models exhibit expected decision boundary geometries.",
+        "Rigorous experiment design: Extracted 935K parameters with functional equivalence. Metrics: Success rate, parameter precision, and comparison to prior attacks (Table 1).",
+        "Follows differential cryptanalysis paradigm, treating DNNs as keyed ciphers. This perspective enables efficient weight recovery via adaptive queries."
+      ],
+      "Results": [
+        "Key result: Extracted all parameters of a CIFAR-10 DNN (4 hidden layers, 832 neurons) with polynomial queries/time. Attack succeeded on a multi-core GPU server.",
+        "Results are significant: First practical hard-label extraction at scale. Reliability: Demonstrated via parameter matching; stability: Robust to typical training variations but may fail if neurons don't affect boundaries."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: (1) Motivate hard-label challenge; (2) Introduce dual points; (3) Detail signature/sign recovery; (4) Validate experimentally.",
+        "Key steps: Dual points enable critical hyperplane inference → Signatures recovered via subspace unification → Signs resolved via patch-width statistics. Logical link: Dual points circumvent lack of gradient access in S1.",
+        "Strengths: Rigorous reduction of extraction to geometric properties. Weaknesses: Assumes non-adversarial models; potential failures in edge cases. Rebuttals: Edge cases are rare in practice (validated empirically)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Polynomial complexity; handles multi-class, deep networks; practical validation. Innovations: Dual points and statistical sign recovery.",
+        "Limitations: May fail if neurons don't influence decision boundaries or in adversarially trained models. Floating-point instability could disrupt linear solves.",
+        "Cryptanalytic framework constrains conclusions to ReLU networks. Results may not extend to non-piecewise-linear activations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within discourse: Advances DNN security by solving a 30-year open problem (since Baum, 1991). Cites foundational works (Carlini et al., Crypto 20; Chen et al., Asiacrypt 24) to contextualize contributions.",
+        "Terminology: Adopts cryptographic terms (e.g., 'chosen plaintext attacks') and ML terms (e.g., 'decision boundaries'). Tone: Technical and assertive; rhetorical strategies emphasize practical impact ('surprising fact', 'efficiently determined').",
+        "Builds authority via extensive citations (24 references) and experimental scale. Motivations: Highlight vulnerabilities to encourage defenses."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Hard-label extraction is feasible in polynomial time via decision boundary analysis. Dual points and statistical sign recovery enable scaling to real-world DNNs.",
+        "Future research: Defenses against such attacks; extension to convolutional/RNN architectures; exploration of non-ReLU activations."
+      ]
+    }
+  }
+}

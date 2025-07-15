@@ -1,0 +1,79 @@
+{
+  "file_name": "Hu 等 - 2024 - Physics-informed Neural Networks (PINN) for computational solid mechanics Numerical frameworks and.pdf",
+  "generated_at": "2025-07-14 01:08:17",
+  "structured_info": {
+    "title_cn": "物理信息神经网络在计算固体力学中的应用：数值框架与应用",
+    "title_en": "Physics-informed Neural Networks (PINN) for computational solid mechanics: Numerical frameworks and applications",
+    "category": "Computational Solid Mechanics",
+    "topics": [
+      "Physics-informed Neural Networks",
+      "Constitutive Modeling",
+      "Damage and Fracture Mechanics"
+    ],
+    "keywords": [
+      "Physics-informed Neural Networks (PINN)",
+      "Computational solid mechanics",
+      "Constitutive models",
+      "Damage and fracture mechanics",
+      "Data-driven"
+    ],
+    "abstract": "For solving the computational solid mechanics problems, despite significant advances have been achieved through the numerical discretization of partial differential equations (PDEs) and data-driven framework, it is still hard to seamlessly integrate imperfect, limited, sparse and noisy data into existing algorithms. Besides the expensive tasks and struggling completion of mesh-based and meshless-based solutions in complex computational domain, the high-dimensional solid mechanics problems governed by parameterized PDEs cannot be tackled. Furthermore, addressing inverse solid mechanics problems, especially with incomplete descriptions of physical laws, are often prohibitively expensive and require obscure formulations and elaborate codes. Since the physics-informed neural networks (PINN) was originally introduced by Raissi et al. in 2019, it has been recognized as effective surrogate solvers for PDEs while respecting any given laws, data, initial and boundary conditions of solid mechanics. PINN has emerged as a promising approach to mitigate the shortage of available training data, enhance model generalizability, and ensure the physical plausibility of results. The prior physics information can act as a regularization agent that constrains the space of admissible solutions to a manageable size, enabling it to quickly steer itself towards the right solution. To catch up with the latest developments of PINN in computational solid mechanics, this work summarizes the recent advances in the field. We first introduce the foundational concepts of PINN, including the framework, architecture, algorithms, code and associated software packages. We then discuss the applications of PINN in constitutive modeling and its inverse problem, identification, evaluation, and prediction of damage in solid materials and structures. Finally, we address the current capabilities and limitations of PINN in computational solid mechanics, and present perspectives on emerging opportunities and open challenges of the prevailing trends.",
+    "methodology": "Physics-informed Neural Networks (PINN) as surrogate solvers for partial differential equations (PDEs), incorporating automatic differentiation, neural network architectures (e.g., LSTM, RNN), and loss functions combining PDE residuals, boundary conditions, and physical constraints. Applications include constitutive modeling (linear elasticity, hyperelasticity, viscoelasticity, elastoplasticity), damage identification, fracture prediction, and inverse problems.",
+    "conclusion": "PINN effectively integrates physical laws with data to solve forward and inverse solid mechanics problems, demonstrating efficiency in handling high-dimensional and nonlinear cases. Current limitations include convergence instability in complex geometries and sensitivity to loss function weights. Future work should address robustness, unified frameworks for diverse problems, and integration with experimental data.",
+    "authors": [
+      "Haoteng Hu",
+      "Lehua Qi",
+      "Xujiang Chao"
+    ],
+    "publication_year": "2024",
+    "venue": "Thin-Walled Structures",
+    "doi": "https://doi.org/10.1016/j.tws.2024.112495",
+    "bibtex_citation": "Hu_Physics-informed_2024",
+    "analysis": {
+      "Overview": "This review summarizes Physics-informed Neural Networks (PINN) frameworks and their applications in computational solid mechanics, covering constitutive modeling, damage, fracture, and inverse problems. PINN integrates physical laws with data to solve PDEs efficiently.",
+      "Background_and_Motivation": [
+        "Traditional numerical methods (e.g., FEM, FDM) struggle with high-dimensional problems, sparse/noisy data, and inverse mechanics in complex domains.",
+        "To develop efficient, mesh-free solvers that incorporate physical laws to handle data limitations and ensure physically plausible results.",
+        "Authors highlight the computational expense and inflexibility of existing methods, emphasizing PINN's ability to regularize solutions using physics.",
+        "PINN addresses broader challenges in computational mechanics by embedding domain knowledge into neural networks, enhancing reliability in data-scarce scenarios.",
+        "Mechanical Engineering, Computational Mechanics, Machine Learning, Materials Science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Physics-informed Neural Networks (PINN): NNs constrained by PDEs; (2) Automatic Differentiation: Computes exact derivatives for PDE residuals; (3) Loss Function: Combines PDE errors, boundary conditions, and data misfit.",
+        "PDEs define physical constraints; AD enables residual computation; loss minimization ensures solutions adhere to physics and data.",
+        "Known physical laws (PDEs) are accurate; data and physics are complementary; neural networks can approximate complex mappings.",
+        "Introduces a paradigm shift by unifying data-driven and physics-based approaches, enhancing interpretability and generalizability in solid mechanics."
+      ],
+      "Methodology": [
+        "Uses PINN with architectures (e.g., LSTM for time-dependent problems) and loss functions (e.g., energy-based formulations). Data from simulations/experiments are integrated as soft/hard constraints.",
+        "Novel in handling inverse problems and sparse data; applicable to nonlinear mechanics but sensitive to loss weighting; rationalized via physical consistency.",
+        "Sources include numerical simulations (e.g., FEM) and experimental tests; sparse/noisy data common; representativeness ensured through physics constraints.",
+        "PDE residuals rigorously enforced; metrics include comparison with FEM/analytical solutions; evaluation shows <10% error in many cases.",
+        "Follows computational mechanics paradigms; incorporates deep learning, influencing solution accuracy and problem formulation."
+      ],
+      "Results": [
+        "Successful applications: linear elasticity (stress/displacement prediction), hyperelasticity (soft tissue modeling), viscoelasticity (creep/relaxation), elastoplasticity (yield surfaces), damage (crack propagation), and inverse problems (parameter identification).",
+        "Results physically plausible and reliable; errors <10% in constitutive modeling; stability issues noted in complex geometries."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: PINN fundamentals → constitutive applications → damage/fracture → limitations/future work.",
+        "Key steps: (1) Introduce PINN framework; (2) Apply to elasticity/hyperelasticity; (3) Extend to viscoelasticity/elastoplasticity; (4) Address damage/fracture; (5) Discuss challenges.",
+        "Strengths: Comprehensive case studies; weaknesses: Limited validation on experimental data. Rebuttals addressed via comparative accuracy with FEM."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Mesh-free, efficient for high-dimensional/inverse problems, integrates sparse data. Innovations: Physics-constrained loss, adaptive architectures.",
+        "Limitations: Convergence instability in complex domains; struggles with high-frequency features; sensitive to loss weight tuning.",
+        "Theoretical reliance on known PDEs restricts applications with incomplete physics; energy-based formulations favor certain material models."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions PINN as transformative for computational mechanics, bridging ML and physics.",
+        "Technical terminology (e.g., 'surrogate solvers', 'automatic differentiation'); persuasive tone emphasizing PINN's versatility; uses analogies (e.g., 'teacher' for physics guidance).",
+        "Cites foundational work (Raissi et al., 2019) and domain-specific studies to establish credibility; motivations include addressing community interest via review synthesis."
+      ],
+      "Conclusions_and_Implications": [
+        "PINN effectively solves diverse solid mechanics problems but faces challenges in convergence, robustness, and complex geometries.",
+        "Improve convergence theory; develop unified frameworks for multiphysics problems; integrate real-time experimental data; explore hybrid ML-physics models."
+      ]
+    }
+  }
+}

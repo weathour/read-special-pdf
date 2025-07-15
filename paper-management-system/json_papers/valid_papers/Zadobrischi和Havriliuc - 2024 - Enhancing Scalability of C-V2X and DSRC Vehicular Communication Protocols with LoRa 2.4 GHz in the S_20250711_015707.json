@@ -1,0 +1,78 @@
+{
+  "file_name": "Zadobrischi和Havriliuc - 2024 - Enhancing Scalability of C-V2X and DSRC Vehicular Communication Protocols with LoRa 2.4 GHz in the S.pdf",
+  "generated_at": "2025-07-11 01:57:07",
+  "structured_info": {
+    "title_cn": "在城市场景中利用LoRa 2.4 GHz增强C-V2X和DSRC车载通信协议的可扩展性",
+    "title_en": "Enhancing Scalability of C-V2X and DSRC Vehicular Communication Protocols with LoRa 2.4 GHz in the Scenario of Urban Traffic Systems",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicular Communication",
+      "Wireless Networking",
+      "Smart Cities"
+    ],
+    "keywords": [
+      "vehicle-to-vehicle",
+      "vehicle-to-infrastructure",
+      "DSRC",
+      "C-V2X",
+      "LoRa"
+    ],
+    "abstract": "In the realm of Intelligent Transportation Systems (ITS), vehicular communication technologies such as Dedicated Short-Range Communications (DSRC), Cellular Vehicle-to-Everything (C-V2X), and LoRa 2.4 GHz play crucial roles in enhancing road safety, reducing traffic congestion, and improving transport efficiency. This article explores the integration of these communication protocols within smart intersections, emphasizing their capabilities and synergies. DSRC, based on IEEE 802.11p, provides reliable short-range communication with data rates up to 27 Mbps and latencies below 50 ms, ideal for real-time safety applications. C-V2X leverages LTE and 5G networks, offering broader coverage up to 10 km and supporting data rates up to 100 Mbps, with latencies as low as 20 ms in direct communication mode (PC5). LoRa 2.4 GHz, known for its long-range (up to 15 km in rural areas, 1–2 km in urban settings) and low-power characteristics, offers data rates between 0.3 and 37.5 kbps, suitable for non-critical data exchange and infrastructure monitoring. The study evaluates the performance and interoperability of these technologies in urban environments, focusing on data latency, transmission reliability, and scalability. Experimental results from simulated and real-world scenarios show that DSRC maintains reliable communication within 1 km with minimal interference. C-V2X demonstrates superior scalability and coverage, maintaining robust communication over several kilometers in high-density urban settings. LoRa 2.4 GHz exhibits excellent penetration through urban obstacles, maintaining connectivity and efficient data transmission with packet error rates below 10%.",
+    "methodology": "Simulation and experimental evaluation in urban environments, focusing on data latency, transmission reliability, and scalability. Methods include ray tracing modeling for signal propagation, real-world testing, and performance metrics analysis.",
+    "conclusion": "The technologies are complementary: DSRC excels in latency-sensitive safety applications, C-V2X provides extensive coverage and high data rates for traffic management, and LoRa 2.4 GHz offers reliable long-range communication for infrastructure monitoring. A hybrid approach integrating all three is essential for resilient and adaptive ITS solutions, supporting future smart cities and autonomous vehicles.",
+    "authors": [
+      "Eduard Zadobrischi",
+      "Stefan Havriliuc"
+    ],
+    "publication_year": "2024",
+    "venue": "Electronics",
+    "doi": "https://doi.org/10.3390/electronics13142845",
+    "bibtex_citation": "Zadobrischi_Enhancing_2024",
+    "analysis": {
+      "Overview": "The paper investigates the integration of DSRC, C-V2X, and LoRa 2.4 GHz communication protocols to enhance scalability and performance in urban traffic systems within Intelligent Transportation Systems (ITS), focusing on reducing accidents and improving efficiency.",
+      "Background_and_Motivation": [
+        "Research background includes high global road accident rates, with over 50 million injuries and 1 million deaths annually due to human error and poor infrastructure, emphasizing the need for safety improvements.",
+        "Motivation is to address challenges like traffic congestion, high costs of new infrastructure, and technology harmonization by leveraging vehicular communications to reduce crashes by up to 81%.",
+        "Authors argue necessity and urgency through WHO and UN reports, linking road safety to societal trends like urbanization and emission policies, with goals to halve fatalities by 2030.",
+        "Specific problems (e.g., scalability in high-density urban settings) are tied to broader challenges of sustainable mobility and smart city development, establishing significance via financial and social impacts.",
+        "Contributions span telecommunications, intelligent transportation systems, and wireless networking, with interdisciplinary relevance to autonomous vehicles and IoT."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: DSRC (short-range, low-latency communication based on IEEE 802.11p), C-V2X (cellular-based communication with broad coverage), LoRa 2.4 GHz (long-range, low-power technology for infrastructure monitoring).",
+        "Logical relationships: Technologies are complementary; DSRC handles safety-critical apps, C-V2X supports high-throughput needs, and LoRa enables efficient monitoring, forming a hybrid network for adaptive ITS.",
+        "Key assumptions: Urban environments have obstacles causing signal interference; technologies can interoperate seamlessly; hybrid architectures are scalable and cost-effective.",
+        "Contribution type: Advances knowledge by proposing a novel hybrid integration framework, enhancing scalability and reliability in vehicular communications for ITS."
+      ],
+      "Methodology": [
+        "Core methods include ray tracing simulations for signal propagation analysis and real-world experiments in urban scenarios, evaluating latency, reliability, and scalability.",
+        "Methodology novelty lies in integrating LoRa 2.4 GHz with DSRC and C-V2X; applicability is demonstrated in urban settings; rationality is supported by empirical data showing trade-offs in range vs. data rate.",
+        "Data sources: Simulated urban environments and real-world tests; characteristics include varied traffic densities and obstacles; preprocessing involves signal loss calculations (e.g., Friis equation); representativeness is ensured through diverse scenarios but limited to specific urban contexts.",
+        "Experimental design uses metrics like bit error rate (BER), latency, and packet error rate; rigor is adequate for comparative analysis but lacks extensive scalability testing in extreme conditions.",
+        "Follows communication engineering and ITS paradigms, affecting perspective by prioritizing practical interoperability over theoretical models."
+      ],
+      "Results": [
+        "Key results: DSRC maintains reliable communication within 1 km; C-V2X achieves robust coverage over several kilometers in high-density areas; LoRa 2.4 GHz shows excellent obstacle penetration with packet error rates below 10%.",
+        "Significance lies in demonstrating complementary strengths for hybrid systems; reliability is supported by experimental data; stability varies with environmental factors like urban density and interference."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Introduces problem, reviews state-of-the-art, presents methodology, analyzes results, and concludes with implications.",
+        "Key steps: Establishes urgency via statistics, compares protocol features, details experimental setups, interprets performance data, and advocates for hybrid solutions.",
+        "Strengths: Comprehensive technology comparison and real-world validation; weaknesses include potential rebuttals on interference, addressed through penetration tests; authors counter limitations by proposing future optimizations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Innovative hybrid architecture, cost-effectiveness of LoRa, and empirical validation in urban environments.",
+        "Limitations: Interference in 2.4 GHz band, variable latencies, and scalability constraints in ultra-high-density scenarios.",
+        "Theoretical paradigm constraints: Reliance on current communication standards may limit applicability to emerging technologies like 6G, affecting generalizability of conclusions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role in discourse: Positions as a solution for scalable ITS, contributing to debates on protocol interoperability and smart city infrastructure.",
+        "Terminology and tone: Technical terms like V2V, V2I, latency, and scalability; formal tone with persuasive strategies emphasizing practical benefits.",
+        "Authority building: Cites WHO, IEEE standards, and prior studies (e.g., 3GPP, SAE) to establish credibility; motivations include promoting hybrid approaches for industry adoption."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Hybrid integration of DSRC, C-V2X, and LoRa 2.4 GHz is essential for resilient ITS, enhancing safety and efficiency in urban traffic.",
+        "Future research: Improve resource management algorithms, conduct large-scale tests in diverse environments, enhance security, and explore integration with 5G/6G for autonomous vehicles."
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "Sansana 等 - 2021 - Recent trends on hybrid modeling for Industry 4.0.pdf",
+  "generated_at": "2025-07-14 12:45:47",
+  "structured_info": {
+    "title_cn": "工业4.0混合建模的最新趋势综述",
+    "title_en": "Recent trends on hybrid modeling for Industry 4.0",
+    "category": "Chemical Engineering",
+    "topics": [
+      "Hybrid Modeling",
+      "Industry 4.0",
+      "Process Systems Engineering"
+    ],
+    "keywords": [
+      "Hybrid modeling",
+      "Gray-box modeling",
+      "Semi-parametric modeling",
+      "Metamodeling",
+      "Physics-informed machine learning"
+    ],
+    "abstract": "The chemical processing industry has relied on modeling techniques for process monitoring, control, diagnosis, optimization, and design, especially since the third industrial revolution and the emergence of Process Systems Engineering. The fourth industrial revolution, connected to massive digitization, made it possible to collect and process large volumes of data triggering the development of data-driven frameworks for knowledge extraction. However, one must not leave behind the successful solutions developed over decades based on first principle mechanistic modeling approaches. At present, both industry and researchers are realizing the need for new ways to incorporate process and phenomenological knowledge in big data and machine learning frameworks, leading to more robust and intelligible artificial intelligence solutions, capable of assisting the target stakeholders in their activities and decision processes. In this article, we review hybrid modeling techniques, associated system identification methodologies and model assessment criteria. Applications in chemical and biochemical processes are also referred.",
+    "methodology": "Review of hybrid modeling techniques, system identification methodologies, and model assessment criteria.",
+    "conclusion": "Hybrid modeling integrates mechanistic and data-driven approaches, offering robust and intelligible AI solutions for Industry 4.0. The review identifies gaps and suggests future research directions, emphasizing the need for software tools to facilitate hybrid model development.",
+    "authors": [
+      "Joel Sansana",
+      "Mark N. Joswiak",
+      "Ivan Castillo",
+      "Zhenyu Wang",
+      "Ricardo Rendall",
+      "Leo H. Chiang",
+      "Marco S. Reis"
+    ],
+    "publication_year": "2021",
+    "venue": "Computers and Chemical Engineering",
+    "doi": "10.1016/j.compchemeng.2021.107365",
+    "bibtex_citation": "Sansana_Recent_2021",
+    "analysis": {
+      "Overview": "The paper reviews hybrid modeling techniques that combine mechanistic and data-driven approaches for Industry 4.0 applications in chemical engineering.",
+      "Background_and_Motivation": [
+        "The paper addresses the integration of mechanistic models with data-driven approaches in the context of Industry 4.0.",
+        "The motivation is to leverage both historical mechanistic models and new data-driven techniques for more robust AI solutions.",
+        "The authors argue for the necessity of hybrid models to balance the strengths of both approaches.",
+        "The research problem is linked to the broader challenge of digitization and big data in industrial processes.",
+        "The paper contributes to chemical engineering and interdisciplinary fields involving AI and data science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include hybrid modeling, gray-box modeling, and semi-parametric modeling.",
+        "The logical relationship involves combining mechanistic knowledge with data-driven insights.",
+        "Key assumptions include the availability of both mechanistic models and process data.",
+        "The paper contributes a systematic review and framework for hybrid modeling in Industry 4.0."
+      ],
+      "Methodology": [
+        "The review covers mechanistic modeling, data-driven modeling, and hybrid structures.",
+        "Methodologies include serial and parallel hybrid structures, surrogate models, and system identification techniques.",
+        "Data sources include industrial process data and simulations.",
+        "Experimental design and evaluation metrics are discussed for model validation.",
+        "The research follows a hybrid theoretical paradigm combining deductive and inductive approaches."
+      ],
+      "Results": [
+        "Key results include the superiority of hybrid models in extrapolation and prediction accuracy.",
+        "Results are significant for industrial applications, showing reliability and stability in various case studies."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a structured argument for hybrid modeling, comparing it with pure mechanistic and data-driven approaches.",
+        "Key steps include defining hybrid structures, discussing identification methodologies, and reviewing applications.",
+        "Strengths include comprehensive coverage; weaknesses include the need for more generalized approaches."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the integration of diverse modeling techniques and practical applications.",
+        "Limitations include computational complexity and the need for balanced model complexity.",
+        "Theoretical paradigms may constrain conclusions to specific industrial contexts."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions hybrid modeling within the broader discourse of Industry 4.0 and AI.",
+        "Terminology and rhetorical strategies emphasize the synergy between mechanistic and data-driven models.",
+        "Citations build authority by referencing seminal works in chemical engineering and AI."
+      ],
+      "Conclusions_and_Implications": [
+        "Hybrid modeling is effective for Industry 4.0, combining strengths of both approaches.",
+        "Future research should focus on software tools and generalized methodologies for hybrid model development."
+      ]
+    }
+  }
+}

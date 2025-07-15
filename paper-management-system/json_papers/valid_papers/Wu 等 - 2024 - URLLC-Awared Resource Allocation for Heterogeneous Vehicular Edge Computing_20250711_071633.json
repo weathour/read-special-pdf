@@ -1,0 +1,83 @@
+{
+  "file_name": "Wu 等 - 2024 - URLLC-Awared Resource Allocation for Heterogeneous Vehicular Edge Computing.pdf",
+  "generated_at": "2025-07-11 07:16:33",
+  "structured_info": {
+    "title_cn": "面向异构车联网边缘计算的URLLC感知资源分配",
+    "title_en": "URLLC-Awared Resource Allocation for Heterogeneous Vehicular Edge Computing",
+    "category": "Vehicular Edge Computing",
+    "topics": [
+      "Vehicular Edge Computing",
+      "Ultra-Reliable Low-Latency Communication",
+      "Resource Allocation",
+      "Deep Reinforcement Learning",
+      "Heterogeneous Networks"
+    ],
+    "keywords": [
+      "Heterogeneous network",
+      "Vehicular edge computing",
+      "URLLC",
+      "Resource allocation"
+    ],
+    "abstract": "Vehicular edge computing (VEC) is a promising technology to support real-time vehicular applications, where vehicles offload intensive computation tasks to the nearby VEC server for processing. However, the traditional VEC that relies on single communication technology cannot well meet the communication requirement for task offloading, thus the heterogeneous VEC integrating the advantages of dedicated short-range communications (DSRC), millimeter-wave (mmWave) and cellular-based vehicle to infrastructure (C-V2I) is introduced to enhance the communication capacity. The communication resource allocation and computation resource allocation may significantly impact on the ultra-reliable low-latency communication (URLLC) performance and the VEC system utility. In this paper, we consider a heterogeneous VEC with multiple communication technologies and various types of tasks, and propose an effective resource allocation policy to minimize the system utility while satisfying the URLLC requirement. We first formulate an optimization problem to minimize the system utility under the URLLC constraint which is modeled by the moment generating function (MGF)-based stochastic network calculus (SNC), then we present a Lyapunov-guided deep reinforcement learning (DRL) method to convert and solve the optimization problem. Extensive simulation experiments illustrate that the proposed resource allocation approach is effective.",
+    "methodology": "Lyapunov optimization combined with Deep Reinforcement Learning (DRL), specifically Soft Actor-Critic (SAC) algorithm. Uses Moment Generating Function (MGF)-based Stochastic Network Calculus (SNC) to model URLLC constraints and formulates a system utility minimization problem under reliability and latency requirements.",
+    "conclusion": "The proposed Lyapunov-guided DRL resource allocation policy effectively minimizes system utility (communication fees and CPU energy consumption) while guaranteeing URLLC requirements in heterogeneous VEC. Simulations confirm superiority over baseline methods (HGRA, HGGA, EAEO, PSO, Greedy) in latency compliance, queue stability, and computational efficiency.",
+    "authors": [
+      "Qiong Wu",
+      "Wenhua Wang",
+      "Pingyi Fan",
+      "Qiang Fan",
+      "Jiangzhou Wang",
+      "Khaled B. Letaief"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2024.3370196",
+    "bibtex_citation": "Wu_URLLC-Awared_2024",
+    "analysis": {
+      "Overview": "Proposes a resource allocation framework for heterogeneous vehicular edge computing (VEC) that integrates DSRC, mmWave, and C-V2I communication technologies to minimize system utility while ensuring ultra-reliable low-latency communication (URLLC) for diverse vehicular tasks.",
+      "Background_and_Motivation": [
+        "Increasing demand for real-time vehicular applications (e.g., 3D gaming, AR/VR) in 5G era strains vehicle computation resources, necessitating task offloading to VEC servers.",
+        "Single-technology VEC (DSRC, C-V2I, or mmWave) fails to meet URLLC requirements due to inherent limitations: DSRC underperforms in high density, C-V2I lacks high data rates, and mmWave suffers from propagation loss/obstructions.",
+        "Heterogeneous VEC integrates multiple technologies to enhance capacity but requires efficient resource allocation to balance URLLC (latency ≤ 30 ms, reliability via queue stability) and system utility (communication fees + CPU energy costs).",
+        "Authors argue the problem is urgent due to rising autonomous driving needs and demonstrate significance by highlighting gaps in prior works (e.g., no URLLC-focused resource allocation for multi-technology VEC).",
+        "Contributes to wireless communications, edge computing, and reinforcement learning, with interdisciplinary links to intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) URLLC constraint modeled via MGF-based Stochastic Network Calculus (SNC) for delay upper bounds; (2) System utility combining C-V2I communication fees and server CPU energy; (3) Lyapunov optimization for long-term constraint conversion.",
+        "Logical relationships: URLLC requirements drive optimization formulation; Lyapunov converts long-term reliability to tractable short-term constraints; DRL solves the reformulated problem via real-time adaptation.",
+        "Key assumptions: Poisson task arrivals; Nakagami-m fading for mmWave; vehicles always within coverage of all technologies; negligible downlink/wired delays.",
+        "Contribution type: Novel integration of SNC, Lyapunov optimization, and DRL for URLLC-aware resource allocation in heterogeneous VEC, advancing methodological synergy in the field."
+      ],
+      "Methodology": [
+        "Formulates optimization problem (P1) to minimize system utility under URLLC (queue stability) and resource constraints. Uses MGF-based SNC to derive probabilistic delay bounds for mmWave, DSRC, and C-V2I.",
+        "Lyapunov optimization converts long-term URLLC constraint to short-term objective (P2), reducing complexity. SAC-based DRL then handles high-dimensional state-action space (task arrivals, queue backlogs, service rates) with real-time decision-making.",
+        "Data: Task arrivals follow Poisson distribution; network services modeled via SNC envelopes; CPU power via DVFS. Data representativeness is validated in urban VEC scenarios with dense infrastructure.",
+        "Experimental design includes comparisons against five baselines (HGRA, HGGA, EAEO, PSO, Greedy). Metrics: system utility, queue backlog, delay violation probability, running time.",
+        "Follows stochastic network optimization paradigm; Lyapunov framework ensures theoretical stability, while DRL addresses dynamic interactions ignored by traditional optimization."
+      ],
+      "Results": [
+        "LySAC policy minimizes system utility (up to 1.5×10⁴ reduction) while meeting URLLC: delay ≤ 30 ms with violation probability < 0.01. Achieves queue stability across all task arrival rates (5–50 tasks/slot).",
+        "Results are reliable (consistent over 50 simulations) and stable (robust to V parameter variations). Outperforms baselines in latency compliance and resource efficiency, especially at high arrival rates."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Problem formulation → Lyapunov conversion → DRL solution → Simulations → Conclusion.",
+        "Key steps: (1) Motivate heterogeneous VEC via single-tech limitations; (2) Derive URLLC bounds via SNC; (3) Use Lyapunov to handle long-term constraints; (4) Apply SAC for dynamic resource allocation; (5) Validate via comparative simulations.",
+        "Strengths: Rigorous mathematical modeling (SNC, Lyapunov) and adaptive learning (DRL). Weaknesses: Assumptions (e.g., full coverage) may limit real-world applicability. Rebuttals addressed via urban scenario justification and code availability."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First URLLC-aware resource allocation for multi-technology VEC; effective Lyapunov-DRL integration; real-time decision capability (low running time: 0.002s/step).",
+        "Limitations: Model retraining needed for new task types; assumptions (e.g., Poisson arrivals) may not hold in all scenarios; urban focus may not extend to rural areas.",
+        "Theoretical paradigm choice (Lyapunov+DRL) constraints conclusions to modeled stochastic processes and may not generalize to non-stationary environments without retraining."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions work as填补空白 (gap-filling) in URLLC for heterogeneous VEC, contrasting with prior single-tech or non-URLLC approaches. Cites 38 references to establish context and highlight novelty.",
+        "Uses formal terminology (e.g., \"MGF-based SNC\", \"Lyapunov drift\") and persuasive rhetoric emphasizing \"promising technology\" and \"effective\" results. Cites authoritative sources (e.g., IEEE journals) to build credibility and situate contributions within established literature.",
+        "Authors establish authority via citations to foundational works (e.g., stochastic network calculus, Lyapunov optimization) and their own prior research, strategically aligning with key researchers in the field."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Lyapunov-guided DRL policy optimally balances URLLC and system utility in heterogeneous VEC. SAC enables efficient real-time decisions, outperforming traditional methods.",
+        "Future work: Extend to dynamic vehicle coverage scenarios; incorporate federated learning; reduce retraining needs for new task types; test in real-world deployments."
+      ]
+    }
+  }
+}

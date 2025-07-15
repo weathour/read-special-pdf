@@ -1,0 +1,79 @@
+{
+  "file_name": "Ghoul和Sayed - 2021 - Real-time signal-vehicle coupled control An application of connected vehicle data to improve inters.pdf",
+  "generated_at": "2025-07-11 04:01:48",
+  "structured_info": {
+    "title_cn": "实时信号-车辆耦合控制：应用联网车辆数据提升交叉口安全",
+    "title_en": "Real-time signal-vehicle coupled control: An application of connected vehicle data to improve intersection safety",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Adaptive Traffic Signal Control",
+      "Reinforcement Learning",
+      "Traffic Safety Optimization"
+    ],
+    "keywords": [
+      "Reinforcement learning",
+      "Signal-vehicle coupled control",
+      "Adaptive traffic signal control",
+      "Trajectory optimization",
+      "Speed advisory",
+      "Connected vehicles"
+    ],
+    "abstract": "The proliferation of Connected Vehicles and their ability to collect a large amount of data presents an opportunity for the real-time safety optimization of traffic networks. This study proposes a Signal-Vehicle Coupled Control (SVCC) system incorporating Adaptive Traffic Signal Control (ATSC) and speed advisories to optimize safety in real-time. By applying a rule-based approach in conjunction with a Soft-Actor Critic RL framework, the system assigns speed advisories to platoons of vehicles on each approach and extends the current signal time accordingly. The system was tested on two different intersections modeled using real-world data through VISSIM. Traffic conflicts were reduced by 41-55%, and vehicle delay was reduced by 21-24%. The system functions effectively even at lower market penetration rates (MPR), with diminishing returns beyond 50% MPR.",
+    "methodology": "Hybrid dynamic programming-reinforcement learning (Soft Actor-Critic framework) for joint optimization of signal timing and speed advisories, using real-time connected vehicle data to estimate conflict rates via safety performance functions. Platoon-based trajectory optimization combined with adaptive signal control.",
+    "conclusion": "The SVCC system reduces rear-end conflicts by 41-55% and vehicle delay by 21-24% at signalized intersections. It remains effective at low market penetration rates (25-50% MPR) with diminishing returns beyond 50% MPR, demonstrating computational efficiency and real-world applicability.",
+    "authors": [
+      "Tarek Ghoul",
+      "Tarek Sayed"
+    ],
+    "publication_year": "2021",
+    "venue": "Accident Analysis and Prevention",
+    "doi": "10.1016/j.aap.2021.106389",
+    "bibtex_citation": "Ghoul_Real-time_2021",
+    "analysis": {
+      "Overview": "Proposes a Signal-Vehicle Coupled Control (SVCC) system using connected vehicle data and reinforcement learning to optimize intersection safety by simultaneously adjusting traffic signals and vehicle trajectories.",
+      "Background_and_Motivation": [
+        "Rear-end collisions constitute a significant proportion of accidents at signalized intersections, causing substantial damage. Connected vehicle (CV) technology enables real-time safety interventions but existing systems prioritize throughput/delay over safety.",
+        "To develop an SVCC framework that addresses the gap in real-time safety optimization using CV data, specifically reducing rear-end conflicts through coordinated signal and vehicle control.",
+        "Authors highlight CV proliferation forecasts (majority of new vehicles by 2045) and emphasize that current SVCC literature focuses on delay/emissions, leaving safety unaddressed despite technological readiness.",
+        "Links specific rear-end collision reduction to broader transportation safety challenges by demonstrating how CV data enables proactive conflict mitigation at the cycle level.",
+        "Transportation Engineering, Reinforcement Learning, Traffic Safety, and Intelligent Transportation Systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1. Signal-Vehicle Coupled Control (SVCC): Integrated system issuing speed advisories and signal extensions. 2. Conflict Rate Estimation: Safety Performance Function (SPF) using shockwave parameters. 3. Platoon-Based Optimization: Group-level trajectory control for computational efficiency.",
+        "SVCC uses real-time CV data to feed SPF estimates into the SAC-RL agent, which outputs signal extensions and platoon speed advisories to minimize predicted conflicts.",
+        "CV data accurately represents traffic state; vehicles comply with speed advisories; SPF generalizes across intersections; conventional vehicles follow platoon leaders.",
+        "Provides a novel safety-focused application of SAC-RL in transportation, introducing a computationally efficient framework for joint signal-vehicle optimization."
+      ],
+      "Methodology": [
+        "Soft Actor-Critic (SAC) RL agent with hybrid rule-based platoon assignment. State representation: shockwave parameters, volume, platoon ratio. Actions: signal extension time (0-20s) and advisory speeds (20-50 km/h). Reward: negative sum of predicted conflicts.",
+        "Novelty: First SAC application for safety-optimized SVCC. Applicability: Works at low MPR. Rationality: Uses established SPF and platoon dynamics; balances exploration/exploitation via entropy regularization.",
+        "Real-world trajectory data from two Surrey, BC intersections. Preprocessing: Calibrated VISSIM simulations using kinematic/shockwave parameters. Representativeness: Tested across varying traffic volumes (2,140–4,186 vehicles/hour).",
+        "Rigorous: 500 training episodes with randomized seeds. Metrics: Conflict reduction (%) and delay reduction (%). Adequacy: SPF validated in prior studies; metrics directly tied to safety/efficiency objectives.",
+        "Follows reinforcement learning paradigm (actor-critic framework) and traffic shockwave theory, enabling dynamic optimization but constraining solutions to modeled state representations."
+      ],
+      "Results": [
+        "55% conflict reduction (test intersection), 41% (validation intersection); 21-24% delay reduction. Effective at ≥25% MPR (31-43% conflict reduction). Shockwave area/queue length significantly reduced.",
+        "Highly significant: Statistical validation (SD:4.5-7.7%). Reliable: Consistent across two distinct intersections. Stable: Performance maintained across traffic volumes (9 AM–5 PM scenarios)."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Literature gap → Methodology → Simulation validation → MPR analysis → Limitations.",
+        "1. Establish safety gap in SVCC literature 2. Formulate SAC-RL framework with conflict-based reward 3. Validate via real-world calibrated simulations 4. Demonstrate low-MPR efficacy 5. Analyze limitations.",
+        "Strengths: Multi-intersection validation and MPR testing address generalizability concerns. Weaknesses: Compliance assumptions rebutted by modeling non-compliant vehicles as conventional; single-intersection focus mitigated by testing two geometrically distinct sites."
+      ],
+      "Strengths_and_Limitations": [
+        "Novel safety-focused SAC-RL framework; significant conflict/delay reduction; functionality at low MPR; computational efficiency.",
+        "Assumes perfect CV data/compliance; SPF limited to rear-end conflicts; performance varies with intersection geometry (e.g., single-lane approaches); conventional vehicles invisible to system.",
+        "Shockwave theory and RL paradigm prioritize quantifiable metrics (conflicts/delay), potentially overlooking unmodeled collision types (e.g., sideswipes) or human factors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances ITS discourse by bridging RL techniques with real-time safety optimization, positioning SVCC as a proactive alternative to reactive safety methods.",
+        "Technical terminology (e.g., SAC, shockwave parameters); empirical tone; strategic citations to establish RL/ATSC foundations and safety evaluation methods.",
+        "Builds authority through extensive citations (e.g., Essa & Sayed SPFs, Haarnoja’s SAC) and real-world data validation. Motivations: Legitimize safety focus amid delay/emissions-dominated literature."
+      ],
+      "Conclusions_and_Implications": [
+        "SVCC significantly improves intersection safety and efficiency. Framework remains effective at low CV penetration rates and is transferable across intersection types.",
+        "Incorporate multi-collision-type SPFs; integrate roadside sensors for extended range; field-test compliance effects; expand to network-level optimization."
+      ]
+    }
+  }
+}

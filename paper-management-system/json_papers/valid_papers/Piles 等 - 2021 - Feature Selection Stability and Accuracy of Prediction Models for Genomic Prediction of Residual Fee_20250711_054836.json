@@ -1,0 +1,85 @@
+{
+  "file_name": "Piles 等 - 2021 - Feature Selection Stability and Accuracy of Prediction Models for Genomic Prediction of Residual Fee.pdf",
+  "generated_at": "2025-07-11 05:48:36",
+  "structured_info": {
+    "title_cn": "基于机器学习的猪剩余采食量基因组预测特征选择稳定性与模型精度研究",
+    "title_en": "Feature Selection Stability and Accuracy of Prediction Models for Genomic Prediction of Residual Feed Intake in Pigs Using Machine Learning",
+    "category": "Livestock Genomics",
+    "topics": [
+      "Feature Selection",
+      "Genomic Prediction",
+      "Machine Learning"
+    ],
+    "keywords": [
+      "feature selection",
+      "stability",
+      "machine learning",
+      "genomic prediction",
+      "SNP",
+      "pigs",
+      "feed efficiency"
+    ],
+    "abstract": "Feature selection (FS) is essential in high-dimensional datasets to prevent overfitting and reduce computational demands. This study applied univariate and multivariate FS algorithms combined with parametric and non-parametric learners to predict residual feed intake (RFI) in pigs from genomic data. The goal was to identify optimal combinations of feature selectors, SNP subset sizes, and learners for accurate and stable predictions. Genomic best linear unbiased prediction (GBLUP) served as the benchmark. Results showed that support vector machine (SVM) and gradient boosting (GB) using ≥500 SNPs achieved the highest accuracy (Spearman correlation: 0.28 for SVM, 0.27 for GB) and stability. For small SNP subsets (50–250), Spearman correlation (spearcor) and maximal relevance minimal redundancy (mrmr) filters outperformed other methods, suggesting their utility for low-density SNP chip design.",
+    "methodology": "1. Data: 5,708 pigs genotyped with 46,610 SNPs (post-QC: 9,523 SNPs). RFI calculated from adjusted phenotypes. 2. Feature Selection: Filter methods (univ.dtree, spearcor, cforest, mrmr, random), embedded methods (LASSO, elastic net), and hybrid approaches. 3. Learners: SVM, GB, ridge regression, LASSO, elastic net, GBLUP. 4. Evaluation: Nested 10-fold cross-validation; accuracy measured via median Spearman correlation (SC), stability via interquartile range (IQR). FS stability assessed using Nogueira's estimator (NOG).",
+    "conclusion": "SVM and GB with ≥500 SNPs achieved the highest prediction accuracy and stability. For small SNP subsets (50–250), spearcor and mrmr filters yielded accuracy comparable to larger subsets, enabling cost-effective genomic evaluation. These filters also demonstrated high FS stability, making them suitable for designing low-density SNP chips.",
+    "authors": [
+      "Miriam Piles",
+      "Rob Bergsma",
+      "Daniel Gianola",
+      "Hélène Gilbert",
+      "Llibertat Tusell"
+    ],
+    "publication_year": "2021",
+    "venue": "Frontiers in Genetics",
+    "doi": "10.3389/fgene.2021.611506",
+    "bibtex_citation": "Piles_Feature_2021",
+    "analysis": {
+      "Overview": "This paper evaluates feature selection methods combined with machine learning algorithms for genomic prediction of residual feed intake in pigs, focusing on prediction accuracy and stability across varying SNP subset sizes.",
+      "Background_and_Motivation": [
+        "Genomic selection efficiency depends on statistical models. Machine learning handles high-dimensional data but requires feature selection to avoid overfitting.",
+        "FS stability (agreement in feature subsets across datasets) is critical for biological interpretability and low-cost SNP chip design in livestock genomics.",
+        "Prior studies lacked stability evaluation in genomic contexts. The authors argue that unstable FS limits reproducibility and practical utility in breeding programs.",
+        "The problem links to broader challenges in genomic prediction: balancing computational efficiency, model accuracy, and biological insight for complex traits like feed efficiency.",
+        "Contributes to animal breeding, computational biology, and machine learning, particularly in interdisciplinary livestock genomics."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Feature Selection (FS): Process to select predictive SNPs; types include filter (univariate/multivariate), embedded, and hybrid methods.",
+        "Stability: Consistency of FS results across data perturbations; measured via NOG estimator.",
+        "Prediction Accuracy: Measured by Spearman correlation between observed and predicted RFI.",
+        "FS methods inform SNP selection; stability ensures reliability for downstream applications like chip design.",
+        "Key assumptions: Additive SNP effects; RFI is a heritable complex trait; preprocessed data sufficiently represents genetic architecture.",
+        "Contribution: Novel evaluation of FS stability in livestock genomics, proposing optimal FS-learner combinations for practical breeding tools."
+      ],
+      "Methodology": [
+        "Core methods: Filter FS (spearcor, mrmr), embedded FS (LASSO, elastic net), learners (SVM, GB, GBLUP). Nested cross-validation for hyperparameter tuning and evaluation.",
+        "Novelty: First application of stability metrics (NOG) to genomic FS in livestock. Combines filter methods with non-parametric learners for enhanced interpretability.",
+        "Data: 5,708 pigs; genotypes from 60K SNP chip (46,610 SNPs → 9,523 post-QC). RFI derived from feed intake, growth, and metabolic traits. Preprocessing included MAF filtering, LD pruning, and outlier removal.",
+        "Experimental rigor: 10-fold CV with consistent data splits; NOG and IQR quantify stability. Metrics address overfitting and chance agreement.",
+        "Paradigm: Data-driven ML approach; contrasts parametric GBLUP. This allows capturing non-additive effects but assumes SNP independence post-QC."
+      ],
+      "Results": [
+        "SVM/GB with ≥500 SNPs achieved highest accuracy (median SC: 0.28/0.27) and stability (IQR: 0.02/0.04). For small subsets (50 SNPs), spearcor/mrmr with SVM/GB matched larger-set accuracy (SC: ~0.18).",
+        "Results are reliable: Cross-validated; stable across folds. Critical finding: Tree-based FS (cforest, univ.dtree) showed null stability, while spearcor/mrmr were robust."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem (FS instability) → Methods (FS/learners/stability metrics) → Results (optimal combinations) → Implications (breeding applications).",
+        "Key steps: 1) Motivate FS stability; 2) Benchmark methods; 3) Show SVM/GB superiority; 4) Validate spearcor/mrmr for small subsets; 5) Propose low-density chip design.",
+        "Strengths: Multi-method comparison; stability quantification. Weaknesses: Limited biological interpretation of selected SNPs. Rebuttals: Focus on predictive utility over biological mechanisms."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive FS-learner evaluation; stability metrics; practical guidance for low-cost genotyping.",
+        "Methodological limitations: Preprocessing removed correlated SNPs, potentially masking multivariate filter advantages; computational constraints limited wrapper methods.",
+        "Theoretical paradigm: ML focus prioritizes prediction over biological interpretability. Conclusions are constrained to additive architectures post-QC."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within discourse: Bridges ML and animal breeding; critiques prior FS studies for neglecting stability.",
+        "Terminology: Technical (e.g., 'embedded methods', 'regularization'); persuasive strategies: Emphasizes 'stability' as novel contribution; positions GBLUP as benchmark.",
+        "Citations build authority: Key references (e.g., Nogueira et al. for stability; Gianola et al. for ML in breeding) establish methodological grounding and novelty claims."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: SVM/GB with spearcor/mrmr FS using 500+ SNPs optimizes accuracy/stability. For resource-limited settings, 50-SNP subsets with these filters suffice.",
+        "Future research: Validate on independent populations; explore biological mechanisms of selected SNPs; integrate wrapper methods with high-performance computing."
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "file_name": "Tabassum和Reddyy - 2023 - Review on QoS and security challenges associated with the internet of vehicles in cloud computing.pdf",
+  "generated_at": "2025-07-11 02:15:45",
+  "structured_info": {
+    "title_cn": "云计算中车联网服务质量与安全挑战综述",
+    "title_en": "Review on QoS and security challenges associated with the internet of vehicles in cloud computing",
+    "category": "Vehicular Networks",
+    "topics": [
+      "Internet of Vehicles",
+      "Cloud Computing",
+      "Quality of Service"
+    ],
+    "keywords": [
+      "Data dissemination",
+      "Security and Privacy",
+      "QoS",
+      "IoV",
+      "Cloud computing",
+      "VANET"
+    ],
+    "abstract": "Internet of Vehicles (IoV) is an area of research and development that has rapidly developed in the VANETs (Vehicular Ad-hoc Networks) that provides smart communication between vehicles and cloud using IoT. Centralized (cloud) and decentralized (edge) computing face challenges of high latency and performance deterioration. IoV-Cloud Computing (IoV-CC) must address security, privacy, and QoS parameters like latency and bandwidth. This research explores data distribution, security acceptability, and future possibilities for these challenges.",
+    "methodology": "Literature review and comparative analysis of existing protocols, architectures, and security frameworks in IoV-CC environments.",
+    "conclusion": "IoV faces significant QoS and security challenges in cloud computing. Fog computing emerges as a promising solution to reduce latency. Future research must address data dissemination protocols, real-time analytics, and robust security for 5G-enabled IoV systems.",
+    "authors": [
+      "Nazia Tabassum",
+      "C.R.K. Reddyy"
+    ],
+    "publication_year": "2023",
+    "venue": "Measurement: Sensors",
+    "doi": "10.1016/j.measen.2022.100562",
+    "bibtex_citation": "Tabassum_Review_2023",
+    "analysis": {
+      "Overview": "Survey paper examining Quality of Service (QoS) and security challenges in Internet of Vehicles (IoV) systems integrated with cloud computing, focusing on data dissemination, latency, and threat mitigation strategies.",
+      "Background_and_Motivation": [
+        "Rapid growth of connected vehicles necessitates reliable communication but faces VANET limitations in computation and modern applications.",
+        "Need to resolve high latency in cloud computing and security vulnerabilities in vehicle-to-cloud communication.",
+        "Increasing traffic fatalities and projected vehicle growth (1 billion by 2020) underscore urgency for secure, low-latency solutions.",
+        "IoV-CC integration is critical for autonomous driving and intelligent transport systems but introduces novel attack surfaces.",
+        "Contributes to computer science, cybersecurity, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "IoV: Network enabling vehicle-to-vehicle/vehicle-to-infrastructure communication via IoT. Fog Computing: Decentralized architecture reducing cloud latency. QoS: Metrics (latency, bandwidth) for reliable data transmission.",
+        "Fog computing extends cloud capabilities to edge devices to address IoV-CC latency; security protocols must evolve to protect expanded attack surfaces.",
+        "Assumes 5G integration will enhance IoV performance; trusts centralized cloud/fog hybrid models as optimal.",
+        "Provides comprehensive taxonomy of challenges and solutions, advancing knowledge in vehicular network optimization."
+      ],
+      "Methodology": [
+        "Systematic literature review categorizing studies into data dissemination mechanisms (SDN-based, social-network-based), security frameworks, and QoS protocols.",
+        "Novelty in fog-VANET integration analysis; applicability demonstrated through protocol comparisons; rationality in addressing mobility and latency constraints.",
+        "Sources: 62 peer-reviewed papers on VANETs, cloud security, and IoV architectures. Data includes attack taxonomies and protocol performance metrics.",
+        "Evaluation uses qualitative comparison of methods (e.g., SACBR vs. AODV routing) but lacks quantitative meta-analysis.",
+        "Follows applied engineering paradigm, prioritizing practical solutions over theoretical models."
+      ],
+      "Results": [
+        "Key results: Centralized cloud models increase latency; fog computing reduces delay by 30-50%; social-based routing improves QoS; Sybil/DoS attacks remain critical threats.",
+        "Results validated through referenced experimental studies (e.g., CR-SDVN protocol testing). Reliability high for established protocols; stability varies with mobility density."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem introduction → IoV/QoS fundamentals → Data dissemination challenges → Security analysis → Fog computing solutions → Future directions.",
+        "Steps: 1) Establish IoV-CC importance 2) Identify QoS/security gaps 3) Classify existing solutions 4) Propose fog integration 5) Outline research needs.",
+        "Strengths: Clear taxonomy of threats (Table 1); effective synthesis of disparate domains. Weaknesses: Limited rebuttal to scalability constraints of fog nodes."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Holistic review of IoV-CC challenges; novel fog computing integration framework; actionable future research directives.",
+        "Methodology boundaries: Excludes V2P/V2S communication; geographic scope limited to urban/highway contexts.",
+        "Centralized cloud paradigm assumption constrains alternative decentralized solutions exploration."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as gap-bridging survey between VANET legacy systems and emerging IoV-CC requirements.",
+        "Terminology: Technical (QoS metrics, fog nodes); rhetorical emphasis on 'challenges' and 'urgent solutions'. Builds authority via 62 citations from IEEE/Elsevier sources.",
+        "Citation strategy establishes problem severity (e.g., accident statistics) and legitimizes fog computing focus."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Fog computing mitigates cloud latency; hybrid SDN architectures optimize routing; cryptographic upgrades needed for V2X security.",
+        "Future suggestions: Develop 5G-integrated protocols; standardize cross-network data integration; create AI-driven intrusion detection for vehicular clouds."
+      ]
+    }
+  }
+}

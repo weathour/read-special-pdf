@@ -1,0 +1,77 @@
+{
+  "file_name": "Nguyen和Guan - 2024 - DSRC Performance Under the Adjacent Channel Interference of Cellular-Based V2X at 5.9GHz Band.pdf",
+  "generated_at": "2025-07-11 05:30:15",
+  "structured_info": {
+    "title_cn": "在5.9GHz频段下，基于蜂窝的V2X相邻信道干扰对DSRC性能的影响",
+    "title_en": "DSRC Performance under the Adjacent Channel Interference of Cellular-based V2X at 5.9GHz Band",
+    "category": "Wireless Communications",
+    "topics": [
+      "Vehicular Communications",
+      "Interference Analysis",
+      "Wireless Networks"
+    ],
+    "keywords": [
+      "Adjacent Channel Interference",
+      "DSRC",
+      "C-V2X",
+      "V2V Communications"
+    ],
+    "abstract": "Intelligent Transportation Systems (ITS) are faced with two Vehicle-to-Everything (V2X) communication technologies, Dedicated Short Range Communication (DSRC) and Cellular Vehicle-to-Everything (C-V2X). These technologies use different physical layer as well as MAC layer, hence are not compatible. They use the same 5.9GHz frequency band, but they may be allocated different channels. Such co-existence of the two system raises questions of possible adjacent channel interference from one technology to another when they are both adopted in the same country. In order to investigate this issue, we carry out an evaluation of the performance of DSRC under the effect of adjacent channel interference from C-V2X signal. Commercial off-the-shelf V2X devices are used. Line-of-sight (LOS) and Non-LOS (NLOS) measurements are made on the road. The on-road field measurement results show that, when C-V2X interference with high Channel Busy Ratio (CBR) of around 55 is present, the Packet Delivery Ratio (PDR) of DSRC system may drop from 100 to 90 in line-of-sight (LOS) scenarios, and the communication range may be reduced by up to 60m in the NLOS scenarios.",
+    "methodology": "Field measurements using Commercial Off-The-Shelf (COTS) devices to evaluate Packet Delivery Ratio (PDR) of DSRC under C-V2X adjacent channel interference in LOS and NLOS scenarios, with and without guard bands.",
+    "conclusion": "DSRC performance degrades under C-V2X adjacent channel interference, with PDR dropping from 100% to 90% in LOS and communication range reducing by up to 60m in NLOS; guard bands mitigate this degradation.",
+    "authors": [
+      "Hieu Nguyen",
+      "Yong Liang Guan"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE 99th Vehicular Technology Conference (VTC2024-Spring)",
+    "doi": "10.1109/VTC2024-SPRING62846.2024.10683448",
+    "bibtex_citation": "Nguyen_DSRC_2024",
+    "analysis": {
+      "Overview": "The paper evaluates the impact of adjacent channel interference from Cellular-based V2X (C-V2X) on Dedicated Short Range Communication (DSRC) systems in the 5.9GHz band, using field measurements to assess performance degradation in Packet Delivery Ratio (PDR) and communication range.",
+      "Background_and_Motivation": [
+        "The research addresses challenges in Intelligent Transportation Systems (ITS) where DSRC and C-V2X co-exist in the same 5.9GHz band but are incompatible, risking interference that could degrade safety-critical Vehicle-to-Vehicle (V2V) communications.",
+        "Motivation stems from the lack of field research on C-V2X-to-DSRC interference and the practical need in Singapore, where DSRC is an incumbent standard, to ensure reliable V2V communication for accident avoidance.",
+        "The authors argue for necessity by highlighting prior studies focused only on Wi-Fi interference, not real C-V2X devices, and emphasize urgency due to the potential for increased accidents if interference compromises V2V reliability.",
+        "The specific problem of adjacent channel interference is linked to the broader challenge of spectrum sharing in ITS, establishing significance through empirical evidence of performance degradation in safety applications.",
+        "The paper contributes to disciplines including Vehicular Communications, Wireless Networks, and Spectrum Management."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 'Adjacent Channel Interference' (unwanted signal leakage between adjacent channels), 'Packet Delivery Ratio' (percentage of successfully received packets), 'Communication Range' (maximum distance for reliable communication).",
+        "Logical relationships: C-V2X interference reduces DSRC signal quality, leading to lower PDR and shorter communication range; guard bands can weaken this effect by reducing spectral leakage.",
+        "Key assumptions include the use of COTS devices accurately representing real-world deployments and the focus on 5.9GHz band dynamics reflecting regulatory allocations.",
+        "The contribution is empirical, providing field-based insights for spectrum policy and system design in vehicular networks."
+      ],
+      "Methodology": [
+        "Core methods involve on-road field measurements with COTS DSRC and C-V2X devices, testing LOS and NLOS scenarios, varying guard bands (0MHz, 5MHz, 10MHz), and measuring PDR using GNSS for distance calculation.",
+        "Methodology novelty lies in using real COTS devices for the first C-V2X-to-DSRC interference study; applicability is high for real-world ITS deployments; rationality is supported by controlled interference variables.",
+        "Data comes from NTU campus road tests, with characteristics including short DSRC packets (200 bytes) and high C-V2X CBR (55%); preprocessing includes sequence number logging for PDR calculation; representativeness is ensured by COTS usage but limited to specific environments.",
+        "Experimental design is rigorous with interference on/off controls and multiple scenarios; evaluation metrics like PDR are adequate but lack diversity (e.g., no latency or throughput).",
+        "The research follows wireless communication paradigms (IEEE 802.11p for DSRC, 3GPP for C-V2X), focusing on PHY/MAC layers and constraining analysis to interference effects without higher-layer protocols."
+      ],
+      "Results": [
+        "Key results: In LOS, PDR drops from 100% to 90% with interference; in NLOS, communication range at PDR=80% reduces by 40-60m (e.g., from 88m to 28m without guard bands). Guard bands (e.g., 10MHz) mitigate degradation.",
+        "Results are significant for spectrum policy, showing severe range reduction; reliability is high from field data, but stability is untested across diverse environments."
+      ],
+      "Argumentation_and_Logic": [
+        "Argument structure: Introduction establishes the problem, System Model details technologies, Field Measurement Setup describes methods, Results present data, Conclusion summarizes findings.",
+        "Key steps: Identify interference gap, use COTS devices for realism, measure PDR/range, show degradation, propose guard bands as mitigation.",
+        "Strengths include empirical validation; weaknesses are limited scenario diversity, addressed by testing multiple guard bands; potential rebuttals on generality are acknowledged through calls for future work."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First real-device field study of C-V2X-to-DSRC interference, practical insights for guard band implementation.",
+        "Limitations: Measurements restricted to specific LOS/NLOS scenarios; no urban or high-mobility environments tested.",
+        "Theoretical constraints: Focus on PHY/MAC layers ignores network-level effects, limiting conclusions to signal-level degradation."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper fills a gap in vehicular communication discourse by providing empirical data on co-existence interference, challenging prior simulation-based studies.",
+        "Authors use technical terminology (e.g., PDR, CBR, OFDM) and a factual tone; rhetorical strategies include contrasting with Wi-Fi studies to highlight novelty.",
+        "Authority is built through citations of standards (e.g., IEEE, 3GPP) and prior work, with motivations to establish credibility and contextualize the research gap."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: C-V2X adjacent channel interference significantly degrades DSRC performance; guard bands or stricter spectral roll-off can mitigate this.",
+        "Future research suggestions: Extend to diverse environments, test with 5G-NR C-V2X, or evaluate combined interference sources."
+      ]
+    }
+  }
+}

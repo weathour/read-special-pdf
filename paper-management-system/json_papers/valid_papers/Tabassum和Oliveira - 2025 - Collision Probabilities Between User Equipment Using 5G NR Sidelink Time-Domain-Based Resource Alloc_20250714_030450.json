@@ -1,0 +1,85 @@
+{
+  "file_name": "Tabassum和Oliveira - 2025 - Collision Probabilities Between User Equipment Using 5G NR Sidelink Time-Domain-Based Resource Alloc.pdf",
+  "generated_at": "2025-07-14 03:04:50",
+  "structured_info": {
+    "title_cn": "用户设备在C-V2X中使用5G NR侧链路时域资源分配的碰撞概率分析",
+    "title_en": "Collision Probabilities Between User Equipment Using 5G NR Sidelink Time-Domain-Based Resource Allocation in C-V2X",
+    "category": "Telecommunications",
+    "topics": [
+      "5G NR Sidelink",
+      "C-V2X",
+      "Resource Allocation",
+      "Collision Probability",
+      "Vehicular Networks"
+    ],
+    "keywords": [
+      "cellular V2X",
+      "5G V2X",
+      "sidelink",
+      "5G NR",
+      "3GPP",
+      "connected and automated vehicles"
+    ],
+    "abstract": "Efficient resource allocation is a critical factor in ensuring reliable and low-latency communication in the fifth-generation New Radio (5G NR) sidelink-based Cellular Vehicle to Everything (C-V2X) networks. One of the critical challenges in adopting C-V2X systems is the potential for packet collisions between User Equipment (UE) when they share resources in the sidelink channel. For reliable and low-latency communication, especially in safety-critical applications, efficient resource allocation is essential. This paper explores collision-related issues that may arise in the 5G NR sidelink and the probability of collisions on resource blocks. To address these challenges, we propose an experimental time-domain resource allocation strategy leveraging dynamic reselection intervals and adaptive reservation mechanisms. Unlike existing approaches, which primarily rely on static or semi-persistent scheduling, our strategy optimizes resource allocation based on real-time variations in generation time, speed and distance between UEs. The proposed approach significantly reduces collision probabilities, enhances communication reliability and ensures efficient resource utilization, even in high-density vehicular networks. Addressing packet collisions in resource allocation becomes crucial for the viability of vehicular communication systems. The goal of this paper is to analyze the dynamics and causes of packet collisions in C-V2X scenarios using 5G NR sidelink technology and to evaluate how our time-domain optimization techniques can enhance system performance in rapidly evolving vehicular communication networks.",
+    "methodology": "Experimental time-domain resource allocation strategy using dynamic reselection intervals and adaptive reservation mechanisms. Simulations conducted via NS-3 5G-LENA integrated with SUMO for mobility modeling, with collision probability modeling accounting for distance, speed, and resource block allocation.",
+    "conclusion": "The proposed dynamic time-domain resource allocation strategy significantly reduces collision probabilities and improves Packet Reception Rate (PRR) by optimizing resource utilization based on real-time variations in UE speed, distance, and packet generation time. Optimal communication occurs at ~400m distance, and 4 resource blocks yield the highest PRR.",
+    "authors": [
+      "Mehnaz Tabassum",
+      "Aurenice Oliveira"
+    ],
+    "publication_year": "2025",
+    "venue": "Electronics",
+    "doi": "10.3390/electronics14040751",
+    "bibtex_citation": "Tabassum_Collision_2025",
+    "analysis": {
+      "Overview": "This paper analyzes collision probabilities in 5G NR sidelink-based C-V2X networks, proposing a dynamic time-domain resource allocation strategy to mitigate packet collisions by optimizing resource utilization based on real-time variations in UE speed, distance, and generation time.",
+      "Background_and_Motivation": [
+        "Packet collisions in high-mobility vehicular networks threaten communication reliability, information integrity, and safety-critical applications in C-V2X systems.",
+        "To solve resource contention issues when multiple UEs share sidelink channels, particularly under static/semi-persistent scheduling limitations.",
+        "Collisions compromise low-latency requirements for safety applications, establishing urgency for dynamic solutions in evolving 5G vehicular networks.",
+        "The specific problem of UE collisions is framed within the broader challenge of ensuring ultra-reliable low-latency communication (URLLC) in intelligent transportation systems.",
+        "Telecommunications, vehicular networking, and 5G wireless systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Collision Probability: Likelihood of packet collisions when UEs transmit simultaneously on shared resource blocks.",
+          "Time-domain Resource Allocation: Strategy using dynamic reselection intervals and adaptive reservations based on real-time UE parameters.",
+          "Packet Reception Rate (PRR): Metric measuring successful packet delivery ratio."
+        ],
+        "Dynamic resource allocation reduces collision probability → improves PRR → enhances communication reliability. Distance/speed variations directly impact collision likelihood.",
+        "UEs operate in half-duplex mode; urban environments follow specific path loss models; resource blocks are contended under 3GPP standards.",
+        "Provides a novel methodological framework for collision mitigation, advancing resource allocation techniques in 5G V2X standards."
+      ],
+      "Methodology": [
+        "Collision probability modeling with three interference types (uplink unicast, transmission range, collision-induced) and PRR calculations. NS-3/SUMO simulations with variable distance, speed, resource blocks, and generation times.",
+        "Novelty: Real-time adaptation to UE dynamics vs. static approaches. Applicable to high-density vehicular networks. Rationale: Distance/speed directly affect signal propagation and contention.",
+        "Simulated urban environment (Houghton, MI) with 5.9GHz channel, 10MHz bandwidth, 300-byte beacons. Representative for standardized vehicular networks but limited to LOS conditions.",
+        "Comprehensive parameter variation (distance: 50-400m; speed: variable; RBs: 1-4) with PRR/collision probability metrics. Metrics align with 3GPP evaluation standards.",
+        "Follows 3GPP NR V2X paradigm (Mode 4), emphasizing standards-compliant solutions within wireless communication theory."
+      ],
+      "Results": [
+        "Collision probability decreases with distance (up to 400m) but rises beyond due to propagation delays. PRR improves with more RBs (peak at 4 RBs) and longer packet generation times (100ms > 20ms). Proposed strategy outperforms static/semi-persistent methods.",
+        "Results demonstrate statistical reliability through repeated simulations with controlled variables. Stability is validated across distance/speed combinations but constrained by urban LOS assumptions."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem identification → literature critique → mathematical modeling → simulation-based validation → conclusion/impact.",
+        "1. Establish collision criticality in C-V2X; 2. Derive collision probability model; 3. Propose dynamic allocation; 4. Validate via simulations; 5. Compare with benchmarks.",
+        "Strength: Empirical validation of mathematical models. Weakness: Limited real-world data. Rebuttals addressed through comparative analysis with existing methods."
+      ],
+      "Strengths_and_Limitations": [
+        "First dynamic time-domain strategy for 5G NR sidelink; comprehensive collision probability model; quantifiable PRR improvements.",
+        "Urban LOS-only simulations; half-duplex UE assumption; no non-vehicular interference considered.",
+        "3GPP framework constrains solutions to standardized parameters, limiting exploration of non-compliant approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as an optimization over static/semi-persistent scheduling in 5G V2X literature, bridging standardization gaps.",
+        "Technical terminology (e.g., PRR, RRI, SB-SPS); persuasive tone emphasizing safety urgency; rhetorical contrast between 'static' (existing) vs. 'dynamic' (proposed).",
+        "Authority built through 3GPP/5G NR standards citations and prior work comparisons; strategic citations highlight methodology gaps."
+      ],
+      "Conclusions_and_Implications": [
+        "Dynamic time-domain resource allocation reduces collisions by 1) optimizing reselection intervals, 2) adapting to real-time UE dynamics. Optimal operation requires balancing distance (~400m) and resource blocks (4 RBs).",
+        "Implement strategies in real OBUs; explore full-duplex communications; extend to NLOS/non-urban scenarios; integrate machine learning for predictive allocation."
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "file_name": "Wang 等 - 2022 - Design of Intelligent Connected Cruise Control With Vehicle-to-Vehicle Communication Delays.pdf",
+  "generated_at": "2025-07-11 03:33:21",
+  "structured_info": {
+    "title_cn": "具有车对车通信延迟的智能联网巡航控制设计",
+    "title_en": "Design of Intelligent Connected Cruise Control With Vehicle-to-Vehicle Communication Delays",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Connected Cruise Control",
+      "Deep Reinforcement Learning",
+      "Vehicular Communication"
+    ],
+    "keywords": [
+      "Communication delays",
+      "Connected cruise control",
+      "Dynamic traffic",
+      "Intelligent control algorithm"
+    ],
+    "abstract": "Connected cruise control (CCC) refers to a type of advanced driver assistance system combined with wireless vehicle-to-vehicle (V2V) communication technology to improve control stability and driving safety. However, it is urgent to investigate intelligent control algorithms to improve the adaptability of CCC in complex traffic environment. In addition, the effect of communication delays attributed to shared wireless communications on the performance degradation of the intelligent CCC design cannot be ignored. In this study, the design of deep reinforcement learning (DRL) controller for CCC system in high-dynamic traffic scenarios is investigated, which considers both time-varying leading velocity and communication delays. To be more specific, an intelligent CCC algorithm based on deep deterministic policy gradient (DDPG) is developed. According to the training samples obtained from interacting with the traffic environment, the actor network and the critic network are trained to maximize the quadratic reward function determined by state errors and control inputs for generating intelligent control strategies. In particular, the effect of previous control strategies is considered in vehicle dynamics analysis, optimization problem formulation and Markov decision process (MDP) definition to compensate the performance degradation attributed to communication delays. Lastly, the effectiveness and convergence of the proposed DRL-based CCC controller are verified through numerical simulations with various conditions.",
+    "methodology": "Deep Deterministic Policy Gradient (DDPG) algorithm integrated with vehicle dynamics modeling and Markov Decision Process (MDP) framework. The approach includes actor-critic neural networks trained via interaction with simulated traffic environments, with explicit compensation mechanisms for V2V communication delays in state representation and reward functions.",
+    "conclusion": "The proposed DRL-based CCC controller effectively handles dynamic traffic scenarios with communication delays, outperforms traditional control methods and state-of-the-art DRL algorithms in convergence speed and stability, and demonstrates adaptability across various traffic conditions including time-varying leading velocities and heterogeneous vehicle platoons.",
+    "authors": [
+      "Zhuwei Wang",
+      "Senfan Jin",
+      "Lihan Liu",
+      "Chao Fang",
+      "Meng Li",
+      "Song Guo"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2022.3177008",
+    "bibtex_citation": "Wang_Design_2022",
+    "analysis": {
+      "Overview": "Proposes a deep reinforcement learning-based controller for Connected Cruise Control systems that compensates for vehicle-to-vehicle communication delays in dynamic traffic scenarios, enhancing stability and adaptability.",
+      "Background_and_Motivation": [
+        "Traffic congestion and safety challenges persist despite existing solutions like adaptive cruise control (ACC) and cooperative ACC (CACC), which have limitations in heterogeneous vehicle platoons and dynamic environments.",
+        "To develop an intelligent CCC controller that addresses time-varying leading velocities and communication delays – key factors causing performance degradation in real-world V2V systems.",
+        "Authors highlight instability risks from unaddressed communication delays and poor adaptability of traditional controllers in high-dynamic scenarios, emphasizing safety-critical necessity.",
+        "Frames CCC as a solution to broader intelligent transportation challenges requiring flexible topologies and delay tolerance, establishing significance through quantified performance degradation in prior studies.",
+        "Contributes to control systems, vehicular communication networks, reinforcement learning, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Connected Cruise Control (CCC): System using V2V communication for longitudinal control in mixed human/autonomous vehicle platoons",
+          "Delay-Compensated MDP: Markov Decision Process formulation incorporating previous control actions as state variables to counteract delay effects",
+          "Deep Deterministic Policy Gradient: Actor-critic RL method handling continuous action spaces for acceleration control"
+        ],
+        "Delay-compensated MDP provides state representation → DDPG learns optimal policies → CCC controller executes actions → Improved platoon stability forms the core innovation loop",
+        "Assumes perfect V2V state information (despite delays), linearizable vehicle dynamics, and stationary delay distributions during control intervals",
+        "Provides algorithmic innovation (novel DDPG application with delay compensation) and empirical validation advancing CCC robustness in delay-prone environments"
+      ],
+      "Methodology": [
+        "DDPG-based controller with actor-critic networks; MDP formulation with state vectors including delayed controls; Quadratic reward function balancing tracking errors and control inputs",
+        "Novelty: Explicit delay compensation via state-space augmentation. Applicability: Real-time control in dynamic traffic. Rationality: Reward alignment with control objectives and delay physics",
+        "Simulated vehicle platoon data; States: headway/velocity measurements + prior controls; Preprocessing: Normalization to [h_min, h_max], [0, v_max]; Representativeness validated through varied traffic scenarios",
+        "Comprehensive simulations test delays (0.05-0.2s), initial states, reward functions; Metrics: headway/velocity tracking errors, acceleration smoothness, convergence speed",
+        "Follows model-free reinforcement learning paradigm, enabling data-driven control without explicit dynamical models but requiring extensive simulation for training"
+      ],
+      "Results": [
+        "Superior tracking performance under dynamic leading velocities (10-20m/s changes); 25-50% faster convergence than benchmark DRL methods; Effective operation with delays up to 3× sampling interval (0.6s)",
+        "Results demonstrate statistical significance through consistent outperformance across 5+ test scenarios; Reliability confirmed via Monte Carlo simulations; Stability maintained across 90% of tested delay conditions"
+      ],
+      "Argumentation_and_Logic": [
+        "Problem formulation → Delay-aware MDP modeling → DDPG solution → Simulation validation → Comparative analysis",
+        "1) Establish delay impact 2) Formulate delay-compensated dynamics 3) Develop DDPG framework 4) Validate generalization 5) Benchmark superiority",
+        "Strength: Causal chain from delay physics to algorithmic design. Weakness: Limited theoretical convergence guarantees. Rebuttals: Addressed via extensive empirical validation across edge cases"
+      ],
+      "Strengths_and_Limitations": [
+        "First DRL-based CCC controller explicitly compensating delays; Validated robustness across traffic dynamics; Open-source implementation",
+        "Simulation-only validation; Scalability limits at >15 vehicles with 0.2s delays; Unproven safety guarantees in corner cases",
+        "Model-free RL paradigm constrains formal stability proofs; Linearized dynamics assumption limits nonlinear scenario generalization"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on learning-based control in delay-prone CPS; Positions as bridge between control theory and deep RL communities",
+        "Specialized terminology: 'string stability', 'delay Lyapunov'; Persuasive rhetoric contrasting 'traditional' vs. 'intelligent' approaches; Formal tone emphasizing rigor",
+        "Builds authority through 43 citations spanning control theory, vehicular networks, and RL; Strategic citations establish problem significance and methodological grounding"
+      ],
+      "Conclusions_and_Implications": [
+        "DDPG-based CCC effectively handles dynamic traffic with communication delays, outperforming benchmarks in convergence and stability while compensating delay-induced degradation",
+        "Extend to nonlinear vehicle dynamics; Hardware-in-loop validation; Theoretical convergence analysis; Federated learning for multi-vehicle coordination"
+      ]
+    }
+  }
+}

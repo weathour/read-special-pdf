@@ -1,0 +1,87 @@
+{
+  "file_name": "Wang 等 - 2024 - Motion State Estimation of Preceding Vehicles With Packet Loss and Unknown Model Parameters.pdf",
+  "generated_at": "2025-07-11 07:49:06",
+  "structured_info": {
+    "title_cn": "考虑丢包和未知模型参数的前车运动状态估计",
+    "title_en": "Motion State Estimation of Preceding Vehicles With Packet Loss and Unknown Model Parameters",
+    "category": "Mechatronics",
+    "topics": [
+      "State Estimation",
+      "Connected Vehicles",
+      "Kalman Filtering",
+      "Robust Control",
+      "Vehicle Dynamics"
+    ],
+    "keywords": [
+      "Event-triggered cubature Kalman filter",
+      "Intelligent connected vehicles",
+      "Motion state estimation",
+      "Strong tracking filter"
+    ],
+    "abstract": "Intelligent connected vehicles can perform better decision making and path planning tasks when they obtain the accurate motion state of preceding vehicles. In this article, an event-triggered estimation scheme considering the effects of packet loss and unknown vehicle inertia parameters is proposed for predicting the motion state of the preceding vehicle in vehicle-to-everything communications. First, an event-triggered communication mechanism is employed instead of the traditional periodic wireless communication rules to enable intermittent transmission of preceding vehicle sensor data to the host vehicle. Further based on the obtained sensor data, an event-triggered cubature Kalman ﬁlter (ETCKF) is designed for the host vehicle to estimate the motion state of the preceding vehicle. To further improve the robustness of the algorithm against perturbation of model parameters, a strong tracking algorithm is utilized to optimize the ETCKF to form a strong tracking ETCKF (STETCKF). Finally, the experimental results demonstrate that the estimation accuracy of the STETCKF under the communication rate of 7.08% and model parameters perturbation can be comparable to that of the cubature Kalman ﬁlter with 100% communication rate.",
+    "methodology": "Event-triggered communication mechanism, Event-triggered cubature Kalman filter (ETCKF), Strong tracking algorithm for robustness enhancement, Convergence analysis through covariance bounds, Simulation in CarSim and real-vehicle experimental validation.",
+    "conclusion": "The STETCKF algorithm effectively balances communication efficiency and estimation accuracy while suppressing packet loss effects and model parameter perturbations. Experimental validation confirms its performance is comparable to traditional CKF at full communication rates despite operating at 7.08% communication with packet loss and model uncertainties.",
+    "authors": [
+      "Yan Wang",
+      "Hao Chen",
+      "Guodong Yin",
+      "Yanghui Mo",
+      "Niels de Boer",
+      "Chen Lv"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE ASME Transactions on Mechatronics",
+    "doi": "10.1109/TMECH.2023.3345956",
+    "bibtex_citation": "Wang_Motion_2024",
+    "analysis": {
+      "Overview": "Proposes a robust estimation framework using event-triggered communication and modified Kalman filtering to predict preceding vehicle motion states under packet loss and model parameter uncertainties in V2X environments.",
+      "Background_and_Motivation": [
+        "Intelligent vehicles require accurate surrounding vehicle state information for safe decision-making, but traditional periodic V2V communication wastes bandwidth and lacks robustness to data loss/model uncertainties.",
+        "Addresses simultaneous challenges of packet loss in wireless communication and unknown vehicle inertia parameters during state estimation.",
+        "Argues existing methods rarely handle both problems concurrently, creating safety-critical gaps for connected autonomous vehicles.",
+        "Links specific estimation robustness to broader intelligent transportation goals of improving road safety and communication efficiency.",
+        "Contributes to mechatronics, control systems, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Event-triggered communication: Transmits data only when vehicle state changes exceed threshold ρ",
+          "STETCKF: Strong Tracking Event-Triggered Cubature Kalman Filter combining robustness to parameter perturbations with intermittent data",
+          "Packet loss modeling: Bernoulli distribution simulating data loss during transmission"
+        ],
+        "Event-triggering reduces communication load → ETCKF handles intermittent data → Strong tracking augments robustness to model errors → Integrated framework suppresses packet loss effects",
+        "System local observability; Noise independence from initial state; Single-track model sufficiently represents vehicle dynamics.",
+        "Novel algorithmic framework extending Kalman filtering paradigms with event-triggering and robustness enhancements."
+      ],
+      "Methodology": [
+        "ETCKF derivation for intermittent data; STETCKF formulation via strong tracking integration; Convergence proof using covariance bounds; CarSim simulations and real-vehicle validation.",
+        "Novelty: First joint solution for packet loss + model uncertainty; Applicability: Real-time deployable (0.688ms/cycle); Rationality: Theoretical guarantees with experimental validation.",
+        "CarSim simulation data and ASENSING P-Box INS 570 real-vehicle data. Preprocessing: Coordinate transformation to vehicle frame. Representativeness: Double-lane-change/steering scenarios cover critical maneuvers.",
+        "Rigorous RMSE-based evaluation; Comparative analysis against CKF; Adequate metrics covering lateral/longitudinal states.",
+        "Follows stochastic estimation paradigm (Kalman filtering) with extensions for robustness, affecting problem formulation via probabilistic packet loss modeling."
+      ],
+      "Results": [
+        "STETCKF achieves comparable accuracy to 100% communication CKF at 7.08% communication with 38-65% packet loss; RMSE values: Lateral velocity 0.012-0.031 m/s, Yaw rate 0.003-0.008 rad/s.",
+        "Results demonstrate statistical reliability across simulation/real tests; Stability confirmed via convergence proof and consistent performance under parameter perturbations."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem identification → Algorithm derivation → Theoretical analysis → Experimental validation → Conclusion/future work.",
+        "1. Motivate need for robust estimation 2. Derive ETCKF/STETCKF 3. Prove convergence 4. Validate via experiments 5. Compare against benchmarks.",
+        "Strengths: Comprehensive theory-experiment integration. Weaknesses: Simplified vehicle model limitations acknowledged. Rebuttals: Addressed via robustness enhancements and diverse test scenarios."
+      ],
+      "Strengths_and_Limitations": [
+        "First unified solution for packet loss + model uncertainty; Communication efficiency (7.08% rate); Real-time capability; Experimental rigor.",
+        "Single-track model may not capture extreme dynamics; Performance depends on event-trigger threshold tuning.",
+        "Kalman filtering assumptions (Gaussian noise, linearizable models) constrain generalizability to highly nonlinear regimes."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as filling gap in robust state estimation literature; Cites foundational Kalman filtering/strong tracking work to establish lineage.",
+        "Technical terminology (e.g., 'cubature points', 'Bernoulli distribution'); Formal tone; Rhetoric emphasizes novelty via comparative claims ('first investigation').",
+        "Builds authority through citations of established methods (e.g., CKF, strong tracking); Motivation: Contextualize contributions within existing knowledge base."
+      ],
+      "Conclusions_and_Implications": [
+        "STETCKF enables accurate state estimation under packet loss and model uncertainty while reducing communication load by 93% versus periodic methods.",
+        "Improve vehicle model complexity; Explore integration with V2X security; Extend to multi-vehicle scenarios."
+      ]
+    }
+  }
+}

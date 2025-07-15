@@ -1,0 +1,84 @@
+{
+  "file_name": "Barmpounakis 等 - 2022 - AI-driven, QoS prediction for V2X communications in beyond 5G systems.pdf",
+  "generated_at": "2025-07-14 00:45:17",
+  "structured_info": {
+    "title_cn": "AI驱动的超5G系统车联网通信服务质量预测",
+    "title_en": "AI-driven, QoS prediction for V2X communications in beyond 5G systems",
+    "category": "Telecommunications and Machine Learning",
+    "topics": [
+      "Vehicular Communications",
+      "Quality of Service Prediction",
+      "5G/6G Systems"
+    ],
+    "keywords": [
+      "V2X",
+      "QoS prediction",
+      "5G",
+      "6G",
+      "Machine Learning",
+      "Proactive Resource Allocation"
+    ],
+    "abstract": "On the eve of 5G-enabled Connected and Automated Mobility, challenging Vehicle-to-Everything services have emerged towards safer and automated driving. The requirements that stem from those services pose very strict challenges to the network primarily with regard to the end-to-end delay and service reliability. At the same time, the in-network Artificial Intelligence that is emerging, reveals a plethora of novel capabilities of the network to act in a proactive manner towards satisfying the aforementioned challenging requirements. This work presents PreQoS, a computationally-efficient, predictive Quality of Service mechanism that focuses on Vehicle-to-Everything services. PreQoS is able to timely predict specific Quality of Service metrics, such as uplink and downlink data rate and end-to-end delay, in order to offer the required time window to the network to allocate more efficiently its resources. Geographical space discretization and clustering techniques are applied in advance to the prediction process for computational and communication requirements minimization. On top of that, the proactive management of those resources enables the respective Vehicle-to-Everything services and applications to perform any potential Quality of Service-related required adaptations in advance. The evaluation of the proposed mechanism based on a realistic, simulated, Connected and Automated Mobility environment proves the viability and validity of such an approach.",
+    "methodology": "Proposes PreQoS: a predictive QoS mechanism using geographical space discretization (Map-as-a-Grid) and clustering techniques to minimize computational overhead. Employs machine learning algorithms (Deep Neural Networks, Random Forests, Gradient Boosting) for regression-based prediction of QoS metrics. Evaluated via SUMO and NS-3 simulations in a Tele-operated Driving use case.",
+    "conclusion": "PreQoS demonstrates viability for V2X services in beyond 5G systems, reducing prediction error to 2ms MAE with optimal grid sizing. The Map-as-a-Grid approach minimizes computational overhead by 93% at 0.9 Pearson correlation threshold while maintaining accuracy. Evaluation confirms scalability and efficiency gains in realistic CAM environments.",
+    "authors": [
+      "Sokratis Barmpounakis",
+      "Nikolaos Maroulis",
+      "Nikolaos Koursioumpas",
+      "Apostolos Kousaridas",
+      "Angeliki Kalamari",
+      "Panagiotis Kontopoulos",
+      "Nancy Alonistioti"
+    ],
+    "publication_year": "2022",
+    "venue": "Computer Networks",
+    "doi": "10.1016/j.comnet.2022.109341",
+    "bibtex_citation": "Barmpounakis_AI-driven_2022",
+    "analysis": {
+      "Overview": "Proposes PreQoS, an AI-driven mechanism for predicting Quality of Service metrics in Vehicle-to-Everything communications within 5G/6G systems, focusing on computational efficiency through spatial modeling and machine learning.",
+      "Background_and_Motivation": [
+        "Addresses stringent QoS requirements (end-to-end delay, reliability) for safety-critical V2X services in 5G/6G networks.",
+        "Solves the need for proactive resource allocation to prevent service interruptions in dynamic vehicular environments.",
+        "Argues urgency by linking QoS failures to safety risks in Connected and Automated Mobility (CAM) applications like Tele-operated Driving.",
+        "Positions V2X as a critical 5G/6G use case where predictive capabilities enhance network responsiveness and application adaptation.",
+        "Contributes to telecommunications, machine learning, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "PreQoS: Predictive QoS mechanism using contextual data (mobility, radio, network) to forecast metrics like delay/data rate.",
+        "Map-as-a-Grid (MaaG): Geographical discretization into grid cells clustered via Pearson correlation for computational efficiency.",
+        "Proactive Adaptation: Enables applications to adjust parameters before QoS degradation occurs.",
+        "Assumes spatial-temporal correlation of QoS behavior and availability of network/mobility data.",
+        "Innovates through scalable spatial modeling, fusion of multi-source data, and flexible ML integration, advancing predictive network management."
+      ],
+      "Methodology": [
+        "Core methods: Spatial modeling via MaaG, clustering based on QoS correlation, regression ML (DNN/XGBoost/SVR), and simulation (SUMO/NS-3) for evaluation.",
+        "Novelty: MaaG reduces prediction points from per-user to per-cluster; Applicability: Tailored for V2X but extensible; Rationality: Balances granularity vs. overhead via clustering thresholds.",
+        "Data: Simulated mobility (SUMO) and network (NS-3) traces from Munich scenario; Preprocessing: Geolocation mapping, time normalization; Representativeness: Realistic ToD use case with variable UE density.",
+        "Experimental rigor: 10-fold cross-validation, MAE/MAPE/R² metrics; Evaluation adequacy: Compares MaaG/non-MaaG, multiple ML models, grid sizes.",
+        "Follows data-driven ML paradigm, emphasizing spatial-temporal patterns over theoretical frameworks."
+      ],
+      "Results": [
+        "Key results: MaaG reduces MAE from 9ms (no grid) to 2ms (36 cells); Optimal PCC=0.9 cuts clusters by 93% with <1ms error increase; MaaG outperforms baselines with sufficient data (100k+ samples).",
+        "Significance: Enables sub-4.2% MAPE predictions; Reliability: Validated via cross-validation; Stability: Maintains accuracy under high UE density."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Motivate predictive QoS → Present PreQoS/MaaG → Evaluate against baselines → Conclude viability.",
+        "Key steps: Problem formalization as regression (not classification), overhead analysis via signaling models, trade-off optimization between accuracy/clusters.",
+        "Strengths: Comprehensive simulation, novelty of MaaG; Weaknesses: Simulation-only validation; Rebuttals: Contrasts with prior works (e.g., outperforms ARIMA in complex scenarios)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First detailed complexity/overhead analysis for V2X QoS prediction, flexible ML integration, MaaG scalability.",
+        "Methodology limitations: Simulation dependency, assumes data availability; Constraints: Grid-based modeling may not capture micro-variations; Theoretical paradigm restricts generalizability beyond regression-based approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on AI-enabled network management by standardizing predictive QoS for CAM/V2X.",
+        "Terminology: Technical (e.g., MaaG, 5QI, NWDAF); Tone: Assertive; Rhetoric: Positions work as填补空白 via comparisons to 'primitive' prior art.",
+        "Builds authority through 3GPP/ETSI citations and empirical results; Motivations include standardization alignment and industrial applicability."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: PreQoS is computationally efficient and accurate for V2X QoS prediction; MaaG enables overhead reduction without significant accuracy loss.",
+        "Future work: Extend to online learning/LSTM, validate in diverse CAM use cases (e.g., collision avoidance), explore real-world deployment."
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_name": "Jiang 等 - 2023 - Pre-Trained Tabular Transformer for Real-Time, Efficient, Stable Radiomics Data Processing A Compre.pdf",
+  "generated_at": "2025-07-10 01:47:27",
+  "structured_info": {
+    "title_cn": "预训练表格Transformer用于实时、高效、稳定的放射组学数据处理：一项全面研究",
+    "title_en": "Pre-trained Tabular Transformer for Real-time, Efficient, Stable Radiomics Data Processing: A Comprehensive Study",
+    "category": "Machine Learning",
+    "topics": [
+      "Radiomics",
+      "Table Representation Learning",
+      "Transformer Models"
+    ],
+    "keywords": [
+      "Radiomics",
+      "Table representation learning",
+      "Transformer"
+    ],
+    "abstract": "Radiomics is an important research direction in the field of medical image analysis. Although the number of publications is increasing year by year, it has been difficult to translate into clinical practice due to the small size of clinical data. In most cases, Radiomics data can be considered as small tabular data. Deep learning is often less effective than classical machine learning algorithms in processing tabular data. Recently, table representation learning has started to receive more widespread attention which is often an easily overlooked but very important area of research, helping improve the status of tabular deep learning. Here, we first apply a pre-trained Transformer model named Tabular Prior-Data Fitted Network (TabPFN) to the field of Radiomics analysis. We implement extensive experiments on three real-world clinical datasets: (a) Ultrasound Radiomics dataset for the classificatory diagnosis of Kidney tumor, (b) CT Radiomics dataset for the prediction of EGFR gene mutations in non-small cell lung cancer, (c) MRI Radiomics dataset for the prediction of treatment response of brain metastases to gamma knife radiosurgery. By comprehensive analysis, we demonstrate that the pre-trained tabular Transformer can be used as a real-time, efficient, and stable Radiomics data processor with superior performance over other tabular machine learning methods in different clinical tasks. We also simulate an ideal clinical practice scenario for evaluating the clinical translation potential of pre-trained models. Finally, we explore the advantages and limitations of pre-trained tabular models for Radiomics analysis.",
+    "methodology": "Used the pre-trained Tabular Prior-Data Fitted Network (TabPFN), a Transformer-based model, for processing Radiomics tabular data. Conducted experiments on three clinical datasets (ultrasound for kidney tumors, CT for lung cancer EGFR mutations, MRI for brain metastases treatment response) with standardized preprocessing using PyRadiomics. Compared performance against traditional ML methods (e.g., KNN, LR, RF, XGBoost) and evaluated real-time inference, efficiency, and stability through feature perturbation and clinical scenario simulations.",
+    "conclusion": "The pre-trained TabPFN model enables real-time, efficient, and stable Radiomics data processing, outperforming traditional machine learning methods across various clinical tasks. It shows high accuracy, robustness to noisy data, and consistent performance in simulated clinical updates. Limitations include handling only small datasets (<1000 samples) and reliance on prior data, with future directions involving fine-tuning for larger datasets and continual learning for clinical deployment.",
+    "authors": [
+      "Zekun Jiang",
+      "Ruchun Jia",
+      "Le Zhang",
+      "Kang Li"
+    ],
+    "publication_year": "2023",
+    "venue": "2023 IEEE International Conference on E-health Networking, Application & Services (Healthcom)",
+    "doi": "10.1109/HEALTHCOM56612.2023.10472397",
+    "bibtex_citation": "Jiang_Pre-trained_2023",
+    "analysis": {
+      "Overview": "The paper introduces and evaluates a pre-trained tabular Transformer model (TabPFN) for processing Radiomics data in medical imaging tasks, demonstrating its superiority in real-time, efficient, and stable analysis across diverse clinical datasets.",
+      "Background_and_Motivation": [
+        "Radiomics faces challenges in clinical translation due to small sample sizes and poor reproducibility, limiting its use in personalized medicine despite growing publications.",
+        "Motivated by the inefficiency of deep learning for small tabular data and the potential of table representation learning (TRL) to improve Radiomics analysis.",
+        "Authors argue the necessity by highlighting Radiomics' clinical significance and the urgency to leverage emerging AI techniques like Transformers for robust, interpretable data processing.",
+        "Relates the specific problem of Radiomics data inefficiency to broader AI challenges in tabular data, emphasizing its role in advancing precision oncology.",
+        "Contributes to interdisciplinary fields including medical imaging, machine learning, oncology, and AI for healthcare."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "TabPFN: A pre-trained Transformer model for Bayesian inference on tabular data. Radiomics feature representation: Quantitative conversion of medical images into structured tabular data for analysis.",
+        "TabPFN processes Radiomics features to predict clinical outcomes; the model's Bayesian framework approximates posterior distributions for efficient inference.",
+        "Assumes Radiomics data is inherently tabular and small-scale, and that pre-trained models can generalize better than supervised learning for such data.",
+        "Makes an applied contribution by adapting TRL to Radiomics, enhancing the field's toolkit with a novel, efficient methodology."
+      ],
+      "Methodology": [
+        "Core methods include TabPFN for inference without hyperparameter tuning, using three clinical datasets preprocessed with PyRadiomics and evaluated against ML baselines.",
+        "Methodology is novel as the first application of TabPFN to Radiomics; applicable to real-time clinical tasks but rationalized only for small datasets.",
+        "Data from ultrasound, CT, and MRI imaging, preprocessed for feature extraction (shape, FOF, SOF, HOF), with representativeness ensured by diverse oncological tasks and real-world sources.",
+        "Experimental design is rigorous with fixed pipelines, statistical tests (DeLong test), and multiple metrics; evaluation metrics (accuracy, F1 score) are adequate but could include more robustness measures.",
+        "Follows the Bayesian inference paradigm, influencing the focus on probabilistic predictions and stability over scalability."
+      ],
+      "Results": [
+        "Key results: TabPFN achieved higher mean F1 scores (0.7490) than XGBoost and others, with real-time inference (<2 seconds), stability against noisy features, and consistent performance in clinical simulations.",
+        "Results are significant for enabling efficient Radiomics workflows; reliability is supported by statistical tests, and stability is demonstrated through controlled experiments."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Problem introduction, method description, experimental validation, and conclusion with limitations.",
+        "Key steps: Highlight Radiomics challenges → Propose TRL solution → Validate with datasets → Compare performance → Discuss implications.",
+        "Strengths include comprehensive experiments; weaknesses are limited rebuttals to scalability issues, addressed only in future work suggestions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Real-time processing, no hyperparameter tuning, robustness to noise, and superior performance in diverse tasks.",
+        "Limitations: Model constrained to small datasets (<1000 samples), inability to handle large-scale data, and dependence on prior data.",
+        "The Bayesian Transformer paradigm limits conclusions to small-scale applications and overlooks end-to-end image processing."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse by bridging TRL and Radiomics, positioning the work as a pioneer in applying foundation models to medical tabular data.",
+        "Uses technical terminology (e.g., 'posterior predictive distribution'), persuasive tone emphasizing 'real-time' and 'efficient', and rhetorical strategies like benchmarking against established methods.",
+        "Builds authority through extensive citations of Radiomics and AI literature, motivated by establishing credibility in both fields."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: TabPFN is a promising tool for Radiomics, offering efficiency and stability, but requires adaptations for larger datasets and clinical unknowns.",
+        "Future research: Develop fine-tuning techniques for scalability, train dedicated Radiomics foundation models, and integrate continual learning for dynamic clinical data."
+      ]
+    }
+  }
+}

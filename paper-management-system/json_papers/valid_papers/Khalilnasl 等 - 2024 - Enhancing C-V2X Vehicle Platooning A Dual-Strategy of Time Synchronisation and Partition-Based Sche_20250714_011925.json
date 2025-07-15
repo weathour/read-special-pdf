@@ -1,0 +1,87 @@
+{
+  "file_name": "Khalilnasl 等 - 2024 - Enhancing C-V2X Vehicle Platooning A Dual-Strategy of Time Synchronisation and Partition-Based Sche.pdf",
+  "generated_at": "2025-07-14 01:19:25",
+  "structured_info": {
+    "title_cn": "增强C-V2X车辆编队：时间同步和基于分区调度的双策略",
+    "title_en": "Enhancing C-V2X Vehicle Platooning: A Dual-Strategy of Time Synchronisation and Partition-Based Scheduling",
+    "category": "Vehicular Communications",
+    "topics": [
+      "C-V2X",
+      "Resource Allocation",
+      "Vehicle Platooning"
+    ],
+    "keywords": [
+      "Cellular V2X",
+      "Sidelink",
+      "LTE-V2X",
+      "NR-V2X",
+      "SB-SPS",
+      "CAM",
+      "Random Resource Selection",
+      "Mode 4",
+      "Mode 2",
+      "Vehicle Platooning"
+    ],
+    "abstract": "There is clear evidence indicating that the standardized Sensing-Based Semi-Persistent Scheduling scheme in Out-of-coverage possesses specific vulnerabilities. This unsatisfactory performance lies in the absence of coordination in channel scheduling and transmission time. Specifically, the determination to re-assign a resource after the reservation period expires is currently based on a random selection process, without consideration of the actual interference encountered by the utilized resources. In this study, a novel scheme is proposed to markedly improve the random selection method for vehicle positioning.",
+    "methodology": "Proposes a dual-strategy approach: time synchronization using beacon signals for coordinated message generation and partition-based scheduling where resources are sorted and assigned to platoon members via random subset selection. Implemented through simulations using OMNeT++, SUMO, PLEXE, Veins, SimuLTE, and OpenCV2X with parameters like platoon size and background traffic.",
+    "conclusion": "The proposed dual-strategy method reduces update delay and improves message success rates by minimizing Half-Duplex and Interference errors, enhancing reliability for vehicle platooning. It shows promise for LTE-V2X Mode 4 and potential applicability to NR-V2X Mode 2, supporting safer and more efficient autonomous mobility.",
+    "authors": [
+      "Hossein Khalilnasl",
+      "Salvatore Dello Iacono",
+      "Paolo Ferrari",
+      "Alessandra Flammini",
+      "Brian McCarthy",
+      "Emiliano Sisinni"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE International Symposium on Measurements & Networking (M&N)",
+    "doi": "10.1109/MN60932.2024.10615853",
+    "bibtex_citation": "Khalilnasl_Enhancing_2024",
+    "analysis": {
+      "Overview": "The paper enhances Cellular Vehicle-to-Everything (C-V2X) communication for vehicle platooning by introducing a dual-strategy method to improve resource scheduling in out-of-coverage scenarios, addressing vulnerabilities in the standard Sensing-Based Semi-Persistent Scheduling (SB-SPS) algorithm.",
+      "Background_and_Motivation": [
+        "Research background involves challenges in C-V2X direct communication (e.g., LTE-V2X Mode 4 and NR-V2X Mode 2) for vehicle platooning, where unreliable resource allocation in Out-of-Coverage (OoC) modes leads to data loss and safety risks.",
+        "Motivation stems from the need to mitigate collisions and delays caused by the random resource selection in SB-SPS, which lacks coordination and ignores interference, hindering platoon efficiency and safety.",
+        "Authors argue for necessity by highlighting that message transmission losses can cause temporary awareness lapses among platoon members, posing safety hazards, and emphasize the urgency for standardized improvements to support autonomous mobility.",
+        "The specific problem of SB-SPS inefficiency is linked to broader challenges in vehicular communications, such as ensuring reliable, low-latency V2V interactions in dynamic environments, establishing its significance for intelligent transportation systems.",
+        "Contributions span wireless communications, intelligent transportation systems, and networking disciplines, with interdisciplinary relevance to autonomous vehicles and smart mobility."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) 'Time Synchronization'—aligning vehicle communication cycles via beacon signals (e.g., using GPS) to unify selection windows; (2) 'Partition-Based Scheduling'—dividing sorted resources into subsets for platoon members to minimize selection conflicts.",
+        "Logical relationships: Synchronization enables simultaneous resource selection windows, facilitating partition-based scheduling, which then reduces collisions by ensuring distinct resource assignments, creating a coordinated framework for reliable communication.",
+        "Key assumptions: Beacon signals provide accurate time synchronization; vehicles in a platoon can be identified and grouped; resources can be partitioned without significant overhead; and interference models in simulations reflect real-world conditions.",
+        "The paper makes a methodological contribution by innovating the SB-SPS algorithm, enhancing the knowledge system in vehicular networking through a novel, simulation-validated approach to resource allocation."
+      ],
+      "Methodology": [
+        "Core methods include the dual-strategy of time synchronization (using beacon intervals) and partition-based MAC scheduling, implemented in network simulations via OMNeT++, SUMO, PLEXE, and OpenCV2X with modified MAC layers.",
+        "Methodology novelty lies in replacing random selection with partitioned resource assignment; applicability is demonstrated for C-V2X platooning; rationality is supported by reduced collision probability in theoretical analysis and simulations.",
+        "Data sources are simulated using parameters like platoon size (4-19 vehicles), background traffic (20-300 vehicles), and communication settings (e.g., 100 ms beacon intervals). Data representativeness is evaluated as realistic for highway scenarios but limited to simulation environments without real-world noise.",
+        "Experimental design is rigorous with 20 repetitions per scenario, metrics like success rate and update delay, and comparisons against SB-SPS; evaluation metrics are adequate for assessing reliability but may not cover all edge cases.",
+        "The research follows 3GPP standards paradigm for vehicular communications, which shapes the focus on OoC modes and resource allocation, providing a structured framework but potentially constraining innovations beyond current specifications."
+      ],
+      "Results": [
+        "Key results: The proposed method reduces update delay (e.g., from above 500 ms in SB-SPS to lower values), increases message success rates (e.g., by approximately 1% for small platoons), and shows better distinct resource selection in heatmaps.",
+        "Results are significant for improving platoon safety and efficiency; reliability is supported by repeated simulations showing consistent trends; stability is demonstrated across varying platoon sizes and background traffic, though effectiveness decreases with larger platoons."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall argument structure: Introduces SB-SPS vulnerabilities, proposes dual-strategy solution, details methodology, presents simulation results, and concludes with enhancements.",
+        "Key steps: Problem identification in SB-SPS → Proposal of synchronization and partitioning → Simulation implementation → Performance comparison → Validation of improvements.",
+        "Strengths include clear, incremental logic from problem to solution; weaknesses involve reliance on ideal synchronization assumptions. Authors address rebuttals by showing reduced collision probability in partitioned selection and benchmarking against standards."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Innovative partition-based scheduling reduces collisions, improves reliability, and integrates with existing standards; validated through comprehensive simulations.",
+        "Limitations: Methodology is simulation-based, potentially overlooking real-world factors like GPS inaccuracies; scalability issues with large platoons (e.g., reduced gains over 19 vehicles).",
+        "Theoretical paradigm constraints: Adherence to 3GPP standards limits exploration of radical changes, and conclusions assume perfect beacon synchronization, which may not hold in noisy environments."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role in discourse: Advances C-V2X resource allocation literature by addressing SB-SPS flaws, positioning itself as a practical enhancement for platooning applications.",
+        "Terminology and tone: Technical and precise, using terms like VUE, SB-SPS, and CSR; rhetorical strategies include emphasizing safety imperatives and benchmarking against prior work to justify innovations.",
+        "Authors build authority by citing 3GPP standards and related works (e.g., 3GPP TS 36.331), with motivations to establish credibility and align with industry practices for broader acceptance."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: The dual-strategy method enhances temporal coordination, reducing delays and improving reliability in C-V2X platooning, with applicability to current and future standards.",
+        "Future research suggestions: Extend to real-world testing, address synchronization challenges in noisy environments, and explore integration with NR-V2X for broader vehicular applications."
+      ]
+    }
+  }
+}

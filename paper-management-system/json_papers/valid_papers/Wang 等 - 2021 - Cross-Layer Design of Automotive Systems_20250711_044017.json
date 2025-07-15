@@ -1,0 +1,82 @@
+{
+  "file_name": "Wang 等 - 2021 - Cross-Layer Design of Automotive Systems.pdf",
+  "generated_at": "2025-07-11 04:40:17",
+  "structured_info": {
+    "title_cn": "汽车系统的跨层设计",
+    "title_en": "Cross-Layer Design of Automotive Systems",
+    "category": "Cyber-Physical Systems",
+    "topics": [
+      "Cross-Layer Design",
+      "Automotive Systems",
+      "Security",
+      "Schedulability",
+      "Weakly-Hard Constraints"
+    ],
+    "keywords": [
+      "Cross-Layer",
+      "Automotive",
+      "Security",
+      "Schedulability",
+      "Weakly-Hard"
+    ],
+    "abstract": "This article presents multiple cross-layer methods to ensure security and functional correctness of automotive systems by integrating multiple abstraction layers, including vehicular networks and in-vehicle hardware-software architectures. The approaches address dependencies between functional and architectural layers using techniques such as MILP formulations, simulated annealing, and formal models like FETA, with applications to individual vehicles and connected vehicle systems.",
+    "methodology": "The main research methods include mixed integer linear programming (MILP) for optimization, simulated annealing for holistic design exploration, firing execution time automaton (FETA) for schedulability analysis, and formal verification techniques. These are applied to software synthesis, security-aware mapping, and period optimization under weakly-hard constraints.",
+    "conclusion": "Cross-layer design is essential for addressing dependencies between functional and architectural layers in automotive systems, expanding feasible design spaces, and improving security and performance. The methodology demonstrates applicability to cyber-physical systems like autonomous vehicles and can be extended to other domains such as robotics and IoT.",
+    "authors": [
+      "Zhilu Wang",
+      "Hengyi Liang",
+      "Chao Huang",
+      "Qi Zhu"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Design & Test",
+    "doi": "10.1109/MDAT.2020.3037561",
+    "bibtex_citation": "Wang_Cross-Layer_2020",
+    "analysis": {
+      "Overview": "The paper introduces cross-layer design methodologies for automotive systems, focusing on integrating functional and architectural layers to ensure security, schedulability, and functional correctness in cyber-physical systems.",
+      "Background_and_Motivation": [
+        "The research addresses challenges in automotive systems due to increasing complexity, isolation in traditional design approaches, and close cyber-physical interactions.",
+        "Motivation stems from inefficiencies in isolated design steps, such as deploying security features or control functions without considering resource constraints, leading to infeasible systems.",
+        "Authors argue necessity by highlighting how dependencies between layers (e.g., communication delays affecting safety) make holistic approaches urgent for modern vehicles.",
+        "Specific problems like schedulability in runnable generation and security overhead are linked to broader challenges in cyber-physical systems, establishing significance through case studies on connected vehicles and autonomous intersections.",
+        "Contributions span cyber-physical systems, embedded systems, real-time computing, and automotive engineering, with interdisciplinary elements in control theory and security."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: Cross-layer design (holistic integration of functional and architectural layers), weakly-hard constraints (allowing bounded deadline misses, e.g., (m,K) constraints), and schedulability (timing feasibility analysis). Definitions: Cross-layer design ties abstraction layers; weakly-hard constraints permit up to m deadline misses in K instances; schedulability ensures tasks meet deadlines.",
+        "Logical relationships: Weakly-hard constraints enable cross-layer optimization by relaxing hard timing requirements, allowing schedulability analysis to influence functional layer robustness, while security mechanisms interact with resource allocation.",
+        "Key assumptions include time-critical and resource-limited automotive systems, worst-case timing behavior for schedulability, and control system stability under deadline misses.",
+        "The paper contributes novel methodologies to the knowledge system, specifically by integrating weakly-hard constraints with cross-layer design, advancing optimization techniques, and formal verification for safety-critical systems."
+      ],
+      "Methodology": [
+        "Core methods include MILP for runnable generation and security-aware mapping, simulated annealing for task allocation and period optimization, FETA for schedulability analysis, and formal verification for safety under weakly-hard constraints.",
+        "Novelty lies in holistic integration across layers; applicability is shown in automotive case studies (e.g., CAN bus, autonomous intersections); rationality is supported by quantitative tradeoffs between modularity, schedulability, security, and performance.",
+        "Data sources involve simulated automotive systems like Furuta pendulum control; characteristics include task periods, execution times, and communication delays; preprocessing includes model abstraction for verification; representativeness is evaluated through experiments but limited to specific automotive scenarios.",
+        "Experimental design uses case studies with schedulability analysis and simulations; rigor is demonstrated via worst-case timing models and stability proofs; evaluation metrics include schedulability feasibility, security levels, control performance, and safety verification, which are adequate but could be expanded to more real-world variables.",
+        "The research follows the cyber-physical systems paradigm, emphasizing time-critical and resource-aware design, which affects the perspective by prioritizing worst-case analysis and formal methods over empirical approaches."
+      ],
+      "Results": [
+        "Key results: Expanded design space for control periods using weakly-hard constraints (e.g., feasible periods increased from 210-225 ms to 90-225 ms), improved security-schedulability tradeoffs in MILP-based methods, and verified safety for autonomous intersections under bounded delays.",
+        "Significance includes enabling feasible designs under tight constraints; reliability is supported by formal verification and simulations; stability is demonstrated in control systems under deadline misses, though resource limitations constrain generalizability."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Problem introduction, solutions for individual vehicles (software synthesis), security-aware design, connected vehicles, and weakly-hard systems, supported by case studies.",
+        "Key steps: Argue isolation inefficiencies, present cross-layer methods (e.g., MILP for runnable generation), demonstrate with experiments, extend to weakly-hard constraints, and conclude with broader implications.",
+        "Strengths: Holistic reasoning with quantitative models; weaknesses include potential over-reliance on worst-case assumptions. Authors address rebuttals by showing tradeoffs (e.g., security vs. performance) and limitations in resource-constrained scenarios."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Innovations in weakly-hard constraint integration, cross-layer optimization, and formal verification; enhanced design flexibility and performance in automotive systems.",
+        "Limitations: Methodology boundaries include resource constraints (e.g., CAN bandwidth limiting security feasibility) and assumptions like worst-case timing, restricting applicability to more dynamic environments.",
+        "Theoretical paradigm constraints: Focus on worst-case analysis and formal methods may overlook probabilistic or real-world uncertainties, limiting conclusions to idealized scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances cross-layer design discourse in cyber-physical systems by introducing weakly-hard constraints and holistic verification, positioning against traditional isolated approaches.",
+        "Terminology includes technical terms like schedulability, weakly-hard, and FETA; tone is authoritative and technical; rhetorical strategies use case studies and citations to demonstrate efficacy.",
+        "Authors build authority by citing foundational works (e.g., Bernat et al. for weakly-hard constraints) and their prior research, with motivations to establish credibility and situate contributions within existing literature."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: Cross-layer design is critical for automotive systems, with weakly-hard constraints expanding feasible spaces; holistic methods improve security, schedulability, and performance.",
+        "Future research suggestions: Extend to other cyber-physical domains (e.g., robotics, IoT), incorporate probabilistic models for real-world uncertainties, and explore adaptive control under varying constraints."
+      ]
+    }
+  }
+}

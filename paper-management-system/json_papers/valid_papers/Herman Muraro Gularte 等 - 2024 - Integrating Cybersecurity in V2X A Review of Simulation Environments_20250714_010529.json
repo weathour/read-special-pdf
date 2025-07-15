@@ -1,0 +1,90 @@
+{
+  "file_name": "Herman Muraro Gularte 等 - 2024 - Integrating Cybersecurity in V2X A Review of Simulation Environments.pdf",
+  "generated_at": "2025-07-14 01:05:29",
+  "structured_info": {
+    "title_cn": "V2X中网络安全的整合：仿真环境综述",
+    "title_en": "Integrating Cybersecurity in V2X: A Review of Simulation Environments",
+    "category": "Vehicular Technology",
+    "topics": [
+      "V2X Simulations",
+      "Cybersecurity",
+      "Simulation Tools"
+    ],
+    "keywords": [
+      "Vehicle-to-everything",
+      "V2X simulation tools",
+      "V2X cybersecurity",
+      "radio jamming",
+      "spoofing",
+      "denial of service",
+      "eavesdropping"
+    ],
+    "abstract": "The deployment and acceptance of Vehicle-to-Everything (V2X) technologies are essential for the advancement of intelligent transportation systems, requiring robust simulation tools for development and validation. This paper offers an overview of leading V2X simulation tools, emphasizing their role in communication and cybersecurity applications. Existing surveys are reviewed, identifying gaps such as the limited coverage of less known tools such as CARLA and CarSim and the absence of detailed market analyses. A thorough assessment of the market significance of V2X simulation tools is provided, highlighting annual trends and profiling leading companies. Publication trends across major scientific databases are also examined, reflecting the growing interest and research diversity in V2X simulations. The review includes an analysis of crucial simulation tools such as SUMO, NS3, OMNeT++, Veins, and CARLA, emphasizing their contributions to V2X communications. Regarding cybersecurity, the study explores simulation parameters for mitigating security threats such as jamming, spoofing, Denial of Service (DoS), and eavesdropping. Furthermore, the increasing integration of different simulation tools is highlighted to address their individual limitations. Finally, emerging research opportunities are identified, advocating for the integration of co-simulation frameworks and AI-driven (Artificial Intelligence) approaches to improve the accuracy and resilience of V2X systems. This survey aims to guide future research efforts in developing secure, efficient, and scalable V2X communication technologies.",
+    "methodology": "Literature review, patent analysis, and scientific database mining using inclusion/exclusion criteria; comparative analysis of simulation tools; parameter extraction for cybersecurity threat modeling.",
+    "conclusion": "Simulation tools are critical for V2X development and cybersecurity validation. Integration of co-simulation frameworks and AI-driven approaches is essential for future advancements. China leads research output, with jamming being the most studied cyberattack.",
+    "authors": [
+      "Kevin Herman Muraro Gularte",
+      "João Paulo Javidi da Costa",
+      "José Alfredo Ruiz Vargas",
+      "Antonio Santos da Silva",
+      "Giovanni Almeida Santos",
+      "Yuming Wang",
+      "Christian Alfons Müller",
+      "Christoph Lipps",
+      "Rafael Timóteo de Sousa Júnior",
+      "Walter de Britto Vidal Filho",
+      "Philipp Slusallek",
+      "Hans Dieter Schotten"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2024.3504404",
+    "bibtex_citation": "Gularte_Integrating_2024",
+    "analysis": {
+      "Overview": "Comprehensive review of V2X simulation environments focusing on cybersecurity applications, market trends, and tool integrations to address limitations in vehicular communication testing.",
+      "Background_and_Motivation": [
+        "Addresses technical and security challenges in deploying V2X technologies for intelligent transportation systems.",
+        "Solves gaps in existing surveys regarding coverage of tools like CARLA/CarSim and lack of market analyses.",
+        "Argues urgency via rising cyber threats (jamming/spoofing/DoS) in autonomous vehicles and 5G vulnerabilities.",
+        "Links V2X security to broader societal safety and economic impacts of compromised transportation networks.",
+        "Contributes to Vehicular Networks, Cybersecurity, Communication Systems, and Simulation Engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) V2X Simulation Tools (SUMO/NS3/OMNeT++); 2) Cybersecurity Threats (jamming/spoofing/DoS/eavesdropping); 3) Co-simulation (tool integration to overcome limitations).",
+        "Tools model threats → threat analysis informs security protocols → co-simulation enables holistic validation.",
+        "Assumes simulation is cost-effective/safe alternative to physical testing; tools' limitations addressable via integration.",
+        "Provides synthesizing survey that identifies research gaps and future directions, advancing methodological discourse."
+      ],
+      "Methodology": [
+        "Literature review with Scopus/Google Patents mining; patent trend analysis; simulation parameter extraction from 27 studies.",
+        "Novelty in market relevance profiling (top 50 companies); applicability in parameter tables for attack modeling; rational inclusion/exclusion criteria.",
+        "Data from Scopus/Google Patents (Jan 2024); preprocessing via keyword filtering (title/abstract/keywords). Representativeness ensured by multi-database validation.",
+        "Rigorous via defined criteria (Table 4); metrics adequate for trend analysis but limited by database discrepancies.",
+        "Follows empirical-analytical paradigm; affects perspective by prioritizing quantitative trends over qualitative tool assessments."
+      ],
+      "Results": [
+        "China dominates research (50%+ patents 2020-2023); Qualcomm leads industrial patents; SUMO most-used tool; jamming most simulated attack (carrier: 2-28GHz, power:1-40dBm).",
+        "Results significant for benchmarking simulation parameters; reliability enhanced by multi-source validation; stability reflected in consistent annual growth trends."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Introduction → Market/Publication analysis → Tool review → Security parameters → Future directions.",
+        "Steps: 1) Establish V2X importance; 2) Identify survey gaps; 3) Analyze patents/papers; 4) Review tools; 5) Detail attack parameters; 6) Propose integrations/AI.",
+        "Strengths: Comprehensive parameter tables; weaknesses: Limited tool coverage beyond top 50 patents. Rebuttals addressed via future work on AI-driven simulations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Holistic market analysis; simulation parameters for 4 cyberattacks; co-simulation framework proposal.",
+        "Methodology boundaries: Database discrepancies (Scopus vs. Google Patents); noisy keyword searches (e.g., 'MOVE').",
+        "Empirical focus constrains theoretical innovation; cybersecurity emphasis overlooks non-threat V2X applications."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as authoritative survey bridging industry/academia; catalogs simulation parameters for standardized threat modeling.",
+        "Technical terminology (e.g., 'co-simulation', 'pathloss models'); persuasive tone advocating AI integration; rhetorical emphasis on China's dominance.",
+        "Builds authority via 149 references; citation motivations include justifying market trends and parameter selections."
+      ],
+      "Conclusions_and_Implications": [
+        "Simulation tools vital for V2X security validation; tool integration and AI-driven approaches are key future directions.",
+        "Future work: Develop co-simulation frameworks for CARLA-OMNeT++; enhance real-time threat response via AI; expand 6G vulnerability modeling."
+      ]
+    }
+  }
+}

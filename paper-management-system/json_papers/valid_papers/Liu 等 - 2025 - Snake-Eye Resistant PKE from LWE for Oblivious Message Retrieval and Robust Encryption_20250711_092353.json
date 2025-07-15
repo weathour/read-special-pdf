@@ -1,0 +1,83 @@
+{
+  "file_name": "Liu 等 - 2025 - Snake-Eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption.pdf",
+  "generated_at": "2025-07-11 09:23:53",
+  "structured_info": {
+    "title_cn": "基于LWE的抗蛇眼攻击公钥加密及其在 oblivious 消息检索和鲁棒加密中的应用",
+    "title_en": "Snake-Eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption",
+    "category": "Cryptography",
+    "topics": [
+      "Oblivious Message Retrieval",
+      "Public Key Encryption",
+      "Lattice-Based Cryptography",
+      "Denial-of-Service Resistance",
+      "Learning With Errors"
+    ],
+    "keywords": [
+      "Snake-Eye Resistance",
+      "Oblivious Message Retrieval",
+      "Robust Encryption",
+      "LWE",
+      "DoS Attacks",
+      "Lattice-Based Cryptography"
+    ],
+    "abstract": "Oblivious message retrieval (OMR) allows resource-limited recipients to outsource the message retrieval process without revealing which messages are pertinent to which recipient. Its realizations in recent works leave an open problem: can an OMR scheme be both practical and provably secure against spamming attacks by malicious senders (i.e., DoS-resistant) under standard assumptions? In this paper, we present DoS-PerfOMR: a provably DoS-resistant OMR construction that is 12x faster than OMRp2 (a conjectured DoS-resistant OMR construction in prior works), and (almost) matches the performance of the state-of-the-art OMR scheme that is not DoS-resistant (proven by the attacks we show). To achieve this, we analyze the snake-eye resistance property for general PKE schemes, i.e., whether it is hard to encrypt an identical message under two public keys. We construct a new lattice-based PKE scheme: LWEmongrass, that is provably snake-eye resistant and has better efficiency than the PVW scheme underlying OMRp2. We also show that natural candidates (e.g., RingLWE PKE) are not snake-eye resistant. Furthermore, we show that a snake-eye resistant PKE scheme implies a robust PKE scheme, thus introducing the first robust lattice-based PKE scheme without relying on the KEM-DEM paradigm, avoiding its inherent inefficiencies.",
+    "methodology": "The paper constructs a new lattice-based public key encryption (PKE) scheme (LWEmongrass) using a hybrid of uniform and short secrets. It introduces two new LWE variants (corLWE and rhLWE) with side information, reduces standard LWE to these variants, and proves security properties under LWE. For OMR, it combines LWEmongrass with fully homomorphic encryption (BFV scheme) and optimizations from prior work. Implementation and evaluation are performed in C++.",
+    "conclusion": "The paper resolves the open problem of achieving practical and provably DoS-resistant OMR under standard LWE assumptions. It proves the snake-eye conjecture for PVW/Regev05 PKE, constructs an efficient snake-eye resistant PKE (LWEmongrass), and builds DoS-PerfOMR—12x faster than prior DoS-resistant schemes and comparable to non-resistant ones. It also shows snake-eye resistance enables efficient robust encryption without KEM-DEM.",
+    "authors": [
+      "Zeyu Liu",
+      "Katerina Sotiraki",
+      "Eran Tromer",
+      "Yunhao Wang"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "10.1007/978-3-031-91131-6_5",
+    "bibtex_citation": "Liu_Snake-Eye_2025",
+    "analysis": {
+      "Overview": "The paper focuses on cryptographic protocols for oblivious message retrieval (OMR), addressing the challenge of building a practical OMR scheme resistant to denial-of-service (DoS) attacks by malicious senders. It introduces snake-eye resistance as a key property for public key encryption (PKE) and constructs a new lattice-based PKE scheme to achieve provable security under standard Learning With Errors (LWE) assumptions.",
+      "Background_and_Motivation": [
+        "Metadata privacy is critical in encrypted communication systems to prevent leakage via traffic analysis. Recipient privacy—ensuring only senders and recipients know message destinations—is challenging when recipients outsource retrieval to untrusted servers.",
+        "Prior OMR schemes lack provable DoS-resistance under standard assumptions, allowing malicious senders to craft messages that appear pertinent to many recipients, forcing resource-intensive processing.",
+        "The authors argue that without DoS-resistance, OMR deployments are vulnerable to spam attacks, undermining efficiency and practicality. This urgency is highlighted by demonstrated attacks on non-resistant schemes.",
+        "The specific problem of DoS in OMR is linked to the broader challenge of secure outsourced computation, where malicious inputs can exhaust resources. The paper establishes significance by showing real-world feasibility gaps in prior work.",
+        "Contributes to cryptography, lattice-based cryptography, secure messaging protocols, and privacy-preserving systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Snake-eye resistance—hard for an adversary to create a ciphertext decrypting to the same value under two independent keys; (2) Oblivious Message Retrieval (OMR)—recipients outsource message filtering without revealing pertinence; (3) Robust Encryption—ciphertexts valid under only one key.",
+        "Logical network: Snake-eye resistance is proven for PVW/Regev05 PKE and generalized; it enables DoS-resistant OMR and implies robust encryption. LWEmongrass integrates uniform and short secrets to balance resistance and efficiency.",
+        "Key assumptions: Standard LWE hardness; error distributions (χ) with bounded norms; non-trivial ciphertexts in PKE schemes.",
+        "Contribution type: Introduces novel cryptographic primitives (snake-eye resistance, corLWE/rhLWE), provides theoretical reductions (LWE to variants), and delivers practical constructions (LWEmongrass PKE, DoS-PerfOMR) that advance the field's knowledge."
+      ],
+      "Methodology": [
+        "Core methods: (1) Formalizes snake-eye resistance for PKE; (2) Constructs LWEmongrass PKE using hybrid secrets; (3) Proves security via reductions from LWE to corLWE/rhLWE; (4) Builds OMR using LWEmongrass and BFV FHE; (5) Implements and benchmarks in C++.",
+        "Novelty: First efficient snake-eye resistant PKE from LWE; black-box transformation to robust encryption. Applicability: Optimized for OMR; parameters tailored for practicality. Rationality: Reductions minimize parameter loss; attacks validate necessity.",
+        "Data sources: Synthetic (LWE samples). Characteristics/preprocessing: Standard lattice parameters; error bounds ensure correctness. Representativeness: Matches real-world OMR deployment constraints.",
+        "Experimental rigor: Compares server runtime, key sizes, and attack effectiveness against prior schemes (OMRp2, PerfOMR). Evaluation metrics: Speedup factors, size ratios, and success rates of DoS attacks.",
+        "Follows lattice-based cryptography paradigm, leveraging LWE hardness. This perspective emphasizes post-quantum security and algebraic structure, influencing design choices (e.g., avoiding Ring-LWE for snake-eye resistance)."
+      ],
+      "Results": [
+        "Key results: (1) DoS-PerfOMR is 12x faster than OMRp2 with 28x smaller public keys; matches non-resistant PerfOMR (1.2x slower); (2) LWEmongrass PKE is snake-eye resistant under LWE; (3) Attacks show prior short-key schemes (e.g., Ring-LWE PKE) are vulnerable; (4) Robust encryption achieved without KEM-DEM inefficiencies.",
+        "Significance: Provides first practical, provably DoS-resistant OMR. Reliability: Security proofs under standard assumptions; implementations validate theory. Stability: Parameters ensure negligible error; attacks reproduced experimentally."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Motivates DoS-resistance in OMR → generalizes snake-eye resistance → constructs/resists PKE → builds OMR → extends to robust encryption.",
+        "Key steps: (1) Prove PVW snake-eye conjecture via corLWE; (2) Show short-key schemes vulnerable; (3) Build LWEmongrass; (4) Reduce LWE to corLWE/rhLWE; (5) Optimize OMR with FHE; (6) Link snake-eye resistance to robustness.",
+        "Strengths: Rigorous reductions; efficiency gains quantified. Weaknesses: Parameter losses in reductions (e.g., n' = 9n/7 for ternary secrets). Rebuttals: Losses acceptable for practicality; attacks justify design."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Provable security under LWE; 12x speedup in OMR; new PKE/robust encryption; open-source implementation. Innovations: Snake-eye resistance formalization, LWEmongrass, and efficient transformations.",
+        "Limitations: Parameter losses in LWE reductions; FHE in OMR adds complexity; implementation not optimized for all hardware.",
+        "Theoretical constraints: Lattice-based paradigm requires error bounds and large moduli, limiting flexibility. Conclusions hold under standard cryptographic assumptions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances OMR by solving open problems; positions snake-eye resistance as fundamental for PKE. Engages with prior work (e.g., refuting PerfOMR's DoS-resistance).",
+        "Terminology: Technical (e.g., 'δ-snake-eye resistance', 'corLWE'). Tone: Assertive in claiming advancements. Rhetoric: Uses efficiency comparisons and attacks to emphasize contributions.",
+        "Citations: Builds authority by reducing to LWE; critiques prior conjectures. Motivations: Highlight efficiency gaps and vulnerabilities to justify novel constructions."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: (1) DoS-PerfOMR achieves practical, provable DoS-resistance; (2) LWEmongrass enables efficient OMR/robust encryption; (3) Snake-eye resistance is crucial and achievable under LWE.",
+        "Future work: Optimize FHE in OMR; explore applications in cryptocurrencies/private analytics; improve parameter tightness in reductions."
+      ]
+    }
+  }
+}

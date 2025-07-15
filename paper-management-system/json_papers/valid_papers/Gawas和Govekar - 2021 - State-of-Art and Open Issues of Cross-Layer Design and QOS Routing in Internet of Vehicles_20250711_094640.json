@@ -1,0 +1,88 @@
+{
+  "file_name": "Gawas和Govekar - 2021 - State-of-Art and Open Issues of Cross-Layer Design and QOS Routing in Internet of Vehicles.pdf",
+  "generated_at": "2025-07-11 09:46:40",
+  "structured_info": {
+    "title_cn": "车联网中跨层设计与QoS路由的现状与开放问题",
+    "title_en": "State of Art and Open Issues of Cross Layer Design and QOS Routing in Internet of Vehicles",
+    "category": "Vehicular Networks",
+    "topics": [
+      "QoS Routing",
+      "Cross-Layer Design",
+      "VANET Protocols"
+    ],
+    "keywords": [
+      "VANET",
+      "QoS",
+      "Topology-based routing",
+      "Cross-layer routing",
+      "Routing protocols"
+    ],
+    "abstract": "VANET (Vehicular Ad Hoc Network) is a significant term in ITS (intelligent transportation systems). VANETs are also mentioned as ITN (intelligent transportation Networks), which are used to enhance road safety in growing technology. The connectivity of nodes is a challenging one because of its high mobility and the sparse network connectivity must be handled properly during its initial deployment of a VANET for avoiding accidents. Quality of service (QoS) in VANET becomes a significant term because of its increasing dare about unique features, like poor link quality, high mobility, and inadequate transporting distance. Routing is the foremost issue in the wireless ad hoc network, which is used to transmit data packets significantly. This paper provides a crucial review of the classification of existing QoS routing protocols, cross-layer design approach and classification, and various performance parameters used in QoS routing protocols. The corresponding cross-layer protocols are overviewed, followed by the major techniques in cross-layer protocol design. Moreover, VANET is presented with many exclusive networking research challenges in precise areas such as security, QoS, mobility, effective channel utilization, and scalability. Finally, the paper concluded by various comparison discussion, issues, and challenges of several routing protocols for VANET. No. of publications over the period from 2010 to 2019 in various scientific sources also showed in this review. This survey provided the technical direction for researchers on routing protocols for VANET using QoS.",
+    "methodology": "Comprehensive literature review and comparative analysis of existing QoS routing protocols (topology-based, cluster-based, position-based, geocast, trust-based, infrastructure-based) and cross-layer designs in VANETs, including classification frameworks and performance evaluations.",
+    "conclusion": "VANETs face unique challenges requiring specialized QoS routing protocols and cross-layer optimizations. Key open issues include handling high mobility, sparse connectivity, security vulnerabilities, and scalability limitations. Future research should focus on adaptive protocols and enhanced cross-layer integration.",
+    "authors": [
+      "Mahadev A. Gawas",
+      "Sweta Govekar"
+    ],
+    "publication_year": "2021",
+    "venue": "Wireless Personal Communications",
+    "doi": "10.1007/s11277-020-07790-5",
+    "bibtex_citation": "Gawas_State_2021",
+    "analysis": {
+      "Overview": "Survey paper reviewing QoS routing protocols and cross-layer design approaches in Vehicular Ad Hoc Networks (VANETs), focusing on classification, performance comparisons, and unresolved challenges.",
+      "Background_and_Motivation": [
+        "Rising need for intelligent transportation systems (ITS) to improve road safety and traffic efficiency.",
+        "Addressing VANET-specific challenges: high mobility, sparse connectivity, poor link quality, and dynamic topology that hinder reliable QoS routing.",
+        "Urgency emphasized through accident prevention goals and real-time communication requirements for safety applications.",
+        "Positions VANET routing as critical to broader ITS objectives like reducing latency and ensuring data reliability.",
+        "Contributes to wireless networking, vehicular communication systems, and intelligent transportation engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "VANET",
+          "Vehicular Ad Hoc Network: Mobile network enabling vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communication."
+        ],
+        [
+          "QoS Routing",
+          "Routing protocols prioritizing metrics like latency, packet delivery ratio (PDR), and bandwidth for critical applications."
+        ],
+        [
+          "Cross-Layer Design",
+          "Protocol optimization by sharing information across network layers to overcome VANET constraints."
+        ],
+        "Assumes high vehicle mobility inherently disrupts topology; cross-layer integration can mitigate traditional protocol limitations.",
+        "Organizes fragmented research into unified taxonomy, identifying gaps without proposing new algorithms."
+      ],
+      "Methodology": [
+        "Systematic classification of routing protocols into seven categories (e.g., topology-based, cluster-based) with sub-taxonomies and comparative tables.",
+        "Survey methodology synthesizes 2010–2019 publications from IEEE, Elsevier, ACM, and Springer; novelty lies in comprehensive categorization.",
+        "Data sourced from academic literature; representativeness validated by decade-long coverage and multi-publisher inclusion.",
+        "No original experiments; evaluates protocols via performance parameters (PDR, E2ED, scalability) in cited studies.",
+        "Follows network engineering pragmatism, prioritizing empirical protocol evaluations over theoretical models."
+      ],
+      "Results": [
+        "Taxonomy development revealing cluster-based and position-based protocols excel in scalability; trust-based approaches enhance security.",
+        "Results derived from literature show consistency in protocol limitations (e.g., topology-based routing struggles with mobility) but lack statistical validation."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: Introduces VANET challenges → classifies solutions → compares protocols → identifies unresolved issues.",
+        "Key steps: 1) Define VANET architecture; 2) Classify routing protocols; 3) Analyze protocol strengths/weaknesses; 4) Discuss open challenges.",
+        "Strengths: Clear structure enabling comparative insights. Weaknesses: Limited critical assessment of conflicting findings in literature."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive protocol taxonomy; identification of under-explored areas (e.g., hybrid infrastructure-V2V approaches).",
+        "Methodology boundaries: Relies on published studies without new simulations; excludes non-routing layers (e.g., physical layer innovations).",
+        "Engineering-focused paradigm overlooks socio-technical constraints (e.g., real-world deployment costs)."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as reference for researchers; consolidates dispersed VANET routing knowledge.",
+        "Technical terminology (e.g., 'geocast', 'beaconless routing'); persuasive through tables comparing 50+ protocols.",
+        "Builds authority via 100+ citations; motivation appears to standardize evaluation metrics for future work."
+      ],
+      "Conclusions_and_Implications": [
+        "QoS routing requires adaptive cross-layer designs; trust-based protocols address security gaps; infrastructure integration improves scalability.",
+        "Future work: Dynamic protocol adaptation, real-world validation, and standardization of QoS metrics."
+      ]
+    }
+  }
+}

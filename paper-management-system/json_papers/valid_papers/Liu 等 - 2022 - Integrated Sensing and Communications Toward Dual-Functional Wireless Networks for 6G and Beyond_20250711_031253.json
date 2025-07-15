@@ -1,0 +1,85 @@
+{
+  "file_name": "Liu 等 - 2022 - Integrated Sensing and Communications Toward Dual-Functional Wireless Networks for 6G and Beyond.pdf",
+  "generated_at": "2025-07-11 03:12:53",
+  "structured_info": {
+    "title_cn": "集成感知与通信：面向6G及未来的双功能无线网络",
+    "title_en": "Integrated Sensing and Communications: Toward Dual-Functional Wireless Networks for 6G and Beyond",
+    "category": "Wireless Communications",
+    "topics": [
+      "Integrated Sensing and Communications",
+      "6G Networks",
+      "Waveform Design",
+      "Performance Tradeoffs",
+      "Perceptive Networks"
+    ],
+    "keywords": [
+      "Integrated sensing and communications",
+      "6G",
+      "performance tradeoff",
+      "waveform design",
+      "perceptive network"
+    ],
+    "abstract": "As the standardization of 5G solidifies, researchers are speculating what 6G will be. The integration of sensing functionality is emerging as a key feature of the 6G Radio Access Network (RAN), allowing for the exploitation of dense cell infrastructures to construct a perceptive network. In this IEEE Journal on Selected Areas in Communications (JSAC) Special Issue overview, we provide a comprehensive review on the background, range of key applications and state-of-the-art approaches of Integrated Sensing and Communications (ISAC). We commence by discussing the interplay between sensing and communications (S&C) from a historical point of view, and then consider the multiple facets of ISAC and the resulting performance gains. By introducing both ongoing and potential use cases, we shed light on the industrial progress and standardization activities related to ISAC. We analyze a number of performance tradeoffs between S&C, spanning from information theoretical limits to physical layer performance tradeoffs, and the cross-layer design tradeoffs. Next, we discuss the signal processing aspects of ISAC, namely ISAC waveform design and receive signal processing. As a step further, we provide our vision on the deeper integration between S&C within the framework of perceptive networks, where the two functionalities are expected to mutually assist each other, i.e., via communication-assisted sensing and sensing-assisted communications. Finally, we identify the potential integration of ISAC with other emerging communication technologies, and their positive impacts on the future of wireless networks.",
+    "methodology": "The paper employs theoretical analysis, waveform design approaches (sensing-centric, communication-centric, joint design), signal processing methods for ISAC, tradeoff optimization techniques, and network-level integration frameworks.",
+    "conclusion": "ISAC is a key paradigm for 6G and beyond, enabling dual-functional networks with integration gains (shared resources) and coordination gains (mutual assistance between sensing and communications). It supports applications like V2X, smart manufacturing, and environmental monitoring while improving spectral/energy efficiency.",
+    "authors": [
+      "Fan Liu",
+      "Yuanhao Cui",
+      "Christos Masouros",
+      "Jie Xu",
+      "Tony Xiao Han",
+      "Yonina C. Eldar",
+      "Stefano Buzzi"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Journal on Selected Areas in Communications",
+    "doi": "10.1109/JSAC.2022.3156632",
+    "bibtex_citation": "Liu_Integrated_2022",
+    "analysis": {
+      "Overview": "The paper comprehensively reviews Integrated Sensing and Communications (ISAC) for 6G, covering historical background, key applications, performance tradeoffs, waveform design, signal processing, and network-level integration to enable dual-functional wireless networks.",
+      "Background_and_Motivation": [
+        "Next-generation networks (e.g., 6G) require high-quality connectivity and robust sensing capabilities; current trends show convergence in hardware and signal processing between radar and communication systems.",
+        "Motivation stems from the need to efficiently utilize wireless resources and enable new applications (e.g., autonomous vehicles, smart cities) by integrating sensing into communication infrastructures.",
+        "Authors argue that ISAC addresses spectrum congestion, hardware costs, and infrastructure duplication while supporting emerging use cases like environmental monitoring and human-computer interaction.",
+        "The problem is linked to broader challenges of spectrum efficiency and intelligent infrastructure in 6G, establishing significance through industrial standardization efforts (e.g., IEEE 802.11bf, 3GPP).",
+        "Contributions span wireless communications, signal processing, radar systems, and interdisciplinary fields like IoT and AI."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 1) ISAC (unified design of sensing/communication), 2) Integration Gain (resource sharing), 3) Coordination Gain (mutual assistance via sensing-assisted communications/communication-assisted sensing).",
+        "Logical relationships: Integration Gain minimizes resource duplication; Coordination Gain enables sensing to enhance communication (e.g., beamforming) and vice versa.",
+        "Key assumptions: Convergence of radar/communication technologies in mmWave/massive MIMO systems; sensing functionality can be natively embedded in wireless networks.",
+        "Contribution type: Provides a foundational theoretical framework and state-of-the-art synthesis, advancing knowledge in waveform design, tradeoff analysis, and network architecture."
+      ],
+      "Methodology": [
+        "Core methods include ISAC waveform design (sensing-centric, communication-centric, joint), information-theoretic tradeoff analysis, signal processing (e.g., OFDM for sensing), and optimization techniques for resource allocation.",
+        "Novelty: Unified waveform designs (e.g., index modulation) and tradeoff frameworks; applicability demonstrated across V2X, UAV monitoring; rationality via performance bounds.",
+        "Data: Theoretical models (e.g., Gaussian channels) and simulated scenarios; no empirical datasets. Representativeness evaluated through standard metrics like MSE and CRB.",
+        "Experimental design: Rigorous analysis of S&C metrics (e.g., detection probability vs. communication rate); evaluation metrics include SINR, spectral efficiency, and estimation accuracy.",
+        "Follows radar/communication signal processing paradigms; affects perspective by unifying sensing/communication objectives under a single system."
+      ],
+      "Results": [
+        "Key results: Tradeoffs between sensing (detection probability, MSE) and communication (rate, reliability) metrics; waveform designs achieving integration/coordination gains; perceptive network feasibility.",
+        "Significance: Demonstrates ISAC viability for 6G; reliability/stability shown through analytical bounds and simulations, though real-world validation is limited."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Historical context → ISAC gains → applications → performance tradeoffs → waveform design → network integration → conclusions.",
+        "Key steps: 1) Establish historical S&C interplay, 2) Define ISAC gains, 3) Analyze tradeoffs, 4) Propose waveform solutions, 5) Extend to perceptive networks.",
+        "Strengths: Coherent synthesis of cross-disciplinary concepts; weaknesses include limited discussion of real-world impairments. Rebuttals addressed via Pareto-optimal tradeoff boundaries."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive review of ISAC theory, waveform innovations, and emerging applications; identifies future research directions.",
+        "Methodology limitations: Focuses on theoretical tradeoffs; boundaries include idealized channel models and minimal hardware constraints.",
+        "Theoretical paradigm constraints: Assumption of hardware convergence may oversimplify practical deployment challenges in heterogeneous networks."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Foundational survey positioning ISAC as critical for 6G; engages with radar/communication communities via shared terminology.",
+        "Terminology: Uses \"perceptive networks,\" \"integration/coordination gains\"; rhetorical strategies emphasize urgency via industrial trends (e.g., Huawei/Nokia white papers).",
+        "Citations build authority by referencing seminal works (e.g., Marzetta on massive MIMO); motivations include legitimizing ISAC as a distinct research field."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: ISAC enables efficient, dual-functional 6G networks with applications in smart cities, healthcare, and automation; performance tradeoffs are manageable via joint design.",
+        "Future research: Integration with AI/ML, standardization, practical deployment challenges, and scalability in multi-user environments."
+      ]
+    }
+  }
+}

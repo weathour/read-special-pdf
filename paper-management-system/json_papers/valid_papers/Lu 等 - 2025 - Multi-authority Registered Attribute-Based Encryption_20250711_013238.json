@@ -1,0 +1,79 @@
+{
+  "file_name": "Lu 等 - 2025 - Multi-authority Registered Attribute-Based Encryption.pdf",
+  "generated_at": "2025-07-11 01:32:38",
+  "structured_info": {
+    "title_cn": "多机构注册的属性基加密",
+    "title_en": "Multi-authority Registered Attribute-Based Encryption",
+    "category": "Cryptography",
+    "topics": [
+      "Attribute-Based Encryption",
+      "Multi-Authority Systems",
+      "Registration-Based Cryptography"
+    ],
+    "keywords": [
+      "Attribute-Based Encryption",
+      "Multi-authority",
+      "Registered ABE",
+      "Cryptography",
+      "Access Control"
+    ],
+    "abstract": "Registered attribute-based encryption (ABE) enables fine-grained access control to encrypted data without a trusted authority. In this model, users generate their own public keys and register their public key along with a set of attributes with a key curator. The key curator aggregates the public keys into a short master public key that functions as the public key for an ABE scheme. A limitation of ABE (registered or centralized) is the assumption that a single entity manages all of the attributes in a system. In many settings, the attributes belong to different organizations, making it unrealistic to expect that a single entity manage all of them. In the centralized setting, this motivated the notion of multi-authority ABE, where multiple independent authorities control their individual set of attributes. Access policies are then defined over attributes across multiple authorities. In this work, we introduce multi-authority registered ABE, where multiple (independent) key curators each manage their individual sets of attributes. Users can register their public keys with any key curator, and access policies can be defined over attributes from multiple key curators. Multi-authority registered ABE combines the trustless nature of registered ABE with the decentralized nature of multi-authority ABE.",
+    "methodology": "Constructed using composite-order pairing groups for bounded users and linear secret sharing policies, and indistinguishability obfuscation for unbounded users and arbitrary monotone policies. Utilized cover-free sets for dynamic registrations and dual-system methodology for security proofs.",
+    "conclusion": "Multi-authority registered ABE enables decentralized, trustless fine-grained access control across independent authorities. Pairing-based schemes support bounded users and specific policies securely without random oracles, while obfuscation-based schemes achieve unbounded users and arbitrary policies. Security against semi-malicious adversaries is proven, with generic lifting to full security via NIZK proofs.",
+    "authors": [
+      "George Lu",
+      "Brent Waters",
+      "David J. Wu"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "10.1007/978-3-031-91131-6_1",
+    "bibtex_citation": "Lu_Multi-authority_2025",
+    "analysis": {
+      "Overview": "Introduces multi-authority registered ABE, extending registered ABE to decentralized settings where independent key curators manage attributes. Combines trust elimination from registered ABE with cross-domain policy support from multi-authority ABE.",
+      "Background_and_Motivation": [
+        "Traditional ABE requires a trusted central authority, creating a single point of failure; registered ABE removes this but assumes single-domain attribute management.",
+        "Real-world scenarios involve attributes controlled by multiple independent organizations (e.g., cross-institutional collaborations), necessitating decentralized policy enforcement.",
+        "Single-authority models cannot handle cross-domain policies without coordination; multi-authority ABE addresses this but retains long-term secrets per authority.",
+        "The paper argues that unifying trustless registration with decentralized authorities is essential for practical deployments in multi-organization environments.",
+        "Contributes to cryptography, specifically attribute-based encryption, and intersects with access control systems in distributed computing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Slotted Multi-authority Registered ABE: Supports fixed users and one-shot aggregation; enables simpler security proofs. Multi-authority Registered ABE: Full dynamic scheme via cover-free sets and powers-of-two transformation.",
+        "Slotted schemes logically feed into the full construction via aggregation; cover-free sets resolve slot synchronization across authorities.",
+        "Implicitly assumes unique user identifiers (gid) prevent collusion; security relies on cryptographic group structures (e.g., composite-order pairings).",
+        "Provides novel constructions that advance knowledge in decentralized cryptography, offering the first trustless multi-authority ABE with formal security."
+      ],
+      "Methodology": [
+        "Core methods: Pairing-based construction using composite-order groups for bounded settings; obfuscation-based construction using indistinguishability obfuscation (iO) for unbounded flexibility.",
+        "Pairing approach is novel for eliminating random oracles in multi-authority security; iO method achieves unbounded users and arbitrary policies but relies on stronger assumptions.",
+        "No explicit real-world data; security proofs use simulated adversarial models. Data representativeness is theoretical, focusing on cryptographic hardness.",
+        "Rigorous dual-system security proofs with hybrid arguments; evaluation includes correctness, collusion resistance, and post-challenge corruption handling.",
+        "Follows provable security paradigm in cryptography; uses bilinear pairings and obfuscation theory, affecting design via algebraic and program-analytic techniques."
+      ],
+      "Results": [
+        "Two provably secure constructions: (1) Pairing-based scheme for bounded users and monotone policies; (2) Obfuscation-based scheme for unbounded users and arbitrary policies.",
+        "Results are significant for enabling decentralized, trustless access control; reliability established via reductions to subgroup decision assumptions and iO security. Stability ensured via formal proofs under adaptive attacks."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: Problem definition → slotted construction → full construction → security proofs → extensions.",
+        "Key steps: Define syntax/security; build slotted scheme from pairings; transform to dynamic scheme via cover-free sets; prove security via dual-system method; present iO-based alternative.",
+        "Strengths: Modular proof strategy handles collusion and post-challenge corruptions. Weaknesses: Pairing-based scheme requires bounded users; addressed via iO construction. Rebuttals: Use NIZK to lift semi-malicious to full security."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First trustless multi-authority ABE; supports cross-domain policies; two constructions balancing efficiency and generality.",
+        "Pairing-based: Limited to bounded users and linear policies; obfuscation-based: Poor concrete efficiency and strong assumptions.",
+        "Theoretical reliance on composite-order pairings and iO constrains practicality; pairing scheme does not imply centralized multi-authority ABE without random oracles."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as bridging registered ABE and multi-authority ABE; critiques centralized trust models and highlights decentralization needs.",
+        "Technical terminology (e.g., 'slotted schemes', 'dual-system proofs'); formal tone; rhetorical emphasis on 'trustless' and 'decentralized' as innovations.",
+        "Builds authority via citations to foundational ABE works; motivations include resolving limitations in prior registered ABE (e.g., Hohenberger et al.)."
+      ],
+      "Conclusions_and_Implications": [
+        "Multi-authority registered ABE is feasible via pairings or obfuscation; enables decentralized access control without trusted authorities.",
+        "Future work: Improve efficiency of pairing-based schemes; support larger attribute sets; achieve adaptive security without NIZK; explore practical deployments."
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "Liu 等 - DoRA Weight-Decomposed Low-Rank Adaptation.pdf",
+  "generated_at": "2025-07-11 04:55:43",
+  "structured_info": {
+    "title_cn": "DoRA：权重分解的低秩自适应",
+    "title_en": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+    "category": "Machine Learning",
+    "topics": [
+      "Parameter-Efficient Fine-Tuning",
+      "Model Optimization",
+      "Low-Rank Adaptation"
+    ],
+    "keywords": [
+      "DoRA",
+      "LoRA",
+      "Weight Decomposition",
+      "PEFT",
+      "Fine-Tuning"
+    ],
+    "abstract": "Among the widely used parameter-efficient fine-tuning (PEFT) methods, LoRA and its variants have gained considerable popularity because of avoiding additional inference costs. However, there still often exists an accuracy gap between these methods and full fine-tuning (FT). In this work, we first introduce a novel weight decomposition analysis to investigate the inherent differences between FT and LoRA. Aiming to resemble the learning capacity of FT from the findings, we propose Weight-Decomposed Low-Rank Adaptation (DoRA). DoRA decomposes the pre-trained weight into two components, magnitude and direction, for fine-tuning, specifically employing LoRA for directional updates to efficiently minimize the number of trainable parameters. By employing DoRA, we enhance both the learning capacity and training stability of LoRA while avoiding any additional inference overhead. DoRA consistently outperforms LoRA on fine-tuning LLaMA, LLaVA, and VL-BART on various downstream tasks, such as commonsense reasoning, visual instruction tuning, and image video-text understanding.",
+    "methodology": "Weight decomposition of pre-trained weights into magnitude and directional components, with directional updates handled via Low-Rank Adaptation (LoRA). Gradient analysis demonstrates optimization benefits and learning pattern alignment with full fine-tuning.",
+    "conclusion": "DoRA consistently outperforms LoRA across multiple tasks (commonsense reasoning, visual instruction tuning, image/video-text understanding) and model architectures (LLaMA, LLaVA, VL-BART), closing the accuracy gap with full fine-tuning without inference overhead. It exhibits enhanced learning capacity and training stability.",
+    "authors": [
+      "Shih-Yang Liu",
+      "Chien-Yi Wang",
+      "Hongxu Yin",
+      "Pavlo Molchanov",
+      "Yu-Chiang Frank Wang",
+      "Kwang-Ting Cheng",
+      "Min-Hung Chen"
+    ],
+    "publication_year": "2024",
+    "venue": "Proceedings of the 41st International Conference on Machine Learning, PMLR 235",
+    "doi": "",
+    "bibtex_citation": "Liu_DoRA_2024",
+    "analysis": {
+      "Overview": "Proposes DoRA, a parameter-efficient fine-tuning method that decomposes weights into magnitude and direction components, using LoRA for directional updates to bridge the accuracy gap with full fine-tuning while maintaining inference efficiency.",
+      "Background_and_Motivation": [
+        "Large-scale model fine-tuning is computationally expensive; existing PEFT methods like LoRA reduce costs but exhibit accuracy gaps versus full fine-tuning.",
+        "To understand fundamental differences in learning patterns between LoRA and full fine-tuning and develop a method that mimics full fine-tuning's capacity without overhead.",
+        "Argues that limited trainable parameters alone don't explain LoRA's gap; distinct learning patterns require architectural innovation for efficient adaptation.",
+        "Aligns with the broader challenge of scaling model adaptation; demonstrates significance via consistent underperformance of LoRA across tasks.",
+        "Machine Learning, Natural Language Processing, Computer Vision, Multimodal Learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Weight Decomposition: Separates weights into magnitude (scalar) and direction (unit vector) components. DoRA: Tunable magnitude + LoRA-updated direction.",
+        "Magnitude controls scaling, direction governs orientation; DoRA decouples updates to simplify optimization and align with full fine-tuning patterns.",
+        "Pre-trained weights contain transferable knowledge; directional updates benefit from low-rank structure; decomposition stabilizes optimization.",
+        "Novel algorithm (DoRA) and analytical framework (weight decomposition analysis); advances PEFT by closing accuracy gaps theoretically and empirically."
+      ],
+      "Methodology": [
+        "Decomposes weights via column-wise normalization; initializes magnitude/direction from pre-trained weights; uses LoRA for directional updates; incorporates gradient stabilization techniques.",
+        "Novelty: First to decompose weights for PEFT. Applicability: Validated on LLMs (LLaMA) and VLMs (LLaVA). Rationality: Supported by gradient analysis showing improved conditioning.",
+        "Downstream task datasets (commonsense reasoning, VQA, captioning); preprocessing follows prior works. Representativeness: Covers NLP, vision-language, and multimodal domains.",
+        "Rigorous comparisons against LoRA/adapters across 8+ tasks; metrics include accuracy, exact match score; ablation studies on rank/data size validate robustness.",
+        "Extends low-rank adaptation paradigm; weight decomposition draws from Weight Normalization, enabling nuanced updates closer to full fine-tuning."
+      ],
+      "Results": [
+        "DoRA outperforms LoRA by +3.7% (LLaMA-7B), +1.0% (LLaMA-13B), +2.9% (LLaMA2-7B), +4.4% (LLaMA3-8B) in reasoning; +0.6% (LLaVA); +0.9–1.9% (VL-BART). QDoRA (quantized) exceeds QLoRA by +0.19–0.23%.",
+        "Results are statistically significant via multi-task benchmarks; stable across ranks/data sizes; reliability confirmed by consistent gains over baselines."
+      ],
+      "Argumentation_and_Logic": [
+        "1. Analyze FT/LoRA learning patterns via decomposition → 2. Propose DoRA to mimic FT → 3. Validate via tasks/models → 4. Ablation/gradient analysis.",
+        "Key steps: Weight decomposition reveals FT's negative slope (magnitude-direction trade-off) vs. LoRA's positive slope; DoRA recreates FT pattern; gradient analysis explains stability.",
+        "Strength: Empirical validation across diverse tasks. Weakness: Theoretical depth limited. Rebuttals: Address training overhead via memory optimization; show compatibility with VeRA."
+      ],
+      "Strengths_and_Limitations": [
+        "Consistent accuracy gains over LoRA; no inference cost; compatibility with quantization (QDoRA); memory optimizations reduce training overhead by 12–24%.",
+        "Directional component dominates parameters; theoretical understanding of learning patterns remains incomplete.",
+        "Low-rank assumption may limit extreme directional adjustments; magnitude-direction decoupling may not capture all FT behaviors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances PEFT discourse by attributing LoRA's gap to learning pattern differences, not just parameter count; positions DoRA as a 'costless' FT approximation.",
+        "Technical terms: 'magnitude-direction decomposition', 'learning capacity'. Tone: Empirical/assertive. Rhetoric: Contrasts DoRA/FT patterns via visualizations (Figure 2).",
+        "Cites LoRA/VeRA to establish baselines; uses weight decomposition analysis to claim novelty; motivation emphasizes efficiency/accuracy trade-offs."
+      ],
+      "Conclusions_and_Implications": [
+        "DoRA closes accuracy gaps in PEFT via weight decomposition and directional LoRA updates, offering FT-like performance without inference costs.",
+        "Explore audio domains; optimize training memory; integrate with federated learning; enhance theoretical foundations for decomposition-based adaptation."
+      ]
+    }
+  }
+}

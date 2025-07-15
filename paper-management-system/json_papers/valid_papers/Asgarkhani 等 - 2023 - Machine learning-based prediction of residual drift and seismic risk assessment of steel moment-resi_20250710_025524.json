@@ -1,0 +1,82 @@
+{
+  "file_name": "Asgarkhani 等 - 2023 - Machine learning-based prediction of residual drift and seismic risk assessment of steel moment-resi.pdf",
+  "generated_at": "2025-07-10 02:55:24",
+  "structured_info": {
+    "title_cn": "考虑土-结构相互作用的钢框架结构残余位移的机器学习预测及地震风险评估",
+    "title_en": "Machine learning-based prediction of residual drift and seismic risk assessment of steel moment-resisting frames considering soil-structure interaction",
+    "category": "Structural Engineering / Machine Learning",
+    "topics": [
+      "Seismic Risk Assessment",
+      "Machine Learning Applications",
+      "Soil-Structure Interaction",
+      "Steel Structures",
+      "Residual Drift Prediction"
+    ],
+    "keywords": [
+      "Machine learning algorithm",
+      "Soil-structure interaction",
+      "Seismic risk assessment",
+      "Residual interstory drift",
+      "Seismic demand",
+      "Seismic failure probability"
+    ],
+    "abstract": "Nowadays, due to improvements in seismic codes and computational devices, retrofitting buildings is an important topic, in which, permanent deformation of buildings, known as Residual Interstory Drift Ratio (RIDR), plays a crucial role. To provide an accurate yet reliable prediction model, 32 improved Machine Learning (ML) algorithms were considered using Python software to investigate the best method for estimating Maximum Interstory Drift Ratio (IDRmax) and RIDR of 384 Steel Moment-Resisting Frames (SMRFs). In addition, the curve plot ability of methods was investigated to provide an estimation of Median of IDA curve (IDAMed) and Seismic Failure Probability curve (SFPCurve) considering Soil-Structure Interaction (SSI) effects. ML algorithms were improved with a pipeline-based hyper-parameters Fine-Tuning (FT) method followed by forward and backward feature selection methodologies to avoid overfitting and data leakage issues. The results show that proposed methods have higher prediction accuracy and curve fitting ability (more than 95%) that can be used to estimate IDAMed and SFPCurve of a structure to accelerate seismic risk assessment.",
+    "methodology": "32 ML algorithms (e.g., RDF, ANNs, SVM, boosting methods) improved via hyper-parameter fine-tuning and feature selection; Incremental Dynamic Analysis (IDA) on 384 SMRFs with 4 soil types; Beam-on-Nonlinear-Winkler-Foundation (BNWF) modeling for SSI; statistical evaluation using 18 quantitative metrics.",
+    "conclusion": "Improved ML methods achieve >95% accuracy in predicting IDRmax/RIDR and curve-fitting IDAMed/SFPCurve; LightGBM, BR(FT), and ANNs are top performers; validated on general structures with reliable seismic risk assessment capabilities.",
+    "authors": [
+      "N. Asgarkhani",
+      "F. Kazemi",
+      "R. Jankowski"
+    ],
+    "publication_year": "2023",
+    "venue": "Computers and Structures",
+    "doi": "https://doi.org/10.1016/j.compstruc.2023.107181",
+    "bibtex_citation": "Asgarkhani_Machine_2023",
+    "analysis": {
+      "Overview": "Applies machine learning to predict residual drift (RIDR) and assess seismic risk in steel moment-resisting frames, incorporating soil-structure interaction effects through advanced data generation and ML optimization techniques.",
+      "Background_and_Motivation": [
+        "Earthquake vulnerability of buildings necessitates accurate post-seismic assessment metrics like Residual Interstory Drift Ratio (RIDR), which influences economic losses and safety decisions.",
+        "Existing methods lack generalization across structures; need for rapid, reliable prediction tools to estimate RIDR, IDRmax, and probabilistic curves for retrofitting.",
+        "RIDR >0.5% causes occupant unease; prior studies show strain hardening ratios and dual systems significantly affect RIDR, but ML-based approaches remain underexplored for curve fitting.",
+        "Predicting seismic responses links to broader challenges of structural safety and economic resilience, establishing urgency for data-driven solutions in high-risk seismic zones.",
+        "Contributions span Structural Engineering, Machine Learning, and Geotechnical Engineering through interdisciplinary SSI modeling."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Residual Interstory Drift Ratio (RIDR): Permanent deformation metric for post-earthquake building assessment; Soil-Structure Interaction (SSI): Dynamic coupling affecting seismic responses; Machine Learning Pipeline: Hyper-parameter tuning and feature selection framework.",
+        "SSI influences structural inputs for ML models; RIDR predictions feed into IDA/SFPCurve estimations, enabling end-to-end seismic risk quantification.",
+        "Assumes 2D models adequately represent 3D buildings; hysteretic behavior follows Modified Ibarra-Krawinkler model; soil springs use idealized nonlinear curves.",
+        "Provides methodological innovation in ML-based curve fitting for seismic engineering, advancing predictive accuracy beyond point estimates to system-level risk assessment."
+      ],
+      "Methodology": [
+        "Core: 32 ML algorithms (e.g., XGBoost, LightGBM, ANNs) optimized via pipeline-based hyper-parameter tuning and feature selection; IDA generates 1,034,976 data points from 384 SMRFs under 78 ground motions.",
+        "Novelty: FT methods reduce overfitting; curve-fitting capability for IDAMed/SFPCurve is unprecedented. Applicability: Python-based tool generalizes to unseen structures.",
+        "Data: Structural features (period, story count, soil type) and Sa(T1) from ETABS/Opensees models; preprocessing via forward/backward feature selection ensures representativeness.",
+        "Rigorous 18-metric evaluation (R2, MSE, etc.); test sets exclude entire structures to prevent leakage; k-fold CV validates robustness.",
+        "Follows data-driven engineering paradigm, prioritizing empirical validation over theoretical models, which expands practical utility but limits mechanistic insights."
+      ],
+      "Results": [
+        "LightGBM/BR(FT) achieved R²>0.99 for IDRmax/RIDR; IDAMed/SFPCurve predictions exceeded 90% accuracy at critical drift limits; median aggregation improved reliability on unseen structures.",
+        "Results show high stability across soil types; execution times vary (LightGBM fastest); statistical metrics confirm robustness with U95 <0.1 for top models."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Data generation → ML optimization → Validation → Application.",
+        "1) Establish RIDR significance; 2) Optimize 32 ML algorithms; 3) Validate via exclusion-based testing; 4) Extend to curve fitting/risk assessment.",
+        "Strengths: Comprehensive algorithm comparison and large dataset. Weaknesses: Limited discussion of extrapolation risks; rebutted via feature selection reducing dimensionality."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First ML framework for IDAMed/SFPCurve prediction; >95% accuracy; open-source tool implementation.",
+        "Methodology boundaries: Limited to SMRFs; 2D modeling simplification; soil parameters not fully probabilistic.",
+        "Data-driven approach constrains theoretical insights into physical failure mechanisms; generalization to RC structures untested."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions ML as transformative for seismic engineering, bridging computational methods and practical risk mitigation.",
+        "Technical terminology (e.g., IDA, SSI) with empirical tone; legitimizes claims via 326-citation literature review and benchmarking against ASCE/FEMA standards.",
+        "Authoritative citations frame motivation; selective referencing establishes ML novelty while downplaying non-ML alternatives."
+      ],
+      "Conclusions_and_Implications": [
+        "ML methods enable rapid, accurate seismic demand/curve predictions; validated tool reduces computational costs for risk assessment.",
+        "Future work: Extend to other structural systems; integrate uncertainty quantification; explore real-time monitoring applications."
+      ]
+    }
+  }
+}

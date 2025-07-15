@@ -1,0 +1,82 @@
+{
+  "file_name": "Campanelli 等 - 2025 - SNARKs for Virtual Machines Are Non-malleable.pdf",
+  "generated_at": "2025-07-11 10:26:35",
+  "structured_info": {
+    "title_cn": "虚拟机SNARKs具有不可延展性",
+    "title_en": "SNARKs for Virtual Machines Are Non-malleable",
+    "category": "Cryptography",
+    "topics": [
+      "Zero-Knowledge Proofs",
+      "SNARKs",
+      "Virtual Machines",
+      "Non-malleability"
+    ],
+    "keywords": [
+      "SNARKs",
+      "Virtual Machines",
+      "Non-malleability",
+      "Simulation Extractability",
+      "Lookup Singularity",
+      "Jolt",
+      "Lasso"
+    ],
+    "abstract": "Cryptographic proof systems have a plethora of applications: from building other cryptographic tools (e.g., malicious security for MPC protocols) to concrete settings such as private transactions or rollups. In several settings it is important for proof systems to be non-malleable: an adversary should not to be able to modify a proof they have observed into another for a statement for which they do not know the witness. Proof systems that have been deployed in practice should arguably satisfy this notion: it is crucial in settings such as transaction systems and in order to securely compose proofs with other cryptographic protocols. As a consequence, results on non-malleability should keep up with designs of proofs being deployed. Recently, Arun et al. proposed Jolt (Eurocrypt 2024), arguably the first efficient proof system whose architecture is based on the lookup singularity approach (Barry Whitehat, 2022). This approach consists in representing a general computation as a series of table lookups. The final result is a SNARK for a Virtual Machine execution (or SNARK VM). Both SNARK VMs and lookup-singularity SNARKs are architectures with enormous potential and will probably be adopted more and more in the next years (and they already are). As of today, however, there is no literature regarding the non-malleability of SNARK VMs. The goal of this work is to fill this gap by providing both concrete non-malleability results and a set of technical tools for a more general study of SNARK VMs security (as well as modular SNARKs in general). As a concrete result, we study the non-malleability of (an idealized version of) Jolt and its fundamental building block, the lookup argument Lasso. While connecting our new result on the non-malleability of Lasso to that of Jolt, we develop a set of tools that enable the composition of non-malleable SNARKs. We believe this toolbox to be valuable in its own right.",
+    "methodology": "The paper uses cryptographic proofs and formal analysis to establish simulation extractability for SNARK VMs, focusing on Jolt and Lasso. It develops zero-knowledge variants of protocols, proves computational special soundness under discrete logarithm hardness, and introduces composition theorems for commit-and-prove SNARKs. Methods include blinded sum-check protocols, grand product arguments, and memory checking procedures.",
+    "conclusion": "The paper demonstrates that SNARK VMs, specifically an idealized version of Jolt (Joltish), are simulation-extractable under the hardness of discrete logarithm. It provides a toolbox for composing non-malleable SNARKs, enabling secure conjunction and function composition. Key contributions include a simulation-extractable lookup argument (zkLasso) and improved analyses for protocols like HyraxPC, Spartan, and Bulletproofs.",
+    "authors": [
+      "Matteo Campanelli",
+      "Antonio Faonio",
+      "Luigi Russo"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT 2025",
+    "doi": "10.1007/978-3-031-91134-7_6",
+    "bibtex_citation": "Campanelli_SNARKs_2025",
+    "analysis": {
+      "Overview": "The paper studies non-malleability in SNARKs for virtual machines (SNARK VMs), focusing on the Jolt architecture and its lookup argument Lasso. It provides concrete simulation extractability results and general tools for composing non-malleable SNARKs, contributing to cryptographic security for applications like blockchain transactions.",
+      "Background_and_Motivation": [
+        "SNARK VMs are increasingly deployed in practice (e.g., in Cairo-VM, RISC Zero, Scroll's Ceno) but lack formal non-malleability proofs, creating security risks in composed protocols.",
+        "The research aims to address the urgent open problem of non-malleability in SNARK VMs, motivated by vulnerabilities in transaction systems where proof malleability could enable double-spending attacks.",
+        "Authors argue that non-malleability is essential for secure composition with other cryptographic protocols and real-world deployments, highlighting the gap in existing literature despite prior work on simulation extractability for non-VM SNARKs.",
+        "The problem is linked to broader challenges in cryptographic proof systems by showing that SNARK VMs' modular designs require new security analyses, emphasizing significance through potential adoption in high-stakes applications.",
+        "This paper contributes to cryptography, specifically zero-knowledge proofs and succinct arguments, with interdisciplinary relevance to blockchain and secure computation."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Simulation Extractability (SIM-EXT) - security where proofs cannot be mauled even after observing simulated proofs; (2) Lookup Singularity - representing computations via table lookups for efficiency; (3) Commit-and-Prove SNARKs - arguments where witnesses are committed, enabling composition.",
+        "Logical relationships: Lookup singularity enables efficient SNARK VMs like Jolt; SIM-EXT ensures security; commit-and-prove frameworks allow composition of non-malleable sub-SNARKs for VM components.",
+        "Key assumptions: Hardness of discrete logarithm for cryptographic security; decomposable tables for lookup arguments; honest behavior in sub-protocols unless otherwise specified.",
+        "The paper makes a theoretical contribution by extending the knowledge system with new proofs for non-malleability in SNARK VMs and general composition tools, advancing modular SNARK designs."
+      ],
+      "Methodology": [
+        "Core methods include formal cryptographic proofs for simulation extractability, using blinded versions of protocols (e.g., sum-check, HyraxPC) to ensure zero-knowledge. Techniques involve computational special soundness, k-zero-knowledge, and k-unique response properties under Fiat-Shamir transforms.",
+        "Methodology novelty lies in adapting tools from prior work (e.g., Dao and Grubbs) to SNARK VMs, with applicability to Jolt/Lasso and generality for modular compositions. Rationality is supported by reductions to discrete logarithm hardness.",
+        "Data sources are theoretical, relying on polynomial commitments and sparse matrix encodings. Preprocessing involves abstracting VM executions into logical constraints and table lookups. Representativeness is evaluated through formal soundness arguments.",
+        "Experimental design is rigorous, with proofs for each protocol's special soundness and extractability. Evaluation metrics include security reductions and negligible advantage bounds for adversaries, ensuring adequacy.",
+        "The research follows the theoretical paradigm of provable security in cryptography, affecting the perspective by framing all results through formal games and extractors."
+      ],
+      "Results": [
+        "Key results: (1) zkLasso (zero-knowledge Lasso) is simulation-extractable; (2) Joltish (idealized Jolt) is SIM-EXT under discrete log hardness; (3) General composition theorems enable SIM-EXT for conjunctions and function compositions of commit-and-prove SNARKs.",
+        "Results are significant for enabling secure SNARK VMs in practice, with reliability shown through tight security bounds. Stability is supported by the generality of tools, though dependent on cryptographic assumptions."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall argument structure: First, formalize non-malleability gap for SNARK VMs; second, prove SIM-EXT for a representative case (Jolt/Lasso); third, develop general composition tools; finally, extend to broader implications.",
+        "Key steps: Introduce lookup singularity and VM models; prove SIM-EXT for zkLasso via computational special soundness; show composition preserves SIM-EXT; apply to Joltish. Logical links rely on reductions between protocols.",
+        "Strengths include rigorous proofs and novel compositions; weaknesses involve potential copy-paste attacks in naive compositions. Authors address rebuttals by 'gluing' witnesses and using signatures of knowledge for full SIM-EXT."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First SIM-EXT proofs for SNARK VMs; general toolbox for composing non-malleable SNARKs; improved analyses for Spartan/Bulletproofs; efficient zero-knowledge protocols.",
+        "Methodology boundaries: Assumes discrete log hardness; abstracts specific VM details; limited to idealized Jolt. Limitations include reliance on random oracles and potential inefficiency in sequential compositions.",
+        "Theoretical paradigm constraints: Focus on modular SNARKs may overlook non-modular designs; conclusions are tied to commit-and-prove frameworks, limiting applicability to non-committed schemes."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within cryptographic discourse by addressing an urgent gap in SNARK VM security, contrasting with prior non-VM results and citing works like Jolt to establish context.",
+        "Authors use formal terminology (e.g., SIM-EXT, WIT-SAMP) and a technical tone, employing rhetorical strategies like emphasizing 'toolbox' value to highlight contributions. Citations build authority by referencing foundational and recent works.",
+        "Authority is built through extensive citations (e.g., to EUROCRYPT papers) and claims of first results; motivations include advancing adoption by addressing security needs in deployed systems."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: SNARK VMs can be non-malleable under standard assumptions; composition tools enable secure modular designs; zkLasso and Joltish serve as practical case studies with broader implications.",
+        "Future research suggestions: Apply tools to other SNARKs like Spartan; explore efficiency improvements; extend to non-lookup-based VMs; investigate real-world implementations and additional security properties."
+      ]
+    }
+  }
+}

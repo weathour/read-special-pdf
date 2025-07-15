@@ -1,0 +1,81 @@
+{
+  "file_name": "Lawal 等 - 2022 - Physics-Informed Neural Network (PINN) Evolution and Beyond A Systematic Literature Review and Bibl.pdf",
+  "generated_at": "2025-07-14 01:26:19",
+  "structured_info": {
+    "title_cn": "物理信息神经网络（PINN）的演进与超越：系统性文献综述与文献计量分析",
+    "title_en": "Physics-Informed Neural Network (PINN) Evolution and Beyond: A Systematic Literature Review and Bibliometric Analysis",
+    "category": "Machine Learning / Computational Sciences",
+    "topics": [
+      "Physics-Informed Neural Networks",
+      "Partial Differential Equations",
+      "Scientific Computing"
+    ],
+    "keywords": [
+      "physics-informed neural networks (PINNs)",
+      "partial differential equation (PDE)",
+      "loss function",
+      "activation function",
+      "deep learning"
+    ],
+    "abstract": "This research aims to study and assess state-of-the-art physics-informed neural networks (PINNs) from different researchers’ perspectives. The PRISMA framework was used for a systematic literature review, and 120 research articles from the computational sciences and engineering domain were specifically classified through a well-defined keyword search in Scopus and Web of Science databases. Through bibliometric analyses, we have identified journal sources with the most publications, authors with high citations, and countries with many publications on PINNs. Some newly improved techniques developed to enhance PINN performance and reduce high training costs and slowness, among other limitations, have been highlighted. Different approaches have been introduced to overcome the limitations of PINNs. In this review, we categorized the newly proposed PINN methods into Extended PINNs, Hybrid PINNs, and Minimized Loss techniques. Various potential future research directions are outlined based on the limitations of the proposed solutions.",
+    "methodology": "Systematic literature review using the PRISMA framework; bibliometric analysis of 120 articles from Scopus and Web of Science databases focused on computational sciences and engineering.",
+    "conclusion": "PINNs face limitations like high training costs and poor scalability. New techniques (Extended, Hybrid, Minimized Loss PINNs) address these but have their own constraints. Bibliometric analysis shows growing research since 2019, led by the US, China, and Europe. Future work should focus on overcoming new method limitations and expanding applications.",
+    "authors": [
+      "Zaharaddeen Karami Lawal",
+      "Hayati Yassin",
+      "Daphne Teck Ching Lai",
+      "Azam Che Idris"
+    ],
+    "publication_year": "2022",
+    "venue": "Big Data and Cognitive Computing",
+    "doi": "https://doi.org/10.3390/bdcc6040140",
+    "bibtex_citation": "Lawal_PINN_2022",
+    "analysis": {
+      "Overview": "Systematic review and bibliometric analysis of Physics-Informed Neural Networks (PINNs), covering evolution, limitations, newly proposed optimization techniques, and future directions in computational sciences/engineering.",
+      "Background_and_Motivation": [
+        "Research addresses challenges in solving high-dimensional PDEs with traditional numerical methods, which suffer from computational inefficiency and mesh dependency.",
+        "Motivation stems from PINNs' limitations: high training costs, slowness, vanishing gradients, poor scalability, and manual hyperparameter tuning hindering real-time applications.",
+        "Authors emphasize urgency by citing PINNs' failure in specific problems (e.g., phase field models) and their growing importance in weather modeling, healthcare, and manufacturing.",
+        "The specific problem (optimizing PINNs) is linked to the broader challenge of developing efficient, generalizable solvers for complex scientific computing problems.",
+        "Contributes to Machine Learning, Computational Physics, Engineering Mathematics, and Scientific Computing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Physics-Informed Neural Networks (PINNs): Neural networks trained to solve supervised learning tasks while obeying physical laws expressed by PDEs (loss = data loss + physics loss).",
+        "Extended PINNs (e.g., cPINNs, XPINNs): Enhance generalization via domain decomposition or new architectures.",
+        "Hybrid PINNs: Combine PINNs with other architectures (e.g., CNNs, RNNs) for improved performance.",
+        "Implicit assumptions: PDE residuals can be accurately minimized via gradient descent; physical laws are perfectly expressible in the loss function.",
+        "Contribution: Organizes and evaluates novel PINN optimization techniques (Extended, Hybrid, Minimized Loss), providing a taxonomy and bibliometric landscape of the field."
+      ],
+      "Methodology": [
+        "Core methods: PRISMA framework for systematic literature review; bibliometric analysis using Scopus/Web of Science; keyword search ('Physics Informed Neural Network'); classification into Extended, Hybrid, Minimized Loss PINNs.",
+        "Novelty: First systematic review/bibliometric analysis of PINN evolution; categorization of new techniques. Applicability: Focused on computational sciences/engineering. Rationality: PRISMA ensures reproducibility; bibliometrics quantify research impact.",
+        "Data: 120 articles (2019-2022) from Scopus/Web of Science. Preprocessing: Filtered by domain (CS/Engineering/Math/Physics), article type, language (English), removal of duplicates. Representativeness: Limited to two databases; may exclude relevant non-indexed work.",
+        "Experimental design: Descriptive statistics on publications/citations; content analysis of new methods. Evaluation: Bibliometric metrics (citations, publications/year/country) adequate for impact assessment but lack qualitative depth.",
+        "Follows empirical-analytic paradigm: Quantitative bibliometrics combined with qualitative synthesis of techniques. This emphasizes measurable impact but may overlook theoretical nuances."
+      ],
+      "Results": [
+        "Key results: Steady growth in PINN publications (peak in 2021); US, China, Germany lead publications; Raissi et al. (2019) most cited (3442 citations); 'Journal of Computational Physics' most cited venue; Conventional PINNs dominate (80.8%), followed by Extended (10%), Hybrid (5.8%), Minimized Loss (3.3%).",
+        "Significance: Quantifies PINN research growth and impact. Reliability: Based on major databases. Stability: Consistent methodology, but results time-bound (2019-mid 2022)."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: 1) Introduce PINNs and limitations; 2) Detail review methodology; 3) Present bibliometric results; 4) Classify/critique new techniques; 5) Propose future directions.",
+        "Key steps: a) Bibliometrics prove field growth; b) Taxonomy (Extended/Hybrid/Minimized Loss) structures analysis; c) Limitations of new methods justify future work.",
+        "Strengths: Clear taxonomy; data-supported bibliometrics. Weaknesses: Limited critical evaluation of method efficacy. Rebuttals: Addressed by explicitly stating review scope (computational sciences only) and data source limitations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First comprehensive review/bibliometric of PINNs; novel taxonomy for new methods; identification of key researchers/countries/venues; clear future directions.",
+        "Methodology limitations: Database restriction (Scopus/WoS); exclusion of non-English works; bibliometric focus over deep technical critique.",
+        "Theoretical paradigm constraint: Empirical focus on publication metrics may undervalue theoretical innovations not yet highly cited."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Consolidates fragmented PINN optimization research; positions itself as foundational for future work. Discourse: Engages computational science/ML communities.",
+        "Terminology: Technical (e.g., 'residual loss', 'automatic differentiation'); tone: authoritative; rhetoric: Uses bibliometric data (citations/publications) to establish significance.",
+        "Authority building: Heavy citation of pioneers (Raissi et al.) and high-impact journals. Motivation: Legitimizes review by anchoring in established work; highlights knowledge gaps via cited limitations."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: PINNs are impactful but limited; new techniques (Extended/Hybrid/Minimized Loss) address these but introduce new constraints; research is growing rapidly (US/China/Europe leading).",
+        "Future research: Address limitations of new techniques (e.g., parallelize cPINNs, optimize hyperparameters in Hybrid PINNs, extend to multi-fidelity data); explore PINN hybrids (e.g., with GNNs/RNNs); apply to larger/complex domains."
+      ]
+    }
+  }
+}

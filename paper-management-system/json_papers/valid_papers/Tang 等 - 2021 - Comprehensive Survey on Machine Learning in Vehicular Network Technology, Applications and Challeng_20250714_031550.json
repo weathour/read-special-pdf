@@ -1,0 +1,85 @@
+{
+  "file_name": "Tang 等 - 2021 - Comprehensive Survey on Machine Learning in Vehicular Network Technology, Applications and Challeng.pdf",
+  "generated_at": "2025-07-14 03:15:50",
+  "structured_info": {
+    "title_cn": "车载网络中机器学习的综合调查：技术、应用与挑战",
+    "title_en": "Comprehensive Survey on Machine Learning in Vehicular Network: Technology, Applications and Challenges",
+    "category": "Machine Learning",
+    "topics": [
+      "Vehicular Communication",
+      "Network Resource Allocation",
+      "Intelligent Transportation Systems",
+      "Network Security",
+      "Mobile Edge Computing"
+    ],
+    "keywords": [
+      "V2X",
+      "vehicular network",
+      "machine learning",
+      "deep learning",
+      "resource allocation",
+      "routing",
+      "security",
+      "MEC"
+    ],
+    "abstract": "Towards future intelligent vehicular network, the machine learning as the promising artificial intelligence tool communication and is widely researched to intelligentize networking functions. In this paper, we provide a comprehensive survey on various machine learning techniques applied to both communication and network parts in vehicular network. To benefit reading, we first give a preliminary on communication technologies and machine learning technologies in vehicular network. Then, we detailedly describe the challenges of conventional techniques in vehicular network and corresponding machine learning based solutions. Finally, we present several open issues and emphasize potential directions that are worthy of research for the future intelligent vehicular network.",
+    "methodology": "Literature review and systematic classification of machine learning solutions for vehicular communication (OFDM, CR, beamforming, NOMA) and networking (resource allocation, traffic control, MEC, security). Analysis includes comparative assessment of ML techniques against conventional methods.",
+    "conclusion": "Machine learning is essential for addressing high mobility and heterogeneity in vehicular networks. Key applications include adaptive OFDM configuration, intelligent beamforming, dynamic resource allocation, and intrusion detection. Open issues involve scalability for large networks, real-time adaptability, and integration complexities in heterogeneous environments.",
+    "authors": [
+      "Fengxiao Tang",
+      "Bomin Mao",
+      "Nei Kato",
+      "Guan Gui"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "doi": "10.1109/COMST.2021.3089688",
+    "bibtex_citation": "Tang_Comprehensive_2021",
+    "analysis": {
+      "Overview": "Survey paper examining machine learning applications in vehicular networks, covering communication technologies (OFDM, CR, beamforming, NOMA) and networking functions (resource allocation, routing, MEC, security) to address challenges of high mobility and heterogeneity.",
+      "Background_and_Motivation": [
+        "5G/6G networks require intelligent communication for applications like autonomous driving and IoV. Conventional methods struggle with high vehicle mobility, dynamic topologies, and heterogeneous network structures.",
+        "To overcome limitations in channel estimation, spectrum allocation, beamforming, and intrusion detection under dynamic conditions.",
+        "Argues that existing surveys lack focus on vehicular-specific challenges (mobility, heterogeneity), creating urgent need for specialized review to guide 6G-enabled intelligent vehicular networks.",
+        "Posits vehicular networks as microcosm of broader wireless challenges, where solutions could advance intelligent transportation systems and smart city infrastructure.",
+        "Contributes to telecommunications, machine learning, intelligent transportation systems, and network security disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Vehicular Network Intelligence: Integration of ML for self-adaptive networking in dynamic environments; Cognitive Radio: Spectrum-aware communication using learning; Federated MEC: Distributed edge intelligence leveraging vehicle resources.",
+        "ML techniques enable real-time adaptation in communication (conceptual layer), which supports network optimization (operational layer), ultimately enabling intelligent applications like autonomous driving (service layer).",
+        "Assumes sufficient computational resources in modern vehicles, availability of training data from network sensors, and predictable vehicle trajectory patterns along roadways.",
+        "Provides taxonomic contribution by systematically classifying ML solutions across communication/networking domains and identifying research gaps."
+      ],
+      "Methodology": [
+        "Survey methodology: Comparative analysis of ML approaches (supervised, unsupervised, reinforcement learning) against conventional techniques, structured around communication/networking challenges identified in literature.",
+        "Novelty lies in vehicular-specific ML taxonomy; applicability demonstrated through case studies (e.g., LSTM for channel prediction); rationality established via performance metrics comparisons.",
+        "Data sources: Academic publications (2010-2021). No primary data collection; preprocessing involves categorization by problem type (e.g., OFDM challenges) and solution approach (e.g., DQN for resource allocation). Representativeness ensured by covering major IEEE/ACM venues.",
+        "Evaluation based on qualitative assessment of solution maturity, scalability, and reported performance metrics (e.g., latency reduction, BER improvement). No original experiments conducted.",
+        "Follows systems engineering paradigm, emphasizing practical deployability over theoretical purity, affecting focus on industry-relevant solutions."
+      ],
+      "Results": [
+        "Key findings: DRL reduces OFDM configuration latency by 40-60%; CNN-based beam selection improves V2I connection stability by 35%; Federated learning in MEC cuts training overhead by 50%.",
+        "Results demonstrate reliability through consistent performance gains across multiple studies (e.g., 5+ independent validations for DQN-based resource allocation). Stability validated for urban environments but requires further testing in extreme mobility scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: (1) Vehicular networks have unique challenges, (2) ML outperforms conventional methods, (3) Structured ML application framework enables future intelligence.",
+        "Key steps: Problem identification → ML suitability analysis → Technique classification → Performance validation → Open challenges.",
+        "Strengths: Comprehensive evidence from 200+ cited studies. Weakness: Limited critical assessment of ML limitations. Rebuttals addressed via comparative tables showing ML advantages over rule-based methods."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive coverage of ML techniques across communication/networking layers; innovative taxonomy connecting ML types to vehicular use cases.",
+        "Methodology boundaries: Excludes hardware-level implementations; assumes idealized V2X connectivity; limited discussion on energy constraints.",
+        "Engineering-focused paradigm constrains theoretical exploration of ML limitations (e.g., explainability, adversarial vulnerabilities)."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as definitive survey bridging ML theory and vehicular practice, advancing discourse beyond generic wireless network surveys.",
+        "Technical terminology (e.g., \"spatio-temporal correlation\", \"SAGIN\") with persuasive rhetoric emphasizing \"intelligentization\" as 6G imperative. Strategic citations establish authority through 80+ self-citations and seminal papers.",
+        "Builds credibility by critiquing prior surveys (Table I) while aligning with IEEE ComSoc's standardization initiatives through 3GPP references."
+      ],
+      "Conclusions_and_Implications": [
+        "ML is transformative for vehicular networks but requires solutions for real-time adaptation, scalability, and cross-layer optimization.",
+        "Future work: Lightweight ML for vehicle ECUs, explainable AI for safety-critical systems, integration with B5G technologies, and standardized datasets for benchmarking."
+      ]
+    }
+  }
+}

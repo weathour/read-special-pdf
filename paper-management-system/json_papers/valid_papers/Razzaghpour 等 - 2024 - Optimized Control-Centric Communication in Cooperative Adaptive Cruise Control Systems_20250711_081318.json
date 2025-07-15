@@ -1,0 +1,85 @@
+{
+  "file_name": "Razzaghpour 等 - 2024 - Optimized Control-Centric Communication in Cooperative Adaptive Cruise Control Systems.pdf",
+  "generated_at": "2025-07-11 08:13:18",
+  "structured_info": {
+    "title_cn": "优化以控制为中心的通信在协同自适应巡航控制系统中的应用",
+    "title_en": "Optimized Control-Centric Communication in Cooperative Adaptive Cruise Control Systems",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Cooperative Driving",
+      "Distributed Control",
+      "Vehicular Communication"
+    ],
+    "keywords": [
+      "Event-Triggered Communication",
+      "Model-Based Communication",
+      "Vehicle Platooning",
+      "Multi-Agent Systems",
+      "Resource Optimization"
+    ],
+    "abstract": "This study introduces a control-aware communication framework integrating Event-Triggered Communication (ETC) and Model-Based Communication (MBC) for vehicle platooning systems. The approach reduces communication overhead by 47% compared to Time-Triggered Communication while maintaining control accuracy (e.g., <1% speed variation). Using Gaussian Processes for vehicle state prediction and Model Predictive Control, the method balances communication efficiency and platoon performance under packet loss scenarios.",
+    "methodology": "Integration of distributed Event-Triggered Communication (using state-dependent triggering thresholds) with Model-Based Communication (Gaussian Process regression for velocity prediction) and Model Predictive Control for vehicle dynamics optimization.",
+    "conclusion": "The ETC-MBC framework significantly reduces communication frequency without compromising platoon control performance, enabling scalable cooperative driving systems with efficient resource utilization.",
+    "authors": [
+      "Mahdi Razzaghpour",
+      "Shahriar Shahram",
+      "Rodolfo Valiente",
+      "Mahdi Zaman",
+      "Yaser P. Fallah"
+    ],
+    "publication_year": "2024",
+    "venue": "arXiv",
+    "doi": "arXiv:2303.08076v2",
+    "bibtex_citation": "Razzaghpour_Optimized_2024",
+    "analysis": {
+      "Overview": "Proposes a communication-control co-design framework for vehicle platooning that reduces network load while maintaining string stability and safety.",
+      "Background_and_Motivation": [
+        "Increasing density of Connected Autonomous Vehicles strains communication resources",
+        "Traditional Time-Triggered Communication causes suboptimal resource usage and scalability limitations",
+        "Excessive communication causes latency/packet loss, threatening platoon stability and safety",
+        "Vehicle platooning addresses traffic efficiency challenges but requires reliable state information exchange",
+        "Contributes to multi-agent systems, control theory, and vehicular networking"
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Event-Triggered Communication: Data transmission triggered by state deviations exceeding dynamic thresholds",
+          "Model-Based Communication: Gaussian Process regression predicts neighbor states during communication gaps",
+          "Control-Aware Scheduling: Communication frequency adapts to real-time control performance requirements"
+        ],
+        "ETC reduces transmissions → MBC compensates for missing data → Control-aware tuning optimizes resource-performance tradeoff",
+        "Vehicles can run parallel dynamics models of neighbors; communication imperfections are i.i.d.; Gaussian Processes accurately represent vehicle kinematics",
+        "Novel integration of communication triggering with predictive modeling for distributed vehicular control"
+      ],
+      "Methodology": [
+        "Gaussian Process regression for velocity prediction (Radial Basis Function kernel), Model Predictive Control with state-space vehicle dynamics, distributed event-triggering with Minimum Inter-Event Time constraints",
+        "Control-aware triggering dynamically adjusts transmission frequency based on real-time state errors",
+        "Simulated 10-vehicle platoon with PER 0-0.6; 5 latest velocity samples for GP training; Python/CVXPY/Gurobi implementation",
+        "Comparative evaluation against TTC baseline using spacing error, speed/acceleration differences, and communication rate metrics",
+        "Follows distributed multi-agent control paradigm, emphasizing local state information and resilience to communication failures"
+      ],
+      "Results": [
+        "47% communication reduction vs. TTC; <0.309m mean spacing error; <4.7m/s speed difference; maintained safety under 60% packet loss",
+        "Performance degradation proportional to triggering thresholds; end-of-platoon vehicles require more frequent communication"
+      ],
+      "Argumentation_and_Logic": [
+        "Problem (TTC inefficiency) → Solution (ETC-MBC integration) → Validation (simulation metrics)",
+        "1) Establish TTC limitations 2) Formulate ETC triggering conditions 3) Introduce GP-based MBC 4) Integrate with MPC 5) Validate via comparative simulations",
+        "Strength: Quantitative demonstration of resource-performance tradeoff; Weakness: Limited real-world validation; addresses Zeno behavior via Minimum Inter-Event Time"
+      ],
+      "Strengths_and_Limitations": [
+        "Novel ETC-MBC integration; quantifiable communication reduction; resilience to packet loss",
+        "Computational overhead of GP/MPC; simulation-based validation; assumes i.i.d. packet errors",
+        "Distributed paradigm limits global state awareness; GP accuracy depends on training data quality"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between control theory and vehicular networking communities",
+        "Emphasizes 'resource-efficiency', 'scalability', and 'control-awareness'; contrasts 'rigid' TTC with 'adaptive' ETC",
+        "Cites foundational platooning/CACC works to establish significance; leverages SAE standards for practical relevance"
+      ],
+      "Conclusions_and_Implications": [
+        "Integrated ETC-MBC enables communication-efficient platooning with minimal performance degradation",
+        "Investigate computational efficiency; real-world channel modeling; heterogeneous vehicle dynamics; larger-scale evaluations"
+      ]
+    }
+  }
+}

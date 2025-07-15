@@ -1,0 +1,82 @@
+{
+  "file_name": "Wang 等 - 2022 - A Review of Intelligent Connected Vehicle Cooperative Driving Development.pdf",
+  "generated_at": "2025-07-14 03:40:32",
+  "structured_info": {
+    "title_cn": "智能网联汽车协同驾驶发展综述",
+    "title_en": "A Review of Intelligent Connected Vehicle Cooperative Driving Development",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Cooperative Driving",
+      "V2X Technology",
+      "Test Methods"
+    ],
+    "keywords": [
+      "intelligent connected vehicle",
+      "cooperative driving system",
+      "V2X",
+      "communication technology"
+    ],
+    "abstract": "With the development and progress of information technology, especially V2X technology, the research focus of intelligent vehicles gradually shifted from single-vehicle control to multi-vehicle control, and the cooperative control system of intelligent connected vehicles became an important topic of development. In order to track the research progress of intelligent connected vehicle cooperative driving systems in recent years, this paper discusses the current research of intelligent connected vehicle cooperative driving systems with vehicles, infrastructure, and test sites, and analyzes the current development status, development trend, and development limitations of each object. Based on the analysis results of relevant references of the cooperative control algorithm, this paper expounds on vehicle collaborative queue control, vehicle collaborative decision making, and vehicle collaborative positioning. In the case of taking the infrastructure as the object, this paper expounds the communication security, communication delay, and communication optimization algorithm of the vehicle terminal and the road terminal of intelligent connected vehicles. In the case of taking the test site as the object, this paper expounds the development process and research status of the real vehicle road test platform, virtual test platform, test method, and evaluation mechanism, and analyzes the problems existing in the intelligent connected vehicle test environment. Finally, the future development trend and limitations of intelligent networked vehicle collaborative control system are discussed. This paper summarizes the intelligent connected car collaborative control system, and puts forward the next problems to be solved and the direction of further exploration. The research results can provide a reference for the cooperative driving of intelligent vehicles.",
+    "methodology": "Systematic literature review using Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) guidelines, including literature search across databases (Google Academic, Web of Science, IEEE Xplore, etc.), screening, quality assessment with scoring metrics, and narrative synthesis.",
+    "conclusion": "The paper summarizes the current status, limitations, and future trends of intelligent connected vehicle cooperative driving systems, emphasizing the importance of V2X and collaborative technologies for improving safety, efficiency, and addressing challenges in multi-vehicle control.",
+    "authors": [
+      "Biyao Wang",
+      "Yi Han",
+      "Siyu Wang",
+      "Di Tian",
+      "Mengjiao Cai",
+      "Ming Liu",
+      "Lujia Wang"
+    ],
+    "publication_year": "2022",
+    "venue": "Mathematics",
+    "doi": "https://doi.org/10.3390/math10193635",
+    "bibtex_citation": "Wang_Review_2022",
+    "analysis": {
+      "Overview": "This paper reviews the development of intelligent connected vehicle cooperative driving systems, focusing on cooperative control algorithms, communication technologies, and test methods. It covers vehicle collaborative queue control, collaborative decision making, collaborative positioning, communication security, communication delay, and real/virtual test platforms, with an analysis of current status, trends, and limitations.",
+      "Background_and_Motivation": [
+        "The research addresses broader challenges in intelligent transportation, such as inaccurate sensor readings, limited detection distance, blind spots, high computational costs, and lack of predictive mechanisms in single-vehicle systems.",
+        "The motivation is to enhance safety, efficiency, and comfort by shifting from single-vehicle to multi-vehicle control through V2X-enabled cooperation, solving problems like traffic congestion and environmental pollution.",
+        "The authors argue for necessity and urgency by highlighting the inefficiencies and risks of existing single-vehicle approaches and the demonstrated benefits of cooperative systems in projects like SAFESPOT and PATH, which improve road capacity and safety.",
+        "The specific problem of cooperative driving is linked to the broader challenge of intelligent transportation by emphasizing how vehicle-infrastructure collaboration enables comprehensive perception and decision-making, overcoming individual sensor limitations.",
+        "This paper contributes to interdisciplinary fields including Automotive Engineering, Computer Science (especially V2X and control algorithms), and Transportation Engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Cooperative Driving - multi-vehicle coordination for stable geometry and movement; (2) V2X Technology - communication between vehicles, infrastructure, and networks for real-time information sharing; (3) Collaborative Control - algorithms for queue formation, decision-making, and positioning to optimize traffic flow and safety.",
+        "Logical relationships: V2X facilitates communication, enabling collaborative control (e.g., queue management and decision-making), which drives cooperative driving. Infrastructure and test platforms support validation and implementation.",
+        "Key assumptions include reliable communication with minimal delays, availability of supportive infrastructure (e.g., roadside units), and the feasibility of multi-vehicle coordination in dynamic environments.",
+        "The paper makes a review-based contribution by synthesizing existing knowledge, identifying gaps, and proposing future directions, advancing the field's understanding without introducing new empirical innovations."
+      ],
+      "Methodology": [
+        "Core methods involve a systematic literature review following PRISMA guidelines, with searches in databases like Google Scholar and Web of Science, focusing on keywords related to cooperative control, communication, and testing.",
+        "The methodology is novel in its comprehensive coverage of multiple aspects (vehicles, infrastructure, tests), applicable for tracking progress in intelligent transportation, and rational due to structured screening and quality scoring to ensure rigor.",
+        "Data sources include academic papers from databases; characteristics involve heterogeneous studies on cooperative driving; preprocessing includes eliminating duplicates, subject screening, and quality scoring (e.g., using a 22-point scale based on clarity, design suitability, and analysis completeness). Representativeness is evaluated through narrative synthesis, though limited to literature meeting quality thresholds.",
+        "Experimental design is not primary; instead, evaluation metrics for literature quality assess motivation clarity, hypothesis statement, and result reporting. Rigor is maintained through dual-author verification and consensus for scoring discrepancies.",
+        "The research follows the systematic review paradigm, emphasizing evidence synthesis over specific theoretical schools, which supports a broad perspective but may constrain depth in technical analysis."
+      ],
+      "Results": [
+        "Key results include advancements in vehicle platoon control (e.g., model predictive control for stability), collaborative decision-making for intersection efficiency, and cooperative positioning techniques (e.g., combining GNSS with sensors for accuracy); communication security methods (e.g., homomorphic encryption) and delay mitigation strategies are also summarized.",
+        "Results are significant for improving traffic safety and efficiency but reliability depends on literature quality; stability is variable due to environmental factors like communication delays, as noted in reviewed studies."
+      ],
+      "Argumentation_and_Logic": [
+        "The overall argument structure progresses from problem introduction to literature review on cooperative control, communication, and testing, concluding with trends and limitations.",
+        "Key steps: (1) Establish background on single-vehicle limitations; (2) Present PRISMA-based method for literature analysis; (3) Detail cooperative control algorithms; (4) Discuss communication security and delays; (5) Evaluate test platforms; (6) Summarize findings and future directions. Logical links connect V2X to enhanced control and testing needs.",
+        "Strengths include comprehensive coverage and structured synthesis; weaknesses are potential selection bias from database reliance. The authors address rebuttals by using quality scoring to filter studies and narrative analysis to handle heterogeneity."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Thorough review of multiple dimensions (algorithms, communication, testing), clear organization, and identification of future research gaps.",
+        "Limitations include reliance on literature (may miss recent developments), focus on theoretical aspects over real-world validation, and potential heterogeneity in reviewed studies affecting generalizability.",
+        "The choice of systematic review paradigm constrains conclusions to synthesized knowledge rather than new empirical insights, limiting practical applicability without further testing."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper engages in the disciplinary discourse by reviewing state-of-the-art in intelligent vehicles, positioning itself as a synthesis of progress to guide future research.",
+        "Terminology includes technical terms like 'V2X', 'CACC', and 'collaborative positioning'; tone is academic and informative; rhetorical strategies involve citing authoritative projects (e.g., SAFESPOT, PATH) and using figures to illustrate concepts.",
+        "Authority is built through extensive citations of prior work, with motivations including establishing credibility and contextualizing the review within existing research trajectories."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the current maturity in cooperative algorithms and communication, but persistent issues like delays, security vulnerabilities, and test platform scalability; future trends point to 5G integration and edge computing.",
+        "Future research should address communication delays, improve positioning accuracy in dynamic environments, develop standardized test methods, and explore AI for enhanced decision-making and resource management."
+      ]
+    }
+  }
+}

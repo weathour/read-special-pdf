@@ -1,0 +1,80 @@
+{
+  "file_name": "Zang 等 - 2020 - A Priority-Based Cross-Layer Design for Future VANETs Through Full-Duplex Technology.pdf",
+  "generated_at": "2025-07-14 13:01:36",
+  "structured_info": {
+    "title_cn": "基于优先级的全双工技术未来VANET跨层设计",
+    "title_en": "A Priority-Based Cross-Layer Design for Future VANETs Through Full-Duplex Technology",
+    "category": "Vehicular Communications",
+    "topics": [
+      "VANETs",
+      "Full-Duplex Technology",
+      "MAC Protocol"
+    ],
+    "keywords": [
+      "Full Duplex",
+      "DSRC",
+      "V2X",
+      "VANETs",
+      "IEEE 802.11p",
+      "connected vehicles"
+    ],
+    "abstract": "Among all requirements for vehicle-to-everything (V2X) communications, successful delivery of packets with small delay is of the highest significance. Especially, the delivery of a message before a potential accident (i.e. emergency message) should be guaranteed. In this work, we propose a novel cross-layer design to enhance the delivery of emergency messages so that accidents can be further avoided. Particularly, in the PHY layer, imperfect full-duplex (FD) simultaneous transmitting and sensing is analysed and dynamic thresholds for determining the channel status before and during transmissions are mathematically formulated. Then a novel FD MAC protocol, named priority-based multiple access (PBMA), based on prioritised messaging between different vehicles is proposed. Average collision probability, collision duration, waiting time as well as successful delivery rate of the system are formulated too. The delivery performance of emergency messages is also mathematically derived. In addition, comparisons have been made among three different mechanisms. Benchmark is the DSRC standard which uses half-duplex (HD) technology with enhanced distributed channel access (EDCA) protocol. We also compare our proposed protocol with FD EDCA. Simulations have verified the accuracy of our analysis. They have also illustrated the delivery of emergency messages has been enhanced by deploying our proposed design.",
+    "methodology": "The paper proposes a cross-layer design involving PHY and MAC layers. In the PHY layer, imperfect full-duplex (FD) simultaneous transmitting and sensing is analyzed with dynamic thresholds. A novel FD MAC protocol, named priority-based multiple access (PBMA), is introduced to prioritize messaging between different vehicles. Mathematical formulations for collision probability, collision duration, waiting time, and successful delivery rate are derived.",
+    "conclusion": "The proposed PBMA design significantly improves the delivery of critical and emergency messages compared to DSRC and FD EDCA methods. It achieves higher system throughput and ensures timely delivery of safety-critical messages, thereby reducing the risk of accidents. The design works effectively even with imperfect self-interference cancellation (SIC).",
+    "authors": [
+      "Junwei Zang",
+      "Vahid Towhidlou",
+      "Mohammad-Reza Shikh-Bahaei"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2020.2993923",
+    "bibtex_citation": "Zang_Priority-Based_2020",
+    "analysis": {
+      "Overview": "The paper presents a cross-layer design for future vehicular ad-hoc networks (VANETs) using full-duplex (FD) technology to enhance the delivery of emergency messages. It addresses the limitations of current DSRC standards by introducing dynamic thresholds for channel sensing and a novel MAC protocol (PBMA) to prioritize safety messages.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of ensuring timely delivery of emergency messages in V2X communications to prevent accidents.",
+        "Current DSRC standards suffer from degraded performance in dense networks and lack effective prioritization for emergency messages.",
+        "The authors argue that FD technology can enable simultaneous transmission and sensing, improving collision detection and message prioritization.",
+        "The problem is significant as delayed or lost emergency messages increase accident risks in intelligent transportation systems (ITS).",
+        "The paper contributes to vehicular communications and wireless networking disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include Full-Duplex (FD) technology, Priority-Based Multiple Access (PBMA), and dynamic thresholding for channel sensing.",
+        "FD enables simultaneous transmission and sensing, PBMA prioritizes messages, and dynamic thresholds optimize sensing accuracy.",
+        "Assumptions include imperfect FD sensing, Poisson-distributed vehicles, and Rayleigh fading channels.",
+        "The paper contributes a novel MAC protocol and mathematical models for VANET performance metrics."
+      ],
+      "Methodology": [
+        "The methodology involves PHY-layer analysis of FD sensing with dynamic thresholds and MAC-layer design of PBMA.",
+        "Novelty lies in the integration of FD technology with prioritized messaging. Applicability is demonstrated through simulations.",
+        "Data sources include SUMO for vehicle mobility and MATLAB for PHY/MAC simulations. Parameters are representative of real-world VANETs.",
+        "Experimental design includes comparisons with DSRC and FD EDCA, using metrics like collision probability and throughput.",
+        "The research follows a theoretical paradigm of cross-layer optimization in wireless networks."
+      ],
+      "Results": [
+        "Key results show PBMA reduces collision probability and waiting time for emergency messages compared to DSRC and FD EDCA.",
+        "Results are reliable as they are validated through simulations and mathematical derivations."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with problem identification, proposes a solution (PBMA), and validates it through analysis and simulations.",
+        "Logical steps include PHY-layer threshold derivation, MAC protocol design, and performance evaluation.",
+        "Strengths include comprehensive analysis and simulation validation. Weaknesses include assumptions like perfect synchronization."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel PBMA protocol, dynamic thresholding, and compatibility with DSRC.",
+        "Limitations: Assumes perfect synchronization and does not address hidden node problem fully.",
+        "Theoretical constraints include reliance on Poisson distribution for vehicle placement."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within VANET research by addressing gaps in DSRC standards.",
+        "Terminology includes technical terms like 'self-interference cancellation' and 'collision probability'.",
+        "Citations build authority by referencing prior work in FD and VANETs."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: PBMA enhances emergency message delivery and system throughput.",
+        "Future research could explore real-world implementation and address hidden node problems."
+      ]
+    }
+  }
+}

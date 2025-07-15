@@ -1,0 +1,82 @@
+{
+  "file_name": "Sohail 等 - 2023 - Routing protocols in Vehicular Adhoc Networks (VANETs) A comprehensive survey.pdf",
+  "generated_at": "2025-07-11 03:57:56",
+  "structured_info": {
+    "title_cn": "车载自组织网络（VANET）路由协议：全面综述",
+    "title_en": "Routing protocols in Vehicular Adhoc Networks (VANETs): A comprehensive survey",
+    "category": "Networking",
+    "topics": [
+      "Vehicular Adhoc Networks",
+      "Routing Protocols",
+      "Intelligent Transportation Systems"
+    ],
+    "keywords": [
+      "VANET",
+      "Routing protocols",
+      "Internet of vehicles"
+    ],
+    "abstract": "Vehicular Ad-hoc Networks (VANETs) are pivotal for realizing smart cities vision due to their rich services in road traffic safety, surveillance, traffic control, and traffic monitoring. However, vehicle links are subject to frequent disconnections due to high mobility, sparse connectivity, road-side obstacles, and a shortage of roadside units. For this purpose, various routing protocols have been proposed in the literature leveraging the network's topology, the vehicles' positions, and the message dissemination mechanism, i.e., unicast, multicast, broadcast, etc. This paper comprehensively surveys the VANETs routing protocols and analyzes their working principles, architecture, and application areas. Additionally, it presents a taxonomy and a systematic classification of these protocols based on various performance metrics. Furthermore, it presents a critical comparison of these routing protocols according to different criteria, identifies critical shortcomings in each protocol type, and outlines new directions and recent trends in the design of routing protocols.",
+    "methodology": "Comprehensive literature review, taxonomy development, systematic classification, and critical comparative analysis of VANET routing protocols.",
+    "conclusion": "The paper identifies that position-based routing protocols generally outperform other types in VANETs but highlights persistent challenges such as network disconnectivity, delayed data delivery, and QoS issues. It emphasizes the need for protocols adaptable to high mobility and sparse networks, suggesting future integration with 5G/V2X technologies.",
+    "authors": [
+      "Muhammad Sohail",
+      "Zohaib Latif",
+      "Shahzeb Javed",
+      "Sujit Biswas",
+      "Sahar Ajmal",
+      "Umer Iqbal",
+      "Mohsin Raza",
+      "Abd Ullah Khan"
+    ],
+    "publication_year": "2023",
+    "venue": "Internet of Things journal",
+    "doi": "10.1016/j.iot.2023.100837",
+    "bibtex_citation": "Sohail_Routing_2023",
+    "analysis": {
+      "Overview": "The paper surveys routing protocols in Vehicular Adhoc Networks (VANETs), classifying them into topology-based, position-based (DTN/Non-DTN/hybrid), anycast, multicast, and broadcast categories. It analyzes their architectures, working principles, and application areas while comparing performance metrics like packet delivery ratio, end-to-end delay, and overhead.",
+      "Background_and_Motivation": [
+        "VANETs enable critical smart city applications (traffic safety, collision avoidance) but suffer from frequent link disconnections due to high vehicle mobility, sparse networks, and roadside obstacles.",
+        "To address unreliable communication, diverse routing protocols leveraging topology, position data, and dissemination mechanisms (unicast/multicast/broadcast) have emerged, requiring systematic evaluation.",
+        "The rise of autonomous vehicles and Intelligent Transportation Systems (ITS) underscores the urgency for robust, low-latency routing solutions to ensure real-time data exchange for safety-critical decisions.",
+        "Unreliable VANET communication impedes broader smart transportation goals; this survey establishes significance by linking protocol deficiencies to real-world challenges like accident prevention and traffic efficiency.",
+        "Contributes to networking, vehicular communication, and interdisciplinary ITS fields."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) VANETs: Infrastructure-less networks for V2V/V2I communication; (2) Routing protocols: Algorithms for path selection (e.g., topology-based proactive/reactive, position-based DTN/Non-DTN); (3) Taxonomy: Hierarchical classification based on protocol functionality, metrics, and application context.",
+        "Protocols are logically grouped by operational paradigm (e.g., topology → proactive/reactive/hybrid; position → beacon/non-beacon). Performance is evaluated against mobility, density, and QoS requirements.",
+        "Key assumptions: Vehicles use GPS for positioning; IEEE 802.11p is the primary communication standard; network topologies are highly dynamic.",
+        "Provides a structured knowledge framework through taxonomy, identifies research gaps, and catalogs innovations (e.g., predictive routing in DTN protocols)."
+      ],
+      "Methodology": [
+        "Literature review and comparative analysis: Protocols are dissected by working principles, architecture, and performance in simulations (e.g., NS-2, SUMO).",
+        "Novelty lies in comprehensive taxonomy and multi-criteria classification; applicability is validated through real-world VANET constraints (mobility, scalability); rationality is ensured via systematic protocol evaluation.",
+        "Data sources: Academic literature (cited protocols) and standardization documents (IEEE, ETSI). Preprocessing involves categorizing protocols by features. Representativeness is limited to studied protocols and simulation-based validations.",
+        "Experimental rigor: Simulations vary across studies (e.g., urban/highway scenarios); metrics (packet delivery ratio, delay) are standard but lack unified testing conditions.",
+        "Aligns with network engineering paradigms, emphasizing protocol design and performance optimization, shaping focus on technical metrics over societal impacts."
+      ],
+      "Results": [
+        "Topology-based protocols (e.g., OLSR, AODV) struggle with high mobility but excel in stability; position-based DTN protocols (e.g., GeOpps) handle disconnections via store-carry-forward; Non-DTN protocols (e.g., GyTAR) prioritize low latency in dense networks.",
+        "Results are significant for protocol selection (e.g., position-based outperforms topology-based in mobility); reliability varies by context (e.g., AODV reliable in urban, not highway); stability depends on mechanism (e.g., multipath routing in AOMDV enhances robustness)."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: Problem context → protocol classification → detailed analysis → comparison → future directions.",
+        "Key steps: (1) Establish VANET challenges; (2) Classify protocols; (3) Analyze strengths/weaknesses per category; (4) Compare via tables; (5) Identify limitations and trends.",
+        "Strengths: Clear taxonomy enables systematic analysis. Weaknesses: Limited critique of simulation limitations; rebuttals to protocol deficiencies are addressed via future trends (e.g., 5G integration)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive taxonomy, critical protocol comparisons, identification of standardization gaps, and future directions (e.g., 5G/V2X integration).",
+        "Methodology boundaries: Relies on existing simulations with inconsistent parameters; does not propose new protocols.",
+        "Theoretical constraints: Focus on technical metrics (QoS) overlooks socioeconomic factors; standardization-centric view may underemphasize emerging AI/ML approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as an authoritative survey within VANET/ITS discourse, bridging protocol design and practical deployment needs.",
+        "Technical terminology (e.g., 'greedy forwarding', 'beaconing'); objective tone; rhetorical emphasis on classification rigor and knowledge gaps.",
+        "Citations establish credibility (e.g., IEEE/ETSI standards) and contextualize protocols; motivations include consolidating fragmented research and guiding standardization."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: No single protocol universally addresses VANET challenges; position-based protocols show promise, especially with predictive elements. Standardization (e.g., IEEE 802.11p) remains central, but 5G/V2X integration is emerging.",
+        "Future research: Enhance scalability via clustering; improve position-based protocols for urban obstacles; address security; leverage 5G ultra-reliability; develop hybrid AI/ML-enhanced routing solutions."
+      ]
+    }
+  }
+}

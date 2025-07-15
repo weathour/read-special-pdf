@@ -1,0 +1,84 @@
+{
+  "file_name": "Tan 等 - 2024 - Adaptive Task Scheduling in Digital Twin Empowered Cloud-Native Vehicular Networks.pdf",
+  "generated_at": "2025-07-14 12:53:49",
+  "structured_info": {
+    "title_cn": "数字孪生赋能的云原生车联网中的自适应任务调度",
+    "title_en": "Adaptive Task Scheduling in Digital Twin Empowered Cloud-Native Vehicular Networks",
+    "category": "Vehicular Networks",
+    "topics": [
+      "Digital Twin",
+      "Cloud-Native",
+      "Task Scheduling"
+    ],
+    "keywords": [
+      "Intelligent driving",
+      "digital twin",
+      "vehicular networks",
+      "cloud-native",
+      "task scheduling"
+    ],
+    "abstract": "Intelligent driving has advanced significantly in recent decades, paving the path for the transportation of the future. Digital twin (DT) technology, which can bridge the physical and virtual space gaps in real time, plays an important role in the collaboration of vehicles and roads for intelligent driving. In this paper, we design the Digital Twin empowered Cloud-native Vehicular Networks (DT-CVN) architecture as well as the workflow for task execution aiming at executing intelligent driving tasks efficiently and reliably. In DT-CVN, we propose a design and implementation scheme for digital twins, in which different modules of the same digital twin entity can be deployed in different network locations in a distributed manner by taking advantage of the distributed features of microservices based on cloud-native technology. Furthermore, we design the modules reuse and requests aggregation mechanisms of digital twins invocation for task scheduling in DT-CVN, which can improve its efficiency even further. Then we model the task scheduling in DT-CVN into a combinational optimization problem and propose a deep reinforcement learning (DRL) based adaptive task scheduling algorithm. Simulation results show that the proposed scheme can improve the efficiency of task scheduling while reducing energy consumption.",
+    "methodology": "Deep Reinforcement Learning (DRL) based adaptive task scheduling algorithm (DQTS) for optimizing task execution efficiency and energy consumption in a cloud-native vehicular network.",
+    "conclusion": "The proposed DT-CVN architecture and DQTS algorithm outperform other methods in terms of task execution efficiency, system reliability, and resource utilization. Future work will consider the scheduling of dependent tasks in intelligent driving scenarios.",
+    "authors": [
+      "Xiaobin Tan",
+      "Mingyang Wang",
+      "Tao Wang",
+      "Quan Zheng",
+      "Jun Wu",
+      "Jian Yang"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2024.3362841",
+    "bibtex_citation": "Tan_Adaptive_2024",
+    "analysis": {
+      "Overview": "The paper proposes a novel digital twin implementation and deployment scheme within a cloud-native vehicular network (DT-CVN) to enhance task execution efficiency and reliability for intelligent driving. It introduces a DRL-based task scheduling algorithm (DQTS) to optimize task execution time and energy consumption.",
+      "Background_and_Motivation": [
+        "Current intelligent driving focuses on single vehicle intelligence, which suffers from limited onboard perception and computing capabilities.",
+        "The research aims to address the inefficiency in vehicle collaboration and task execution in vehicular networks by leveraging digital twin technology and cloud-native architectures.",
+        "The authors highlight the necessity of distributed digital twin implementation to improve system scalability and efficiency, contrasting with monolithic approaches that limit performance.",
+        "The paper connects the specific problem of task scheduling in vehicular networks to broader challenges in intelligent driving, emphasizing the role of digital twins in virtual-real fusion.",
+        "The work contributes to the fields of vehicular networks, edge computing, and digital twin technology."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Digital Twin (DT): A high-fidelity digital replica of physical entities enabling real-time virtual-real fusion.",
+        "Cloud-Native: A paradigm leveraging microservices for distributed and scalable deployment of digital twin modules.",
+        "Task Scheduling: A combinational optimization problem solved via DRL to enhance efficiency and reduce energy consumption.",
+        "The logical relationship involves using digital twins to model vehicular networks, cloud-native for deployment, and DRL for optimization.",
+        "Key assumptions include the modularity of digital twins, real-time data availability, and the feasibility of microservice-based deployment.",
+        "The paper contributes a novel architecture and algorithm to the knowledge system of vehicular networks and edge computing."
+      ],
+      "Methodology": [
+        "Core methods include the design of DT-CVN architecture, module reuse and request aggregation mechanisms, and a DQN-based task scheduling algorithm.",
+        "The novelty lies in the distributed implementation of digital twins and the adaptive DRL-based scheduling. The methodology is applicable to dynamic vehicular environments and is rational given the constraints.",
+        "Data sources include simulation datasets from real-world vehicular scenarios, preprocessed for task scheduling evaluation.",
+        "Experimental design includes comparative studies with heuristic algorithms, ensuring rigor through metrics like execution time, energy consumption, and deadline meet ratio.",
+        "The research follows a reinforcement learning paradigm, affecting the perspective by focusing on adaptive optimization in dynamic environments."
+      ],
+      "Results": [
+        "Key results show that DT-CVN improves task execution efficiency (93% deadline meet ratio) and resource utilization (91%) compared to traditional VECN (72% and 63%).",
+        "The DQTS algorithm outperforms heuristic methods in reducing execution time and energy consumption, demonstrating reliability and stability across varying task loads."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument begins with the limitations of current vehicular networks, introduces digital twins and cloud-native as solutions, and culminates in the DQTS algorithm.",
+        "Key steps include problem formulation, architecture design, algorithm development, and experimental validation.",
+        "Strengths include comprehensive experimental validation; weaknesses may include assumptions about real-time data availability. Potential rebuttals are addressed through comparative studies."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel distributed digital twin implementation, efficient task scheduling algorithm, and improved system scalability.",
+        "Limitations: Assumes ideal real-time data synchronization and may not fully address dependent task scheduling.",
+        "The choice of DRL constrains conclusions to scenarios where training data and dynamic adaptation are feasible."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on vehicular networks and digital twins, emphasizing innovation in distributed deployment.",
+        "Terminology includes technical terms like 'microservices' and 'virtual-real fusion,' with a formal tone. Rhetorical strategies include comparative analysis and empirical validation.",
+        "Authority is built through citations of foundational works in digital twins and vehicular networks, with motivations tied to practical applications in intelligent driving."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the effectiveness of DT-CVN and DQTS in improving task scheduling efficiency and energy consumption.",
+        "Future research should explore dependent task scheduling and further optimize the DRL algorithm for real-world deployment."
+      ]
+    }
+  }
+}

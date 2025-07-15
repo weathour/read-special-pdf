@@ -1,0 +1,78 @@
+{
+  "file_name": "Sharma和Liu - 2022 - A hybrid science-guided machine learning approach for modeling chemical processes A review.pdf",
+  "generated_at": "2025-07-14 12:49:47",
+  "structured_info": {
+    "title_cn": "化学过程建模的混合科学引导机器学习方法：综述",
+    "title_en": "A Hybrid Science-Guided Machine Learning Approach for Modeling Chemical Processes: A Review",
+    "category": "Chemical Engineering",
+    "topics": [
+      "Hybrid Modeling",
+      "Machine Learning",
+      "Chemical Process Modeling"
+    ],
+    "keywords": [
+      "Science-Guided Machine Learning",
+      "Hybrid Models",
+      "Chemical Engineering",
+      "Bioprocessing",
+      "Process Optimization"
+    ],
+    "abstract": "This study presents a broad perspective of hybrid process modeling combining the scientific knowledge and data analytics in bioprocessing and chemical engineering with a science-guided machine learning (SGML) approach. We divide the approach into two major categories: ML complements science, and science complements ML. We review the literature relating to the hybrid SGML approach, and propose a systematic classification of hybrid SGML models. For applying ML to improve science-based models, we present expositions of direct serial and parallel hybrid modeling and their combinations, inverse modeling, reduced-order modeling, quantifying uncertainty in the process and even discovering governing equations of the process model. For applying scientific principles to improve ML models, we discuss the science-guided design, learning and refinement. For each sub-category, we identify its requirements, strengths and limitations, together with their published and potential applications. We also present several examples to illustrate different hybrid SGML methodologies for modeling chemical processes.",
+    "methodology": "The paper reviews and classifies hybrid SGML methodologies into two major categories: ML complements science (direct hybrid modeling, inverse modeling, reduced-order modeling, quantifying uncertainty, discovering governing equations) and science complements ML (science-guided design, learning, refinement). It provides detailed expositions of each sub-category, including their requirements, strengths, limitations, and applications.",
+    "conclusion": "The hybrid SGML approach integrates scientific knowledge with data analytics to improve the accuracy and scientific consistency of chemical process models. The paper presents a systematic classification of hybrid SGML models, highlighting their applications in bioprocessing and chemical engineering. It identifies unexplored themes and methodologies, such as using scientific knowledge to improve ML model architecture, and illustrates their potential through industrial examples.",
+    "authors": [
+      "Niket Sharma",
+      "Y. A. Liu"
+    ],
+    "publication_year": "2021",
+    "venue": "AspenTech Center of Excellence in Process System Engineering, Department of Chemical Engineering, Virginia Polytechnic Institute and State University",
+    "doi": null,
+    "bibtex_citation": "Sharma_Hybrid_2021",
+    "analysis": {
+      "Overview": "The paper reviews hybrid science-guided machine learning (SGML) approaches for modeling chemical processes, focusing on integrating scientific knowledge with data analytics. It classifies methodologies into ML complementing science and science complementing ML, providing detailed expositions and industrial examples.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of modeling complex physiochemical systems where detailed scientific knowledge is insufficient or assumptions lead to knowledge gaps.",
+        "The motivation is to integrate science-based and data-based models for accurate and scientifically consistent predictions, overcoming limitations of standalone ML models (e.g., overfitting, inconsistency).",
+        "The authors argue for the necessity of hybrid SGML by highlighting the limitations of first-principles models (knowledge gaps) and ML models (black-box nature, data requirements).",
+        "The paper relates the specific problem of chemical process modeling to broader challenges in scientific discovery and industrial optimization, emphasizing interdisciplinary contributions.",
+        "The paper contributes to chemical engineering, bioprocessing, and machine learning, with applications in fluid mechanics, quantum physics, climate science, and more."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Hybrid SGML (integration of science and ML), (2) Direct hybrid modeling (series, parallel, combined configurations), (3) Science-guided design (using scientific principles to improve ML).",
+        "The logical relationship involves using ML to enhance science-based models (e.g., parameter estimation, uncertainty quantification) and using science to guide ML (e.g., model architecture, consistency).",
+        "Key assumptions: Scientific knowledge can be formalized into models, and ML can learn patterns from data to complement or refine these models.",
+        "The paper contributes a systematic classification of hybrid SGML methodologies, expanding beyond direct combinations of first-principles and ML models."
+      ],
+      "Methodology": [
+        "Core methods: Direct hybrid modeling (series, parallel, combined), inverse modeling, reduced-order modeling, uncertainty quantification, and governing equation discovery.",
+        "Novelty lies in the broad classification and exposition of hybrid SGML, including less explored themes like science-guided ML refinement.",
+        "Data sources include industrial process data, simulation data, and experimental data. Preprocessing involves feature augmentation and parameter estimation.",
+        "Experimental design is rigorous, with examples from industrial applications (e.g., polymer manufacturing, hydrocracking). Evaluation metrics focus on prediction accuracy and scientific consistency.",
+        "The research follows a hybrid modeling paradigm, integrating first-principles modeling with data-driven approaches, influenced by theory-guided data science."
+      ],
+      "Results": [
+        "Key results include improved prediction accuracy and scientific consistency in industrial applications (e.g., polymer processes, hydrocracking).",
+        "Results are significant for process optimization, control, and scale-up, with demonstrated reliability in industrial settings."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure: (1) Identify limitations of standalone models, (2) Propose hybrid SGML as a solution, (3) Classify methodologies, (4) Provide industrial examples.",
+        "Key steps: Review of literature, classification of methodologies, exposition of sub-categories, illustrative examples.",
+        "Strengths: Comprehensive classification, practical examples. Weaknesses: Complexity of some methodologies may limit adoption."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Broad perspective on hybrid SGML, systematic classification, industrial applications, identification of unexplored themes.",
+        "Limitations: Some methodologies are complex and may require simplification for wider adoption. Theoretical paradigms may constrain conclusions to specific domains.",
+        "The choice of hybrid modeling paradigm emphasizes integration but may overlook purely data-driven or purely first-principles approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on hybrid modeling in chemical engineering, emphasizing the integration of science and ML.",
+        "Terminology includes 'hybrid SGML', 'science-guided design', and 'grey-box modeling'. The tone is technical and authoritative, with extensive citations.",
+        "Authors build authority through citations to foundational works and industrial applications, demonstrating practical relevance."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Hybrid SGML improves accuracy and consistency in chemical process modeling, with potential for broader applications in scientific discovery and industrial optimization.",
+        "Future research should explore simplifying complex methodologies, expanding applications, and integrating new ML techniques."
+      ]
+    }
+  }
+}

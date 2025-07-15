@@ -1,0 +1,84 @@
+{
+  "file_name": "Li 等 - 2021 - Grey-box modeling and application for building energy simulations - A critical review.pdf",
+  "generated_at": "2025-07-10 04:53:10",
+  "structured_info": {
+    "title_cn": "灰箱建模及其在建筑能源模拟中的应用——一项批判性回顾",
+    "title_en": "Grey-box modeling and application for building energy simulations - A critical review",
+    "category": "Building Energy Modeling",
+    "topics": [
+      "Grey-box Modeling",
+      "Building Energy Simulation",
+      "Thermal Network Analysis"
+    ],
+    "keywords": [
+      "Grey-box modeling",
+      "Resistance-capacitance model",
+      "Thermal-network model",
+      "Reduced-order model",
+      "Building energy model"
+    ],
+    "abstract": "Grey-box modeling, as one of the three fundamental modeling techniques for building energy models, has many advantages compared with black-box modeling and white-box modeling. It has been widely applied to solve problems of building technologies, such as building load estimation, control and optimization, and building-grid integration. However, a thorough review of grey-box modeling is not available. This review study systematically investigated various aspects of grey-box modeling for buildings. First, the fundamental aspects of grey-box modeling are presented, including the theoretical background, modeling of building elements, modeling order, modeling diagram, and order reduction. Second, the detailed modeling approaches are discussed. Third, multiple applications of grey-box modeling are investigated for building energy domain, which are categorized into the following groups: heat dynamics analysis, thermal load estimation, building control and optimization, district urban scale energy modeling, and building-grid integration. Finally, the available software packages for grey-box modeling are compared. Overall, the challenges of using grey-box modeling can be summarized as follows: (1) the theoretical limitations and assumptions of grey-box modeling are unclear; (2) grey-box model naming convention and structure are confusing; (3) grey-box model creation is vague; (4) suitable applications of grey-box models are unknown; and (5) grey-box models lack unified software solutions for wider adoption.",
+    "methodology": "Systematic literature review analyzing RC (Resistance-Capacitance) model fundamentals, creation approaches (forward and inverse), order reduction techniques, applications, and software tools.",
+    "conclusion": "Grey-box modeling shows significant potential for building energy applications but faces five key challenges: unclear theoretical limitations, confusing naming conventions, vague model creation processes, undefined suitable applications, and lack of unified software. Future work should address these gaps to enable wider adoption.",
+    "authors": [
+      "Yanfei Li",
+      "Zheng O'Neill",
+      "Liang Zhang",
+      "Jianli Chen",
+      "Piljae Im",
+      "Jason DeGraw"
+    ],
+    "publication_year": "2021",
+    "venue": "Renewable and Sustainable Energy Reviews",
+    "doi": "10.1016/j.rser.2021.111174",
+    "bibtex_citation": "Li_Grey-box_2021",
+    "analysis": {
+      "Overview": "This paper provides a comprehensive review of grey-box modeling, specifically Resistance-Capacitance (RC) models, for building energy simulations. It covers fundamentals, modeling approaches, applications across building technologies, and available software tools.",
+      "Background_and_Motivation": [
+        "Building energy consumption exceeds industrial/transportation use in the US, accounting for 75% of electricity and 40% of total national energy, driving urgency for efficient modeling solutions.",
+        "Addresses the lack of computationally efficient yet physically interpretable models for applications like load estimation, control optimization, and building-grid integration.",
+        "Argues that existing white-box models are computationally expensive while black-box models lack interpretability, creating a critical gap for grey-box approaches.",
+        "Positions grey-box modeling as essential for emerging challenges like urban-scale energy modeling and fault detection identified by ASHRAE and the US Department of Energy.",
+        "Contributes to building science, control systems, and energy informatics through interdisciplinary integration of thermodynamics and data-driven methods."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concept 1: Grey-box modeling - Hybrid approach combining physical principles with data-driven parameter estimation.",
+        "Core concept 2: Resistance-Capacitance (RC) networks - Represent building thermal dynamics using electrical analogies (resistors for thermal resistance, capacitors for heat capacity).",
+        "Core concept 3: Model Order Reduction (MOR) - Techniques to simplify high-order models while preserving key dynamics.",
+        "Assumes uniform zone temperatures, negligible long-wave radiation, and constant convective loads. Implicitly assumes linear heat transfer dynamics in standard RC formulations.",
+        "Provides the first systematic taxonomy of grey-box modeling fundamentals/applications, establishing a reference framework for the field."
+      ],
+      "Methodology": [
+        "Core methods include forward approaches (deriving parameters from physical properties) and inverse approaches (data-driven parameter identification using regression/system identification).",
+        "Methodology novelty lies in comprehensive categorization of RC model structures (e.g., xRyC naming), creation workflows, and reduction techniques across literature.",
+        "Data sources comprise published experimental and simulation studies; representativeness is ensured through inclusion of diverse building types and validation against tools like EnergyPlus/TRNSYS.",
+        "Experimental rigor is limited by the review nature but evaluated via reported errors (<5% in validated cases) and cross-study consistency checks.",
+        "Follows physics-based modeling paradigm but incorporates data-driven elements, balancing first-principles with empirical adaptability."
+      ],
+      "Results": [
+        "Identifies five major application domains: heat dynamics analysis (wall/window modeling), thermal load estimation (single/multi-zone), control optimization (MPC strategies), district energy modeling, and building-grid integration.",
+        "Results demonstrate RC models achieve <5% error in load estimation and enable 20-40% energy savings in control applications, with computational speeds 100x faster than white-box models for district-scale simulations.",
+        "Findings show reliability across climates and building types, though accuracy depends on model order (e.g., 3R2C sufficient for most cases). Stability concerns arise mainly in multi-zone configurations with unmeasured disturbances."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: 1) Establish grey-box advantages over alternatives; 2) Systematize RC modeling fundamentals; 3) Classify applications; 4) Evaluate software; 5) Conclude with challenges.",
+        "Key logical steps: Problem significance → Methodology gaps → Technical decomposition (structure/creation/applications) → Synthesis of limitations → Future imperatives.",
+        "Strengths: Coherent taxonomy resolves terminology confusion; Weaknesses: Limited meta-analysis of quantitative results. Rebuttals addressed via 100+ citation synthesis."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First comprehensive review establishing RC model standards; Practical insights for control/optimization; Explicit software comparison.",
+        "Methodology limitations: Forward approaches require detailed physical inputs; Inverse approaches need high-quality data. Order reduction constrains accuracy in complex radiative/convictive systems.",
+        "Theoretical paradigm restricts conclusions to lumped-parameter systems, excluding computational fluid dynamics or detailed radiation effects."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational synthesis to unify fragmented research, using authoritative tone through 118 citations of experimental/validation studies.",
+        "Employs standardized terminology (e.g., xRyC, MOR) and critical rhetoric (e.g., 'confusing', 'vague') to highlight field deficiencies. Builds credibility through DOE/Oak Ridge National Lab institutional affiliations.",
+        "Citation strategy emphasizes gaps in prior reviews while aligning with ISO/ASHRAE standards to establish normative frameworks."
+      ],
+      "Conclusions_and_Implications": [
+        "Concludes that grey-box modeling effectively balances accuracy and speed for key applications but requires urgent resolution of five core challenges, particularly software standardization.",
+        "Recommends future work: Develop unified RC modeling software, establish theoretical boundaries for assumptions, define application-specific model orders, and expand validation across building types."
+      ]
+    }
+  }
+}

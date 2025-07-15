@@ -1,0 +1,82 @@
+{
+  "file_name": "Tang 等 - 2025 - Deep Reinforcement Learning for Robotics A Survey of Real-World Successes.pdf",
+  "generated_at": "2025-07-11 09:12:13",
+  "structured_info": {
+    "title_cn": "机器人中的深度强化学习：实际成功案例调查",
+    "title_en": "Deep Reinforcement Learning for Robotics: A Survey of Real-World Successes",
+    "category": "Robotics",
+    "topics": [
+      "Deep Reinforcement Learning",
+      "Robotics",
+      "Real-World Applications"
+    ],
+    "keywords": [
+      "Deep Reinforcement Learning",
+      "Robotics",
+      "Survey",
+      "Taxonomy",
+      "Real-World Success"
+    ],
+    "abstract": "Reinforcement learning (RL), particularly its combination with deep neural networks referred to as deep RL (DRL), has shown tremendous promise across a wide range of applications, suggesting its potential for enabling the development of sophisticated robotic behaviors. Robotics problems, however, pose fundamental difficulties for the application of RL, stemming from the complexity and cost of interacting with the physical world. This overview article provides a concise summary of our recently released survey paper 'Deep Reinforcement Learning for Robotics: A Survey of Real-World Successes', which has been accepted for publication in Annual Review of Control, Robotics, and Autonomous Systems. The survey paper provides a modern survey of DRL for robotics, with a particular focus on evaluating the real-world successes achieved with DRL in realizing several key robotic competencies. Our analysis aims to identify the key factors underlying those exciting successes, reveal underexplored areas, and provide an overall characterization of the status of DRL in robotics. We highlight several important avenues for future work, emphasizing the need for stable and sample-efficient real-world RL paradigms, holistic approaches for discovering and integrating various competencies to tackle complex long-horizon, open-world tasks, and principled development and evaluation procedures. The survey is designed to offer insights for both RL practitioners and roboticists toward harnessing RL's power to create generally capable real-world robotic systems.",
+    "methodology": "Literature survey and taxonomy development, involving categorization of DRL solutions along four axes: robot competencies learned with DRL, problem formulation, solution approach, and level of real-world success. The methodology includes comparative analysis of existing works to assess maturity and identify patterns.",
+    "conclusion": "DRL has achieved real-world successes in specific robotic competencies like locomotion and navigation, often through zero-shot sim-to-real transfer, but maturity varies across domains with limited success in areas like human-robot interaction. Key open challenges include improving stability and sample-efficiency of RL algorithms, enabling real-world learning, and developing holistic approaches for complex tasks. The survey provides a comprehensive characterization to guide future research toward deployable DRL solutions.",
+    "authors": [
+      "Chen Tang",
+      "Ben Abbatematteo",
+      "Jiaheng Hu",
+      "Rohan Chandra",
+      "Roberto Martín-Martín",
+      "Peter Stone"
+    ],
+    "publication_year": "2025",
+    "venue": "Annual Review of Control, Robotics, and Autonomous Systems",
+    "doi": "arXiv:2408.03539",
+    "bibtex_citation": "Tang_Deep_2025",
+    "analysis": {
+      "Overview": "The paper surveys the application of deep reinforcement learning in robotics, focusing on evaluating real-world successes across key robotic competencies, developing a novel taxonomy, and identifying open challenges to advance deployable solutions.",
+      "Background_and_Motivation": [
+        "Reinforcement learning and deep RL have demonstrated significant capabilities in domains like games and healthcare, but applying them to robotics faces challenges due to the complexity and cost of real-world interactions, such as safety concerns and simulation inaccuracies.",
+        "The motivation is to assess the current state of DRL in real-world robotics, identify factors behind successes, and uncover underexplored areas to address the gap between simulation achievements and practical deployment.",
+        "The authors argue for the necessity and urgency by highlighting the varying maturity of DRL solutions across robotic domains, with some successes (e.g., drone racing) but persistent limitations in complex applications like autonomous driving, emphasizing the need for systematic evaluation.",
+        "They relate the specific problem of DRL application in robotics to the broader challenge of developing generally capable autonomous systems, establishing significance through the potential for transformative impacts in automation and AI integration.",
+        "This paper contributes to the disciplines of Robotics, Artificial Intelligence, and Machine Learning, with interdisciplinary links to control systems and human-robot interaction."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include: 1) Robot competencies (categorized as single-robot competencies like mobility and manipulation, and multi-agent competencies like human-robot interaction), 2) Problem formulation (defined by action space, observation space, and reward function), 3) Solution approach (encompassing simulator usage, model learning, and policy optimization), and 4) Level of real-world success (a six-tier metric from simulation-only to commercial deployment).",
+        "The logical relationships involve categorizing DRL solutions by competencies to evaluate formulation and approach, which collectively determine the level of real-world success, enabling comparative analysis across domains.",
+        "Key assumptions include that real-world validation is feasible and reportable in literature, DRL is applicable to diverse robotic tasks, and the taxonomy can objectively capture maturity despite potential subjectivity.",
+        "The paper makes a conceptual contribution by introducing a novel taxonomy for categorizing and evaluating DRL in robotics, advancing the knowledge system through a modern, comprehensive survey that identifies trends, gaps, and future directions."
+      ],
+      "Methodology": [
+        "Core methods involve a literature review structured around a four-axis taxonomy, with papers categorized by robotic competencies, problem formulation, solution approach, and real-world success level, followed by comparative analysis to derive insights.",
+        "The methodology is novel due to the original taxonomy focusing on real-world success, applicable to diverse robotic problems, and rational in its systematic approach to assessing maturity, though subjectivity in success levels is acknowledged.",
+        "Data sources are existing published papers, with characteristics derived from reported experiments; representativeness is evaluated based on the breadth of surveyed domains, but limitations include reliance on authors' descriptions which may omit details.",
+        "The review lacks experimental design but uses defined evaluation metrics (e.g., levels of success); rigor comes from comprehensive coverage, though adequacy is constrained by incomplete experimental reporting in sources.",
+        "The research follows the reinforcement learning theoretical paradigm, particularly deep RL, which influences the perspective by framing robotics problems as optimization of policies through trial-and-error, emphasizing algorithm selection and simulation transfer."
+      ],
+      "Results": [
+        "Key results indicate that DRL excels in locomotion and navigation using zero-shot sim-to-real transfer with dense rewards, achieves moderate success in manipulation with demonstrations, but has sparse success in human-robot interaction due to safety and complexity issues.",
+        "The results are significant for guiding future research, reliable as they stem from a broad survey, but stability is variable across domains, with mature areas showing robustness and less mature ones highlighting instability."
+      ],
+      "Argumentation_and_Logic": [
+        "The overall argument structure progresses from problem introduction to taxonomy development, literature review by competency, analysis of success factors, and conclusion with future work.",
+        "Key steps include defining the taxonomy's necessity, applying it to categorize works, contrasting solutions to identify patterns, and deriving open challenges, with logical links between competency categorization and success evaluation.",
+        "Strengths include comprehensive logic supported by the taxonomy; weaknesses involve potential subjectivity in success assessment, addressed by defining clear levels and acknowledging information limits; potential rebuttals on coverage gaps are mitigated by focusing on real-world cases."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel taxonomy, focus on real-world deployment, and identification of key factors behind successes, offering a timely update to prior surveys.",
+        "Limitations of the methodology include subjectivity in assigning success levels, narrow focus on successes potentially overlooking failures, and inability to cover all robotic sub-domains exhaustively.",
+        "The choice of RL paradigm constrains conclusions by emphasizing algorithmic solutions over alternative approaches, potentially overlooking non-RL methods, and limiting generalizability to non-learning-based robotics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself as an update to outdated surveys, filling gaps by focusing on real-world successes and providing new perspectives, thus advancing discourse in RL for robotics.",
+        "Authors use specific terminology like 'competencies' and 'levels of success,' adopt an authoritative tone with citations to seminal works, and employ rhetorical strategies such as contrasting with prior surveys to highlight novelty.",
+        "Authority is built through extensive citations of foundational and recent works, with motivations including establishing credibility, contextualizing contributions, and guiding the community toward unresolved challenges."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions are that DRL has real-world successes in specific competencies but faces challenges in sample efficiency, real-world learning, and complex tasks; future work should focus on stable algorithms, holistic integration, and principled evaluations.",
+        "Suggestions include developing more sample-efficient RL paradigms, exploring foundation models, and creating benchmarks for real-world success to enable broader deployment."
+      ]
+    }
+  }
+}

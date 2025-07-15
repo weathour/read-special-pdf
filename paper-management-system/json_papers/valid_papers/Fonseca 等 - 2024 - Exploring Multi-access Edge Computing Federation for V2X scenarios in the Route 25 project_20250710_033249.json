@@ -1,0 +1,93 @@
+{
+  "file_name": "Fonseca 等 - 2024 - Exploring Multi-access Edge Computing Federation for V2X scenarios in the Route 25 project.pdf",
+  "generated_at": "2025-07-10 03:32:49",
+  "structured_info": {
+    "title_cn": "探索Route 25项目中V2X场景的多接入边缘计算联盟",
+    "title_en": "Exploring Multi-access Edge Computing Federation for V2X scenarios in the Route 25 project",
+    "category": "Telecommunications",
+    "topics": [
+      "Multi-access Edge Computing (MEC)",
+      "MEC Federation (MECF)",
+      "Vehicle-to-Everything (V2X)"
+    ],
+    "keywords": [
+      "Multi-Access Edge Computing (MEC)",
+      "MEC Federation (MECF)",
+      "Vehicle-to-Everything (V2X)",
+      "Beyond 5G Networks (B5G)"
+    ],
+    "abstract": "This document provides an overall overview of the ongoing work in the Route 25 project, focusing on the support provided by mobile network communications for deploying Cooperative, Connected, and Automated Mobility (CCAM) applications. By emphasizing the existing 5G and Multi-access Edge Computing (MEC) infrastructure, the paper explores a range of Vehicle-to-Everything (V2X) use cases targeted by the project. The focal point is on the architectural considerations essential for enabling the MEC Federation (MECF) to support the project’s distinct V2X scenarios effectively. The manuscript concludes with an insightful analysis of research and technical challenges, offering valuable contributions to the evolving field of V2X communication in the context of MECF.",
+    "methodology": "Architectural design and analysis based on ETSI MEC standards, use case exploration, and requirements gathering from industry specifications (ETSI, 5GAA, GSMA). Proposes high-level architecture with three layers (Application, Network Service, Infrastructure) and business relationship models for MECF.",
+    "conclusion": "MECF enables seamless cooperation between Mobile Network Operators for V2X scenarios. The proposed architecture addresses specific Route 25 use cases but faces implementation challenges due to limited open-source solutions compliant with ETSI standards. Future validation through Proof-of-Concept implementations is needed.",
+    "authors": [
+      "João Fonseca",
+      "David Santos",
+      "Emanuel Vieira",
+      "João Silva",
+      "Pedro Escaleira",
+      "Ricardo Rodriguez",
+      "João Almeida",
+      "José Quevedo",
+      "Pedro Rito",
+      "Bruno Parreira",
+      "Daniel Corujo",
+      "Joaquim Ferreira",
+      "Marco Araújo",
+      "Susana Sargento"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 IEEE 22nd Mediterranean Electrotechnical Conference (MELECON)",
+    "doi": "10.1109/MELECON56669.2024.10608613",
+    "bibtex_citation": "Fonseca_Exploring_2024",
+    "analysis": {
+      "Overview": "Presents architectural framework for Multi-access Edge Computing Federation (MECF) to support Vehicle-to-Everything (V2X) communications in the Route 25 project, focusing on 5G infrastructure and cooperative mobility applications.",
+      "Background_and_Motivation": [
+        "Rising demand for Cooperative, Connected and Automated Mobility (CCAM) with stringent latency/availability requirements in V2X communications",
+        "Need to overcome limitations of single Mobile Network Operator (MNO) infrastructures through resource sharing",
+        "Standardization gaps in MECF implementation despite ETSI specifications create deployment urgency",
+        "V2X service continuity in multi-MNO scenarios represents broader challenge of cross-domain edge resource coordination",
+        "Telecommunications, edge computing, vehicular networks, and IoT systems"
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "MEC Federation (MECF): Collaboration of multiple MEC domains from different operators to share resources/services",
+          "Digital Twins (DTs): Virtual representations of physical vehicles in MEC nodes enabling cooperative maneuvers",
+          "V2X Service Continuity: Seamless operation across heterogeneous network infrastructures"
+        ],
+        "MECF enables DT deployment → DTs reduce wireless communication latency → Enhanced V2X service continuity",
+        "Existing 5G/MEC infrastructure extensibility; ETSI standards provide implementable foundation; Operator willingness to federate",
+        "Practical/architectural contribution through implementable framework for MEC-enabled V2X services"
+      ],
+      "Methodology": [
+        "Standards-based architectural design (ETSI, GSMA), use case-driven requirements analysis, layered architecture proposal",
+        "Novel in applying MECF to specific V2X scenarios; Applicable to real deployments; Rational through standards alignment",
+        "References industry specifications (ETSI GS MEC003, GSMA APIs) without empirical datasets",
+        "No experimental validation; Evaluation based on alignment with 3GPP/5GAA requirements",
+        "Follows ETSI MEC standardization paradigm, emphasizing interoperability and telecom industry practices"
+      ],
+      "Results": [
+        "High-level architecture with Application/Network Service/Infrastructure layers; Business relationship models (Mesh/Broker)",
+        "Conceptual significance for multi-operator V2X; Reliability dependent on unimplemented standards; Stability untested"
+      ],
+      "Argumentation_and_Logic": [
+        "Problem (V2X multi-operator challenges) → Solution (MECF) → Implementation (Architecture) → Validation (Future PoC)",
+        "1) Single-MNO limitations → 2) MECF benefits → 3) Route 25 use cases → 4) Proposed architecture → 5) Implementation challenges",
+        "Strength: Standards-aligned practical approach; Weakness: Lack of implementation evidence; Rebuttals addressed through ETSI reference"
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive integration of ETSI standards with practical V2X scenarios; Clear business relationship models",
+        "Lack of open-source MECF solutions; Untested data plane connectivity; Dependency on unimplemented ETSI APIs",
+        "Telecom standardization paradigm constrains solutions to current industry capabilities rather than fundamental innovation"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances telecom industry discourse on MEC implementation, bridging standardization and real-world deployment",
+        "Technical terminology (MECF, vOBU, SLAs); Persuasive urgency through 5GAA/ETSI citations; Solution-oriented tone",
+        "Authority built through 28 ETSI/3GPP/5GAA references; Motivation: Demonstrate practical applicability of standards"
+      ],
+      "Conclusions_and_Implications": [
+        "MECF enables cross-operator V2X services but requires PoC validation; Architecture must address data/KPI sharing and SLA chaining",
+        "Develop ETSI-compliant open-source MECF solutions; Test architecture with live V2X datasets; Explore 6G integration"
+      ]
+    }
+  }
+}

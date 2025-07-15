@@ -1,0 +1,81 @@
+{
+  "file_name": "Tang 等 - 2024 - ERACAN Defending Against an Emerging CAN Threat Model.pdf",
+  "generated_at": "2025-07-11 01:54:29",
+  "structured_info": {
+    "title_cn": "ERACAN：防御新兴的CAN威胁模型",
+    "title_en": "ERACAN: Defending Against an Emerging CAN Threat Model",
+    "category": "Network Security",
+    "topics": [
+      "Automotive Security",
+      "Controller Area Network",
+      "Intrusion Detection Systems"
+    ],
+    "keywords": [
+      "Automotive Security",
+      "Controller Area Network",
+      "Intrusion Detection"
+    ],
+    "abstract": "The Controller Area Network (CAN) is a pivotal communication protocol extensively utilized in vehicles, aircraft, factories, and diverse cyber-physical systems (CPSs). Recent research reveals that conventional security models (CRAM) are outdated, and an Enhanced Remote Attacker Model (ERAM) with expanded capabilities is emerging. ERACAN is introduced as the first comprehensive defense system against ERAM, offering detection, classification, and optional prevention. It employs a dedicated monitor node with an FPGA controller for link-layer surveillance and smart physical-layer feature checks. Evaluations on a testbed and real vehicle demonstrate 100% detection for CRAM attacks and 99.7-100% for ERAM attacks with low latency.",
+    "methodology": "Threat analysis of ERAM capabilities; Design of a monitor node using FPGA for autonomous link-layer surveillance and time/voltage sensors for physical-layer monitoring; Smart selective feature checking; Implementation and evaluation on testbed and real vehicle CAN bus.",
+    "conclusion": "ERACAN effectively defends against ERAM threats with high detection rates (100% for CRAM, 99.7-100% for ERAM), real-time operation, and attack classification. It addresses critical gaps in CAN security through novel delegation to FPGA and adaptive feature modeling.",
+    "authors": [
+      "Zhaozhou Tang",
+      "Khaled Serag",
+      "Saman Zonouz",
+      "Z. Berkay Celik",
+      "Dongyan Xu",
+      "Raheem Beyah"
+    ],
+    "publication_year": "2024",
+    "venue": "Proceedings of the 2024 ACM SIGSAC Conference on Computer and Communications Security (CCS '24)",
+    "doi": "https://doi.org/10.1145/3658644.3690267",
+    "bibtex_citation": "Tang_ERACAN_2024",
+    "analysis": {
+      "Overview": "ERACAN proposes a defense system against Enhanced Remote Attacker Model (ERAM) threats in Controller Area Networks, addressing vulnerabilities beyond conventional security models through real-time monitoring of link and physical layers.",
+      "Background_and_Motivation": [
+        "CAN's decades-long use created a false sense of security, relying on outdated threat models (CRAM) with limited attacker capabilities.",
+        "ERAM attackers exploit ECU vulnerabilities to gain link-layer control, enabling new attacks and evading existing defenses.",
+        "The absence of ERAM-focused defenses poses urgent risks to vehicles and CPS; ERAM capabilities demonstrably bypass current IDSs.",
+        "ERAM exacerbates broader CPS security challenges by allowing low-level signal manipulation, making it a critical evolution in automotive threat landscapes.",
+        "Contributes to automotive cybersecurity, network security, and cyber-physical system protection."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Enhanced Remote Attacker Model (ERAM): Attackers with full link-layer control via peripheral remapping (e.g., GPIO).",
+        "ERACAN System: Combines FPGA-based link-layer monitoring with smart physical-layer feature validation.",
+        "Threat delegation: Offloads intricate link-layer surveillance to customizable FPGA hardware.",
+        "Assumes attackers abide by physical-layer rules but control upper layers; relies on distinct ECU physical fingerprints (e.g., asymmetry).",
+        "Provides a novel defense paradigm and open-source FPGA design, advancing intrusion detection for evolving CAN threats."
+      ],
+      "Methodology": [
+        "Core: FPGA controller for real-time link-layer event tracking; TDC/ADC sensors for bit-timing/voltage measurements; cryptographic model recreation.",
+        "Novelty: First ERAM defense; FPGA delegation ensures parallelism/reliability; smart checking reduces computational load.",
+        "Data: Collected from testbed (5 ECUs) and 2011 Chevy Impala. Features include bit-period, asymmetry, voltage variance; modeled via online Gaussian updates.",
+        "Rigorous evaluation: Detection rates, false positives, latency under 100% bus load; compared against evasion tactics.",
+        "Follows intrusion detection system (IDS) paradigm, emphasizing real-time anomaly detection in resource-constrained environments."
+      ],
+      "Results": [
+        "100% CRAM attack detection; 99.7-100% ERAM detection (e.g., frame hijacking, synchronization disruption); 98.8-100% classification accuracy.",
+        "Results are highly reliable (low false positives: 0-0.04%) and stable across environmental variations; prevention effective for integrity-compromising attacks."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Motivates ERAM necessity → analyzes capabilities → designs ERACAN → validates security/performance → concludes impact.",
+        "Key steps: Establish ERAM's superiority over CRAM; derive required monitoring features; address challenges via FPGA delegation; prove efficacy through experiments.",
+        "Strengths: Comprehensive threat coverage; hardware-efficient design. Weaknesses: Assumes physical-layer compliance. Rebuttals: Analyze evasion difficulty (e.g., propagation delay uncertainties)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First ERAM defense; high detection/classification; real-time prevention; open-source FPGA; minimal hardware changes.",
+        "Limitations: Does not detect payload corruption by compromised ECUs; false positives in error-handling attacks (0.02-0.04%).",
+        "Theoretical constraints: IDS focus limits protection against application-layer attacks; physical-layer assumptions may not hold if attackers control >8 ECUs."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as a critical response to an evolving threat; frames ERAM as an inevitable shift requiring new defenses.",
+        "Technical terminology (e.g., 'bit-period', 'asymmetry'); urgent tone emphasizing vulnerability; strategic citations legitimize ERAM capabilities.",
+        "Builds authority by addressing prior defense shortcomings and open-sourcing solutions; citation motivations include contrasting with obsolete CRAM-focused work."
+      ],
+      "Conclusions_and_Implications": [
+        "ERACAN fills a critical gap in CAN security, offering robust protection against ERAM with minimal overhead.",
+        "Future work: Integrate payload inspection; reduce false positives; extend to multi-bus systems; explore environmental adaptability."
+      ]
+    }
+  }
+}

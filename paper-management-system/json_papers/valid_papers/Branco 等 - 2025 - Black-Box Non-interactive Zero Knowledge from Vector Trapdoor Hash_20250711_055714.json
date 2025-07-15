@@ -1,0 +1,83 @@
+{
+  "file_name": "Branco 等 - 2025 - Black-Box Non-interactive Zero Knowledge from Vector Trapdoor Hash.pdf",
+  "generated_at": "2025-07-11 05:57:14",
+  "structured_info": {
+    "title_cn": "基于向量陷门哈希的黑盒非交互零知识证明",
+    "title_en": "Black-Box Non-interactive Zero Knowledge from Vector Trapdoor Hash",
+    "category": "Cryptography",
+    "topics": [
+      "Zero-Knowledge Proofs",
+      "Trapdoor Hash Functions",
+      "Lattice-Based Cryptography"
+    ],
+    "keywords": [
+      "Non-interactive Zero-Knowledge",
+      "Vector Trapdoor Hash",
+      "LWE",
+      "DDH",
+      "LPN",
+      "Statistical Soundness"
+    ],
+    "abstract": "We present a new approach for constructing non-interactive zero-knowledge (NIZK) proof systems from vector trapdoor hashing (VTDH)—a generalization of trapdoor hashing [Döttling et al., Crypto 19]. Unlike prior applications of trapdoor hash to NIZKs, we use VTDH to realize the hidden bits model [Feige-Lapidot-Shamir, FOCS 90] leading to black-box constructions of NIZKs. This approach gives us the following new results: A statistically-sound NIZK proof system based on the hardness of decisional Diffie-Hellman (DDH) and learning parity with noise (LPN) over finite fields with inverse polynomial noise rate. This gives the first statistically sound NIZK proof system that is not based on either LWE, or bilinear maps, or factoring. A dual-mode NIZK satisfying statistical zero-knowledge in the common random string mode and statistical soundness in the common reference string mode assuming the hardness of learning with errors (LWE) with polynomial modulus-to-noise ratio. This gives the first black-box construction of such a dual-mode NIZK under LWE. This improves the recent work of Waters (STOC 24) which relied on LWE with super-polynomial modulus-to-noise ratio and required a setup phase with private coins. The above constructions are black-box and satisfy single-theorem zero-knowledge property. Building on the works of Feige et al. (FOCS 90) and Fischlin and Rohrback (PKC 21), we upgrade these constructions (under the same assumptions) to satisfy multi-theorem zero-knowledge property at the expense of making non-black-box use of cryptography.",
+    "methodology": "Constructs vector trapdoor hash (VTDH) to realize hidden bits generators (HBG) for NIZKs; presents cryptographic reductions and instantiations based on LWE with polynomial modulus-to-noise ratio, and DDH combined with LPN over finite fields.",
+    "conclusion": "VTDH enables efficient black-box NIZK constructions under standard assumptions: (1) First statistically sound NIZK without LWE, bilinear maps, or factoring; (2) First black-box dual-mode NIZK from LWE with polynomial modulus-to-noise ratio, improving prior super-polynomial requirements.",
+    "authors": [
+      "Pedro Branco",
+      "Arka Rai Choudhuri",
+      "Nico Döttling",
+      "Abhishek Jain",
+      "Giulio Malavolta",
+      "Akshayaram Srinivasan"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "10.1007/978-3-031-91134-7_3",
+    "bibtex_citation": "Branco_Black-Box_2025",
+    "analysis": {
+      "Overview": "Proposes vector trapdoor hash (VTDH) to build hidden bits generators for non-interactive zero-knowledge (NIZK) proofs, achieving black-box constructions under DDH+LPN and LWE assumptions.",
+      "Background_and_Motivation": [
+        "NIZKs traditionally rely on heavy techniques like bilinear maps or lattice trapdoors; prior approaches (HBG/CIH) have limitations in black-box use or assumption strength.",
+        "Motivated by simplifying NIZK constructions and achieving statistical soundness from weaker assumptions without non-black-box techniques.",
+        "Argues necessity via gaps in existing frameworks: CIH requires non-black-box cryptography, while Waters' LWE-based HBG needs super-polynomial modulus-to-noise ratios.",
+        "Links specific problem (efficient NIZKs) to broader challenge (practical cryptographic protocols) by enabling simpler, assumption-optimized designs.",
+        "Contributes to cryptography, theoretical computer science, and interdisciplinary fields like lattice-based and coding-theoretic cryptography."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Vector Trapdoor Hash (VTDH): Generalizes trapdoor hash with multi-key local openings; (2) Hidden Bits Generator (HBG): Realized via VTDH for NIZKs; (3) Dual-Mode NIZK: Switches between statistical ZK and soundness modes.",
+        "Logical network: VTDH → HBG → NIZK; dual-mode leverages LWE's structure for transparent setup.",
+        "Key assumptions: Pseudorandomness of LWE/DDH-LPN; error resilience in binding; min-entropy preservation for hiding.",
+        "Contributes novel frameworks: First black-box NIZK from DDH+LPN; first efficient dual-mode NIZK from LWE. Advances knowledge by reducing reliance on homomorphic encryption or lattice trapdoors."
+      ],
+      "Methodology": [
+        "Core methods: VTDH constructions from LWE (polynomial modulus) and DDH-LPN (reverse randomization with resilient functions); security via cryptographic reductions.",
+        "Novelty: VTDH-to-HBG transformation is black-box; LWE instantiation avoids lattice trapdoors; DDH-LPN uses Ajtai-Linial resilient functions for binding.",
+        "Data: Theoretical; no empirical data. Preprocessing involves sampling LWE matrices or group elements; representativity ensured via hardness assumptions.",
+        "Experimental rigor: Security proofs under standard assumptions (LWE/DDH-LPN); binding uses Chernoff bounds over error positions. Evaluation metrics: Statistical soundness, zero-knowledge, and succinctness.",
+        "Follows theoretical cryptography paradigm: Reductions to hard problems; formalism affects rigor but may limit practical immediacy."
+      ],
+      "Results": [
+        "Key results: (1) Statistically sound NIZK from DDH+LPN (first without LWE/bilinear maps/factoring); (2) Dual-mode NIZK from LWE (polynomial modulus, black-box).",
+        "Significance: Expands NIZK assumption landscape; reliability via statistical binding/hiding; stability ensured via error-correction (LPN) and parameter tuning."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Introduces VTDH → shows HBG implication → instantiates VTDH for LWE/DDH-LPN → upgrades to multi-theorem ZK.",
+        "Key steps: VTDH binding via Hamming-ball sparsity; hiding via LWE/DDH-LPN pseudorandomness; dual-mode via LWE's common random string.",
+        "Strengths: Modular reductions; addresses Waters' limitation (super-polynomial LWE) via transparent setup. Weaknesses: Multi-theorem ZK still non-black-box; rebuttals handled via error tolerance in binding."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Black-box constructions; new statistical soundness results; dual-mode flexibility; eliminates lattice trapdoors in LWE proof.",
+        "Methodology limitations: Binding has error probability; DDH-LPN requires multiple repetitions; succinctness constrains hash size.",
+        "Theoretical constraints: Resilient functions in DDH-LPN limit output balance; LWE modulus bounds affect practicality."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances NIZK discourse by unifying HBG/CIH paradigms; positions as simpler alternative to Waters/Peikert-Shiehian.",
+        "Terminology: Formal cryptographic definitions; technical tone; rhetorical emphasis on 'first' and 'black-box' to highlight novelty.",
+        "Citations: Authority built via Feige-Lapidot-Shamir (HBG), Waters (LWE-NIZK), and Döttling (trapdoor hash); motivations include improving efficiency/assumption strength."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: VTDH enables efficient black-box NIZKs under standard assumptions; DDH-LPN and LWE instantiations overcome prior limitations.",
+        "Future work: Optimize parameters for practicality; extend to other assumptions (e.g., isogenies); explore resilient function improvements."
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_name": "Shaheed和Qureshi - 2024 - A hybrid proposed image quality assessment and enhancement framework for finger vein recognition.pdf",
+  "generated_at": "2025-07-10 02:39:15",
+  "structured_info": {
+    "title_cn": "一种混合提出的用于指静脉识别的图像质量评估与增强框架",
+    "title_en": "A hybrid proposed image quality assessment and enhancement framework for finger vein recognition",
+    "category": "Computer Vision",
+    "topics": [
+      "Biometric Recognition",
+      "Image Quality Assessment",
+      "Image Enhancement"
+    ],
+    "keywords": [
+      "Biometric",
+      "Finger vein recognition",
+      "Image classification",
+      "Image enhancement",
+      "Image processing"
+    ],
+    "abstract": "Finger vein recognition (FVR) is a biometric trait that can authenticate the person in real-time applications. However, finger vein (FV) images are generally poor due to various unfavorable factors. Therefore, these images are prone to low contrast, insufficient brightness, and noise problems, significantly impacting the FVR system performance. Hence, image quality assessment and enhancement play a vital role in finger vein recognition. To advance the FVR system performance, we propose two FVR algorithms based on FV image quality estimation and an enhancement algorithm. At first, good quality features such as contrast, entropy and information capacity were extracted from finger vein images. Then, the image quality is evaluated by the KNN with the r-smote technique to classify the FV image into two classes, High Quality (HQ) and Low Quality (LQ) images. Second, a novel enhancement method called guided filter and bilateral filter (GFBF) are presented to enhance the low-quality FV images. Afterward, we estimate the enhancement algorithm by using SSIM and PSNR. Finally, we evaluate and test the proposed system strength using two parameters namely accuracy and equal error rate (EER), for Classifier and recognition performance, respectively, on a dataset of 1052 FV images. The completed experiment determined that the proposed image assessment and enhancement method outperformed other enhancement and assessment schemes by achieving a low identification error rate of 0.0335. Further results conclude that the proposed art would be a perfect pre-processing tool for finger vein feature-based algorithms.",
+    "methodology": "K-nearest neighbors (KNN) classifier with R-SMOTE for image quality classification using contrast, entropy, and information capacity features; Guided Filter (GF) and Bilateral Filter (BF) hybrid enhancement for low-quality images; Local Binary Pattern (LBP) for feature extraction; Hamming distance for matching.",
+    "conclusion": "The proposed hybrid quality assessment and enhancement framework achieves superior performance with a low EER of 0.0335, outperforming existing methods in recognition accuracy while maintaining computational efficiency suitable for real-time applications.",
+    "authors": [
+      "Kashif Shaheed",
+      "Imran Qureshi"
+    ],
+    "publication_year": "2022",
+    "venue": "Multimedia Tools and Applications",
+    "doi": "10.1007/s11042-021-11877-x",
+    "bibtex_citation": "Shaheed_hybrid_2022",
+    "analysis": {
+      "Overview": "Proposes a hybrid framework combining image quality assessment and enhancement to improve finger vein recognition performance using machine learning classification and edge-preserving filters.",
+      "Background_and_Motivation": [
+        "Biometric security systems face challenges with poor-quality finger vein images due to uneven illumination, noise, and low contrast.",
+        "Existing quality assessment methods are computationally complex or require large datasets, while enhancement techniques often fail to preserve structural details.",
+        "Authors emphasize the urgency through high EER rates (up to 0.094) in unprocessed images and limitations of prior arts in Tables 1-2.",
+        "Poor image quality directly impacts authentication reliability in security-critical applications like access control systems.",
+        "Computer Vision, Biometrics, and Image Processing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "1. Image Quality Assessment (IQA): Classification using contrast, entropy, information capacity. 2. Guided Filter-Bilateral Filter (GFBF): Edge-preserving enhancement. 3. R-SMOTE: Synthetic oversampling for class imbalance.",
+        "IQA identifies low-quality images → GFBF enhances them → Improved features extracted → Recognition accuracy increases.",
+        "Selected features sufficiently represent quality; Filters preserve vein patterns without preprocessing; Class imbalance affects recognition.",
+        "Novel hybrid framework advancing FVR system efficiency and accuracy."
+      ],
+      "Methodology": [
+        "KNN+R-SMOTE for HQ/LQ classification; GF for noise removal; BF for contrast enhancement; LBP feature extraction; SSIM/PSNR/EER evaluation.",
+        "GFBF novelty: Combines illumination normalization and detail preservation. R-SMOTE addresses dataset imbalance. Computationally efficient for real-time use.",
+        "1052 images (240×80 resolution BMP) from two databases; Block-based contrast calculation; R-SMOTE oversampling for minority class.",
+        "Four experiments: Feature selection, enhancement metrics (PSNR/SSIM), recognition (EER), computation time; Used five-fold validation.",
+        "Empirical image processing paradigm focused on practical optimization over theoretical modeling."
+      ],
+      "Results": [
+        "IQA accuracy: 90% with three features; Enhancement: PSNR=23.18/SSIM=0.9379 (best); Recognition: EER reduced from 0.0521 to 0.0335 after enhancement.",
+        "Results show statistical significance over 10 runs; SSIM>0.9 confirms structural preservation; Low EER demonstrates reliability across 43 subjects."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Literature gaps → Proposed solution → Experimental validation → Comparative analysis.",
+        "1. Quality features extraction 2. Classification 3. Enhancement 4. Performance metrics comparison.",
+        "Strengths: Multi-experiment validation. Weaknesses: Limited discussion on cross-dataset generalization. Rebuttals addressed via SSIM/PSNR objective metrics."
+      ],
+      "Strengths_and_Limitations": [
+        "Achieves lowest EER (0.0335); Computationally efficient (213s); Integrated R-SMOTE handles data imbalance.",
+        "Feature selection limited to three metrics; Assumes specific vein patterns; Untested on mobile acquisition devices.",
+        "Focus on filter-based enhancement constrains applicability to non-vein biometrics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as practical solution to computational efficiency gaps in biometric literature.",
+        "Technical terminology (EER, SSIM); Assertive tone emphasizing superiority; Comparative tables as rhetorical evidence.",
+        "Citations establish problem context (e.g., Xie et al. 36); Contrasts deep learning methods to highlight efficiency focus."
+      ],
+      "Conclusions_and_Implications": [
+        "Hybrid GFBF framework effectively enhances low-quality vein images, reducing EER by 36% versus baselines while maintaining real-time performance.",
+        "Explore deep learning with larger datasets; Extend to multi-modal biometrics; Test on embedded systems."
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "file_name": "Chardouvelis 等 - 2025 - Quantum Key Leasing for PKE and FHE with a Classical Lessor.pdf",
+  "generated_at": "2025-07-11 08:16:11",
+  "structured_info": {
+    "title_cn": "具有经典出租者的PKE和FHE的量子密钥租赁",
+    "title_en": "Quantum Key Leasing for PKE and FHE with a Classical Lessor",
+    "category": "Cryptography",
+    "topics": [
+      "Quantum Cryptography",
+      "Lattice-Based Cryptography",
+      "Secure Key Leasing"
+    ],
+    "keywords": [
+      "Quantum Key Leasing",
+      "Learning With Errors (LWE)",
+      "Fully Homomorphic Encryption (FHE)",
+      "Revocable Cryptography",
+      "Classical Lessor"
+    ],
+    "abstract": "In this work, we consider the problem of secure key leasing, also known as revocable cryptography, as a strengthened security notion. This problem aims to leverage unclonable nature of quantum information to allow a lessor to lease a quantum key with reusability for evaluating a classical functionality. Later, the lessor can request the lessee to provably delete the key, depriving the lessee of evaluation capability. We construct a secure key leasing scheme for public-key homomorphic encryption from standard lattice assumptions, specifically subexponential time hardness of learning with errors. Our scheme uses classical communication between a classical lessor and quantum lessee, with classical deletion verification. The main novelty is connecting FHE to classical verification of quantumness frameworks, enabling modular construction and simpler proofs. We also develop an amplified quantum search-to-decision reduction for LWE, extracting secrets with near-perfect success probability.",
+    "methodology": "The methodology involves constructing a lattice-based encryption scheme inspired by the Gentry-Sahai-Waters homomorphic encryption, modified to support quantum key leasing. Key techniques include: (1) Designing a two-key variant of Regev encryption where decryption uses quantum superpositions; (2) Integrating noisy trapdoor claw-free functions (NTCF) from classical verification of quantumness protocols for deletion certification; (3) Parallel repetition for amplified security; (4) Quantum search-to-decision reduction with noise smudging to handle auxiliary quantum states; (5) Threshold implementation measurements to test adversarial capabilities.",
+    "conclusion": "The paper achieves the first secure key leasing scheme for public-key and fully homomorphic encryption with a classical lessor from standard lattice assumptions (subexponential LWE). It enables classical communication and deletion verification while ensuring that adversaries cannot retain decryption capability after deletion. The quantum search-to-decision reduction developed amplifies secret extraction success to nearly 1, a novel result for quantum adversaries with auxiliary states. This technique simplifies security proofs and has broader applications in post-quantum cryptography.",
+    "authors": [
+      "Orestis Chardouvelis",
+      "Vipul Goyal",
+      "Aayush Jain",
+      "Jiahui Liu"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "10.1007/978-3-031-91131-6_9",
+    "bibtex_citation": "Chardouvelis_Quantum_2025",
+    "analysis": {
+      "Overview": "The paper presents a cryptographic construction for quantum key leasing in public-key and fully homomorphic encryption, allowing a classical entity to lease quantum decryption keys that can be provably revoked. It addresses the challenge of minimizing quantum infrastructure by eliminating quantum communication and computation requirements for the lessor, relying solely on standard lattice assumptions.",
+      "Background_and_Motivation": [
+        "Secure key leasing leverages quantum unclonability to enable cryptographic functionalities with revocation, addressing piracy concerns in software distribution and intrusion detection. Broader challenges include the impracticality of quantum communication and the need for classical clients in real-world deployments.",
+        "Prior schemes required quantum capabilities from both parties or relied on non-standard conjectures. This work solves the open problem of achieving secure leasing with a classical lessor from standard assumptions, specifically subexponential LWE hardness.",
+        "The authors argue that classical lessors reduce quantum infrastructure costs and align with practical constraints where end-to-end quantum communication remains infeasible. The urgency stems from growing interest in post-quantum cryptography with minimal quantum overhead.",
+        "The specific problem—enabling classical lessors—is tied to broader challenges in revocable cryptography and practical quantum adoption. Its significance lies in bridging theoretical quantum advantages with deployable systems, advancing the field beyond oracle-dependent or semi-honest models.",
+        "The paper contributes to cryptography, quantum computation, and lattice-based security, with interdisciplinary implications for secure computation and quantum network design."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Secure Key Leasing: A protocol where a lessor leases a quantum key for classical functionality evaluation; the key can be deleted via a classical certificate, revoking capabilities.",
+          "Threshold Implementation (TI): A projective measurement testing if an adversary retains decryption capability above a threshold probability after deletion.",
+          "Amplified Quantum Search-to-Decision Reduction: Extracts LWE secrets from quantum distinguishers with auxiliary states, boosting success probability to nearly 1."
+        ],
+        "Core concepts interrelate as follows: Secure key leasing uses quantum states for decryption; deletion certificates leverage NTCF-based measurements; the search-to-decision reduction enables security proofs by extracting secrets when adversaries cheat. TI preserves adversarial state properties during testing.",
+        "Key assumptions include subexponential hardness of LWE, Gaussian error distributions, and the computational infeasibility of simultaneously producing valid deletion certificates and decrypting ciphertexts. Implicitly, quantum adversaries cannot clone or perfectly preserve states under repeated measurements.",
+        "The paper contributes a novel construction to the cryptographic knowledge system by being the first to achieve classical lessors for PKE/FHE leasing from standard assumptions. It introduces techniques (e.g., amplified reduction) applicable to broader post-quantum security proofs."
+      ],
+      "Methodology": [
+        "Core methods include lattice-based encryption (Regev/GSW variants), quantum state preparation (superpositions of secret keys), and classical verification via NTCF frameworks. Parallel repetition amplifies security, while smudging noise handles statistical deviations.",
+        "The methodology is novel in connecting classical verification of quantumness to FHE leasing, yielding simpler modular proofs. Applicability is demonstrated for PKE and FHE; rationality stems from leveraging established LWE security and quantum information principles.",
+        "Data sources are LWE samples with discrete Gaussian errors. Preprocessing includes superpolynomial noise amplification for smudging. Data representativeness is evaluated via leftover hash lemma and statistical distance bounds, ensuring samples mimic idealized distributions.",
+        "Experimental design uses security games and reductions to LWE hardness. Evaluation metrics include distinguishing advantage, deletion success probability, and extraction runtime. Rigor is shown through detailed hybrid arguments and statistical analysis; metrics adequately cover security definitions.",
+        "The research follows the computational hardness paradigm in quantum cryptography. This perspective emphasizes adversarial constraints and reductionist proofs, focusing on practical feasibility over information-theoretic security."
+      ],
+      "Results": [
+        "Key results: (1) A secure key leasing scheme for PKE/FHE with classical lessor and classical deletion verification; (2) A quantum search-to-decision reduction extracting LWE secrets with probability 1 - negl(λ); (3) Security against adversaries that pass deletion with noticeable probability.",
+        "Results are significant as they resolve an open problem, enable minimal quantum infrastructure, and improve prior security guarantees. Reliability is ensured by lattice assumptions and formal reductions; stability is demonstrated via parallel repetition and noise handling. The search-to-decision reduction’s high success probability enhances proof robustness."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument begins with defining PKESKL security, constructs a two-key Regev variant inspired by NTCF protocols, then extends it to FHE via GSW-like techniques. Security proofs use a sequence of hybrids and the search-to-decision reduction.",
+        "Key steps: (1) Relate decryption capability to distinguishing LWE samples; (2) Switch to hybrid with random keys via LWE security; (3) Apply amplified reduction to extract secrets when adversaries cheat; (4) Connect extraction to NTCF security for contradiction.",
+        "Strengths include modularity from reusing verification-of-quantumness frameworks and simplified proofs. A weakness is handling auxiliary states in reductions, addressed via novel TI/ATI measurements. Potential rebuttals (e.g., imperfect state preservation) are countered by projective measurement properties and noise smudging."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First classical-lessor scheme from standard assumptions; novel quantum reduction; classical communication; security against malicious adversaries. Innovations include connecting leasing to classical verification of quantumness.",
+        "Limitations: Requires leveled FHE due to circular security conflicts; subexponential LWE hardness; bounded adversarial success probability in extraction. Parallel repetition increases parameter sizes.",
+        "The computational hardness paradigm constrains conclusions to polynomial-time adversaries. Information-theoretic security or fully homomorphic non-leveled schemes remain open."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself as solving a key open problem in revocable cryptography, advancing prior work by Ananth et al. and Agarwal et al. It uses follow-up works (e.g., AHH24) to highlight impact.",
+        "Terminology includes quantum-specific terms (e.g., \"lessor/lessee\", \"unclonability\") and lattice cryptography jargon. Tone is technical and assertive; rhetorical strategies emphasize comparisons (e.g., \"stronger than previous work\") and novelty claims.",
+        "Authority is built through extensive citations of foundational works (e.g., Regev, Gentry) and positioning against concurrent research. Citation motivations include claiming priority, differentiating techniques, and framing contributions as essential advancements."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Secure key leasing with classical lessors is achievable from standard lattice assumptions via novel cryptographic constructions and reductions. The amplified quantum search-to-decision technique simplifies proofs and has independent utility.",
+        "Future research should address leveled FHE limitations, improve assumptions to polynomial hardness, and explore applications in intrusion detection. Suggestions include optimizing parallel repetition and extending techniques to other cryptographic primitives."
+      ]
+    }
+  }
+}

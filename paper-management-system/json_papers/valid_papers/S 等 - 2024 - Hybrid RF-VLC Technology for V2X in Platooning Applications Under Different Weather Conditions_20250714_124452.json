@@ -1,0 +1,80 @@
+{
+  "file_name": "S 等 - 2024 - Hybrid RF-VLC Technology for V2X in Platooning Applications Under Different Weather Conditions.pdf",
+  "generated_at": "2025-07-14 12:44:52",
+  "structured_info": {
+    "title_cn": "不同天气条件下用于车辆编队应用的混合RF-VLC技术",
+    "title_en": "Hybrid RF-VLC Technology for V2X in Platooning Applications under Different Weather Conditions",
+    "category": "Vehicular Communication",
+    "topics": [
+      "Vehicular Platoon Networks",
+      "Visible Light Communication (VLC)",
+      "Radio Frequency (RF)"
+    ],
+    "keywords": [
+      "Vehicular platoon network",
+      "visible light communication (VLC)",
+      "radio frequency (RF)",
+      "vehicle-to-vehicle (V2V)",
+      "infrastructure-to-vehicle (I2V)",
+      "bit-error-rate (BER)"
+    ],
+    "abstract": "The platooning of autonomous vehicles on highways is an emerging concept attracting significant interest due to its potential to enhance highway safety by enabling vehicles to closely follow one another, reducing reaction times for accidents, cooperative adaptive cruise control, mitigating human errors, reducing fuel consumption, and improving traffic utility. This paper proposes the integration of vehicular visible light communication (VLC) or radio frequency (RF) based technology over infrastructure-to-vehicle (I2V) and vehicle-to-vehicle (V2V) communication links to support desirable quality of service (QoS) requirements in vehicular platoon networks. We simulate possible integration architectures encompassing RF VLC-based I2V with the RF VLC-based V2V link. The proposed work also explores the benefits and trade-offs of integrating the RF VLC-based I2V with the RF VLC-based V2V, specifically for vehicular platoon networks. We evaluate and compare these proposed architectures in terms of data rate and bit-error-rate (BER) under varying weather conditions. The obtained simulation results demonstrate the potential of this proposed hybrid architecture for I2V and V2V links, which could leverage the strength of standalone RF and VLC technologies. The RF-based I2V and VLC-based V2V hybrid architecture emerge as a standout performer, excelling in terms of communication range and resilience to challenging channel conditions.",
+    "methodology": "The paper proposes and compares four architectures for vehicular platoon networks: standalone RF, standalone VLC, hybrid RF-VLC, and hybrid VLC-RF. The performance of these architectures is evaluated in terms of data rate and bit-error-rate (BER) under varying weather conditions (clear weather, fog, light rain, and heavy rain) using MATLAB simulations.",
+    "conclusion": "The hybrid RF-VLC architecture, which combines RF for I2V and VLC for V2V links, emerges as the most balanced and resilient solution for vehicular platoon networks. It leverages the strengths of both RF and VLC technologies, providing robust communication under diverse weather conditions. This architecture is particularly effective in maintaining high data rates and low BER, making it suitable for real-world vehicular platoon deployments.",
+    "authors": [
+      "Saikrishnan S",
+      "Priyanka Singh",
+      "Anand Singh",
+      "Anand Srivastava"
+    ],
+    "publication_year": "2024",
+    "venue": "2024 IEEE Wireless Communications and Networking Conference (WCNC)",
+    "doi": "10.1109/WCNC57260.2024.10570908",
+    "bibtex_citation": "Saikrishnan_Hybrid_2024",
+    "analysis": {
+      "Overview": "The paper explores the integration of RF and VLC technologies for vehicular platoon networks, focusing on improving communication performance under varying weather conditions. It evaluates four architectures and highlights the advantages of a hybrid approach.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of vehicular communication in autonomous and semi-autonomous vehicles, emphasizing the need for reliable and efficient communication to enhance safety and traffic coordination.",
+        "The motivation stems from the limitations of standalone RF and VLC technologies, such as spectrum congestion for RF and line-of-sight requirements for VLC.",
+        "The authors argue that a hybrid approach can mitigate these limitations, providing a more robust solution for vehicular platoon networks.",
+        "The problem is linked to the broader challenge of intelligent transportation systems (ITS) and the need for reliable communication in dynamic environments.",
+        "The paper contributes to the fields of vehicular communication, wireless networks, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include vehicular platoon networks, hybrid RF-VLC communication, and performance metrics (data rate and BER).",
+        "The logical relationship involves leveraging RF for long-range communication and VLC for high data rates, combining their strengths.",
+        "Key assumptions include the use of specific channel models for RF and VLC and the impact of weather conditions on signal propagation.",
+        "The paper contributes a novel hybrid architecture that improves communication performance in vehicular platoon networks."
+      ],
+      "Methodology": [
+        "The core methods include simulation-based evaluation of four architectures using MATLAB, focusing on data rate and BER under different weather conditions.",
+        "The methodology is novel in its hybrid approach and comprehensive evaluation of weather impacts. It is applicable to real-world vehicular networks.",
+        "Data sources include simulated channel models for RF and VLC, with parameters derived from prior research. The representativeness is validated through comparison with existing literature.",
+        "The experimental design is rigorous, with clear metrics (data rate and BER) and controlled simulations. Evaluation metrics are adequate for assessing communication performance.",
+        "The research follows a practical engineering paradigm, focusing on solving real-world problems through simulation and analysis."
+      ],
+      "Results": [
+        "Key results show that the hybrid RF-VLC architecture outperforms standalone RF and VLC in terms of data rate and BER under varying weather conditions.",
+        "The results are significant as they demonstrate the resilience and efficiency of the hybrid approach. They are reliable due to controlled simulations and validated models."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the limitations of existing technologies, proposes a hybrid solution, and validates it through simulations.",
+        "Key steps include defining the problem, proposing architectures, simulating performance, and analyzing results.",
+        "Strengths include clear logic and comprehensive evaluation. Weaknesses include potential simplifications in channel models. The authors address rebuttals by comparing with standalone technologies."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel hybrid approach and thorough performance evaluation under diverse conditions.",
+        "Limitations include reliance on simulations and simplified channel models. The theoretical paradigm may constrain conclusions to specific scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper contributes to ongoing discourse on hybrid communication technologies for vehicular networks.",
+        "Terminology is technical and precise, with a formal tone. Rhetorical strategies include comparative analysis and validation through simulations.",
+        "Authority is built through citations of prior work and rigorous methodology."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the superiority of the hybrid RF-VLC architecture for vehicular platoon networks.",
+        "Future research could explore real-world implementations and further optimize hybrid architectures for dynamic environments."
+      ]
+    }
+  }
+}

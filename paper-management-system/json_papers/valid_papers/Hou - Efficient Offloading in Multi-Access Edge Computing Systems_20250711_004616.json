@@ -1,0 +1,83 @@
+{
+  "file_name": "Hou - Efficient Offloading in Multi-Access Edge Computing Systems.pdf",
+  "generated_at": "2025-07-11 00:46:16",
+  "structured_info": {
+    "title_cn": "多接入边缘计算系统中的高效卸载",
+    "title_en": "Efficient Offloading in Multi-Access Edge Computing Systems",
+    "category": "Mobile Computing",
+    "topics": [
+      "Multi-Access Edge Computing",
+      "Vehicular Networking",
+      "Energy Efficiency",
+      "Task Offloading",
+      "Software-Defined Networking"
+    ],
+    "keywords": [
+      "Multi-Access Edge Computing (MEC)",
+      "Vehicular Networking",
+      "5G and 6G Networks",
+      "Energy-Efficient Offloading",
+      "Software-Defined Networking (SDN)",
+      "Service Mobility Management"
+    ],
+    "abstract": "This thesis thoroughly explores Multi-Access Edge Computing (MEC) and Vehicular Networking in 5G/6G environments, focusing on energy-efficient offloading and management. It addresses challenges in network resource management through three research areas: surveying MEC in vehicular networks, developing an SDN-assisted energy-efficient framework (SDN-MEC-EE), and proposing restless-bandit-based offloading policies (HEE-ACC) for task handover. The SDN-MEC-EE achieves 15-20% power reduction and lower latency, while HEE-ACC policies demonstrate scalability in large networks with theoretical near-optimality.",
+    "methodology": "Combines comprehensive literature survey, SDN-assisted framework design with Docker container optimization, and restless-bandit-based resource allocation techniques with stochastic optimization for task offloading.",
+    "conclusion": "The SDN-MEC-EE framework significantly improves energy efficiency and reduces latency in vehicular networks. HEE-ACC policies provide scalable near-optimal solutions for energy-efficient task offloading with handover in large-scale MEC systems.",
+    "authors": [
+      "Ling Hou"
+    ],
+    "publication_year": "2024",
+    "venue": "RMIT University",
+    "doi": "",
+    "bibtex_citation": "Hou_Efficient_2024",
+    "analysis": {
+      "Overview": "Explores energy-efficient task offloading in MEC-enabled vehicular networks for 5G/6G environments, addressing latency reduction, power optimization, and mobility challenges through novel frameworks and scheduling policies.",
+      "Background_and_Motivation": [
+        "Rapid growth of 5G/6G networks and IoT demands ultra-low latency and energy efficiency for real-time vehicular applications like autonomous driving.",
+        "Existing cloud computing solutions exhibit high latency; MEC's limited resources and vehicle mobility create handover challenges for task offloading.",
+        "Autonomous vehicles' high energy consumption and dynamic network conditions necessitate optimized offloading strategies to balance computational load and power usage.",
+        "Energy-efficient MEC frameworks directly address core limitations of 5G vehicular networks by reducing backbone dependency while handling mobility-induced handovers.",
+        "Contributes to mobile computing, edge computing, vehicular networking, and network resource optimization disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "SDN-MEC-EE: SDN-assisted framework using Docker containers for energy-efficient service migration with reduced delays.",
+        "HEE-ACC: Restless-bandit-based scheduling policy with marginal cost prioritization for near-optimal resource allocation.",
+        "Task Handover Management: Dynamic resource reallocation during base station transitions to maintain QoS.",
+        "SDN-MEC-EE enables service continuity while HEE-ACC optimizes power consumption; both address mobility-induced instability.",
+        "Assumes channel state/resource fluctuations follow tractable stochastic patterns and containerization outperforms VMs in migration.",
+        "Provides algorithmic frameworks for energy optimization and novel integration of SDN with MEC resource federation."
+      ],
+      "Methodology": [
+        "Literature survey of MEC architectures; SDN-MEC-EE framework with energy-aware modules for load monitoring/RAN selection; HEE-ACC stochastic optimization using RBB techniques.",
+        "SDN-MEC-EE's Docker containerization is novel for migration delay reduction; HEE-ACC's marginal cost prioritization ensures scalability in large networks.",
+        "Simulations with Google Cluster Traces and emulated vehicular parameters; preprocessing focused on lifespans and power distribution representativeness.",
+        "Comparative evaluation against conventional SDN-MEC/DMM with throughput/latency/power metrics; rigorous bounded performance analysis for HEE-ACC.",
+        "Follows stochastic network optimization paradigm, emphasizing queue stability and convex relaxation for scalable solutions."
+      ],
+      "Results": [
+        "SDN-MEC-EE: 15% power reduction (compute-intensive), 20% (latency-sensitive), 30% lower migration delays with Docker vs VMs.",
+        "HEE-ACC: Near-optimal energy efficiency at scale with <5% deviation from optimal in simulations; stable under non-exponential request distributions.",
+        "Results validate framework effectiveness; power metrics show high reliability across traffic densities (ρ=5-10)."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem → Literature gaps → Dual solution framework (SDN-MEC-EE for architecture, HEE-ACC for scheduling) → Validation → Implications.",
+        "1. Identify MEC limitations 2. Propose SDN integration 3. Formulate energy optimization 4. Develop policies 5. Compare baselines.",
+        "Strengths: Comprehensive validation via real-world traces. Weakness: Assumes idealized channel models; addressed through robustness testing."
+      ],
+      "Strengths_and_Limitations": [
+        "Novel SDN-MEC integration; quantifiable energy savings; HEE-ACC's theoretical near-optimality; containerization advantages.",
+        "HEE-ACC assumes Markovian request patterns; SDN-MEC-EE's security aspects underexplored.",
+        "Stochastic optimization paradigm constraints limit AI/learning-based enhancements in current framework."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances MEC discourse by bridging vehicular mobility with energy-aware resource federation.",
+        "Technical terminology (e.g., 'restless-bandit-based'); persuasive metrics comparison; authority through ETSI/3GPP citations.",
+        "Strategic citations establish MEC standardization context; positions contributions as essential for 6G latency-sensitive applications."
+      ],
+      "Conclusions_and_Implications": [
+        "SDN-MEC-EE and HEE-ACC significantly improve energy efficiency and QoS in MEC-enabled vehicular networks.",
+        "Integrate AI for predictive handovers; test in real-world deployments; extend to UAV networks; explore blockchain for secure MEC federation."
+      ]
+    }
+  }
+}

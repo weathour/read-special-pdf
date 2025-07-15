@@ -1,0 +1,81 @@
+{
+  "file_name": "Maglogiannis 等 - 2022 - Experimental V2X Evaluation for C-V2X and ITS-G5 Technologies in a Real-Life Highway Environment.pdf",
+  "generated_at": "2025-07-11 09:08:56",
+  "structured_info": {
+    "title_cn": "C-V2X和ITS-G5技术在真实高速公路环境中的实验性V2X评估",
+    "title_en": "Experimental V2X Evaluation for C-V2X and ITS-G5 Technologies in a Real-Life Highway Environment",
+    "category": "Networking",
+    "topics": [
+      "Vehicular Communications",
+      "V2X Technologies",
+      "Performance Evaluation"
+    ],
+    "keywords": [
+      "V2X",
+      "C-V2X",
+      "ITS-G5",
+      "Performance Evaluation",
+      "Field Trial"
+    ],
+    "abstract": "In the coming years, connectivity between vehicles with autonomous driving features and roadside infrastructure will become more and more a reality on our roads, pursuing to improve road safety and traffic efficiency. In this regard, two main communication standards are considered as key enablers, that is ITS-G5 (based on IEEE 802.11p) and C-V2X (3GPP). To assess the real performance of these technologies, there is still need for an objective and independent one-to-one comparison of these technologies using off-the-shelf hardware under identical and real-life traffic conditions. Until today, performance evaluations are limited to simulations, emulations or individual technology assessments in real-life circumstances. In this paper, an exhaustive and fair evaluation of the technologies has been conducted in a real-life highway environment under identical conditions. Tailored evaluation tools in combination with our in-house CAMINO vehicular framework has been utilized to perform the tests and analyze the results for different well-specified test cases. The performance evaluation shows that for the short-range technologies, C-V2X PC5 has, in general, a higher range than ITS-G5, while ITS-G5 offers lower latency than C-V2X PC5 in low-density scenarios. Long-range 4G C-V2X can be considered as an alternative for certain use cases. The outcome of this experimentation study can be used as valuable information for the further development of future (5G) connected and autonomous driving.",
+    "methodology": "Real-life experimental evaluation using commercial off-the-shelf hardware on the Smart Highway testbed, employing in-house CAMINO framework for communication management. Performance assessed via Key Performance Indicators (KPIs) including Packet Delivery Rate (PDR), packet-loss, end-to-end latency, and signal strength under identical highway conditions. Tests covered V2I, V2V, security impact, and cross-country interoperability scenarios.",
+    "conclusion": "C-V2X PC5 generally provides longer range than ITS-G5, while ITS-G5 offers lower latency in low-density scenarios. Long-range 4G C-V2X Uu suffers from high latency fluctuations, making it unsuitable for safety-critical applications. Software-based security increases latency but remains below 100ms thresholds. Both technologies meet safety service requirements, with environmental factors significantly affecting performance.",
+    "authors": [
+      "Vasilis Maglogiannis",
+      "Seilendria Hadiwardoyo",
+      "Daniel van den Akker",
+      "Johann Marquez-Barja",
+      "Ingrid Moerman"
+    ],
+    "publication_year": "2022",
+    "venue": "IEEE Transactions on Network and Service Management",
+    "doi": "10.1109/TNSM.2021.3129348",
+    "bibtex_citation": "Maglogiannis_Experimental_2022",
+    "analysis": {
+      "Overview": "The paper conducts a real-life comparative evaluation of V2X communication technologies (C-V2X and ITS-G5) for vehicular networks, focusing on performance metrics like range, latency, and packet delivery under identical highway conditions to inform future autonomous driving systems.",
+      "Background_and_Motivation": [
+        "Addresses the lack of objective, real-world comparisons between V2X standards (ITS-G5 and C-V2X) despite their critical role in improving road safety and traffic efficiency for autonomous vehicles.",
+        "Motivated by the need to move beyond simulations and individual technology assessments to provide empirical data for automotive OEMs and policymakers facing technology selection dilemmas.",
+        "Highlights that 95% of EU road accidents stem from human error, positioning V2X as urgent for accident reduction. Notes regulatory ambiguity (e.g., rejected EU Delegated Act favoring ITS-G5) amplifies the necessity for neutral evaluation.",
+        "Links specific technology performance gaps to the broader Cooperative, Connected and Automated Mobility (CCAM) initiative, emphasizing global spectrum allocations and safety implications.",
+        "Contributes to vehicular communications, intelligent transportation systems (ITS), and networking disciplines, with cross-disciplinary impact on telecommunications and automotive engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) V2X (Vehicle-to-Everything): Direct data exchange between vehicles/infrastructure; (2) ITS-G5: IEEE 802.11p-based standard using CSMA/CA; (3) C-V2X PC5: Cellular-based sidelink communication with sensing-based semi-persistent scheduling (SPS).",
+        "ITS-G5 and C-V2X operate in the 5.9 GHz band but differ in medium access: CSMA/CA (ITS-G5) versus SPS (C-V2X). Range-latency trade-offs emerge from these mechanisms, while long-range C-V2X Uu complements via cellular networks.",
+        "Assumes off-the-shelf hardware tests in real highways yield generalizable insights; environmental factors (e.g., obstacles, traffic) are representative of operational conditions.",
+        "Provides empirical, technology-neutral performance data—a novel contribution addressing a critical gap in vehicular communication literature, enabling evidence-based industry decisions."
+      ],
+      "Methodology": [
+        "Core methods: Field experiments on the Smart Highway testbed (E313, Belgium) using commercial hardware. CAMINO framework manages V2X services; post-processing tools analyze KPIs (PDR, latency). Tests include V2I, V2V, security, and cross-country scenarios with controlled variables (channels, packet rates).",
+        "Methodology is novel in enabling simultaneous, identical-condition comparisons previously lacking. Applicable to real deployments; rational through standardized metrics, repeated trials, and environmental logging.",
+        "Data sourced from OBUs/RSUs logging transmitted/received messages (CAM, DENM, IVIM). Preprocessing: Local logs consolidated centrally, parsed, and stored in MySQL. Representativeness ensured by real highway dynamics (weather, traffic, obstacles).",
+        "Rigorous design: Tests repeated across frequencies/dates; KPIs aligned with safety service requirements (e.g., 100ms latency threshold). Metrics (PDR, latency) industry-standard and comprehensive.",
+        "Follows experimental engineering paradigm, prioritizing empirical validation over theoretical modeling, which strengthens practical relevance but limits theoretical generalization."
+      ],
+      "Results": [
+        "C-V2X PC5 outperforms ITS-G5 in range (up to 92% PDR at 400m vs. 57% for ITS-G5), while ITS-G5 achieves lower latency (97% packets <5.5ms vs. 37.84ms for C-V2X). 4G C-V2X Uu shows unstable latency, exceeding 100ms. Security increases latency (2.2x for C-V2X, 8x for ITS-G5) but stays below safety thresholds.",
+        "Results are significant for CCAM deployment, revealing technology trade-offs. Reliability confirmed via test repetition; stability influenced by environmental factors (e.g., highway curvature), though trends remain consistent."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Problem motivation → testbed/tools description → methodology → results → conclusions. Aligns with empirical research conventions.",
+        "Key steps: (1) Identify evaluation gap; (2) Deploy testbed with controlled variables; (3) Execute scenarios; (4) Analyze KPIs; (5) Conclude technology recommendations.",
+        "Strengths: Comprehensive real-world validation. Weaknesses: Limited scalability testing. Rebuttals addressed: Environmental variability mitigated via repeated trials; hardware limitations acknowledged but deemed representative."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First real-life, simultaneous technology comparison; open-source CAMINO framework; actionable insights for OEMs and regulators.",
+        "Limitations: Testbed confined to one highway; dense-environment scalability not fully assessed; 4G performance variability not deeply explored.",
+        "Empirical focus constrains theoretical insights but enhances practical applicability for deployment scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as a decisive empirical contribution to the ITS-G5 vs. C-V2X debate, challenging simulation-based studies.",
+        "Uses standardized terminology (e.g., PDR, SPS, PC5/Uu); technical tone with emphasis on reproducibility. Rhetoric highlights uniqueness of testbed and industry relevance.",
+        "Builds authority via extensive citations of standards (ETSI, IEEE) and prior work. Motivations include influencing EU policy and automotive industry decisions through neutral data."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: C-V2X excels in range, ITS-G5 in low-density latency; 4G Uu suitable for non-safety use cases; security manageable but impacts latency.",
+        "Future work: Coexistence testing in shared channels; scalability under dense networks; 5G V2X integration; expanded geographic validation."
+      ]
+    }
+  }
+}

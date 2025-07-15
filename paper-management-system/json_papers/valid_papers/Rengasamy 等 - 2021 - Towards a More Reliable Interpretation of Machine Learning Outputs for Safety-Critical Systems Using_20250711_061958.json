@@ -1,0 +1,87 @@
+{
+  "file_name": "Rengasamy 等 - 2021 - Towards a More Reliable Interpretation of Machine Learning Outputs for Safety-Critical Systems Using.pdf",
+  "generated_at": "2025-07-11 06:19:58",
+  "structured_info": {
+    "title_cn": "利用特征重要性融合实现安全关键系统机器学习输出的更可靠解释",
+    "title_en": "Towards a More Reliable Interpretation of Machine Learning Outputs for Safety-Critical Systems Using Feature Importance Fusion",
+    "category": "Machine Learning",
+    "topics": [
+      "Explainable Artificial Intelligence",
+      "Feature Importance",
+      "Ensemble Learning",
+      "Safety-Critical Systems"
+    ],
+    "keywords": [
+      "accountability",
+      "data fusion",
+      "deep learning",
+      "ensemble feature importance",
+      "explainable artificial intelligence",
+      "interpretability",
+      "machine learning",
+      "responsible artificial intelligence"
+    ],
+    "abstract": "When machine learning supports decision-making in safety-critical systems, it is important to verify and understand the reasons why a particular output is produced. Although feature importance calculation approaches assist in interpretation, there is a lack of consensus regarding how features importance is quantified, which makes the explanations offered for the outcomes mostly unreliable. A possible solution to address the lack of agreement is to combine the results from multiple feature importance quantifiers to reduce the variance in estimates and to improve the quality of explanations. Our hypothesis is that this leads to more robust and trustworthy explanations of the contribution of each feature to machine learning predictions. To test this hypothesis, we propose an extensible model-agnostic framework divided in four main parts: (i) traditional data pre-processing and preparation for predictive machine learning models, (ii) predictive machine learning, (iii) feature importance quantification, and (iv) feature importance decision fusion using an ensemble strategy. Our approach is tested on synthetic data, where the ground truth is known. We compare different fusion approaches and their results for both training and test sets. We also investigate how different characteristics within the datasets affect the quality of the feature importance ensembles studied. The results show that, overall, our feature importance ensemble framework produces 15% less feature importance errors compared with existing methods. Additionally, the results reveal that different levels of noise in the datasets do not affect the feature importance ensembles ability to accurately quantify feature importance, whereas the feature importance quantification error increases with the number of features and number of orthogonal informative features. We also discuss the implications of our findings on the quality of explanations provided to safety-critical systems.",
+    "methodology": "Proposed Multi-Method Ensemble (MME) framework with four stages: 1) Data pre-processing, 2) Predictive modeling using RF, GBT, SVM, and DNN, 3) Feature importance calculation via Permutation Importance (PI), SHAP, and Integrated Gradients (IG), 4) Feature importance fusion using ensemble strategies (mean, median, mode, box-whiskers, Modified Thompson Tau, majority vote, and novel RATE method). Evaluated on synthetic datasets with controlled noise levels, feature counts, and informative feature percentages using MAE, RMSE, and R² metrics.",
+    "conclusion": "The MME framework with majority vote fusion reduces feature importance errors by 15% compared to single-method approaches. Noise minimally affects errors, but errors increase with feature count and informative features. The framework enhances reliability for safety-critical system explanations.",
+    "authors": [
+      "Divish Rengasamy",
+      "Benjamin C. Rothwell",
+      "Grazziela P. Figueredo"
+    ],
+    "publication_year": "2021",
+    "venue": "Applied Sciences",
+    "doi": "https://doi.org/10.3390/app112411854",
+    "bibtex_citation": "Rengasamy_Towards_2021",
+    "analysis": {
+      "Overview": "Proposes a feature importance fusion framework (MME) to improve reliability of ML interpretations for safety-critical systems by combining multiple feature importance methods via ensemble strategies.",
+      "Background_and_Motivation": [
+        "Lack of consensus in feature importance quantification leads to unreliable ML explanations in safety-critical domains like healthcare and aerospace.",
+        "Need trustworthy explanations to enable wider ML adoption in high-integrity systems where errors have severe consequences.",
+        "Argues single-method interpretations are vulnerable to bias/variance; fusion reduces uncertainty and increases robustness.",
+        "Links unreliable feature importance to broader challenges in ML trustworthiness and safety compliance.",
+        "Contributes to Machine Learning, Explainable AI, and Safety-Critical Systems engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Feature Importance Fusion: Combining outputs from multiple quantifiers (PI, SHAP, IG) to reduce variance.",
+          "Model-Agnostic Framework: Applicable to any ML model (RF, GBT, SVM, DNN) without internal modifications.",
+          "RATE Ensemble: Novel fusion method using rank correlation and majority voting to discard anomalous importance vectors."
+        ],
+        "Fusion integrates outputs from stage 3 (multiple models + quantifiers) into a consensus via ensemble strategies in stage 4.",
+        "Assumes ensemble fusion reduces variance; synthetic data with known ground truth validates methods; orthogonal features minimize collinearity bias.",
+        "Provides methodological innovation (MME/RATE) and empirical evidence for improved feature importance reliability."
+      ],
+      "Methodology": [
+        "Core: MME framework stages (pre-processing, predictive modeling, feature importance calculation, fusion). Evaluated via synthetic datasets (Scikit-learn) with controlled noise, feature counts, and informative feature ratios.",
+        "Novelty: First framework combining multiple models and feature importance methods; introduces RATE fusion. Applicability: Model-agnostic; tested across regression tasks. Rationality: Ground-truth validation and parameter-controlled experiments ensure rigor.",
+        "Synthetic data generated with Gaussian noise (0-4 SD), features (20-100), and informative features (20%-100%). Minimal preprocessing (scaling only); representativeness ensured via parameter permutations.",
+        "Fixed hyperparameters for ML models; 10 runs per dataset configuration; metrics (MAE/RMSE/R²) compared across ensembles. Rigor enhanced by avoiding dataset-specific tuning.",
+        "Follows model-agnostic interpretability paradigm, emphasizing post-hoc explanations independent of underlying ML architectures."
+      ],
+      "Results": [
+        "MME with majority vote reduced feature importance errors by 15% versus single-method ensembles. Errors increased with feature count (60→100 features) and informative features (60%→100%), but noise (0→4 SD) had minimal impact.",
+        "Results statistically significant via multi-run experiments; stability confirmed through error metric consistency across parameter variations."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Problem: Unreliable feature importance in safety-critical contexts. 2) Solution: Hypothesis that fusion improves robustness → MME framework. 3) Validation: Synthetic data experiments. 4) Outcome: MME superiority demonstrated.",
+        "Key steps: Variance reduction via ensemble fusion; ablation of anomalies via RATE/majority vote; controlled experiments isolating noise/feature effects.",
+        "Strengths: Comprehensive parameter testing and novel fusion method. Weaknesses: Limited real-world validation; addressed via discussion of future work."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: 15% error reduction; noise robustness; novel RATE method; model-agnostic design.",
+        "Limitations: Computational cost of multiple quantifiers; fixed hyperparameters; synthetic data focus (generalizability unproven).",
+        "Model-agnostic paradigm constraints: May overlook model-specific interpretability nuances; conclusions limited to post-hoc explanation fidelity."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within Explainable AI discourse as a solution to unreliable interpretations in safety-critical domains.",
+        "Terminology: 'Trustworthy explanations', 'model-agnostic', 'variance reduction'. Rhetoric: Emphasizes safety imperatives and methodological rigor.",
+        "Builds authority via citations of foundational works (SHAP, Permutation Importance); motivates by aligning with responsible AI principles."
+      ],
+      "Conclusions_and_Implications": [
+        "MME framework with majority vote fusion significantly improves feature importance reliability, especially in high-feature/informative-feature scenarios. Minimal noise sensitivity enhances practicality.",
+        "Future work: Test on real-world data; optimize hyperparameters; extend to classification; integrate fusion directly into model training."
+      ]
+    }
+  }
+}

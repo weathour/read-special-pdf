@@ -1,0 +1,83 @@
+{
+  "file_name": "Jin 等 - 2020 - Design of Hybrid V2X Communication Platform for Evaluation of Commercial Vehicle Autonomous Driving.pdf",
+  "generated_at": "2025-07-10 02:12:55",
+  "structured_info": {
+    "title_cn": "用于商用车自主编队行驶评估的混合V2X通信平台设计",
+    "title_en": "Design of Hybrid V2X Communication Platform for Evaluation of Commercial Vehicle Autonomous Driving and Platooning",
+    "category": "Vehicular Technology",
+    "topics": [
+      "V2X Communication",
+      "Autonomous Platooning",
+      "Intelligent Transportation Systems"
+    ],
+    "keywords": [
+      "Vehicle to everything",
+      "Wireless access in vehicular environments",
+      "Cooperative intelligent transport system",
+      "Long term evolution",
+      "Platooning"
+    ],
+    "abstract": "In this paper, we propose a design method and process for hybrid V2X communication platform that combines WAVE communication and LTE-V2X communication which are C-ITS communication protocols for vehicle environments and Legacy LTE communication which is a commercial mobile communication for evaluating the autonomous platooning platform of commercial vehicles. For a safe and efficient autonomous platooning platform, an low-latency communication function based on C-ITS communication is required, and to control it, commercial communication functions such as Legacy LTE, which can be connected at all times, are required. In order to evaluate such a system, the evaluation equipment must have the same level of communication performance or higher. The main design contents presented in this paper will be applied to the implementation of hybrid V2X terminals for functional evaluation.",
+    "methodology": "Hardware platform design integrating WAVE, LTE-V2X, and Legacy LTE communication modules. Detailed circuit design for power supply, interface systems, processing units, and security subsystems using automotive-grade components (NXP i.MX6Q processor, SAF5400 modem, AG15 module). Implementation of hybrid communication architecture with GNSS synchronization.",
+    "conclusion": "The designed hybrid V2X communication platform meets evaluation requirements for commercial vehicle platooning systems. Functional verification was completed, and the platform will be deployed in Saemangeum autonomous driving testbed for performance analysis.",
+    "authors": [
+      "Seong-keun Jin",
+      "Han-gyun Jung",
+      "Jae-min Kwak"
+    ],
+    "publication_year": "2020",
+    "venue": "Journal of Advanced Navigation Technology",
+    "doi": "10.12673/jant.2020.24.6.521",
+    "bibtex_citation": "Jin_Design_2020",
+    "analysis": {
+      "Overview": "Presents a hardware design for hybrid V2X communication platform combining WAVE, LTE-V2X, and Legacy LTE technologies to evaluate autonomous platooning systems for commercial vehicles.",
+      "Background_and_Motivation": [
+        "Commercial vehicle platooning requires low-latency C-ITS communication for control and always-connected LTE for monitoring. Existing systems face challenges with control delay accumulation in ACC systems.",
+        "Need for integrated evaluation equipment matching the communication performance of platooning platforms. Commercial vehicles demand higher precision and lower latency than passenger cars.",
+        "Emphasizes economic benefits (fuel efficiency, logistics cost reduction) and safety improvements through CACC technology. Cites European ENSEMBLE project for standardization needs.",
+        "Relates specific platooning evaluation to broader intelligent transportation goals. Highlights Korea's C-ITS infrastructure development since 2007.",
+        "Contributes to vehicular communication systems, embedded hardware design, and intelligent transportation engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Hybrid V2X: Integration of WAVE (IEEE 802.11p), LTE-V2X (3GPP Release 14), and Legacy LTE in one platform",
+          "CACC: Cooperative Adaptive Cruise Control using V2V communication to eliminate control delays",
+          "Automotive-grade reliability: Components meeting ASIL-B standards and vehicle environmental requirements"
+        ],
+        "Hybrid V2X enables CACC → CACC overcomes ACC delay accumulation → Reduced delay enables fuel-efficient platooning → Evaluation platform validates system performance.",
+        "Assumes: 1) Automotive power stability (DC 6-42V), 2) GNSS time synchronization critical for LTE-V2X, 3) Hardware-level security essential for C-ITS.",
+        "Provides applied engineering contribution through novel hardware integration for a specific evaluation use case."
+      ],
+      "Methodology": [
+        "Modular hardware design: Power supply (LT8614 PMIC), interface (Ethernet/USB/CAN), system (NXP i.MX6Q quad-core), WAVE (SAF5400), LTE-V2X (AG15), LTE (LN940), security (SXF1800 HSM). GNSS signal branching for synchronization.",
+        "Novelty in hybrid radio integration and automotive-grade implementation. Applicable to real-world testbeds. Rationale: Commercial platooning requires simultaneous low-latency control and high-bandwidth monitoring.",
+        "No external data sources used. Platform generates its own operational data. Representativeness ensured through compliance with C-ITS protocols and automotive standards.",
+        "Functional verification completed but no quantitative metrics provided. Evaluation focuses on communication protocol implementation rather than algorithmic performance.",
+        "Follows embedded systems engineering paradigm, prioritizing component integration and automotive environmental requirements."
+      ],
+      "Results": [
+        "Successful functional verification of all hardware modules. Platform ready for deployment in Saemangeum commercial vehicle testbed.",
+        "Significance: Enables performance evaluation of platooning systems. Reliability inferred from automotive-grade components but no field data reported."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem-solution structure: 1) Establish platooning requirements 2) Identify communication needs 3) Design modular platform 4) Verify functionality.",
+        "Key steps: ACC delay problem → CACC solution → Hybrid communication necessity → Hardware design choices → Implementation verification.",
+        "Strengths: Detailed component justification. Weakness: No comparison with alternative designs. Rebuttals addressed through automotive certification claims."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative integration of heterogeneous radios; Automotive-grade implementation; Security subsystem design.",
+        "No performance metrics (latency/throughput); Limited to evaluation use case; Unverified real-world scalability.",
+        "Hardware-focused paradigm constraints theoretical exploration of communication protocols."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within vehicular communication discourse through standards references (IEEE 802.11p, 3GPP Release 14).",
+        "Technical terminology emphasizing automotive reliability; Objective tone; Diagrams referenced but not included.",
+        "Builds authority through industry component selection (NXP, Quectel) and standards compliance. Citations justify technology choices."
+      ],
+      "Conclusions_and_Implications": [
+        "Hybrid V2X platform meets commercial platooning evaluation requirements. Hardware verification complete.",
+        "Future work: Testbed implementation; Quantitative performance analysis; Potential expansion to passenger vehicle applications."
+      ]
+    }
+  }
+}

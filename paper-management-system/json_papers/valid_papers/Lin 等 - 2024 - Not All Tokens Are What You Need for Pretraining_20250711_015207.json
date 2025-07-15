@@ -1,0 +1,91 @@
+{
+  "file_name": "Lin 等 - 2024 - Not All Tokens Are What You Need for Pretraining.pdf",
+  "generated_at": "2025-07-11 01:52:07",
+  "structured_info": {
+    "title_cn": "并非所有标记都是预训练所需要的",
+    "title_en": "Not All Tokens Are What You Need for Pretraining",
+    "category": "Natural Language Processing",
+    "topics": [
+      "Language Model Pretraining",
+      "Token-level Training Dynamics",
+      "Selective Language Modeling"
+    ],
+    "keywords": [
+      "Selective Language Modeling",
+      "RHO-1",
+      "Token Efficiency",
+      "Excess Loss",
+      "Mathematical Reasoning"
+    ],
+    "abstract": "Previous language model pre-training methods have uniformly applied a next-token prediction loss to all training tokens. Challenging this norm, we posit that 'Not all tokens in a corpus are equally important for language model training'. Our initial analysis examines token-level training dynamics of language model, revealing distinct loss patterns for different tokens. Leveraging these insights, we introduce a new language model called RHO-1. Unlike traditional LMs that learn to predict every next token in a corpus, RHO-1 employs Selective Language Modeling (SLM), which selectively trains on useful tokens that aligned with the desired distribution. This approach involves scoring tokens using a reference model, and then training the language model with a focused loss on tokens with higher scores. When continual pretraining on 15B OpenWebMath corpus, RHO-1 yields an absolute improvement in few-shot accuracy of up to 30% in 9 math tasks. After fine-tuning, RHO-1-1B and 7B achieved state-of-the-art results of 40.6% and 51.8% on MATH dataset, respectively—matching DeepSeekMath with only 3% of the pretraining tokens. Furthermore, when continual pretraining on 80B general tokens, RHO-1 achieves 6.8% average enhancement across 15 diverse tasks, increasing both data efficiency and performance of the language model pre-training.",
+    "methodology": "Selective Language Modeling (SLM): 1) Train reference model on high-quality data; 2) Score tokens using reference model's loss; 3) Selectively train LM on top-k% tokens with highest excess loss (difference between training model loss and reference loss).",
+    "conclusion": "Token-level training dynamics reveal significant inefficiencies in standard pretraining. SLM enables models to achieve state-of-the-art results with dramatically reduced compute (e.g., matching DeepSeekMath-7B with 3% tokens). Selective focus on high-value tokens improves data efficiency and downstream performance across mathematical and general domains.",
+    "authors": [
+      "Zhenghao Lin",
+      "Zhibin Gou",
+      "Yeyun Gong",
+      "Xiao Liu",
+      "Yelong Shen",
+      "Ruochen Xu",
+      "Chen Lin",
+      "Yujiu Yang",
+      "Jian Jiao",
+      "Nan Duan",
+      "Weizhu Chen"
+    ],
+    "publication_year": "2024",
+    "venue": "38th Conference on Neural Information Processing Systems (NeurIPS 2024)",
+    "doi": "",
+    "bibtex_citation": "Lin_Not_2024",
+    "analysis": {
+      "Overview": "Proposes token-level selective training for language models, challenging uniform next-token prediction. Introduces RHO-1 with Selective Language Modeling that focuses computational resources on high-value tokens, significantly improving data efficiency and task performance.",
+      "Background_and_Motivation": [
+        "Current LLM pretraining uniformly applies loss to all tokens despite evidence of token-level noise in filtered corpora",
+        "Address inefficiency from non-converging tokens ('hard tokens') and already-learned tokens ('easy tokens') in pretraining",
+        "Demonstrates wasted computation on irrelevant tokens restricts LLM advancement potential",
+        "Aligns token selection with downstream task distributions to solve data-quality bottleneck in scaling laws",
+        "Contributes to NLP, efficient ML training, and mathematical reasoning domains"
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Selective Language Modeling: Training paradigm applying loss only to tokens aligned with target distribution",
+          "Token Training Dynamics: Categorization of tokens into HH (persistent high loss), LH (increasing loss), HL (decreasing loss), LL (consistent low loss)",
+          "Excess Loss: Difference between training model loss and reference model loss (Lθ(xi) - LRM(xi))"
+        ],
+        "Reference model defines utility → Scores identify high-value tokens → Selective training optimizes learnable tokens while filtering noise",
+        "Assumes: 1) Reference models can identify target distributions 2) Token utility is quantifiable 3) Focused training improves convergence",
+        "Introduces new pretraining paradigm that shifts focus from document-level to token-level optimization"
+      ],
+      "Methodology": [
+        "Three-step SLM: 1) Train reference model on curated data 2) Score pretraining corpus tokens 3) Train LM on top-k% tokens by excess loss",
+        "Novelty: First token-level selection for LM pretraining. Applicable across domains (math/general). Rationale grounded in token dynamics analysis",
+        "Data: Math (OpenWebMath 14B tokens + 0.5B synthetic/human-curated). General (SlimPajama/StarCoder/OWM 80B tokens). Preprocessing: Token scoring via reference model",
+        "Rigorous evaluation: 15+ benchmarks. Metrics: Few-shot accuracy, fine-tuned performance, perplexity. Controls: CLM baselines, SOTA comparisons",
+        "Follows causal language modeling paradigm but introduces selection mechanism altering gradient update focus"
+      ],
+      "Results": [
+        "RHO-1-7B matches DeepSeekMath-7B performance with 15B vs 500B tokens. Achieves 51.8% MATH after fine-tuning. 6.8% avg gain on 15 general tasks",
+        "Results significant: Consistent gains across model sizes (1B/7B) and domains. Reliable: 5-10x faster convergence. Stable: Controlled ablation studies"
+      ],
+      "Argumentation_and_Logic": [
+        "1) Diagnose token-level inefficiencies 2) Propose SLM solution 3) Validate through math/general experiments 4) Analyze token selection mechanisms",
+        "Key links: Token dynamics → Excess loss formulation → Efficiency gains → Downstream improvements",
+        "Strengths: Comprehensive experiments. Weaknesses: Reference model dependency. Counters: Self-reference variant works without external data"
+      ],
+      "Strengths_and_Limitations": [
+        "Innovations: First token-efficient LM pretraining, 10x speedup over baselines, state-of-the-art math performance",
+        "Limitations: Reference model training overhead; Optimal k% selection heuristic",
+        "Theoretical constraint: Selection may overfit to reference distribution; mitigated by general domain results"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Challenges fundamental LM pretraining assumption (uniform token loss). Positions within data-efficiency discourse",
+        "Technical terminology: 'excess loss', 'token dynamics'. Rhetoric: Contrasts 'traditional CLM' vs 'selective SLM'. Emphasizes compute savings",
+        "Builds authority through: 1) NeurIPS venue 2) Extensive SOTA comparisons 3) Controlled ablation studies"
+      ],
+      "Conclusions_and_Implications": [
+        "Token-level selection enables order-of-magnitude efficiency gains. Not all tokens equally contribute to learning",
+        "Future: Scaling laws for token selection; Dynamic k% scheduling; Applications to multimodal pretraining"
+      ]
+    }
+  }
+}

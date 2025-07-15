@@ -1,0 +1,81 @@
+{
+  "file_name": "Zardini 等 - 2023 - Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions.pdf",
+  "generated_at": "2025-07-14 13:03:38",
+  "structured_info": {
+    "title_cn": "协同设计实现用户友好工具评估未来移动解决方案的影响",
+    "title_en": "Co-Design to Enable User-Friendly Tools to Assess the Impact of Future Mobility Solutions",
+    "category": "Transportation Systems Analysis",
+    "topics": [
+      "Autonomous Vehicles",
+      "Micromobility",
+      "Public Transit"
+    ],
+    "keywords": [
+      "Co-design",
+      "Mobility Systems",
+      "Optimization",
+      "Network Science",
+      "Transportation"
+    ],
+    "abstract": "The design of future mobility solutions and the design of the mobility systems they enable are closely coupled. Indeed, knowledge about the intended service of novel mobility solutions would impact their design and deployment process, whilst insights about their technological development could significantly affect transportation management policies. This requires tools to study such a coupling and co-design mobility systems in terms of different objectives. We present a framework to address such co-design problems, leveraging a mathematical theory of co-design to frame and solve the problem of designing and deploying an intermodal mobility system, whereby autonomous vehicles service travel demands jointly with micromobility solutions and public transit, in terms of fleets sizing, vehicle characteristics, and public transit service frequency. Our framework is modular and compositional, allowing one to describe the design as the interconnection of simple components and to tackle it from a systemic perspective. Moreover, it requires general monotonicity assumptions and naturally handles multiple objectives, delivering rational, actionable solutions for policy makers. We showcase our methodology in a case study of Washington D.C., USA. Our work suggests the possibility to create user-friendly optimization tools to systematically assess costs and benefits of interventions, and to inform policy-making in the future.",
+    "methodology": "The paper leverages a mathematical theory of co-design to propose a framework for co-designing future mobility systems. The methodology involves decomposing the co-design problem into individual Monotone Design Problems with Implementation (MDPIs) for components like autonomous vehicles (AVs), micromobility vehicles (mMVs), and public transit. These MDPIs are interconnected to form a Co-Design Problem with Implementation (CDPI). The framework uses multi-objective optimization to handle heterogeneous objectives such as travel time, public expense, and externalities.",
+    "conclusion": "The paper concludes that the proposed co-design framework provides a systematic way to analyze and optimize future mobility systems by considering the interplay between different transportation modes. The case study of Washington D.C. demonstrates the framework's ability to deliver actionable insights for policymakers, highlighting the potential for user-friendly tools to assess the impact of mobility interventions. The modular and compositional nature of the framework allows for easy integration of new models and scenarios, making it adaptable to various urban contexts.",
+    "authors": [
+      "Gioele Zardini",
+      "Nicolas Lanzetti",
+      "Emilio Frazzoli",
+      "Marco Pavone",
+      "Andrea Censi"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Network Science and Engineering",
+    "doi": "10.1109/TNSE.2022.3223912",
+    "bibtex_citation": "Zardini_Co-Design_2023",
+    "analysis": {
+      "Overview": "The paper presents a co-design framework for future mobility systems, focusing on the integration of autonomous vehicles, micromobility solutions, and public transit. The framework is modular and compositional, allowing for the systematic optimization of multiple objectives such as travel time, cost, and emissions.",
+      "Background_and_Motivation": [
+        "The research addresses the coupled design of future mobility solutions and the systems they enable, emphasizing the need for tools to study this interplay.",
+        "The motivation stems from the lack of clear requirements in the current design process for new mobility solutions and the potential impact of technological advancements on transportation policies.",
+        "The authors argue for the necessity of co-design methods to handle heterogeneous objectives and hierarchical design problems in a computationally tractable manner.",
+        "The problem is linked to broader challenges in urban mobility, such as reducing negative externalities and improving transportation efficiency.",
+        "The paper contributes to interdisciplinary fields including transportation engineering, network science, and optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include Monotone Design Problems with Implementation (MDPIs) and Co-Design Problems with Implementation (CDPIs).",
+        "The logical relationship network involves decomposing complex systems into simpler components and interconnecting them to form a systemic solution.",
+        "Key assumptions include monotonicity in design problems and the modularity of transportation systems.",
+        "The paper contributes a novel framework for co-designing mobility systems, advancing the knowledge in transportation optimization and policy-making."
+      ],
+      "Methodology": [
+        "The core research methods involve mathematical co-design theory, multi-objective optimization, and network modeling.",
+        "The methodology is novel in its modular and compositional approach, applicable to various transportation scenarios.",
+        "Data sources include real-world mobility data from Washington D.C., with preprocessing steps to model transportation networks and demands.",
+        "Experimental design is rigorous, with evaluation metrics focusing on travel time, cost, and emissions.",
+        "The research follows a systems engineering paradigm, integrating theoretical and practical perspectives."
+      ],
+      "Results": [
+        "Key results include the identification of Pareto-optimal solutions for mobility system design, showcasing trade-offs between travel time, cost, and emissions.",
+        "The results are significant for policy-making, reliable due to real-world data, and stable across different scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors' argument is structured around the need for co-design methods, the presentation of the framework, and its validation through a case study.",
+        "Key steps include problem formulation, framework development, and empirical validation.",
+        "Strengths include the modularity and scalability of the framework, while potential weaknesses may arise from simplifying assumptions in the models."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the framework's modularity, scalability, and ability to handle multiple objectives.",
+        "Limitations include assumptions like homogeneous fleets and fixed travel demand, which may not capture all real-world complexities.",
+        "The theoretical paradigm constrains conclusions to systems where monotonicity and modularity assumptions hold."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on future mobility systems, contributing to both theoretical and practical discussions.",
+        "Terminology is technical, with a formal tone and rhetorical strategies emphasizing the framework's novelty and applicability.",
+        "Citations build authority by referencing foundational works in co-design and transportation research."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the framework's potential to inform policy-making and optimize mobility systems.",
+        "Future research should explore heterogeneous fleets, variable demand models, and strategic interactions among stakeholders."
+      ]
+    }
+  }
+}

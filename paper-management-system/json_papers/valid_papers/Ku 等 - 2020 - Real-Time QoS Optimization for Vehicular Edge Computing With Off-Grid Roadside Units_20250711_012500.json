@@ -1,0 +1,83 @@
+{
+  "file_name": "Ku 等 - 2020 - Real-Time QoS Optimization for Vehicular Edge Computing With Off-Grid Roadside Units.pdf",
+  "generated_at": "2025-07-11 01:25:00",
+  "structured_info": {
+    "title_cn": "基于离网路侧单元的实时车载边缘计算服务质量优化",
+    "title_en": "Real-Time QoS Optimization for Vehicular Edge Computing With Off-Grid Roadside Units",
+    "category": "Vehicular Edge Computing",
+    "topics": [
+      "Solar-Powered Roadside Units",
+      "Quality of Service Optimization",
+      "Resource Allocation"
+    ],
+    "keywords": [
+      "Solar energy",
+      "Mobile edge computing",
+      "Roadside unit",
+      "QoS optimization",
+      "Vehicular networks"
+    ],
+    "abstract": "To sustainably provide low-latency communication and edge computing for connected vehicles, a promising solution is using Solar-powered Roadside Units (SRSUs), which consist of small cell base stations and Mobile Edge Computing servers. However, due to the intermittent nature of solar power, SRSUs may suffer from a high risk of power deficiency, which will lead to severe disruption of vehicular edge computing applications. In this paper, we aim to address this challenge of Quality of Service (QoS) loss (i.e., edge computing service outage for vehicle users (VUs)). We formulate a QoS optimization problem for VUs and solve it in two phases: an offline solar energy scheduling phase, and an online user association and SRSU resource allocation phase. We simulate our proposed technique in a dense SRSU network environment with real-world urban vehicular traffic data and solar generation profile. The simulation results show that our proposed approach can significantly reduce QoS loss of vehicular edge computing applications using SRSUs, compared to existing techniques. Further, the results are beneficial to service providers and city planners to identify adequate SRSU configurations for expected solar energy generation and edge computing service demands.",
+    "methodology": "Two-phase optimization approach: 1) Offline solar energy scheduling (SESA algorithm) for battery charging/discharging, and 2) Online user association and resource allocation (H-URA algorithm) based on real-time demands and channel conditions. Uses Lagrangian dual formulation and heuristic prioritization for QoS loss minimization.",
+    "conclusion": "The proposed TQMA algorithm reduces weighted QoS loss by up to 54% compared to existing techniques, significantly improving service reliability for vehicular applications under intermittent solar power constraints. Results enable optimal SRSU configuration planning.",
+    "authors": [
+      "Yu-Jen Ku",
+      "Po-Han Chiang",
+      "Sujit Dey"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2020.3007640",
+    "bibtex_citation": "Ku_Real-Time_2020",
+    "analysis": {
+      "Overview": "Proposes a real-time two-phase algorithm (TQMA) to minimize Quality of Service loss in solar-powered vehicular edge computing networks, addressing intermittent energy challenges through dynamic resource allocation.",
+      "Background_and_Motivation": [
+        "Rising energy consumption and CO₂ emissions from dense roadside unit deployments for connected vehicles; limited grid reliability in remote areas.",
+        "Intermittent solar power causes service outages/disruptions for computation-intensive vehicular applications with low-latency requirements.",
+        "Authors highlight urgency by quantifying projected energy consumption (4.4 TWh) and emissions (2.3 million tons CO₂e) from small cell networks, emphasizing sustainability needs.",
+        "Links specific SRSU power deficiencies to broader vehicular safety/application reliability challenges, establishing significance through real-world traffic and solar data.",
+        "Electrical engineering, renewable energy systems, mobile edge computing, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Solar-powered Roadside Units (SRSUs): RSUs with integrated solar panels, batteries, SBS, and MEC servers.",
+          "QoS Loss: Weighted sum of service outage (no SRSU available) and service disruption (handover events).",
+          "Solar Utilization Ratio (SUR): Metric for energy distribution fairness across time slots."
+        ],
+        "Solar intermittency → Energy constraints → Resource opportunism → QoS loss. SESA optimizes SUR to enable H-URA's spatial resource allocation.",
+        "Channel stability within time slots; VUs lack local computing capacity; solar/consumption profiles are predictable.",
+        "Novel algorithmic framework for real-time adaptive QoS optimization in renewable-powered VEC, expanding edge computing theory under energy variability."
+      ],
+      "Methodology": [
+        "Core: SESA (offline solar scheduling via energy distribution) and H-URA (online user association/resource allocation via Lagrangian heuristics). Combines convex optimization and Markov chain-based mobility prediction.",
+        "SESA ensures temporal energy fairness; H-URA adapts to real-time dynamics. Rationale: Decouples slow (energy) and fast (user/resource) timescales.",
+        "Real-world solar generation profiles, urban traffic data (NYC DOT). Preprocessing: Normalization and prediction. Representativeness validated via real-world simulations.",
+        "Rigorous 24-hour simulations with control variables (solar panel size, subcarriers). Metrics: Weighted QoS loss, service outage/disruption rates. Adequate for multi-resource constraints.",
+        "Follows Lyapunov optimization principles for resource allocation under uncertainty, focusing on stability-complexity tradeoffs in dynamic systems."
+      ],
+      "Results": [
+        "54% reduction in weighted QoS loss vs. baseline; 86.2% of VUs experience ≤20% service outage time; adaptable to varying solar/traffic conditions.",
+        "Results are statistically significant (real-data simulations), reliable across parameter variations (Fig. 7), and stable under prediction errors (<5% QoS degradation)."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Problem formulation → 2) Two-phase decomposition → 3) Algorithm design → 4) Simulation validation → 5) Comparative analysis.",
+        "Key steps: Define QoS loss → Formulate P1 → Solve via SESA (temporal) + H-URA (spatial) → Evaluate with real data.",
+        "Strength: Holistic energy-task handling. Weakness: Prediction dependency. Addressed via real-time adaptation in H-URA and error robustness analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Real-time adaptability; 54% QoS improvement; integration of solar/traffic datasets; scalability to dense networks.",
+        "Battery capacity constraints (≥400 Wh needed); performance degrades with extreme prediction errors; assumes static channel per time slot.",
+        "Optimization-centric paradigm limits exploration of learning-based alternatives; conclusions assume ideal hardware coordination."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as first work to jointly optimize SRSU energy and VEC resources; critiques prior single-BS approaches and prediction limitations in QLM.",
+        "Technical terms: 'QoS loss', 'opportunistic resources', 'energy causality'. Rhetoric: Emphasizes 'sustainability' and 'real-time' as value propositions.",
+        "Cites foundational MEC/VEC papers to establish context; uses comparative results (e.g., GAURA) to assert authority; citation motives include gap identification."
+      ],
+      "Conclusions_and_Implications": [
+        "TQMA effectively minimizes QoS loss in solar-powered VEC via spatiotemporal resource coordination, enabling sustainable low-latency services.",
+        "Incorporate wind energy for reliability; explore federated learning for prediction robustness; hardware testbed validation."
+      ]
+    }
+  }
+}

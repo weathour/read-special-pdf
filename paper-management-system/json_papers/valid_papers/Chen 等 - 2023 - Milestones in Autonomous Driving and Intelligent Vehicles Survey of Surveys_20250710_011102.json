@@ -1,0 +1,92 @@
+{
+  "file_name": "Chen 等 - 2023 - Milestones in Autonomous Driving and Intelligent Vehicles Survey of Surveys.pdf",
+  "generated_at": "2025-07-10 01:11:02",
+  "structured_info": {
+    "title_cn": "自动驾驶与智能汽车的里程碑：综述之综述",
+    "title_en": "Milestones in Autonomous Driving and Intelligent Vehicles: Survey of Surveys",
+    "category": "Autonomous Driving",
+    "topics": [
+      "Survey Methodology",
+      "Historical Development",
+      "Ethical Considerations",
+      "Future Research Directions"
+    ],
+    "keywords": [
+      "Survey of surveys",
+      "milestones",
+      "autonomous driving",
+      "intelligent vehicles"
+    ],
+    "abstract": "Interest in autonomous driving (AD) and intelligent vehicles (IVs) is growing at a rapid pace due to the convenience, safety, and economic benefits. Although a number of surveys have reviewed research achievements in this field, they are still limited in specific tasks, lack of systematic summary and research directions in the future. Here we propose a Survey of Surveys (SoS) for total technologies of AD and IVs that reviews the history, summarizes the milestones, and provides the perspectives, ethics, and future research directions. To our knowledge, this article is the first SoS with milestones in AD and IVs, which constitutes our complete research work together with two other technical surveys. We anticipate that this article will bring novel and diverse insights to researchers and abecedarians, and serve as a bridge between past and future.",
+    "methodology": "Literature review and systematic analysis of 122 existing surveys, categorized into 18 sub-sections (e.g., perception, planning, control). Dataset analysis and ethical framework evaluation.",
+    "conclusion": "The paper comprehensively summarizes AD and IVs development through a Survey of Surveys, identifies current research bottlenecks, and outlines ethical considerations and future directions including human-machine hybrid intelligence and parallel driving approaches.",
+    "authors": [
+      "Long Chen",
+      "Yuchen Li",
+      "Chao Huang",
+      "Bai Li",
+      "Yang Xing",
+      "Daxin Tian",
+      "Li Li",
+      "Zhongxu Hu",
+      "Xiaoxiang Na",
+      "Zixuan Li",
+      "Siyu Teng",
+      "Chen Lv",
+      "Jinjun Wang",
+      "Dongpu Cao",
+      "Nanning Zheng",
+      "Fei-Yue Wang"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/TIV.2022.3223131",
+    "bibtex_citation": "Chen_Milestones_2023",
+    "analysis": {
+      "Overview": "A comprehensive Survey of Surveys (SoS) analyzing milestones, historical developments, datasets, ethics, and future research directions in autonomous driving and intelligent vehicles.",
+      "Background_and_Motivation": [
+        "Rapid growth in AD/IV research lacks systematic synthesis; existing surveys focus narrowly on specific tasks without holistic perspectives.",
+        "Address fragmentation in AD/IV literature by providing a unified review of milestones and future trajectories.",
+        "Highlight research stagnation ('bottleneck period') and legal/ethical uncertainties (e.g., liability in accidents) to underscore urgency.",
+        "Position fragmented surveys as impediments to field-wide progress, emphasizing the need for cross-disciplinary consolidation.",
+        "Contributes to transportation engineering, computer vision, ethics, human-machine interaction, and environmental studies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Survey of Surveys (SoS): Meta-analysis methodology for synthesizing existing reviews. Milestones: Pivotal historical/technical breakthroughs in AD/IV. Ethics: Normative, environmental, and business dimensions in AD deployment.",
+        "Milestones contextualize historical progress; ethics frameworks evaluate societal impacts; SoS integrates these to forecast future directions.",
+        "Assumes representativeness of 122 surveyed papers and validity of dataset evaluations. Implicitly prioritizes academic literature over industry developments.",
+        "Provides a taxonomic and prognostic contribution by categorizing knowledge gaps and proposing research vectors."
+      ],
+      "Methodology": [
+        "Systematic collection/categorization of 122 surveys into 18 domains; analysis of AD datasets (e.g., KITTI, nuScenes) and simulation platforms (e.g., CARLA).",
+        "Novel as first AD/IV SoS with milestone focus. Applicable for roadmap development but limited by subjective categorization of surveys.",
+        "Data from academic publications and public datasets (e.g., BDD100K, Cityscapes). Preprocessing includes categorization by research area. Representativeness questioned due to exclusion of non-survey primary studies.",
+        "No experiments conducted; evaluation relies on descriptive synthesis. Metrics include citation counts and dataset attributes.",
+        "Follows literature review paradigm, emphasizing historical progression over theoretical modeling, affecting focus on empirical trends."
+      ],
+      "Results": [
+        "Categorization of 122 surveys across perception, planning, control, and ethics; identification of key datasets; ethical dilemmas (e.g., 'trolley problem'); future directions like parallel intelligence.",
+        "Results establish foundational reference for researchers. Reliability ensured by volume of sources; stability limited by rapidly evolving field."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured chronologically: history → survey synthesis → datasets → ethics/future → conclusions.",
+        "1. History justifies need for synthesis. 2. Survey categorization demonstrates field fragmentation. 3. Dataset analysis supports perception/planning research. 4. Ethics discussion highlights unresolved societal challenges. 5. Future directions address identified gaps.",
+        "Strength: Comprehensive scope. Weakness: Limited critical appraisal of surveyed papers. Rebuttals addressed by positioning as 'bridge' rather than primary research."
+      ],
+      "Strengths_and_Limitations": [
+        "First SoS in AD/IV; extensive survey coverage; interdisciplinary ethics analysis.",
+        "Excludes non-survey literature; subjective milestone selection; minimal industry perspectives.",
+        "Constrained by literature-review focus, limiting novel technical insights or validation of proposed future directions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions itself as a field-unifying reference, addressing fragmentation and guiding future research.",
+        "Authoritative tone with domain-specific terms (e.g., 'SoS', 'L4/L5 autonomy'). Rhetoric emphasizes urgency ('bottleneck period') and bridges past/future.",
+        "Builds authority through 122 citations and IEEE venue. Selective citation patterns prioritize academic sources over grey literature."
+      ],
+      "Conclusions_and_Implications": [
+        "AD/IV research requires consolidated efforts across ethics, human-AI collaboration, and scenario intelligence; current surveys are fragmented.",
+        "Future work: Human-machine hybrid systems, parallel intelligence for simulation-to-reality transfer, standardized scenario engineering, and real-world validation of ethical frameworks."
+      ]
+    }
+  }
+}

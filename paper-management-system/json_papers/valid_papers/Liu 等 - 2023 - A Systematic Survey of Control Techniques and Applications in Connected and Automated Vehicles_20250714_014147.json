@@ -1,0 +1,94 @@
+{
+  "file_name": "Liu 等 - 2023 - A Systematic Survey of Control Techniques and Applications in Connected and Automated Vehicles.pdf",
+  "generated_at": "2025-07-14 01:41:47",
+  "structured_info": {
+    "title_cn": "联网与自动驾驶车辆控制技术及应用的系统综述",
+    "title_en": "A Systematic Survey of Control Techniques and Applications in Connected and Automated Vehicles",
+    "category": "Autonomous Vehicles",
+    "topics": [
+      "Vehicle State Estimation",
+      "Trajectory Tracking Control",
+      "Collaborative Control"
+    ],
+    "keywords": [
+      "Autonomous vehicles (AVs)",
+      "Collaborative control",
+      "Connected and automated vehicles (CAVs)",
+      "State estimation",
+      "Trajectory tracking control",
+      "Vehicle sideslip angle"
+    ],
+    "abstract": "Vehicle control is one of the most critical challenges in autonomous vehicles (AVs) and connected and automated vehicles (CAVs), and it is paramount in vehicle safety, passenger comfort, transportation efficiency, and energy saving. This survey attempts to provide a comprehensive and thorough overview of the current state of vehicle control technology, focusing on the evolution from vehicle state estimation and trajectory tracking control in AVs at the microscopic level to collaborative control in CAVs at the macroscopic level. First, this review starts with vehicle key state estimation, specifically vehicle sideslip angle, which is the most pivotal state for vehicle trajectory control, to discuss representative approaches. Then, we present symbolic vehicle trajectory tracking control approaches for AVs. On top of that, we further review the collaborative control frameworks for CAVs and corresponding applications. Finally, this survey concludes with a discussion of future research directions and the challenges. This survey aims to provide a contextualized and in-depth look at the state-of-the-art in vehicle control for AVs and CAVs, identifying critical areas of focus and pointing out the potential areas for further exploration.",
+    "methodology": "Systematic literature review and comparative analysis of existing control techniques",
+    "conclusion": "This survey comprehensively reviews vehicle control techniques for AVs and CAVs, covering state estimation (particularly sideslip angle), trajectory tracking control, and collaborative control. It identifies future research avenues including robust multimodal state estimation, uncertainty-aware control, learning-based distributed control, resilience against cyber threats, and deployment challenges in resource-constrained systems.",
+    "authors": [
+      "Wei Liu",
+      "Min Hua",
+      "Zhiyun Deng",
+      "Zonglin Meng",
+      "Yanjun Huang",
+      "Chuan Hu",
+      "Shunhui Song",
+      "Letian Gao",
+      "Changsheng Liu",
+      "Bin Shuai",
+      "Amir Khajepour",
+      "Lu Xiong",
+      "Xin Xia"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Internet of Things Journal",
+    "doi": "10.1109/JIOT.2023.3307002",
+    "bibtex_citation": "Liu_Systematic_2023",
+    "analysis": {
+      "Overview": "This survey paper comprehensively reviews control techniques for autonomous vehicles (AVs) and connected and automated vehicles (CAVs), covering state estimation, trajectory tracking control, and collaborative control systems to enhance safety, efficiency, and sustainability in transportation.",
+      "Background_and_Motivation": [
+        "Addresses challenges in vehicle safety, passenger comfort, transportation efficiency, and energy savings within autonomous driving systems.",
+        "Motivated by the need to consolidate evolving techniques from individual AV trajectory control to multi-vehicle CAV collaboration, overcoming limitations of isolated perception in dynamic environments.",
+        "Argues that systematic organization of state-of-the-art techniques is urgently needed to guide future research and deployment, given rapid technological advancements.",
+        "Posits that robust vehicle control forms the foundation for broader intelligent transportation systems (ITS), impacting traffic flow optimization and collision prevention.",
+        "Contributes to automotive engineering, control systems, intelligent transportation, and robotics through interdisciplinary synthesis."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Vehicle Sideslip Angle: Angle between velocity direction and vehicle heading, critical for stability control.",
+          "Trajectory Tracking Control: Algorithms ensuring AVs follow desired paths via steering/throttle/brake commands.",
+          "Collaborative Control: Multi-CAV coordination leveraging V2X communication for macroscopic traffic optimization."
+        ],
+        "Sideslip angle estimation enables accurate trajectory tracking; trajectory control in AVs provides the basis for collaborative control in CAVs; all layers rely on sensor fusion and dynamic modeling.",
+        "Assumes sensor data availability (IMU, GNSS, LiDAR), vehicle dynamics modelability, and reliable V2X communication for CAV coordination.",
+        "Provides a taxonomic framework organizing existing knowledge, identifying research gaps, and proposing future directions rather than introducing novel algorithms."
+      ],
+      "Methodology": [
+        "Categorizes sideslip estimation into onboard-sensor-based (OSB), GNSS-augmented (GAU), and AI-augmented (AIA) approaches; classifies trajectory control into feedback methods (PID/LQR/SMC), MPC, and learning-based techniques; organizes collaborative control by coordination schemes (centralized/decentralized) and methodologies (game-theoretic/optimization/reinforcement learning).",
+        "Methodology novelty lies in hierarchical organization from microscopic (state estimation) to macroscopic (CAV collaboration) control; applicability demonstrated through scenario-specific taxonomies; rationality stems from systematic literature synthesis.",
+        "Data sourced from academic publications (2010-2023), characterized by experimental/simulation results from diverse driving scenarios; preprocessing involves categorization by technical approach; representativeness is high due to comprehensive coverage but limited by publication bias.",
+        "Evaluation rigor maintained through comparative analysis of method strengths/weaknesses; metrics include accuracy, robustness, computational efficiency, and real-world feasibility.",
+        "Follows control theory and automotive engineering paradigms, emphasizing model-based and data-driven approaches, which shape the analysis of stability guarantees and real-time constraints."
+      ],
+      "Results": [
+        "Sideslip angle estimation achieves highest accuracy through GNSS/IMU fusion; MPC balances trajectory tracking performance and computational load; collaborative control shows 10-15% traffic throughput improvement in simulations.",
+        "Results are significant for safety-critical applications but reliability varies with sensor quality; stability proven for classical control methods under nominal conditions, while learning-based approaches show promise but lack formal guarantees."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: state estimation → AV trajectory control → CAV collaborative control → future directions.",
+        "1) Establishes sideslip angle as foundational state; 2) Links accurate estimation to trajectory control performance; 3) Extends individual control to multi-CAV coordination; 4) Identifies gaps in robustness and scalability.",
+        "Strengths: Logical progression with clear dependencies; comprehensive sub-categorization. Weaknesses: Limited meta-analysis of comparative results. Rebuttals addressed through scenario-specific recommendations (e.g., AIA for complex environments)."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive taxonomy of control techniques; clear identification of research gaps; interdisciplinary integration of estimation, control, and communication.",
+        "Methodology boundaries: Focused on control layers, excluding perception/planning; assumes ideal communication in CAV analysis; limited coverage of real-world deployment challenges.",
+        "Control-theoretic paradigm emphasizes model-based approaches, potentially undervaluing end-to-end learning methods; optimization focus may overlook human factors in mixed traffic."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as a reference framework for researchers, consolidating fragmented knowledge and standardizing terminology in vehicle control.",
+        "Technical terminology (e.g., 'string stability', 'observability'); authoritative tone; rhetorical strategies include taxonomies, comparative tables (implied), and future-oriented conclusions.",
+        "Builds authority through extensive citations (128 references); citation motivations include crediting foundational work, comparing methods, and identifying knowledge gaps."
+      ],
+      "Conclusions_and_Implications": [
+        "Accurate sideslip estimation is foundational for control; MPC balances performance/complexity; CAV collaboration enhances traffic efficiency; key challenges include robustness under uncertainty and computational efficiency.",
+        "Future work: Multimodal state estimation robust to environmental disturbances; learning-based distributed CAV control; resilience against cyber threats; lightweight algorithms for edge deployment; standardized simulation platforms."
+      ]
+    }
+  }
+}

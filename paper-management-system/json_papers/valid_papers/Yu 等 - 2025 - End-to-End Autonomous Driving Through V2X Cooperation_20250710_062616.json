@@ -1,0 +1,87 @@
+{
+  "file_name": "Yu 等 - 2025 - End-to-End Autonomous Driving Through V2X Cooperation.pdf",
+  "generated_at": "2025-07-10 06:26:16",
+  "structured_info": {
+    "title_cn": "基于V2X协同的端到端自动驾驶",
+    "title_en": "End-to-End Autonomous Driving Through V2X Cooperation",
+    "category": "Autonomous Driving",
+    "topics": [
+      "Vehicle-Infrastructure Cooperation",
+      "End-to-End Learning",
+      "Sensor Fusion"
+    ],
+    "keywords": [
+      "UniV2X",
+      "V2X Communication",
+      "Sparse-Dense Hybrid Transmission",
+      "Cooperative Perception",
+      "DAIR-V2X"
+    ],
+    "abstract": "Cooperatively utilizing both ego-vehicle and infrastructure sensor data via V2X communication has emerged as a promising approach for advanced autonomous driving. However, current research mainly focuses on improving individual modules rather than end-to-end learning to optimize planning performance. This paper introduces UniV2X, a cooperative autonomous driving framework that integrates key driving modules across diverse views into a unified network. We propose a sparse-dense hybrid data transmission and fusion mechanism for effective vehicle-infrastructure cooperation, offering effectiveness in enhancing perception, mapping, and occupancy prediction; transmission-friendliness for limited communication conditions; and reliability through interpretable data. Experiments on DAIR-V2X demonstrate significant improvements in planning and intermediate outputs.",
+    "methodology": "End-to-end learning framework (UniV2X) integrating agent perception, online mapping, occupancy prediction, and planning. Uses sparse-dense hybrid transmission (instance-level queries for agents/lanes, scene-level occupied probability maps for occupancy), temporal synchronization via flow prediction, rotation-aware spatial synchronization, and cross-view data fusion.",
+    "conclusion": "UniV2X significantly enhances planning performance (61% reduction in collision rate, 9.3% reduction in off-road rate vs. no fusion) and intermediate tasks while maintaining low transmission costs. The framework demonstrates reliability under data corruption and advances cooperative autonomous driving through interpretable end-to-end optimization.",
+    "authors": [
+      "Haibao Yu",
+      "Wenxian Yang",
+      "Jiaru Zhong",
+      "Zhenwei Yang",
+      "Siqi Fan",
+      "Ping Luo",
+      "Zaiqing Nie"
+    ],
+    "publication_year": "2025",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "doi": null,
+    "bibtex_citation": "Yu_End-to-End_2025",
+    "analysis": {
+      "Overview": "Proposes UniV2X, an end-to-end framework for vehicle-infrastructure cooperative autonomous driving that integrates perception, mapping, occupancy prediction, and planning into a unified network using sparse-dense hybrid data transmission.",
+      "Background_and_Motivation": [
+        "Single-vehicle autonomous driving faces safety limitations due to restricted perceptual range and inadequate information.",
+        "Need for end-to-end optimization leveraging V2X data to improve planning performance, addressing underutilization of infrastructure sensor potential.",
+        "Highlights inefficiency of modular approaches where task-specific optimizations misalign with planning objectives, creating safety and reliability gaps.",
+        "Positions vehicle-infrastructure cooperation as critical for covering blind spots and long-range perception, directly impacting autonomous driving safety in complex environments.",
+        "Contributes to autonomous driving, computer vision, multi-agent systems, and V2X communication."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Sparse-Dense Hybrid Transmission: Instance-level queries (agents/lanes) and scene-level occupied probability maps (occupancy)",
+          "Cross-View Fusion: Temporal/spatial synchronization, data matching, and adaptation for planning",
+          "Unified Network Architecture: Joint optimization of perception, mapping, occupancy, and planning modules"
+        ],
+        "Hybrid transmission enables efficient data utilization → Fusion synchronizes infrastructure/ego-vehicle data → Unified network produces interpretable planning outputs",
+        "Assumes known relative poses between vehicles/infrastructure, communication latency constraints, and reliability needs against data corruption.",
+        "Introduces first end-to-end VICAD framework; advances knowledge through novel transmission protocol and integration of explicit intermediate representations."
+      ],
+      "Methodology": [
+        "Transformer-based backbone (BEVFormer) for feature extraction; TrackFormer/MapFormer/OccFormer for tasks; sparse-dense transmission; flow prediction for latency compensation; rotation-aware spatial alignment; cost-aware fusion.",
+        "Novelty: First unified end-to-end VICAD solution. Applicability: Real-world communication constraints. Rationality: Balances information richness with transmission efficiency.",
+        "Uses DAIR-V2X dataset (100 real-world traffic scenes). Preprocessing: BEV transformation, query filtering. Representativeness: Captures complex urban driving scenarios but limited to specific geographic contexts.",
+        "Rigorous multi-task evaluation (planning: L2 error/collision/off-road rates; perception: mAP/AMOTA; mapping/occupancy: IoU). Metrics align with safety-critical outcomes.",
+        "Follows end-to-end autonomous driving paradigm (e.g., UniAD), emphasizing planning-oriented optimization while maintaining interpretable intermediate outputs."
+      ],
+      "Results": [
+        "Planning: 61% lower collision rate, 9.3% lower off-road rate vs. no fusion. Perception: +7.6% AMOTA. Mapping: +11.4% IoU for lanes. Occupancy: +5.7% IoU-n. Transmission: 100x lower cost vs. BEV fusion.",
+        "Results show statistical significance across metrics; reliability validated via corruption tests; performance stable across communication conditions (latency/bandwidth)."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Problem motivation → UniV2X design → Fusion methodology → Experimental validation → Limitations/future work.",
+        "Key steps: 1) Identify VICAD challenges 2) Propose hybrid transmission 3) Design fusion modules 4) Demonstrate planning-centric improvements 5) Ablate reliability.",
+        "Strengths: Comprehensive task comparisons. Weaknesses: Limited discussion on computational complexity. Rebuttals: Addresses latency/corruption via flow prediction and interpretable data."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovations: First end-to-end VICAD framework; hybrid transmission; multi-task performance gains; transmission efficiency.",
+        "Limitations: Framework complexity; preliminary fusion modules; open-loop evaluation only; dependency on accurate pose estimation.",
+        "End-to-end paradigm prioritizes planning optimization but may constrain interpretability of individual modules compared to specialized approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as pioneering work bridging V2X communication and end-to-end autonomous driving, addressing gaps in holistic planning optimization.",
+        "Technical terminology (e.g., 'sparse-dense hybrid', 'rotation-aware transformation'); persuasive tone emphasizing safety/reliability; contrasts with 'vanilla' baselines.",
+        "Builds authority through extensive benchmarks (10+ methods) and DAIR-V2X validation. Selective citations highlight transmission efficiency and planning-centric approaches."
+      ],
+      "Conclusions_and_Implications": [
+        "UniV2X effectively leverages V2X data for end-to-end driving, improving planning and intermediate tasks with low transmission costs and interpretability.",
+        "Future work: Refine fusion modules; closed-loop evaluation; extend to multi-infrastructure scenarios; address pose estimation errors."
+      ]
+    }
+  }
+}

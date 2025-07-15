@@ -1,0 +1,82 @@
+{
+  "file_name": "Chiu 等 - 2022 - CAN-PINN A fast physics-informed neural network based on coupled-automatic–numerical differentiatio.pdf",
+  "generated_at": "2025-07-14 12:27:29",
+  "structured_info": {
+    "title_cn": "CAN-PINN：基于耦合自动数值微分方法的快速物理信息神经网络",
+    "title_en": "CAN-PINN: A fast physics-informed neural network based on coupled-automatic numerical differentiation method",
+    "category": "Machine Learning",
+    "topics": [
+      "Physics-Informed Neural Networks",
+      "Numerical Differentiation",
+      "Fluid Dynamics"
+    ],
+    "keywords": [
+      "Physics-informed neural network",
+      "Training loss formulation",
+      "Taylor series expansions",
+      "Coupled-automatic numerical differentiation",
+      "Navier Stokes equations",
+      "Inverse problem"
+    ],
+    "abstract": "In this study, novel physics-informed neural network (PINN) methods for coupling neighboring support points and their derivative terms which are obtained by automatic differentiation (AD), are proposed to allow efficient training with improved accuracy. PINNs constrain their training loss function with ordinary and partial differential equations, to ensure outputs obey the governing physics. The computation of differential operators required for loss evaluation at collocation points are conventionally obtained via automatic differentiation. Although AD method has the advantage of being able to compute the exact gradients at any point, such PINNs can only achieve high accuracies with large numbers of collocation points otherwise they are prone to optimizing towards unphysical solution. To make PINN training fast, the dual ideas of using numerical differentiation (ND)-inspired method and coupling it with AD are employed to define the loss function. The ND-based formulation for training loss can strongly link neighboring collocation points to enable efficient training in sparse sample regimes, but its accuracy is restricted by the interpolation scheme. The proposed coupled-automatic numerical differentiation framework labeled as can-PINN unifies the advantages of AD and ND, providing more robust and efficient training than AD-based PINNs, while further improving accuracy by up to 1-2 orders of magnitude relative to ND-based PINNs. For a proof-of-concept demonstration of this can-scheme to fluid dynamic problems, two numerical-inspired instantiations of can-PINN schemes for the convection and pressure gradient terms were derived to solve the incompressible Navier Stokes (N-S) equations. Theoretical analysis shows that the proposed can-schemes have smaller dispersion and dissipation errors than the baseline ND-based schemes. The superior performance of can-PINNs is demonstrated on several challenging problems, including the flow mixing phenomena, lid driven flow in a cavity, and channel flow over a backward facing step. The results reveal that for challenging problems like these, can-PINNs can consistently achieve very good accuracy whereas conventional AD-based PINNs fail.",
+    "methodology": "The paper proposes a novel coupled-automatic numerical differentiation (can-PINN) framework that unifies the advantages of automatic differentiation (AD) and numerical differentiation (ND) for training physics-informed neural networks (PINNs). The methodology involves deriving two versions of can-PINN based on upwind and central difference numerical schemes, analyzing their dispersion and dissipation errors, and validating them on synthetic and fluid dynamic problems.",
+    "conclusion": "The proposed can-PINN framework robustly and efficiently produces accurate solutions even with minimal collocation points during training, unlike AD-based PINNs, and is more accurate than ND-based PINNs. It demonstrates superior performance on challenging problems like flow mixing, lid-driven cavity flow, and backward-facing step flow, where conventional AD-based PINNs fail. The framework also effectively solves inverse problems, inferring unknown parameters like Reynolds number with high accuracy.",
+    "authors": [
+      "Pao-Hsiung Chiu",
+      "Jian Cheng Wong",
+      "Chinchun Ooi",
+      "My Ha Dao",
+      "Yew-Soon Ong"
+    ],
+    "publication_year": "2022",
+    "venue": "Computer Methods in Applied Mechanics and Engineering",
+    "doi": "10.1016/j.cma.2022.114909",
+    "bibtex_citation": "Chiu_CAN-PINN_2022",
+    "analysis": {
+      "Overview": "The paper introduces CAN-PINN, a novel framework combining automatic and numerical differentiation to improve the training efficiency and accuracy of physics-informed neural networks (PINNs) for solving differential equations, particularly in fluid dynamics.",
+      "Background_and_Motivation": [
+        "PINNs are constrained by differential equations to ensure physical consistency but face challenges in training efficiency and accuracy, especially with sparse collocation points.",
+        "The research aims to address the inefficiency of AD-based PINNs, which require dense collocation points, and the limited accuracy of ND-based PINNs.",
+        "The authors highlight the necessity of their approach by showing that AD-based PINNs can produce unphysical solutions with sparse points, while ND-based PINNs lack accuracy.",
+        "The problem is significant for applications in fluid dynamics and inverse problems where efficient and accurate solutions are critical.",
+        "The paper contributes to computational physics and machine learning, particularly in interdisciplinary applications involving differential equations."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include: 1) Coupled-automatic numerical differentiation (can-PINN), 2) Upwind and central difference schemes for can-PINN, 3) Dispersion and dissipation error analysis.",
+        "The logical relationship involves using ND to link neighboring points and AD to ensure exact gradients, combining their strengths.",
+        "Key assumptions include the differentiability of PINNs and the applicability of Taylor series expansions for numerical schemes.",
+        "The paper contributes a novel methodology to the field, enhancing the robustness and accuracy of PINNs."
+      ],
+      "Methodology": [
+        "The core methods include deriving can-PINN schemes, theoretical error analysis, and validation on ODE and fluid dynamics problems.",
+        "The novelty lies in coupling AD and ND, with applicability demonstrated across various differential equations.",
+        "Data sources include synthetic ODE problems and fluid dynamic simulations (lid-driven cavity, backward-facing step).",
+        "Experimental design is rigorous, with comparisons against ground truth and baseline methods, using metrics like MSE.",
+        "The research follows a numerical analysis paradigm, focusing on error minimization and stability."
+      ],
+      "Results": [
+        "Key results show can-PINN outperforms AD- and ND-based PINNs in accuracy and efficiency, especially with sparse collocation points.",
+        "Results are reliable and stable, demonstrated through multiple independent runs and comparisons with benchmark solutions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with problem identification, proposes can-PINN as a solution, validates it theoretically and empirically, and concludes with its advantages.",
+        "Key steps include deriving can-PINN schemes, analyzing errors, and validating on test problems.",
+        "Strengths include comprehensive validation; weaknesses may include limited generalization to non-fluid problems."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Combines AD and ND advantages, robust performance, and applicability to inverse problems.",
+        "Limitations: Dependency on differentiable PINNs and potential challenges in highly irregular domains.",
+        "Theoretical paradigm constraints include focus on fluid dynamics, potentially limiting broader applicability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the PINN literature, addressing gaps in training efficiency and accuracy.",
+        "Terminology is technical, with a focus on numerical methods and machine learning.",
+        "Citations build authority by referencing foundational and recent works in PINNs and numerical analysis."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight can-PINN's efficiency and accuracy, with potential for broader applications in computational physics.",
+        "Future research could explore extensions to other numerical schemes and non-fluid problems."
+      ]
+    }
+  }
+}

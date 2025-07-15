@@ -1,0 +1,84 @@
+{
+  "file_name": "Michailidis 等 - 2025 - Reinforcement Learning for Optimizing Renewable Energy Utilization in Buildings A Review on Applica.pdf",
+  "generated_at": "2025-07-11 01:01:26",
+  "structured_info": {
+    "title_cn": "强化学习在优化建筑可再生能源利用中的应用与创新综述",
+    "title_en": "Reinforcement Learning for Optimizing Renewable Energy Utilization in Buildings: A Review on Applications and Innovations",
+    "category": "Machine Learning",
+    "topics": [
+      "Reinforcement Learning",
+      "Renewable Energy Systems",
+      "Building Energy Management"
+    ],
+    "keywords": [
+      "reinforcement learning",
+      "renewable energy",
+      "building energy management",
+      "adaptive control",
+      "model-free control",
+      "smart buildings"
+    ],
+    "abstract": "The integration of renewable energy systems into modern buildings is essential for enhancing energy efficiency, reducing carbon footprints, and advancing intelligent energy management. However, optimizing RES operations within building energy management systems introduces significant complexity, requiring advanced control strategies. One significant branch of modern control algorithms concerns reinforcement learning, a data-driven strategy capable of dynamically managing renewable energy sources and other energy subsystems under uncertainty and real-time constraints. The current review systematically examines RL-based control strategies applied in BEMS frameworks integrating RES technologies between 2015 and 2025, classifying them by algorithmic approach and evaluating the role of multi-agent and hybrid methods in improving real-time adaptability and occupant comfort. Following a thorough explanation of a rigorous selection process which targeted the most impactful peer-reviewed publications from the last decade, the paper presents the mathematical concepts of RL and multi-agent RL, along with detailed summaries and summary tables of the integrated works to facilitate quick reference to key findings.",
+    "methodology": "Systematic literature review using multi-step quality assessment: (1) Article selection from Scopus and Web of Science databases based on citation impact (>10 citations), relevance to RL-based RES control in BEMS, peer-review status, and methodological rigor; (2) Keyword analysis with terms like 'Reinforcement Learning in RES for buildings'; (3) Data collection categorizing publications by RL techniques, RES integration, and application context; (4) Synthesis into comparative tables and thematic summaries.",
+    "conclusion": "RL is a transformative approach for optimizing RES in buildings due to its adaptability to renewable variability and dynamic energy demands. Key strengths include real-time optimization of energy consumption and storage, while limitations involve data-intensive training and real-world deployment challenges. Future directions emphasize transfer learning, hybrid methods, and standardized testbeds.",
+    "authors": [
+      "Panagiotis Michailidis",
+      "Iakovos Michailidis",
+      "Elias Kosmatopoulos"
+    ],
+    "publication_year": "2025",
+    "venue": "Energies",
+    "doi": "https://doi.org/10.3390/en18071724",
+    "bibtex_citation": "Michailidis_Reinforcement_2025",
+    "analysis": {
+      "Overview": "Comprehensive review of reinforcement learning applications for optimizing renewable energy systems (RES) in building energy management (BEMS) from 2015-2025, focusing on algorithmic approaches, multi-agent coordination, and real-time adaptability.",
+      "Background_and_Motivation": [
+        "Global energy costs, environmental concerns, and buildings accounting for 34% of global energy use/carbon emissions drive the need for efficient RES integration.",
+        "Variable RES output (e.g., solar/wind fluctuations) and dynamic factors (occupancy, pricing) complicate energy management, necessitating adaptive control beyond traditional rule-based methods.",
+        "Urgency is established through policy frameworks like the EU Green Deal and evidence that conventional controls fail under uncertainty, risking grid stability and efficiency.",
+        "Specific problem of RES-BEMS optimization is linked to broader sustainability challenges: reducing fossil fuel dependence, achieving net-zero goals, and enabling smart grid interoperability.",
+        "Contributes to interdisciplinary fields: Machine Learning (Reinforcement Learning), Energy Systems Engineering, Sustainable Architecture, and Control Theory."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Reinforcement Learning (RL): Model-free control strategy where agents learn optimal policies through environment interactions to maximize cumulative rewards.",
+          "Multi-Agent RL (MARL): Extension coordinating multiple agents (e.g., HVAC, storage controllers) via shared critics or decentralized policies.",
+          "Building Energy Management System (BEMS): Integrated framework controlling RES, storage, and consumption subsystems."
+        ],
+        "RL agents interact with BEMS environment (states: occupancy, weather, energy prices) → take actions (e.g., adjust HVAC setpoints) → receive rewards (e.g., cost savings) → update policies. MARL enables agent coordination for complex RES-BEMS optimization.",
+        "Implicit assumptions: Environment is Markovian (future states depend only on current state/action); reward functions accurately encapsulate energy/comfort trade-offs; RES variability is learnable through exploration.",
+        "Synthesis contribution: Classifies knowledge (algorithm types, applications); identifies trends (hybrid methods); critiques limitations (generalization gaps); directs future research (transfer learning)."
+      ],
+      "Methodology": [
+        "Core method: Systematic literature review with multi-step screening (citation impact >10, peer-review validation, relevance filters). Data synthesized via attribute-based categorization: RL type, agent structure, RES technologies.",
+        "Novelty in rigorous decade-spanning coverage (2015-2025); applicability demonstrated through RES-specific taxonomies; rationality via balanced algorithm/building-type representation.",
+        "Data from Scopus/Web of Science; 300+ papers screened; preprocessing via keyword analysis and quality assessment. Representativeness ensured by including residential/commercial buildings and simulation/real-world studies.",
+        "Experimental rigor via attribute-based evaluation (e.g., RL methodology, baseline controls); metrics include cost savings, comfort maintenance, and RES utilization. Adequacy confirmed by comparative tables.",
+        "Follows computational sustainability paradigm: Emphasizes real-world constraints (occupant comfort, grid stability) and data-driven solutions, shaping focus on adaptive control over theoretical purity."
+      ],
+      "Results": [
+        "Key results: Value-based methods (e.g., Q-learning) dominate simpler applications; actor-critic (e.g., DDPG, SAC) excels in continuous control; hybrid approaches balance cost/compliance. Tables show 20-30% energy cost reductions and 15-40% RES utilization gains vs. baselines.",
+        "Significance: Demonstrates RL's adaptability to RES variability; reliability via high-impact study inclusion; stability evidenced by consistent performance across building types in synthesized works."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem motivation → RL mathematical framework → Application tables → Attribute evaluation → Trends/future work.",
+        "Key steps: (1) Establish RES-BEMS complexity; (2) Propose RL as adaptive solution; (3) Validate via literature synthesis; (4) Compare methodologies; (5) Derive domain-specific insights.",
+        "Strengths: Coherent attribute-based analysis; rebuttals addressed by acknowledging limitations (e.g., data needs) while highlighting RL's empirical successes. Weakness: Qualitative synthesis lacks meta-analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive RES-focused taxonomy; decade-spanning coverage; practical insights for real-world deployment; identification of multi-agent/hybrid trends.",
+        "Methodology boundaries: Selection bias toward high-impact studies; limited real-world validation in reviewed works; generalization challenges across building types.",
+        "Theoretical constraints: Optimization-centric paradigm undervalues human factors; reward function design prioritizes cost/energy over occupant behavior complexity."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Synthesizes fragmented RL-RES-BEMS research; establishes benchmarking attributes; advocates for standardized evaluation.",
+        "Terminology: Technical (MDP, Q-learning, BEMS); tone authoritative; rhetoric: positions RL as essential for sustainability transitions via citations to EU policies and high-impact energy journals.",
+        "Citations build authority by referencing seminal RL works (e.g., DQN, SAC) and domain-specific studies; motivation: legitimize RL's role in energy informatics and guide funding priorities."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: RL enables robust RES optimization under uncertainty but requires solutions for data efficiency, security, and real-world validation. Hybrid methods and transfer learning emerge as key trends.",
+        "Future research: Develop open-source testbeds; improve generalization via digital twins; integrate occupant behavior models; explore RL for multi-energy carrier systems."
+      ]
+    }
+  }
+}

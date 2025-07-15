@@ -1,0 +1,82 @@
+{
+  "file_name": "Basso和Maino - 2025 - POKÉ A Compact and Efficient PKE from Higher-Dimensional Isogenies.pdf",
+  "generated_at": "2025-07-10 01:28:28",
+  "structured_info": {
+    "title_cn": "POKÉ：基于高维同源的紧凑高效公钥加密方案",
+    "title_en": "POKÉ: A Compact and Efficient PKE from Higher-Dimensional Isogenies",
+    "category": "Cryptography",
+    "topics": [
+      "Isogeny-Based Cryptography",
+      "Public-Key Encryption",
+      "Post-Quantum Cryptography"
+    ],
+    "keywords": [
+      "Isogenies",
+      "Higher-Dimensional Representations",
+      "PKE Protocol",
+      "Commuting Isogenies",
+      "Efficient Implementation"
+    ],
+    "abstract": "We introduce a new PKE protocol, POKÉ, based on isogenies of unknown degree. The protocol relies on two new techniques: the first constructs an SIDH square while also working with higher-dimensional representations, whereas the second allows us to obtain a shared secret even when all curves in the commutative diagram are known. The resulting protocol is compact and extremely efficient. We provide a proof-of-concept implementation in SageMath of POKÉ that shows encryption and decryption taking about a hundred milliseconds at security level I: POKÉ is thus the most efficient encryption protocol from isogenies, and it outperforms existing protocols by more than an order of magnitude.",
+    "methodology": "Combines higher-dimensional isogeny representations with commutative diagrams (SIDH squares) using isogenies of unknown degree. Introduces public-private isogeny representations and point-based shared secret derivation.",
+    "conclusion": "POKÉ achieves unprecedented efficiency in isogeny-based encryption, with ~100ms encryption/decryption at NIST Level I security. It leverages higher-dimensional isogenies to avoid SIDH attacks while maintaining compact parameters (prime size ~10λ/3 bits).",
+    "authors": [
+      "Andrea Basso",
+      "Luciano Maino"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "10.1007/978-3-031-91124-8_4",
+    "bibtex_citation": "Basso_POKÉ_2025",
+    "analysis": {
+      "Overview": "Proposes a novel isogeny-based public-key encryption protocol using higher-dimensional representations and commuting isogenies to achieve compactness and efficiency in post-quantum cryptography.",
+      "Background_and_Motivation": [
+        "SIDH's 2022 break necessitated secure alternatives; existing higher-dimensional protocols (e.g., FESTA) lacked SIDH-like commutative structures.",
+        "Motivation: Construct secure encryption combining SIDH's efficiency with higher-dimensional representations while avoiding known attacks.",
+        "Urgency: Post-SIDH landscape demands protocols resistant to torsion-point attacks, requiring fundamentally new designs.",
+        "Specific problem: Enable shared secrets when all commutative diagram curves are public, which existing approaches cannot achieve.",
+        "Contributes to cryptography, computational algebra, and post-quantum security."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Public-private isogeny representation: Splits isogeny data into public (revealed) and private (secret) components.",
+          "SIDH square adaptation: Commutative diagram built using isogenies of unknown degree.",
+          "Point-based key exchange: Shared secret derived from scaled torsion points rather than curve invariants."
+        ],
+        "Logical relations: Public-private representations enable pushforwards in commutative diagrams; point-based secrets leverage commuting isogeny actions.",
+        "Assumptions: Hardness of recovering isogenies from scaled torsion actions when degree is unknown; commutativity of diagram operations.",
+        "Contribution: Novel cryptographic protocol advancing isogeny-based PKE efficiency and security post-SIDH."
+      ],
+      "Methodology": [
+        "Core: Higher-dimensional isogenies (QFESTA-style), commutative diagrams, ElGamal encryption with KDF. Uses torsion points over Fp2.",
+        "Novelty: First protocol combining SIDH-like exchanges with higher-dimensional representations. Rationality: Avoids SIDH attacks via unknown degrees.",
+        "Data: Supersingular curves (j=1728); torsion bases for orders 2^a, 3^b, 5^c; scaled points. Representativeness: Standard in isogeny crypto.",
+        "Rigor: Proof-of-concept SageMath implementation; metrics: runtime, ciphertext size. Evaluation: Adequate for initial security claims.",
+        "Theoretical paradigm: Isogeny-based cryptography; influences focus on computational hardness rather than group actions."
+      ],
+      "Results": [
+        "Encryption/decryption ~100ms at NIST Level I; prime size ~10λ/3 bits; outperforms prior isogeny-based PKE by >10x.",
+        "Significance: Sets new efficiency benchmark. Reliability: Implemented results support claims. Stability: Assumption-based security holds under analyzed attacks."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: (1) Introduce techniques → (2) Construct protocol → (3) Formalize security → (4) Analyze hardness → (5) Validate via implementation.",
+        "Key steps: Security reduces to novel C-POKE assumption; efficiency via compact parameters; shared secret via commuting isogenies.",
+        "Strengths: Coherent reduction to hard problems. Weaknesses: New assumption untested. Rebuttals: Relate C-POKE to established isogeny problems."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Unprecedented efficiency; compact parameters; novel combination of techniques.",
+        "Limitations: New cryptographic assumption; decryption requires smooth-order discrete logs.",
+        "Theoretical constraints: Isogeny paradigm restricts to supersingular curves; unknown-degree assumption may weaken over time."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioning: Advances post-SIDH isogeny crypto by unifying efficiency and security. Contrasts with FESTA/SIDH via technical comparisons.",
+        "Terminology: Specialized (e.g., 'pushforwards', 'torsion bases'); tone: technical/assertive; rhetoric: Emphasizes breakthroughs via quantitative claims.",
+        "Authority: Strategic citations to SIDH attacks/FESTA; motivation: Establish credibility through novelty and implementation."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: POKÉ demonstrates efficient isogeny-based PKE is feasible post-SIDH via higher-dimensional representations and novel shared-secret techniques.",
+        "Future work: Optimize implementation; explore IND-CCA security; cryptanalyze new assumption; adapt to other primitives (e.g., signatures)."
+      ]
+    }
+  }
+}

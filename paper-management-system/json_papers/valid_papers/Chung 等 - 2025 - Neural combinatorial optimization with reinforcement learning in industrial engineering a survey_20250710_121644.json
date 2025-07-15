@@ -1,0 +1,83 @@
+{
+  "file_name": "Chung 等 - 2025 - Neural combinatorial optimization with reinforcement learning in industrial engineering a survey.pdf",
+  "generated_at": "2025-07-10 12:16:44",
+  "structured_info": {
+    "title_cn": "工业工程中基于强化学习的神经组合优化：综述",
+    "title_en": "Neural combinatorial optimization with reinforcement learning in industrial engineering: a survey",
+    "category": "Machine Learning",
+    "topics": [
+      "Combinatorial Optimization",
+      "Reinforcement Learning",
+      "Industrial Engineering"
+    ],
+    "keywords": [
+      "Neural combinatorial optimization",
+      "Reinforcement learning",
+      "Industrial engineering",
+      "Operations research",
+      "Review"
+    ],
+    "abstract": "In recent trends, machine learning is widely used to support decision-making in various domains and industrial operations. Because of the increasing complexity of modern industries, industrial engineering aims not only to increase cost-effectiveness and productivity but also to consider sustainability, resilience, and human centricity, resulting in many-objective, constrained, and stochastic operations research. Based on the above stringent requirements, combinatorial optimization (CO) problems are thus developed to support the complicated decision-making process in operations research. Due to the computational complexity of exact algorithms and the uncertain solution quality of heuristic methods, there is a growing trend to leverage the power of machine learning in solving CO problems, known as neural combinatorial optimization (NCO), where reinforcement learning (RL) is the core to achieve the sequential decision support. This survey study provides a comprehensive investigation of the theories and recent advancements in applying RL to solve hard CO problems, such as vehicle routing, bin packing, assignment, scheduling, and planning problems, and, in addition, summarizes the applications of neural combinatorial optimization with reinforcement learning (NCO-RL). The detailed review found that although the research domain of NCO-RL is still under-explored, its research potential has been proven to address environmental sustainability, adaptability, and human factors. Last but not least, the technical challenges and opportunities of the NCO-RL to embrace the industry 5.0 paradigm are discussed.",
+    "methodology": "Literature review and systematic analysis of neural combinatorial optimization (NCO) combined with reinforcement learning (RL), including MDP/POMDP formulations, value-based/policy-based RL approaches, and neural architectures (seq2seq, struct2seq, GNNs).",
+    "conclusion": "NCO-RL shows significant potential in solving complex industrial combinatorial optimization problems while addressing sustainability, adaptability, and human factors. Despite being an emerging field with challenges like generalization and scalability, it offers promising pathways for Industry 5.0 integration.",
+    "authors": [
+      "K. T. Chung",
+      "C. K. M. Lee",
+      "Y. P. Tsang"
+    ],
+    "publication_year": "2025",
+    "venue": "Artificial Intelligence Review",
+    "doi": "10.1007/s10462-024-11045-1",
+    "bibtex_citation": "Chung_Neural_2025",
+    "analysis": {
+      "Overview": "This survey examines the integration of reinforcement learning with neural combinatorial optimization to solve complex industrial engineering problems like vehicle routing and bin packing, highlighting methodologies, applications, and future directions.",
+      "Background_and_Motivation": [
+        "Industrial engineering faces challenges in decision-making due to increasing system complexity, multi-objective requirements (sustainability, resilience, human-centricity), and dynamic operational environments.",
+        "Traditional combinatorial optimization methods (exact/heuristic) struggle with computational complexity and solution reliability, motivating the use of RL to enable adaptive, efficient solutions without optimal training data.",
+        "Authors emphasize the urgency by highlighting modern industries' need for real-time decision-making in stochastic environments, where static models fail.",
+        "Specific CO problems (e.g., vehicle routing) are linked to broader industrial challenges like supply chain resilience and sustainable logistics, establishing significance through real-world applicability.",
+        "Contributes to interdisciplinary fields including Machine Learning, Operations Research, Industrial Engineering, and Sustainability Science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Combinatorial Optimization (CO): Problems defined over discrete structures seeking optimal solutions (e.g., minimal cost) under constraints.",
+          "Neural Combinatorial Optimization (NCO): Uses neural networks to solve CO problems, overcoming limitations of traditional methods.",
+          "Reinforcement Learning (RL): Trains agents via environment interactions to maximize cumulative rewards, enabling sequential decision-making."
+        ],
+        "NCO-RL integrates NCO and RL: RL trains neural networks to solve CO problems without labeled optimal solutions, forming a feedback loop where policies improve through exploration.",
+        "Assumes CO problems can be modeled as MDPs/POMDPs; neural networks can approximate complex policies; and industrial environments are partially observable but learnable.",
+        "Survey synthesizes fragmented knowledge, establishing NCO-RL as a distinct subfield and highlighting its empirical and theoretical contributions to ML-driven optimization."
+      ],
+      "Methodology": [
+        "Core methods include MDP/POMDP formulations for CO problems, value-based (Q-learning) and policy-based (Actor-Critic) RL algorithms, and neural architectures (Pointer Networks, GNNs) for sequence/graph-based inputs.",
+        "RL's novelty lies in avoiding optimal training data; applicability is demonstrated in logistics and scheduling; rationality stems from balancing solution quality and computational efficiency.",
+        "Uses synthetic/real-world datasets (e.g., logistics networks); preprocessing involves state representations (e.g., graph embeddings); representativity is limited to problem-specific instances.",
+        "Experimental rigor varies across reviewed studies; common metrics include solution optimality gaps and inference time, but standardized benchmarks are lacking.",
+        "Follows the computational learning paradigm, emphasizing empirical validation over theoretical guarantees, which prioritizes practical applicability in industrial contexts."
+      ],
+      "Results": [
+        "Key findings: NCO-RL achieves near-optimal solutions for vehicle routing and bin packing with faster inference than heuristics; successfully incorporates sustainability (e.g., EV routing) and human factors (e.g., deprivation-aware allocation).",
+        "Results are significant for enabling real-time industrial decision-making but vary in reliability across problem sizes; stability concerns arise in generalization to unseen instances."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: (1) problem motivation, (2) CO/RL background, (3) NCO-RL methodologies, (4) application-specific analyses, (5) challenges/future directions.",
+        "Key steps: Establishes CO complexity → justifies RL integration → categorizes RL approaches → reviews applications → identifies gaps → proposes Industry 5.0 alignment.",
+        "Strengths: Clear progression from theory to practice; addresses rebuttals (e.g., data scarcity) via RL's exploration benefits. Weakness: Limited critique of neural architectures' scalability."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Unifies dispersed NCO-RL research; highlights sustainability/human-centric applications; identifies actionable future directions (e.g., generalization techniques).",
+        "Methodology limitations: Sample inefficiency in RL; poor generalization to large-scale problems; handcrafted state representations reduce flexibility.",
+        "Theoretical constraints: Focus on empirical RL paradigms overlooks connections to mathematical optimization, potentially limiting theoretical robustness."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions NCO-RL as an emerging solution for Industry 5.0, bridging ML and operations research while critiquing traditional methods' inefficiencies.",
+        "Uses technical terminology (e.g., 'MDP', 'policy gradient') and persuasive rhetoric emphasizing 'potential' and 'promise'; positions RL as transformative for CO.",
+        "Builds authority through foundational citations (e.g., Bellman, Sutton) and comparative tables; citation patterns reveal a focus on recent (post-2016) ML advances."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: NCO-RL effectively addresses dynamic industrial CO problems, showing strengths in adaptability and multi-objective optimization but requires advances in generalization and scalability.",
+        "Future research: Improve sample efficiency and generalization; integrate human-AI collaboration; develop standardized benchmarks; explore transfer learning for cross-domain applications."
+      ]
+    }
+  }
+}

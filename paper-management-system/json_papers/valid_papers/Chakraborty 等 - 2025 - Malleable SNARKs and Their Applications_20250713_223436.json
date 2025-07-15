@@ -1,0 +1,82 @@
+{
+  "file_name": "Chakraborty 等 - 2025 - Malleable SNARKs and Their Applications.pdf",
+  "generated_at": "2025-07-13 22:34:36",
+  "structured_info": {
+    "title_cn": "可延展的 SNARK 及其应用",
+    "title_en": "Malleable SNARKs and Their Applications",
+    "category": "Cryptography",
+    "topics": [
+      "SNARKs",
+      "Zero-Knowledge Proofs",
+      "Cryptographic Protocols"
+    ],
+    "keywords": [
+      "Malleable SNARKs",
+      "Adversarial One-Way Functions",
+      "Derivation Privacy",
+      "Reverse Firewalls",
+      "Rerandomizable Encryption"
+    ],
+    "abstract": "Succinct non-interactive arguments of knowledge (SNARKs) are variants of non-interactive zero-knowledge proofs (NIZKs) in which complex statements can be proven in a compact way. SNARKs have had tremendous impact in several areas of cryptography, including verifiable computing, blockchains, and anonymous communication. A recurring concept in many applications is the concept of recursive SNARKs, in which a proof references a previous proof to show an evolved statement. In this work, we investigate malleable SNARKs, a generalization of this concept of recursion. An adaptation of the existing concept of malleable NIZKs, malleable SNARKs allow to modify SNARK proofs to show related statements, but such that such mauled proofs are indistinguishable from 'properly generated' fresh proofs of the related statement. We show how to instantiate malleable SNARKs for universal languages and relations, and give a number of applications: the first post-quantum RCCA-secure rerandomizable and updatable encryption schemes, a generic construction of reverse firewalls, and an unlinkable (i.e., computation-hiding) targeted malleable homomorphic encryption scheme.",
+    "methodology": "Constructs malleable SNARKs using recursive proofs combined with adversarial one-way functions (AOWFs). Introduces AOWFs as a computational primitive to bound extraction depth while enabling derivation privacy, with a candidate implementation proven secure in the random oracle model. Applies malleable SNARKs to build cryptographic primitives via modified Naor-Yung transformations.",
+    "conclusion": "Malleable SNARKs enable unbounded proof modifications with full derivation privacy, resolving limitations of recursive SNARKs. They facilitate the first post-quantum RCCA-secure rerandomizable encryption, reverse firewalls for NIZKs, updatable encryption, and unlinkable targeted malleable homomorphic encryption, addressing multiple open problems in cryptography.",
+    "authors": [
+      "Suvradip Chakraborty",
+      "Dennis Hofheinz",
+      "Roman Langrehr",
+      "Jesper Buus Nielsen",
+      "Christoph Striecks",
+      "Daniele Venturi"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT 2025",
+    "doi": "10.1007/978-3-031-91134-7_7",
+    "bibtex_citation": "Chakraborty_Malleable_2025",
+    "analysis": {
+      "Overview": "Introduces malleable SNARKs—succinct non-interactive arguments supporting privacy-preserving proof transformations—and demonstrates applications in encryption and firewalls, advancing zero-knowledge proof systems.",
+      "Background_and_Motivation": [
+        "Addresses limitations of recursive SNARKs, which leak modification depth and restrict unbounded recursion due to extraction complexity.",
+        "Motivated by the need for strong indistinguishability (derivation privacy) in proof modifications to enable secure rerandomization in applications like anonymous communication.",
+        "Argues that bounded recursion counters in prior work compromise privacy and flexibility; unbounded solutions are urgent for post-quantum security.",
+        "Links malleable SNARKs to broader challenges in verifiable computing and blockchain scalability, emphasizing their role in enhancing cryptographic primitives.",
+        "Contributes to cryptography, particularly zero-knowledge proofs, encryption, and interdisciplinary fields like secure multiparty computation."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Malleable SNARKs: proofs modifiable for related statements with derivation privacy; (2) Adversarial One-Way Functions (AOWFs): functions hard to invert repeatedly on adversarially chosen outputs; (3) Derivation Privacy: indistinguishability between mauled and fresh proofs.",
+        "AOWFs enable termination in recursive extraction for malleable SNARKs; derivation privacy relies on AOWF unlinkability. Malleable SNARKs then underpin encryption/firewall constructions.",
+        "Key assumptions: Existence of fast-extractable SNARKs; security of AOWFs in the random oracle model.",
+        "Contributes foundational primitives (AOWFs) and frameworks (malleable SNARKs), expanding the knowledge system of cryptographic proof theory."
+      ],
+      "Methodology": [
+        "Uses recursive SNARK composition augmented with AOWF 'tags' to enforce extraction depth bounds. Constructs AOWF candidate via randomized hash functions in the random oracle model.",
+        "Novelty: First to achieve unbounded malleability with full derivation privacy. AOWFs provide a rational solution to extraction termination without counters.",
+        "Theoretical analysis only; no empirical data. Security proofs rely on reductionist arguments in random oracle/standard models.",
+        "Evaluation rigor: Formal security proofs for AOWFs and SNARKs; simulation extractability for controlled malleability.",
+        "Follows computational complexity and reductionist paradigms, focusing on adversarial models and cryptographic hardness assumptions."
+      ],
+      "Results": [
+        "Achieved unbounded-depth malleable SNARKs with derivation privacy; built first post-quantum RCCA-secure rerandomizable encryption, reverse firewalls for NIZKs, and unlinkable homomorphic encryption.",
+        "Results are significant: Solve open problems (e.g., from prior work on homomorphic encryption). Reliability stems from proofs in accepted models; stability depends on AOWF security."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: (1) Define malleable SNARKs/AOWFs; (2) Construct SNARKs via AOWFs; (3) Prove security; (4) Build applications.",
+        "Key steps: AOWFs bound extraction chains → enable derivation privacy → applications via Naor-Yung transformations.",
+        "Strengths: Cohesive logic bridging primitives to applications. Weaknesses: AOWF security is non-falsifiable; addressed by providing a random-oracle candidate."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Unbounded malleability, derivation privacy, and solutions to multiple open problems (e.g., post-quantum UE).",
+        "Limitations: AOWF security requires random oracle; fast extraction assumption for SNARKs; non-falsifiable aspects.",
+        "Theoretical constraints: Computational assumptions limit post-quantum viability without concrete AOWF instantiations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions work as bridging recursive proofs and malleability; uses SNARK literature to contextualize innovation (e.g., vs. counters in prior art).",
+        "Technical terminology (e.g., 'derivation privacy', 'simulation extractability'); persuasive tone emphasizing necessity ('urgent', 'first').",
+        "Builds authority via citations to foundational work (e.g., Naor-Yung, EUROCRYPT proceedings); motivations include solving community open problems."
+      ],
+      "Conclusions_and_Implications": [
+        "Malleable SNARKs enable privacy-preserving proof transformations with unbounded depth; applications advance encryption and firewall designs.",
+        "Future work: Standard-model AOWFs; broader applications in decentralized systems; improving efficiency and quantum resistance."
+      ]
+    }
+  }
+}

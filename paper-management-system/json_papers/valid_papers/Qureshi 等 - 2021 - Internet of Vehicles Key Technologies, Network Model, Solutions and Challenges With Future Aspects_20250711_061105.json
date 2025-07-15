@@ -1,0 +1,87 @@
+{
+  "file_name": "Qureshi 等 - 2021 - Internet of Vehicles Key Technologies, Network Model, Solutions and Challenges With Future Aspects.pdf",
+  "generated_at": "2025-07-11 06:11:05",
+  "structured_info": {
+    "title_cn": "车联网：关键技术、网络模型、解决方案及未来挑战与前景",
+    "title_en": "Internet of Vehicles: Key Technologies, Network Model, Solutions and Challenges With Future Aspects",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Internet of Vehicles",
+      "Network Architecture",
+      "Cloud Computing",
+      "Big Data Analytics",
+      "Network Security"
+    ],
+    "keywords": [
+      "Internet of Vehicles",
+      "Vehicular Networks",
+      "Network Model",
+      "Cloud Services",
+      "Big Data",
+      "Security"
+    ],
+    "abstract": "New integrated technologies have changed various existing fields and converted into new and advanced data communication systems including, smart agriculture, smart homes, smart health, and smart transportation systems. Internet of Things (IoT) has evolved a new theme to vehicular networks field known as the Internet of Vehicles (IoV). This paper presents a comprehensive review and detailed background and motivation to evolve the heterogeneous vehicular networks. Paper also proposed new integrated models and key technologies related to network maintenance, a six-layered architecture model based on protocol stack and network elements, network model based on cloud services, big data analytical model based on data acquisition and analytics, security model based on detection and prevention systems. Paper also envisioned existing challenges and future directions to design the new integrated models.",
+    "methodology": "Comprehensive literature review followed by proposal of conceptual models: six-layered architecture, cloud-based network model, big data analytics framework, and security model. Theoretical analysis without empirical validation.",
+    "conclusion": "Proposed models address IoV requirements through layered architecture, cloud integration, big data analytics, and security systems. Future work includes drone-enabled IoV for enhanced connectivity and addressing line-of-sight limitations.",
+    "authors": [
+      "Kashif Naseer Qureshi",
+      "Sadia Din",
+      "Gwanggil Jeon",
+      "Francesco Piccialli"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2020.2994972",
+    "bibtex_citation": "Qureshi_Internet_2021",
+    "analysis": {
+      "Overview": "Comprehensive review of Internet of Vehicles (IoV) technologies proposing architectural models for network design, cloud integration, data analytics, and security to address challenges in heterogeneous vehicular networks.",
+      "Background_and_Motivation": [
+        "Evolution of IoT enabling vehicular networks faces heterogeneity, scalability, security vulnerabilities, and high mobility challenges.",
+        "Need for integrated solutions to overcome incompatibility, limited computing resources, big data management, and unreliable internet connectivity in IoV.",
+        "Highlighted commercial disinterest due to complexity and critical safety implications of unaddressed vulnerabilities.",
+        "Positioned IoV as essential for smart transportation systems impacting urban infrastructure and public safety.",
+        "Contributes to vehicular networks, IoT systems, cloud computing, cybersecurity, and intelligent transportation disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Six-layered architecture: User Interface (data collection), Systemization (network coordination), Intermixture (cloud processing), Services (applications), Commerce (business analytics), Security (protection)",
+          "Network Model: Integrates cloud services, gateway systems, and communication technologies (cellular, short/long-range)",
+          "Security Model: Three-module framework (Smart Intrusion Detection, Threat Assessment, Smart Prevention Systems)"
+        ],
+        "Layered architecture enables interoperability → feeds data to cloud processing → supports service applications → managed via commerce analytics → secured holistically.",
+        "Assumes cloud infrastructure availability, wireless technology interoperability, and hierarchical threat management efficacy.",
+        "Provides integrative framework contribution by synthesizing architecture, networking, and security into unified IoV design principles."
+      ],
+      "Methodology": [
+        "Conceptual modeling of architectures; analytical evaluation of existing solutions; proposal of novel layered and modular frameworks.",
+        "Architecture offers structural novelty but lacks empirical validation; security model shows applicability through phased prevention mechanisms.",
+        "No primary data used; relies on theoretical network parameters. Data representativeness unverified.",
+        "No experimental design; evaluation metrics limited to theoretical feasibility analysis.",
+        "Follows systems engineering paradigm, emphasizing modularity and interoperability, which narrows focus to architectural solutions over behavioral aspects."
+      ],
+      "Results": [
+        "Proposed: 1) Six-layer architecture for interoperability 2) Cloud-network integration model 3) MapReduce-based big data pipeline 4) Three-tier security framework.",
+        "Results are theoretical; significance hinges on implementation viability. Reliability/stability untested against real-world dynamics."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem identification → literature critique → layered solution proposal → component-specific models → challenge discussion.",
+        "1) Establish IoV challenges 2) Review model limitations 3) Propose architecture 4) Extend to sub-models 5) Validate via coverage completeness.",
+        "Strength: Comprehensive integration of domains. Weakness: Lack of empirical support. Rebuttals addressed via future work commitments (e.g., drone integration)."
+      ],
+      "Strengths_and_Limitations": [
+        "Holistic framework covering architecture, networking, data, and security; innovative layering approach.",
+        "Conceptual nature limits practical validation; models may not scale to ultra-dense urban scenarios.",
+        "Systems engineering paradigm underemphasizes human behavior impacts and real-time adaptability constraints."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned as integrative solution bridging IoV fragmentation in existing literature.",
+        "Technical terminology (e.g., 'intermixture layer', 'smart prevention systems'); persuasive tone emphasizing urgency; leverages IEEE standards for credibility.",
+        "Builds authority through extensive citations (38 references). Motivations include establishing architectural standardization and prioritizing security."
+      ],
+      "Conclusions_and_Implications": [
+        "Proposed models address IoV heterogeneity through layered architecture, cloud integration, data analytics, and modular security.",
+        "Future work: Drone-assisted networks, energy efficiency optimization, human behavior integration, and validation in dynamic environments."
+      ]
+    }
+  }
+}

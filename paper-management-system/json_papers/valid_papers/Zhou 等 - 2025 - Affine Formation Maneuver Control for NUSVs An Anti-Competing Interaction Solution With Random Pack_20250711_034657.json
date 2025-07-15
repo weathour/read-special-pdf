@@ -1,0 +1,82 @@
+{
+  "file_name": "Zhou 等 - 2025 - Affine Formation Maneuver Control for NUSVs An Anti-Competing Interaction Solution With Random Pack.pdf",
+  "generated_at": "2025-07-11 03:46:57",
+  "structured_info": {
+    "title_cn": "无人水面艇的仿射编队机动控制：一种具有随机丢包抗竞争交互的解决方案",
+    "title_en": "Affine Formation Maneuver Control for NUSVs: An Anti-Competing Interaction Solution With Random Packet Losses",
+    "category": "Control Systems",
+    "topics": [
+      "Formation Control",
+      "Event-Triggered Control",
+      "Networked Systems"
+    ],
+    "keywords": [
+      "Affine formation maneuver",
+      "dynamic event-triggered control",
+      "unreliable network connectivity",
+      "networked unmanned surface vehicles"
+    ],
+    "abstract": "This article investigates event-driven affine formation maneuver control (AFMC) of networked unmanned surface vehicles (NUSVs). A novel dynamic interleaved periodic event-triggered mechanism (DIPETM) is proposed to prevent communication competition and address random packet losses caused by unreliable network connectivity during formation maneuvers. The approach achieves position formation and attitude consensus through discrete neighboring communication while optimizing triggering frequency and counteracting packet loss effects. Numerical simulations validate the scheme's efficacy.",
+    "methodology": "Dynamic interleaved periodic event-triggered mechanism (DIPETM) integrated with affine formation control; Hybrid model-based stability analysis; Reference system decomposition into localization and tracking layers; Adaptive control with Lyapunov stability guarantees.",
+    "conclusion": "The proposed DIPETM-based AFMC scheme successfully resolves communication competition and random packet loss problems while enabling arbitrary configuration transformations. It achieves synchronous position formation and attitude consensus with optimized resource utilization and robustness in unreliable networks.",
+    "authors": [
+      "Xiaotao Zhou",
+      "Bing Huang",
+      "Bin Zhou",
+      "Cheng Zhu",
+      "Hongde Qin",
+      "Jianming Miao"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/TASE.2024.3433020",
+    "bibtex_citation": "Zhou_Affine_2025",
+    "analysis": {
+      "Overview": "Proposes an event-driven control framework for networked unmanned surface vehicles (NUSVs) to achieve affine formation maneuvers while addressing communication resource constraints and packet losses.",
+      "Background_and_Motivation": [
+        "Limited communication resources in multi-vehicle systems cause packet collisions during simultaneous event triggers and performance degradation during formation scaling beyond communication ranges.",
+        "Need distributed AFMC that handles discrete computation requirements while preventing communication competition and random packet losses during dynamic configuration changes.",
+        "Authors highlight hardware limitations (discrete data transmission), channel contention risks, and distance-induced packet losses as urgent issues compromising formation stability.",
+        "Relates specific NUSV communication challenges to broader networked control problems, emphasizing real-world applicability in oceanic missions requiring extended autonomous operations.",
+        "Contributes to control theory, networked robotics, and marine automation through interdisciplinary integration of formation control, event-triggered mechanisms, and communication protocols."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Dynamic Interleaved Periodic Event-Triggered Mechanism (DIPETM): Decentralized protocol that schedules event detection at non-overlapping intervals to avoid channel contention.",
+        "Affine Formation Maneuver Control (AFMC): Enables translation, rotation, scaling, and shearing transformations via time-varying gains.",
+        "Hybrid Reference System: Generates velocity-independent reference signals using layered architecture (localization/tracking).",
+        "Assumes undirected connected communication topology, affinely localizable nominal configurations, and bounded leader velocities.",
+        "Provides methodological innovation in event-triggered control (conditional-prescribed periods) and theoretical contribution through hybrid stability analysis with packet loss compensation."
+      ],
+      "Methodology": [
+        "DIPETM with conditional-prescribed detecting periods and inner-dynamic variables regulates triggering instants while interleaving transmissions. Flow/jump functions counteract packet losses by constraining successive losses via hybrid dynamics.",
+        "Novelty: Integrates interleaving with dynamic event-triggering for anti-competition; Applicability: Hardware-friendly discrete execution; Rationality: Lyapunov-based stability guarantees.",
+        "Simulated ocean disturbances (ITTC wave spectra, currents) test robustness; Data represents realistic marine conditions but lacks real-world validation.",
+        "Experimental design includes comparative simulations; Metrics: Formation errors, triggering frequency, packet loss resilience; Rigor demonstrated through stability proofs.",
+        "Follows hybrid systems theoretical paradigm, enabling formal analysis of discontinuous dynamics from events and packet losses, shaping the solution as a resource-aware control framework."
+      ],
+      "Results": [
+        "Numerical simulations confirm successful affine transformations (translation/rotation/scaling) in obstacle-rich environments with bounded tracking errors.",
+        "Results show reliability under wave disturbances and packet losses (up to 5 successive losses) with stable formation maintenance. Inter-event times remain predictable due to conditional period constraints."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: 1) Formulate AFMC problem with communication constraints; 2) Design DIPETM and reference system; 3) Prove stability via hybrid Lyapunov analysis; 4) Validate through simulations.",
+        "Key steps: Decomposition into localization/tracking layers; DIPETM's anti-competition via interleaving; Packet loss compensation through inner-dynamic variable; Adaptive control for disturbance rejection.",
+        "Strengths: Comprehensive handling of practical constraints; Weaknesses: Undirected graph assumption limits applicability. Rebuttals: Directed topologies suggested as future work; Bernoulli-independent packet losses generalized via distance-dependent model."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First integration of interleaving strategy with event-triggered AFMC; Explicit handling of distance-induced packet losses; Hardware-aware conditional-prescribed periods.",
+        "Methodology boundaries: Assumes acknowledgments of packet losses; Limited to undirected networks; Successive packet losses bounded by ρᴹᴬˣ.",
+        "Theoretical constraints: Hybrid systems framework assumes perfect state measurements; Conclusions on stability may not hold under sensor noise or unmodeled actuator dynamics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within control discourse: Advances event-triggered control for marine systems; Critiques existing periodic mechanisms (unknown MADP) and consensus methods (inapplicable to AFMC).",
+        "Specialized terminology: 'Affine localizability', 'hybrid model', 'inner-dynamic variable'; Persuasive tone emphasizing 'novelty' and 'first work'; Contrastive rhetoric against prior approaches in Table I.",
+        "Builds authority through citations to foundational formation control (Zhao 2018) and event-triggering (Heemels 2017); Motivations: Highlight gaps in NUSV literature while leveraging multi-agent system techniques."
+      ],
+      "Conclusions_and_Implications": [
+        "DIPETM-based AFMC resolves communication competition and random packet losses while achieving formation maneuvers. The hybrid approach maintains stability under prescribed loss bounds and hardware constraints.",
+        "Future work: Adjustable detecting periods; Directed topologies; Extensions without packet loss acknowledgments; Hardware-in-loop validation."
+      ]
+    }
+  }
+}

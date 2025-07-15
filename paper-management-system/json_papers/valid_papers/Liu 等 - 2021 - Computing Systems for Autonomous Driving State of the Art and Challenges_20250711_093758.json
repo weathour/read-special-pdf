@@ -1,0 +1,89 @@
+{
+  "file_name": "Liu 等 - 2021 - Computing Systems for Autonomous Driving State of the Art and Challenges.pdf",
+  "generated_at": "2025-07-11 09:37:58",
+  "structured_info": {
+    "title_cn": "自动驾驶计算系统：现状与挑战",
+    "title_en": "Computing Systems for Autonomous Driving: State of the Art and Challenges",
+    "category": "Autonomous Driving Systems",
+    "topics": [
+      "Autonomous Driving",
+      "Computing Systems",
+      "Sensor Technologies",
+      "Real-Time Processing",
+      "Edge Computing"
+    ],
+    "keywords": [
+      "Autonomous driving",
+      "Computing systems",
+      "Challenges",
+      "Sensors",
+      "Real-time decision"
+    ],
+    "abstract": "The recent proliferation of computing technologies (e.g., sensors, computer vision, machine learning, and hardware acceleration) and communication mechanisms (e.g., DSRC, C-V2X, 5G) has advanced autonomous driving. The key to success is making reliable real-time decisions. However, accidents from early deployments reveal current systems' inability to handle complex real-world environments. This article presents state-of-the-art computing systems for autonomous driving, covering seven performance metrics, nine key technologies, and twelve challenges to realize full autonomy.",
+    "methodology": "Survey and analysis of existing architectures, technologies, and challenges in autonomous driving computing systems. Modular and end-to-end designs are compared, with metrics and technologies evaluated through literature review and case studies (e.g., fatalities, sensor comparisons).",
+    "conclusion": "Current autonomous driving computing systems face significant challenges in reliability, safety, and real-world complexity. Twelve critical challenges—including AI robustness, sensor synchronization, failure detection, adverse condition handling, cybersecurity, cost, and infrastructure integration—must be addressed to achieve Level 4/5 autonomy. Interdisciplinary collaboration between computing and automotive communities is essential.",
+    "authors": [
+      "Liangkai Liu",
+      "Sidi Lu",
+      "Ren Zhong",
+      "Baofu Wu",
+      "Yongtao Yao",
+      "Qingyang Zhang",
+      "Weisong Shi"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Internet of Things Journal",
+    "doi": "10.1109/JIOT.2020.3043716",
+    "bibtex_citation": "Liu_Computing_2021",
+    "analysis": {
+      "Overview": "This survey paper examines the architecture, performance metrics, key technologies, and challenges in computing systems for autonomous vehicles. It covers sensor integration, real-time processing, communication, security, and energy efficiency, aiming to bridge gaps between computing and automotive domains.",
+      "Background_and_Motivation": [
+        "Rising autonomous vehicle fatalities highlight system limitations in complex environments despite advances in sensors and AI. Broader challenges include real-time decision reliability, safety assurance, and scalability.",
+        "Motivation: Address the gap between current computing systems and the robustness required for Level 4/5 autonomy. Specific problems: perception failures, sensor synchronization, cybersecurity threats, and high costs.",
+        "Urgency is argued via fatal incidents (e.g., Tesla and Uber cases) attributed to perception/prediction failures. The authors emphasize that real-world complexity exceeds current system capabilities.",
+        "The specific problem (computing system inadequacies) is linked to broader societal challenges: road safety (94% of crashes involve human error), market growth (projected $173B by 2030), and technological readiness for full autonomy.",
+        "Contributions span computer science, robotics, automotive engineering, machine learning, cybersecurity, and edge computing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Computing Systems: Hardware/software infrastructure (sensors, processors, OS, middleware) enabling perception, decision, and control.",
+          "Performance Metrics: Seven criteria (Accuracy, Timeliness, Power, Cost, Reliability, Privacy, Security) to evaluate system effectiveness.",
+          "Modular vs. End-to-End Design: Modular separates functions (localization, perception); end-to-end uses pure AI for sensor-to-control mapping."
+        ],
+        "Core concepts interrelate: Metrics define system goals → Technologies (sensors, algorithms, hardware) enable functionalities → Architecture integrates components → Challenges identify limitations. Security/privacy underpin all layers.",
+        "Key assumptions: Autonomous driving is achievable with enhanced computing; sensor fusion compensates individual limitations; standardization (e.g., ISO 26262) must evolve for AI safety.",
+        "Contribution: Comprehensive survey synthesizing technologies and challenges. Advances knowledge by defining metrics, cataloging technologies, and prioritizing research gaps."
+      ],
+      "Methodology": [
+        "Literature review of 200+ sources, system analysis (e.g., Hydra platform), and technology comparisons (sensors, hardware). Case studies (e.g., fatalities) contextualize challenges.",
+        "Methodology is rational: Combines empirical data (sensor specs, accident reports) with technical evaluation. Novelty lies in holistic system perspective. Applicability: Directly informs industry R&D.",
+        "Data sources: Academic publications, industry reports (e.g., NSTC), datasets (KITTI, Cityscapes), and real-world deployments. Preprocessing: Annotated datasets for ML. Representativeness: Diverse scenarios but lacks extreme edge cases.",
+        "No original experiments; rigor comes from breadth of surveyed works. Evaluation metrics: IOU/mAP for accuracy, TOPS/W for hardware, latency deadlines for timeliness.",
+        "Follows systems engineering paradigm: Analyzes components (sensors→computation→control) and interactions. This constrains focus to technical integration over human factors."
+      ],
+      "Results": [
+        "Sensor trade-offs: Cameras (low cost, weather-sensitive) vs. LiDAR (high accuracy, expensive). AI limitations: Vulnerable to weather/adversarial attacks. Hardware: GPU/FPGA balance performance/power. Security: Jamming/spoofing risks require multi-layer defenses.",
+        "Results are significant: Reveal critical gaps (e.g., 45% radar range reduction in rain). Reliability: High in controlled settings but unstable in emergencies. Stability: Algorithm failures occur in occlusion/extreme lighting."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem (failures) → Architecture → Metrics → Technologies → Challenges → Conclusion. Claims: Current systems are insufficient; interdisciplinary effort is vital.",
+        "Key steps: 1) Accident analysis proves urgency; 2) Architecture defines system scope; 3) Metrics standardize evaluation; 4) Technology review exposes limitations; 5) Challenges guide future work.",
+        "Strengths: Cohesive flow from problem to solution. Weaknesses: Limited critique of end-to-end approaches. Rebuttals: Addresses cost concerns via trends (e.g., LiDAR price drops)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Holistic coverage of system layers; identifies 12 actionable challenges; integrates hardware/software perspectives.",
+        "Methodology boundaries: Focuses on computing systems, omitting mechanical/vehicle dynamics. Data limitations: Field tests mostly in optimal conditions (e.g., Arizona).",
+        "Theoretical constraints: Engineering focus undervalues human behavior interaction. Conclusions assume technical solutions suffice for societal adoption."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as foundational reference for researchers/practitioners. Advances discourse by systematizing fragmented knowledge and prioritizing challenges.",
+        "Terminology: Technical (e.g., \"TOPS\", \"SLAM\") with automotive jargon (e.g., \"drive-by-wire\"). Tone: Urgent but pragmatic. Rhetoric: Uses fatalities to emphasize stakes.",
+        "Builds authority via 200+ citations. Motivation: Balance academic rigor with industry relevance; highlight IEEE/industry affiliations (e.g., NVIDIA, AUTOSAR)."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Autonomous driving requires breakthroughs in AI robustness, sensor fusion, security, and cost reduction. Modular systems dominate, but end-to-end designs show promise.",
+        "Future research: Standardize AI safety; improve sensor synchronization; develop failure diagnostics; address adverse conditions; reduce energy use; leverage smart infrastructure; validate via affordable platforms."
+      ]
+    }
+  }
+}

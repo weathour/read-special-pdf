@@ -1,0 +1,84 @@
+{
+  "file_name": "Yuan 等 - 2022 - A-PINN Auxiliary physics informed neural networks for forward and inverse problems of nonlinear int.pdf",
+  "generated_at": "2025-07-11 08:48:10",
+  "structured_info": {
+    "title_cn": "A-PINN：用于求解非线性积分微分方程正反问题的辅助物理信息神经网络",
+    "title_en": "A-PINN: Auxiliary physics informed neural networks for forward and inverse problems of nonlinear integro-differential equations",
+    "category": "Computational Physics",
+    "topics": [
+      "Physics-Informed Neural Networks",
+      "Integro-Differential Equations",
+      "Deep Learning Applications"
+    ],
+    "keywords": [
+      "Physics informed neural network (PINN)",
+      "Auxiliary physics informed neural network (A-PINN)",
+      "Integro-differential equations (IDEs)",
+      "Deep learning",
+      "Multi-output neural network"
+    ],
+    "abstract": "Physics informed neural networks (PINNs) are a novel deep learning paradigm primed for solving forward and inverse problems of nonlinear partial differential equations (PDEs). By embedding physical information delineated by PDEs in feedforward neural networks, PINNs are trained as surrogate models for approximate solution to the PDEs without need of label data. Due to the excellent capability of neural networks in describing complex relationships, a variety of PINN-based methods have been developed to solve different kinds of problems such as integer-order PDEs, fractional PDEs, stochastic PDEs and integro-differential equations (IDEs). However, for the state-of-the-art PINN methods in application to IDEs, integral discretization is a key prerequisite in order that IDEs can be transformed into ordinary differential equations (ODEs). However, integral discretization inevitably introduces discretization error and truncation error to the solution. In this study, we propose an auxiliary physics informed neural network (A-PINN) framework for solving forward and inverse problems of nonlinear IDEs. By defining auxiliary output variable(s) to represent the integral(s) in the governing equation and employing automatic differentiation of the auxiliary output to replace integral operator, the proposed A-PINN bypasses the limitation of integral discretization. Distinct from the neural network in the original PINN which only approximates the variables in the governing equation, in the proposed A-PINN framework, a multi-output neural network is constructed to simultaneously calculate the primary outputs and auxiliary outputs which respectively approximate the variables and integrals in the governing equation. Subsequently, the relationship between the primary outputs and auxiliary outputs is constrained by new output conditions in compliance with physical laws. By pursuing the first-order nonlinear Volterra IDE benchmark problem, we validate that the proposed A-PINN can obtain more accurate solution than the conventional PINN. We further demonstrate the good performance of A-PINN in solving the forward problems involving nonlinear Volterra IDEs system, nonlinear 2-dimensional Volterra IDE, nonlinear 10-dimensional Volterra IDE, and nonlinear Fredholm IDE. Finally, the A-PINN framework is implemented to solve the inverse problem of nonlinear IDEs and the results show that the unknown parameters can be satisfactorily discovered even with heavily noisy data.",
+    "methodology": "Proposes A-PINN framework using multi-output neural networks to simultaneously approximate primary variables and auxiliary integrals. Replaces integral operators with automatic differentiation of auxiliary outputs, avoiding discretization. Imposes physical constraints via output conditions and adaptive loss weighting with L-BFGS optimization.",
+    "conclusion": "A-PINN eliminates discretization errors in IDE solutions, achieves higher accuracy than conventional PINNs, handles high-dimensional problems (up to 10D), solves both Volterra and Fredholm IDEs, and successfully identifies parameters in inverse problems even with 10% noisy data.",
+    "authors": [
+      "Lei Yuan",
+      "Yi-Qing Ni",
+      "Xiang-Yun Deng",
+      "Shuo Hao"
+    ],
+    "publication_year": "2022",
+    "venue": "Journal of Computational Physics",
+    "doi": "10.1016/j.jcp.2022.111260",
+    "bibtex_citation": "Yuan_A-PINN_2022",
+    "analysis": {
+      "Overview": "Proposes A-PINN, an extension of physics-informed neural networks, to solve forward/inverse problems of nonlinear integro-differential equations without integral discretization by introducing auxiliary output variables.",
+      "Background_and_Motivation": [
+        "Existing PINN methods for IDEs require integral discretization, introducing errors and computational inefficiency.",
+        "Need for mesh-free method to solve high-dimensional nonlinear IDEs without discretization errors and enable parameter discovery in inverse problems.",
+        "Discretization errors limit solution accuracy; integral calculations become computationally prohibitive in high dimensions.",
+        "IDEs are fundamental in physics/engineering (e.g., nanomechanics, energy systems), but current numerical methods struggle with high-dimensional and inverse problems.",
+        "Contributes to computational physics, scientific machine learning, and numerical analysis."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "A-PINN: Multi-output neural network approximating primary variables and integrals simultaneously",
+          "Automatic differentiation: Analytically computes derivatives to replace integral operators",
+          "Output conditions: Physical constraints linking primary and auxiliary outputs"
+        ],
+        "Auxiliary outputs represent integrals → their derivatives replace integral terms → output conditions enforce definitional relationships → governing equations constrain the system.",
+        "Neural networks can universally approximate solutions; automatic differentiation provides exact derivatives; physical laws sufficiently constrain solutions.",
+        "Novel algorithmic framework extending PINNs to non-discretized IDEs, advancing computational methods for integral operators."
+      ],
+      "Methodology": [
+        "Multi-output DNNs predict primary variables and auxiliary integrals; automatic differentiation replaces integral operators; adaptive loss weighting balances residuals.",
+        "Novelty: First method to avoid integral discretization in neural PDE solvers. Applicable to Volterra/Fredholm types, high dimensions (10D), and inverse problems. Rationale: Discretization-free approach eliminates approximation errors.",
+        "Synthetic data from exact solutions; collocation points sampled in domain; noisy data (Gaussian) for inverse problems. Representativeness: Covers boundaries and equation domains; no preprocessing beyond point sampling.",
+        "Rigorous benchmarks against exact solutions; relative L2 error as metric; comprehensive tests on 1D/2D/10D systems. Evaluation: Adaptive weights ensure balanced convergence across loss components.",
+        "Follows physics-informed machine learning paradigm, integrating physical laws as soft constraints, enabling data-efficient solutions."
+      ],
+      "Results": [
+        "0.0259% error for 1D Volterra IDE (vs 0.2% in discretized PINN); 0.519% error for 10D problem; accurate parameter estimation with 10% noise.",
+        "Results are significant: Outperforms state-of-the-art, scales to high dimensions, and handles noise. Reliability: Consistent low errors across 7+ benchmark problems; stability confirmed via parameter sensitivity tests."
+      ],
+      "Argumentation_and_Logic": [
+        "Limitations of discretization → A-PINN formulation → experimental validation → extension to inverse problems.",
+        "1) Identify discretization errors in PINNs 2) Replace integrals with auxiliary variables 3) Enforce physical constraints 4) Validate on benchmarks 5) Demonstrate inverse problem capability.",
+        "Strengths: Logical progression with numerical validation. Weaknesses: No theoretical convergence proof. Rebuttals: Addressed by showing consistent empirical success across diverse problems."
+      ],
+      "Strengths_and_Limitations": [
+        "Mesh-free; eliminates discretization errors; handles high dimensions and noisy inverse problems; adaptive weighting improves convergence.",
+        "Computational cost increases with dimension; requires careful hyperparameter tuning; limited theoretical guarantees.",
+        "Physics-informed framework assumes well-posed problems; may struggle with discontinuous solutions or chaotic systems."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as advancement over PINNs by solving core limitation (integral discretization) in computational physics literature.",
+        "Technical terminology: 'automatic differentiation', 'collocation points', 'Volterra/Fredholm IDEs'. Rhetorical: Contrasts A-PINN's advantages against 'inevitable errors' of existing methods.",
+        "Cites foundational PINN works to establish credibility; selective comparisons highlight performance gaps; positions A-PINN as essential for IDE communities."
+      ],
+      "Conclusions_and_Implications": [
+        "A-PINN enables accurate, discretization-free solutions for nonlinear IDEs and robust parameter discovery, outperforming existing PINN methods.",
+        "Extend to stochastic IDEs; optimize computational efficiency; apply to experimental data; develop error estimation frameworks."
+      ]
+    }
+  }
+}

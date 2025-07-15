@@ -1,0 +1,82 @@
+{
+  "file_name": "Chevignard 等 - 2025 - A Reduction from Hawk to the Principal Ideal Problem in a Quaternion Algebra.pdf",
+  "generated_at": "2025-07-10 01:18:54",
+  "structured_info": {
+    "title_cn": "从Hawk到四元数代数中主理想问题的归约",
+    "title_en": "A Reduction from Hawk to the Principal Ideal Problem in a Quaternion Algebra",
+    "category": "Cryptography",
+    "topics": [
+      "Lattice-Based Cryptography",
+      "Algebraic Number Theory",
+      "Cryptographic Reductions"
+    ],
+    "keywords": [
+      "Module-Lattice Isomorphism Problem",
+      "Principal Ideal Problem",
+      "Quaternion Algebra",
+      "Hawk Signature Scheme",
+      "Cryptanalysis"
+    ],
+    "abstract": "In this article we present a non-uniform reduction from rank-2 module-LIP over Complex Multiplication fields, to a variant of the Principal Ideal Problem, in some fitting quaternion algebra. This reduction is classical deterministic polynomial-time in the size of the inputs. The quaternion algebra in which we need to solve the variant of the principal ideal problem depends on the parameters of the module-LIP problem, but not on the problem's instance. Our reduction requires the knowledge of some special elements of this quaternion algebras, which is why it is non-uniform. In some particular cases, these elements can be computed in polynomial time, making the reduction uniform. This is the case for the Hawk signature scheme: we show that breaking Hawk is no harder than solving a variant of the principal ideal problem in a fixed quaternion algebra (and this reduction is uniform).",
+    "methodology": "Polynomial-time reduction from the Module-Lattice Isomorphism Problem (module-LIP) to the norm-reduced Principal Ideal Problem (nrdPIP) in quaternion algebras, leveraging algebraic representations of modules and ideal lattices.",
+    "conclusion": "Breaking the Hawk signature scheme is no harder than solving a variant of the Principal Ideal Problem in a fixed quaternion algebra, with a uniform reduction. This establishes a direct link between Hawk's security and the hardness of nrdPIP, though no efficient algorithm for quaternionic nrdPIP is currently known.",
+    "authors": [
+      "Clémence Chevignard",
+      "Guilhem Mureau",
+      "Alice Pellet-Mary",
+      "Thomas Espitau",
+      "Heorhii Pliatsok",
+      "Alexandre Wallet"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "10.1007/978-3-031-91124-8_6",
+    "bibtex_citation": "Chevignard_Reduction_2025",
+    "analysis": {
+      "Overview": "Presents a reduction from the rank-2 Module-Lattice Isomorphism Problem over Complex Multiplication fields to a variant of the Principal Ideal Problem in quaternion algebras, with implications for the security of the Hawk signature scheme.",
+      "Background_and_Motivation": [
+        "The Lattice Isomorphism Problem (LIP) is a cryptographic assumption used in post-quantum schemes like Hawk. Prior work achieved superexponential complexity for LIP, and module-LIP was introduced to improve efficiency.",
+        "Motivated by the need to cryptanalyze Hawk (based on module-LIP over cyclotomic fields) and bridge gaps in understanding its hardness compared to totally real fields.",
+        "Argues that module-LIP may be easier than LIP due to algebraic structure, and Hawk's use of totally imaginary fields necessitates a tailored reduction to assess security urgency.",
+        "Relates module-LIP to broader challenges in lattice-based cryptography by reducing it to a well-studied algebraic problem (PIP), establishing significance for post-quantum security.",
+        "Contributes to cryptography, algorithmic number theory, and lattice-based cryptanalysis."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Module-Lattice Isomorphism Problem (finding isometries between structured lattices), (2) norm-reduced Principal Ideal Problem (computing ideal generators with given norm), (3) Quaternion algebras (non-commutative structures for arithmetic representations).",
+        "Logical network: Module-LIP instances are embedded into quaternion algebras; solving nrdPIP in these algebras recovers congruence matrices for module-LIP. The reduction exploits the equivalence between geometric lattice properties and algebraic ideal properties.",
+        "Key assumptions: Access to an oracle for quaternionic nrdPIP; existence of maximal orders and precomputed algebraic objects (e.g., unit groups).",
+        "Contributes a theoretical equivalence proof, advancing cryptanalysis by linking module-LIP to ideal-theoretic problems in non-commutative algebras."
+      ],
+      "Methodology": [
+        "Core method: Embeds rank-2 modules over CM fields into ideals in totally definite quaternion algebras, then reduces module-LIP to computing generators via nrdPIP. Uses polynomial-time algorithms for determinant computation and pseudo-basis operations.",
+        "Novelty: First reduction of module-LIP to quaternionic PIP for CM fields. Applicable to cryptographic schemes (e.g., Hawk); rational due to explicit constructions and worst-case security implications.",
+        "Data: Relies on algebraic number theory (CM fields, quaternion algebras); no empirical data. Preprocessing computes rings of integers, maximal orders, and unit groups.",
+        "Rigorous via mathematical proofs; evaluation metrics include correctness of reduction and polynomial-time bounds. Lacks experimental validation but theoretically sound.",
+        "Follows algebraic number theory paradigms; this choice enables module-to-ideal translations but constrains generality to quaternion algebras."
+      ],
+      "Results": [
+        "Key result: A polynomial-time reduction from module-LIP to nrdPIP, provably correct for CM fields. For Hawk, breaking security reduces uniformly to nrdPIP in a fixed quaternion algebra.",
+        "Significance: Confirms that one SVP call suffices to break Hawk (aligning with conservative security estimates). Reliability ensured by deterministic reduction; stability depends on hardness of nrdPIP in quaternion algebras."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: (1) Background on LIP and quaternion algebras, (2) Reduction framework construction, (3) Specialization to Hawk, (4) Implications for security.",
+        "Key steps: Embed modules into quaternion ideals; show solving nrdPIP recovers congruence matrices; handle uniformity via precomputed algebraic elements.",
+        "Strengths: General for CM fields; mathematically rigorous. Weaknesses: Non-uniform in general (requires precomputation). Addresses rebuttals by proving uniformity for Hawk and linking to prior SVP-based attacks."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First reduction for CM fields; confirms sufficiency of one SVP call for Hawk; provides foundational security insight.",
+        "Limitations: Non-uniform reduction requires precomputation; nrdPIP oracle may not be efficient; constrained to rank-2 modules and quaternion algebras.",
+        "Theoretical constraints: Reliance on quaternion algebras limits extensions to other algebraic structures; hardness of quaternionic nrdPIP remains open."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Positions work in cryptanalysis of lattice-based schemes, responding to gaps in module-LIP analysis for non-totally-real fields. Builds on Mureau et al. (2024) and Gentry-Szydlo.",
+        "Terminology: Technical and precise (e.g., 'pseudo-basis', 'reduced norm'); formal tone. Rhetoric emphasizes necessity via security implications.",
+        "Citations establish authority: Uses Lenstra-Silverberg, Kirschmer-Voight, and Hawk original work. Motivates reductions by citing attacks on NTRU and lattice signatures."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Security of Hawk is polynomially equivalent to solving nrdPIP in a fixed quaternion algebra. Reduction is uniform for Hawk but non-uniform generally.",
+        "Future research: Improve algorithms for quaternionic nrdPIP; extend reductions to higher-rank modules; explore applications in other cryptographic primitives."
+      ]
+    }
+  }
+}

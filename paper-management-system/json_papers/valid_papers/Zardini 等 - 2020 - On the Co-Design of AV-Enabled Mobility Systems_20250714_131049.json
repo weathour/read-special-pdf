@@ -1,0 +1,82 @@
+{
+  "file_name": "Zardini 等 - 2020 - On the Co-Design of AV-Enabled Mobility Systems.pdf",
+  "generated_at": "2025-07-14 13:10:49",
+  "structured_info": {
+    "title_cn": "自动驾驶车辆与自动驾驶移动系统的协同设计",
+    "title_en": "On the Co-Design of AV-Enabled Mobility Systems",
+    "category": "Transportation Systems",
+    "topics": [
+      "Autonomous Vehicles",
+      "Mobility Systems",
+      "Co-Design"
+    ],
+    "keywords": [
+      "Autonomous Vehicles",
+      "Mobility-on-Demand",
+      "Public Transit",
+      "Co-Design",
+      "Pareto Front"
+    ],
+    "abstract": "The design of autonomous vehicles (AVs) and the design of AV-enabled mobility systems are closely coupled. Indeed, knowledge about the intended service of AVs would impact their design and deployment process, whilst insights about their technological development could significantly affect transportation management decisions. This calls for tools to study such a coupling and co-design AVs and AV-enabled mobility systems in terms of different objectives. In this paper, we instantiate a framework to address such co-design problems. In particular, we leverage the recently developed theory of co-design to frame and solve the problem of designing and deploying an intermodal Autonomous Mobility-on-Demand system, whereby AVs service travel demands jointly with public transit, in terms of fleet sizing, vehicle autonomy, and public transit service frequency. Our framework is modular and compositional, allowing one to describe the design problem as the interconnection of its individual components and to tackle it from a system-level perspective. To showcase our methodology, we present a real-world case study for Washington D.C., USA. Our work suggests that it is possible to create user-friendly optimization tools to systematically assess costs and benefits of interventions, and that such analytical techniques might gain a momentous role in policy-making in the future.",
+    "methodology": "The paper leverages the mathematical theory of co-design to develop a modular and compositional framework for co-designing AVs and AV-enabled mobility systems. The methodology involves multi-commodity flow modeling, optimization of fleet characteristics, and public transit service frequency.",
+    "conclusion": "The framework allows stakeholders to systematically assess the impact of future interventions in urban mobility systems. It provides insights into rational design strategies, highlighting the trade-offs between costs, travel time, and emissions. The case study for Washington D.C. demonstrates the framework's applicability and suggests that investments in public transit infrastructure are rational only when large budgets are available.",
+    "authors": [
+      "Gioele Zardini",
+      "Nicolas Lanzetti",
+      "Mauro Salazar",
+      "Andrea Censi",
+      "Emilio Frazzoli",
+      "Marco Pavone"
+    ],
+    "publication_year": "2020",
+    "venue": "IEEE Xplore",
+    "doi": "Not provided",
+    "bibtex_citation": "Zardini_OnThe_2020",
+    "analysis": {
+      "Overview": "The paper presents a co-design framework for autonomous vehicles (AVs) and AV-enabled mobility systems, focusing on fleet sizing, vehicle autonomy, and public transit service frequency. It uses a modular and compositional approach to optimize multiple objectives such as travel time, costs, and emissions.",
+      "Background_and_Motivation": [
+        "The design of AVs and mobility systems is closely coupled, yet current design processes lack clear service requirements.",
+        "The research aims to address the coupling between AV design and mobility system design to optimize deployment and infrastructure investments.",
+        "The authors argue that understanding the intended service of AVs can simplify their design and accelerate deployment.",
+        "The paper relates the specific problem of AV design to broader challenges in urban mobility and transportation management.",
+        "The work contributes to transportation systems, autonomous vehicles, and urban mobility planning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Co-design: A methodology to jointly design AVs and mobility systems.",
+        "Pareto front: The set of optimal solutions that balance multiple objectives.",
+        "The framework assumes monotonicity in cost and performance relationships.",
+        "The paper contributes a systematic approach to co-designing complex transportation systems, providing actionable insights for stakeholders."
+      ],
+      "Methodology": [
+        "The core methods include multi-commodity flow modeling and optimization techniques.",
+        "The novelty lies in the modular and compositional approach, allowing for flexible problem formulation.",
+        "Data sources include real-world road networks, public transit schedules, and demand data from Washington D.C.",
+        "The experimental design is rigorous, with clear evaluation metrics for travel time, costs, and emissions.",
+        "The research follows a system-level optimization paradigm, focusing on social welfare maximization."
+      ],
+      "Results": [
+        "Key results include the identification of rational design strategies for AV fleets and public transit systems.",
+        "The results are significant for urban mobility planning, showing trade-offs between costs, travel time, and emissions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around the need for co-design in AV-enabled mobility systems.",
+        "Key steps include problem formulation, methodology development, and case study validation.",
+        "Strengths include the modular approach; weaknesses include assumptions about homogeneous fleets and fixed demand."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Modular framework, real-world case study, systematic analysis of multiple objectives.",
+        "Limitations: Assumes homogeneous fleets and fixed demand; does not account for elastic demand effects.",
+        "The theoretical paradigm constrains conclusions to system-level optimization, excluding individual stakeholder behaviors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on AVs and urban mobility, advocating for a systematic co-design approach.",
+        "Terminology includes technical terms like 'Pareto front' and 'monotonicity'; the tone is analytical and persuasive.",
+        "Citations build authority by referencing foundational work in co-design and transportation systems."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: The framework provides actionable insights for stakeholders, highlighting trade-offs in AV-enabled mobility systems.",
+        "Future research should explore heterogeneous fleets, variable demand models, and stakeholder interactions."
+      ]
+    }
+  }
+}

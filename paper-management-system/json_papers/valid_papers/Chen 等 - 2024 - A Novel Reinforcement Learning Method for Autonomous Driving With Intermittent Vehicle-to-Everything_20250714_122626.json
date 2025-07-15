@@ -1,0 +1,83 @@
+{
+  "file_name": "Chen 等 - 2024 - A Novel Reinforcement Learning Method for Autonomous Driving With Intermittent Vehicle-to-Everything.pdf",
+  "generated_at": "2025-07-14 12:26:26",
+  "structured_info": {
+    "title_cn": "一种用于间歇性车联网通信自动驾驶的新型强化学习方法",
+    "title_en": "A Novel Reinforcement Learning Method for Autonomous Driving With Intermittent Vehicle-to-Everything (V2X) Communications",
+    "category": "Autonomous Driving",
+    "topics": [
+      "Reinforcement Learning",
+      "Vehicle-to-Everything (V2X) Communications",
+      "Autonomous Vehicles"
+    ],
+    "keywords": [
+      "Autonomous driving",
+      "Reinforcement learning",
+      "V2X communications",
+      "CNN",
+      "GRU"
+    ],
+    "abstract": "Most autonomous driving studies incorporating vehicle-to-everything (V2X) communications assume the existence of continuous V2X communications, and ignore the possibility that V2X communications can be interrupted intermittently. However, when V2X communications are interrupted, autonomous vehicles that rely on the information from V2X communications can fall into disasters. To address these issues, we propose a novel reinforcement learning method named RL4V2X for decision-making and motion-controlling of autonomous driving. This method is composed of a convolutional neural network (CNN), a gate recurrent unit (GRU) and three gate networks. Specifically, the CNN extracts a vehicle spatial distribution to better represent the traffic. The GRU constructs the sequence features to characterize the dynamics of traffic, which can be used to compensate for the lack of information when V2X communications are interrupted. In addition, the gate networks assign the confidence to different features according to the interruption situations. Extensive simulation results in different traffic conditions demonstrate the superior performance of the proposed method.",
+    "methodology": "The proposed RL4V2X method combines a CNN, a GRU, and three gate networks to handle intermittent V2X communications. The CNN extracts spatial vehicle distributions, the GRU captures temporal traffic dynamics, and the gate networks adjust feature confidence based on communication status.",
+    "conclusion": "RL4V2X effectively addresses the challenge of intermittent V2X communications in autonomous driving by leveraging spatial and temporal feature extraction and dynamic confidence assignment. Simulation results confirm its superior performance in ensuring safety and traffic efficiency under varying communication conditions.",
+    "authors": [
+      "Longquan Chen",
+      "Ying He",
+      "F. Richard Yu",
+      "Weike Pan",
+      "Zhong Ming"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2024.3356796",
+    "bibtex_citation": "Chen_Novel_2024",
+    "analysis": {
+      "Overview": "The paper proposes RL4V2X, a reinforcement learning method for autonomous driving that handles intermittent V2X communications by integrating CNN, GRU, and gate networks to ensure robust decision-making and motion control.",
+      "Background_and_Motivation": [
+        "Autonomous driving faces challenges in complex traffic environments, especially when V2X communications are unreliable.",
+        "Existing studies often assume continuous V2X communications, neglecting real-world interruptions that can compromise safety.",
+        "The authors highlight the urgency of addressing intermittent V2X communications to prevent autonomous vehicles from failing in critical scenarios.",
+        "The research bridges the gap between ideal V2X assumptions and practical communication disruptions, emphasizing the need for adaptive solutions.",
+        "This work contributes to intelligent transportation systems, reinforcement learning, and wireless communication technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "RL4V2X: A reinforcement learning framework combining CNN, GRU, and gate networks for adaptive feature extraction and confidence assignment.",
+        "Gate networks dynamically adjust the importance of local and global features based on communication status.",
+        "Assumes that temporal sequence features (GRU) can compensate for missing global information during V2X interruptions.",
+        "The paper introduces a novel hybrid approach to reinforcement learning in autonomous driving, advancing the field by addressing intermittent communication challenges."
+      ],
+      "Methodology": [
+        "Uses CNN for spatial vehicle distribution and GRU for temporal traffic dynamics.",
+        "Gate networks assign confidence scores to features, ensuring robustness during communication interruptions.",
+        "Simulations are conducted in SUMO environments with varying traffic flows and interruption probabilities.",
+        "Evaluation metrics include safety rates, velocity, and lane change frequency.",
+        "The research follows a deep reinforcement learning paradigm, integrating both policy-based and value-based methods."
+      ],
+      "Results": [
+        "RL4V2X outperforms baseline methods (RL-L, RL-G, RL-LG) in safety and traffic efficiency under intermittent V2X conditions.",
+        "The method maintains high safety rates (near 100%) and adapts to varying interruption probabilities (0%, 1%, 5%).",
+        "Ablation studies confirm the importance of CNN, GRU, and gate networks in the system's performance."
+      ],
+      "Argumentation_and_Logic": [
+        "The paper systematically compares RL4V2X with existing methods, demonstrating its advantages through experiments.",
+        "Key steps include problem formulation, method design, simulation validation, and ablation analysis.",
+        "Strengths include comprehensive evaluation and innovative use of gate networks; limitations include reliance on simulated environments."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative integration of CNN, GRU, and gate networks for robust autonomous driving.",
+        "Effective handling of intermittent V2X communications, a previously overlooked challenge.",
+        "Limitations include the need for real-world validation and potential scalability issues in highly dynamic environments.",
+        "The theoretical paradigm of deep reinforcement learning may constrain solutions to data-driven approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on reliable autonomous driving under real-world communication constraints.",
+        "Uses technical terminology and empirical results to build authority, with extensive citations to related work.",
+        "Citations are strategically used to highlight gaps in existing research and justify the proposed method."
+      ],
+      "Conclusions_and_Implications": [
+        "RL4V2X successfully addresses intermittent V2X communications, enhancing safety and efficiency in autonomous driving.",
+        "Future work should explore privacy issues and real-world deployment challenges."
+      ]
+    }
+  }
+}

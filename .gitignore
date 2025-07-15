@@ -44,9 +44,7 @@ paper-management-system/venv/
 ehthumbs.db
 Thumbs.db
 
-# 数据库文件
-*.db
-*.sqlite3
+
 
 # PDF生成器相关
 pdf-note-generator/output_notes/
@@ -54,8 +52,7 @@ pdf-note-generator/web_outputs/
 pdf-note-generator/uploads/
 pdf-note-generator/input_pdfs/
 
-# 论文管理系统相关  
-paper-management-system/json_papers/
+
 
 # 日志文件
 *.log

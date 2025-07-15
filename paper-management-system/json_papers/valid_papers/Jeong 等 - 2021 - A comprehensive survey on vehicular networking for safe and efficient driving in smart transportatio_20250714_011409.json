@@ -1,0 +1,86 @@
+{
+  "file_name": "Jeong 等 - 2021 - A comprehensive survey on vehicular networking for safe and efficient driving in smart transportatio.pdf",
+  "generated_at": "2025-07-14 01:14:09",
+  "structured_info": {
+    "title_cn": "智能交通中用于安全高效驾驶的车载网络综合调查：聚焦系统、协议与应用",
+    "title_en": "A comprehensive survey on vehicular networking for safe and efficient driving in smart transportation: A focus on systems, protocols, and applications",
+    "category": "Vehicular Communications",
+    "topics": [
+      "Vehicular Networks",
+      "Driving Safety",
+      "Driving Efficiency",
+      "Smart Transportation",
+      "Protocols",
+      "Security"
+    ],
+    "keywords": [
+      "Smart transportation",
+      "Vehicular networks",
+      "Driving safety",
+      "Driving efficiency",
+      "Protocol",
+      "Security"
+    ],
+    "abstract": "Dramatic increase in road traffic volume has made driving safety and traffic efficiency more challenging, but smart transportation has been spotlighted as a promising technology for improving driving safety and efficiency. This paper surveys safe and efficient driving in the smart transportation with a focus on the aspects of systems, protocols, applications, and security, especially for autonomous vehicles. This smart transportation requires to monitor road surfaces precisely and identify hazards, and vehicles also need to share sensing information to avoid dangerous situations or environments through wireless communication in vehicular networks. For this purpose, dedicated short-range communications (DSRC) have achieved the international standards of the IEEE Wireless Access in Vehicular Environments (WAVE), and applications are now common that use the global positioning systems (GPS) for a dedicated navigation system navigator or smartphone application. This combination of vehicular networking and navigation enables systems and applications not only to enhance driving safety, but also to increase traffic efficiency. To support the vehicular systems and applications efficiently, the protocols need to be designed carefully and implemented effectively. This paper summarizes and analyzes the state-of-the-art research based on standardization activities for smart transportation systems, protocols, applications, and security. This paper also provides the comparison between the different technologies composing vehicular systems, protocols, applications, and security in terms of advantages, disadvantages, analysis, simulation, implementation, and complexity to provide a trend of overall technologies. Lastly, this paper suggests research directions for the smart transportation.",
+    "methodology": "Comprehensive literature review and comparative analysis of state-of-the-art systems, protocols, applications, and security mechanisms in vehicular networks. The methodology includes categorization, comparative evaluation (advantages/disadvantages), and trend analysis based on standardization efforts.",
+    "conclusion": "The paper surveys systems, protocols, applications, and security for driving safety and efficiency in smart transportation, providing detailed comparisons and analyses of existing technologies. It identifies research gaps and suggests future directions, emphasizing the need for adaptable networks, AI integration, edge computing scalability, and enhanced security in autonomous driving.",
+    "authors": [
+      "Hwanseok (Harrison) Jeong",
+      "Yiwen (Chris) Shen",
+      "Jaehoon (Paul) Jeong",
+      "Tae (Tom) Oh"
+    ],
+    "publication_year": "2021",
+    "venue": "Vehicular Communications",
+    "doi": "https://doi.org/10.1016/j.vehcom.2021.100349",
+    "bibtex_citation": "Jeong_A_2021",
+    "analysis": {
+      "Overview": "This survey comprehensively reviews vehicular networking technologies for enhancing driving safety and traffic efficiency in smart transportation. It focuses on systems, protocols, applications, and security, with emphasis on autonomous vehicles, covering standardization efforts, comparative analyses, and emerging challenges.",
+      "Background_and_Motivation": [
+        "Increasing road traffic volume has intensified challenges in driving safety and traffic efficiency, necessitating intelligent solutions.",
+        "Motivation stems from the need to integrate vehicular networks with navigation systems to enable real-time hazard detection, information sharing, and coordinated vehicle maneuvers.",
+        "The authors argue that vehicular networks' ability to facilitate instantaneous responses to dynamic scenarios through DSRC/IEEE WAVE and C-V2X standards addresses urgent safety concerns and efficiency demands.",
+        "The specific problem of uncoordinated legacy navigation systems is linked to broader challenges in urban congestion and accident rates, establishing significance through examples like emergency vehicle routing and collision avoidance.",
+        "Contributions span transportation engineering, wireless communications, computer networks, cybersecurity, and edge computing."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Congestion Contribution (CC): A metric estimating traffic congestion increase caused by a vehicle entering or nearing a road segment, used for global traffic optimization.",
+        "Self-Adaptive Interactive Navigation (SAINT): A cloud-based system that dynamically routes vehicles using CC values to minimize network-wide congestion, with specialized zones for emergency management.",
+        "Vehicle-to-Everything (V2X) Integration: Combines V2V, V2I, I2V, and cellular communications to enable cooperative driving and real-time data exchange.",
+        "CC drives SAINT's routing decisions; V2X provides the communication backbone for SAINT and safety applications like CASD. Together, they form a feedback loop where navigation affects congestion, and real-time data refines routing.",
+        "Assumptions include widespread adoption of DSRC/C-V2X, availability of vehicle trajectory data, and centralized traffic control centers (TCCs) for coordination.",
+        "The paper contributes a taxonomic framework for smart transportation technologies and identifies trends, serving as a reference for standardizing and advancing the field."
+      ],
+      "Methodology": [
+        "The survey employs a systematic review of literature, categorizing works into systems (e.g., SAINT, SANA), protocols (e.g., TBD, STMAC), applications (e.g., SignalGuru), and security. Comparative tables evaluate advantages/disadvantages, complexity, and implementation status.",
+        "Methodology is novel in its holistic focus on safety/efficiency synergies and standardization alignment. Applicability is evidenced by real-world case studies (e.g., SUMO simulations). Rationality lies in structured categorization and benchmarking.",
+        "Data sources include academic publications, IEEE/3GPP standards, and simulation outputs (SUMO, MATLAB). Data is preprocessed into comparison tables. Representativeness is limited to studied scenarios (e.g., urban/rural divide not fully covered).",
+        "Experimental rigor is moderate; evaluations rely on simulations (e.g., Minneapolis road network in SUMO) but lack large-scale real-world validation. Metrics like E2E delay and packet delivery ratio are adequate for communication protocols.",
+        "Follows systems engineering and networking paradigms, emphasizing modular design (systems/protocols/applications) and affecting the survey's structured, layer-based analysis."
+      ],
+      "Results": [
+        "Key results include: SAINT reduces emergency vehicle E2E delay by 20-40% versus Dijkstra; STMAC outperforms LMA/DMMAC in packet loss and delay; adaptive beaconing (BRO) extends smartphone battery life by 40%; V-D2D improves cellular spectrum efficiency.",
+        "Results are significant for real-time traffic management but reliability varies with vehicle density and scenario (e.g., highway vs. urban). Stability depends on continuous data sharing, which may falter in low-penetration scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument progresses by: (1) establishing smart transportation's importance, (2) decomposing it into systems/protocols/applications/security, (3) analyzing each component's state-of-the-art, (4) comparing technologies, and (5) identifying future challenges.",
+        "Steps: Problem definition → technology review → comparative evaluation → gap analysis → research directions. Logical links: Safety/efficiency needs drive technology requirements; standardization enables interoperability; gaps motivate future work.",
+        "Strengths: Comprehensive categorization and empirical comparisons. Weaknesses: Limited critique of simulation assumptions. Rebuttals addressed via tables contrasting advantages/disadvantages (e.g., SBUS vs. ORBR trade-offs)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include holistic coverage of vehicular ecosystems, standardization focus, and practical insights (e.g., energy-efficient protocols). Innovations like CC-based routing and UAV-integrated security are highlighted.",
+        "Limitations: Centralized approaches (e.g., TCC-dependent systems) may not scale; simulations overlook real-world heterogeneity; security solutions lack quantum-resistance analysis.",
+        "The systems engineering paradigm constrains conclusions by prioritizing modularity over emerging AI/ML approaches, underemphasizing data-driven innovations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions itself as a reference for researchers/practitioners by synthesizing fragmented works into a unified taxonomy. Advances discourse by linking standardization to real-world applicability.",
+        "Uses formal terminology (e.g., 'congestion contribution', 'V2X'), authoritative tone, and rhetorical strategies like comparative tables to establish objectivity. Frequent citations to IEEE/3GPP standards build technical authority.",
+        "Citations to foundational standards (e.g., IEEE 1609, 3GPP specs) and recent papers demonstrate scholarly rigor. Motivations include bridging academia/industry and guiding future standardization."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Vehicular networks enhance safety/efficiency via protocols (e.g., STMAC), systems (e.g., SAINT), and applications (e.g., SignalGuru). Security remains critical for adoption. Standardization (DSRC/C-V2X) enables interoperability but requires further refinement.",
+        "Future research: Integration of AI for real-time decision-making, scalable edge computing, hybrid V2X architectures, quantum-safe security, and large-scale real-world validation. UAVs and 5G/6G merit deeper exploration."
+      ]
+    }
+  }
+}

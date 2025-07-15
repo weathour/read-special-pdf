@@ -1,0 +1,82 @@
+{
+  "file_name": "Shrestha 等 - 2020 - Evolution of V2X Communication and Integration of Blockchain for Security Enhancements.pdf",
+  "generated_at": "2025-07-11 03:18:41",
+  "structured_info": {
+    "title_cn": "V2X通信演进回顾与区块链集成安全增强",
+    "title_en": "Review Evolution of V2X Communication and Integration of Blockchain for Security Enhancements",
+    "category": "Vehicular Communications",
+    "topics": [
+      "V2X Communications",
+      "Blockchain Security",
+      "Edge Computing"
+    ],
+    "keywords": [
+      "connected vehicles",
+      "security",
+      "blockchain",
+      "edge computing",
+      "privacy"
+    ],
+    "abstract": "With the rapid evolution in wireless communications and autonomous vehicles, intelligent and autonomous vehicles will be launched soon. Vehicle to Everything (V2X) communications provides driving safety, traffic efficiency, and road information in real-time in vehicular networks. V2X has evolved by integrating cellular 5G and New Radio (NR) access technology (i.e., 5G NR V2X) to fulfill demands like ultra-low latency and security. However, deployment faces challenges due to scalability and security issues. Multi-access Edge Computing (MEC) reduces scalability issues by bringing cloud services closer to vehicles, while blockchain solves security and privacy issues in 5G-based MEC systems. This survey discusses state-of-the-art V2X, its evolution, blockchain integration for security, and future research directions.",
+    "methodology": "Literature review and comparative analysis of V2X technologies, blockchain applications, and edge computing frameworks.",
+    "conclusion": "Blockchain integration with 5G-based MEC in V2X networks addresses critical security, privacy, and data management challenges. Future research should focus on scalability, consensus mechanisms, and practical implementation gaps.",
+    "authors": [
+      "Rakesh Shrestha",
+      "Seung Yeob Nam",
+      "Rojeena Bajracharya",
+      "Shiho Kim"
+    ],
+    "publication_year": "2020",
+    "venue": "Electronics",
+    "doi": "10.3390/electronics9091338",
+    "bibtex_citation": "Shrestha_Review_2020",
+    "analysis": {
+      "Overview": "Survey paper analyzing the evolution of V2X communication technologies, integration of 5G NR, edge computing, and blockchain to enhance security and scalability in vehicular networks.",
+      "Background_and_Motivation": [
+        "Increasing autonomous vehicles and safety demands exacerbate scalability and security challenges in V2X networks.",
+        "To address poor security, flexibility, and latency issues in 5G-based MEC vehicular systems.",
+        "Authors highlight vulnerabilities like data breaches, DoS attacks, and privacy leaks in dynamic edge environments.",
+        "V2X security flaws are linked to broader challenges in 5G-MEC integration, emphasizing urgency for decentralized solutions.",
+        "Contributes to telecommunications, cybersecurity, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "V2X: Vehicle-to-Everything communication enabling real-time safety/data exchange.",
+        "MEC: Multi-access Edge Computing decentralizes cloud resources to reduce latency.",
+        "Blockchain: Immutable ledger for secure transactions and data integrity.",
+        "V2X relies on MEC for low-latency processing; blockchain secures MEC data flows.",
+        "Assumes 5G infrastructure availability and vehicular network heterogeneity.",
+        "Provides a taxonomy of V2X technologies and blockchain-MEC integration for security enhancement."
+      ],
+      "Methodology": [
+        "Comparative analysis of DSRC, C-V2X, 5G NR V2X, and 802.11bd; review of blockchain applications in MEC.",
+        "Novelty lies in synthesizing blockchain with 5G-MEC; applicability validated through use cases; rationality supported by security requirements.",
+        "Data sourced from 3GPP standards, ETSI white papers, and academic literature; preprocessed via technology comparisons.",
+        "Evaluation based on QoS parameters (latency, reliability) and security features; lacks empirical validation.",
+        "Follows telecommunications engineering paradigm, focusing on protocol evolution and system integration."
+      ],
+      "Results": [
+        "5G NR V2X outperforms IEEE 802.11bd in reliability under high Doppler shifts. Blockchain mitigates MEC security flaws like data tampering and privacy leaks.",
+        "Results are significant for secure autonomous driving; reliability stems from theoretical analysis; stability untested in real-world deployments."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: V2X evolution → MEC integration → Security challenges → Blockchain solutions.",
+        "1) Critique existing V2X limitations; 2) Propose 5G-MEC; 3) Expose security gaps; 4) Position blockchain as remedy.",
+        "Strength: Comprehensive technology comparisons. Weakness: Limited rebuttal handling; assumes blockchain solves all security issues without trade-offs."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive survey of V2X evolution and blockchain integration; clear comparison tables.",
+        "Blockchain scalability issues in high-density networks; consensus delays may affect real-time V2X applications.",
+        "Telecommunications-focused framework overlooks socio-technical constraints in deployment."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on securing 5G vehicular networks via decentralized ledgers.",
+        "Technical terminology (e.g., 'sidelink modes', 'consensus mechanisms'); persuasive rhetoric emphasizing blockchain's immutability.",
+        "Cites 3GPP/ETSI standards to establish authority; motivations include promoting cross-industry (5GAA) solutions."
+      ],
+      "Conclusions_and_Implications": [
+        "Blockchain enhances security in 5G-MEC V2X systems but requires optimization for scalability and latency.",
+        "Future work: Lightweight consensus algorithms, real-world testing, and interoperability standards for blockchain-MEC integration."
+      ]
+    }
+  }
+}

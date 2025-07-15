@@ -1,0 +1,80 @@
+{
+  "file_name": "Bazzi 等 - 2024 - Performance analysis of IEEE 802.11p preamble insertion in C-V2X sidelink signals for co-channel coe.pdf",
+  "generated_at": "2025-07-10 14:34:10",
+  "structured_info": {
+    "title_cn": "IEEE 802.11p前导码插入C-V2X侧链信号中的同频共存性能分析",
+    "title_en": "Performance analysis of IEEE 802.11p preamble insertion in C-V2X sidelink signals for co-channel coexistence",
+    "category": "Vehicular Communications",
+    "topics": [
+      "Co-channel coexistence",
+      "Spectrum sharing",
+      "V2X communications"
+    ],
+    "keywords": [
+      "IEEE 802.11p",
+      "C-V2X sidelink",
+      "Coexistence",
+      "Spectrum sharing",
+      "Congestion control"
+    ],
+    "abstract": "Spectrum scarcity is a key challenge for future wireless technologies, amplified in vehicle-to-everything (V2X) communications where spectrum sharing impacts road safety and traffic efficiency. This paper studies solutions enabling coexistence of IEEE 802.11p and LTE-V2X sidelink Mode 4 in the same geographical area and channels. Beyond analyzing mutual interference—which strongly affects IEEE 802.11p under congestion—a mitigation solution is extensively evaluated: inserting the IEEE 802.11p preamble at the start of each LTE-V2X sidelink transmission. This standardization-compatible approach requires no changes to IEEE 802.11p and minor LTE-V2X modifications. Analysis and simulations in free-flow and dense scenarios demonstrate collision mitigation under low/high loads, with further improvements achievable via congestion control mechanisms.",
+    "methodology": "Mathematical modeling for free-flow scenarios and open-source simulations (WiLabV2Xsim) for dense/congested environments. Evaluates packet reception probability (PRP) and data age (DA) metrics. Proposes preamble insertion in LTE-V2X signals to enhance IEEE 802.11p sensing capabilities.",
+    "conclusion": "Preamble insertion significantly reduces inter-technology collisions, improving coexistence under diverse traffic conditions. The solution remains effective in congestion when combined with LTE-V2X congestion control adjustments. It is backward-compatible with IEEE 802.11bd and extendable to NR-V2X.",
+    "authors": [
+      "Alessandro Bazzi",
+      "Stefania Bartoletti",
+      "Alberto Zanella",
+      "Vincent Martinez"
+    ],
+    "publication_year": "2023",
+    "venue": "Vehicular Communications",
+    "doi": "https://doi.org/10.1016/j.vehcom.2023.100710",
+    "bibtex_citation": "Bazzi_Performance_2023",
+    "analysis": {
+      "Overview": "Investigates coexistence mechanisms for IEEE 802.11p and LTE-V2X sidelink in shared spectrum, proposing preamble insertion to mitigate interference.",
+      "Background_and_Motivation": [
+        "Spectrum scarcity intensifies in V2X due to safety-critical applications requiring reliable communications.",
+        "Addresses mutual interference between IEEE 802.11p and LTE-V2X sidelink, which causes unfair resource allocation and degraded performance, especially for IEEE 802.11p under congestion.",
+        "Argues urgency via delayed V2X rollouts and regulatory stalemates (e.g., FCC/EU debates), emphasizing safety risks from uncoordinated coexistence.",
+        "Frames interference as part of broader spectrum-sharing challenges in ITS bands, distinguishing it from ISM-band coexistence studies.",
+        "Contributes to wireless communications, vehicular networking, and standardization (ETSI/3GPP/IEEE)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Co-channel coexistence: Simultaneous operation of heterogeneous V2X technologies in shared bandwidth; (2) Preamble insertion: Embedding IEEE 802.11p’s fixed 40μs preamble in LTE-V2X signals; (3) Congestion control: Dynamic resource management under high load.",
+        "Preamble insertion enables IEEE 802.11p to detect LTE-V2X transmissions, reducing collisions. Congestion control complements this under heavy traffic.",
+        "Assumptions: Interference primarily impacts IEEE 802.11p; LTE-V2X can modify signals without protocol changes; channel conditions follow WINNER B1 models.",
+        "Contributes practical innovation (standard-compatible solution) and theoretical modeling (PPP-based interference analysis)."
+      ],
+      "Methodology": [
+        "Combines mathematical modeling (1-D Poisson point process for free-flow scenarios) and simulations (WiLabV2Xsim for dense/congested cases). Metrics: PRR, DA, CBR.",
+        "Novelty: First standalone evaluation of preamble insertion. Applicable to current deployments and future standards (NR-V2X). Rationale: Leverages fixed preamble for low-complexity sensing.",
+        "Data: Highway scenarios with variable densities. Path-loss/shadowing via WINNER B1 model. Packet sizes (350B) and PER-SINR curves from prior measurements. Representativeness validated against real-world V2X settings.",
+        "Rigorous design: Free-flow analysis validated by simulations; dense scenarios test multiple congestion solutions. Metrics align with ETSI/3GPP standards.",
+        "Follows wireless network theory (PPP modeling, SINR thresholds). Paradigm focuses on decentralized MAC-layer optimizations."
+      ],
+      "Results": [
+        "Preamble insertion improves IEEE 802.11p PRP by 20-50% in free-flow and reduces DA in dense scenarios. LTE-V2X performance remains stable. Congestion control adjustments further enhance fairness under high load.",
+        "Results are reliable (consistent across analysis/simulations) and stable (tested for 50-150 vehicles/km). Significance: Validates a standards-feasible solution with >390m sensing range."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: (1) Problem identification → (2) Proposal → (3) Free-flow validation → (4) Dense-scenario proof → (5) Congestion mitigation.",
+        "Key steps: Interference analysis → preamble design → mathematical modeling → simulation → congestion countermeasures.",
+        "Strengths: Multi-scenario validation; rebuts complexity concerns via precomputed preamble storage. Weakness: Limited evaluation of emergency traffic (DENM). Addressed via future work mention."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Backward compatibility, minimal LTE-V2X changes, applicability to NR-V2X. Innovation: First standalone preamble study.",
+        "Limitations: Assumes dominant interferer in free-flow; ignores packet-size variability; emergency traffic evaluation deferred.",
+        "Decentralized paradigm constraints: Conclusions assume no centralized coordination, limiting solutions to local optimizations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between standardization (ETSI TR 103 766) and practical deployment. Critiques prior work for lacking standalone preamble analysis.",
+        "Technical terminology (e.g., SB-SPS, CCA), objective tone. Rhetoric: Emphasizes 'minor changes' to appeal to industry.",
+        "Builds authority via 3GPP/IEEE standard references and open-source tool citations. Motivation: Legitimize solution for regulatory consideration."
+      ],
+      "Conclusions_and_Implications": [
+        "Preamble insertion effectively mitigates co-channel collisions, especially for IEEE 802.11p. Combined with LTE-V2X congestion control, it ensures fairness under high load.",
+        "Future work: Evaluate for emergency messages (DENM), larger packets (CPM/MCM), and NR-V2X numerologies."
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "file_name": "Rahmani和Patterson - Graph Neural Networks for Intelligent Transportation Systems A Survey.pdf",
+  "generated_at": "2025-07-14 02:14:08",
+  "structured_info": {
+    "title_cn": "图神经网络在智能交通系统中的应用：综述",
+    "title_en": "Graph Neural Networks for Intelligent Transportation Systems: A Survey",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Traffic Forecasting",
+      "Demand Prediction",
+      "Autonomous Vehicles",
+      "Intersection Management",
+      "Parking Management",
+      "Urban Planning",
+      "Transportation Safety"
+    ],
+    "keywords": [
+      "Graph neural networks",
+      "Deep learning",
+      "Intelligent transportation systems",
+      "GNN",
+      "ITS"
+    ],
+    "abstract": "Graph neural networks (GNNs) have been extensively used in a wide variety of domains in recent years. Owing to their power in analyzing graph-structured data, they have become broadly popular in intelligent transportation systems (ITS) applications as well. Despite their widespread applications in different transportation domains, there is no comprehensive review of recent advancements and future research directions that covers all transportation areas. Accordingly, in this survey, for the first time, we provide an overview of GNN studies in the general domain of ITS. Unlike previous surveys, which have been limited to traffic forecasting problems, we explore how GNN frameworks have evolved for different ITS applications, including traffic forecasting, demand prediction, autonomous vehicles, intersection management, parking management, urban planning, and transportation safety. Also, we micro-categorize the studies based on their transportation application to identify domain-specific research directions, opportunities, and challenges, which have been missing in previous surveys. Moreover, we identify unique and undiscussed research opportunities and directions, which is the result of reviewing a wide range of transportation applications. The neglected role of edge and graph learning in ITS applications, developing multi-modal models, and exploiting the power of unsupervised and reinforcement learning methods for developing more powerful GNNs are some examples of such new discussions in this survey. Finally, we have identified popular baseline models and datasets in each transportation domain, which facilitate the development and evaluation of future GNN-based frameworks.",
+    "methodology": "Literature survey and systematic review of GNN applications in ITS, categorizing studies by transportation domains and identifying domain-specific challenges, opportunities, and future directions.",
+    "conclusion": "GNNs are extensively applied across ITS domains beyond traffic forecasting. The survey provides the first comprehensive review covering diverse areas, identifies domain-specific research gaps, and highlights underexplored opportunities such as edge/graph learning, multi-modal models, and reinforcement learning. Baseline models and datasets are cataloged to aid future research.",
+    "authors": [
+      "Saeed Rahmani",
+      "Asiye Baghbani",
+      "Nizar Bouguila",
+      "Zachary Patterson"
+    ],
+    "publication_year": "2023",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2023.3257759",
+    "bibtex_citation": "Rahmani_Graph_2023",
+    "analysis": {
+      "Overview": "The paper surveys applications of graph neural networks (GNNs) across intelligent transportation systems (ITS), including traffic forecasting, demand prediction, autonomous vehicles, and other domains. It categorizes studies by transportation application, identifies domain-specific challenges, and discusses future research directions.",
+      "Background_and_Motivation": [
+        "The unprecedented growth of cities has increased transportation system complexity, exacerbated by emerging technologies like autonomous vehicles. Machine learning methods, while popular, struggle with non-Euclidean spatial dependencies inherent in transportation data.",
+        "Previous surveys on GNNs in transportation were limited to traffic forecasting, neglecting other ITS domains. This survey addresses the gap by comprehensively reviewing GNN applications across all major transportation areas.",
+        "The authors argue that the rapid proliferation of GNNs in diverse ITS applications necessitates a holistic review to synthesize advancements, identify domain-specific challenges, and unify future research directions.",
+        "The specific problem (limited survey coverage) is linked to the broader challenge of managing complex transportation systems. Ignoring domain-specific nuances hinders tailored GNN solutions and obscures cross-domain opportunities.",
+        "Contributes to computer science (graph machine learning), transportation engineering, and interdisciplinary ITS research."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Graph Neural Networks (GNNs): Neural networks for graph-structured data; (2) Intelligent Transportation Systems (ITS): Technology-enhanced transportation management; (3) Domain-Specific Categorization: Micro-classification of studies by transportation application (e.g., traffic forecasting, AVs).",
+        "GNNs enable analysis of non-Euclidean transportation data. Categorization by domain reveals unique graph construction needs (e.g., dynamic graphs for AVs vs. static for traffic forecasting), influencing GNN design and highlighting domain-specific innovations.",
+        "Assumptions: Transportation data is naturally graph-representable; domain-specific categorization is essential for practical insights; GNNs outperform traditional ML in capturing spatial dependencies.",
+        "Contributes a taxonomy of GNNs (recurrent, convolutional, spatial-temporal, etc.) and a comprehensive knowledge synthesis, identifying gaps and future directions across ITS domains."
+      ],
+      "Methodology": [
+        "Systematic literature review: Searched Web of Science and Google Scholar using domain-specific strings (e.g., 'GNN AND traffic forecasting'), filtered 109 papers via abstract screening, and applied selection criteria (citations/year, venue impact). Categorized studies by transportation domain.",
+        "Novelty: First survey covering all ITS domains. Applicability: Identifies domain-specific baselines/datasets for practical implementation. Rationality: Methodology ensures coverage of high-impact studies while addressing gaps in prior reviews.",
+        "Data from 109 peer-reviewed papers. Preprocessing involved removing out-of-scope studies and snowballing for completeness. Representativeness is high due to rigorous search strings and inclusion of recent/preprint works.",
+        "Experimental design is non-empirical; evaluation is qualitative. Adequacy stems from systematic categorization and domain-focused analysis.",
+        "Follows survey research paradigm in computer science/transportation, emphasizing categorization to reveal domain-specific constraints and opportunities."
+      ],
+      "Results": [
+        "Key results: (1) Traffic forecasting dominates GNN research but overlooks real-world scalability; (2) Demand prediction studies neglect multi-modal interactions; (3) AV perception uses GNNs for LiDAR data but lacks urban validation; (4) Edge/graph-level learning is underexplored across domains.",
+        "Significance: Reveals domain-specific trends (e.g., node-level tasks in traffic forecasting). Reliability: Supported by 109 analyzed papers. Stability: Consistent domain categorization enables cross-comparison."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Motivates survey necessity, details methodology, reviews GNN fundamentals/related work, analyzes domains (traffic forecasting to AVs), and identifies research opportunities.",
+        "Key steps: (1) Critique prior surveys' limited scope; (2) Propose domain categorization; (3) Analyze each domain's GNN evolution; (4) Derive cross-cutting opportunities (e.g., reinforcement learning).",
+        "Strengths: Comprehensive coverage justifies novel insights. Weaknesses: Acknowledges potential omissions via snowballing. Addresses rebuttals by contrasting with prior surveys (e.g., broader scope than Jiang et al. 2020)."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First holistic ITS survey; domain-specific analysis; identification of neglected opportunities (edge learning, multi-modal models).",
+        "Methodology boundaries: Selection criteria may exclude niche studies; coverage ends at submission date.",
+        "Survey paradigm constrains conclusions to synthesis—no novel algorithms proposed. Theoretical focus may overlook implementation barriers."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioning: Fills a critical gap by unifying GNN research across fragmented ITS domains, challenging prior narrow-focused surveys.",
+        "Terminology: Technical (e.g., 'non-Euclidean space', 'dynamic graphs'). Tone: Authoritative. Rhetoric: Contrasts with 'limited' prior work to emphasize novelty; uses 'for the first time' to claim contribution.",
+        "Builds authority via extensive citations (200+ references) and systematic methodology. Citation motivations: Contextualize gaps (e.g., Ye et al.'s traffic focus) and validate taxonomies."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: GNNs are transformative across ITS domains but underutilized in edge/graph learning and multi-modal contexts. Domain-specific challenges (e.g., real-time AV graph dynamism) require tailored solutions.",
+        "Future research: Prioritize edge/graph learning; develop multi-modal demand models; leverage unsupervised/reinforcement learning; validate GNNs in large-scale urban environments; address data sparsity via transfer learning."
+      ]
+    }
+  }
+}

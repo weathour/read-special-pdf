@@ -1,0 +1,78 @@
+{
+  "file_name": "Vladyko 等 - 2025 - Simulation-Based Evaluation of V2X System with Variable Computational Infrastructure.pdf",
+  "generated_at": "2025-07-11 04:19:05",
+  "structured_info": {
+    "title_cn": "基于可变计算基础设施的V2X系统仿真评估",
+    "title_en": "Simulation-Based Evaluation of V2X System with Variable Computational Infrastructure",
+    "category": "Vehicular Networks",
+    "topics": [
+      "V2X Simulation",
+      "Edge Computing",
+      "Fog Computing"
+    ],
+    "keywords": [
+      "vehicular communications",
+      "vehicle to everything",
+      "vehicular computing",
+      "simulation system"
+    ],
+    "abstract": "The issue of organizing efficient interaction between vehicle-to-everything (V2X) system elements has become increasingly critical in recent years. Utilizing V2X technology enables achieving the necessary balance of safety, reducing system load, and ensuring a high degree of vehicle automation. This study aims to develop a simulation system for V2X applications in various element placement configurations and conduct a numerical analysis of several V2X system interaction schemes. The research analyzes various methods, including clustering, edge computing, and fog computing, aimed at minimizing system losses. The results demonstrate that each proposed model can be effectively implemented on mobile nodes. The results also provide insights into the average expected request processing times, thereby enhancing the organization of the V2X system. The authors propose a model that enables the distribution of system parameters and resources for diverse computational tasks, which is essential for the successful implementation and utilization of V2X technology.",
+    "methodology": "Mathematical modeling of OBU-RSU interaction, simulation system development using Godot Engine and GDScript, numerical experiments comparing path loss models (Hata and 3GPP Urban Canyon), and evaluation of three mRSU deployment scenarios (no mRSU, floating mRSU, on-call mRSU) under clustered and direct RSU-EC configurations.",
+    "conclusion": "Direct RSU-EC connections minimize data loss but are costly; clustering offers a cost-effective alternative. mRSUs reduce losses (especially in on-call deployment), though gains are limited under uniform RSU coverage. The custom simulation system achieves stability within 100s and outperforms existing tools in resource efficiency. Future work includes scaling the model and assessing energy efficiency.",
+    "authors": [
+      "Andrei Vladyko",
+      "Pavel Plotnikov",
+      "Gleb Tambovtsev"
+    ],
+    "publication_year": "2025",
+    "venue": "Network",
+    "doi": "10.3390/network5010004",
+    "bibtex_citation": "Vladyko_Simulation-Based_2025",
+    "analysis": {
+      "Overview": "Proposes a simulation system for V2X applications evaluating element interaction schemes using edge/fog computing to optimize data loss and latency in intelligent transportation systems.",
+      "Background_and_Motivation": [
+        "Rapid growth of V2X technology faces challenges: low latency, high reliability, dynamic topology, and computational resource constraints in vehicles.",
+        "Optimize V2X system efficiency during emergencies by minimizing data loss and request processing delays through adaptable infrastructure models.",
+        "Highlight high costs of stationary RSU deployment, coordination complexities, and lack of comprehensive models for dynamic resource allocation.",
+        "Links specific data loss optimization to broader ITS goals of safety and automation, emphasizing urgency due to human safety risks and infrastructure costs.",
+        "Contributes to vehicular networks, edge/fog computing, and simulation methodologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Fog nodes (RSUs/mRSUs with edge capabilities), (2) Three-tier architecture (OBU-RSU/mRSU-CLOUD), (3) Optimization parameters (coverage, latency, reliability).",
+        "RSUs/mRSUs process OBU requests; complex tasks offloaded to cloud. Parameters interrelate to balance system performance and cost.",
+        "Assumes predictable mRSU mobility, uniform OBU speed distributions, and negligible interference from terrain in simplified models.",
+        "Provides a novel simulation framework and validates a three-tier fog architecture, advancing practical V2X deployment strategies."
+      ],
+      "Methodology": [
+        "Mathematical models for OBU speed distribution (truncated normal), data request probability (Zipf), and path loss (Hata/3GPP). Simulation via custom Godot/GDScript tool using OSM maps.",
+        "Novelty: Integrated map processing, real-time traffic modeling, and adaptable parameters. Applicability: Focused on accident scenarios; flexibility for other V2X apps. Rationality: Validated against OMNeT++/SUMO.",
+        "OpenStreetMap data converted to graphs; preprocessing includes node/edge extraction. Representativeness: Urban maps (Manhattan) but simplified traffic (no traffic lights, one-way lanes).",
+        "Controlled experiments (10 iterations per scenario) with variables: speed (30/50 km/h), RSU schemes, mRSU types. Metrics: Loss percentage, stability time. Rigor: Compared path loss models; adequacy: Included key V2X parameters.",
+        "Follows systems engineering paradigm, emphasizing simulation-based optimization, which narrows focus to algorithmic efficiency over real-world unpredictability."
+      ],
+      "Results": [
+        "Direct RSU-EC connections minimize losses (<1%); clustering increases losses but reduces costs. On-call mRSUs at high speed reduce losses most effectively. System stabilizes after 100s.",
+        "Results reliable: Consistent across iterations. Significant: Demonstrates mRSU efficacy. Stability: Loss patterns equilibrate post-100s. Hata model shows speed-dependent loss reduction; 3GPP model less affected by speed."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured: Problem (V2X inefficiency) → Solution (simulation system) → Validation (numerical experiments) → Conclusion (mRSU benefits).",
+        "Steps: (1) Motivate need via ITS challenges, (2) Propose models/scenarios, (3) Develop simulator, (4) Compare results. Links: Mathematical frameworks justify simulation design; experiments validate hypotheses.",
+        "Strengths: Clear empirical validation. Weaknesses: Limited discussion of real-world interference. Rebuttals: Address simplified model limitations via future 3D extensions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Custom simulator (flexible, resource-efficient); novel three-tier fog validation; practical mRSU deployment insights.",
+        "Methodology boundaries: Simplified mobility (no overtaking, 2D maps), ignored terrain interference, and uniform speed assumptions.",
+        "Systems engineering focus prioritizes algorithmic optimization, potentially overlooking socio-technical factors (e.g., multi-operator coordination)."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as response to fragmented V2X simulation tools, advocating integrated, accessible approaches within vehicular network discourse.",
+        "Technical terminology (e.g., OBU, RSU, fog nodes); authoritative tone; rhetorical emphasis on cost-benefit trade-offs and model flexibility.",
+        "Builds authority through IEEE/3GPP citations and self-citations for continuity. Motivations: Establish novelty, bridge theoretical-practical gaps."
+      ],
+      "Conclusions_and_Implications": [
+        "mRSUs reduce system losses, especially in on-call deployments. Clustering balances cost and performance. The simulator enables efficient V2X optimization.",
+        "Future work: Scale model for diverse V2X apps, assess energy efficiency, explore 3D physical modeling. Practical implication: Guides infrastructure planning for autonomous vehicles."
+      ]
+    }
+  }
+}

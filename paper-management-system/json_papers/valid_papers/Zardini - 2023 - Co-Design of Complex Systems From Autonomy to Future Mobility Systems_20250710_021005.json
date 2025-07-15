@@ -1,0 +1,77 @@
+{
+  "file_name": "Zardini - 2023 - Co-Design of Complex Systems From Autonomy to Future Mobility Systems.pdf",
+  "generated_at": "2025-07-10 02:10:05",
+  "structured_info": {
+    "title_cn": "复杂系统的协同设计：从自主性到未来移动系统",
+    "title_en": "Co-Design of Complex Systems: From Autonomy to Future Mobility Systems",
+    "category": "Systems Engineering",
+    "topics": [
+      "Co-design Theory",
+      "Autonomous Systems",
+      "Mobility Systems"
+    ],
+    "keywords": [
+      "Co-design",
+      "Complex Systems",
+      "Category Theory",
+      "Compositionality",
+      "Monotonicity"
+    ],
+    "abstract": "The contemporary era struggles with the intricate challenge of designing complex systems characterized by intricate webs of interactions. This thesis focuses on the theory of co-design, extending from designing individual platforms like autonomous vehicles to orchestrating entire mobility systems. It establishes a monotone theory of co-design using category theory to elucidate compositionality and functorial solution schemes, providing both theoretical foundations and practical guidance for real-world applications in embodied intelligence.",
+    "methodology": "Develops a monotone theory of co-design leveraging category theory; formalizes design problems as mathematical structures; employs composition operations (series, parallel, feedback); implements solution schemes through functorial mappings; validates via case studies in autonomy and mobility systems.",
+    "conclusion": "Provides a robust mathematical framework for co-design enabling efficient computation of optimal solutions; demonstrates applicability across autonomy and mobility domains; establishes compositionality as fundamental for handling system complexity; opens avenues for future extensions in modeling strategic interactions.",
+    "authors": [
+      "Gioele Zardini"
+    ],
+    "publication_year": "2023",
+    "venue": "ETH Zurich",
+    "doi": "",
+    "bibtex_citation": "Zardini_Co-Design_2023",
+    "analysis": {
+      "Overview": "Presents a mathematical framework for co-designing complex systems using category theory, addressing challenges in autonomy and mobility through compositional methods and monotonicity principles.",
+      "Background_and_Motivation": [
+        "Urbanization growth and sustainability demands create urgency for efficient transportation systems; complexity arises from interdependent hardware/software components and socio-technical interactions.",
+        "Solve simultaneous optimization of heterogeneous system components while satisfying constraints and multi-objective requirements.",
+        "Cites urbanization statistics (55%→68% by 2050), mobility service growth (1000% in NYC), and sustainability imperatives (EU's 90% emission reduction target) to establish urgency.",
+        "Links specific co-design challenges to broader urban sustainability goals through energy/emission data and mobility inefficiencies.",
+        "Systems Engineering, Applied Mathematics, Transportation Science, and Robotics."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Co-design: Simultaneous selection of heterogeneous components under system constraints; Monotonicity: Order-preserving properties in design spaces; Compositionality: Hierarchical system construction via interconnected components.",
+        "Monotonicity enables efficient optimization; compositionality connects component-level design to system-level objectives through category theory morphisms.",
+        "Design problems exhibit order structures; component interactions follow compositional rules; real-world constraints are mathematically representable.",
+        "Introduces novel categorical formalization of co-design; advances solution schemes for interconnected systems; bridges theoretical math with practical engineering."
+      ],
+      "Methodology": [
+        "Category theory constructs design spaces; monotone mappings formalize feasibility; series/parallel/feedback compositions build systems; functorial approaches compute solutions.",
+        "Novelty: First categorical framework for co-design; applicability: Validated in AV/mobility case studies; rationality: Aligns with physics-based constraints and optimization theory.",
+        "Case studies use domain-specific parameters (e.g., vehicle dynamics, urban demand); preprocessing includes functional decomposition; representativeness evidenced by real-world mobility challenges.",
+        "Rigorous poset/lattice foundations; evaluation via optimality proofs and task-specific metrics (e.g., energy vs. errors).",
+        "Follows formal methods paradigm; category theory enables abstraction but constrains modeling to compositional structures."
+      ],
+      "Results": [
+        "Theoretical: Co-design category (DP) with monoidal/traced properties; Practical: Optimal solutions for AV/mobility case studies.",
+        "Significance: Unifies disjointed design approaches; reliability: Mathematically proven monotonicity; stability: Handles feedback via fixed-point methods."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical: Background → Theory → Composition → Solving → Applications.",
+        "1) Formalize design problems 2) Establish monotonicity 3) Define compositions 4) Solve via functors 5) Validate with case studies.",
+        "Strength: Rigorous categorical proofs; weakness: Abstract formalism; counters via concrete mobility examples."
+      ],
+      "Strengths_and_Limitations": [
+        "Unified cross-domain framework; computational tractability; vertical/horizontal compositionality.",
+        "Assumes monotonicity; limited non-compositional interactions; scalability unverified for ultra-large systems.",
+        "Category theory focus may overlook non-compositional system aspects; optimization confined to predefined posets."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances 'automated design' discourse via mathematical formalization; positions as bridge between theory/practice.",
+        "Technical: 'Functorial solution schemes', 'monoidal categories'; persuasive: Urgency framing with urbanization data; authority-building through Simon's design philosophy citations.",
+        "Strategic citations of Nobel laureates (Simon) and advisors; establishes legitimacy in robotics/control communities."
+      ],
+      "Conclusions_and_Implications": [
+        "Co-design requires compositional mathematics; category theory enables efficient optimization; framework generalizes across autonomy/mobility domains.",
+        "Extend to strategic interactions (game theory); improve non-monotonic handling; apply to energy-grid integration."
+      ]
+    }
+  }
+}

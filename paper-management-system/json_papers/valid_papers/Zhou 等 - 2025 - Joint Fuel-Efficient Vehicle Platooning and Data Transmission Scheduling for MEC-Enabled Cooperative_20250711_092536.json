@@ -1,0 +1,84 @@
+{
+  "file_name": "Zhou 等 - 2025 - Joint Fuel-Efficient Vehicle Platooning and Data Transmission Scheduling for MEC-Enabled Cooperative.pdf",
+  "generated_at": "2025-07-11 09:25:36",
+  "structured_info": {
+    "title_cn": "面向移动边缘计算协同车路系统的联合节能车辆编队与数据传输调度",
+    "title_en": "Joint Fuel-Efficient Vehicle Platooning and Data Transmission Scheduling for MEC-Enabled Cooperative Vehicle-Infrastructure Systems",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicle Platooning",
+      "Mobile Edge Computing",
+      "V2I Communication Reliability"
+    ],
+    "keywords": [
+      "Connected vehicles",
+      "Vehicle platooning",
+      "Fuel efficiency",
+      "Communication reliability"
+    ],
+    "abstract": "Platoon-based connected vehicles are promising solutions for next-generation mobility. This paper investigates the joint problem of car-following coordination and data transmission scheduling in MEC-enabled cooperative vehicle-infrastructure systems (CVIS). A two-tier hierarchical framework is developed: (1) a fuel-efficient mobility optimization layer for platoon coordination using a leader-predecessor-follower control protocol, and (2) a reliability-oriented V2I communication layer for delay-constrained data transmission scheduling. A closed-form expression for reliability-optimal scheduling is derived, incorporating platoon mobility, channel characteristics, and application requirements. Simulations show 16.4% reduction in fuel consumption per time slot and 1.31x higher communication reliability compared to traditional methods.",
+    "methodology": "Two-tier hierarchical optimization: 1) Fuel-efficient platoon coordination via discrete-time double integrator model with LPF control protocol and MPC-based optimization; 2) Reliability-driven V2I scheduling using Rayleigh fading channel model and Shannon capacity formula, solved via KKT conditions yielding closed-form solutions.",
+    "conclusion": "The joint framework improves platoon fuel efficiency by 16.4% per time slot while achieving 1.31x higher communication reliability. The mobility-driven scheduling adapts transmissions to vehicle trajectories, satisfying URLLC requirements (99.999% reliability).",
+    "authors": [
+      "Jianshan Zhou",
+      "Mingqian Wang",
+      "Daxin Tian",
+      "Xuting Duan",
+      "Yanmin Shao",
+      "Zhengguo Sheng",
+      "Victor C. M. Leung"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2024.3502833",
+    "bibtex_citation": "Zhou_Joint_2024",
+    "analysis": {
+      "Overview": "Proposes a co-design framework integrating fuel-efficient vehicle platoon control with reliability-optimized V2I data transmission for MEC-enabled CVIS, addressing energy consumption and communication reliability simultaneously.",
+      "Background_and_Motivation": [
+        "Platooning improves road efficiency but requires reliable V2I communication for MEC integration; existing works optimize control and communication separately",
+        "Need to jointly coordinate platoon mobility (for fuel savings) and schedule transmissions (for reliability) under delay/integrity constraints",
+        "Urgency stems from conflicting requirements: fuel efficiency needs stable velocities while reliability requires proximity to infrastructure",
+        "Bridges control theory (platoon stability) and communication theory (channel reliability) for holistic CVIS optimization",
+        "Contributes to intelligent transportation systems, vehicular networks, and edge computing"
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Two-tier framework: Hierarchical decoupling of mobility optimization (upper layer) and communication scheduling (lower layer)",
+        "LPF control protocol: Leader-predecessor-follower topology ensuring string stability via CTH policy",
+        "Reliability metric: Probability of successful data transmission under Rayleigh fading channels",
+        "Assumes perfect V2V communication for control, ignores MEC computational energy, and homogeneous platoon dynamics",
+        "Provides methodological innovation through closed-form scheduling solution and integrated control-communication co-design"
+      ],
+      "Methodology": [
+        "Fuel optimization: Discrete-time double integrator model with velocity-dependent fuel function solved via interior-point methods",
+        "Novelty: Joint convex reliability optimization with mobility-dependent channel gain; Applicability: Real-time scheduling via closed-form expressions",
+        "Simulated SC-FDMA V2I channels with Rayleigh fading; Data: Platoon trajectories, channel contention (M=40), Q_j=30Mbit/vehicle",
+        "Experimental rigor: Compared against PF/BD controllers and MPC baselines; Metrics: Fuel consumption, reliability exponent, L2 stability",
+        "Follows control-theoretic paradigm (MPC) and communication theory (Shannon capacity), enabling cross-layer optimization"
+      ],
+      "Results": [
+        "16.4% fuel reduction per time slot vs. baselines; Vehicles converge to fuel-efficient velocity (17.58 m/s)",
+        "Reliability exponent consistently >5 (99.999% success probability), satisfying URLLC; 42.43% higher global reliability vs. benchmarks",
+        "Results validated through convergence plots (velocity/position errors), stability analysis, and comparative simulations"
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical argument: 1) Prove fuel optimization stability, 2) Derive reliability bounds, 3) Validate joint benefits",
+        "Key steps: Formulate two-tier optimization → Prove convexity of scheduling → Derive KKT conditions → Provide closed-form solution → Simulate gains",
+        "Strength: Theoretical guarantees (string stability, convexity); Weakness: Assumes perfect state feedback; Addressed via robustness claims in prior work"
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First joint framework for fuel/reliability co-optimization; Analytical scheduling solution; URLLC compliance",
+        "Method boundaries: Ignored MEC handovers, computational energy, braking recovery, and aerodynamic leader effects",
+        "Control-theoretic constraints limit generalization to heterogeneous platoons or nonlinear dynamics"
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as bridge between platoon control and V2I reliability literature; Critiques prior separation of concerns",
+        "Technical terminology: String stability, Rayleigh fading, KKT conditions; Persuasive strategies: Comparative simulations highlighting 16.4%/1.31x gains",
+        "Builds authority via 57 citations spanning control theory (e.g., MPC) and communications (e.g., URLLC); Motivations: Highlight gaps in co-design"
+      ],
+      "Conclusions_and_Implications": [
+        "Joint optimization reduces fuel consumption by 16.4% and improves reliability by 1.31x while meeting URLLC requirements",
+        "Future work: Heterogeneous networking, MEC handovers, braking energy recovery, and robust topology switching"
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "file_name": "Ahangar 等 - 2021 - A Survey of Autonomous Vehicles Enabling Communication Technologies and Challenges.pdf",
+  "generated_at": "2025-07-14 12:24:29",
+  "structured_info": {
+    "title_cn": "自动驾驶车辆综述：通信技术与挑战",
+    "title_en": "A Survey of Autonomous Vehicles: Enabling Communication Technologies and Challenges",
+    "category": "Intelligent Transport Systems",
+    "topics": [
+      "Autonomous Vehicles",
+      "Vehicular Communication",
+      "Sensor Technologies"
+    ],
+    "keywords": [
+      "autonomous vehicles",
+      "Bluetooth",
+      "dedicated short-range communications",
+      "intelligent transport system",
+      "V2I",
+      "V2V",
+      "V2X",
+      "VANET",
+      "vehicular communications",
+      "ultra-wide band",
+      "ZigBee"
+    ],
+    "abstract": "The Department of Transport in the United Kingdom recorded 25,080 motor vehicle fatalities in 2019. This situation stresses the need for an intelligent transport system (ITS) that improves road safety and security by avoiding human errors with the use of autonomous vehicles (AVs). Therefore, this survey discusses the current development of two main components of an ITS: (1) gathering of AVs surrounding data using sensors; and (2) enabling vehicular communication technologies. First, the paper discusses various sensors and their role in AVs. Then, various communication technologies for AVs to facilitate vehicle to everything (V2X) communication are discussed. Based on the transmission range, these technologies are grouped into three main categories: long-range, medium-range and short-range. The short-range group presents the development of Bluetooth, ZigBee and ultra-wide band communication for AVs. The medium-range examines the properties of dedicated short-range communications (DSRC). Finally, the long-range group presents the cellular-vehicle to everything (C-V2X) and 5G-new radio (5G-NR). An important characteristic which differentiates each category and its suitable application is latency. This research presents a comprehensive study of AV technologies and identifies the main advantages, disadvantages, and challenges.",
+    "methodology": "Survey and comparative analysis of sensor and communication technologies in autonomous vehicles.",
+    "conclusion": "Autonomous vehicles (AVs) have the potential to significantly improve road safety and reduce congestion. However, challenges such as legal responsibilities, security vulnerabilities, and high initial costs need to be addressed. The paper highlights the importance of sensor fusion and communication technologies (short-range, medium-range, and long-range) in enabling AV functionalities. Future research should focus on overcoming the limitations of current technologies and integrating them more effectively.",
+    "authors": [
+      "M. Nadeem Ahangar",
+      "Qasim Z. Ahmed",
+      "Fahd A. Khan",
+      "Maryam Hafeez"
+    ],
+    "publication_year": "2021",
+    "venue": "Sensors",
+    "doi": "10.3390/s21030706",
+    "bibtex_citation": "Ahangar_Survey_2021",
+    "analysis": {
+      "Overview": "The paper provides a comprehensive survey of autonomous vehicle (AV) technologies, focusing on sensor systems and communication technologies. It discusses the evolution of AVs, their classification, and the role of intelligent transport systems (ITS) in improving road safety and efficiency.",
+      "Background_and_Motivation": [
+        "The increasing number of road fatalities and inefficiencies in traditional transport systems highlight the need for intelligent transport systems (ITS) and autonomous vehicles (AVs).",
+        "The research aims to address the challenges in AV development, including sensor integration and communication technologies, to enhance safety and reduce human errors.",
+        "The authors argue that AVs can significantly reduce accidents and improve traffic management, making their development urgent and necessary.",
+        "The paper links AV technologies to broader ITS goals, emphasizing their role in modernizing transport systems.",
+        "The paper contributes to interdisciplinary fields including automotive engineering, wireless communication, and computer science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include sensor fusion (combining data from multiple sensors), V2X communication (vehicle-to-everything), and levels of automation (SAE classification).",
+        "Sensor fusion and communication technologies are logically interconnected to enable AV functionalities such as obstacle detection and real-time decision-making.",
+        "Key assumptions include the reliability of sensor data, the availability of communication infrastructure, and the scalability of proposed solutions.",
+        "The paper contributes a taxonomy of communication technologies and their applications in AVs, advancing the knowledge in vehicular networks."
+      ],
+      "Methodology": [
+        "The paper employs a survey methodology, reviewing and comparing existing sensor and communication technologies.",
+        "The methodology is novel in its classification of technologies by transmission range (short, medium, long) and its detailed analysis of their applicability in AVs.",
+        "Data sources include academic literature, industry standards, and technological specifications. The representativeness is ensured by covering a wide range of technologies and their real-world applications.",
+        "The experimental design is rigorous, with clear criteria for evaluating each technology's performance, latency, and reliability.",
+        "The research follows a systems engineering paradigm, integrating hardware (sensors) and software (communication protocols) perspectives."
+      ],
+      "Results": [
+        "Key results include the classification of communication technologies into short-range (Bluetooth, ZigBee, UWB), medium-range (DSRC, Wi-Fi), and long-range (C-V2X, 5G-NR).",
+        "The results are significant for designing AV systems, reliable due to comprehensive literature review, and stable as they are based on established technologies."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a structured argument, starting with the need for AVs, followed by sensor technologies, and concluding with communication solutions.",
+        "Key steps include defining AV levels, discussing sensor roles, and analyzing communication technologies. Logical links are established between sensor accuracy and communication reliability.",
+        "Strengths include comprehensive coverage and clear classification. Weaknesses include limited discussion on real-world deployment challenges. The authors address potential rebuttals by acknowledging limitations and suggesting future research directions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include a holistic review of AV technologies, clear taxonomy, and practical implications.",
+        "Limitations include the lack of real-world deployment data and the rapid evolution of technologies like 5G-NR.",
+        "The theoretical paradigm of systems engineering constrains the conclusions to technical feasibility, overlooking socio-economic factors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on AV development, bridging gaps between sensor and communication research.",
+        "The authors use technical terminology and a formal tone, building authority through extensive citations to standards and prior research.",
+        "Citations are used to validate claims and establish the paper's credibility, with motivations including advancing AV technology and informing policy."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the potential of AVs to transform transport systems, contingent on overcoming technical and regulatory challenges.",
+        "Future research should focus on integrating emerging technologies, addressing security vulnerabilities, and conducting large-scale real-world testing."
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "file_name": "do Amaral 等 - 2024 - Adaptive metamodeling simulation optimization Insights, challenges, and perspectives.pdf",
+  "generated_at": "2025-07-11 10:16:50",
+  "structured_info": {
+    "title_cn": "自适应元建模仿真优化：见解、挑战与展望",
+    "title_en": "Adaptive metamodeling simulation optimization: Insights, challenges, and perspectives",
+    "category": "Simulation Optimization",
+    "topics": [
+      "Adaptive Metamodeling",
+      "Simulation Optimization",
+      "Systematic Literature Review"
+    ],
+    "keywords": [
+      "Adaptive metamodeling",
+      "Surrogate models",
+      "Simulation optimization",
+      "Systematic literature review"
+    ],
+    "abstract": "A pillar of Industry 4.0, Simulation Optimization is a powerful tool used across several fields, enabling system evaluation under varying conditions, facilitating performance analysis, and more efficient decision-making. On the other hand, the simulations might be time-consuming, particularly when considering complex model optimization. In this sense, metamodeling has emerged as a promising technique for simulation optimization. Metamodeling aims to establish and estimate a relationship between the inputs and outputs of a simulation model, creating a simplified model used to evaluate potential solutions during the optimization process. Metamodeling approaches can be classified as metamodeling with a fixed experimental design and adaptive metamodeling. This paper presents a systematic literature review of adaptive metamodeling in simulation optimization problems. The primary contributions of this paper are the systematic collection, examination, and discussion of knowledge disseminated in this field. We aim to support upcoming research endeavors and enhance the existing literature concerning adaptive metamodeling techniques.",
+    "methodology": "Systematic Literature Review (SLR) using the CIMO framework, covering databases including Scopus, Web of Science, IEEE Xplore, ACM Library, Taylor & Francis, and Science Direct. The review involved screening 267 articles, applying inclusion/exclusion criteria, and analyzing 68 selected papers through descriptive statistics.",
+    "conclusion": "The paper consolidates knowledge on adaptive metamodeling in simulation optimization (AMSO), highlighting Kriging as the dominant metamodel and Expected Improvement as the primary acquisition function. Key applications include product design and process optimization, particularly in water management. Identified gaps include limited exploration of multi-objective problems with discrete variables and robust optimization under uncertainty. Future research should explore deep learning-based metamodels and homogeneous ensemble methods.",
+    "authors": [
+      "João Victor Soares do Amaral",
+      "José Arnaldo Barra Montevechi",
+      "Rafael de Carvalho Miranda",
+      "Carlos Henrique dos Santos"
+    ],
+    "publication_year": "2024",
+    "venue": "Applied Soft Computing Journal",
+    "doi": "10.1016/j.asoc.2024.112067",
+    "bibtex_citation": "Amaral_Adaptive_2024",
+    "analysis": {
+      "Overview": "This systematic literature review comprehensively analyzes adaptive metamodeling techniques in simulation optimization, covering methodologies, applications across sectors like water management and logistics, and emerging trends. It synthesizes dispersed knowledge to establish guidelines and identify research gaps.",
+      "Background_and_Motivation": [
+        "Simulation Optimization faces computational bottlenecks in complex systems, hindering real-time decision-making in Industry 4.0 contexts.",
+        "Addresses the need to reduce simulation runtime via adaptive metamodeling, which iteratively refines surrogate models during optimization.",
+        "Authors emphasize urgency due to rising industrial demands for efficient optimization and gaps in existing reviews, which lack holistic coverage of adaptive metamodeling components.",
+        "Positions AMSO as critical for scalable optimization in computationally intensive simulations, linking it to broader challenges in digital twins and sustainable resource management.",
+        "Contributes to interdisciplinary fields including computational intelligence, operations research, and industrial engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Adaptive Metamodeling (iterative surrogate refinement), (2) Acquisition Functions (e.g., Expected Improvement for solution selection), (3) Simulation Optimization (integrating simulation with optimization).",
+        "Metamodels abstract simulation inputs/outputs; acquisition functions balance exploration/exploitation; optimization methods (e.g., Genetic Algorithms) minimize simulation calls.",
+        "Assumes metamodels accurately approximate simulations after sufficient iterations and that adaptive sampling outperforms fixed designs in complex problems.",
+        "Provides a taxonomic and synthesizing contribution, organizing fragmented knowledge into a structured framework for future AMSO applications."
+      ],
+      "Methodology": [
+        "SLR with CIMO logic, analyzing 68 papers via eight criteria: problem types, simulation methods, metamodels, experimental designs, acquisition functions, optimization algorithms, validation, and frameworks.",
+        "Methodology is rational for synthesizing a broad field but constrained by database coverage; novelty lies in comprehensive scope beyond prior domain-specific reviews.",
+        "Data sourced from six scientific databases; preprocessing included deduplication and quality assessment. Representativeness is high for journal articles but may exclude emerging industry practices.",
+        "Experimental design rigorous with multiple researcher validation; evaluation metrics included R², RMSE, and cross-validation.",
+        "Follows evidence-based SLR paradigm, influencing a structured, unbiased analysis but potentially overlooking non-traditional publications."
+      ],
+      "Results": [
+        "Kriging used in 62.5% of studies; Expected Improvement was the dominant acquisition function (30.5%). Latin Hypercube Design (59.2%) was the primary experimental design. Most applications involved continuous variables (69.1%) and single-objective problems (77.1%).",
+        "Results are significant for guiding AMSO implementations; reliability is strengthened by systematic analysis of 68 papers; stability is evidenced by consistent methodological trends across reviewed works."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured progression: problem motivation → SLR methodology → thematic results → gaps/future work.",
+        "Key steps: SLR protocol definition, data extraction, statistical analysis, and synthesis of findings. Logical links connect computational challenges to AMSO solutions.",
+        "Strengths include comprehensive coverage and clear guidelines; weaknesses involve database limitations. Authors address rebuttals by acknowledging non-exhaustiveness but justifying scope via major databases."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Holistic review integrating diverse AMSO components; practical guidelines for implementation; identification of under-explored areas (e.g., discrete multi-objective optimization).",
+        "Methodological boundaries: SLR confines conclusions to published literature, omitting real-time industry applications; theoretical emphasis may overlook real-world constraints.",
+        "CIMO framework limits discourse to structured research questions, potentially neglecting emergent innovations in machine learning integration."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions as a foundational synthesis for AMSO, bridging academic and industrial research. Uses authoritative terminology like 'metamodel fidelity' and 'computational burden'.",
+        "Rhetoric emphasizes consolidation via systematic analysis; citations build authority by referencing seminal works (e.g., Jones et al.'s EGO algorithm). Motivations include standardizing AMSO practices and directing future work."
+      ],
+      "Conclusions_and_Implications": [
+        "AMSO effectively reduces computational costs in simulation optimization, with Kriging and Expected Improvement as prevalent techniques. Key gaps include robust optimization under uncertainty and discrete multi-objective problems.",
+        "Future research: Integrate deep learning into metamodels; develop homogeneous ensembles; use Data Envelopment Analysis for method comparisons; explore digital twin integrations for real-time adaptability."
+      ]
+    }
+  }
+}

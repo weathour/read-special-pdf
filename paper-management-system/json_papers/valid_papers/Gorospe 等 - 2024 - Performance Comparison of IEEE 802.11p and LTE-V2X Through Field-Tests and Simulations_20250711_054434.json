@@ -1,0 +1,83 @@
+{
+  "file_name": "Gorospe 等 - 2024 - Performance Comparison of IEEE 802.11p and LTE-V2X Through Field-Tests and Simulations.pdf",
+  "generated_at": "2025-07-11 05:44:34",
+  "structured_info": {
+    "title_cn": "通过现场测试和模拟对IEEE 802.11p与LTE-V2X的性能比较",
+    "title_en": "Performance Comparison of IEEE 802.11p and LTE-V2X Through Field-Tests and Simulations",
+    "category": "Vehicular Networking",
+    "topics": [
+      "Vehicular Communication",
+      "Wireless Networks",
+      "Performance Evaluation"
+    ],
+    "keywords": [
+      "IEEE 802.11p",
+      "LTE-V2X",
+      "Vehicular Communication",
+      "Performance Comparison",
+      "Field Tests",
+      "Simulations"
+    ],
+    "abstract": "Vehicular communication is a key enabler in making Automated Vehicles (AVs) collaborate by sharing information, which complements on-board sensor information and facilitates precise vehicle control. This paper presents a tailored measurement campaign aimed at analyzing the performance of two vehicular communication technologies, namely IEEE 802.11p and LTE-V2X. Our study focuses on key metrics for cooperating AVs, such as end-to-end latency and packet delivery ratios. Additionally, we investigate the feasibility of channel coexistence, assessing the challenges associated with concurrent channel access. The results derived from field tests are correlated with simulations conducted on PLEXE and OpenCV2X, platforms used for simulating IEEE 802.11p and LTE-V2X, respectively. This combined methodology, comprising field tests and simulations, enables the attainment of replicable conclusions, which in turn enables better design choices.",
+    "methodology": "Conducted field tests with two vehicles equipped with IEEE 802.11p and LTE-V2X devices in platooning scenarios under Line-of-Sight (LOS) and Non-Line-of-Sight (NLOS) conditions. Integrated OpenCV2X into the PLEXE simulation framework to replicate field test scenarios, using OMNeT++, INET, SUMO, and Veins. Varied parameters such as modulation schemes, transmission power, packet sizes, and inter-vehicle distances. Measured Packet Delivery Ratio (PDR) and end-to-end latency, with simulations validated against field test results.",
+    "conclusion": "IEEE 802.11p maintains significantly lower and more consistent latency than LTE-V2X, making it better suited for safety-critical applications requiring local cooperation. LTE-V2X offers broader coverage and higher reliability in NLOS scenarios but suffers from higher latency. Coexistence on the same channel degrades IEEE 802.11p performance due to unfair channel access. Simulation results from PLEXE and OpenCV2X are consistent with field tests, validating their use for performance comparisons.",
+    "authors": [
+      "Joseba Gorospe",
+      "Daniel Garcia",
+      "Erislandy Mozo",
+      "Shahriar Hasan",
+      "Arrate Alonso Gomez",
+      "Elisabeth Uhlemann"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Vehicular Networking Conference (VNC)",
+    "doi": "10.1109/VNC61989.2024.10576013",
+    "bibtex_citation": "Gorospe_Performance_2024",
+    "analysis": {
+      "Overview": "The paper compares the performance of IEEE 802.11p and LTE-V2X communication technologies for vehicular networks, focusing on end-to-end latency and Packet Delivery Ratio (PDR) through field tests and simulations. It evaluates their efficacy in enabling cooperative automated vehicles under various configurations and assesses challenges in channel coexistence.",
+      "Background_and_Motivation": [
+        "Vehicular communication is critical for automated vehicle safety, requiring low latency and high reliability. Broader challenges include selecting appropriate technologies for local cooperation and managing spectrum sharing.",
+        "Motivation stems from the need to determine which technology performs better under different conditions (e.g., range, packet size) and to address the lack of real-world coexistence studies.",
+        "The authors argue for necessity by citing literature gaps, such as insufficient validation of simulations and absence of coexistence tests, which are urgent for deploying reliable AV systems.",
+        "They relate the specific problem to broader safety challenges in AVs, emphasizing that performance metrics directly impact collision avoidance and coordination.",
+        "Contributions span vehicular networking, wireless communications, and simulation-based validation, with interdisciplinary relevance to transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: IEEE 802.11p (uses EDCA/CSMA-CA for channel access), LTE-V2X Mode 4 (uses SPS for scheduling), and key metrics (PDR, end-to-end latency).",
+        "Logical relationships: Both technologies aim for reliable communication but differ in access mechanisms—802.11p relies on channel sensing, while LTE-V2X uses pre-scheduling. Coexistence causes interference due to incompatible access methods.",
+        "Key assumptions: Real-world conditions (e.g., LOS/NLOS) are replicable in simulations; commercial devices accurately represent technology performance; GNSS synchronization ensures timing accuracy.",
+        "The paper contributes empirical validation and simulation integration, advancing practical knowledge in vehicular communications by confirming trade-offs between latency and coverage."
+      ],
+      "Methodology": [
+        "Core methods include field tests with vehicles in platooning scenarios and simulations using integrated PLEXE-OpenCV2X framework. Parameters varied: modulation schemes (QPSK, 16QAM), transmission power (5 dBm, 20 dBm), packet sizes (200-1000 bytes), and distances (15-90 m).",
+        "Methodology is novel for combining real-world measurements with simulations to ensure reproducibility; applicable to AV communication studies but limited by scenario simplicity (two vehicles). Rationality is supported by repeated tests and statistical robustness (100 simulation runs).",
+        "Data from field tests used commercial OBUs with GNSS-synchronized logs; simulations employed SUMO for traffic modeling and Nakagami fading/path loss models. Data representativeness is evaluated as high for controlled environments but may lack generalizability to denser traffic.",
+        "Experimental design is rigorous with controlled variables and replication; evaluation metrics (PDR, latency CDF) are adequate for safety-critical apps but could include more metrics like throughput.",
+        "The research follows wireless communication standards (IEEE, 3GPP), influencing a focus on protocol-specific performance rather than theoretical innovations."
+      ],
+      "Results": [
+        "Key results: IEEE 802.11p achieves lower latency (e.g., ~4 ms in LOS) than LTE-V2X (60-100 ms). LTE-V2X shows higher PDR in NLOS. Coexistence degrades 802.11p performance (latency increase to 11 ms, PDR drop to 52%). Simulations closely match field tests.",
+        "Results are significant for guiding technology selection in AVs: 802.11p excels in low-latency needs, LTE-V2X in range. Reliability is high in controlled tests but stability may vary in real-world congestion."
+      ],
+      "Argumentation_and_Logic": [
+        "Argument structure: Introduces problem, reviews literature, details methodology, presents results (independent and coexistence), validates simulations, and concludes.",
+        "Key steps: Establish technology trade-offs from prior work → Test hypotheses via field/simulations → Analyze metrics → Extend to coexistence → Validate methods. Logical links connect performance gaps to real-world implications.",
+        "Strengths include comprehensive data from multiple methods; weaknesses are potential rebuttals about limited scalability (only two vehicles). Authors address this by emphasizing replicability and suggesting future work on denser scenarios."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Empirical validation with field tests, novel simulation integration, and actionable insights for AV communication design.",
+        "Limitations: Restricted to two vehicles; excludes newer standards (e.g., 5G NR-V2X); coexistence simulations not feasible yet.",
+        "Theoretical paradigm (standards-based) constrains conclusions to current technologies, overlooking emerging paradigms like AI-enhanced scheduling."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances discourse on V2X performance by providing validated comparisons; positions as a bridge between simulation and real-world studies.",
+        "Terminology: Technical (e.g., PDR, SPS, EDCA); tone objective and authoritative; rhetorical strategies include contrasting technologies and citing benchmarks.",
+        "Authors build authority through extensive references (e.g., 27 citations), motivated by grounding work in established research and highlighting gaps they fill."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: IEEE 802.11p is superior for low-latency applications, LTE-V2X for range; coexistence harms 802.11p; simulations are reliable for further studies.",
+        "Future research: Address coexistence mechanisms, include more vehicles and newer technologies, explore AI for optimization, and test in urban environments."
+      ]
+    }
+  }
+}

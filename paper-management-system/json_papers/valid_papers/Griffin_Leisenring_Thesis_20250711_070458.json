@@ -1,0 +1,78 @@
+{
+  "file_name": "Griffin_Leisenring_Thesis.pdf",
+  "generated_at": "2025-07-11 07:04:58",
+  "structured_info": {
+    "title_cn": "虚拟环境中自动驾驶的评估",
+    "title_en": "Evaluation of Automated Driving in a Virtual Environment",
+    "category": "Autonomous Vehicles",
+    "topics": [
+      "Virtual Simulation",
+      "Automated Driving Validation",
+      "Energy Efficiency Optimization"
+    ],
+    "keywords": [
+      "Automated Driving",
+      "Virtual Environment",
+      "Simulation Testing",
+      "Autoware",
+      "Localization"
+    ],
+    "abstract": "Automated vehicle testing in real-world driving scenarios is required for system development but may not always be performed due to safety concerns. Testing scenarios can be replicated at closed test tracks or through simulated environments using complete digital replicas of real-world roads. This thesis covers the initialization of an automated driving platform (Autoware/ROS), creation of a digital replica for a selected test route using tools like OpenStreetMap and Unity, and validation of automated driving features in simulation environments like SVL Simulator. The research aims to validate energy-saving functionalities for a Plugin Hybrid Electric Vehicle within the ARPA-E NEXTCAR program.",
+    "methodology": "Utilized Robot Operating System (ROS) with Autoware for sensor/module communication. Created digital route replicas via OpenStreetMap, MathWorks RoadRunner, and Unity. Validated automated driving through ROSBag playback (LiDAR point cloud localization) and SVL Simulator virtual testing.",
+    "conclusion": "Simulated testing environments enable safe validation of automated driving functionality as a precursor to physical implementation. Accurate digital replicas of real-world routes can be created using open-source tools, allowing performance evaluation of autonomous features like localization and motion planning.",
+    "authors": [
+      "Griffin Leisenring"
+    ],
+    "publication_year": "2022",
+    "venue": "The Ohio State University (Master's Thesis)",
+    "doi": "",
+    "bibtex_citation": "Leisenring_Evaluation_2022",
+    "analysis": {
+      "Overview": "Thesis develops a simulation pipeline for testing Level 4 automated driving systems using virtual replicas of real-world routes, focusing on validation of energy-saving functionalities for hybrid vehicles.",
+      "Background_and_Motivation": [
+        "Safety limitations prevent extensive real-world testing of autonomous vehicles; closed test tracks cannot fully replicate actual road conditions.",
+        "Need for accurate virtual environments to validate automated driving performance before physical implementation.",
+        "Emphasizes risks of on-road testing and energy-efficiency goals of the NEXTCAR program.",
+        "Links route-specific testing limitations to broader challenges in autonomous vehicle deployment scalability.",
+        "Contributes to autonomous systems engineering, simulation technology, and energy-efficient transportation."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Digital Replica: Virtual model replicating real-world test routes for simulation.",
+        "Operational Design Domain: Constraints defining where/when autonomous features operate safely.",
+        "Simulation Validation: Using virtual tests as precursors to physical implementation.",
+        "Assumes simulated environments sufficiently represent real-world dynamics for preliminary validation.",
+        "Provides practical methodology for creating testable virtual environments, advancing simulation-based validation protocols."
+      ],
+      "Methodology": [
+        "ROS/Autoware integration for sensor communication; SVL Simulator for virtual testing; OpenStreetMap/RoadRunner/Unity for environment modeling.",
+        "Novelty in toolchain integration; applicability demonstrated through route replication; rationalized by safety and cost benefits.",
+        "Real-world route data processed into HD maps and 3D models; evaluated for representativeness through localization accuracy tests.",
+        "Experimental rigor ensured via LiDAR point cloud matching and mission planning modules; metrics include localization stability and execution time.",
+        "Follows pragmatic engineering paradigm, prioritizing replicability and safety over theoretical innovation."
+      ],
+      "Results": [
+        "Successful creation of digital route replicas; validated localization and motion planning in simulation.",
+        "Results demonstrate methodology viability but note instability in feature-sparse areas (e.g., Kenny Road localization failures)."
+      ],
+      "Argumentation_and_Logic": [
+        "Problem-Solution structure: Real-world testing limitations → Simulation pipeline development.",
+        "1. Justify simulation necessity 2. Detail platform setup 3. Validate with case studies 4. Report limitations.",
+        "Strengths: Systematic toolchain documentation. Weakness: Limited real-world correlation analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Comprehensive toolchain integration; open-source accessibility; safety advantages.",
+        "Simulation-reality gap; localization dependency on environmental features.",
+        "Pragmatic engineering focus constrains exploration of theoretical AI advancements."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within automotive engineering discourse: Prioritizes practical validation over AI innovation.",
+        "Technical terminology (e.g., \"Operational Design Domain\", \"LiDAR point cloud\"); pragmatic tone; emphasizes industry tools (ROS, Autoware).",
+        "Authority built through ARPA-E/NEXTCAR program affiliation and toolchain citations."
+      ],
+      "Conclusions_and_Implications": [
+        "Virtual environments enable safe, accurate autonomous system validation but require robust environmental modeling.",
+        "Future work: Correlation studies between simulated/physical tests; AI robustness improvements; expanded scenario coverage."
+      ]
+    }
+  }
+}

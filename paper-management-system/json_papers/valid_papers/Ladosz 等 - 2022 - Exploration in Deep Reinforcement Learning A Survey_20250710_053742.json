@@ -1,0 +1,83 @@
+{
+  "file_name": "Ladosz 等 - 2022 - Exploration in Deep Reinforcement Learning A Survey.pdf",
+  "generated_at": "2025-07-10 05:37:42",
+  "structured_info": {
+    "title_cn": "深度强化学习中的探索：综述",
+    "title_en": "Exploration in Deep Reinforcement Learning: A Survey",
+    "category": "Reinforcement Learning",
+    "topics": [
+      "Exploration",
+      "Deep Reinforcement Learning",
+      "Sparse Reward Problems"
+    ],
+    "keywords": [
+      "Deep reinforcement learning",
+      "Exploration",
+      "Intrinsic motivation",
+      "Sparse reward problems"
+    ],
+    "abstract": "This paper reviews exploration techniques in deep reinforcement learning. Exploration techniques are of primary importance when solving sparse reward problems. In sparse reward problems, the reward is rare, which means that the agent will not find the reward often by acting randomly. In such a scenario, it is challenging for reinforcement learning to learn rewards and actions association. Thus more sophisticated exploration methods need to be devised. This review provides a comprehensive overview of existing exploration approaches, which are categorized based on the key contributions as follows: reward novel states, reward diverse behaviours, goal-based methods, probabilistic methods, imitation-based methods, safe exploration and random-based methods. Then, the unsolved challenges are discussed to provide valuable future research directions. Finally, the approaches of different categories are compared in terms of complexity, computational effort and overall performance.",
+    "methodology": "Literature review and systematic categorization of exploration techniques in deep reinforcement learning, including comparative analysis of methods based on benchmarks such as Atari Games, VizDoom, Malmo, and Mujoco.",
+    "conclusion": "Exploration techniques are crucial for solving sparse reward problems in deep reinforcement learning. The survey categorizes approaches into seven groups, identifies unsolved challenges (e.g., noisy-TV problem, scalability limitations), and provides future research directions. Performance comparisons reveal trade-offs between complexity, computational effort, and effectiveness across benchmarks.",
+    "authors": [
+      "Pawel Ladosz",
+      "Lilian Weng",
+      "Minwoo Kim",
+      "Hyondong Oh"
+    ],
+    "publication_year": "2022",
+    "venue": "arXiv",
+    "doi": "arXiv:2205.00824v1",
+    "bibtex_citation": "Ladosz_Exploration_2022",
+    "analysis": {
+      "Overview": "This survey paper comprehensively reviews exploration techniques in deep reinforcement learning, focusing on methods to address sparse reward problems. It categorizes approaches into seven groups, compares their performance on standard benchmarks, and discusses unresolved challenges.",
+      "Background_and_Motivation": [
+        "Sparse reward problems in real-world scenarios (e.g., search and rescue, delivery) where rewards are infrequent and delayed, making action-reward associations difficult to learn.",
+        "Limitations of naive solutions like random exploration (e.g., ε-greedy) and reward shaping, which are inefficient or designer-dependent, necessitate advanced exploration algorithms.",
+        "The authors emphasize the prevalence of sparse rewards in practical applications and highlight recent breakthroughs (e.g., solving Montezuma's Revenge) to underscore urgency.",
+        "Sparse rewards are framed as a subset of broader RL challenges where exploration is essential to overcome local optima and reward sparsity, establishing significance for sample efficiency and real-world deployment.",
+        "Contributes to reinforcement learning, machine learning, and interdisciplinary fields involving autonomous decision-making systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        [
+          "Exploration: Activity of searching to discover reward functions in RL, particularly vital in sparse-reward environments.",
+          "Intrinsic Motivation: Self-generated rewards (e.g., for novelty) supplementing environmental rewards to encourage exploration.",
+          "Sparse Reward Problems: Scenarios where rewards are rare, creating long action-reward gaps that hinder learning."
+        ],
+        "Exploration techniques (e.g., intrinsic motivation) are solutions to sparse reward problems; methods like 'reward novel states' and 'reward diverse behaviours' represent sub-categories within intrinsic motivation.",
+        "Assumes environments are modeled as Markov Decision Processes (MDPs); exploration is necessary when extrinsic rewards are insufficient; benchmarks (e.g., Atari) adequately represent problem complexity.",
+        "Provides a taxonomic framework for categorizing exploration methods, synthesizing existing knowledge to identify gaps and enable comparative analysis."
+      ],
+      "Methodology": [
+        "Categorizes exploration methods into seven groups (e.g., reward novel states, goal-based methods) and sub-categories (e.g., prediction error, count-based). Performance is evaluated via benchmarks like Atari and Mujoco.",
+        "Categorization offers a novel, rational structure for comparing methods. Applicability is demonstrated through benchmark results, but some techniques require problem-specific adaptations (e.g., state representations).",
+        "Data sources are existing RL benchmarks (e.g., Atari images, Mujoco joint angles). Their representativeness is validated via widespread adoption, though real-world transferability remains limited.",
+        "Qualitative comparison based on literature; no new experiments. Evaluation metrics include scores on benchmarks (e.g., Montezuma's Revenge), complexity, and computational effort.",
+        "Follows the RL theoretical paradigm, emphasizing model-free/model-based distinctions. This perspective centers on agent-environment interactions but may overlook alternative learning frameworks."
+      ],
+      "Results": [
+        "Key results include: RND and pseudocounts solved Montezuma's Revenge; DIAYN improved Mujoco performance; Agent57 surpassed humans in all 57 Atari games. Memory methods achieved scores up to 11,000 in hard exploration games.",
+        "Results demonstrate significant advancements in sparse-reward domains. Reliability is inferred from benchmark consistency; stability varies across methods (e.g., prediction error struggles with state representation)."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as: problem definition → categorization → detailed analysis per category → challenges → comparative summary.",
+        "Steps: (1) Motivate exploration via sparse reward limitations; (2) Define core concepts; (3) Categorize methods; (4) Analyze each category's mechanisms/performance; (5) Discuss unresolved issues.",
+        "Strengths: Clear taxonomy and empirical benchmarks. Weaknesses: Limited critique of method boundaries. Potential rebuttals (e.g., overlap in categories) are addressed by emphasizing contribution-focused classification."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: First modern review focused on exploration; novel categorization; identification of future challenges; benchmark performance comparisons.",
+        "Limitations: Overlap between categories; reliance on hand-designed state representations; scalability issues in continuous domains; benchmark-centric evaluation.",
+        "The RL paradigm constrains solutions to MDP-based approaches, potentially overlooking non-MDP or interdisciplinary methods."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions itself as filling a gap in modern literature by providing the first dedicated survey on exploration, contrasting with outdated or tangential reviews.",
+        "Uses standardized RL terminology (e.g., intrinsic/extrinsic rewards); adopts a tutorial-like tone for accessibility; employs tables for comparative synthesis.",
+        "Builds authority through extensive citations (e.g., 80+ references) and benchmarking against seminal works. Motivations include establishing foundational knowledge for beginners."
+      ],
+      "Conclusions_and_Implications": [
+        "Exploration techniques are essential for sparse reward problems. Categorization reveals trade-offs: prediction error methods are versatile but representation-dependent; memory methods excel in hard exploration but require careful tuning.",
+        "Future work should address noisy-TV distractions, improve scalability, enhance safe exploration, and develop unified evaluation frameworks beyond current benchmarks."
+      ]
+    }
+  }
+}

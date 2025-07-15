@@ -1,0 +1,86 @@
+{
+  "file_name": "Clancy 等 - 2024 - Wireless Access for V2X Communications Research, Challenges and Opportunities.pdf",
+  "generated_at": "2025-07-14 12:28:30",
+  "structured_info": {
+    "title_cn": "V2X通信的无线接入：研究、挑战与机遇",
+    "title_en": "Wireless Access for V2X Communications: Research, Challenges and Opportunities",
+    "category": "Vehicular Communications",
+    "topics": [
+      "V2X Communications",
+      "Wireless Access Technologies",
+      "Intelligent Transport Systems"
+    ],
+    "keywords": [
+      "V2X",
+      "vehicle-to-everything",
+      "vehicular networks",
+      "C-V2X",
+      "DSRC"
+    ],
+    "abstract": "Autonomous vehicles and Intelligent Transport Systems (ITS) have started to become a reality in recent years. However, shortcomings of these early intelligent vehicles demonstrate a need to increase an intelligent vehicle's perceptual bubble beyond the vehicle's onboard sensors. Vehicle-to-Everything (V2X) communications is a technology intended to enable intelligent vehicles to increase their perceptive range via communication with the outside world, i.e., other vehicles, road users, and infrastructure. One of the critical layers of V2X communications is that of the underlying wireless access. There remains an open debate on which technology (or technologies) will ultimately be adopted as the de facto wireless access technology for V2X communications. Presently, a myriad of unconnected threads of work are being undertaken to this end, resulting in an unclear picture of the current state of wireless access for V2X communications. In this tutorial review, we collate current research on wireless access for V2X communications to showcase recent developments and the challenges facing candidate technologies. To allow the reader to engage with the debate, we present an overview of the field of V2X communications, its history, and standardisation. Following this, we provide an overview of the key candidate wireless access technologies that may enable V2X communications. Through this work, we aim to provide a comprehensive first step into the discipline of wireless access for V2X communications.",
+    "methodology": "Literature review and comparative analysis of wireless access technologies for V2X communications, focusing on DSRC and C-V2X.",
+    "conclusion": "The paper concludes that no single wireless access technology currently meets all the stringent requirements of V2X communications. Both DSRC and C-V2X have strengths and weaknesses, and future research directions should focus on addressing the challenges highlighted in the literature.",
+    "authors": [
+      "Joseph Clancy",
+      "Darragh Mullins",
+      "Brian Deegan",
+      "Jonathan Horgan",
+      "Enda Ward",
+      "Ciarán Eising",
+      "Patrick Denny",
+      "Edward Jones",
+      "Martin Glavin"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "doi": "10.1109/COMST.2024.3384132",
+    "bibtex_citation": "Clancy_Wireless_2024",
+    "analysis": {
+      "Overview": "The paper provides a comprehensive review of wireless access technologies for V2X communications, focusing on DSRC and C-V2X. It discusses the history, standardization, and current state of research in the field, highlighting the challenges and opportunities for future work.",
+      "Background_and_Motivation": [
+        "The research background is the increasing need for intelligent vehicles to extend their perceptual range beyond onboard sensors to improve safety and efficiency.",
+        "The motivation is to address the debate on which wireless access technology (DSRC or C-V2X) is best suited for V2X communications.",
+        "The authors argue for the necessity of this research by highlighting the shortcomings of current intelligent vehicles and the potential benefits of V2X communications.",
+        "The specific problem of wireless access for V2X is related to the broader challenge of enabling safe and efficient autonomous vehicles and ITS.",
+        "The paper contributes to the fields of vehicular communications, wireless networking, and intelligent transport systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include V2X communications, DSRC, C-V2X, and wireless access technologies.",
+        "The logical relationship between these concepts involves how different wireless technologies can support various V2X communication types (V2V, V2I, V2P, V2N).",
+        "Key assumptions include the need for low latency, high reliability, and scalability in V2X communications.",
+        "The paper contributes to the knowledge system by providing a detailed comparison of DSRC and C-V2X, highlighting their strengths and weaknesses."
+      ],
+      "Methodology": [
+        "The core research method is a literature review and comparative analysis of DSRC and C-V2X technologies.",
+        "The methodology is novel in its comprehensive coverage of both technologies and its focus on practical challenges and opportunities.",
+        "Data sources include academic papers, standards documents, and real-world test results.",
+        "The experimental design is rigorous, with a focus on key performance metrics such as latency, reliability, and throughput.",
+        "The research follows a theoretical paradigm of comparative analysis, which affects the perspective by focusing on technical capabilities and limitations."
+      ],
+      "Results": [
+        "Key results include the identification of strengths and weaknesses of DSRC and C-V2X, as well as the challenges facing each technology.",
+        "The results are significant for informing future research and development in V2X communications, and they are reliable as they are based on a comprehensive review of existing literature."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors' argument is structured around a comparison of DSRC and C-V2X, with a focus on their technical capabilities and limitations.",
+        "Key steps include an overview of V2X communications, a discussion of wireless access technologies, and a comparative analysis of DSRC and C-V2X.",
+        "Strengths of the reasoning include the comprehensive coverage of both technologies, while weaknesses include the lack of new experimental data.",
+        "The authors address potential rebuttals by acknowledging the limitations of their review and suggesting areas for future research."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the comprehensive review of DSRC and C-V2X, and the clear presentation of challenges and opportunities.",
+        "Limitations include the reliance on existing literature and the lack of new experimental results.",
+        "The choice of theoretical paradigm constrains the conclusions by focusing on technical comparisons rather than practical deployment issues."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper plays a key role in the disciplinary discourse by providing a detailed comparison of DSRC and C-V2X.",
+        "The authors use specific terminology related to wireless communications and V2X, and their tone is academic and objective.",
+        "The authors build authority through extensive citations and a clear, logical presentation of their arguments."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that no single wireless access technology currently meets all the requirements of V2X communications, and future research should address the challenges highlighted in the paper.",
+        "Future research should focus on improving the robustness, scalability, and reliability of wireless access technologies for V2X communications."
+      ]
+    }
+  }
+}

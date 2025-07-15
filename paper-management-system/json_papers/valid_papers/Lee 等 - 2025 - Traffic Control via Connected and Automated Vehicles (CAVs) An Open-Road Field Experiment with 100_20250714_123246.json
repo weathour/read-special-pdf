@@ -1,0 +1,141 @@
+{
+  "file_name": "Lee 等 - 2025 - Traffic Control via Connected and Automated Vehicles (CAVs) An Open-Road Field Experiment with 100.pdf",
+  "generated_at": "2025-07-14 12:32:46",
+  "structured_info": {
+    "title_cn": "通过联网和自动驾驶车辆（CAV）进行交通控制：一项包含100辆CAV的开放道路现场实验",
+    "title_en": "Traffic Control via Connected and Automated Vehicles (CAVs): An Open-Road Field Experiment with 100 CAVs",
+    "category": "Control Systems",
+    "topics": [
+      "Traffic Control",
+      "Connected and Automated Vehicles",
+      "Hierarchical Control"
+    ],
+    "keywords": [
+      "CAVs",
+      "Traffic Flow",
+      "Hierarchical Control",
+      "Field Experiment",
+      "MegaController"
+    ],
+    "abstract": "The CIRCLES project aims to reduce instabilities in traffic flow, which are naturally occurring phenomena due to human driving behavior. Also called 'phantom jams' or 'stop-and-go waves,' these instabilities are a significant source of wasted energy. Toward this goal, the CIRCLES project designed a control system, referred to as the MegaController by the CIRCLES team, that could be deployed in real traffic. Our field experiment, the MegaVanderTest (MVT), leveraged a heterogeneous fleet of 100 longitudinally controlled vehicles as Lagrangian traffic actuators, each of which ran a controller with the architecture described in this article.",
+    "methodology": "The MegaController is a hierarchical control architecture that consists of two main layers. The upper layer is called the Speed Planner and is a centralized optimal control algorithm. It assigns speed targets to the vehicles, conveyed through the LTE cellular network. The lower layer is a control layer, running on each vehicle. It performs local actuation by overriding the stock adaptive cruise controller, using the stock onboard sensors.",
+    "conclusion": "The CIRCLES project successfully deployed 100 longitudinally-controlled connected and automated vehicles in live traffic to demonstrate a reduction of traffic flow instabilities. The modular and hierarchical control algorithm, featuring a server-side Speed Planner and a vehicle-side Vehicle Controller, facilitated the use of a heterogeneous vehicle fleet and allowed for multiple approaches to be developed and tested.",
+    "authors": [
+      "Han Wang",
+      "Kathy Jang",
+      "Jonathan W. Lee",
+      "Nathan Lichtlé",
+      "Amaury Hayat",
+      "Matthew Bunting",
+      "Arwa Alanqary",
+      "William Barbour",
+      "Zhe Fu",
+      "Xiaoqian Gong",
+      "George Gunter",
+      "Sharon Hornstein",
+      "Abdul Rahman Kreidieh",
+      "Matthew W. Nice",
+      "William A. Richardson",
+      "Adit Shah",
+      "Eugene Vinitsky",
+      "Fangyu Wu",
+      "Shengquan Xiang",
+      "Sulaiman Almatrudi",
+      "Fahd Althukair",
+      "Rahul Bhadani",
+      "Joy Carpio",
+      "Raphael Chekroun",
+      "Eric Cheng",
+      "Maria Teresa Chiri",
+      "Fang-Chieh Chou",
+      "Ryan Delorenzo",
+      "Marsalis Gibson",
+      "Derek Gloudemans",
+      "Anish Gollakota",
+      "Junyi Ji",
+      "Alexander Keimer",
+      "Nour Khoudari",
+      "Malaika Mahmood",
+      "Mikail Mahmood",
+      "Hossein Nick Zinat Matin",
+      "Sean McQuade",
+      "Xia Wang",
+      "Yanbing Wang",
+      "Rita Xu",
+      "Mengsha Yao",
+      "Yiling You",
+      "Gergely Zachár",
+      "Yibo Zhao",
+      "Mostafa Ameli",
+      "Mirza Najamuddin Baig",
+      "Sarah Bhaskaran",
+      "Kenneth Butts",
+      "Manasi Gowda",
+      "Caroline Janssen",
+      "John Lee",
+      "Liam Pedersen",
+      "Riley Wagner",
+      "Zimo Zhang",
+      "Chang Zhou",
+      "Daniel B. Work",
+      "Benjamin Seibold",
+      "Rabie Ramadan",
+      "Daniel Urieli",
+      "Jonathan Sprinkle",
+      "Maria Laura Delle Monache",
+      "Alexandre M. Bayen",
+      "Benedetto Piccoli"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Control Systems",
+    "doi": "10.1109/MCS.2024.3498552",
+    "bibtex_citation": "Wang_Traffic_2025",
+    "analysis": {
+      "Overview": "The paper presents the CIRCLES project, which aims to reduce traffic flow instabilities (phantom jams or stop-and-go waves) using a hierarchical control system called the MegaController. The system was tested in a large-scale field experiment involving 100 connected and automated vehicles (CAVs).",
+      "Background_and_Motivation": [
+        "Traffic instabilities are a significant source of wasted energy and inefficiency in transportation systems.",
+        "The research motivation is to develop a control system that can mitigate these instabilities using CAVs.",
+        "The authors argue that existing solutions like adaptive cruise control (ACC) and cooperative ACC (CACC) are insufficient for large-scale deployment.",
+        "The problem is significant as it impacts energy consumption, traffic throughput, and overall transportation efficiency.",
+        "The paper contributes to control systems, traffic engineering, and autonomous vehicle technology."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: MegaController (hierarchical control architecture), Speed Planner (centralized optimal control), Vehicle Controller (decentralized local control).",
+        "The Speed Planner and Vehicle Controller work in tandem to optimize traffic flow and ensure safety.",
+        "Key assumptions: CAVs can be controlled to smooth traffic, human drivers will respond predictably to CAV behavior.",
+        "The paper contributes a novel hierarchical and modular control framework for mixed-autonomy traffic."
+      ],
+      "Methodology": [
+        "The MegaController consists of a centralized Speed Planner and decentralized Vehicle Controllers.",
+        "The Speed Planner uses optimal control, model predictive control (MPC), and kernel methods.",
+        "Vehicle Controllers use deep reinforcement learning (RL), MPC, and explicit controllers.",
+        "Data sources include live traffic data from INRIX and onboard vehicle sensors.",
+        "Experimental design involved rigorous testing and validation in simulation before real-world deployment."
+      ],
+      "Results": [
+        "The field experiment demonstrated the feasibility of using 100 CAVs to smooth traffic flow.",
+        "Preliminary results showed reductions in stop-and-go waves and improved traffic efficiency.",
+        "The results are reliable as they are based on real-world data and large-scale deployment."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a clear argument for the necessity of hierarchical control in mixed-autonomy traffic.",
+        "Key steps: problem definition, controller design, simulation testing, real-world deployment.",
+        "Strengths: modular design allows for flexibility and scalability. Weaknesses: reliance on third-party data sources with unknown latency."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: modular and hierarchical design, large-scale real-world deployment, heterogeneous vehicle fleet support.",
+        "Limitations: dependence on external data sources, challenges in vehicle interfacing due to heterogeneity.",
+        "Theoretical paradigm constraints: the control framework assumes predictable human driver behavior."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse of traffic control and autonomous vehicle research.",
+        "Terminology includes terms like 'phantom jams,' 'stop-and-go waves,' and 'mixed-autonomy traffic.'",
+        "The authors build authority through extensive citations and references to prior work in traffic control and autonomous vehicles."
+      ],
+      "Conclusions_and_Implications": [
+        "The CIRCLES project successfully demonstrated the potential of CAVs to smooth traffic flow.",
+        "Future research should focus on scalability, robustness, and integration with existing infrastructure."
+      ]
+    }
+  }
+}

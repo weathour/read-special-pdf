@@ -1,0 +1,81 @@
+{
+  "file_name": "Li 等 - 2022 - Intelligent metasurfaces control, communication and computing.pdf",
+  "generated_at": "2025-07-14 12:33:35",
+  "structured_info": {
+    "title_cn": "智能超表面：控制、通信与计算",
+    "title_en": "Intelligent metasurfaces: control, communication and computing",
+    "category": "Metamaterials",
+    "topics": [
+      "Wave Information Matter Control",
+      "Wireless Communication",
+      "Wave-Based Computing"
+    ],
+    "keywords": [
+      "Intelligent Metasurfaces",
+      "Wave Manipulation",
+      "Wireless Power Transfer",
+      "Dynamic Holograms",
+      "Invisibility Cloak"
+    ],
+    "abstract": "Controlling electromagnetic waves and information simultaneously by information metasurfaces is of central importance in modern society. Intelligent metasurfaces are smart platforms to manipulate the wave information matter interactions without manual intervention by synergizing engineered ultrathin structures with active devices and algorithms, which evolve from the passive composite materials for tailoring wave matter interactions that cannot be achieved in nature. Here, we review the recent progress of intelligent metasurfaces in wave information matter controls by providing the historical background and underlying physical mechanisms. Then we explore the application of intelligent metasurfaces in developing novel wireless communication architectures, with particular emphasis on metasurface-modulated backscatter wireless communications. We also explore the wave-based computing by using the intelligent metasurfaces, focusing on the emerging research direction in intelligent sensing. Finally, we comment on the challenges and highlight the potential routes for the further developments of the intelligent metasurfaces for controls, communications and computing.",
+    "methodology": "The paper reviews the integration of intelligent metasurfaces with active devices and algorithms to manipulate wave-information-matter interactions. It discusses historical background, physical mechanisms, and applications in wireless communications and computing.",
+    "conclusion": "Intelligent metasurfaces represent a transformative approach to wave and information manipulation, with significant potential in wireless communications, sensing, and computing. Future research should focus on hardware design, AI integration, and all-wave information systems.",
+    "authors": [
+      "Hanting Zhao",
+      "Che Liu",
+      "Long Li",
+      "Tie Jun Cui",
+      "Lianlin Li"
+    ],
+    "publication_year": "2022",
+    "venue": "eLight",
+    "doi": "10.1186/s43593-022-00013-3",
+    "bibtex_citation": "Li_Intelligent_2022",
+    "analysis": {
+      "Overview": "The paper reviews the development and applications of intelligent metasurfaces, focusing on their role in controlling wave-information-matter interactions, wireless communications, and computing.",
+      "Background_and_Motivation": [
+        "The research addresses the need for advanced wave and information manipulation in modern society.",
+        "Motivated by the limitations of conventional metasurfaces, the study explores intelligent metasurfaces that integrate active devices and algorithms.",
+        "The authors highlight the necessity of intelligent metasurfaces for real-time adaptive control and their significance in bridging the physical and digital worlds.",
+        "The paper connects specific problems like wireless communication and sensing to broader challenges in IoT and 6G technologies.",
+        "The research contributes to interdisciplinary fields including physics, materials science, and information technology."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include digitalization, programmability, and intelligence of metasurfaces.",
+        "The logical relationship involves integrating active devices and algorithms to achieve adaptive wave control.",
+        "Key assumptions include the feasibility of real-time reprogramming and the effectiveness of AI in metasurface control.",
+        "The paper contributes to the knowledge system by introducing intelligent metasurfaces as a new paradigm for wave manipulation."
+      ],
+      "Methodology": [
+        "The paper reviews experimental and theoretical studies on intelligent metasurfaces, including beam manipulation, wireless power transfer, and dynamic holograms.",
+        "The methodology is novel in its integration of AI with metasurfaces, applicable to various wave manipulation tasks.",
+        "Data sources include experimental results from metasurface prototypes and simulations.",
+        "Experimental designs are rigorous, with evaluation metrics focusing on performance in communication and sensing applications.",
+        "The research follows a theoretical paradigm of wave-matter interaction, influencing its focus on physical-level control."
+      ],
+      "Results": [
+        "Key results include successful demonstrations of beam steering, wireless power transfer, and dynamic holography using intelligent metasurfaces.",
+        "Results are significant for their potential applications in wireless communications and sensing, with reliable and stable performance."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a structured argument starting from historical background to current applications and future directions.",
+        "Key steps include the evolution from passive to intelligent metasurfaces, and their applications in communication and computing.",
+        "Strengths include comprehensive review and innovative applications; weaknesses include challenges in hardware design and AI integration."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the transformative potential of intelligent metasurfaces in various applications.",
+        "Limitations involve energy consumption, hardware complexity, and the need for further AI integration.",
+        "Theoretical constraints include the current understanding of AI-generalization in physical systems."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions intelligent metasurfaces as a critical advancement in metamaterials and wave manipulation.",
+        "Terminology includes technical terms like 'wave-information-matter interactions' and 'digital metasurfaces'.",
+        "Citations build authority by referencing foundational and recent works in metamaterials and AI."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the potential of intelligent metasurfaces in modern technology.",
+        "Future research should focus on hardware miniaturization, AI integration, and all-wave information systems."
+      ]
+    }
+  }
+}

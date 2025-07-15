@@ -1,0 +1,81 @@
+{
+  "file_name": "Zhao 等 - 2021 - Vehicle Platooning With Non-Ideal Communication Networks.pdf",
+  "generated_at": "2025-07-10 06:32:44",
+  "structured_info": {
+    "title_cn": "非理想通信网络下的车辆编队",
+    "title_en": "Vehicle Platooning With Non-Ideal Communication Networks",
+    "category": "Vehicular Technology",
+    "topics": [
+      "Vehicle Platooning",
+      "Communication Networks",
+      "Stability Analysis"
+    ],
+    "keywords": [
+      "Delays",
+      "Internal stability",
+      "Longitudinal control",
+      "Random packet losses",
+      "String stability",
+      "Vehicle platoon"
+    ],
+    "abstract": "The performance and effectiveness of a vehicle platoon rely on the topology of information flow and quality of communications, such as delays and dropouts. In this paper, we investigate the homogeneous and constant-time-headway-spacing-policy-based vehicle platoon longitudinal control problem, where communication impairments including the limited communication range, random packet losses, and time-varying communication delays are considered. Here, internal stability characterizes the system stability without disturbance while string stability is concerned with the error amplification when the vehicle platoon is affected by external disturbances. First, for the case when each vehicle utilizes the position, velocity, and acceleration information of multiple preceding and following vehicles, we obtain sufficient conditions to guarantee the internal stability of the vehicle platoon system based on the stability of matrix polynomials and the matrix eigenvalue perturbation theory. Then, considering random packet losses, we find that the effectiveness of platoon control relies on the frequency of packets being successfully received, or the delay till a new packet is received. We also obtain the upper bound for delays on all communication links such that the internal stability of the vehicle platoon can still be maintained when time-varying communication delays are within the bound. The L2-string stability is also analyzed through the transfer function for both ideal communication cases, and cases with uniform and constant delays. Extensive simulink-based numerical results validate our analysis, which reveals how communication impairments affect platoon control with a realistic information flow topology.",
+    "methodology": "Matrix eigenvalue perturbation theory, stability analysis of matrix polynomials, transfer function analysis for string stability, Simulink-based numerical simulations",
+    "conclusion": "Sufficient conditions for internal stability are derived under communication impairments. An upper bound for time-varying delays maintains internal stability. String stability is guaranteed for uniform constant delays but requires further study for non-uniform cases. Reliability metrics for packet loss scenarios are established.",
+    "authors": [
+      "Chengcheng Zhao",
+      "Xiaoming Duan",
+      "Lin Cai",
+      "Peng Cheng"
+    ],
+    "publication_year": "2021",
+    "venue": "IEEE Transactions on Vehicular Technology",
+    "doi": "10.1109/TVT.2020.3046165",
+    "bibtex_citation": "Zhao_Vehicle_2021",
+    "analysis": {
+      "Overview": "The paper investigates longitudinal control in vehicle platoons with limited communication range, analyzing how communication impairments (packet losses, delays) affect internal and string stability using control theory and matrix analysis.",
+      "Background_and_Motivation": [
+        "Vehicle platooning improves fuel efficiency, traffic throughput, and reduces emissions, but performance depends on communication quality.",
+        "Existing research lacks analysis of general information flow topologies (IFT) under non-ideal communication (limited range, packet losses, delays).",
+        "Imperfect communication degrades platoon stability, risking safety and efficiency; understanding this is urgent for real-world deployment of cooperative driving.",
+        "The specific problem of stability degradation under communication impairments is linked to broader challenges in reliable cooperative driving for intelligent transportation systems.",
+        "Contributes to control systems, vehicular technology, and networked cyber-physical systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Internal stability: System stability without external disturbances. String stability: Error propagation under disturbances. Limited communication range: Fixed predecessors/followers per vehicle.",
+        "Internal stability enables string stability; communication impairments disrupt both. Controller design integrates multi-vehicle data flow with stability constraints.",
+        "Homogeneous vehicles, linear dynamics model, constant time headway policy, communication losses/delays modeled probabilistically.",
+        "Provides theoretical conditions for stability under impairments, advancing knowledge in platoon control robustness for practical communication constraints."
+      ],
+      "Methodology": [
+        "Matrix eigenvalue perturbation theory for internal stability; transfer functions for string stability; probabilistic models for packet losses; Lyapunov analysis for delay bounds.",
+        "Novelty: General IFT analysis under non-ideal networks. Applicability: Validated via simulations. Rationality: Balances rigor with practical vehicular constraints.",
+        "Simulation data (Simulink) with parameters (ka=9, kv=10, kq=5, τ=0.08). Packet loss modeled via SNR/distance. Representativeness: Captures key impairments but simplifies interference/congestion.",
+        "Rigorous eigenvalue analysis; appropriate metrics (L2-string stability). Experiments test braking/constant-speed scenarios with varied delays/losses.",
+        "Follows control theory/networked systems paradigm, emphasizing stability margins and disturbance propagation in linear systems."
+      ],
+      "Results": [
+        "Sufficient conditions derived for internal stability; delay upper bound ensures stability; packet loss reliability linked to sampling frequency; string stability maintained under uniform delays.",
+        "Results validated via simulations, showing convergence and error bounds. Reliability confirmed under probabilistic losses; delay bounds mathematically rigorous but sensitive to IFT."
+      ],
+      "Argumentation_and_Logic": [
+        "Hierarchical: Formulate model → derive stability conditions → analyze impairments → validate simulations.",
+        "1) Model platoon dynamics and communication. 2) Establish stability criteria. 3) Quantify delay/packet loss effects. 4) Simulate edge cases.",
+        "Strengths: Comprehensive impairment coverage. Weaknesses: Linear model limitations addressed via future work. Rebuttals: Simplified communication models justified by focus on fundamental constraints."
+      ],
+      "Strengths_and_Limitations": [
+        "General IFT analysis; joint communication-control framework; theoretical delay bounds; unified treatment of losses/delays.",
+        "Linear dynamics assumption; simplified interference/congestion models; string stability not fully addressed for non-uniform delays.",
+        "Control theory focus constrains conclusions to linear systems; nonlinearities (e.g., input saturation) deferred to future work."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances discourse on robustness in cooperative driving; positions as bridge between control theory and vehicular networks.",
+        "Technical terminology (e.g., L2-string stability); formal tone; leverages matrix algebra proofs to establish authority.",
+        "Builds credibility via extensive citations (40+ references); motivations include resolving 'open problems' in prior work."
+      ],
+      "Conclusions_and_Implications": [
+        "Communication impairments critically impact platoon stability. Internal stability achievable via derived conditions; string stability requires uniform delays. Reliability depends on sampling frequency.",
+        "Extend to nonlinear models; incorporate realistic interference/congestion; analyze non-uniform delays; explore collision avoidance under impairments."
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "file_name": "Pelliccione 等 - 2020 - Beyond connected cars A systems of systems perspective.pdf",
+  "generated_at": "2025-07-11 10:14:07",
+  "structured_info": {
+    "title_cn": "超越互联汽车：系统之系统的视角",
+    "title_en": "Beyond connected cars: A systems of systems perspective",
+    "category": "Software Engineering",
+    "topics": [
+      "Systems of Systems",
+      "Automotive Software Architecture",
+      "Connected Vehicles"
+    ],
+    "keywords": [
+      "Software engineering",
+      "Systems of systems",
+      "Automotive",
+      "Architecture framework",
+      "Software architecture"
+    ],
+    "abstract": "The automotive domain is rapidly changing in the last years. Among the different challenges OEMs (i.e. the vehicle manufacturers) are facing, vehicles are evolving into systems of systems. In fact, over the last years vehicles have evolved from disconnected and blind systems to systems that are (i) able to sense the surrounding environment and (ii) connected with other vehicles, the city, pedestrians, cyclists, etc. Future transportation systems can be seen as a System of Systems (SoS). In an SoS, constituent systems, i.e. the units that compose an SoS, can act as standalone systems, but their cooperation enables new emerging and promising scenarios. While this trend creates new opportunities, it also poses a risk to compromise key qualities such as safety, security, and privacy. In this paper we focus on the automotive domain and we investigate how to engineer and architect cars in order to build them as constituents of future transportation systems. Our contribution is an architectural viewpoint for System of Systems, which we demonstrate based on an automotive example. Moreover, we contribute a functional reference architecture for cars as constituents of an SoS. This reference architecture can be considered as an imprinting for the implementations that would be devised in specific projects and contexts. We also point out the necessity for a collaboration among different OEMs and with other relevant stakeholders, such as road authorities and smart cities, to properly engineer systems of systems composed of cars, trucks, roads, pedestrians, etc. This work is realized in the context of two Swedish projects coordinated by Volvo Cars and involving some universities and research centers in Sweden and many suppliers of the OEM, including Autoliv, Arccore, Combitech, Cybercom, Knowit, Prevas, ÅF-Technology, Semcom, and Qamcom.",
+    "methodology": "Model-based architectural design using ISO/IEC/IEEE 42010 standard, development of an architectural viewpoint and functional reference architecture, validation through industry collaboration (workshops, focus groups, interviews), and demonstration via real-world automotive scenarios (e.g., overtaking, platooning).",
+    "conclusion": "Proposes an architectural viewpoint and functional reference architecture for vehicles as constituents of Systems of Systems (SoS), emphasizing collaboration among OEMs and stakeholders. Highlights challenges in safety, security, and interoperability, and underscores the need for autonomous capabilities in vehicles to fulfill SoS roles.",
+    "authors": [
+      "Patrizio Pelliccione",
+      "Eric Knauss",
+      "S. Magnus Ågren",
+      "Rogardt Heldal",
+      "Carl Bergenhem",
+      "Alexey Vinel",
+      "Oliver Brunnegård"
+    ],
+    "publication_year": "2020",
+    "venue": "Science of Computer Programming",
+    "doi": "10.1016/j.scico.2020.102414",
+    "bibtex_citation": "Pelliccione_Beyond_2020",
+    "analysis": {
+      "Overview": "Proposes an architectural framework and functional reference architecture for engineering vehicles as constituent systems in future transportation Systems of Systems (SoS), addressing challenges like safety, security, and interoperability.",
+      "Background_and_Motivation": [
+        "Vehicles are evolving from isolated systems to connected entities interacting with infrastructure, pedestrians, and other vehicles, forming complex SoS.",
+        "Need to architect cars to operate reliably within SoS while preserving safety, security, and privacy amid emergent behaviors and interdependencies.",
+        "Urgency is argued via risks to life-critical qualities (e.g., cascading failures in safety) and opportunities for efficiency (e.g., platooning) unrealized without standardized architectures.",
+        "Specific problem of vehicle architecture is linked to broader transportation SoS challenges, highlighting societal impacts like traffic efficiency and accident reduction.",
+        "Contributes to software engineering, systems engineering, and automotive systems, with interdisciplinary relevance to IoT and smart cities."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) System of Systems (SoS) – collaborative independent systems; (2) Architectural Viewpoint – ISO 42010-compliant specification for SoS concerns; (3) Functional Reference Architecture – logical decomposition for vehicle-as-constituent.",
+        "Viewpoint defines model kinds for SoS concerns; reference architecture operationalizes these concepts for vehicles. Viewpoint guides architecture description.",
+        "Assumes: OEM collaboration is essential; vehicles require autonomy to prioritize SoS goals; legacy systems coexist with new technologies.",
+        "Provides a practical framework (viewpoint + reference architecture) advancing model-based automotive SoS engineering."
+      ],
+      "Methodology": [
+        "Architectural modeling (ISO 42010), industry case studies (Volvo-led projects), demonstrators (overtake scenario), and reference architecture design.",
+        "Novelty: Tailors architectural viewpoints to automotive SoS. Applicability shown via industry collaboration. Rationale: Addresses gaps in safety and interoperability for connected vehicles.",
+        "Data from workshops, focus groups (industry/academia), interviews, literature. Representativeness: Rooted in Swedish automotive ecosystem (Volvo, suppliers). Preprocessing not detailed.",
+        "Demonstrator validates viewpoint qualitatively. Evaluation metrics: Stakeholder concern coverage. Rigor: Industry involvement; lacks quantitative metrics.",
+        "Follows model-based systems engineering (ISO 42010), shaping structured, stakeholder-focused architecture descriptions."
+      ],
+      "Results": [
+        "Key results: SoS architectural viewpoint (validated via overtake demonstrator) and functional reference architecture for vehicles.",
+        "Significance: Enables safer/efficient SoS integration. Reliability: Industry-backed; stability: Conceptual validation only, pending real-world deployment."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Challenges → SoS state-of-art → architecture framework → viewpoint → demonstrator → reference architecture → SoS engineering outlook.",
+        "Steps: Motivate SoS necessity → define viewpoint → validate via scenario → derive reference architecture → discuss limitations/future work.",
+        "Strengths: Holistic industry alignment. Weaknesses: Limited validation scope. Rebuttals: Acknowledge emergent behavior risks and propose future engineering solutions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Industry-relevant framework; integrates safety/security; practical reference architecture.",
+        "Methodology boundaries: Focuses on single-constituent (vehicle) perspective; SoS-level engineering underexplored.",
+        "Theoretical constraint: Model-based paradigm limits exploration of non-standardized SoS evolution paths."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances architectural methods for automotive SoS, bridging academic models (ISO 42010) and industry needs.",
+        "Terminology: Standards-compliant (e.g., 'architectural viewpoint'); pragmatic tone; rhetoric emphasizes collaboration urgency.",
+        "Builds authority via ISO standards, Volvo case studies, and citations. Motivations: Standardize practices, address safety gaps."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Architectural viewpoint and reference architecture enable vehicles as SoS constituents; collaboration is critical.",
+        "Future research: Engineering overall SoS (emergent behaviors, governance), validating architectures in production, interoperability standards."
+      ]
+    }
+  }
+}

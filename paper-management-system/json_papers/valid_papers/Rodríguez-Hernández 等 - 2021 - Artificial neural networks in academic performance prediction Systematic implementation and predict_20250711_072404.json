@@ -1,0 +1,79 @@
+{
+  "file_name": "Rodríguez-Hernández 等 - 2021 - Artificial neural networks in academic performance prediction Systematic implementation and predict.pdf",
+  "generated_at": "2025-07-11 07:24:04",
+  "structured_info": {
+    "title_cn": "人工神经网络在学业成绩预测中的应用：系统实现与预测因子评估",
+    "title_en": "Artificial neural networks in academic performance prediction: Systematic implementation and predictor evaluation",
+    "category": "Artificial Intelligence in Education",
+    "topics": [
+      "Academic Performance Prediction",
+      "Machine Learning",
+      "Higher Education"
+    ],
+    "keywords": [
+      "Artificial neural networks",
+      "Prediction",
+      "Academic performance",
+      "Higher education"
+    ],
+    "abstract": "The applications of artificial intelligence in education have increased in recent years. However, further conceptual and methodological understanding is needed to advance the systematic implementation of these approaches. The first objective of this study is to test a systematic procedure for implementing artificial neural networks to predict academic performance in higher education. The second objective is to analyze the importance of several well-known predictors of academic performance in higher education. The sample included 162,030 students of both genders from private and public universities in Colombia. The findings suggest that it is possible to systematically implement artificial neural networks to classify students' academic performance as either high (accuracy of 82%) or low (accuracy of 71%). Artificial neural networks outperform other machine-learning algorithms in evaluation metrics such as the recall and the F1 score. Furthermore, it is found that prior academic achievement, socio-economic conditions, and high school characteristics are important predictors of students' academic performance in higher education. Finally, this study discusses recommendations for implementing artificial neural networks and several considerations for the analysis of academic performance in higher education.",
+    "methodology": "Artificial neural networks (multilayer perceptron) with backpropagation algorithm, hyperparameter tuning, sensitivity analysis, and comparison with other machine learning algorithms (e.g., fast large margin, decision tree). Data preprocessing included standardization, dummy coding, and partitioning into training (70%), cross-validation (10%), and testing (20%) sets.",
+    "conclusion": "Artificial neural networks can be systematically implemented to predict academic performance with high accuracy (82% for high performers, 71% for low performers) and outperform other methods in recall and F1 score. Prior academic achievement, socio-economic status, and high school characteristics are key predictors.",
+    "authors": [
+      "Carlos Felipe Rodríguez-Hernández",
+      "Mariel Musso",
+      "Eva Kyndt",
+      "Eduardo Cascallar"
+    ],
+    "publication_year": "2021",
+    "venue": "Computers and Education: Artificial Intelligence",
+    "doi": "https://doi.org/10.1016/j.caeai.2021.100018",
+    "bibtex_citation": "Rodríguez-Hernández_Artificial_2021",
+    "analysis": {
+      "Overview": "The paper presents a study on using artificial neural networks to predict academic performance in higher education, focusing on systematic implementation procedures and evaluating predictors using data from 162,030 Colombian university students.",
+      "Background_and_Motivation": [
+        "The research addresses challenges in artificial intelligence in education (AIED), such as biases from traditional statistical methods that violate assumptions and inadequately handle large datasets.",
+        "Motivation includes developing a systematic framework for ANN implementation and identifying key predictors to improve early warning systems and interventions.",
+        "The authors argue for urgency by highlighting how traditional methods lead to type I/II errors and unreliable effect sizes in academic performance prediction.",
+        "They link the specific problem to broader educational challenges like student retention and policy-making, emphasizing its significance for equity and institutional support.",
+        "The paper contributes to educational data mining, machine learning, and higher education research."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: 'Artificial Neural Networks (ANNs)' as information processing systems with neurons; 'Academic Performance' categorized into levels based on standardized test scores; 'Predictors' including prior achievement, socio-economic status.",
+        "Logical relationships: Predictors (e.g., prior scores) feed into ANNs to classify performance levels; socio-economic factors indirectly influence outcomes through access and resources.",
+        "Key assumptions: Data representativeness of Colombian higher education, criterion-referenced standards for performance levels, and linearity/non-linearity in variable relationships.",
+        "The contribution is methodological (systematic ANN implementation guidelines) and empirical (predictor importance insights), advancing predictive modeling in education."
+      ],
+      "Methodology": [
+        "Core methods: Multilayer perceptron (MLP) with online learning, backpropagation, and gradient descent; hyperparameter tuning (learning rate, momentum); sensitivity analysis for predictor importance; comparison with algorithms like random forest.",
+        "Novelty lies in the systematic hyperparameter testing framework; applicability is demonstrated on large-scale educational data; rationality is supported by addressing non-linearity and data distribution issues.",
+        "Data from 162,030 Colombian students via ICFES, including SABER 11 and PRO test scores, socio-economic variables; preprocessing involved outlier removal, standardization, and dummy coding; representativeness was evaluated through descriptive statistics and correlation analysis.",
+        "Experimental design included partitioned datasets and cross-validation to prevent overfitting; evaluation metrics (accuracy, recall, F1 score) were rigorous and appropriate for imbalanced data.",
+        "Follows the educational data mining paradigm, focusing on predictive accuracy, which shapes the research to prioritize model performance over causal inference."
+      ],
+      "Results": [
+        "Key results: ANNs achieved 82% accuracy for high performers and 71% for low performers, with superior recall and F1 scores compared to other methods; sensitivity analysis showed prior academic achievement as the top predictor.",
+        "Results are significant for early intervention strategies; reliability is indicated by stable error curves over 30 training runs; stability is confirmed through consistent cross-validation performance."
+      ],
+      "Argumentation_and_Logic": [
+        "Overall structure: Introduction to problem, literature review on predictors and ANNs, methodology detailing implementation, results presentation, and discussion of implications.",
+        "Key steps: Justify ANN use over traditional methods, describe systematic tuning, present accuracy metrics, analyze predictor weights, and validate with sensitivity analysis.",
+        "Strengths include large sample size and methodological rigor; weaknesses involve self-reported SES data. Potential rebuttals on overfitting are addressed via cross-validation, and comparisons with other methods counter claims of ANN inefficiency."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Systematic ANN framework, large dataset, identification of key predictors, and superior performance in recall/F1 scores.",
+        "Methodology limitations: Lack of high school GPA data, self-reported socio-economic variables, and no use of advanced techniques like regularization or dropout.",
+        "Theoretical paradigm constraints: Predictive focus may overlook causal mechanisms, and reliance on test scores limits generalizability to other performance indicators."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within AIED discourse by advocating for ANN adoption and bridging methodology gaps; it challenges reliance on traditional statistical methods.",
+        "Terminology includes technical terms (e.g., backpropagation, hyperparameter tuning); tone is formal and prescriptive; rhetorical strategies emphasize empirical evidence and step-by-step procedures.",
+        "Authors build authority by citing seminal works in educational assessment and machine learning; citations motivate the study by highlighting gaps in existing literature."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: ANNs are effective for academic performance prediction; prior achievement, socio-economic factors, and high school characteristics are critical predictors.",
+        "Future research should include additional indicators (e.g., dropout rates), explore other ANN topologies, improve socio-economic measurement, and extend to diverse educational contexts."
+      ]
+    }
+  }
+}

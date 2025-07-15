@@ -1,0 +1,78 @@
+{
+  "file_name": "Campa和Roy - 2025 - Gröbner Basis Cryptanalysis of Anemoi.pdf",
+  "generated_at": "2025-07-10 11:51:13",
+  "structured_info": {
+    "title_cn": "Anemoi的Gröbner基密码分析",
+    "title_en": "Gröbner Basis Cryptanalysis of Anemoi",
+    "category": "Cryptography",
+    "topics": [
+      "Gröbner Basis",
+      "Cryptanalysis",
+      "Symmetric Cryptography"
+    ],
+    "keywords": [
+      "Gröbner Basis",
+      "Cryptanalysis",
+      "Anemoi",
+      "Hash Function",
+      "Algebraic Cryptanalysis"
+    ],
+    "abstract": "Arithmetization-Oriented (AO) symmetric primitives play an important role in the efficiency and security of zero-knowledge (ZK) proof systems. The design and cryptanalysis of AO symmetric-key primitives is a new topic particularly focusing on algebraic aspects. An efficient AO hash function aims at lowering the multiplicative complexity in the arithmetic circuit of the hash function over a suitable finite field. The AO hash function Anemoi was proposed in CRYPTO 2023. In this work we present an in-depth Gröbner basis (GB) cryptanalysis of Anemoi over Fp. The main aim of any GB cryptanalysis is to obtain a well-structured set of polynomials representing the target primitive, and finally solve this system of polynomials using an efficient algorithm. We propose a new polynomial modelling for Anemoi that we call ACICO. We show that using ACICO one can obtain a GB defined by a well-structured set of polynomials. Moreover, by utilising ACICO we can prove the exact complexity of the Gröbner basis computation (w.r.t Buchberger s algorithm) in the cryptanalysis of Anemoi. The structured GB further allows us to prove the dimension of the quotient space, that implicitly decides the complexity of the polynomial solving step, and was conjectured in a recently published work. Afterwards, we provide the complexity analysis for computing the variety (or the solutions) of the GB polynomial system (corresponding to Anemoi) which is the final step in GB cryptanalysis, by using known approaches. In particular, we show that GB polynomial structure allows us to use the Wiedemann algorithm and improve the efficiency of cryptanalysis compared to previous works. Our GB cryptanalysis is applicable to more than two branches (a parameter in Anemoi), while the previously published results showed cryptanalysis only for two branches. Our complexity analysis implies that the security of Anemoi should not rely upon the GB computation. We also address an important mathematical question in GB cryptanalysis of Anemoi namely, does the Anemoi polynomial system has a Shape form?, positively. By proving this we guarantee that upon application of basis conversion method like FGLM one can obtain a convenient system of polynomials that are easy to solve.",
+    "methodology": "Gröbner basis cryptanalysis with a new polynomial modelling called ACICO, complexity analysis of Gröbner basis computation, and application of eigenvalue methods (e.g., Wiedemann algorithm) for solving polynomial systems.",
+    "conclusion": "The security of Anemoi should not rely on the complexity of Gröbner basis computation, as the proposed ACICO model enables efficient cryptanalysis with improved complexity bounds and applicability to multiple branches.",
+    "authors": [
+      "Luca Campa",
+      "Arnab Roy"
+    ],
+    "publication_year": "2025",
+    "venue": "EUROCRYPT",
+    "doi": "https://doi.org/10.1007/978-3-031-91107-1_11",
+    "bibtex_citation": "Campa_Gröbner_2025",
+    "analysis": {
+      "Overview": "The paper conducts a detailed Gröbner basis cryptanalysis of the Anemoi hash function, proposing a new algebraic model (ACICO) to structure the polynomial system. This enables exact complexity proofs for Gröbner basis computation and demonstrates improved efficiency in solving the system, challenging Anemoi's security assumptions.",
+      "Background_and_Motivation": [
+        "AO symmetric primitives are crucial for efficiency in zero-knowledge proof systems, but their algebraic vulnerabilities are underexplored.",
+        "The research aims to analyze Anemoi's resistance to algebraic attacks, addressing the gap in prior cryptanalysis limited to two branches.",
+        "The authors argue that efficient AO designs must account for algebraic structures, as poor modelling can lead to practical attacks despite theoretical security bounds.",
+        "Anemoi's security is linked to broader challenges in AO cryptography, where Gröbner basis attacks pose significant threats to primitives with low multiplicative complexity.",
+        "Cryptography, algebraic geometry, and computational algebra."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Gröbner Basis: A set of polynomials with structured leading terms used to solve systems of equations; ACICO Model: A new polynomial representation of Anemoi enabling efficient Gröbner basis computation; Shape Form: A property ensuring the polynomial system is easily solvable after basis conversion.",
+        "ACICO simplifies the polynomial system, allowing proofs for Gröbner basis complexity and Shape form. These concepts interlink to enable efficient cryptanalysis.",
+        "The finite field Fp is used; Anemoi's round structure is preserved in ACICO; solutions exist in the base field.",
+        "Provides exact theoretical bounds for Gröbner basis complexity, proves structural properties (e.g., Shape form), and advances algebraic cryptanalysis methodologies."
+      ],
+      "Methodology": [
+        "Proposes the ACICO polynomial modelling for Anemoi, applies Buchberger's algorithm for Gröbner basis computation, and uses eigenvalue methods (e.g., Wiedemann) for solving.",
+        "ACICO offers novelty by generalizing to multiple branches and enabling provable complexity; it is applicable to AO primitives and rational due to its alignment with Anemoi's algebraic structure.",
+        "No external data sources; the model derives equations from Anemoi's round functions. Preprocessing involves constraining inputs/outputs to zero for the CICO problem. Representativeness is high as it directly mirrors Anemoi's design.",
+        "Experimental design is theoretical; complexity bounds are rigorously proven. Evaluation metrics include solving degree, quotient space dimension, and computational efficiency.",
+        "Follows the algebraic cryptanalysis paradigm, emphasizing commutative algebra and polynomial system solving, which directs focus to Gröbner basis properties."
+      ],
+      "Results": [
+        "Exact complexity bounds for Gröbner basis computation, proof of Shape form for Anemoi, and improved attack efficiency using Wiedemann algorithm over prior works.",
+        "Results are significant as they disprove conjectures on quotient space dimension, reliable due to mathematical proofs, and stable across branches."
+      ],
+      "Argumentation_and_Logic": [
+        "Introduces ACICO to model Anemoi, proves Gröbner basis structure/complexity, establishes Shape form, and compares efficiency gains.",
+        "1) ACICO yields well-structured polynomials; 2) Buchberger's algorithm complexity is bounded; 3) Shape form ensures solvability; 4) Eigenvalue methods outperform prior techniques.",
+        "Strengths: Theoretical rigor and generalization. Weaknesses: Assumes zero-dimensional ideals. Rebuttals: Addresses radicality concerns via Shape form proof and offers alternative eigenvalue methods."
+      ],
+      "Strengths_and_Limitations": [
+        "Generalizes cryptanalysis to multiple branches; provides exact complexity; proves Shape form; improves solving efficiency.",
+        "Limited to fields Fp; complexity relies on structured polynomials; may not extend to non-algebraic attacks.",
+        "Algebraic focus may overlook implementation-based vulnerabilities; conclusions are constrained to Gröbner-based threats."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Advances cryptanalysis of AO primitives by resolving open questions (e.g., Shape form) and setting benchmarks for algebraic security.",
+        "Technical terminology (e.g., 'zero-dimensional ideal', 'solving degree'); formal tone; rhetorical emphasis on mathematical proofs to establish credibility.",
+        "Cites foundational (Shannon) and contemporary works to contextualize contributions; motivations include correcting prior conjectures and guiding future designs."
+      ],
+      "Conclusions_and_Implications": [
+        "Anemoi is vulnerable to efficient Gröbner basis attacks; security must not depend on GB computation complexity.",
+        "Designers should prioritize algebraic structures in AO primitives; explore hybrid solving methods; extend analyses to other primitives."
+      ]
+    }
+  }
+}

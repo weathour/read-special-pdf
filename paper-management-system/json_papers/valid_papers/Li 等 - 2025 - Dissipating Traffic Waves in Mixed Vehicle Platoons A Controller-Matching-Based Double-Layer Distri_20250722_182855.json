@@ -1,0 +1,82 @@
+{
+  "file_name": "Li 等 - 2025 - Dissipating Traffic Waves in Mixed Vehicle Platoons A Controller-Matching-Based Double-Layer Distri.pdf",
+  "generated_at": "2025-07-22 18:28:55",
+  "structured_info": {
+    "title_cn": "混合车辆编队中的交通波消散：基于控制器匹配的双层分布式模型预测控制方法",
+    "title_en": "Dissipating Traffic Waves in Mixed Vehicle Platoons: A Controller-Matching-Based Double-Layer Distributed Model Predictive Control Approach",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicle Platooning",
+      "Traffic Wave Dissipation",
+      "Distributed Model Predictive Control"
+    ],
+    "keywords": [
+      "Mixed Vehicle Platoon",
+      "String Stability",
+      "Model Predictive Control",
+      "Traffic Wave Dissipation",
+      "Platoon Control"
+    ],
+    "abstract": "This study proposes a novel distributed model predictive control (DMPC) approach for mixed vehicle platoons (MVPs), which achieves driving safety, asymptotic stability, and traffic wave dissipation simultaneously. The longitudinal dynamics model and safety constraints are first established for each vehicle. The MVPs are divided into several sub-platoons according to the distribution of connected-and-automated vehicles (CAVs) and human-driven vehicles (HDVs). Then, a compound controller to ensure the head-to-tail string stability of MVPs is constructed as a reference controller for the subsequent design of the double-layer distributed model predictive controller (DL-DMPC). To describe the behavior of human drivers, a car-following model specific to HDVs is developed. On the basis of the designed compound controller and the description of HDVs, the DL-DMPC is proposed. The first layer improves tracking performance and satisfies the state constraints of each CAV under different communication topologies through an optimization problem. The second layer utilizes controller-matching technology to ensure the asymptotic stability of vehicle platoons and dissipate traffic waves. With the above double-layer structure, the DL-DMPC can simultaneously address multiple tasks and is applicable in various communication topologies. Simulations and analyses based on the NGSIM dataset are conducted in various scenarios to validate the effectiveness of the developed approach.",
+    "methodology": "The paper proposes a double-layer distributed model predictive control (DL-DMPC) approach. The first layer focuses on tracking performance and state constraints under different communication topologies, while the second layer ensures asymptotic stability and traffic wave dissipation using controller-matching technology. The approach integrates a compound controller for string stability and a car-following model for HDVs.",
+    "conclusion": "The DL-DMPC effectively achieves driving safety, asymptotic stability, and traffic wave dissipation in mixed vehicle platoons. Simulations validate its performance across various scenarios, demonstrating its applicability in diverse communication topologies.",
+    "authors": [
+      "Panshuo Li",
+      "Xingyan Mao",
+      "Chao Huang",
+      "Pengxu Li"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2025.3575540",
+    "bibtex_citation": "Li_Dissipating_2025",
+    "analysis": {
+      "Overview": "The paper presents a novel control approach for mixed vehicle platoons (MVPs) combining connected-and-automated vehicles (CAVs) and human-driven vehicles (HDVs). The proposed DL-DMPC ensures safety, stability, and traffic wave dissipation.",
+      "Background_and_Motivation": [
+        "Vehicle platooning reduces fuel consumption and traffic congestion but faces challenges like string instability and traffic waves.",
+        "The coexistence of CAVs and HDVs in future traffic necessitates solutions for mixed platoons.",
+        "The paper addresses the need for robust control methods that handle heterogeneous vehicle dynamics and communication limitations.",
+        "The research bridges gaps in existing methods by integrating safety constraints and traffic wave dissipation.",
+        "The work contributes to intelligent transportation systems and control theory."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Double-layer DMPC: Combines tracking performance and stability control.",
+        "Controller-matching technology: Aligns DL-DMPC with a reference compound controller.",
+        "Car-following model for HDVs: Captures human driver behavior in a receding-horizon framework.",
+        "Assumes bounded disturbances and imperfect human driver estimations.",
+        "The paper contributes a comprehensive control framework for MVPs, enhancing both theoretical and practical knowledge in platoon control."
+      ],
+      "Methodology": [
+        "Uses distributed model predictive control (DMPC) with a double-layer structure.",
+        "Novelty lies in integrating controller-matching and car-following models for HDVs.",
+        "Simulations use the NGSIM dataset to validate the approach.",
+        "Experimental design includes various scenarios (static/dynamic leading vehicles) to test robustness.",
+        "Follows a control theory paradigm, focusing on stability and optimization."
+      ],
+      "Results": [
+        "DL-DMPC achieves string stability and dissipates traffic waves in simulations.",
+        "The approach handles actuator saturation and safety constraints effectively.",
+        "Results show improved tracking performance and disturbance attenuation compared to existing methods."
+      ],
+      "Argumentation_and_Logic": [
+        "The paper argues that DL-DMPC addresses limitations of prior methods by combining safety and stability.",
+        "Key steps include modeling vehicle dynamics, designing the compound controller, and validating through simulations.",
+        "Strengths include comprehensive scenario testing; weaknesses may include computational complexity."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Integrates multiple control objectives, validated in diverse scenarios.",
+        "Limitations: Computational burden of double-layer optimization; reliance on accurate human driver models.",
+        "Theoretical constraints: Assumes bounded disturbances and specific communication topologies."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the work within ongoing research on platoon control and traffic wave dissipation.",
+        "Uses technical terminology and cites prior work to establish authority.",
+        "Citations emphasize gaps in existing methods and the novelty of the proposed approach."
+      ],
+      "Conclusions_and_Implications": [
+        "DL-DMPC is a viable solution for mixed platoon control, balancing safety and performance.",
+        "Future work could explore real-time implementation and broader traffic scenarios."
+      ]
+    }
+  }
+}

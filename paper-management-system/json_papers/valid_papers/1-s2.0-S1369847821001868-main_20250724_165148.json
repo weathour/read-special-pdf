@@ -1,0 +1,80 @@
+{
+  "file_name": "1-s2.0-S1369847821001868-main.pdf",
+  "generated_at": "2025-07-24 16:51:48",
+  "structured_info": {
+    "title_cn": "专用车道对人工驾驶车辆驾驶员行为的影响",
+    "title_en": "The impact of a dedicated lane for connected and automated vehicles on the behaviour of drivers of manual vehicles",
+    "category": "Transportation Research",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Driver Behaviour",
+      "Traffic Safety"
+    ],
+    "keywords": [
+      "Connected and automated vehicles",
+      "Dedicated lanes",
+      "Behavioural adaptation",
+      "Car-following",
+      "Gap acceptance in lane changing"
+    ],
+    "abstract": "Connected and automated vehicles (CAVs) are expected to enhance traffic efficiency by driving at shorter time headways, and traffic safety by shorter reaction times. However, one of the main concerns regarding their deployment is the mixed traffic situation, in which CAVs and manually driven vehicles (MVs) share the same road. This study investigates the behavioural adaptation of MV drivers in car-following and lane changing behaviour when they drive next to a dedicated lane (DL) for CAVs and compares that to a mixed traffic situation. The expectation is that in a mixed traffic situation, the behavioural adaptation of MV drivers is negligible due to lower exposure time and scarce platoons, while concentrating the CAVs on one dedicated lane may cause significant behavioural adaptation of MV drivers due to a higher exposure time and conspicuity of CAV platoons. Fifty-one participants were asked to drive an MV on a 3-lane motorway in three different traffic scenarios, in a fixed-base driving simulator: (1) Base, only MVs were present in traffic, (2) Mixed, platoons of 2-3 CAVs driving on any lane and mixed with MVs, (3) DL, platoons of 2-3 CAVs driving only on a DL. The DL was recognizable by road signs and a buffer demarcation which separated the DL from the other lanes. A moderate penetration rate of 43% was assumed for CAVs. During the drives, the car following headways and the accepted merging gaps by participants were collected and used for comparisons of driving behaviour in different scenarios. Based on the results, we conclude that there is no significant difference in the driving behaviour between Base and Mixed scenarios at tested penetration rate, confirming our research expectation. However, in DL scenario, MV drivers drove closer to their leaders specially when driving on the middle lane next to the platoons and accepted shorter gaps (up to 12.7% shorter at on-ramps) in lane changing manoeuvres. Dedicating a lane to CAVs increases the density of CAV platoons on one lane and consequently their conspicuity becomes higher. As a result, MV drivers are influenced by CAV platoons on a DL and imitate their behaviour. The literature suggests that dedicating a lane to CAVs improves the traffic efficiency by providing more possibilities for platooning. This study shows that implementing such a solution will affect the driving behaviour of human drivers. This should be taken into consideration when evaluating the impacts of dedicated lanes on traffic efficiency and traffic safety.",
+    "methodology": "Driving simulator experiment with 51 participants, Linear Mixed Effects Models (LMM), Principal Component Analysis (PCA)",
+    "conclusion": "MV drivers are not likely to adapt their behaviour in car-following and lane changing in mixed traffic situation at moderate PR of CAVs. However, implementing a DL would increase the density of CAVs on one lane and consequently increases the exposure time and conspicuity of CAV platoons, leading to behavioural adaptation where MV drivers tend to imitate the behaviour of CAV platoons by following a lead car more closely and accepting shorter gaps in lane changing.",
+    "authors": [
+      "Solmaz Razmi Rad",
+      "Haneen Farah",
+      "Henk Taale",
+      "Bart van Arem",
+      "Serge P. Hoogendoorn"
+    ],
+    "publication_year": "2021",
+    "venue": "Transportation Research Part F: Psychology and Behaviour",
+    "doi": "10.1016/j.trf.2021.08.010",
+    "bibtex_citation": "RazmiRad_Impact_2021",
+    "analysis": {
+      "Overview": "The paper investigates the behavioural adaptation of manual vehicle (MV) drivers when driving next to a dedicated lane (DL) for connected and automated vehicles (CAVs) compared to a mixed traffic situation. The study uses a driving simulator to analyze car-following and lane-changing behaviours.",
+      "Background_and_Motivation": [
+        "The deployment of CAVs is expected to enhance traffic efficiency and safety, but mixed traffic situations pose challenges.",
+        "The research aims to understand how MV drivers adapt their behaviour in the presence of CAVs, particularly when CAVs are concentrated on a dedicated lane.",
+        "The authors argue that behavioural adaptation could impact traffic efficiency and safety, necessitating this study.",
+        "The study bridges the gap between theoretical benefits of CAVs and practical implications for human drivers.",
+        "The paper contributes to transportation research, human factors, and traffic psychology."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Behavioural adaptation: Changes in driving behaviour due to exposure to CAVs.",
+        "Dedicated lanes: Lanes reserved for CAVs to improve traffic flow.",
+        "The study innovates by examining behavioural adaptation at moderate penetration rates and in dedicated lane scenarios."
+      ],
+      "Methodology": [
+        "The study uses a fixed-base driving simulator with 51 participants. Three scenarios were tested: Base (only MVs), Mixed (MVs and CAVs), and DL (CAVs on a dedicated lane).",
+        "Data on car-following headways and merging gaps were collected and analyzed using Linear Mixed Effects Models (LMM) and Principal Component Analysis (PCA).",
+        "The methodology is novel in its focus on moderate penetration rates and the use of a driving simulator to control variables.",
+        "The experimental design is rigorous, with controlled traffic flows and randomized scenarios to minimize bias."
+      ],
+      "Results": [
+        "No significant difference in driving behaviour between Base and Mixed scenarios.",
+        "In the DL scenario, MV drivers drove closer to their leaders and accepted shorter gaps in lane changing.",
+        "Results indicate that behavioural adaptation is more pronounced when CAVs are concentrated on a dedicated lane."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors present a clear argument that behavioural adaptation is influenced by exposure time and conspicuity of CAV platoons.",
+        "Key steps include the comparison of three scenarios and the use of statistical models to validate hypotheses.",
+        "The study addresses potential rebuttals by controlling for variables like traffic flow and participant demographics."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the use of a driving simulator to control variables and the focus on moderate penetration rates.",
+        "Limitations include the short-term nature of the study and the use of a simulator rather than real-world conditions.",
+        "The study is constrained by its focus on a specific type of CAV (SAE levels 4 and 5)."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper contributes to ongoing discussions about the integration of CAVs into existing traffic systems.",
+        "The authors use technical terminology and cite previous studies to build authority.",
+        "Citations are used to establish the study's relevance and to justify methodological choices."
+      ],
+      "Conclusions_and_Implications": [
+        "The study concludes that dedicated lanes for CAVs can lead to behavioural adaptation in MV drivers, which should be considered in traffic planning.",
+        "Future research should explore long-term effects and different penetration rates, as well as validate findings in real-world settings."
+      ]
+    }
+  }
+}

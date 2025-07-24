@@ -1,0 +1,81 @@
+{
+  "file_name": "1-s2.0-S0968090X24003218-main.pdf",
+  "generated_at": "2025-07-24 15:52:27",
+  "structured_info": {
+    "title_cn": "两车道双向乡村道路上的超车：自动驾驶车辆的个性化和反应性方法",
+    "title_en": "Overtaking on two-lane two-way rural roads: A personalized and reactive approach for automated vehicle",
+    "category": "Autonomous Vehicles",
+    "topics": [
+      "Autonomous Driving",
+      "Trajectory Planning",
+      "Decision-making"
+    ],
+    "keywords": [
+      "Autonomous vehicle",
+      "Driving style",
+      "Trajectory planning",
+      "Decision-making",
+      "Personalized trajectory maneuver",
+      "Overtaking"
+    ],
+    "abstract": "Research on Connected and Automated Vehicles (CAV) has primarily focused on highway and urban environments, neglecting the significance and dangers of two-lane two-way rural roads. However, CAV driving strategies have the potential to improve significantly this network safety, particularly in critical maneuvers such as overtaking. This paper proposes an overall safety autonomous driving architecture particularly adapted to overtaking maneuver in a two-lane two-way rural road context. The proposed architecture considers vehicle connectivity to share their ego speeds and positions, enabling a rule-based decision-making process coupled with a Fuzzy Inference Systems (FIS) to manage the maneuver s tasks and to ensure the feasibility of the maneuver. A safety-oriented abort task facilitates a return to the starting lane in case of potential collisions improving maneuver reactivity. Additionally, an original driving personalization is proposed through one driving style parameter modifying the trajectory shape and the maneuver initiation. Two low level controllers handle the vehicle control signals for braking, throttle, and steering wheel angle completing the architecture and allowing full autonomous driving. The algorithm is evaluated using a high fidelity simulation environment in different driving situations. The obtained results demonstrate its reliability and consistency in producing safe overtaking maneuvers regardless the generated situation. A Monte Carlo test highlights the correlation between driving style and comfort in most cases. However, the algorithm limited to two vehicles in the surrounding environment needs improvement to cope with more diverse driving situations.",
+    "methodology": "The paper proposes a comprehensive architecture for autonomous vehicle overtaking maneuvers on two-lane two-way rural roads, integrating decision-making and trajectory generation. The methodology includes a rule-based decision-making process coupled with Fuzzy Inference Systems (FIS), personalized trajectory planning using sigmoid functions, and adaptive cruise control with fuzzy logic. The approach is evaluated using a high-fidelity simulation environment.",
+    "conclusion": "The proposed algorithm demonstrates reliability and consistency in producing safe overtaking maneuvers across various driving styles and scenarios. The personalized driving style parameter effectively modifies trajectory shape and maneuver initiation, enhancing both safety and comfort. However, the algorithm's limitation to two surrounding vehicles suggests the need for further improvements to handle more complex driving situations.",
+    "authors": [
+      "Benoit Vigne",
+      "Rodolfo Orjuela",
+      "Jean-Philippe Lauffenburger",
+      "Michel Basset"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104800",
+    "bibtex_citation": "Vigne_Overtaking_2024",
+    "analysis": {
+      "Overview": "The paper presents a personalized and reactive approach for autonomous vehicle overtaking maneuvers on two-lane two-way rural roads, focusing on safety, decision-making, and trajectory planning.",
+      "Background_and_Motivation": [
+        "The research addresses the understudied area of autonomous driving on rural roads, which pose unique challenges due to their combination of urban and highway complexities.",
+        "The motivation stems from the high fatality rates on rural roads and the need for safer autonomous driving strategies, particularly for overtaking maneuvers.",
+        "The authors highlight the urgency of addressing safety concerns in rural environments, where human driving behavior and high speeds contribute to significant risks.",
+        "The study connects the specific problem of overtaking on rural roads to broader challenges in autonomous vehicle safety and public acceptance.",
+        "The paper contributes to the fields of autonomous vehicles, transportation safety, and human-vehicle interaction."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include personalized driving style, trajectory planning, and reactive decision-making.",
+        "The logical relationship involves integrating driving style preferences with safety constraints to generate adaptive overtaking maneuvers.",
+        "Key assumptions include robust perception and reliable vehicle-to-vehicle communication.",
+        "The paper contributes a novel personalized overtaking framework to the autonomous driving knowledge system, enhancing both safety and user experience."
+      ],
+      "Methodology": [
+        "The methodology combines rule-based decision-making with Fuzzy Inference Systems (FIS), personalized sigmoid-based trajectory planning, and adaptive cruise control.",
+        "The novelty lies in the integration of personalization with safety constraints, while the applicability is demonstrated through high-fidelity simulations.",
+        "Data sources include simulated vehicle dynamics and environmental conditions, with preprocessing focused on safety and comfort constraints.",
+        "Experimental design is rigorous, with evaluation metrics covering safety, comfort, and maneuver feasibility.",
+        "The research follows a control theory and fuzzy logic paradigm, influencing the focus on deterministic and adaptive control strategies."
+      ],
+      "Results": [
+        "Key results include reliable overtaking maneuvers across different driving styles and scenarios, with personalized trajectories enhancing comfort and safety.",
+        "The results are significant for autonomous driving safety, demonstrating reliability and stability in simulated environments."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the problem statement, followed by literature review, methodology, and experimental validation.",
+        "Key steps include the justification for personalized overtaking, the design of decision-making and trajectory planning, and simulation-based validation.",
+        "Strengths include the integration of personalization with safety, while weaknesses involve the limitation to two surrounding vehicles."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel personalized overtaking framework and robust simulation validation.",
+        "Limitations include the algorithm's restriction to two surrounding vehicles and the assumption of straight-road scenarios.",
+        "The theoretical paradigm of control theory constrains the conclusions to deterministic and rule-based approaches."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on autonomous driving safety and personalization.",
+        "Terminology includes technical terms from control theory and fuzzy logic, with a formal tone.",
+        "Citations build authority by referencing prior work in autonomous driving and fuzzy logic applications."
+      ],
+      "Conclusions_and_Implications": [
+        "The paper concludes that personalized overtaking enhances safety and comfort, with future research needed to handle more complex scenarios.",
+        "Suggestions include extending the algorithm to more vehicles and curved road scenarios."
+      ]
+    }
+  }
+}

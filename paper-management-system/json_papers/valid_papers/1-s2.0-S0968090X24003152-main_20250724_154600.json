@@ -1,0 +1,80 @@
+{
+  "file_name": "1-s2.0-S0968090X24003152-main.pdf",
+  "generated_at": "2025-07-24 15:46:00",
+  "structured_info": {
+    "title_cn": "基于双流视频的深度学习模型用于碰撞和接近碰撞检测",
+    "title_en": "Two-stream video-based deep learning model for crashes and near-crashes",
+    "category": "Computer Vision",
+    "topics": [
+      "Traffic Safety",
+      "Deep Learning",
+      "Video Analysis"
+    ],
+    "keywords": [
+      "Crash prediction",
+      "Front-view video driving data",
+      "Deep learning",
+      "TimeSFormer",
+      "Optical flow",
+      "XGBoost",
+      "Naturalistic driving study"
+    ],
+    "abstract": "The use of videos for effective crash and near-crash prediction can significantly enhance the development of safety countermeasures and emergency response. This paper presents a two-stream hybrid model with temporal and spatial streams for crash and near-crash identification based on front-view video driving data. The novel temporal stream integrates optical flow and TimeSFormer, utilizing divided-space time attention. The spatial stream employs TimeSFormer with space attention to complement spatial information that is not captured by the optical flow. An XGBoost classifier merges the two streams through late fusion. The proposed approach utilizes data from the Second Strategic Highway Research Program Naturalistic Driving Study, which encompasses 1922 crashes, 6960 near-crashes, and 8611 normal driving segments. The results demonstrate excellent performance, achieving an overall accuracy of 0.894. The F1 scores for crashes, near-crashes, and normal driving segments were 0.760, 0.892, and 0.923, respectively, indicating strong predictive power for all three categories. The proposed approach offers a highly effective and scalable solution for identifying crashes and near-crashes using front-view video driving data and has broad applications in the field of traffic safety.",
+    "methodology": "The proposed model is a two-stream hybrid model combining temporal and spatial streams. The temporal stream integrates optical flow and TimeSFormer with divided-space time attention, while the spatial stream uses TimeSFormer with space attention. An XGBoost classifier performs late fusion to merge the outputs of the two streams.",
+    "conclusion": "The proposed model demonstrates excellent performance in crash and near-crash detection, achieving high accuracy and F1 scores. It offers a scalable solution for traffic safety applications using front-view video data.",
+    "authors": [
+      "Liang Shi",
+      "Feng Guo"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104794",
+    "bibtex_citation": "Shi_Two-stream_2024",
+    "analysis": {
+      "Overview": "The paper presents a two-stream deep learning model for detecting crashes and near-crashes (CNCs) using front-view video driving data. The model combines temporal and spatial information through optical flow and TimeSFormer, achieving high accuracy in classification tasks.",
+      "Background_and_Motivation": [
+        "The research addresses the critical need for effective crash and near-crash prediction to enhance traffic safety and emergency response.",
+        "The motivation stems from the limitations of traditional models like LSTM and CNN in capturing both temporal and spatial features effectively.",
+        "The authors highlight the urgency of improving crash detection methods due to the increasing availability of video data and advancements in computer vision.",
+        "The problem is linked to broader challenges in traffic safety, emphasizing the potential impact on automated driving and active safety systems.",
+        "The paper contributes to the fields of computer vision, traffic safety, and deep learning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include optical flow for temporal features, TimeSFormer for spatio-temporal attention, and XGBoost for late fusion.",
+        "The logical relationship involves using optical flow to capture short-term temporal dependencies and TimeSFormer to enhance long-term temporal and spatial features.",
+        "Key assumptions include the effectiveness of optical flow in capturing crash-related motion and the complementary nature of spatial and temporal streams.",
+        "The paper contributes a novel hybrid model that integrates optical flow with Transformer-based architectures for improved crash detection."
+      ],
+      "Methodology": [
+        "The core methods include optical flow extraction, TimeSFormer for spatio-temporal attention, and XGBoost for fusion.",
+        "The novelty lies in the integration of optical flow with TimeSFormer and the use of late fusion for combining streams.",
+        "Data sources include the SHRP 2 NDS dataset, with preprocessing steps like optical flow encoding and frame cropping.",
+        "Experimental design is rigorous, with hyperparameter tuning and validation on a large dataset.",
+        "The research follows a deep learning paradigm, leveraging Transformer architectures for video understanding."
+      ],
+      "Results": [
+        "Key results include an overall accuracy of 0.894 and F1 scores of 0.760, 0.892, and 0.923 for crashes, near-crashes, and normal driving segments, respectively.",
+        "The results are significant, reliable, and demonstrate the model's robustness across different crash types."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the limitations of existing methods, introduces the proposed model, and validates it through experiments.",
+        "Key steps include the justification for two-stream design, the choice of TimeSFormer, and the evaluation metrics.",
+        "Strengths include comprehensive validation and comparison with benchmarks; weaknesses include reliance on front-view data only."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include high accuracy, novel integration of optical flow and TimeSFormer, and scalability.",
+        "Limitations include dependence on front-view data and potential computational overhead of optical flow.",
+        "The choice of deep learning constrains the model to data-driven approaches, potentially limiting interpretability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on video-based crash detection, citing recent advances in Transformers and optical flow.",
+        "Terminology includes technical terms like 'divided-space time attention' and 'late fusion,' with a formal tone.",
+        "Citations build authority by referencing foundational and recent works in computer vision and traffic safety."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that the proposed model effectively detects crashes and near-crashes using front-view video data.",
+        "Future research could explore multi-modal data integration and unsupervised learning for broader applicability."
+      ]
+    }
+  }
+}

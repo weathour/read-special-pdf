@@ -1,0 +1,78 @@
+{
+  "file_name": "1-s2.0-S0968090X24002936-main.pdf",
+  "generated_at": "2025-07-24 15:40:14",
+  "structured_info": {
+    "title_cn": "几何感知的跟车模型构建：水平曲线上的理论建模与实证分析",
+    "title_en": "Geometry-aware car-following model construction: Theoretical modeling and empirical analysis on horizontal curves",
+    "category": "Transportation Research",
+    "topics": [
+      "Car-following model",
+      "Road geometry",
+      "Horizontal alignment"
+    ],
+    "keywords": [
+      "Structured feature",
+      "Deep learning",
+      "Attention mechanism"
+    ],
+    "abstract": "Road geometry significantly influences the physical forces acting on vehicles and the perceptual ability of drivers. Unfortunately, most available car-following models ignore the influence of complex road geographical features, such as curvatures and slopes and thereby lack scalability. To fill these gaps, this study presents a framework for the construction of a geometry-aware car-following model. Under the over-alignment assumption, car-following motion on horizontal curves was simplified into seven internal or adjacent car-following scenarios. Two novel alternative vehicle control modes (centralized and decentralized) for car-following motions on a horizontal route were proposed. The structured features of each scenario, considering both lateral and longitudinal information, were defined mathematically. Open-source data with trajectory records and road surface conditions on highways in Japan were collected and used as empirical data sources. First, we analyzed the theoretical proportion of traffic scenarios that conformed to the traditional car-following model for any horizontal route. Several properties of the car-following scenario proportion were proposed and proved. Both empirical statistics and theoretical estimations showed the existence of real-world sizable car-following scenarios that could not be handled by traditional models. Owing to their powerful ability to handle complex input features, machining learning and deep learning models were applied in car-following behavior modeling to make multistep predictions. With high computational efficiency, the results were compared with those of models with traditional inputs to demonstrate the effectiveness of the proposed approach.",
+    "methodology": "The study proposes a framework for constructing a geometry-aware car-following (GACF) model, which considers the impacts of road geometry. The methodology includes theoretical modeling of car-following maneuvers on horizontal curves, simplification into seven internal or adjacent car-following scenarios, and the use of machine learning and deep learning models for behavior modeling.",
+    "conclusion": "The study concludes that traditional car-following models lack scalability due to ignoring complex road geographical features. The proposed GACF model effectively addresses this gap by incorporating road geometry into the modeling process. Empirical results demonstrate the model's effectiveness in handling scenarios that traditional models cannot, with high computational efficiency and improved performance in multistep prediction tasks.",
+    "authors": [
+      "Xun Yang",
+      "Zhiyuan Liu",
+      "Qixiu Cheng",
+      "Pan Liu"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104772",
+    "bibtex_citation": "Yang_Geometry-aware_2024",
+    "analysis": {
+      "Overview": "The paper presents a framework for constructing a geometry-aware car-following model that considers the influence of road geometry on driver behavior. It addresses the limitations of traditional models by incorporating complex road features such as curvatures and slopes.",
+      "Background_and_Motivation": [
+        "The research addresses the broader challenge of improving car-following models by considering road geometry, which significantly impacts vehicle dynamics and driver perception.",
+        "The motivation stems from the lack of scalability in traditional models that ignore complex road features, leading to inaccurate behavior predictions.",
+        "The authors argue for the necessity of their research by highlighting the physical laws and perceptual divergences caused by road geometry, which traditional models fail to account for.",
+        "The study relates the specific problem of car-following behavior modeling to the broader challenge of ensuring driving safety and efficiency in various road conditions.",
+        "The paper contributes to the fields of transportation research, traffic simulation, and autonomous driving."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include the geometry-aware car-following (GACF) model, over-alignment assumption, and seven car-following scenarios on horizontal curves.",
+        "The logical relationship network involves the interaction between road geometry, vehicle dynamics, and driver behavior, formalized through structured features and control modes.",
+        "Key assumptions include the over-alignment condition and uniform distribution of vehicle positions in lanes.",
+        "The paper contributes a novel framework for car-following modeling that integrates road geometry, enhancing the knowledge system in microscopic traffic simulation."
+      ],
+      "Methodology": [
+        "The core research methods include theoretical modeling of car-following scenarios on horizontal curves, mathematical formulation of structured features, and application of machine learning and deep learning models.",
+        "The methodology is novel in its integration of road geometry into car-following models, applicable to various road conditions, and rational in its assumptions and derivations.",
+        "Data sources include open-source trajectory and road surface data from highways in Japan, preprocessed to fit the study's needs.",
+        "Experimental design is rigorous, with clear evaluation metrics comparing the proposed model against traditional approaches.",
+        "The research follows a theoretical paradigm of integrating physical and perceptual factors into behavioral modeling, influencing the perspective on driver behavior."
+      ],
+      "Results": [
+        "Key results include the theoretical and empirical proportions of car-following scenarios, demonstrating the limitations of traditional models.",
+        "The results are significant for improving car-following models, reliable due to rigorous methodology, and stable across different road conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors' argument is structured around the limitations of traditional models, the necessity of considering road geometry, and the effectiveness of the proposed framework.",
+        "Key steps include theoretical modeling, scenario simplification, and empirical validation.",
+        "Strengths include comprehensive coverage of scenarios and innovative methodology; weaknesses may include assumptions like uniform vehicle distribution."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel integration of road geometry into car-following models and the framework's applicability to various scenarios.",
+        "Limitations include the over-alignment assumption and potential constraints from the chosen theoretical paradigm.",
+        "The choice of theoretical paradigm may limit the generalizability of conclusions to non-horizontal curves."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on improving car-following models by addressing a critical gap.",
+        "The authors use specific terminology related to road geometry and car-following behavior, with a formal tone and rhetorical strategies emphasizing the novelty and necessity of their approach.",
+        "Citations build authority by referencing foundational and recent works in the field, with motivations tied to advancing the discourse."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the effectiveness of the GACF model in addressing traditional models' limitations.",
+        "Future research suggestions include extending the framework to three-dimensional roads and further validating the model with diverse datasets."
+      ]
+    }
+  }
+}

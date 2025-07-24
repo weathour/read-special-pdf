@@ -1,0 +1,84 @@
+{
+  "file_name": "01-Integrated optimization of dynamic lane allocation and signal timing at urban intersections.pdf",
+  "generated_at": "2025-07-24 16:33:03",
+  "structured_info": {
+    "title_cn": "城市交叉口动态车道分配与信号配时的集成优化",
+    "title_en": "Integrated optimization of dynamic lane allocation and signal timing at urban intersections",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Traffic Signal Control",
+      "Lane Allocation",
+      "Integrated Optimization"
+    ],
+    "keywords": [
+      "Traffic signal control",
+      "Lane allocation",
+      "Integrated optimization",
+      "Traffic fluctuation",
+      "Dynamic switching condition"
+    ],
+    "abstract": "Allocating spatiotemporal resources dynamically is deemed to be an effective technique for accommodating traffic arrivals at urban intersections. This paper develops a two-layer optimization framework for integrated lane allocation and signal timing at isolated intersections. The lane allocation at the upper-layer is formulated as an integer linear programming to minimize the sum of the critical flow factor. Whereas the lower-layer signal control problem is formulated as an integer quadratic programming to minimize the average vehicle delay. An iterative solution procedure is then introduced. Considering that frequent lane switching may affect the control performance, this paper proposes a dynamic implementation scheme to regulate the lane switching frequency. Numerical tests show that the proposed integrated optimization method outperforms the baseline method in reducing delays by 19.08%. Moreover, for the integrated optimization, further applying the proposed dynamic implementation scheme reduces the lane switching frequency, which effectively balances switching frequency and overall control performance.",
+    "methodology": "The paper proposes a two-layer optimization framework: (1) an integer linear programming model for lane allocation to minimize the sum of the critical flow factor, and (2) an integer quadratic programming model for signal timing to minimize the average vehicle delay. An iterative solution procedure is introduced to solve these models efficiently.",
+    "conclusion": "The proposed Dynamic_Control method significantly improves traffic efficiency by reducing average vehicle delay by 32.27% compared to baseline methods. Dynamic lane allocation effectively accommodates traffic fluctuations, especially in heavy flow scenarios, by reallocating spatiotemporal resources. The dynamic switching conditions balance lane switching frequency and control performance.",
+    "authors": [
+      "Wei Huang",
+      "Guoyu Huang",
+      "Shaorui Zhou",
+      "Haofan Cheng"
+    ],
+    "publication_year": "2025",
+    "venue": "Transportmetrica B: Transport Dynamics",
+    "doi": "10.1080/21680566.2025.2474656",
+    "bibtex_citation": "Huang_Integrated_2025",
+    "analysis": {
+      "Overview": "The paper addresses urban intersection congestion by developing a two-layer optimization framework that dynamically allocates lane resources and optimizes signal timing to accommodate traffic fluctuations.",
+      "Background_and_Motivation": [
+        "Urban traffic congestion is worsening due to increasing vehicle ownership and mismatched traffic supply-demand.",
+        "Current signal control methods often use fixed lane allocation, limiting adaptability to traffic fluctuations.",
+        "The authors demonstrate that integrated optimization of lane allocation and signal timing can significantly improve intersection performance.",
+        "The research bridges the gap between spatial (lane) and temporal (signal) resource allocation at intersections.",
+        "Contributes to transportation engineering, particularly intelligent transportation systems and traffic management."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Critical Flow Factor: Measures demand for lane resources; minimizing its sum improves lane utilization.",
+        "Two-layer Optimization: Separates lane allocation (upper layer) and signal timing (lower layer) for computational efficiency.",
+        "Dynamic Switching Conditions: Regulate lane changes based on traffic fluctuation and performance improvement thresholds.",
+        "Assumes drivers can adapt to dynamic lane changes via technologies like variable message signs.",
+        "Provides both methodological (optimization framework) and practical (implementation scheme) contributions to traffic control."
+      ],
+      "Methodology": [
+        "Upper layer: Integer linear programming for lane allocation minimizing critical flow factor sum.",
+        "Lower layer: Integer quadratic programming for signal timing minimizing average vehicle delay.",
+        "Novelty lies in hierarchical decomposition and dynamic switching conditions for practical implementation.",
+        "Uses realistic traffic data from Shenzhen intersections for validation.",
+        "Follows queuing theory and NEMA dual-ring barrier structure for signal phasing."
+      ],
+      "Results": [
+        "Dynamic control reduces average delay by 32.27% compared to fixed control methods.",
+        "In heavy flow scenarios, reduces maximum turning delay by 78.24%.",
+        "Maintains stable performance across varying traffic conditions.",
+        "Results demonstrate both statistical significance and practical relevance."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured as problem identification → methodology development → experimental validation.",
+        "Key steps: 1) Demonstrate limitations of current methods, 2) Propose two-layer optimization, 3) Introduce dynamic switching, 4) Validate through experiments.",
+        "Strong experimental validation addresses potential rebuttals about computational complexity.",
+        "Weakness: Does not extensively discuss pedestrian/bicycle impacts."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive framework, significant performance improvements, practical implementation scheme.",
+        "Limitations: Assumes driver compliance with dynamic changes, doesn't consider pedestrian signals.",
+        "Theoretical paradigm (queuing theory) focuses on vehicular efficiency, potentially overlooking multimodal aspects."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within ongoing discourse about adaptive traffic control systems.",
+        "Uses technical transportation engineering terminology consistently.",
+        "Builds authority through citations of foundational works and recent advancements."
+      ],
+      "Conclusions_and_Implications": [
+        "Integrated dynamic optimization significantly improves intersection performance.",
+        "Future work could incorporate pedestrian flows, connected vehicle technologies, and network-level impacts."
+      ]
+    }
+  }
+}

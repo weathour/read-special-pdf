@@ -1,0 +1,81 @@
+{
+  "file_name": "electronics-13-00110-v2.pdf",
+  "generated_at": "2025-07-24 17:32:28",
+  "structured_info": {
+    "title_cn": "基于联锁块的自动驾驶车辆交叉口控制方法",
+    "title_en": "Autonomous-Vehicle Intersection Control Method Based on an Interlocking Block",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Autonomous Vehicles",
+      "Intersection Control",
+      "Traffic Management"
+    ],
+    "keywords": [
+      "non-signalized intersections",
+      "intersection conflict",
+      "interlocking block",
+      "virtual blocked cars",
+      "right-of-way embedding"
+    ],
+    "abstract": "Non-signalized intersections have only ever been suitable for low traffic flow; however, with the development of autonomous driving technology and new control methods, the operation efficiency of this kind of intersection may be improved. In view of the shortcomings of existing non-signalized intersection control methods in multilane situations and inspired by railway trains, an interlocking-block intersection control model is proposed. In this study, vehicles between parallel lanes are combined into a few combos, and the combo shape can be determined according to a pairing model and the interlocking angle range, and the gaps between the front and rear vehicles are simulated as blocks in a railway system, which are added into the intersection control model as virtual blocked cars (VBCs) for optimization. In setting the optimization objectives, the connotation and realization of fairness are discussed. Experimental results show that compared with signalized intersections, roundabouts, and non-signalized intersections without control, the interlocking-block intersection control model greatly reduces vehicle delay. Compared with an existing model, the calculation speed in a multilane situation has been greatly improved, while the vehicle delay is similar.",
+    "methodology": "The paper proposes an interlocking-block intersection control model inspired by railway systems. It involves combining vehicles between parallel lanes into combos, determining combo shapes via a pairing model and interlocking angle range, and simulating gaps as virtual blocked cars (VBCs) for optimization.",
+    "conclusion": "The interlocking-block intersection control model significantly reduces vehicle delay compared to traditional methods and improves computational efficiency in multilane scenarios. It also addresses fairness in vehicle priority through embedded right-of-way mechanisms.",
+    "authors": [
+      "Yuxin Niu",
+      "Yizhuo Chang",
+      "Hongbo Li",
+      "Xiaoyuan Feng",
+      "Yilong Ren"
+    ],
+    "publication_year": "2024",
+    "venue": "Electronics",
+    "doi": "10.3390/electronics13010110",
+    "bibtex_citation": "Niu_Autonomous-Vehicle_2024",
+    "analysis": {
+      "Overview": "The paper presents a novel intersection control method for autonomous vehicles, leveraging interlocking blocks inspired by railway systems to improve efficiency and fairness in multilane scenarios.",
+      "Background_and_Motivation": [
+        "Intersections are major congestion points and accident hotspots, especially non-signalized ones.",
+        "Autonomous driving technology offers potential for safer and more efficient intersection management.",
+        "Existing methods lack efficiency in multilane scenarios and fail to address fairness adequately.",
+        "The paper connects the specific problem of multilane intersection control to broader challenges in autonomous vehicle coordination.",
+        "The research contributes to intelligent transportation systems and autonomous vehicle control."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Interlocking block: A mechanism to synchronize vehicles in parallel lanes.",
+        "Virtual blocked cars (VBCs): Simulated gaps between vehicles treated as blocks for optimization.",
+        "Fairness in right-of-way: Embedded priority based on interlocking blocks.",
+        "The paper innovates by reducing computational complexity and improving fairness in intersection control."
+      ],
+      "Methodology": [
+        "Core methods include interlocking vehicle pairing, combo shape determination, and VBC optimization.",
+        "The methodology is novel, applicable to multilane intersections, and rational in reducing computational load.",
+        "Data sources include simulated vehicle distributions and real-world intersection parameters.",
+        "Experimental design is rigorous, with comparisons to traditional methods and evaluation of delay and computation time.",
+        "The research follows a centralized control paradigm, focusing on optimization and fairness."
+      ],
+      "Results": [
+        "The model reduces vehicle delay significantly compared to traditional methods.",
+        "Computational efficiency is improved, especially in multilane scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around the inefficiency of existing methods and the potential of interlocking blocks.",
+        "Key steps include problem definition, methodology development, and experimental validation.",
+        "Strengths include clear innovation and practical applicability; weaknesses may include reliance on simulation data."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Reduced delay, improved computational efficiency, and fairness considerations.",
+        "Limitations: Dependence on autonomous vehicle penetration and potential scalability issues.",
+        "Theoretical constraints include assumptions about vehicle behavior and communication reliability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on autonomous intersection control, citing relevant literature.",
+        "Terminology is technical, with a focus on railway-inspired concepts.",
+        "Citations build authority by referencing foundational and recent works in the field."
+      ],
+      "Conclusions_and_Implications": [
+        "The interlocking-block model effectively reduces delay and improves efficiency in multilane intersections.",
+        "Future research could explore dynamic right-of-way negotiation and real-world implementation challenges."
+      ]
+    }
+  }
+}

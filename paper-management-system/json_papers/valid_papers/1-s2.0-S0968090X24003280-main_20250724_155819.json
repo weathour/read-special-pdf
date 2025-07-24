@@ -1,0 +1,78 @@
+{
+  "file_name": "1-s2.0-S0968090X24003280-main.pdf",
+  "generated_at": "2025-07-24 15:58:19",
+  "structured_info": {
+    "title_cn": "基于推理图的强化学习方法在无信号交叉口混合连接与自动驾驶交通中的协同应用",
+    "title_en": "Reasoning graph-based reinforcement learning to cooperate mixed connected and autonomous traffic at unsignalized intersections",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Connected and Autonomous Vehicles",
+      "Traffic Management",
+      "Reinforcement Learning"
+    ],
+    "keywords": [
+      "Connected and automated vehicle",
+      "Cooperative plan",
+      "Unsignalized intersections",
+      "Mixed traffic system"
+    ],
+    "abstract": "Cooperation at unsignalized intersections in mixed traffic environments, where Connected and Autonomous Vehicles (CAVs) and Manually Driving Vehicles (MVs) coexist, holds promise for improving safety, efficiency, and energy savings. However, the mixed traffic at unsignalized intersections present huge challenges like MVs' uncertainties, the chain reaction and diverse interactions. Following the thought of the situation-aware cooperation, this paper proposes a Reasoning Graph-based Reinforcement Learning (RGRL) method, which integrates a Graph Neural Network (GNN) based policy and an environment providing mixed traffic with uncertain behaviors. Firstly, it graphicly represents the observed scenario as a situation using the interaction graph with connected but uncertain (bi-directional) edges. The situation reasoning process is formulated as a Reasoning Graph-based Markov Decision Process which infers the vehicle sequence stage by stage so as to sequentially depict the entire situation. Then, a GNN-based policy is constructed, which uses Graph Convolution Networks (GCN) to capture the interrelated chain reactions and Graph Attentions Networks (GAT) to measure the attention of diverse interactions. Furthermore, an environment block is developed for training the policy, which provides trajectory generators for both CAVs and MVs. A reward function that considers social compliance, collision avoidance, efficiency and energy savings is also provided in this block. Finally, three Reinforcement Learning methods, D3QN, PPO and SAC, are implemented for comparative tests to explore the applicability and strength of the framework. The test results demonstrate that the D3QN outperformed the other two methods with a larger converged reward while maintaining a similar converged speed. Compared to multi-agent RL (MARL), the RGRL approach showed superior performance statistically, reduced the number of severe conflicts by 77.78%–94.12%. The RGRL reduced average and maximum travel times by 13.62%–16.02%, and fuel-consumption by 3.38%–6.98% in medium or high Market Penetration Rates (MPRs). Hardware-in-the-loop (HIL) and Vehicle-in-the-loop (VehIL) experiments were conducted to validate the model effectiveness.",
+    "methodology": "The paper proposes a Reasoning Graph-based Reinforcement Learning (RGRL) method that integrates a Graph Neural Network (GNN) based policy with an environment simulating mixed traffic with uncertain behaviors. The methodology involves graphically representing traffic scenarios using interaction graphs with bi-directional edges, formulating the situation reasoning as a Markov Decision Process (MDP), and employing GCN and GAT to capture chain reactions and measure interaction attentions, respectively. The approach is tested using three RL methods (D3QN, PPO, SAC) and compared against multi-agent RL (MARL) and optimization-based methods.",
+    "conclusion": "The RGRL framework demonstrates superior performance in managing mixed traffic at unsignalized intersections by significantly reducing severe conflicts, travel times, and fuel consumption compared to MARL and optimization-based methods. The integration of GNN with RL effectively addresses the challenges of uncertainty and chain reactions in mixed traffic environments.",
+    "authors": [
+      "Donghao Zhou",
+      "Peng Hang",
+      "Jian Sun"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104807",
+    "bibtex_citation": "Zhou_Reasoning_2024",
+    "analysis": {
+      "Overview": "The paper introduces a novel Reasoning Graph-based Reinforcement Learning (RGRL) method to enhance cooperation between connected and autonomous vehicles (CAVs) and manually driven vehicles (MVs) at unsignalized intersections, addressing challenges like uncertainty in MV behaviors and complex interactions.",
+      "Background_and_Motivation": [
+        "Unsignalized intersections are critical bottlenecks in urban traffic, contributing significantly to accidents and fatalities. The coexistence of CAVs and MVs introduces complexities like uncertain behaviors and diverse interactions.",
+        "The research aims to develop a method that ensures safe, efficient, and socially compliant traffic flow in mixed environments, leveraging the strengths of CAVs while accommodating the unpredictability of MVs.",
+        "The authors highlight the limitations of existing methods (reservation-based, optimization-based, and RL approaches) in handling the uncertainties and chain reactions in mixed traffic, justifying the need for their proposed RGRL framework.",
+        "The study bridges the gap between theoretical traffic management and practical implementation in mixed traffic scenarios, contributing to the fields of transportation engineering and autonomous systems.",
+        "The interdisciplinary nature of the research spans transportation engineering, computer science (particularly reinforcement learning and graph neural networks), and urban planning."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include the Reasoning Graph (representing traffic scenarios as interaction graphs), Situation Reasoning (formulated as an MDP), and GNN-based policy (combining GCN and GAT for feature extraction).",
+        "The logical relationship between these concepts involves using the interaction graph to model traffic scenarios, the MDP to frame the decision-making process, and GNNs to learn optimal policies from the graph representations.",
+        "Key assumptions include perfect knowledge of vehicle states, no trajectory sharing between MVs and CAVs, and adherence to social compliance norms in interactions.",
+        "The paper contributes a novel integration of graph-based reasoning with RL, enhancing the capability to handle multimodal interactions and uncertainties in mixed traffic."
+      ],
+      "Methodology": [
+        "The core methods involve representing traffic scenarios as interaction graphs, formulating situation reasoning as an MDP, and employing GCN and GAT within an RL framework to learn optimal policies.",
+        "The novelty lies in the staged reasoning process that iteratively resolves uncertainties in vehicle interactions, supported by GNNs to capture systemic features and attention mechanisms.",
+        "Data sources include simulated traffic scenarios with varying CAV penetration rates, and real-world parameters from the Xianxia-Jianhe intersection in Shanghai.",
+        "Experimental design includes comparative tests of three RL algorithms (D3QN, PPO, SAC) and benchmarks against MARL and optimization-based methods, with metrics like PET, travel time, and fuel consumption.",
+        "The research follows a reinforcement learning paradigm, specifically model-free RL, which allows for adaptive learning in complex, dynamic environments without explicit modeling of traffic dynamics."
+      ],
+      "Results": [
+        "Key results show that RGRL reduces severe conflicts by 77.78%–94.12%, decreases travel times by 13.62%–16.02%, and lowers fuel consumption by 3.38%–6.98% compared to MARL.",
+        "The results are significant for improving traffic safety and efficiency, with demonstrated reliability across various CAV penetration rates and validated through hardware-in-the-loop experiments."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first identifying the challenges in mixed traffic management, then proposing RGRL as a solution, and finally validating its superiority through comparative experiments.",
+        "Key steps include problem formulation, methodology development, and empirical validation, with logical links between the limitations of existing methods and the innovations in RGRL.",
+        "Strengths include comprehensive experimental validation and clear articulation of the methodological advancements. Potential rebuttals might address the scalability of the graph-based approach, which the authors mitigate by focusing on staged reasoning."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel integration of graph reasoning with RL, effective handling of uncertainties, and superior performance in reducing conflicts and improving efficiency.",
+        "Limitations include the assumption of perfect state knowledge and the focus on isolated intersections, which may not generalize to more complex or networked traffic scenarios.",
+        "The choice of RL as the theoretical paradigm may constrain the interpretability of the learned policies, though the staged reasoning process adds a layer of transparency."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on intelligent transportation systems, emphasizing the need for adaptive, learning-based approaches in mixed traffic management.",
+        "The authors employ technical terminology specific to RL and graph theory, with a formal tone that underscores the rigor of their methodology.",
+        "Citations are used strategically to establish the novelty of RGRL relative to prior work in reservation-based and optimization-based methods, building authority through empirical validation."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that RGRL effectively addresses the challenges of mixed traffic at unsignalized intersections, offering significant improvements in safety, efficiency, and energy savings.",
+        "Future research could explore extensions to networked intersections, incorporation of more diverse traffic scenarios, and enhancements to the interpretability of the learned policies."
+      ]
+    }
+  }
+}

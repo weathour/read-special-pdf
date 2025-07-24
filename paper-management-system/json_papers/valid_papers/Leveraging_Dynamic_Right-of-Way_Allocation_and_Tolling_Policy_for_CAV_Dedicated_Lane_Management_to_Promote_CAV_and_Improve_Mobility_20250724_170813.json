@@ -1,0 +1,80 @@
+{
+  "file_name": "Leveraging_Dynamic_Right-of-Way_Allocation_and_Tolling_Policy_for_CAV_Dedicated_Lane_Management_to_Promote_CAV_and_Improve_Mobility.pdf",
+  "generated_at": "2025-07-24 17:08:13",
+  "structured_info": {
+    "title_cn": "利用动态路权分配和收费政策管理CAV专用车道以促进CAV发展和提高交通效率",
+    "title_en": "Leveraging Dynamic Right-of-Way Allocation and Tolling Policy for CAV Dedicated Lane Management to Promote CAV and Improve Mobility",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Traffic Management",
+      "Dynamic Lane Allocation"
+    ],
+    "keywords": [
+      "CAV dedicated lane",
+      "right-of-way allocation",
+      "toll",
+      "reduced travel time",
+      "promote CAV"
+    ],
+    "abstract": "With the capability of communicating with surrounding vehicles and infrastructures, connected and automated vehicles (CAVs) can safely drive closer with reduced headway, thereby potentially improving traffic efficiency. However, their superiority is compromised in the mixed traffic environment because of the interruption of human-driving vehicles (HDVs). In this circumstance, researchers proposed to physically separate CAVs and HDVs by deploying CAV-dedicated lanes (CAV-DLs). Nevertheless, the CAV-DLs may be underutilized, especially in low CAV penetration rate (PR) cases which may even reduce traffic efficiency. To solve this problem, two novel strategies were proposed in our study to better manage the CAV-DLs and magnify the benefit of CAVs: The first one is to dynamically allocate the right-of-way for CAV-DLs based on the predicted CAV-DLs effective utilization rate so that the HDVs can be allowed to use the dedicated lanes when they are not adequately occupied. The second strategy is motivated by the economic instrument, which allows HDVs to use the CAV-DLs by paying a toll. The toll is determined by the travel time difference between CAV-DL and general lane (GL), and these tolls can be utilized as subsidies to stimulate drivers to purchase CAVs for promoting their adoption. The two strategies were evaluated using the case study designed based on the network of Edmonton downtown area in Canada, and the results demonstrated that both methods can significantly reduce travel time. Besides, the two strategies were compared comprehensively in terms of their effectiveness and policy enforceability, which can provide some guidance for both traffic policymakers and practitioners.",
+    "methodology": "The paper proposes two strategies: 1) Dynamic Right-of-Way Allocation, which uses a Kalman Filter-based method to predict traffic flow and determine lane occupancy, allowing HDVs to use underutilized CAV-DLs; 2) Tolling, which dynamically charges HDVs for using CAV-DLs based on travel time differences between CAV-DLs and GLs. Both strategies are evaluated through a case study in SUMO using the Edmonton downtown network.",
+    "conclusion": "Both dynamic right-of-way allocation and tolling strategies significantly reduce travel time, especially in low CAV penetration rate cases. Tolling is slightly more effective in reducing travel time, while dynamic allocation is more flexible. The strategies are feasible for implementation in various traffic networks and can promote CAV adoption.",
+    "authors": [
+      "Huiyu Chen",
+      "Fan Wu",
+      "Kaizhe Hou",
+      "Tony Z. Qiu"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2023.3347392",
+    "bibtex_citation": "Chen_Leveraging_2024",
+    "analysis": {
+      "Overview": "The paper addresses the challenge of managing CAV-dedicated lanes (CAV-DLs) in mixed traffic environments to improve traffic efficiency and promote CAV adoption. It proposes two innovative strategies: dynamic right-of-way allocation and tolling, evaluated through a case study in Edmonton.",
+      "Background_and_Motivation": [
+        "The research is motivated by the inefficiency of CAV-DLs in low CAV penetration scenarios, where lanes are underutilized, reducing overall traffic efficiency.",
+        "The paper aims to solve the problem of underutilized CAV-DLs by dynamically managing lane access and introducing economic incentives.",
+        "The authors highlight the urgency by showing how mixed traffic environments hinder CAV benefits, emphasizing the need for effective lane management.",
+        "The study connects the specific problem of CAV-DL underutilization to broader challenges in traffic management and CAV adoption.",
+        "The paper contributes to transportation engineering, intelligent transportation systems, and traffic management."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: CAV-DLs (dedicated lanes for connected and automated vehicles), dynamic right-of-way allocation, and tolling policy.",
+        "The logical relationship involves using dynamic allocation or tolling to optimize CAV-DL usage, thereby improving traffic efficiency and promoting CAV adoption.",
+        "Key assumptions include the ability to accurately predict traffic flow and the willingness of HDV drivers to pay tolls for lane access.",
+        "The paper contributes novel methodologies for CAV-DL management, enhancing the knowledge base in intelligent transportation systems."
+      ],
+      "Methodology": [
+        "The core methods include Kalman Filter-based traffic flow prediction for dynamic allocation and real-time toll calculation based on travel time differences.",
+        "The novelty lies in the dynamic and adaptive nature of both strategies, tailored to real-time traffic conditions.",
+        "Data sources include simulated traffic flows in SUMO, based on the Edmonton downtown network. Preprocessing involves initializing parameters and calibrating models.",
+        "Experimental design is rigorous, with clear metrics for evaluating travel time reduction and lane utilization rates.",
+        "The research follows a user equilibrium paradigm, ensuring that traffic assignments reflect realistic driver behavior."
+      ],
+      "Results": [
+        "Key results show significant travel time reduction, especially in low CAV penetration scenarios. Dynamic allocation and tolling outperform static CAV-DL deployment.",
+        "Results are reliable, supported by simulation data, and demonstrate stability across different traffic conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the problem statement, followed by methodology, case study, and results.",
+        "Key steps include problem formulation, method development, simulation, and comparative analysis.",
+        "Strengths include clear logic and robust simulation results. Weaknesses include potential real-world implementation challenges, which the authors address by discussing policy enforceability."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel strategies, comprehensive evaluation, and practical applicability.",
+        "Limitations: Dependence on accurate traffic flow prediction and potential driver resistance to tolls.",
+        "Theoretical constraints include the assumption of rational driver behavior in response to tolls."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on CAV-DL management, citing relevant literature and highlighting gaps.",
+        "Terminology is technical but accessible, with a formal tone. Rhetorical strategies include emphasizing the practical benefits of the proposed methods.",
+        "Authority is built through extensive citations and clear demonstration of methodological rigor."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: Both strategies effectively reduce travel time and improve CAV-DL utilization, with tolling being slightly more effective.",
+        "Future research should explore driver willingness to pay and income-based toll differentiation, as well as more detailed headway parameter studies."
+      ]
+    }
+  }
+}

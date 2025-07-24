@@ -1,0 +1,79 @@
+{
+  "file_name": "Simulation-based-optimization-of-large-scale-dedic_2022_Transportation-Resea.pdf",
+  "generated_at": "2025-07-24 17:24:20",
+  "structured_info": {
+    "title_cn": "基于高效机器学习模型的仿真优化大规模公交专用道分配",
+    "title_en": "Simulation-based optimization of large-scale dedicated bus lanes allocation: Using efficient machine learning models as surrogates",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Dedicated Bus Lanes",
+      "Simulation-Based Optimization",
+      "Machine Learning"
+    ],
+    "keywords": [
+      "Discrete Transportation Network Design",
+      "Dedicated Bus Lanes Allocation",
+      "Machine Learning Model",
+      "Simulation-based Optimization"
+    ],
+    "abstract": "Dedicated Bus Lanes (DBLs) have been implemented in many cities to boost buses' reliability and to alleviate traffic congestions. However, how to correctly allocate DBLs across a large-scale real-world network is challenging. Simulation-Based Optimization (SBO) methods were utilized in this work to resolve this optimal allocation problem. Traditional discrete SBO methods are intractable when handling high-dimensional, costly, simulation-based Transportation Network Design Problems (TNDPs) using a limited computational budget. Thus, several efficient Machine Learning (ML)-based surrogate models and a Jackknife uncertainty estimator were introduced to existing SBO framework in this work. A number of comparative experiments between proposed methods and frequently-used Gaussian Process (GP)-SBO methods were conducted. A mesoscopic simulation and Dynamic Traffic Assignment (DTA) tool was adopted to evaluate the network performance. The results of numerical studies show that the optimization efficiency of proposed method is significantly higher than that of commonly used GP-based method when dealing with high dimensional problems. A real-world DBLs allocation case study in Guiyang, Guizhou Province, China again proves that efficient ML-based SBO method is capable to take much less CPU runtime to obtain a better solution than traditional method. The optimal DBLs allocation scheme found by one of the efficient ML-based methods raises the network performance by 5.05%. A total of 1,376 h travel time is saved, and the average travel time per traveler drops by 0.75 min. In conclusion, efficient ML-based SBO method proposed in this study is more promising to handle large-scale, discrete, costly simulation-based DBLs allocation problems within a limited computational budget than common GP-based SBO methods.",
+    "methodology": "The study employs Simulation-Based Optimization (SBO) methods with efficient Machine Learning (ML)-based surrogate models and a Jackknife uncertainty estimator to optimize the allocation of Dedicated Bus Lanes (DBLs) in large-scale networks. A mesoscopic simulation and Dynamic Traffic Assignment (DTA) tool, DynusT, is used to evaluate network performance.",
+    "conclusion": "The efficient ML-based SBO method proposed in this study significantly outperforms traditional GP-based methods in handling large-scale, discrete, costly simulation-based DBLs allocation problems within a limited computational budget. The optimal DBLs allocation scheme improves network performance by 5.05%, saving 1,376 hours of travel time and reducing average travel time per traveler by 0.75 minutes.",
+    "authors": [
+      "Zheng Li",
+      "Ye Tian",
+      "Jian Sun",
+      "Xi Lu",
+      "Yuheng Kan"
+    ],
+    "publication_year": "2022",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2022.103827",
+    "bibtex_citation": "Li_Simulation_2022",
+    "analysis": {
+      "Overview": "The paper addresses the challenge of optimally allocating Dedicated Bus Lanes (DBLs) in large-scale urban networks using Simulation-Based Optimization (SBO) methods enhanced with efficient Machine Learning (ML) models. The study aims to improve computational efficiency and solution quality in high-dimensional Transportation Network Design Problems (TNDPs).",
+      "Background_and_Motivation": [
+        "Traffic congestion is a global issue causing wasted time, money, and environmental harm. Transit priority policies, including DBLs, are effective in encouraging public transit use.",
+        "DBLs are controversial as they reduce space for private vehicles. Optimal allocation must balance private and public transport needs while considering user reactions and traffic dynamics.",
+        "The study highlights the gap between existing simulation tools and the need for efficient optimization methods in large-scale DBLs allocation.",
+        "The research contributes to transportation engineering and urban mobility, particularly in the interdisciplinary fields of traffic simulation and optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include Dedicated Bus Lanes (DBLs), Simulation-Based Optimization (SBO), and Machine Learning (ML) surrogate models.",
+        "The logical relationship involves using ML models to approximate expensive simulation outputs, reducing computational costs.",
+        "Key assumptions include fixed bus routes and frequencies, and the use of mesoscopic simulation for traffic dynamics.",
+        "The paper contributes a novel SBO framework with ML surrogates, improving efficiency in high-dimensional problems."
+      ],
+      "Methodology": [
+        "The core methods include SBO with ML-based surrogate models (SVR, RF, XGB, LGBM) and a Jackknife uncertainty estimator.",
+        "The methodology is novel in applying efficient ML models to high-dimensional TNDPs, offering better computational efficiency than GP-based methods.",
+        "Data sources include synthetic networks (Nguyen Dupuis, Sioux Falls) and a real-world network in Guiyang, China. Data preprocessing involves Latin Hypercube Sampling (LHS) for initial solutions.",
+        "Experimental design includes comparative studies between ML-based and GP-based SBO methods, with rigorous evaluation metrics like NRMSE, NMAE, and PCC.",
+        "The research follows a simulation-optimization paradigm, integrating traffic simulation with heuristic optimization."
+      ],
+      "Results": [
+        "Key results show that LGBM-based SBO methods significantly outperform GP-based methods in computational efficiency and solution quality.",
+        "The optimal DBLs allocation in Guiyang improved network performance by 5.05%, saving 1,376 hours of travel time."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the problem statement, reviews existing methods, introduces the proposed framework, and validates it through numerical and real-world case studies.",
+        "Key steps include problem formulation, surrogate model selection, and performance evaluation.",
+        "Strengths include comprehensive validation and practical applicability. Weaknesses include potential suboptimality in local solutions, addressed by demonstrating negligible practical differences from global optima."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel ML-based SBO framework, significant computational efficiency gains, and practical applicability in large-scale networks.",
+        "Limitations: Assumptions like fixed bus routes may limit generalizability. The methodology's complexity may constrain broader adoption.",
+        "Theoretical constraints include reliance on heuristic algorithms, which may not guarantee global optima."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on efficient optimization methods for transportation networks.",
+        "Terminology includes technical terms like 'surrogate models' and 'Jackknife estimator.' The tone is academic and technical, with a focus on methodological rigor.",
+        "Citations build authority by referencing foundational and recent works in SBO and transportation optimization."
+      ],
+      "Conclusions_and_Implications": [
+        "The study concludes that ML-based SBO methods are superior for large-scale DBLs allocation, offering significant efficiency and performance improvements.",
+        "Future research could explore dynamic bus routes and mode choices, and extend the framework to other TNDPs."
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "file_name": "1-s2.0-S0968090X24003814-main.pdf",
+  "generated_at": "2025-07-24 16:09:59",
+  "structured_info": {
+    "title_cn": "基于协同感知的自适应信号控制在联网和自动化车辆早期部署中的应用",
+    "title_en": "A cooperative perception based adaptive signal control under early deployment of connected and automated vehicles",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Traffic Signal Control",
+      "Deep Reinforcement Learning",
+      "Connected and Automated Vehicles"
+    ],
+    "keywords": [
+      "Traffic signal control",
+      "Deep reinforcement learning",
+      "Connected and automated vehicles",
+      "Cooperative perception",
+      "Cell transmission model"
+    ],
+    "abstract": "Connected vehicle-based adaptive traffic signal control requires certain market penetration rates (MPRs) to be effective, usually exceeding 10%. Cooperative perception based on connected and automated vehicles (CAVs) can effectively improve overall data collection efficiency and reduce required MPR. However, the distribution of observed vehicles under cooperative perception is highly skewed and imbalanced, especially under very low CAV MPRs (e.g., 1%). To address this challenge, this paper proposes a novel deep reinforcement learning-based adaptive traffic signal control (RL-TSC) method that integrates a traffic flow model, known as the cell transmission model (CTM), denoted as CAVLight. Traffic states estimated from the CTM are integrated with the data collected from the cooperative perception environment to update the states in the CAVLight model. The design of reward function aims for reducing total vehicle delays and stabilizing agent behaviors. Extensive numerical experiments under a real-world intersection with varying traffic demand levels and CAV MPRs are conducted to compare the performance of CAVLight and other benchmark algorithms, including a fixed-time controller, an actuated controller, the max pressure model, and an optimization-based adaptive TSC. Results demonstrate the superiority of CAVLight in performance and generalizability over benchmarks, especially under 1% CAV MPR scenario with high traffic demands. The influence of CTM integration on CAVLight is further explored through RL agent policy visualization and sensitivity analysis in CTM parameters and CAV perception capabilities (i.e., detection range and detection accuracy).",
+    "methodology": "Deep Reinforcement Learning (DRL), Cell Transmission Model (CTM), Asymmetric Advantage Actor-Critic (Asym-A2C) algorithm",
+    "conclusion": "The proposed CAVLight with CTM method demonstrates superior performance and generalizability under varying traffic demand levels and CAV MPRs, especially in scenarios with extremely low CAV MPRs (e.g., 1%). The integration of CTM improves traffic state estimation accuracy and stabilizes RL agent behaviors. The method outperforms benchmark algorithms including fixed-time control, actuated control, max-pressure model, and optimization-based adaptive TSC.",
+    "authors": [
+      "Wangzhi Li",
+      "Tianheng Zhu",
+      "Yiheng Feng"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104860",
+    "bibtex_citation": "Li_Cooperative_2024",
+    "analysis": {
+      "Overview": "The paper proposes a novel deep reinforcement learning-based adaptive traffic signal control method (CAVLight) that integrates the cell transmission model (CTM) to address challenges in traffic state estimation under low market penetration rates (MPRs) of connected and automated vehicles (CAVs). The method is designed to work effectively even with very low CAV MPRs (e.g., 1%).",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of implementing effective adaptive traffic signal control (TSC) in the early stages of CAV deployment, where the market penetration rate (MPR) is very low.",
+        "The motivation stems from the need to improve traffic data collection efficiency and reduce the required MPR for effective TSC, which is currently high (above 10%).",
+        "The authors argue that cooperative perception based on CAVs can significantly enhance data collection but introduces highly skewed and imbalanced data distributions, especially at low MPRs.",
+        "The problem is significant as it enables early deployment of adaptive TSC systems, which can improve traffic flow and reduce delays even before widespread CAV adoption.",
+        "The paper contributes to transportation engineering, specifically in traffic signal control, and intersects with machine learning and connected vehicle technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include: 1) Cooperative perception (using CAVs to share traffic data), 2) Cell Transmission Model (CTM) for traffic state estimation, 3) Deep Reinforcement Learning (DRL) for adaptive signal control.",
+        "The logical relationship involves using cooperative perception to gather partial traffic data, CTM to estimate complete traffic states, and DRL to optimize signal control policies.",
+        "Key assumptions include ideal CAV detection capabilities (initially) and the applicability of CTM for macroscopic traffic state estimation.",
+        "The paper contributes a novel integration of domain-specific traffic models (CTM) with learning-based methods (DRL), enhancing the robustness of adaptive TSC under low CAV MPRs."
+      ],
+      "Methodology": [
+        "The core methods include the Asymmetric Advantage Actor-Critic (Asym-A2C) algorithm for RL-TSC, integrated with CTM for state estimation.",
+        "The novelty lies in combining CTM with DRL to handle partial observations and stabilize RL agent behavior. The methodology is applicable to real-world intersections and is rational given the challenges of low CAV MPRs.",
+        "Data sources include simulated traffic data from SUMO, with preprocessing steps involving CTM-based state estimation and integration of CAV observations.",
+        "Experimental design is rigorous, with comparisons against multiple benchmarks (fixed-time, actuated, max-pressure, and optimization-based TSC). Evaluation metrics include average vehicle delay and policy visualization.",
+        "The research follows a reinforcement learning paradigm, specifically the Asym-A2C framework, which influences the approach by separating actor and critic inputs to handle partial observations."
+      ],
+      "Results": [
+        "Key results show that CAVLight outperforms benchmarks, especially under 1% CAV MPR, with significant reductions in vehicle delays. The method generalizes well across varying traffic demands and CAV MPRs.",
+        "Results are reliable and stable, as demonstrated through extensive numerical experiments and sensitivity analyses on CTM parameters and CAV perception capabilities."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first identifying the problem (low CAV MPR challenges), proposing a solution (CAVLight with CTM), and validating it through experiments.",
+        "Key steps include: 1) Problem formulation, 2) Methodology design (Asym-A2C + CTM), 3) Experimental validation, 4) Sensitivity analysis.",
+        "Strengths include clear logical progression and robust experimental validation. Weaknesses include initial assumptions of ideal CAV detection, though these are later relaxed in the discussion."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel integration of CTM with DRL, effective performance under low CAV MPRs, generalizability across traffic demands.",
+        "Limitations: Dependence on accurate CTM parameters, potential challenges in real-world deployment with imperfect CAV detection.",
+        "The choice of RL paradigm constrains conclusions to scenarios where sufficient training data is available, though the method shows robustness to partial observations."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on adaptive TSC and CAV technologies, emphasizing the gap in low MPR scenarios.",
+        "Terminology is specific to transportation engineering and RL, with a formal tone. Rhetorical strategies include comparative analysis and visualizations to strengthen claims.",
+        "Citations build authority by referencing foundational works in TSC, RL, and CTM, with motivations including establishing novelty and contextualizing contributions."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: CAVLight with CTM is effective under low CAV MPRs, outperforming benchmarks and generalizing well across scenarios.",
+        "Future research directions include extending the method to corridors and networks, enhancing realism in CAV perception models, and addressing microscopic traffic state estimation challenges."
+      ]
+    }
+  }
+}

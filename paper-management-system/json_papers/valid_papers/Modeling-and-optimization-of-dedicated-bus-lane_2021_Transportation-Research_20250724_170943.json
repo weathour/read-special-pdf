@@ -1,0 +1,76 @@
+{
+  "file_name": "Modeling-and-optimization-of-dedicated-bus-lane_2021_Transportation-Research.pdf",
+  "generated_at": "2025-07-24 17:09:43",
+  "structured_info": {
+    "title_cn": "大型网络中动态拥堵下专用公交车道空间分配的建模与优化",
+    "title_en": "Modeling and optimization of dedicated bus lanes space allocation in large networks with dynamic congestion",
+    "category": "Transportation Research",
+    "topics": [
+      "Public Transit Priority",
+      "Dynamic Traffic Modeling",
+      "Optimization"
+    ],
+    "keywords": [
+      "Dedicated Bus Lanes (DBL)",
+      "Large Neighborhood Search (LNS)",
+      "Macroscopic Fundamental Diagram (MFD)"
+    ],
+    "abstract": "Dedicated bus lanes provide a low cost and easily implementable strategy to improve transit service by minimizing congestion-related delays. Identifying the best spatial distribution of bus-only lanes in order to maximize traffic performance of an urban network while balancing the trade-off between bus priority and regular traffic disturbance is a challenging task. This paper studies the problem of optimal dedicated bus lane allocation and proposes a modeling framework based on a link-level dynamic traffic modeling paradigm, which is compatible with the dynamic characteristics of congestion propagation that can be correlated with bus lane relative positions. The problem is formulated as a non-linear combinatorial optimization problem with binary variables. An algorithmic scheme based on a problem-specific heuristic and Large Neighborhood Search metaheuristic, potentially combined with a network decomposition technique and a performance-based learning process for increased efficiency, is proposed for deriving good quality solutions for large-scale network instances. Numerical application results for a real city center demonstrate the efficiency of the proposed framework in finding effective bus lane network configurations; when compared to the initial network state they exhibit the potential of bus lanes to improve travel time for car and bus users.",
+    "methodology": "The paper proposes a modeling framework based on a link-level dynamic traffic modeling paradigm, integrating a dynamic, link-level macroscopic traffic model with queuing characteristics into an optimization framework. The problem is formulated as a non-linear combinatorial optimization problem with binary variables. The solution approach includes a problem-specific heuristic and Large Neighborhood Search (LNS) metaheuristic, combined with a network decomposition technique and a performance-based learning process.",
+    "conclusion": "The proposed framework effectively finds optimal dedicated bus lane allocations in large networks, improving traffic performance by balancing bus priority and car traffic disturbance. Numerical results from a real city center (San Francisco) demonstrate significant improvements in travel time for both car and bus users. The integration of dynamic traffic modeling and LNS metaheuristic provides a powerful alternative to traditional methods like Genetic Algorithms.",
+    "authors": [
+      "Dimitrios Tsitsokas",
+      "Anastasios Kouvelas",
+      "Nikolas Geroliminis"
+    ],
+    "publication_year": "2021",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2021.103082",
+    "bibtex_citation": "Tsitsokas_Modeling_2021",
+    "analysis": {
+      "Overview": "The paper addresses the problem of optimal dedicated bus lane (DBL) allocation in urban networks with dynamic congestion. It integrates a dynamic traffic model with an optimization framework to balance bus priority and car traffic disturbance, proposing a solution method based on Large Neighborhood Search (LNS) metaheuristic.",
+      "Background_and_Motivation": [
+        "Traffic congestion in rapidly developing cities due to excessive demand over limited capacity.",
+        "Public Transit Priority (PTP) strategies, particularly DBLs, are cost-effective but require optimal spatial distribution to minimize car traffic disturbance.",
+        "The necessity arises from the complexity of multi-modal network traffic modeling and the dynamic nature of congestion propagation.",
+        "The paper links the specific problem of DBL allocation to broader challenges of urban mobility and sustainable transport.",
+        "Contributes to transportation engineering, urban planning, and optimization disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: Dedicated Bus Lanes (DBL), Dynamic Traffic Modeling, Large Neighborhood Search (LNS).",
+        "DBLs improve bus travel time; dynamic traffic modeling captures congestion propagation; LNS optimizes DBL allocation.",
+        "Assumes known bus routes, frequencies, and car demand; mode and route choices are simplified.",
+        "Innovates by integrating dynamic traffic modeling with LNS for large-scale DBL allocation, a novel combination in the field."
+      ],
+      "Methodology": [
+        "Uses a link-level dynamic traffic model with queuing characteristics; formulates the problem as a non-linear combinatorial optimization.",
+        "Novelty: Combines dynamic traffic modeling with LNS; applicability demonstrated in large networks.",
+        "Data: Real-world network of San Francisco; includes bus routes, frequencies, and dynamic car demand.",
+        "Experimental design involves iterative mode choice adjustment and traffic simulation; rigorous evaluation metrics like Passenger Hours Travelled (PHT).",
+        "Follows a macroscopic traffic modeling paradigm, affecting the research perspective by focusing on link-level dynamics."
+      ],
+      "Results": [
+        "DBL allocation significantly improves travel time for both car and bus users.",
+        "Results are reliable and stable, demonstrated through numerical applications in San Francisco."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured around problem formulation, dynamic modeling, and solution methodology.",
+        "Key steps: Problem description, traffic model, optimization formulation, solution methods.",
+        "Strengths: Integration of dynamic modeling and LNS; addresses potential rebuttals by comparing with traditional methods like Genetic Algorithms."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel integration of dynamic traffic modeling and LNS; applicable to large networks.",
+        "Limitations: Simplifies mode and route choices; computational cost of dynamic modeling.",
+        "Theoretical paradigm constrains conclusions to macroscopic traffic dynamics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the paper within the discourse on urban traffic optimization and public transit priority.",
+        "Uses technical terminology and empirical tone; builds authority through citations of prior work in traffic modeling and optimization."
+      ],
+      "Conclusions_and_Implications": [
+        "Optimal DBL allocation improves urban traffic performance; dynamic modeling is crucial for accurate results.",
+        "Future research could integrate more detailed mode and route choice models and explore other metaheuristics."
+      ]
+    }
+  }
+}

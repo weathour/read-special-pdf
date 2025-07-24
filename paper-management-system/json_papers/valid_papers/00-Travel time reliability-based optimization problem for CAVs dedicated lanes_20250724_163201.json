@@ -1,0 +1,78 @@
+{
+  "file_name": "00-Travel time reliability-based optimization problem for CAVs dedicated lanes.pdf",
+  "generated_at": "2025-07-24 16:32:01",
+  "structured_info": {
+    "title_cn": "基于旅行时间可靠性的CAV专用车道优化问题",
+    "title_en": "Travel time reliability-based optimization problem for CAVs dedicated lanes",
+    "category": "Transport Science",
+    "topics": [
+      "Connected Autonomous Vehicles",
+      "Traffic Assignment",
+      "Network Design"
+    ],
+    "keywords": [
+      "Connected autonomous vehicles (CAVs)",
+      "travel time reliability",
+      "stochastic lane capacity",
+      "mixed traffic flow"
+    ],
+    "abstract": "This paper proposed an optimization problem that determines the deployment pattern of dedicated lanes to connected autonomous vehicles (CAVs) considering the stochastic traffic demand and the stochastic traffic capacity. The difference between CAVs and regular human-piloted vehicles (RHVs) is driving behavior. The driving behavior of CAVs is expected to be more standardized than that of RHVs. Therefore, we assume that when the penetration ratio of CAVs increases in the lane flow, the mean lane capacity will increase, and the lane capacity variance will decrease. The mean and the variance of lane travel time decrease when the penetration ratio increases. Following this assumption, the difference in the stochastic properties between CAVs and RHVs is considered in a traffic assignment model. The traffic assignment model is formulated as a variational inequality problem. The network design problem with equilibrium constraints was solved by a simulated annealing algorithm in a test network.",
+    "methodology": "Variational inequality problem, simulated annealing algorithm",
+    "conclusion": "The proposed model considers the stochastic traffic demand and capacity and travel time reliability simultaneously. The path travel time is also formulated as a stochastic variable. Thus, the risk-averse path choice behavior is assumed. The proposed model is formulated as a bi-level problem in a road network. The upper-level problem is solved by a heuristic algorithm, a simulated annealing algorithm. The lower-level problem is the traffic assignment problem formulated as a variational inequality (VI) problem.",
+    "authors": [
+      "Ryuichi Tani",
+      "Agachai Sumalee",
+      "Kenetsu Uchida"
+    ],
+    "publication_year": "2022",
+    "venue": "Transportmetrica A: Transport Science",
+    "doi": "10.1080/23249935.2021.1954107",
+    "bibtex_citation": "Tani_Travel_2022",
+    "analysis": {
+      "Overview": "The paper proposes an optimization problem for determining the deployment pattern of dedicated lanes for connected autonomous vehicles (CAVs) considering stochastic traffic demand and capacity. It formulates a traffic assignment model as a variational inequality problem and solves the network design problem using a simulated annealing algorithm.",
+      "Background_and_Motivation": [
+        "The research addresses the expected penetration of CAVs in road networks and their benefits in improving traffic safety and efficiency.",
+        "The specific problem is to optimize the deployment of CAV-dedicated lanes to incentivize CAV adoption and improve network efficiency.",
+        "The authors argue that previous studies lack consideration of stochastic traffic demand and capacity, and travel time reliability.",
+        "The research bridges the gap by incorporating stochastic properties of CAVs and RHVs in a traffic assignment model.",
+        "The paper contributes to transport science, particularly in traffic assignment and network design for mixed traffic flows."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: stochastic traffic demand, stochastic lane capacity, travel time reliability.",
+        "The logical relationship involves modeling how CAV penetration affects lane capacity and travel time variance.",
+        "Key assumptions include lognormal distributions for traffic demand and lane capacity, and risk-averse path choice behavior.",
+        "The paper contributes by integrating stochastic properties of CAVs and RHVs into a network design problem."
+      ],
+      "Methodology": [
+        "The core methods include a variational inequality problem for traffic assignment and a simulated annealing algorithm for network design.",
+        "The novelty lies in considering stochastic demand and capacity, and travel time reliability in the optimization.",
+        "Data sources are synthetic, based on a test network (Nguyen and Dupuis 1984). Traffic demand and capacity are modeled as lognormal distributions.",
+        "Experimental design includes two cases with different lane capacity parameters to examine effects on travel times.",
+        "The research follows a theoretical paradigm of stochastic traffic assignment and network design."
+      ],
+      "Results": [
+        "Key results show the transition of the objective function, mean total travel time, and standard deviation of total travel time for different CAV penetration rates.",
+        "The results demonstrate the impact of CAV penetration on network performance and the effectiveness of the proposed model."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with the problem statement, reviews related work, presents the methodology, and validates with numerical experiments.",
+        "Key steps include formulating the stochastic traffic assignment model, solving the network design problem, and analyzing results.",
+        "Strengths include comprehensive consideration of stochastic properties; weaknesses may include reliance on synthetic data and heuristic solution methods."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: integration of stochastic demand and capacity, consideration of travel time reliability, application to network design.",
+        "Limitations: reliance on synthetic data, heuristic solution methods may not guarantee global optimality.",
+        "Theoretical paradigm constraints include assumptions of lognormal distributions and risk-averse behavior."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within transport science discourse by addressing gaps in previous studies.",
+        "Terminology includes stochastic traffic assignment, variational inequality, and simulated annealing.",
+        "Citations build authority by referencing foundational and recent works in traffic assignment and network design."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: the proposed model effectively considers stochastic properties and travel time reliability in optimizing CAV-dedicated lanes.",
+        "Future research could explore dynamic traffic assignment, real-world data validation, and alternative solution methods."
+      ]
+    }
+  }
+}

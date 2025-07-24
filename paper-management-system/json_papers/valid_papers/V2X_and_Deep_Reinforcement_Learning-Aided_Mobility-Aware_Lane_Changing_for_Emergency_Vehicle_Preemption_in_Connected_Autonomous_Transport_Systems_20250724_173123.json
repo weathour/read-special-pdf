@@ -1,0 +1,79 @@
+{
+  "file_name": "V2X_and_Deep_Reinforcement_Learning-Aided_Mobility-Aware_Lane_Changing_for_Emergency_Vehicle_Preemption_in_Connected_Autonomous_Transport_Systems.pdf",
+  "generated_at": "2025-07-24 17:31:23",
+  "structured_info": {
+    "title_cn": "基于V2X和深度强化学习的移动感知换道算法在连接自主交通系统中的紧急车辆优先通行",
+    "title_en": "V2X and Deep Reinforcement Learning-Aided Mobility-Aware Lane Changing for Emergency Vehicle Preemption in Connected Autonomous Transport Systems",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "V2X Communication",
+      "Deep Reinforcement Learning",
+      "Emergency Vehicle Preemption"
+    ],
+    "keywords": [
+      "V2X",
+      "vehicular networks",
+      "lane change",
+      "emergency vehicle preemption"
+    ],
+    "abstract": "Emergency vehicle preemption (EVP) aims to provide the right-of-way to emergency vehicles (EVs) so that they can travel to the incident location efficiently. The travel time of EVs is the most important indicator of EVP efficiency, which should be minimized by distinct methods or algorithms. However, conventional EVP methods using strobe emitters, light emitters or sirens performs poorly in high-density vehicular traffic. Vehicle-to-everything (V2X) communication plays a pivotal role in intelligent transportation systems (ITS), which can assist EVs to travel safely and efficiently in connected autonomous transport systems (CATS). Enabled by V2X, this paper proposes a deep reinforcement learning-aided mobility-aware lane change algorithm (DRL-MLC) to enhance the efficiency of EVP. In the first stage, the EV learns to change lane based on a policy-based deep reinforcement learning (DRL) algorithm to find the shortest trajectory. In the second stage, autonomous vehicles (AVs) perform mobility-aware lane changing (MLC) to make way for the EV based on the emergency messages (EM) they received. Note that the performance of DRL-MLC strongly relies on the quality of service (QoS) of V2X, and improper network parameters of the on-board units (OBUs) that do not match with the vehicular density will significantly degrade the QoS. Therefore, in the third stage, the proposed algorithm fine-tunes specific parameters including communication range, carrier sensing range, packet rate, and contention window according to the real-time vehicular density based on a curve-fitting optimization method. Our results indicate that at medium-to-high density (e.g., 0.15 veh/m), the average speed of DRL-MLC has more than 49% average improvement than traditional lane changing models, and the ten-minute target travel time for EVs can be achieved by 95% with the proposed algorithm.",
+    "methodology": "The paper proposes a three-stage algorithm: 1) DRL-based lane change for the EV, 2) Mobility-aware lane change (MLC) for AVs, and 3) QoS optimization for V2X messaging. The DRL-MLC algorithm uses proximal policy optimization (PPO) for training the EV to make lane change decisions, MLC for AVs to give way to the EV, and a curve-fitting optimization method to adjust V2X network parameters based on real-time vehicular density.",
+    "conclusion": "The DRL-MLC algorithm significantly reduces the travel time of EVs while ensuring safety and comfort. At medium-to-high density, the algorithm improves the EV's average speed by more than 49% compared to traditional lane changing models and achieves the ten-minute travel time target for 95% of cases. The algorithm is particularly effective in high-density traffic scenarios.",
+    "authors": [
+      "Cao Ding",
+      "Ivan Wang-Hei Ho",
+      "Edward Chung",
+      "Tingting Fan"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2024.3350334",
+    "bibtex_citation": "Ding_V2X_2024",
+    "analysis": {
+      "Overview": "The paper proposes a novel algorithm combining V2X communication and deep reinforcement learning to optimize lane changing for emergency vehicles in connected autonomous transport systems. The algorithm aims to minimize travel time while ensuring safety and comfort.",
+      "Background_and_Motivation": [
+        "Increasing frequency of emergency calls due to rising vehicle numbers and accidents.",
+        "Traditional EVP methods (e.g., strobe emitters) are ineffective in high-density traffic.",
+        "V2X communication can enhance EVP by enabling real-time coordination between vehicles.",
+        "The paper addresses the gap in empirical studies on the impact of emergency messages on EVP."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: DRL-MLC (Deep Reinforcement Learning-Mobility-Aware Lane Change), MLC (Mobility-Aware Lane Change), QoS-V2X (Quality of Service for V2X).",
+        "Logical relationships: DRL-MLC uses PPO for EV lane change decisions, MLC enables AVs to give way, and QoS-V2X optimizes network parameters for reliable communication.",
+        "Assumptions: Level-4 autonomous driving, reliable V2X communication, and real-time sensor data interaction.",
+        "Contribution: A comprehensive framework integrating V2X, DRL, and QoS optimization for EVP."
+      ],
+      "Methodology": [
+        "Core methods: PPO-based DRL for EV lane change, MLC for AVs, and curve-fitting optimization for QoS-V2X.",
+        "Novelty: Integration of V2X and DRL for lane change optimization, dynamic adjustment of V2X parameters.",
+        "Data: Simulation using SUMO for traffic, OMNeT++ for V2X, and OpenAI Gym for DRL.",
+        "Experimental design: Comparison with benchmarks (SUMO-LC, SVM-LC, etc.) under varying traffic densities.",
+        "Theoretical paradigm: Combines reinforcement learning, vehicular networks, and traffic engineering."
+      ],
+      "Results": [
+        "Key results: 49% improvement in average EV speed, 95% achievement of ten-minute travel time target, 59.3% reduction in EM delay at high density.",
+        "Significance: Demonstrates effectiveness of DRL-MLC in high-density scenarios, outperforming traditional methods."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Problem statement, related work, system models, proposed algorithm, results, and conclusion.",
+        "Key steps: Introduction of DRL-MLC, MLC, and QoS-V2X; experimental validation.",
+        "Strengths: Comprehensive integration of V2X and DRL, rigorous experimental design.",
+        "Weaknesses: Assumptions (e.g., Level-4 autonomy) may limit real-world applicability."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel integration of V2X and DRL, significant performance improvements, practical applicability.",
+        "Limitations: Reliance on high-level autonomy, potential challenges in real-world V2X deployment.",
+        "Constraints: Theoretical assumptions may not fully align with real-world conditions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Advances research in ITS by combining V2X and DRL for EVP.",
+        "Terminology: Technical terms from DRL, V2X, and traffic engineering.",
+        "Citations: Extensive references to prior work in V2X, DRL, and EVP."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: DRL-MLC significantly improves EV travel time and reliability, especially in high-density traffic.",
+        "Future research: Enhance signal propagation models, consider human-driven vehicles, and improve real-world deployment."
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "file_name": "Integrated-optimal-planning-of-multi-type-lan_2024_Transportation-Research-P.pdf",
+  "generated_at": "2025-07-24 17:02:44",
+  "structured_info": {
+    "title_cn": "混合HVs和CAVs交通网络中多类型车道和交叉口的综合最优规划",
+    "title_en": "Integrated optimal planning of multi-type lanes and intersections in a transportation network with mixed HVs and CAVs",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Traffic Flow Management",
+      "Autonomous Vehicles",
+      "Urban Transportation"
+    ],
+    "keywords": [
+      "Deployment planning",
+      "Heterogeneous traffic flow",
+      "Dedicated CAV lanes",
+      "CAV toll lanes",
+      "Exclusive approaches"
+    ],
+    "abstract": "In a prolonged transitional period, the urban transportation infrastructure is expected to accommodate two different types of vehicles. One type of vehicle is the human-driven vehicle (HV) and the other is the connected and autonomous vehicle (CAV). Nevertheless, the conflict between HVs and CAVs in the mixed traffic scenario significantly impedes the efficiency-improvement benefit of implementing emerging CAV technologies. To harness the full potential of CAVs in enhancing traffic efficiency and network performance, multi-type lanes (i.e., regular lanes, dedicated CAV lanes, and CAV toll lanes) and multi-type intersections (i.e., conventional signalized intersections, novel signalized intersections with an exclusive phase and exclusive approaches, and smart signal-free intersections) are proposed to efficiently manage the heterogeneous traffic flow on roads and at intersections, respectively.",
+    "methodology": "The integrated planning problem of multi-type lanes and intersections (IPPLI) in the mixed transportation network is formulated as a mixed-integer nonlinear programming model based on the link-node modeling method. It is solved by an improved evolutionary algorithm-based approach, which consists of two modules cooperating with each other.",
+    "conclusion": "Experimental results show that the proposed model consistently performs outstandingly across a range of CAV penetration rates. Our model achieves maximum improvements of 25.71% and 4.84% in reducing travel costs compared to models that only plan multi-type lanes and multi-type intersections, respectively. Additionally, the improved evolutionary algorithm-based approach reduces the convergence time by 20.51% and 26.81% compared to the classical evolutionary algorithm and the genetic algorithm provided by MATLAB Global Optimization Toolbox.",
+    "authors": [
+      "Tongfei Li",
+      "Zhen Qian",
+      "Bo Fan",
+      "Min Xu",
+      "Huijun Sun",
+      "Yanyan Chen"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part E",
+    "doi": "10.1016/j.tre.2024.103814",
+    "bibtex_citation": "Li_Integrated_2024",
+    "analysis": {
+      "Overview": "The paper addresses the integrated planning problem of multi-type lanes and intersections in a mixed transportation network with human-driven vehicles (HVs) and connected and autonomous vehicles (CAVs). The goal is to minimize overall travel cost by optimizing the spatial layout of lanes and intersections, toll levels, and signal timings.",
+      "Background_and_Motivation": [
+        "The research is motivated by the coexistence of HVs and CAVs in urban transportation, which creates conflicts and inefficiencies.",
+        "The paper aims to solve the problem of optimizing traffic efficiency in mixed traffic scenarios by proposing multi-type lanes and intersections.",
+        "The authors argue that existing solutions focusing only on roads or intersections are insufficient, necessitating an integrated approach.",
+        "The problem is significant for urban transportation systems during the transitional period towards full CAV adoption.",
+        "The paper contributes to transportation engineering and urban planning disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include dedicated CAV lanes, CAV toll lanes, and multi-type intersections (CS, NS, SSF).",
+        "The logical relationship involves optimizing lane and intersection types to minimize travel costs while considering user equilibrium.",
+        "Key assumptions include fixed time headways for different car-following patterns and uniform vehicle arrival at intersections.",
+        "The paper contributes a novel integrated planning model and solution algorithm to the field."
+      ],
+      "Methodology": [
+        "The core method is a mixed-integer nonlinear programming model solved via an improved evolutionary algorithm.",
+        "The methodology is novel in integrating lane and intersection planning and is applicable to various CAV penetration rates.",
+        "Data sources include network characteristics (e.g., lanes, free-flow travel times) and traffic demand.",
+        "Experimental design involves testing on Nguyen Dupuis and Sioux-Falls networks with rigorous evaluation metrics.",
+        "The research follows a user equilibrium principle, affecting the perspective on traffic flow distribution."
+      ],
+      "Results": [
+        "Key results show significant improvements in travel cost reduction (up to 25.71%) and algorithm convergence time (up to 26.81%).",
+        "Results are reliable and stable across different CAV penetration rates and network scales."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with problem identification, literature review, model formulation, and solution algorithm.",
+        "Key steps include defining the IPPLI, formulating constraints, and solving the model.",
+        "Strengths include comprehensive integration of lanes and intersections; weaknesses may include computational complexity."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Integrated approach, novel algorithm, significant performance improvements.",
+        "Limitations: Assumptions on fixed time headways and uniform arrivals may not capture all real-world variability.",
+        "Theoretical constraints include user equilibrium principles limiting alternative traffic flow models."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within transportation engineering discourse by addressing mixed traffic challenges.",
+        "Terminology includes technical terms like 'user equilibrium' and 'complementarity constraints.'",
+        "Citations build authority by referencing prior work in traffic modeling and optimization."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the effectiveness of the integrated planning model and algorithm.",
+        "Future research could explore dynamic traffic conditions and more complex network scenarios."
+      ]
+    }
+  }
+}

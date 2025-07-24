@@ -1,0 +1,85 @@
+{
+  "file_name": "1-s2.0-S0968090X24003620-main.pdf",
+  "generated_at": "2025-07-24 16:06:54",
+  "structured_info": {
+    "title_cn": "基于并行学习的车道变换建模",
+    "title_en": "Modeling lane changes using parallel learning",
+    "category": "Transportation Research",
+    "topics": [
+      "Lane Change Modeling",
+      "Parallel Learning",
+      "Traffic Simulation"
+    ],
+    "keywords": [
+      "Lane change",
+      "Parallel learning",
+      "Data-driven model",
+      "Physics-informed model",
+      "Traffic simulation"
+    ],
+    "abstract": "This paper introduces an innovative approach to model the lane-change (LC) process of vehicles by employing parallel learning, seamlessly integrating conventional physical or behavioral models with data-driven counterparts. The LC process is divided into two distinct steps: the LC decision and the LC implementation, each independently modeled. For the LC decision model, a utility-based model is embedded into a neural network. Simultaneously, the LC implementation model incorporates a conventional car-following model, replicating the behavior of the new follower of the lane-changer, within the training process of a long-short-term memory model. Empirical trajectory data collected from unmanned aerial vehicles, which provides detailed information on the vehicles' lane-changing process, serves as the basis for training and testing the proposed models. Additionally, data from a different site is employed to assess model transferability. Results demonstrate that the proposed models adeptly predict both LC decisions and implementations, outperforming baseline physical and behavioral models, as well as pure data-driven models, in terms of prediction accuracy and transferability. These findings highlight the significant potential of these models in improving the precision of microscopic traffic simulators.",
+    "methodology": "The paper employs parallel learning to integrate conventional physical or behavioral models with data-driven counterparts. The LC process is divided into two steps: LC decision and LC implementation. For LC decision, a utility-based model is embedded into a neural network. For LC implementation, a conventional car-following model is incorporated into the training process of an LSTM model. High-resolution trajectory data from UAVs is used for training and testing.",
+    "conclusion": "The proposed models demonstrate superior prediction accuracy and transferability compared to baseline physical, behavioral, and pure data-driven models. They effectively predict both LC decisions and implementations, highlighting their potential to improve the precision of microscopic traffic simulators.",
+    "authors": [
+      "Yu Han",
+      "Yan Li",
+      "Shixuan Yu",
+      "Jiankun Peng",
+      "Lu Bai",
+      "Pan Liu"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104841",
+    "bibtex_citation": "Han_Modeling_2024",
+    "analysis": {
+      "Overview": "The paper presents a novel approach to modeling lane changes using parallel learning, integrating physical/behavioral models with data-driven methods. It focuses on two main steps: lane change decision (LCD) and lane change implementation (LCI), each modeled independently. The study uses high-resolution trajectory data for validation and demonstrates improved accuracy and transferability over existing methods.",
+      "Background_and_Motivation": [
+        "Lane changes significantly impact traffic flow dynamics, safety, and efficiency. Accurate modeling is crucial for traffic simulators and control strategies.",
+        "The complexity of lane changes involves decision-making (LCD) and implementation (LCI), both influencing traffic dynamics.",
+        "Existing models (behavioral and data-driven) have limitations: behavioral models lack accuracy in heterogeneous scenarios, while data-driven models suffer from transferability issues.",
+        "The paper addresses these gaps by proposing parallel learning, which combines the strengths of both approaches.",
+        "The research contributes to transportation engineering and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Parallel learning integrates knowledge-based and data-driven models.",
+        "Dynamic weight adjustment in the LCD model enhances performance.",
+        "Joint minimization of prediction errors for lane-changer and new follower in LCI model captures interdependencies.",
+        "Assumes constant lateral and longitudinal speeds during lane changes.",
+        "The paper contributes a novel modeling framework and addresses data imbalance issues."
+      ],
+      "Methodology": [
+        "Parallel learning integrates utility-based models with neural networks for LCD and car-following models with LSTMs for LCI.",
+        "Dynamic weight adjustment and under-sampling address data imbalance and improve model performance.",
+        "High-resolution trajectory data from UAVs is used, with preprocessing to handle imbalanced data.",
+        "Rigorous experimental design includes comparison with baseline models and transferability tests.",
+        "Follows a hybrid theoretical paradigm combining behavioral theory and machine learning."
+      ],
+      "Results": [
+        "Proposed models outperform baselines in prediction accuracy (76% for LCD) and transferability.",
+        "LCI model reduces prediction errors by 22% (position) and 13.7% (time) compared to pure LSTM.",
+        "Dynamic weight adjustment in LCD model improves performance over fixed-weight approaches."
+      ],
+      "Argumentation_and_Logic": [
+        "The paper argues that parallel learning overcomes limitations of existing models by combining interpretability and accuracy.",
+        "Key steps: problem formulation, model integration, dynamic weight adjustment, and empirical validation.",
+        "Strengths include innovative integration and empirical validation; limitations include assumptions on constant speeds."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative integration of behavioral and data-driven models.",
+        "Dynamic weight adjustment and under-sampling improve performance.",
+        "Assumptions (e.g., constant speeds) may limit generalizability.",
+        "Theoretical constraints from hybrid paradigm may affect conclusions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions the work within the discourse on lane change modeling and parallel learning.",
+        "Uses technical terminology and empirical evidence to build authority.",
+        "Citations establish connections to prior work and justify innovations."
+      ],
+      "Conclusions_and_Implications": [
+        "The proposed models enhance prediction accuracy and transferability.",
+        "Future research should explore additional variables (e.g., speed) and integrate models into traffic simulators for macroscopic validation."
+      ]
+    }
+  }
+}

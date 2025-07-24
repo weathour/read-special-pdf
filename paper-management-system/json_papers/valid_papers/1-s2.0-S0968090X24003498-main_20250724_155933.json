@@ -1,0 +1,83 @@
+{
+  "file_name": "1-s2.0-S0968090X24003498-main.pdf",
+  "generated_at": "2025-07-24 15:59:33",
+  "structured_info": {
+    "title_cn": "自动驾驶汽车的分配公平影响：一种分解方法",
+    "title_en": "Distributional equity impacts of automated vehicles: A disaggregated approach",
+    "category": "Transportation Research",
+    "topics": [
+      "Automated Vehicles",
+      "Transportation Equity",
+      "Agent-Based Simulation"
+    ],
+    "keywords": [
+      "Transportation equity",
+      "Automated vehicle",
+      "Agent-based simulation",
+      "Disaggregated model"
+    ],
+    "abstract": "Better understanding of the equity impacts of automated vehicles (AV) is needed to design equitable deployment plans for AV technology. The goal of this study was to develop and demonstrate a modeling framework to support distributional equity assessments of AV systems prior to their wide adoption. This modeling framework takes a disaggregated approach that integrates agent-based simulation, diverse transportation outcomes, and equity analyses. The framework uses individual-level data to capture detailed disparities in transportation outcomes, applies a state-of-the-art multi-agent traffic simulation model (MATSim) to simulate privately-owned and shared AVs simultaneously, and considers distributional equity from multiple perspectives. To test and demonstrate the framework, a case study was conducted for the Tampa Bay region. Five scenarios were considered with different AV market shares and integration strategies based on scenario planning by the U.S. Federal Highway Administration. Results reveal that high AV penetration rates were required for substantial reductions in inequality. The introduction of AVs led to a more even distribution of accessibility, but slightly more uneven distribution of traditional mobility and affordability. Impacts of disparities in outcomes for disadvantaged groups were mixed. These results suggest that AVs will likely perpetuate existing inequity in the transportation system as long as its fundamental structure remains the same as today. Results highlight the importance of planning and design strategies that directly address the distributional impacts to ensure that AV technology is deployed equitably.",
+    "methodology": "The study employs a disaggregated approach integrating agent-based simulation (MATSim), individual-level transportation outcome modeling, and equity analysis methods (Gini index, pseudo z values, subgroup inequality index). The framework simulates private and shared AVs simultaneously, estimates AV ownership based on historical expenditures, and models transportation outcomes (accessibility, mobility, affordability).",
+    "conclusion": "AVs require high penetration rates to reduce inequality substantially. They improve accessibility distribution but slightly worsen mobility and affordability equity. Impacts on disadvantaged groups are mixed, suggesting AVs may perpetuate existing inequities without structural changes. Equitable deployment requires targeted planning strategies.",
+    "authors": [
+      "Zhiwei Chen",
+      "Amy L. Stuart",
+      "Yujie Guo",
+      "Yu Zhang",
+      "Xiaopeng Li"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104828",
+    "bibtex_citation": "Chen_Distributional_2024",
+    "analysis": {
+      "Overview": "This paper develops a framework to assess the distributional equity impacts of automated vehicles (AVs) using disaggregated agent-based simulation. It examines how different AV adoption scenarios affect transportation outcomes (accessibility, mobility, affordability) across population groups in Tampa Bay.",
+      "Background_and_Motivation": [
+        "Transportation equity has been a required consideration since the 1960s, but AV impacts remain understudied.",
+        "AVs may either reduce mobility gaps for disadvantaged groups or exacerbate existing inequities depending on deployment models.",
+        "Current discussions are largely qualitative; quantitative evidence is needed to inform equitable AV deployment policies.",
+        "The study connects specific AV scenarios to broader challenges of transportation justice and equitable access.",
+        "Contributes to transportation planning, equity studies, and emerging mobility technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Horizontal equity (inequality across similar individuals) measured via Gini index.",
+        "Vertical equity (disparities between demographic groups) measured via pseudo z-values and SII.",
+        "Assumes centralized AV dispatch cooperation and capacity doubling at full AV penetration.",
+        "Provides novel integration of agent-based simulation with equity analysis at individual level."
+      ],
+      "Methodology": [
+        "MATSim agent-based model simulates private/shared AVs with modified dispatching algorithms.",
+        "AV ownership estimated from historical vehicle expenditures by income group.",
+        "Outcomes: Accessibility (job/school/social), mobility (miles traveled), affordability (cost/income).",
+        "50 iterations with 1% population sample; validated against 10% sample.",
+        "Follows activity-based transportation modeling paradigm."
+      ],
+      "Results": [
+        "50% AV penetration needed for significant inequality reduction (Gini ↓13-36% for accessibility).",
+        "Low penetration (5%) slightly worsens all equity metrics.",
+        "Rural residents consistently disadvantaged; low-income groups face highest affordability disparities.",
+        "Managed AV lanes improve accessibility but show limited equity benefits."
+      ],
+      "Argumentation_and_Logic": [
+        "1) Develops framework, 2) Applies to Tampa case, 3) Analyzes scenario outcomes.",
+        "Key links: AV penetration → capacity/behavior changes → outcome distributions → equity metrics.",
+        "Strengths: Individual-level analysis, multiple equity perspectives. Weakness: Assumes cooperative AV dispatch."
+      ],
+      "Strengths_and_Limitations": [
+        "Innovative disaggregated approach reveals hidden disparities.",
+        "Doesn't model induced demand or microscopic AV-HV interactions.",
+        "Vehicle ownership model oversimplifies sociodemographic factors.",
+        "Justice aspects beyond distributional equity not addressed."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within transportation equity and emerging technology literature.",
+        "Uses technical equity metrics while emphasizing policy relevance.",
+        "Builds authority through extensive methodology details and government data sources."
+      ],
+      "Conclusions_and_Implications": [
+        "AVs alone won't resolve transport inequities; targeted policies needed.",
+        "Future research should examine racial disparities, extreme outcome thresholds, and alternative business models."
+      ]
+    }
+  }
+}

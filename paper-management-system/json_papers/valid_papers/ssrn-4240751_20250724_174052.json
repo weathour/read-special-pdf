@@ -1,0 +1,83 @@
+{
+  "file_name": "ssrn-4240751.pdf",
+  "generated_at": "2025-07-24 17:40:52",
+  "structured_info": {
+    "title_cn": "混合交通环境中联网自动驾驶汽车间歇专用车道的环保高效运行",
+    "title_en": "Efficient and environmentally friendly operation of intermittent dedicated lanes for connected autonomous vehicles in mixed traffic environments",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Connected Autonomous Vehicles",
+      "Traffic Management",
+      "Environmental Impact"
+    ],
+    "keywords": [
+      "connected autonomous vehicle",
+      "intermittent dedicated lane",
+      "queuing model",
+      "traffic emission",
+      "traffic throughput",
+      "NSGA-II"
+    ],
+    "abstract": "The emergence of connected autonomous vehicles (CAVs) provides a possibility to develop an efficient and sustainable mobility option. To foster the adoption of CAVs, the dedicated CAV lanes have been widely discussed in terms of optimal planning and allocating infrastructures for CAVs. Meanwhile, a sensible operation manner of dedicated lanes is also crucial to reap the maximum benefits. In this paper, we propose a novel idea, i.e., the intermittent dedicated CAV lanes (IDCLs), which dynamically provide a separate right-of-way for human-driven vehicles (HVs) to maximize traffic efficiency and minimize environmental costs. To this end, we first tailor two multi-class queuing models as fundamental tools to evaluate the traffic state. A traffic emission model is proposed based on the proposed queuing models. Then, a queuing-based bi-objective optimization model, which aims to maximize the traffic throughput and minimize the green tax simultaneously, is developed for the optimal operation of IDCL. Subsequently, the non-dominated sorting genetic algorithm-II (NSGA-II) is employed to find the Pareto optimal solutions. Finally, numerical experiments are conducted under different market penetration rates (MPRs) of CAVs and various traffic intensities. The results reported in this paper help policymakers and authorities draw insights into the IDCL policy.",
+    "methodology": "The paper employs multi-class queuing models to evaluate traffic states, a traffic emission model based on these queuing models, and a bi-objective optimization model solved using NSGA-II.",
+    "conclusion": "The study concludes that intermittent dedicated CAV lanes (IDCLs) can dynamically optimize traffic efficiency and minimize environmental costs. The optimal operation scheme varies with market penetration rates (MPRs) and traffic demand, showing that IDCLs are particularly beneficial under high MPRs and heavy traffic conditions.",
+    "authors": [
+      "Shuiwang Chen",
+      "Lu Hu",
+      "Zhihong Yao",
+      "Juanxiu Zhu",
+      "Bin Zhao",
+      "Yangsheng Jiang"
+    ],
+    "publication_year": "2022",
+    "venue": "Physica A",
+    "doi": "10.1016/j.physa.2022.4240751",
+    "bibtex_citation": "Chen_Efficient_2022",
+    "analysis": {
+      "Overview": "The paper investigates the optimal operation of intermittent dedicated lanes for connected autonomous vehicles (CAVs) in mixed traffic environments, focusing on maximizing traffic throughput and minimizing environmental costs.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of integrating CAVs into existing traffic systems, particularly the inefficiencies and safety concerns in mixed traffic scenarios.",
+        "The motivation stems from the need to optimize dedicated lane usage to enhance traffic efficiency and reduce emissions during the transition period to full CAV adoption.",
+        "The authors argue that current dedicated lane strategies may not be optimal under varying traffic conditions and CAV penetration rates, necessitating dynamic operation schemes.",
+        "The study links the specific problem of dedicated lane operation to broader challenges in traffic management and environmental sustainability.",
+        "The paper contributes to transportation engineering, traffic management, and environmental science."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include intermittent dedicated CAV lanes (IDCLs), multi-class queuing models, and bi-objective optimization.",
+        "The logical relationship involves using queuing models to evaluate traffic states, which inform the optimization model for lane operation.",
+        "Key assumptions include time-varying arrival rates, state-dependent service rates, and the impact of CAVs on traffic flow dynamics.",
+        "The paper contributes a novel dynamic lane operation strategy and integrates environmental costs into traffic management decisions."
+      ],
+      "Methodology": [
+        "The methodology includes developing queuing models for mixed traffic, an emission model based on velocity and acceleration, and a bi-objective optimization model.",
+        "The novelty lies in the dynamic operation of dedicated lanes and the integration of environmental metrics into traffic optimization.",
+        "Data sources include theoretical traffic flow models and emission coefficients from prior studies. Preprocessing involves fitting exponential models to traffic data.",
+        "Experimental design includes numerical simulations under varying MPRs and traffic demands, with throughput and green tax as evaluation metrics.",
+        "The research follows a queuing theory paradigm, affecting the perspective on traffic flow as a fluid system."
+      ],
+      "Results": [
+        "Key results show that IDCLs improve traffic throughput and reduce emissions, especially under high CAV penetration rates.",
+        "The results are reliable, with consistent trends across different scenarios, and stable under varying traffic intensities."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with problem identification, followed by model development, solution methodology, and experimental validation.",
+        "Key steps include queuing model formulation, emission modeling, optimization, and solution via NSGA-II.",
+        "Strengths include comprehensive modeling and practical insights. Weaknesses include assumptions like constant MPRs, addressed through sensitivity analysis."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel dynamic lane operation, integration of environmental costs, practical applicability.",
+        "Limitations: Assumptions like constant MPRs and simplified lane-changing behavior may constrain real-world applicability.",
+        "The queuing theory paradigm may limit the consideration of microscopic traffic dynamics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on CAV integration and sustainable traffic management.",
+        "Terminology includes technical terms from queuing theory and traffic engineering. The tone is analytical, with rhetorical strategies emphasizing the novelty and practicality of the proposed solution.",
+        "Citations build authority by referencing foundational and recent works in traffic modeling and optimization."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the benefits of IDCLs under high CAV penetration and heavy traffic.",
+        "Future research could explore real-world implementation, microscopic traffic dynamics, and more complex environmental metrics."
+      ]
+    }
+  }
+}

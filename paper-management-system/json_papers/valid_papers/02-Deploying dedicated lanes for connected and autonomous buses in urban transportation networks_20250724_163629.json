@@ -1,0 +1,79 @@
+{
+  "file_name": "02-Deploying dedicated lanes for connected and autonomous buses in urban transportation networks.pdf",
+  "generated_at": "2025-07-24 16:36:29",
+  "structured_info": {
+    "title_cn": "在城市交通网络中为连接和自动驾驶公交车部署专用车道",
+    "title_en": "Deploying dedicated lanes for connected and autonomous buses in urban transportation networks",
+    "category": "Transportation Science",
+    "topics": [
+      "Connected and Autonomous Buses (CABs)",
+      "Dedicated Lanes",
+      "Multimodal Transportation Networks"
+    ],
+    "keywords": [
+      "CAB lane",
+      "limited CAV access",
+      "multimodal network equilibrium",
+      "allocation problem"
+    ],
+    "abstract": "To promote the ridership of connected and autonomous buses (CABs), this paper proposes to build CAB lanes in urban transportation networks. Three travel modes are considered: CAB, connected and autonomous passenger vehicle (CAV) and human-driven passenger vehicle (HV). To better utilise the capacities of CAB lanes, CAVs are granted limited access while maintaining good levels of services on these lanes. Analyses show that deploying CAB lanes may substantially increase the ridership of CABs and increase total social benefit, and allowing limited CAV access can further improve the overall system performance. The CAB lane allocation problem is formulated into a mixed-integer nonlinear programme. Numerical tests are performed to demonstrate the approach.",
+    "methodology": "The paper proposes a mixed-integer nonlinear programming model to allocate CAB lanes in urban transportation networks, considering multimodal user equilibrium (MUE) to describe travelers' mode choice and flow distribution. A limited CAV access strategy is introduced to better utilize CAB lane capacities.",
+    "conclusion": "Deploying CAB lanes can significantly increase CAB ridership and total social benefit. Allowing limited CAV access further improves system performance by better utilizing lane capacities. The proposed allocation model effectively supports decision-making for CAB lane deployment.",
+    "authors": [
+      "Lihui Zhang",
+      "Guomin Qian",
+      "Ziqi Song",
+      "Dianhai Wang"
+    ],
+    "publication_year": "2023",
+    "venue": "Transportmetrica A: Transport Science",
+    "doi": "10.1080/23249935.2021.2005181",
+    "bibtex_citation": "Zhang_Deploying_2023",
+    "analysis": {
+      "Overview": "The paper investigates the deployment of dedicated lanes for connected and autonomous buses (CABs) in urban transportation networks, proposing a limited CAV access strategy to optimize lane utilization and system performance.",
+      "Background_and_Motivation": [
+        "Urban traffic congestion and the need for efficient public transport solutions motivate the study.",
+        "The research addresses the challenge of promoting CAB ridership while optimizing lane usage in mixed-autonomy traffic environments.",
+        "The authors argue that CAB deployment can arrive earlier than passenger CAVs, making dedicated lanes a timely solution.",
+        "The study connects specific CAB lane deployment to broader challenges of urban mobility and transit efficiency.",
+        "The paper contributes to transportation science, particularly in autonomous vehicle integration and public transport optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include CAB lanes, limited CAV access, and multimodal network equilibrium.",
+        "These concepts interrelate through the optimization of lane allocation and traffic flow distribution.",
+        "Key assumptions include full control of CAVs via connected technologies and equilibrium behavior of travelers.",
+        "The paper contributes a novel transit network design problem and a limited CAV access strategy to the field."
+      ],
+      "Methodology": [
+        "The core method is a mixed-integer nonlinear programming model for CAB lane allocation, integrated with a multimodal user equilibrium model.",
+        "The methodology is novel in combining lane allocation with equilibrium traffic flow and mode choice.",
+        "Data sources include simulated urban networks (e.g., Sioux Falls network), with parameters derived from literature.",
+        "Experimental design includes varying control parameters and CAV penetration rates to test model performance.",
+        "The research follows a transportation network optimization paradigm, focusing on system-level benefits."
+      ],
+      "Results": [
+        "Key results show that CAB lanes increase ridership and social benefit, with limited CAV access further enhancing performance.",
+        "Results are reliable under tested scenarios, demonstrating stability across parameter variations."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with problem motivation, followed by model development, and validation through numerical tests.",
+        "Key steps include defining the MUE model, formulating the allocation problem, and demonstrating benefits through case studies.",
+        "Strengths include comprehensive model integration; potential weaknesses may include assumptions on traveler behavior and CAV control."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel problem formulation, practical limited CAV access strategy, and comprehensive numerical validation.",
+        "Limitations: Assumptions on perfect CAV control and equilibrium behavior may not hold in real-world scenarios.",
+        "Theoretical constraints include reliance on deterministic traffic equilibrium models."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on autonomous vehicle integration and transit optimization.",
+        "Terminology includes technical terms like 'multimodal equilibrium' and 'limited CAV access,' with a formal academic tone.",
+        "Citations build authority by referencing prior work on AV lanes and transit network design."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions highlight the benefits of CAB lanes and limited CAV access for urban mobility.",
+        "Future research could explore dynamic lane allocation and real-world implementation challenges."
+      ]
+    }
+  }
+}

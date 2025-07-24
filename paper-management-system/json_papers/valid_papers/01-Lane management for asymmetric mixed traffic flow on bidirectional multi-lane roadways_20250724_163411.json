@@ -1,0 +1,81 @@
+{
+  "file_name": "01-Lane management for asymmetric mixed traffic flow on bidirectional multi-lane roadways.pdf",
+  "generated_at": "2025-07-24 16:34:11",
+  "structured_info": {
+    "title_cn": "双向多车道道路上不对称混合交通流的车道管理",
+    "title_en": "Lane management for asymmetric mixed traffic flow on bidirectional multi-lane roadways",
+    "category": "Transportation Science",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Lane Management",
+      "Traffic Flow"
+    ],
+    "keywords": [
+      "Connected and automated vehicles",
+      "lane management",
+      "dedicated lane",
+      "reversible lane",
+      "access strategy",
+      "mixed traffic flow"
+    ],
+    "abstract": "To manage the bidirectional asymmetric mixed traffic flow with connected and automated vehicles (CAVs) and human-driven vehicles, the study proposes a lane management (LM) model based on the joint policy of CAV dedicated lanes (CDLs), CAV reversible lanes (CRLs), and CAV access strategies (CASs) for non-managed lanes. An analytical model is developed to determine the optimal numbers of CDLs and CRLs and the optimal CASs that maximize overall mixed traffic throughputs, considering four parameters under aggressive, moderate, and conservative CAV technology scenarios. The results show that the LM policy can significantly improve overall throughputs compared with the benchmark policy by deploying optimal CDLs, CRLs, and or CASs under the three scenarios. Moreover, for the LM policy, the overall throughput gradually rises, except for the asymptotical increments with the CAV penetration rate under the conservative scenario and the asymptotical reductions with the directional imbalance percent of traffic demand under the three scenarios.",
+    "methodology": "The study develops an analytical LM model to determine the optimal numbers of CDLs and CRLs and the optimal CASs for non-managed lanes, considering traffic demand, directional imbalance percent of traffic demand, CAV market penetration rate, and maximum platoon size under different CAV technology scenarios.",
+    "conclusion": "The proposed LM policies significantly improve overall mixed traffic throughputs compared to the no LM policy. The optimal deployment of CDLs, CRLs, and CASs varies with traffic demand, directional imbalance percent, CAV penetration rate, and maximum platoon size under different CAV technology scenarios.",
+    "authors": [
+      "Yuan Zheng",
+      "Min Xu",
+      "Shining Wu",
+      "Shuaian Wang"
+    ],
+    "publication_year": "2023",
+    "venue": "Transportmetrica A: Transport Science",
+    "doi": "10.1080/23249935.2023.2294492",
+    "bibtex_citation": "Zheng_Lane_2023",
+    "analysis": {
+      "Overview": "The paper proposes a lane management model for bidirectional asymmetric mixed traffic flow with CAVs and HDVs, focusing on optimizing CDLs, CRLs, and CASs to maximize traffic throughput.",
+      "Background_and_Motivation": [
+        "The study addresses the challenges of managing mixed traffic flow with CAVs and HDVs, particularly under asymmetric traffic conditions.",
+        "The research aims to improve traffic efficiency by optimizing lane management policies, considering the emerging CAV technology.",
+        "The authors highlight the necessity of LM policies due to the increasing adoption of CAVs and their impact on traffic flow characteristics.",
+        "The study links the specific problem of asymmetric traffic flow to broader challenges in traffic management and infrastructure development.",
+        "The paper contributes to transportation science, traffic engineering, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include CAV dedicated lanes (CDLs), CAV reversible lanes (CRLs), and CAV access strategies (CASs).",
+        "The logical relationship involves optimizing CDLs, CRLs, and CASs to maximize traffic throughput under varying conditions.",
+        "Key assumptions include random vehicle mixing, differentiated time headways for CAVs, and platoon size limitations.",
+        "The paper contributes a novel analytical model for LM in mixed traffic environments, advancing knowledge in traffic management."
+      ],
+      "Methodology": [
+        "The core methods include formulating traffic capacity and throughput models, and developing an integer non-linear optimization model for LM.",
+        "The methodology is novel in integrating CDLs, CRLs, and CASs, and applicable to various CAV technology scenarios.",
+        "Data sources are theoretical, based on traffic flow parameters and CAV technology scenarios.",
+        "Experimental design is rigorous, with sensitivity analyses on key parameters.",
+        "The research follows a traffic flow theory paradigm, focusing on macroscopic stationary traffic conditions."
+      ],
+      "Results": [
+        "Key results show significant improvements in overall throughput with optimal LM policies under different scenarios.",
+        "Results are reliable and stable, with consistent trends across varying parameters."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure involves problem formulation, model development, and numerical validation.",
+        "Key steps include defining LM policies, formulating capacity and throughput models, and optimizing LM configurations.",
+        "Strengths include comprehensive parameter analysis; weaknesses include simplifying assumptions like random vehicle mixing."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel integration of CDLs, CRLs, and CASs, and extensive numerical analysis.",
+        "Limitations include assumptions like random vehicle mixing and macroscopic traffic conditions.",
+        "The theoretical paradigm may constrain conclusions by not accounting for microscopic traffic dynamics."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper engages with disciplinary discourse on CAV impacts and traffic management.",
+        "Terminology is specific to transportation science, with a formal tone and persuasive rhetoric.",
+        "Citations build authority by referencing prior work on CAVs and traffic management."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the effectiveness of LM policies in improving traffic throughput.",
+        "Future research should explore microscopic traffic dynamics and real-world implementation challenges."
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "file_name": "1-s2.0-S0968090X24003097-main.pdf",
+  "generated_at": "2025-07-24 15:43:21",
+  "structured_info": {
+    "title_cn": "可解释的主动学习元建模方法及其在ATM性能评估中的应用",
+    "title_en": "Explainable active learning metamodeling for simulations: Method and experiments for ATM performance assessment",
+    "category": "Machine Learning",
+    "topics": [
+      "Active Learning",
+      "Metamodeling",
+      "Air Traffic Management"
+    ],
+    "keywords": [
+      "Air traffic management",
+      "Simulation metamodelling",
+      "Active learning",
+      "Gaussian processes",
+      "Machine learning",
+      "SHAP values"
+    ],
+    "abstract": "The use of Air traffic management (ATM) simulators for planing and operations can be challenging due to their modelling complexity. This paper presents XALM (eXplainable Active Learning Metamodel), a three-step framework integrating active learning and SHAP (SHapley Additive exPlanations) values into simulation metamodels for supporting ATM decision-making. XALM efficiently uncovers hidden relationships among input and output variables in ATM simulators, which are usually of interest in policy analysis. Our experiments show that XALM s predictive performance is comparable to that of the XGBoost metamodel with fewer simulations. Additionally, XALM exhibits superior explanatory capabilities compared to non-active learning metamodels. Using the  Mercury  (flight and passenger) ATM simulator, XALM is applied to a real- world scenario in Paris Charles de Gaulle airport, extending an arrival manager s range and scope by analysing six variables. This case study illustrates the effectiveness of the proposed framework in enhancing simulation interpretability and understanding variable interactions. By addressing computational challenges and improving explainability, it complements traditional simulation-based analyses. Lastly, we discuss two practical approaches for reducing the computational burden of the metamodelling further: we introduce a stopping criterion for active learning based on the inherent uncertainty of the metamodel, and we show how the simulations used for the metamodel can be reused across key performance indicators, thus decreasing the overall number of simulations needed.",
+    "methodology": "The paper proposes XALM, a three-step framework integrating active learning, Gaussian processes (GPs), and SHAP values for simulation metamodeling. The methodology involves: 1) Active learning to select informative data points efficiently, 2) Gaussian processes for metamodeling to approximate simulator outputs, and 3) SHAP values for explainability to interpret the relationships between input and output variables.",
+    "conclusion": "XALM demonstrates comparable predictive performance to XGBoost with fewer simulations and superior explanatory capabilities. The framework effectively enhances simulation interpretability and understanding of variable interactions in ATM systems. Practical approaches like stopping criteria based on metamodel uncertainty and reusing simulations across KPIs further reduce computational burden.",
+    "authors": [
+      "Christoffer Riis",
+      "Francisco Antunes",
+      "Tatjana Bolić",
+      "Gérald Gurtner",
+      "Andrew Cook",
+      "Carlos Lima Azevedo",
+      "Francisco Câmara Pereira"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104788",
+    "bibtex_citation": "Riis_XALM_2024",
+    "analysis": {
+      "Overview": "The paper introduces XALM, a framework combining active learning, metamodeling, and explainability techniques to address computational and interpretability challenges in ATM simulation-based analyses. It demonstrates the framework's effectiveness through a case study using the Mercury simulator.",
+      "Background_and_Motivation": [
+        "ATM systems are complex, involving multiple stakeholders, variables, and uncertainties. Traditional simulation-based analyses face challenges in computational cost and interpretability.",
+        "The research aims to improve the efficiency and transparency of ATM performance assessment by developing a metamodeling framework that reduces computational burden and enhances explainability.",
+        "The authors argue that existing simulation methodologies often fail to explore the entire input space, limiting insights. XALM addresses this by efficiently uncovering hidden relationships in simulator outputs.",
+        "The paper connects the specific problem of ATM performance assessment to broader challenges in simulation-based decision-making, emphasizing the need for interpretable and computationally efficient methods.",
+        "The work contributes to interdisciplinary fields including machine learning, transportation research, and air traffic management."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Active Learning: A method to select the most informative data points for training the metamodel, reducing computational cost.",
+        "Gaussian Processes: Used as the metamodel to approximate simulator outputs, providing uncertainty estimates.",
+        "SHAP Values: Provide explainability by quantifying the contribution of each input variable to the output.",
+        "The logical relationship involves using active learning to train a GP metamodel, which is then interpreted using SHAP values.",
+        "Key assumptions include the simulator being treated as a black-box and the GP's ability to approximate the simulator's behavior.",
+        "The paper contributes a novel framework that integrates active learning and explainability into metamodeling, advancing the field of simulation-based performance assessment."
+      ],
+      "Methodology": [
+        "The core methods include active learning with uncertainty sampling, Gaussian processes for metamodeling, and SHAP values for explainability.",
+        "The novelty lies in the integration of these methods into a unified framework. The applicability is demonstrated through an ATM case study, and the rationality is supported by comparative experiments.",
+        "Data is generated using the Mercury simulator, with inputs and outputs preprocessed and standardized. The representativeness is ensured by covering practical ranges of input variables.",
+        "Experimental design includes benchmarking against XGBoost and passive learning, with metrics like RMSE and Pearson correlation. Evaluation metrics are rigorous and appropriate.",
+        "The research follows a Bayesian inference paradigm through the use of GPs, which influences the uncertainty-aware approach to metamodeling."
+      ],
+      "Results": [
+        "XALM achieves predictive performance comparable to XGBoost with fewer simulations. Active learning outperforms passive learning in most cases.",
+        "Results are significant as they demonstrate efficiency and explainability. Reliability is supported by repeated experiments, and stability is shown through consistent performance across KPIs."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure starts with the problem statement, followed by the proposed solution (XALM), and validation through experiments.",
+        "Key steps include: 1) Problem identification, 2) Framework design, 3) Experimental validation, and 4) Practical applications.",
+        "Strengths include clear methodology and robust experiments. Weaknesses include potential limitations in GP scalability. The authors address rebuttals by discussing computational efficiency and practical workarounds."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Integration of active learning and explainability, demonstrated efficiency, and practical applicability.",
+        "Limitations: GP scalability with large datasets, and dependence on the quality of the initial simulations.",
+        "The choice of GP as the theoretical paradigm may limit the framework's applicability to high-dimensional problems due to computational constraints."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on simulation metamodeling and explainable AI in transportation research.",
+        "Terminology includes technical terms like 'active learning' and 'SHAP values,' with a formal tone. Rhetorical strategies include comparative analysis and case study demonstration.",
+        "Authority is built through citations to foundational works in active learning, GPs, and SHAP values, establishing the framework's theoretical grounding."
+      ],
+      "Conclusions_and_Implications": [
+        "XALM effectively addresses computational and interpretability challenges in ATM simulation-based analyses.",
+        "Future research could explore scalability improvements and applications to other domains. Suggestions include integrating more advanced active learning strategies and multi-objective optimization."
+      ]
+    }
+  }
+}

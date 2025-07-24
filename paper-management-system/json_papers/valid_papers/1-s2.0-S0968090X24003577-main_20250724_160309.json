@@ -1,0 +1,82 @@
+{
+  "file_name": "1-s2.0-S0968090X24003577-main.pdf",
+  "generated_at": "2025-07-24 16:03:09",
+  "structured_info": {
+    "title_cn": "仅从检测间隔时间估计探测车辆渗透率的贝叶斯推断",
+    "title_en": "Bayesian inference for estimating the penetration rate of probe vehicles from interdetection times only",
+    "category": "Transportation Research",
+    "topics": [
+      "Traffic Flow Estimation",
+      "Bayesian Inference",
+      "Probe Vehicle Data"
+    ],
+    "keywords": [
+      "Penetration rate estimation",
+      "Detection rate estimation",
+      "Approximate Bayesian computation",
+      "Change-point detection",
+      "Traffic flow estimation",
+      "Interdetection times",
+      "Miscounting sensors"
+    ],
+    "abstract": "Data provided by floating vehicles have the same limitation as that provided by an imperfect stationary detector that undercounts vehicles: they provide data from an unknown proportion of the total flow. Since the knowledge of this proportion is critical for some applications, its value is usually estimated by complementing with data provided by other monitoring infrastructure. However, this type of infrastructure is not the norm in many cities, particularly in developing countries. This paper extends a previously proposed method to estimate this penetration solely from a series of inter-detection times. The improved method is based on Bayesian inference and supports a series of passage times coming from multilane infrastructure, albeit still requiring an uninterrupted traffic regime. The method was applied to actual RFID interdetection times from a four-lane weaving urban freeway segment in Santiago, Chile. The resulting estimated rates are consistent with those reported by the freeway operator, showing the method s capabilities.",
+    "methodology": "Bayesian inference, Approximate Bayesian computation, Change-point detection",
+    "conclusion": "The method proposed is key in taking full advantage of the data provided by technology already in place in many cities, such as Bluetooth WiFi scanners and or RFID transponders. Unlike other studies found in the literature that use the total number of vehicles passing at some locations, the method only uses information regarding the time elapsed between consecutive detections. This is a distinguishing and essential feature of the method since most places   particularly in developing countries   are insufficiently (or not-at-all) equipped with stationary traffic sensors.",
+    "authors": [
+      "Rafael Delpiano",
+      "Juan Carlos Herrera"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104836",
+    "bibtex_citation": "Delpiano_Bayesian_2024",
+    "analysis": {
+      "Overview": "The paper proposes a Bayesian inference method to estimate the penetration rate of probe vehicles using only inter-detection times, addressing the challenge of unknown vehicle detection proportions in traffic monitoring.",
+      "Background_and_Motivation": [
+        "Traffic monitoring systems often rely on imperfect detectors that undercount vehicles, leading to incomplete data.",
+        "The research aims to estimate the penetration rate without requiring additional fixed sensors, which are often unavailable in developing countries.",
+        "The authors highlight the necessity of accurate penetration rate estimation for applications like traffic flow and density estimation.",
+        "The problem is framed within the broader challenge of leveraging existing low-cost technologies (e.g., RFID, Bluetooth) for traffic monitoring.",
+        "The paper contributes to transportation engineering, specifically in traffic flow estimation and probe vehicle data analysis."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Penetration rate (p): The proportion of detected vehicles.",
+        "Inter-detection times (Sj): Time intervals between consecutive vehicle detections.",
+        "Headway distribution: The distribution of time intervals between consecutive vehicles.",
+        "The method uses Bayesian inference to relate inter-detection times to headway distributions and penetration rates.",
+        "Key assumptions include independent vehicle detections and near-stationary traffic conditions.",
+        "The paper contributes a novel method for penetration rate estimation using only inter-detection times, advancing the field of traffic monitoring."
+      ],
+      "Methodology": [
+        "The method involves identifying near-stationary traffic states, estimating penetration rates using Bayesian inference, and validating results with actual RFID data.",
+        "The novelty lies in using only inter-detection times, making the method applicable where fixed sensors are unavailable.",
+        "Data comes from RFID detections on a Chilean freeway, preprocessed to exclude non-stationary periods.",
+        "Experimental design includes change-point detection to ensure stationary traffic conditions and uses Kolmogorov-Smirnov tests for validation.",
+        "The research follows a Bayesian statistical paradigm, focusing on probabilistic inference and simulation-based validation."
+      ],
+      "Results": [
+        "The method estimated penetration rates consistent with operator-reported values, with an average of 0.817.",
+        "Results are reliable under near-stationary conditions but degrade with lower penetration rates (<0.4-0.6)."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument begins with the problem of undercounting vehicles and the need for penetration rate estimation.",
+        "Key steps include deriving inter-detection times from headway distributions and using Bayesian inference to estimate parameters.",
+        "Strengths include the method's applicability in resource-limited settings; weaknesses include sensitivity to traffic conditions and penetration rates."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: No need for additional sensors, applicable in developing countries, validated with real data.",
+        "Limitations: Requires near-stationary traffic, performance degrades with low penetration rates, assumes independent detections.",
+        "The Bayesian framework constrains conclusions to probabilistic estimates rather than deterministic values."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within traffic monitoring literature, emphasizing practical applicability.",
+        "Terminology includes technical terms like 'penetration rate' and 'inter-detection times,' with a formal tone.",
+        "Citations build authority by referencing prior work in traffic flow estimation and Bayesian methods."
+      ],
+      "Conclusions_and_Implications": [
+        "The method successfully estimates penetration rates using only inter-detection times, validated with real-world data.",
+        "Future work could explore interrupted traffic conditions and extend the method to other transportation modes."
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "file_name": "Optimal_Deployment_of_Connected_and_Autonomous_Vehicle_Dedicated_Lanes_A_Trade-Off_Between_Safety_and_Efficiency.pdf",
+  "generated_at": "2025-07-24 17:17:59",
+  "structured_info": {
+    "title_cn": "连接和自动驾驶车辆专用车道的最优部署：安全与效率之间的权衡",
+    "title_en": "Optimal Deployment of Connected and Autonomous Vehicle Dedicated Lanes: A Trade-Off Between Safety and Efficiency",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Connected and Autonomous Vehicles",
+      "Traffic Safety",
+      "Traffic Efficiency"
+    ],
+    "keywords": [
+      "CAV-dedicated lanes",
+      "mixed traffic analysis",
+      "collision risk estimation",
+      "safety-efficiency trade-off",
+      "bi-level programming"
+    ],
+    "abstract": "The dedicated lanes management policy is a possible solution to the issues arising from the coexistence of human-driving vehicles (HDVs) and connected and autonomous vehicles (CAVs) in traffic. Although numerous studies have been conducted on the network deployment problem of CAV-dedicated lanes, the safety implications of CAV and its dedicated lanes are ignored. This study proposes a mathematical approach to optimize the deployment of CAV-dedicated lanes incorporating efficiency and safety concerns. An integrated framework is developed based on headway distributions to systematically evaluate the efficiency and safety performance of the road network. The platoon intensity index is utilized to model the platooning effect of CAVs on traffic safety and efficiency. A safety performance estimation method is proposed to account for the potential collision risk of mixed traffic flow and heterogeneity in car-following behavior. A bi-level programming model is adopted to solve the optimal deployment problem. The upper-level model is formulated as a bi-objective model to minimize the total travel time and the safety risk. The lower-level model describes the multi-class user equilibrium state of the CAV-HDV mixed traffic flow on the network. A genetic algorithm is utilized to solve the bi-level programming model and obtain the Pareto-optimal solution set. Two numerical studies are conducted to validate the proposed model and algorithm.",
+    "methodology": "The study employs a bi-level programming model. The upper-level model minimizes total travel time and safety risk, while the lower-level model describes the multi-class user equilibrium state of mixed traffic flow. A genetic algorithm is used to solve the bi-level model.",
+    "conclusion": "The optimal deployment plan can significantly improve road network safety and efficiency. Higher platoon intensities negatively impact traffic safety and efficiency under certain headway settings. A trade-off between efficiency and safety exists in the optimal deployment problem, aiding decision-makers in choosing optimal plans based on road network design needs.",
+    "authors": [
+      "Cheng Hu",
+      "Chunyang Han",
+      "Amjad Pervez",
+      "Jingjing Hao",
+      "Guangming Xu",
+      "Jinjun Tang",
+      "Helai Huang"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2024.3404923",
+    "bibtex_citation": "Hu_Optimal_2024",
+    "analysis": {
+      "Overview": "The paper addresses the optimal deployment of CAV-dedicated lanes, considering both safety and efficiency in mixed traffic environments. It proposes a bi-level programming model and validates it through numerical studies.",
+      "Background_and_Motivation": [
+        "The coexistence of HDVs and CAVs in traffic systems presents challenges in efficiency and safety.",
+        "The study aims to optimize CAV-dedicated lane deployment to improve traffic flow and reduce collision risks.",
+        "The authors highlight the necessity of considering both safety and efficiency, as existing studies often overlook safety implications.",
+        "The research bridges the gap between specific deployment problems and broader traffic management challenges.",
+        "The paper contributes to transportation engineering and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include CAV-dedicated lanes, mixed traffic analysis, and safety-efficiency trade-off.",
+        "The logical relationship involves optimizing lane deployment to balance safety and efficiency.",
+        "Key assumptions include random headway distributions and homogeneous CAV behavior.",
+        "The paper innovates by integrating safety estimation into the deployment optimization framework."
+      ],
+      "Methodology": [
+        "The study uses a bi-level programming model with a genetic algorithm for optimization.",
+        "The methodology is novel in combining safety and efficiency objectives and is applicable to real-world traffic networks.",
+        "Data sources include traffic flow parameters and headway distributions, with preprocessing steps for equilibrium modeling.",
+        "Experimental design is rigorous, using numerical studies on two networks to validate the model.",
+        "The research follows a theoretical paradigm of traffic equilibrium and optimization."
+      ],
+      "Results": [
+        "Key results show that optimal deployment plans improve safety and efficiency, with trade-offs between the two objectives.",
+        "Results are reliable and stable, validated through extensive numerical studies."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first identifying the problem, then proposing a solution, and finally validating it.",
+        "Logical steps include problem formulation, model development, and experimental validation.",
+        "Strengths include comprehensive modeling and validation; weaknesses may include assumptions on headway distributions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the integration of safety and efficiency objectives and practical applicability.",
+        "Limitations include assumptions on headway distributions and the focus on longitudinal maneuvers only.",
+        "The theoretical paradigm may constrain conclusions by not accounting for lateral vehicle interactions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper contributes to the discourse on CAV deployment and traffic management.",
+        "Terminology is technical, with a formal tone and strategic use of citations to establish authority."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions highlight the trade-off between safety and efficiency in CAV-dedicated lane deployment.",
+        "Future research could explore lateral vehicle interactions and more realistic headway distributions."
+      ]
+    }
+  }
+}

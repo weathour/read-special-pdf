@@ -1,0 +1,79 @@
+{
+  "file_name": "Shared-phase-dedicated-lane-based-intersection-cont_2022_Transportation-Rese.pdf",
+  "generated_at": "2025-07-24 17:21:42",
+  "structured_info": {
+    "title_cn": "基于共享相位专用车道的混合交通交叉口控制",
+    "title_en": "Shared-phase-dedicated-lane based intersection control with mixed traffic of human-driven vehicles and connected and automated vehicles",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Traffic Control",
+      "Connected and Automated Vehicles",
+      "Intersection Management"
+    ],
+    "keywords": [
+      "Mixed traffic control",
+      "CAV-dedicated lane",
+      "Shared phase",
+      "Signal optimization",
+      "Trajectory planning"
+    ],
+    "abstract": "Connected and automated vehicles (CAVs) and human-driven vehicles (HVs) are expected to coexist in the near future. CAV-dedicated lanes and phases have been explored to handle the uncertainty in the driving behavior of HVs in the mixed traffic environment. However, CAV-dedicated phases could significantly sacrifice HV benefits. This study proposes a shared-phase-dedicated-lane (SPDL)-based traffic control model at an isolated intersection with CAV dedicated lanes in the mixed traffic environment. In the proposed model, left-turn and through CAVs share CAV-dedicated lanes and cross the intersection during the shared phases with HVs. A three-level optimization model is developed. At the upper level, a standard NEMA (National Electrical Manufacturers Association) ring barrier structure is used for the signal optimization and barrier durations are optimized by dynamic programming to minimize the total vehicle delay. At the middle level, phase sequences and phase durations are optimized by enumeration for the given barrier from the upper level and the minimum vehicle delay is fed to the upper level. At the lower level, CAV platooning in the buffer zone and trajectory planning in the passing zone are conducted based on the signal timings of the barrier from the middle level and the travel time of CAVs is fed to the middle level. A rolling-horizon scheme is designed for the dynamical implementation of the proposed model with time-varying traffic conditions. The proposed model is applicable to intersections with more than two lanes in each approach and without shared lanes by left-turn and through HVs, which are commonly seen critical intersections in urban traffic control. Numerical studies validate the advantages of the SPDL-based control over the blue-phase-based control in previous studies in terms of average vehicle delay and intersection capacity. Further, the SPDL-based model is extended to serve as an alternative approach without the buffer zone.",
+    "methodology": "A three-level optimization model is developed: 1) Upper level: Dynamic programming for barrier duration optimization; 2) Middle level: Enumeration for phase sequence and duration optimization; 3) Lower level: CAV platooning and trajectory planning.",
+    "conclusion": "The SPDL-based control model significantly reduces vehicle delay and improves intersection capacity compared to BP-based control, particularly benefiting HVs by avoiding dedicated CAV phases. The model is effective under various traffic conditions and CAV penetration rates.",
+    "authors": [
+      "Wanjing Ma",
+      "Jinjue Li",
+      "Chunhui Yu"
+    ],
+    "publication_year": "2022",
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "doi": "10.1016/j.trc.2021.103509",
+    "bibtex_citation": "Ma_Shared-phase-dedicated-lane_2022",
+    "analysis": {
+      "Overview": "The paper proposes a novel traffic control model for intersections with mixed human-driven and connected automated vehicles, focusing on shared phases and dedicated lanes to optimize traffic flow and reduce delays.",
+      "Background_and_Motivation": [
+        "Urban traffic congestion predominantly occurs at intersections, leading to environmental and travel delay issues.",
+        "The study addresses the challenge of managing mixed traffic environments where CAVs and HVs coexist, focusing on reducing uncertainties in HV behavior and improving traffic efficiency.",
+        "The authors highlight the inefficiency of CAV-dedicated phases, which sacrifice HV benefits, motivating the need for shared-phase solutions.",
+        "The research bridges the gap between traditional signal control and future CAV technologies, emphasizing practical applicability in urban settings.",
+        "The paper contributes to transportation engineering, specifically in traffic control systems and intelligent transportation systems (ITS)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Shared-phase-dedicated-lane (SPDL): Combines dedicated lanes for CAVs with shared phases for both CAVs and HVs.",
+        "Three-level optimization model: Integrates signal timing, phase sequencing, and CAV trajectory planning.",
+        "Assumes predictable CAV behavior and detectable HV queues, focusing on platooning and trajectory optimization.",
+        "The paper provides a methodological innovation by combining traditional signal control with CAV-specific optimizations, enhancing both theoretical and practical knowledge in traffic management."
+      ],
+      "Methodology": [
+        "Upper level uses dynamic programming for barrier duration optimization; middle level employs enumeration for phase sequencing; lower level focuses on CAV platooning and trajectory planning.",
+        "The methodology is novel in its hierarchical approach and integration of real-time traffic data via V2I communication.",
+        "Data includes predicted HV arrival rates and precise CAV trajectories, with preprocessing for platoon formation and trajectory smoothing.",
+        "Experimental design is rigorous, using VISSIM simulations with varied traffic demands and CAV penetration rates.",
+        "The research follows a control theory paradigm, optimizing for minimal delay and maximum throughput."
+      ],
+      "Results": [
+        "SPDL-based control improves throughput by 2-6% for HVs and reduces HV delay by up to 60% compared to BP-based control.",
+        "Results are consistent across uniform and Poisson arrival distributions, demonstrating robustness."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around the inefficiency of dedicated CAV phases and the benefits of shared phases.",
+        "Key steps include: problem formulation, three-level optimization, and validation via simulation.",
+        "Strengths include comprehensive simulation validation; weaknesses include assumptions about perfect CAV communication and behavior."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Significant delay reduction for HVs, improved capacity, and applicability to common urban intersections.",
+        "Limitations: Assumes perfect CAV behavior and communication; buffer zone requirement may limit practicality.",
+        "Theoretical constraints include reliance on deterministic CAV trajectories, which may not fully capture real-world variability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on mixed traffic control, contrasting with prior work on dedicated CAV phases.",
+        "Uses technical terminology and a formal tone, building authority through extensive citations and simulation results.",
+        "Citations are used to justify the research gap and validate methodological choices."
+      ],
+      "Conclusions_and_Implications": [
+        "SPDL-based control effectively balances CAV and HV benefits, reducing delays and improving capacity.",
+        "Future research could explore real-world implementation challenges and adaptive control under varying penetration rates."
+      ]
+    }
+  }
+}

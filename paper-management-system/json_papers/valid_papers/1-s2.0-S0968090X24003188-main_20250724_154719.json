@@ -1,0 +1,78 @@
+{
+  "file_name": "1-s2.0-S0968090X24003188-main.pdf",
+  "generated_at": "2025-07-24 15:47:19",
+  "structured_info": {
+    "title_cn": "自动驾驶车辆中人工智能安全风险的定性评估",
+    "title_en": "A qualitative AI security risk assessment of autonomous vehicles",
+    "category": "Transportation Research",
+    "topics": [
+      "AI Security",
+      "Autonomous Vehicles",
+      "Threat Modeling"
+    ],
+    "keywords": [
+      "AI security",
+      "Autonomous vehicles",
+      "Security risks",
+      "Adversarial attacks",
+      "Threat modeling"
+    ],
+    "abstract": "This paper systematically analyzes the security risks associated with artificial intelligence (AI) components in autonomous vehicles (AVs). Given the increasing reliance on AI for various AV functions, from perception to control, the potential for security breaches presents a significant challenge. We focus on AI security, including attacks like adversarial examples, backdoors, privacy breaches and unauthorized model replication, reviewing over 170 papers. To evaluate the practical implications of such vulnerabilities we introduce qualitative measures for assessing the exposure and severity of potential attacks. Our findings highlight a critical need for more realistic security evaluations and a balanced focus on various sensors, learning paradigms, threat models, and studied attacks. We also pinpoint areas requiring more research, such as the study of training time attacks, transferability, system-based studies and development of effective defenses. By also outlining implications for the automotive industry and policymakers, we not only advance the understanding of AI security risks in AVs, but contribute to the development of safer and more reliable autonomous driving technologies.",
+    "methodology": "The paper introduces qualitative measures for assessing the exposure and severity of potential attacks on AI components in AVs. It reviews over 170 papers, categorizing attacks by type (e.g., adversarial examples, backdoors) and evaluating their practical implications through proposed metrics for exposure (attack surface) and severity (resources needed to exploit the attack).",
+    "conclusion": "The study highlights a critical need for more realistic security evaluations in AVs, emphasizing the importance of diverse sensors, learning paradigms, and threat models. It identifies gaps in current research, such as training time attacks and transferability studies, and calls for more system-based evaluations and effective defenses. The findings have significant implications for the automotive industry and policymakers to enhance AV safety and reliability.",
+    "authors": [
+      "Kathrin Grosse",
+      "Alexandre Alahi"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104797",
+    "bibtex_citation": "Grosse_Alahi_qualitative_2024",
+    "analysis": {
+      "Overview": "The paper systematically reviews AI security risks in autonomous vehicles, focusing on vulnerabilities in perception, prediction, planning, and control systems. It proposes qualitative metrics to assess attack exposure and severity, providing a comprehensive analysis of over 170 studies.",
+      "Background_and_Motivation": [
+        "The research addresses the growing reliance on AI in AVs and the potential security breaches that could compromise safety.",
+        "Motivated by the lack of systematic risk assessments, the study aims to identify and evaluate AI-specific vulnerabilities in AVs.",
+        "The authors argue for the urgency of addressing AI security in AVs due to their increasing deployment and the potential for catastrophic failures.",
+        "The study connects specific AI vulnerabilities to broader challenges in AV safety and reliability, emphasizing their significance in real-world applications.",
+        "This research contributes to interdisciplinary fields including cybersecurity, AI, and transportation engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include AI security risks, exposure (attack surface), and severity (resources needed for exploitation).",
+        "The logical relationship between these concepts forms the basis for the proposed qualitative risk assessment framework.",
+        "Key assumptions include the feasibility of attacks in real-world settings and the generalizability of findings across different AV systems.",
+        "The paper contributes to the knowledge system by introducing a structured approach to evaluating AI security risks in AVs."
+      ],
+      "Methodology": [
+        "The core methods include a systematic literature review and qualitative analysis of attack exposure and severity.",
+        "The novelty lies in the proposed metrics for exposure and severity, which are tailored to AV-specific contexts.",
+        "Data sources include over 170 academic papers, with preprocessing steps focusing on categorizing attacks and their impacts.",
+        "The experimental design is rigorous, with clear criteria for evaluating attack feasibility and impact.",
+        "The research follows a cybersecurity and AI safety paradigm, influencing its focus on threat modeling and risk assessment."
+      ],
+      "Results": [
+        "Key findings include the identification of prevalent attack types (e.g., adversarial examples, backdoors) and their impacts on AV systems.",
+        "The results are significant for understanding AV vulnerabilities, with reliability and stability supported by extensive literature review."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around the identification of AI security risks, their evaluation, and implications for AV safety.",
+        "Key steps include threat modeling, attack categorization, and qualitative assessment using proposed metrics.",
+        "Strengths include comprehensive coverage of attacks; weaknesses include limited real-world validation of some findings."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive review, innovative qualitative metrics, practical implications for industry and policymakers.",
+        "Limitations: Qualitative nature may lack quantitative precision; some attack scenarios are not empirically validated.",
+        "Theoretical constraints include assumptions about attack feasibility and generalizability across AV systems."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on AI safety and cybersecurity in transportation.",
+        "Terminology and tone are technical, aimed at researchers and practitioners in AI and automotive fields.",
+        "Citations build authority by referencing foundational and recent works in AI security and AV technologies."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions emphasize the need for realistic security evaluations and diverse research focus in AV AI security.",
+        "Future research should address training time attacks, transferability, and system-based studies to enhance AV safety."
+      ]
+    }
+  }
+}

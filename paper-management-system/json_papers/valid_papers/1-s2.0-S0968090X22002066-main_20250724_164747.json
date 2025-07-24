@@ -1,0 +1,72 @@
+{
+  "file_name": "1-s2.0-S0968090X22002066-main.pdf",
+  "generated_at": "2025-07-24 16:47:47",
+  "structured_info": {
+    "title_cn": "考虑人类驾驶不确定性的CAV车道与人工驾驶车辆车道合并管理",
+    "title_en": "Managing merging from a CAV lane to a human-driven vehicle lane considering the uncertainty of human driving",
+    "category": "Transportation Research",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Traffic Flow Optimization",
+      "Merging Control"
+    ],
+    "keywords": [
+      "CAV",
+      "Human-driven vehicles",
+      "Merging bottleneck",
+      "Fuel economy",
+      "Traffic efficiency"
+    ],
+    "abstract": "This paper proposes a control strategy for a freeway merging bottleneck consisting of a Connected and Automated Vehicle (CAV) exclusive lane and a human-driven vehicle (HDV) lane, aiming to achieve fuel economy and increase traffic efficiency. The trajectories of CAVs are optimized to enable them to smoothly merge into the gaps in the HDV lane. We utilize a stochastic car-following model to incorporate the uncertainty of HDVs and adopt the concept of α-percentile trajectory proposed in our earlier work (Xiong and Jiang, 2021) to estimate the trajectories of HDVs. Based on these, an optimization model is constructed to optimize the merging sequence and the merging trajectories of CAVs simultaneously. We use dynamic programming to solve the optimization model. Dividing RECTangles algorithm and Hamiltonian analysis are imbedded as a subroutine to obtain the energy efficient merging trajectory of each CAV. Simulation results show that the proposed control strategy is capable of reducing average fuel consumption and travel time under a wide range of inflow rates. The benefits depend on the inflow rate and the trajectory percentile α. When the total inflow rate is low, the impact of α is insignificant. If the total inflow rate increases to a high level, the impact of α becomes remarkable and the maximum benefits would be achieved at an intermediate range of α. Moreover, the computation efficiency of the proposed system is fast enough and can be implemented in real-time in the near future.",
+    "methodology": "The paper proposes a control strategy using a stochastic car-following model to incorporate the uncertainty of HDVs. It employs the concept of α-percentile trajectory to estimate HDV trajectories and constructs an optimization model to optimize the merging sequence and trajectories of CAVs. Dynamic programming, Dividing RECTangles algorithm, and Hamiltonian analysis are used for solving the optimization model.",
+    "conclusion": "The proposed control strategy effectively reduces average fuel consumption and travel time under various inflow rates. The benefits are most significant at intermediate values of α and higher inflow rates. The system's computational efficiency is sufficient for real-time implementation.",
+    "authors": [
+      "Bang-Kai Xiong",
+      "Rui Jiang",
+      "Xiaopeng Li"
+    ],
+    "publication_year": "2022",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2022.103775",
+    "bibtex_citation": "Xiong_Managing_2022",
+    "analysis": {
+      "Overview": "The paper addresses the challenge of managing merging maneuvers from a CAV-exclusive lane to an HDV lane, considering the uncertainty in human driving behavior. It proposes a control strategy to optimize CAV trajectories for fuel economy and traffic efficiency.",
+      "Background_and_Motivation": [
+        "The transportation sector is a significant contributor to greenhouse gas emissions and fuel consumption.",
+        "CAVs offer potential solutions to improve traffic efficiency and reduce fuel consumption, especially at merging bottlenecks.",
+        "The paper highlights the necessity of addressing the uncertainty in human driving behavior for effective merging control.",
+        "The research contributes to the field of transportation engineering, specifically in traffic flow optimization and CAV technologies."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "α-percentile trajectory: A concept to estimate HDV trajectories considering stochasticity.",
+        "Stochastic car-following model: Incorporates uncertainty in HDV behavior.",
+        "The paper innovates by integrating trajectory optimization with dynamic programming and Hamiltonian analysis for real-time application."
+      ],
+      "Methodology": [
+        "Uses a stochastic car-following model for HDVs and deterministic IDM for CAVs.",
+        "Dynamic programming optimizes merging sequences, while DIRECT and Hamiltonian analysis optimize trajectories.",
+        "Simulations validate the method under various traffic conditions."
+      ],
+      "Results": [
+        "The strategy reduces fuel consumption and travel time, with benefits varying by inflow rate and α value.",
+        "Results are reliable and show consistent improvements under tested conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The paper logically progresses from problem identification to solution proposal and validation.",
+        "Key steps include modeling HDV uncertainty, optimizing CAV trajectories, and validating through simulations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the novel integration of stochastic modeling with trajectory optimization.",
+        "Limitations involve assumptions like no interference from merging vehicles on HDV trajectories and deterministic CAV behavior."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within ongoing discourse on CAV integration and traffic flow optimization.",
+        "Uses technical terminology and cites relevant literature to establish authority."
+      ],
+      "Conclusions_and_Implications": [
+        "The control strategy effectively improves traffic performance under various conditions.",
+        "Future work could explore adaptive α values, multi-objective optimization, and multilane merging scenarios."
+      ]
+    }
+  }
+}

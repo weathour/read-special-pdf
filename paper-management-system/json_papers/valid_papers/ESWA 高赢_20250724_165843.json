@@ -1,0 +1,83 @@
+{
+  "file_name": "ESWA 高赢.pdf",
+  "generated_at": "2025-07-24 16:58:43",
+  "structured_info": {
+    "title_cn": "基于信息物理系统视角的联网自动驾驶车辆专用车道优化仿真平台开发",
+    "title_en": "Development of a cyber-physical-system perspective based simulation platform for optimizing connected automated vehicles dedicated lanes",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Connected Automated Vehicles",
+      "Dedicated Lanes",
+      "Traffic Simulation"
+    ],
+    "keywords": [
+      "Simulation platform",
+      "Connected automated vehicle (CAV)",
+      "Dedicated lane (DL)",
+      "Flow-density diagram",
+      "Market penetration rate (MPR)"
+    ],
+    "abstract": "Recently, many studies have shown that during the transition period of the coexistence of autonomous vehicles (AVs) connected automated vehicles (CAVs) and human-driven vehicles (HDVs), a dedicated lane (DL) for AVs/CAVs can improve traffic throughput and lower collision risk, which has become a hot topic in the field of intelligent transportation systems (ITS). This study presents an integrated simulation platform for DL optimization from cyber-physical-system (CPS) perspective. The developed simulation platform can be used to qualitatively and quantitatively evaluate the design parameters, operation modes, contingency plan, etc. of DL in a 'What You See Is What You Get' (Wysiwyg) style. First, we introduce the architecture and features of the proposed platform, which comprises of SUMO, OMNeT++, and Unity3D. We implemented all experimental scripts for DL optimization in SUMO, including the configuration of the DLs, car-following models, lane-changing models, vehicle departure models, origin destination demands, and 2D visualization of traffic flow simulation. We used OMNeT++ for vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communication. Unity3D is a 3D visualization platform for simulations synchronized with SUMO. Connected with the driving simulator and paired with a virtual reality (VR) helmet, Unity3D can offer a high-fidelity immersive environment for all types of users. We developed a specific communication protocol to achieve data sharing and synchronization of all components of the proposed simulation platform. Second, this paper depicts the functions of the proposed simulation platform in detail, including the modeling of road networks, vehicles, traffic flow, optimal design, and evaluation indicators of DL. Finally, by using the developed simulation platform, we demonstrated and analyzed three cases: (1) without DL vs with DL, (2) inner lane vs outer lane, and (3) without V2I vs with V2I. The experimental results confirm the feasibility of the developed simulation platform, and yield some interesting findings, such as (1) market penetration rates (MPRs) are an important factor in deciding whether to deploy DLs, (2) the number of lane changes when the vehicle enters/leaves the designated lane is the key criterion for determining the placement of the DLs, and (3) the cooperative vehicle-infrastructure system can offer AVs/CAVs with better over-the-horizon perception capabilities, helping to improve the smoothness of traffic flow in the case of abnormal events. The developed simulation platform is expected to offer a new tool for optimal design and evaluation of DLs for AVs/CAvs.",
+    "methodology": "The study presents an integrated simulation platform combining SUMO, OMNeT++, and Unity3D for DL optimization from a CPS perspective. The platform includes traffic flow modeling, vehicle dynamics, V2X communication, and 3D visualization. Case studies were conducted to validate the platform's functionality.",
+    "conclusion": "The simulation platform effectively evaluates DL optimization for CAVs, showing that MPRs are crucial for DL deployment, lane change frequency affects DL placement, and V2I communication enhances traffic flow smoothness during abnormal events.",
+    "authors": [
+      "Xiangmo Zhao",
+      "Ying Gao",
+      "Shaojie Jin",
+      "Zhigang Xu",
+      "Zhiguang Liu",
+      "Wei Fan",
+      "Peng Liu"
+    ],
+    "publication_year": "2023",
+    "venue": "Expert Systems With Applications",
+    "doi": "10.1016/j.eswa.2022.118972",
+    "bibtex_citation": "Zhao_Development_2023",
+    "analysis": {
+      "Overview": "The paper presents a simulation platform for optimizing dedicated lanes for connected automated vehicles (CAVs) using a cyber-physical-system (CPS) approach. The platform integrates SUMO, OMNeT++, and Unity3D to evaluate DL design parameters and traffic performance.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of mixed traffic with CAVs and human-driven vehicles (HDVs), focusing on improving traffic throughput and safety through dedicated lanes.",
+        "Motivated by the need for a realistic simulation tool to evaluate DL deployment, the study aims to provide a comprehensive platform for academia and industry.",
+        "The authors highlight the lack of existing tools that combine traffic simulation, communication, and 3D visualization for DL optimization.",
+        "The study connects specific DL optimization problems to broader ITS challenges, emphasizing the significance of CAV integration in transportation systems.",
+        "The paper contributes to intelligent transportation systems, vehicle automation, and traffic engineering."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include dedicated lanes (DLs), connected automated vehicles (CAVs), and market penetration rate (MPR).",
+        "The logical relationship involves DL deployment improving traffic flow based on CAV MPR and lane placement.",
+        "Assumptions include homogeneous traffic flow in dedicated lanes and strict adherence to lane-use rules by human drivers.",
+        "The paper contributes a novel simulation platform that integrates traffic dynamics, communication, and visualization for DL optimization."
+      ],
+      "Methodology": [
+        "The platform combines SUMO for traffic simulation, OMNeT++ for V2X communication, and Unity3D for 3D visualization.",
+        "The methodology is novel in its integration of multiple simulators and applicability to real-world DL deployment scenarios.",
+        "Data sources include simulated traffic flows based on Poisson distribution models, with preprocessing steps for real-time traffic generation.",
+        "Experimental design includes case studies on DL deployment, lane placement, and V2I communication, with evaluation metrics like flow-density diagrams and lane-change events.",
+        "The research follows a CPS paradigm, integrating physical and cyber components for comprehensive traffic simulation."
+      ],
+      "Results": [
+        "Key results show that DL deployment is beneficial at specific MPRs (e.g., 20% for one DL, 40% for two DLs).",
+        "Results are reliable, demonstrating consistent traffic flow improvements under optimal DL configurations."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the need for DLs, presents the simulation platform, and validates it through case studies.",
+        "Key steps include platform architecture description, data synchronization, and experimental validation.",
+        "Strengths include comprehensive integration of simulators; weaknesses include high communication loads in large-scale simulations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Integrated platform with 3D visualization, real-time traffic modeling, and V2X communication.",
+        "Limitations: High computational load and complexity in synchronizing multiple simulators.",
+        "The CPS paradigm constrains conclusions to scenarios where physical and cyber components are tightly coupled."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within ITS discourse by addressing gaps in DL simulation tools.",
+        "Terminology includes technical terms like MPR, V2X, and CPS, with a formal tone.",
+        "Citations build authority by referencing prior work on traffic simulation and CAV technologies."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions highlight the platform's feasibility for DL optimization and the importance of MPR in deployment decisions.",
+        "Future research should address computational efficiency and expand the platform's applicability to urban networks."
+      ]
+    }
+  }
+}

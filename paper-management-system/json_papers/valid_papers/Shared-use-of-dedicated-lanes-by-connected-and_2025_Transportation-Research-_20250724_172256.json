@@ -1,0 +1,78 @@
+{
+  "file_name": "Shared-use-of-dedicated-lanes-by-connected-and_2025_Transportation-Research-.pdf",
+  "generated_at": "2025-07-24 17:22:56",
+  "structured_info": {
+    "title_cn": "专用车道共享使用及多绿波信号控制方案：连接自动公交车与私家车的协同",
+    "title_en": "Shared use of dedicated lanes by connected and automated buses and private vehicles: A multi-green-wave signal control scheme",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Traffic Signal Control",
+      "Dedicated Lanes"
+    ],
+    "keywords": [
+      "CAV",
+      "Traffic Coordination",
+      "Green-wave Design",
+      "Mixed Traffic",
+      "Public Transit"
+    ],
+    "abstract": "In the initial phase of implementing connected and automated vehicle (CAV) technology, the coexistence of human-driven vehicles (HVs) and CAVs is anticipated for the foreseeable future. While dedicated CAV lane is recognized as an effective solution to enhance traffic safety and efficiency in mixed traffic scenarios, it faces the challenges of road resource wastage, especially at low CAV penetration rates. Therefore, this study proposes a novel concept of a shared CAV lane for both connected and automated buses (CABs) and private CAVs, and develops a multi-green-wave control method for arterials to achieve space time coordination in heterogeneous traffic. The two-dimensional traffic coordination aims to concurrently improve the service level of CABs and enhance overall traffic efficiency. A three-scale framework is established to integrate the control problems at the lane, intersection, and arterial levels. With the deployment of CAV lanes, lane-specified flow distribution control problem is investigated at the lane level, and a dedicated phase is designed to provide exclusive right-of-ways for CAVs, and jointed with an online conflict-free control strategy at the intersection level. Building upon this, a multiple green-wave design is developed for heterogeneous traffic at arterials, to take full exploit of the space time resources of both CAV lanes and regular lanes and further improve traffic efficiency. To address the challenges of large-scale and complicated-structure optimization and enable real-time implementation, a hierarchical solution method is proposed. The original problem is decomposed into sub-problems, which can be efficiently solved with an approximation approach to relax the bounding constraints among them. Simulation experiments conducted on an arterial in Singapore validate the performance of the proposed methods. The results demonstrate that the proposed two-dimensional coordination strategy significantly improves traffic efficiency compared to other classic counterpart strategies, reducing the average travel delay for CABs, private CAVs, and HVs by at least 20.4%, 37.4%, and 21.4%, respectively.",
+    "methodology": "The study employs a three-scale optimization framework integrating lane-level flow distribution, intersection-level conflict-free control, and arterial-level multi-green-wave design. A hierarchical solution method decomposes the problem into sub-problems solved using mixed-integer linear programming (MILP).",
+    "conclusion": "The proposed multi-green-wave control strategy significantly enhances traffic efficiency for CABs, private CAVs, and HVs, reducing delays by at least 20.4%, 37.4%, and 21.4% respectively. The hierarchical solution method enables real-time implementation of the complex optimization model.",
+    "authors": [
+      "Xiangdong Chen",
+      "Hao Guan",
+      "Qiang Meng"
+    ],
+    "publication_year": "2025",
+    "venue": "Transportation Research Part E",
+    "doi": "10.1016/j.tre.2025.103965",
+    "bibtex_citation": "Chen_Shared_2025",
+    "analysis": {
+      "Overview": "The paper proposes a novel traffic control strategy for mixed traffic environments with connected and automated vehicles (CAVs) and human-driven vehicles (HVs), focusing on shared use of dedicated lanes by buses and private CAVs with coordinated signal control.",
+      "Background_and_Motivation": [
+        "Addresses challenges in early CAV adoption phases where mixed traffic creates safety and efficiency concerns.",
+        "Aims to solve road resource wastage in dedicated CAV lanes at low penetration rates while maintaining transit priority.",
+        "Highlights the need for integrated spatial-temporal coordination in heterogeneous traffic management.",
+        "Bridges gaps between dedicated lane studies and transit signal priority research.",
+        "Contributes to transportation engineering, specifically intelligent transportation systems and traffic control optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Shared CAV Lane: Dedicated lane for both automated buses and private CAVs.",
+        "Multi-Green-Wave Design: Coordinated signal timing for heterogeneous traffic streams.",
+        "Three-Scale Framework: Integrates lane, intersection, and arterial level controls.",
+        "Assumes CAV technology enables precise vehicle control and communication.",
+        "Provides methodological innovations in traffic signal coordination for mixed CAV/HV environments."
+      ],
+      "Methodology": [
+        "Combines lane assignment optimization with conflict-free intersection control and arterial signal coordination.",
+        "Novel hierarchical decomposition approach handles large-scale optimization.",
+        "Uses real-world arterial network data from Singapore for validation.",
+        "Comprehensive simulation experiments with varied demand scenarios.",
+        "Follows traffic flow theory and optimization paradigms with CAV-specific adaptations."
+      ],
+      "Results": [
+        "Demonstrates 20.4-37.4% delay reduction across vehicle types.",
+        "Shows adaptive bandwidth allocation under different priority schemes.",
+        "Validates constraint handling for maximum CAV lane utilization."
+      ],
+      "Argumentation_and_Limitations": [
+        "Comprehensive framework from lane assignment to network coordination.",
+        "Clear logical progression from problem formulation to solution validation.",
+        "Addresses computational complexity through hierarchical decomposition.",
+        "Assumes perfect CAV communication and control capabilities.",
+        "Limited to arterial corridors; network-wide impacts not studied."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions work within CAV deployment and transit priority literature.",
+        "Uses technical transportation engineering terminology consistently.",
+        "Builds authority through extensive citations of foundational works."
+      ],
+      "Conclusions_and_Implications": [
+        "Proves effectiveness of integrated lane sharing and signal control.",
+        "Suggests extensions to network-wide coordination and dynamic demand scenarios."
+      ]
+    }
+  }
+}

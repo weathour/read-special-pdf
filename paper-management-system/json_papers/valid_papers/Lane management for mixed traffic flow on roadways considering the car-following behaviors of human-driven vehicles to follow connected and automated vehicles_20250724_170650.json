@@ -1,0 +1,80 @@
+{
+  "file_name": "Lane management for mixed traffic flow on roadways considering the car-following behaviors of human-driven vehicles to follow connected and automated vehicles.pdf",
+  "generated_at": "2025-07-24 17:06:50",
+  "structured_info": {
+    "title_cn": "考虑人类驾驶车辆跟随联网自动驾驶车辆行为的混合交通流车道管理",
+    "title_en": "Lane management for mixed traffic flow on roadways considering the car-following behaviors of human-driven vehicles to follow connected and automated vehicles",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Traffic Flow Management",
+      "Lane Management"
+    ],
+    "keywords": [
+      "Connected and automated vehicles",
+      "Behavior willingness",
+      "Dedicated lane",
+      "Mixed traffic flow"
+    ],
+    "abstract": "The widespread adoption of emerging connected and automated vehicles (CAVs) highlights the need for identifying the roadway capacity of mixed traffic flow with CAVs and human-driven vehicles (HDVs) for future traffic management. Previous studies focus on analyzing the impacts of CAV technologies on the mixed traffic capacity. However, research on how different car-following behaviors of HDVs to follow CAVs affect the mixed traffic capacity is still lacking. This study proposes an analytical formulation of the mixed traffic capacity based on the probability distributions of HDVs and CAVs and three types of behavior willingness (i.e., believer, neutral, and skeptic) of HDV-following-CAV in a mixed traffic environment. The sufficient conditions are derived for mixed traffic capacity to increase or decrease with the behavior willingness and CAV penetration rate. Based on that, an analytical lane management (LM) model is further proposed to determine the optimal number of CAV dedicated lanes (CDLs) and CAV non-dedicated lane (CNL) strategies that maximize the mixed traffic throughput, considering the mixed traffic demand, behavior willingness, and CAV penetration rate. The results from numerical experiments show that the proposed LM strategies can significantly improve mixed traffic throughputs by deploying optimal CDLs and CNL strategies, compared to one without the LM strategy. The mixed traffic throughputs improve and reduce as the trust willingness and skeptic willingness increase and decrease, respectively. Moreover, the increment in CAV penetration rate does not certainly correspond to the high mixed traffic throughputs. The behavior willingness and heterogeneous headways could be jointly considered to guarantee the positive influences of CAV penetration rate on the mixed traffic throughputs when implementing the LM strategy for the mixed traffic flow.",
+    "methodology": "The study proposes an analytical formulation for mixed traffic capacity based on probability distributions of HDVs and CAVs and three types of behavior willingness (believer, neutral, skeptic) of HDV-following-CAV. It further develops an analytical lane management (LM) model to determine the optimal number of CAV dedicated lanes (CDLs) and CAV non-dedicated lane (CNL) strategies to maximize mixed traffic throughput.",
+    "conclusion": "The proposed LM strategies significantly improve mixed traffic throughput by deploying optimal CDLs and CNL strategies. Mixed traffic throughput increases with trust willingness and decreases with skeptic willingness. High CAV penetration rates do not necessarily result in large mixed traffic throughputs, depending on behavior willingness and heterogeneous headways.",
+    "authors": [
+      "Yuan Zheng",
+      "Zhihong Yao",
+      "Yueru Xu",
+      "Xu Qu",
+      "Bin Ran"
+    ],
+    "publication_year": "2024",
+    "venue": "Physica A: Statistical Mechanics and its Applications",
+    "doi": "10.1016/j.physa.2024.129503",
+    "bibtex_citation": "Zheng_Lane_2024",
+    "analysis": {
+      "Overview": "The paper addresses the management of mixed traffic flow involving connected and automated vehicles (CAVs) and human-driven vehicles (HDVs) by proposing analytical models for traffic capacity and lane management strategies.",
+      "Background_and_Motivation": [
+        "The study is motivated by the increasing adoption of CAVs and their coexistence with HDVs, which necessitates new traffic management strategies.",
+        "It aims to address the gap in understanding how different car-following behaviors of HDVs following CAVs affect mixed traffic capacity.",
+        "The authors argue that existing studies focus on CAV technologies but overlook the behavioral aspects of HDV drivers, which are crucial for accurate capacity modeling.",
+        "The research is significant for improving traffic flow efficiency and safety in mixed traffic environments.",
+        "The paper contributes to transportation engineering, specifically in traffic flow theory and management."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include behavior willingness (believer, neutral, skeptic), mixed traffic capacity, and lane management strategies.",
+        "The logical relationship involves how behavior willingness affects headway distributions, which in turn influence traffic capacity and throughput.",
+        "Key assumptions include random mixing of vehicles and differentiated headways for different car-following scenarios.",
+        "The paper contributes by integrating behavioral aspects into traffic capacity models and proposing optimal lane management strategies."
+      ],
+      "Methodology": [
+        "The study uses probability theory to model mixed traffic capacity and formulates an optimization model for lane management.",
+        "The methodology is novel in incorporating behavior willingness and heterogeneous headways, providing a more realistic approximation of mixed traffic flow.",
+        "Data sources are not explicitly mentioned, but the study relies on theoretical headway values from existing literature.",
+        "Experimental design involves numerical analysis to evaluate the impact of various parameters on traffic throughput.",
+        "The research follows a theoretical paradigm in traffic flow modeling, focusing on macroscopic traffic equilibrium."
+      ],
+      "Results": [
+        "Numerical experiments show that optimal LM strategies improve traffic throughput by up to 23.1% compared to no LM strategy.",
+        "Results are reliable as they are derived from analytical models and validated through numerical analysis."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first identifying the research gap, then proposing models, and finally validating them through numerical experiments.",
+        "Key steps include deriving sufficient conditions for capacity changes, formulating throughput models, and optimizing lane management strategies.",
+        "Strengths include comprehensive modeling of behavior willingness; limitations include assumptions like random vehicle mixing."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Integration of behavioral aspects, analytical formulation, and practical implications for traffic management.",
+        "Limitations: Assumptions may not fully capture real-world complexities, such as dynamic lane-changing behaviors.",
+        "The theoretical focus may constrain the applicability of conclusions to real-world scenarios without empirical validation."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on CAV integration and traffic management, emphasizing behavioral aspects.",
+        "Terminology is technical, focusing on traffic flow theory and optimization.",
+        "Citations are used to establish the research gap and validate methodological choices."
+      ],
+      "Conclusions_and_Implications": [
+        "The study concludes that behavior willingness and heterogeneous headways are critical for effective lane management in mixed traffic.",
+        "Future research could explore dynamic headway distributions and empirical validation of the proposed models."
+      ]
+    }
+  }
+}

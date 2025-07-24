@@ -1,0 +1,81 @@
+{
+  "file_name": "Effects-of-assignments-of-dedicated-automated-vehicle-lanes-_2022_Accident-A.pdf",
+  "generated_at": "2025-07-24 17:00:08",
+  "structured_info": {
+    "title_cn": "专用自动驾驶车道分配及自动驾驶车辆队列间距对附近手动驾驶车辆驾驶员跟驰性能的影响",
+    "title_en": "Effects of assignments of dedicated automated vehicle lanes and inter-vehicle distances of automated vehicle platoons on car-following performance of nearby manual vehicle drivers",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Automated Vehicles",
+      "Traffic Safety",
+      "Human Factors"
+    ],
+    "keywords": [
+      "DAVL",
+      "AV platoons",
+      "Lane assignment",
+      "Inter-vehicle distance",
+      "Car-following performance"
+    ],
+    "abstract": "Deploying dedicated lanes for automated vehicles (AVs) can effectively alleviate the coordination issues between AVs and manual vehicles (MVs). However, AV platoons running on dedicated AV lanes (DAVLs) have a prominent collective behavior characteristic of small inter-vehicle distance. The nearby MV drivers' imitation of this characteristic may reduce their car-following time headway (THW). The researchers conducted a simulation experiment to investigate the influence of DAVL assignments, inter-vehicle distances of AV platoons and AV platoon speed on the car-following performance of nearby MV drivers. The data of mean THW, standard deviation of THW, standard deviation of lateral position, standard deviation of velocity, standard deviation of horizontal gaze position and mean saccadic peak velocity were collected from 36 participants. Statistical analysis results show that the three factors considerably affected the MV drivers' car-following performance. In particular, the MV drivers showed a worse car-following safety but a better driving stability when the left lane was dedicated to AVs than when the right lane was dedicated to AVs (Note the experiments were done in a drive-on-the-left environment.). With respect to the inter-vehicle distances of AV platoons, the MV drivers' car-following safety was poorer under the 4 m condition than that under the 10 and 18 m conditions. In addition, the MV drivers showed a poorer car-following safety and bore a larger mental workload when driving next to the AV platoons running at 110 km/h. This study may provide some suggestions for DAVLs. Assigning the right lane of a three-lane motorway as the DAVL may have a slighter negative impact on the nearby MV drivers in China. In terms of traffic management in DAVLs, the inter-vehicle distance of AV platoons can be reduced to 10 m, and the speed of AVs should not be higher than the design speed of adjacent MV lanes.",
+    "methodology": "Simulation experiment with a fixed-based driving simulator, involving 36 participants performing car-following tasks under various conditions of DAVL assignments, inter-vehicle distances, and AV platoon speeds. Data collected included mean THW, standard deviation of THW, standard deviation of lateral position, standard deviation of velocity, standard deviation of horizontal gaze position, and mean saccadic peak velocity.",
+    "conclusion": "The study found that assigning the right lane as the DAVL has a slighter negative impact on nearby MV drivers. The inter-vehicle distance of AV platoons can be reduced to 10 m without significantly deteriorating car-following safety. AV platoon speeds should not exceed the design speed of adjacent MV lanes to avoid increased mental workload and reduced safety for MV drivers.",
+    "authors": [
+      "Facheng Chen",
+      "Guangquan Lu",
+      "Haitian Tan",
+      "Miaomiao Liu",
+      "Hongfei Wan"
+    ],
+    "publication_year": "2022",
+    "venue": "Accident Analysis and Prevention",
+    "doi": "10.1016/j.aap.2022.106826",
+    "bibtex_citation": "Chen_Effects_2022",
+    "analysis": {
+      "Overview": "The paper investigates the impact of dedicated automated vehicle lanes (DAVLs) and AV platoon configurations on the car-following performance of nearby manual vehicle drivers. It uses a driving simulator to collect data on various performance metrics under different conditions.",
+      "Background_and_Motivation": [
+        "The research addresses the coordination challenges between AVs and MVs in mixed traffic conditions.",
+        "Motivated by the need to understand how DAVL assignments and AV platoon behaviors affect MV drivers' performance and safety.",
+        "The authors highlight the urgency due to increasing AV deployment and the potential safety risks posed by mixed traffic.",
+        "The study connects specific problems (e.g., reduced THW) to broader challenges in traffic safety and efficiency.",
+        "Contributes to transportation engineering, human factors, and traffic safety disciplines."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: DAVL assignments, inter-vehicle distance, AV platoon speed, and car-following performance.",
+        "Logical relationships: DAVL assignments and AV platoon configurations influence MV drivers' behavior through social and perceptual mechanisms.",
+        "Assumptions: MV drivers imitate AV platoon behaviors, and visual perception plays a key role in this imitation.",
+        "Contribution: Provides empirical evidence on optimal DAVL configurations and AV platoon management for safety and efficiency."
+      ],
+      "Methodology": [
+        "Core methods: Driving simulator experiments with controlled variables (DAVL assignment, inter-vehicle distance, AV platoon speed).",
+        "Novelty: Uses car platoons instead of trucks to isolate social mechanisms.",
+        "Data: Collected from 36 participants, including THW, lateral position, velocity, gaze position, and saccadic peak velocity.",
+        "Experimental design: Mixed factor design with between- and within-subject factors, controlled for order effects.",
+        "Theoretical paradigm: Grounded in human factors and traffic psychology, focusing on driver behavior and perception."
+      ],
+      "Results": [
+        "Key results: MV drivers showed worse safety but better stability with left DAVL; 4 m inter-vehicle distance reduced safety; higher AV speeds increased mental workload.",
+        "Significance: Findings guide DAVL design and AV platoon management to enhance safety and efficiency."
+      ],
+      "Argumentation_and_Logic": [
+        "Structure: Introduces problem, reviews literature, describes methods, presents results, discusses implications.",
+        "Key steps: Hypothesizes effects of DAVL and platoon configurations, tests via simulation, analyzes data, concludes with recommendations.",
+        "Strengths: Rigorous experimental design, clear metrics, and statistical analysis. Weaknesses: Simulator limitations and simplified traffic conditions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Comprehensive experimental design, clear practical implications, interdisciplinary approach.",
+        "Limitations: Simulator may not fully replicate real-world conditions; sparse traffic flow differs from reality.",
+        "Constraints: Theoretical focus on social and perceptual mechanisms may overlook other factors."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Role: Contributes to ongoing discourse on AV integration and traffic safety.",
+        "Terminology: Technical but accessible, with clear definitions of key metrics.",
+        "Citations: Builds on prior work in AV platoons and human factors, establishing authority and context."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: Right DAVL assignment, 10 m inter-vehicle distance, and speed limits optimize safety and stability.",
+        "Future research: Explore minimum acceptable inter-vehicle distances and real-world validation."
+      ]
+    }
+  }
+}

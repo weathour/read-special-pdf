@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 class PDFOrganizer:
     """PDF整理器 - 分析 + 复制文件"""
     
-    def __init__(self, db_path: str = "../papers.db", pdf_base_dir: str = "/home/jia/snap/zotero-snap/common/Zotero/storage"):
+    def __init__(self, db_path: str = "../papers.db", pdf_base_dir: str = "/home/jia/PaperReader/read-special-pdf/pdfs"):
         """
         初始化PDF整理器
         Args:

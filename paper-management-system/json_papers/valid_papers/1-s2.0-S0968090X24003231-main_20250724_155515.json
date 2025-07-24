@@ -1,0 +1,80 @@
+{
+  "file_name": "1-s2.0-S0968090X24003231-main.pdf",
+  "generated_at": "2025-07-24 15:55:15",
+  "structured_info": {
+    "title_cn": "基于Argoverse-2的横向冲突解决数据：分析自动驾驶车辆在交叉路口的安全与效率影响",
+    "title_en": "Lateral conflict resolution data derived from Argoverse-2: Analysing safety and efficiency impacts of autonomous vehicles at intersections",
+    "category": "Transportation Research",
+    "topics": [
+      "Autonomous Vehicles",
+      "Traffic Safety",
+      "Traffic Efficiency"
+    ],
+    "keywords": [
+      "Autonomous vehicles",
+      "Trajectory dataset",
+      "Conflict resolution",
+      "Safety assessment",
+      "Efficiency assessment"
+    ],
+    "abstract": "With the increased deployment of autonomous vehicles (AVs) in mixed traffic flow, ensuring safe and efficient interactions between AVs and human road users is important. In urban environments, intersections have various conflicts that can greatly affect driving safety and traffic efficiency. This study uses road test data to examine the possible safety and efficiency impacts of intersection conflict resolution involving AVs. The contribution comprises two main aspects. Firstly, we prepare and open a high-quality lateral conflict resolution dataset derived from the Argoverse-2 data, specifically targeting urban intersections. A rigorous data processing pipeline is applied to extract pertinent scenarios, rectify anomalies, enhance data quality, and annotate conflict regimes. This effort yields 5000 AV-involved and 16000 AV-free cases, covering rich conflict regimes and balanced traffic states. Secondly, we employ surrogate safety measures to assess the safety impact of AVs on human-driven vehicles (HVs) and pedestrians. In addition, a novel concept of Minimum Recurrent Clearance Time (MRCT) is proposed to quantify the traffic efficiency impacts of AVs during conflict resolution.",
+    "methodology": "The study uses a data processing pipeline to extract, enhance, and annotate conflict resolution scenarios from the Argoverse-2 dataset. Surrogate safety measures (SSMs) and the novel MRCT concept are employed to assess safety and efficiency impacts.",
+    "conclusion": "The results show that, for AV-HV and HV-HV conflict resolution processes, the differences in selected safety and efficiency measures for human drivers are statistically insignificant. In contrast, pedestrians demonstrate diverse behaviour adjustments. Some pedestrians behave more conservatively when interacting with AVs than with HVs. Notably, the efficiency of AV-involved conflict resolution is significantly lower than in AV-free instances due to the conservative driving style of AVs.",
+    "authors": [
+      "Guopeng Li",
+      "Yiru Jiao",
+      "Simeon C. Calvert",
+      "J.W.C. (Hans) van Lint"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104802",
+    "bibtex_citation": "Li_Lateral_2024",
+    "analysis": {
+      "Overview": "The paper investigates the safety and efficiency impacts of autonomous vehicles (AVs) at urban intersections using real-world AV road test data from Argoverse-2. It provides a high-quality dataset and employs surrogate safety measures and a novel efficiency measure (MRCT) for analysis.",
+      "Background_and_Motivation": [
+        "The research addresses the broader challenge of integrating AVs into mixed traffic environments, focusing on safety and efficiency at intersections.",
+        "The motivation stems from the need to understand how AVs affect human road users' behavior and traffic flow dynamics.",
+        "The authors argue that intersections are critical scenarios for safety and efficiency, making them a priority for AV impact assessment.",
+        "The study links specific AV-human interactions to broader traffic system performance, emphasizing the significance of conflict resolution processes.",
+        "The paper contributes to transportation research, particularly in the areas of autonomous vehicles and traffic safety."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include conflict resolution, surrogate safety measures (SSMs), and Minimum Recurrent Clearance Time (MRCT).",
+        "Conflict resolution involves AVs and human road users cooperating to prevent accidents. SSMs quantify safety, while MRCT measures efficiency.",
+        "Key assumptions include balanced traffic states and consistent data quality between AV-involved and AV-free cases.",
+        "The paper contributes a novel dataset and methodology for assessing AV impacts, advancing the field's knowledge base."
+      ],
+      "Methodology": [
+        "The study uses a data processing pipeline to extract and enhance trajectory data from Argoverse-2, followed by conflict regime classification.",
+        "The methodology is novel in its focus on lateral conflicts and the introduction of MRCT for efficiency assessment.",
+        "Data sources include Argoverse-2, with preprocessing steps to correct misalignments and smooth trajectories.",
+        "Experimental design is rigorous, with confounder checks and statistical analysis to ensure reliability.",
+        "The research follows a data-driven paradigm, leveraging real-world AV test data for empirical analysis."
+      ],
+      "Results": [
+        "Key results show no significant safety differences for human drivers interacting with AVs vs. HVs, but pedestrians exhibit more conservative behavior with AVs.",
+        "AVs demonstrate lower efficiency in conflict resolution, particularly in unprotected left turns."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first presenting the dataset preparation, followed by safety and efficiency analyses.",
+        "Logical steps include data selection, enhancement, conflict classification, and statistical comparison.",
+        "Strengths include comprehensive data processing and novel measures; weaknesses may include limited generalizability due to dataset specifics."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the high-quality dataset and innovative MRCT measure.",
+        "Limitations include dataset-specific findings and potential confounders not fully addressed.",
+        "The data-driven approach may constrain conclusions to the observed scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on AV integration and traffic safety.",
+        "Terminology is technical, with a focus on empirical analysis and statistical validation.",
+        "Citations build authority by referencing prior work in AV safety and efficiency."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions highlight AVs' conservative driving style and its impact on efficiency, with no significant safety risks for human drivers.",
+        "Future research should explore pedestrian behavior shifts and advanced causal methods for impact assessment."
+      ]
+    }
+  }
+}

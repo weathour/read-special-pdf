@@ -1,0 +1,78 @@
+{
+  "file_name": "Dynamic-lane-management-for-emerging-mixed-_2025_Transportation-Research-Par.pdf",
+  "generated_at": "2025-07-24 16:57:11",
+  "structured_info": {
+    "title_cn": "新兴混合交通中半自动驾驶车辆的动态车道管理",
+    "title_en": "Dynamic lane management for emerging mixed traffic with semi-autonomous vehicles",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Dynamic Lane Management",
+      "Semi-Autonomous Vehicles",
+      "Traffic Congestion"
+    ],
+    "keywords": [
+      "Semi-autonomous vehicles",
+      "Dynamic lane management",
+      "Rolling horizon",
+      "Non-myopic",
+      "Mode choice"
+    ],
+    "abstract": "Semi-autonomous vehicles (semi-AVs), situated between fully-autonomous vehicles (full-AVs) and traditional vehicles (TVs), offer functionalities that allow drivers to activate autonomous driving features. These functionalities, such as Tesla Autopilot, BMW Personal Pilot, and General Motors Super Cruise, relieve drivers at the wheel of certain driving tasks and are anticipated to enhance road capacity by improving driving efficiency. However, the immaturity of early-stage autonomous driving technology can hinder immediate improvements in road capacity, especially in scenarios with a mix traffic of manually and autonomously driven vehicles. To mitigate these challenges, this study introduces the use of dedicated lanes and designs an intelligent corridor system that dynamically optimizes the allocation of lanes for auto-driven and human-driven vehicles. Firstly, a congestion model is established to capture the dynamics of bottleneck congestion and derive vehicle delays with demand changes, serving as a valuable reference for developing lane management strategies. Then, the choice of driving mode for semi-AVs is bounded with lane selection and modeled using a dynamic user equilibrium model over discrete-time series. Based on that, numbers of auto-driven and human-driven lanes are dynamically optimized with the objective of minimizing system costs.",
+    "methodology": "The study employs a dynamic lane congestion model to analyze vehicle delays with changes in demand. A non-myopic lane management method is developed under a rolling horizon control framework, optimizing the allocation of lanes for auto-driven and human-driven vehicles to minimize system costs.",
+    "conclusion": "Dynamic lane management outperforms fixed-lane scenarios and static lane management in all test scenarios, demonstrating significant improvements in traffic efficiency and reduction in delays. The approach is particularly effective in the initial stages of AV adoption, offering a promising solution for efficient lane management in mixed traffic environments.",
+    "authors": [
+      "Hao Guan",
+      "Qiang Meng",
+      "Xiangdong Chen"
+    ],
+    "publication_year": "2025",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104914",
+    "bibtex_citation": "Guan_Dynamic_2025",
+    "analysis": {
+      "Overview": "The paper addresses the challenge of managing mixed traffic involving semi-autonomous vehicles (semi-AVs) and traditional vehicles (TVs) by proposing a dynamic lane management system. The study focuses on optimizing lane allocation to minimize congestion and improve traffic efficiency.",
+      "Background_and_Motivation": [
+        "The research is motivated by the increasing presence of semi-AVs on roads, which, while offering potential benefits, also introduce complexities in traffic management due to their dual driving modes.",
+        "The study aims to solve the problem of inefficient road capacity utilization and increased congestion in mixed traffic scenarios, particularly during the early stages of AV adoption.",
+        "The authors argue that dynamic lane management is necessary to adapt to fluctuating traffic demands and varying proportions of semi-AVs, ensuring optimal traffic flow.",
+        "The problem is significant as it addresses the transition phase towards fully autonomous vehicles, where mixed traffic conditions are prevalent and require innovative management strategies.",
+        "The paper contributes to transportation engineering and traffic management, with implications for urban planning and autonomous vehicle integration."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include dynamic lane management, semi-autonomous vehicles, and non-myopic decision-making.",
+        "The logical relationship involves optimizing lane allocation based on real-time traffic data and future demand predictions to minimize delays and reconfiguration costs.",
+        "Key assumptions include accurate demand predictions, uniform traffic conditions across lanes of the same type, and semi-AVs' ability to choose lanes based on travel time minimization.",
+        "The paper contributes a novel dynamic lane management framework that integrates short-term responses with long-term objectives, enhancing traffic efficiency in mixed environments."
+      ],
+      "Methodology": [
+        "The core methods include a dynamic lane congestion model and a rolling horizon control framework for lane management.",
+        "The methodology is novel in its non-myopic approach, considering both immediate and future costs to avoid frequent lane reconfigurations.",
+        "Data sources include real-world traffic data from San Francisco corridors, with preprocessing to model demand fluctuations.",
+        "Experimental design is rigorous, with sensitivity analyses on AV adoption levels, demand levels, and decision horizons to validate the approach.",
+        "The research follows a theoretical paradigm of dynamic user equilibrium, influencing the perspective on lane choice and traffic flow optimization."
+      ],
+      "Results": [
+        "Key results show that dynamic lane management reduces average vehicle delays by approximately 14.84% compared to static lane management.",
+        "The results are reliable and stable across various test scenarios, demonstrating the method's effectiveness under different traffic conditions and semi-AV penetration rates."
+      ],
+      "Argumentation_and_Logic": [
+        "The authors structure their argument by first establishing the problem, then presenting the dynamic lane congestion model, and finally introducing the non-myopic lane management method.",
+        "Key steps include validating the congestion model with real data, comparing dynamic and static lane management, and conducting sensitivity analyses.",
+        "Strengths include the comprehensive validation and practical applicability, while potential weaknesses may involve the assumption of accurate demand predictions."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the innovative non-myopic approach and the practical validation using real-world data.",
+        "Limitations include the reliance on accurate demand predictions and the assumption of uniform traffic conditions across lanes.",
+        "The theoretical paradigm may constrain conclusions by not accounting for unpredictable real-world variables like sudden traffic incidents."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on autonomous vehicle integration and traffic management, contributing a novel solution to lane allocation.",
+        "The authors use technical terminology and a formal tone, building authority through citations of relevant studies and empirical data."
+      ],
+      "Conclusions_and_Implications": [
+        "The study concludes that dynamic lane management significantly improves traffic efficiency in mixed environments, especially during the early stages of AV adoption.",
+        "Future research could explore the integration of more complex demand prediction models and the impact of unpredictable traffic events on the proposed system."
+      ]
+    }
+  }
+}

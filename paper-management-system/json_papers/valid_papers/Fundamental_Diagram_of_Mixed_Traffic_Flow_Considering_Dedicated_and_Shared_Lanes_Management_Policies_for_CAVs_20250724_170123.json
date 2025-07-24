@@ -1,0 +1,80 @@
+{
+  "file_name": "Fundamental_Diagram_of_Mixed_Traffic_Flow_Considering_Dedicated_and_Shared_Lanes_Management_Policies_for_CAVs.pdf",
+  "generated_at": "2025-07-24 17:01:23",
+  "structured_info": {
+    "title_cn": "考虑专用和共享车道管理策略的混合交通流基本图",
+    "title_en": "Fundamental Diagram of Mixed Traffic Flow Considering Dedicated and Shared Lanes Management Policies for CAVs",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Traffic Flow Theory",
+      "Connected and Automated Vehicles",
+      "Lane Management"
+    ],
+    "keywords": [
+      "Capacity",
+      "Car-following model",
+      "Connected and automated vehicles",
+      "Dedicated lanes",
+      "Fundamental diagram"
+    ],
+    "abstract": "To investigate how setting up connected and automated vehicles (CAVs) dedicated lanes can maximize the traffic capacity, this article proposes a fundamental diagram of mixed traffic flow with CAVs dedicated lanes, in which CAVs dedicated lanes only allow CAVs and shared lanes allow both CAVs and human-driven vehicles (HDVs). First, for CAVs overflowing and not overflowing, the car-following (CF) modes and their proportion in CAVs dedicated lanes and shared lanes are analyzed, respectively. Second, based on steady-state conditions and average time headway, the fundamental diagram of mixed traffic flow with and without CAVs dedicated lanes is derived. Then, the relevant properties of the fundamental diagram with CAVs dedicated lanes are proposed and proved. Finally, multiple parameters, such as the overflow ratio of CAVs, the penetration rate of CAVs, and the number of CAVs dedicated lanes, are adopted to discuss their impact on the fundamental diagram. Results show that: 1) one and two CAVs dedicated lanes of three manual lanes can maximize the traffic capacity when the penetration rate of CAVs reaches 0.16 and 0.31, respectively; 2) compared with C-H policy, C-S policy can maximize the traffic capacity when the penetration rate of CAVs reaches 0.45 with one CAVs dedicated lane and 0.73 with two CAVs dedicated lanes; and 3) the traffic capacity of C-S policy is up to 1.3 times and 1.6 times that of mixed traffic flow with one and two CAVs dedicated lanes of three manual lanes, respectively. This work provides insights into the impact of CAVs dedicated lanes on traffic systems and helps decide the optimal number of dedicated lanes.",
+    "methodology": "The study uses the Intelligent Driver Model (IDM) to describe car-following behavior, analyzes different CF modes, and derives the fundamental diagram based on steady-state conditions and average time headway. Numerical simulations and theoretical modeling are employed.",
+    "conclusion": "The study concludes that setting CAVs dedicated lanes can maximize traffic capacity under specific penetration rates. The C-S policy outperforms the C-H policy at higher penetration rates, and traffic capacity increases with the number of dedicated lanes and CAVs penetration rate.",
+    "authors": [
+      "Zhihong Yao",
+      "Tingting Ren",
+      "Yi Wang",
+      "Zeqi Xu",
+      "Yangsheng Jiang"
+    ],
+    "publication_year": "2024",
+    "venue": "IEEE Transactions on Transportation Electrification",
+    "doi": "10.1109/TTE.2023.3332054",
+    "bibtex_citation": "Yao_Fundamental_2024",
+    "analysis": {
+      "Overview": "The paper proposes a fundamental diagram for mixed traffic flow with CAVs dedicated lanes, analyzing how dedicated lanes impact traffic capacity under various conditions.",
+      "Background_and_Motivation": [
+        "The study addresses the challenges of mixed traffic flow involving CAVs and HDVs, focusing on optimizing traffic capacity through dedicated lanes.",
+        "Motivated by the need to improve traffic efficiency and safety in mixed traffic environments.",
+        "The authors highlight the long-term coexistence of CAVs and HDVs and the necessity of dedicated lanes to mitigate inefficiencies and safety risks.",
+        "The research connects specific lane management policies to broader traffic system performance.",
+        "Contributes to transportation engineering and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include the fundamental diagram, car-following modes, and lane management policies.",
+        "Logical relationships between CF modes and traffic flow characteristics are analyzed.",
+        "Assumes steady-state conditions and homogeneous traffic flow in dedicated lanes.",
+        "The paper contributes a novel framework for analyzing mixed traffic flow with dedicated lanes."
+      ],
+      "Methodology": [
+        "Uses IDM for CF behavior, derives fundamental diagrams based on steady-state conditions, and employs numerical simulations.",
+        "Novelty lies in integrating dedicated lanes into the fundamental diagram framework.",
+        "Data sources include theoretical models and simulation experiments.",
+        "Experimental design is rigorous, with multiple parameters tested.",
+        "Follows traffic flow theory and microscopic simulation paradigms."
+      ],
+      "Results": [
+        "Key results show optimal penetration rates for maximizing traffic capacity with dedicated lanes.",
+        "Results are significant for traffic management and reliable under tested conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument is structured around CF modes, lane policies, and their impact on traffic flow.",
+        "Key steps include modeling CF modes, deriving fundamental diagrams, and validating with simulations.",
+        "Strengths include comprehensive analysis; limitations include assumptions like no lane-changing behavior."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel framework, practical insights for traffic management.",
+        "Limitations: Assumes no lane-changing, limited to specific policies.",
+        "Theoretical paradigm constraints are acknowledged."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positioned within traffic flow theory and CAV research.",
+        "Uses technical terminology and cites relevant literature to build authority."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions emphasize the benefits of dedicated lanes under specific conditions.",
+        "Future work includes exploring more lane policies and real-world validation."
+      ]
+    }
+  }
+}

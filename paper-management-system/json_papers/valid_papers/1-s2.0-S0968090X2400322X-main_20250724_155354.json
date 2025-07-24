@@ -1,0 +1,79 @@
+{
+  "file_name": "1-s2.0-S0968090X2400322X-main.pdf",
+  "generated_at": "2025-07-24 15:53:54",
+  "structured_info": {
+    "title_cn": "考虑空间需求相关性的预测失败风险感知在线拨号乘车调度：基于近似动态规划和情景方法",
+    "title_en": "Prediction-failure-risk-aware online dial-a-ride scheduling considering spatial demand correlation via approximate dynamic programming and scenario approach",
+    "category": "Transportation Research",
+    "topics": [
+      "Dial-a-ride service",
+      "Demand prediction",
+      "Approximate dynamic programming"
+    ],
+    "keywords": [
+      "Dial-a-ride service",
+      "OD demand prediction",
+      "Spatial demand correlation",
+      "Approximate dynamic programming",
+      "Risk-aware decision-making"
+    ],
+    "abstract": "The dial-a-ride (DAR) service is a precursor to emerging shared mobility. Service providers expect efficient management of fleet resources to improve service quality without degrading economic viability. Most existing studies overlook possible future demands that could yield better matching opportunities and scheduling benefits, and therefore have short-sighted limitations. Moreover, the effects of correlated demand and potential prediction errors were ignored. To address these gaps, this paper investigates prediction-failure-risk-aware online DAR scheduling with spatial demand correlation. Request selection and cancellation are explicitly considered. We formulate the problem as a Markov decision process (MDP) and solve it by approximate dynamic programming (ADP). We further develop a demand prediction model that can capture the characteristics of DAR travel demand (uncertainty, sparsity, and spatial correlation). Deep quantile regression is adopted to estimate the marginal distribution of each OD pair. These marginals are combined into a joint demand distribution by constructing a Gaussian Copula to capture the spatial demand correlation. A prediction error correction mechanism is proposed to eliminate prediction errors and rectify policies promptly. Based on the model properties, several families of customized pruning strategies are devised to improve the computational efficiency and solution quality of ADP. We solve policies over time in the dynamic environment mixed with actual and stochastic future demands via the ADP algorithm and scenario approach. We propose the value function rolling method and multi-scenario exploration method, to address the deviation of the value function and identify the optimal policy from multiple future demand scenarios. Numerical results demonstrate the importance and benefits of incorporating demand forecasting and spatial correlation into the DAR operation. The improvement due to prediction is significant even when the prediction is imperfect, while the demand prediction can hedge against the negative effects of request cancellation. The real-world application result shows that compared to state-of-the-practice, the overall delivery efficiency can be substantially improved, along with better service quality and fleet size savings.",
+    "methodology": "Markov decision process (MDP), Approximate dynamic programming (ADP), Deep quantile regression, Gaussian Copula, Scenario approach",
+    "conclusion": "The study demonstrates the importance of incorporating demand forecasting and spatial correlation into DAR operations. The proposed methods significantly improve delivery efficiency, service quality, and fleet size savings, even with imperfect predictions. The prediction error correction mechanism effectively mitigates negative effects of prediction errors and request cancellations.",
+    "authors": [
+      "Weitiao Wu",
+      "Honghui Zou",
+      "Ronghui Liu"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104801",
+    "bibtex_citation": "Wu_et_al_Prediction-failure-risk-aware_2024",
+    "analysis": {
+      "Overview": "The paper investigates an online dial-a-ride (DAR) scheduling problem considering spatial demand correlation and prediction failure risks. It formulates the problem as a Markov decision process (MDP) and solves it using approximate dynamic programming (ADP) combined with a scenario approach. The study also develops a demand prediction model using deep quantile regression and Gaussian Copula to capture spatial demand correlation.",
+      "Background_and_Motivation": [
+        "DAR services are essential for urban mobility but face challenges in balancing service quality and economic viability.",
+        "Existing studies often ignore future demands and spatial demand correlations, leading to suboptimal solutions.",
+        "The research aims to address these gaps by incorporating demand prediction and spatial correlation into DAR scheduling.",
+        "The study is significant for improving DAR service efficiency and resource utilization in dynamic and stochastic environments.",
+        "The paper contributes to transportation research, particularly in shared mobility and dynamic scheduling."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include DAR scheduling, spatial demand correlation, and prediction-failure-risk-aware optimization.",
+        "The logical relationship involves using demand prediction to inform dynamic scheduling decisions while accounting for spatial correlations and prediction errors.",
+        "Key assumptions include independent customer presences and vehicle capacity constraints.",
+        "The paper contributes a novel framework for DAR optimization that integrates demand prediction, spatial correlation, and risk-aware decision-making."
+      ],
+      "Methodology": [
+        "The core methods include MDP formulation, ADP, deep quantile regression, and Gaussian Copula for demand prediction.",
+        "The methodology is novel in combining scenario-based future demand exploration with ADP for dynamic scheduling.",
+        "Data sources include historical travel demand data from reservation platforms, preprocessed to capture spatiotemporal characteristics.",
+        "Experimental design is rigorous, with numerical and real-world case studies to validate the approach.",
+        "The research follows a stochastic optimization paradigm, leveraging historical data for proactive decision-making."
+      ],
+      "Results": [
+        "Key results show significant improvements in delivery efficiency, service quality, and fleet size savings.",
+        "The results are reliable and stable, demonstrated through numerical experiments and real-world applications."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with problem identification, followed by methodology development and validation.",
+        "Key steps include problem formulation, solution approach, and experimental validation.",
+        "Strengths include comprehensive methodology and real-world applicability; weaknesses may include computational complexity in large-scale scenarios."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include integration of demand prediction, spatial correlation, and risk-aware optimization.",
+        "Limitations include potential computational challenges in very large-scale or highly dynamic environments.",
+        "The theoretical paradigm may constrain conclusions to scenarios with sufficient historical data for prediction."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on dynamic and stochastic transportation optimization.",
+        "Terminology and tone are technical, aimed at researchers and practitioners in transportation and operations research.",
+        "Citations build authority by referencing foundational and recent works in DAR and dynamic optimization."
+      ],
+      "Conclusions_and_Implications": [
+        "The study concludes that demand prediction and spatial correlation significantly enhance DAR operations.",
+        "Future research could explore scalability, real-time implementation, and integration with other mobility services."
+      ]
+    }
+  }
+}

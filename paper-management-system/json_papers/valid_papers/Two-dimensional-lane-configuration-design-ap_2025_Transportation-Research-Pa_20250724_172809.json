@@ -1,0 +1,80 @@
+{
+  "file_name": "Two-dimensional-lane-configuration-design-ap_2025_Transportation-Research-Pa.pdf",
+  "generated_at": "2025-07-24 17:28:09",
+  "structured_info": {
+    "title_cn": "城市网络中自动驾驶专用车道的二维车道配置设计方法",
+    "title_en": "Two-dimensional lane configuration design approach for Autonomous Vehicle Dedicated Lanes in urban networks",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Autonomous Vehicles",
+      "Traffic Management",
+      "Urban Networks"
+    ],
+    "keywords": [
+      "Autonomous vehicle",
+      "Mixed traffic",
+      "Dedicated lane",
+      "Lane configuration",
+      "User equilibrium"
+    ],
+    "abstract": "This study focuses on optimizing Autonomous Vehicle Dedicated Lanes (AVDLs) in urban networks, a critical step in managing mixed traffic where autonomous vehicles (AVs) and human-driven vehicles (HVs) coexist. Traditional AVDL deployment strategies have mainly optimized the number of AVDLs without adequately considering the directional functionality of lanes or their various lane-specific travel costs at intersections. To address these gaps, we propose a two-dimensional lane configuration approach that optimizes both the number of AVDLs on each road segment and their directional functionality for various traffic movements. Intersection delays are incorporated into the travel cost computation, through identifying the specific right-of-way allocations associated with different lane types. The proposed approach enables a more precise calculation of traffic volumes and travel costs on each lane-specific path, by categorizing travel into AVDL-only paths, hybrid-lane paths, and regular lane (RL)-only paths. A lane-specific user equilibrium (UE) model is developed to capture traffic dynamics on various lane types, with the existence and uniqueness of the UE solution rigorously proven. The AVDL configuration optimization is efficiently solved using a bi-level solution method.",
+    "methodology": "The study employs a two-dimensional lane configuration approach integrating a lane-specific user equilibrium (UE) model. A bi-level solution method is used, combining a customized Monte Carlo Tree Search (MCTS) algorithm for the upper-level AVDL configuration problem and a Frank Wolfe-type algorithm for the lower-level multi-class UE problem.",
+    "conclusion": "The proposed two-dimensional AVDL configuration approach effectively optimizes both the number of AVDLs and their directional functionality, improving traffic efficiency in mixed traffic environments. Numerical experiments demonstrate the method's effectiveness and computational efficiency.",
+    "authors": [
+      "Xiangdong Chen",
+      "Fang Zhang",
+      "Hao Guan",
+      "Qiang Meng"
+    ],
+    "publication_year": "2025",
+    "venue": "Transportation Research Part E",
+    "doi": "10.1016/j.tre.2024.103938",
+    "bibtex_citation": "Chen_Two-dimensional_2025",
+    "analysis": {
+      "Overview": "The paper presents a novel approach to optimizing Autonomous Vehicle Dedicated Lanes (AVDLs) in urban networks by considering both the number of lanes and their directional functionality, addressing gaps in traditional methods.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of mixed traffic environments where AVs and HVs coexist, focusing on safety and efficiency concerns.",
+        "Motivated by the limitations of existing AVDL deployment strategies that ignore directional functionality and intersection delays.",
+        "The authors highlight the necessity of their approach by demonstrating how current methods fail to account for critical factors like intersection delays and lane-specific travel costs.",
+        "The study connects the specific problem of AVDL configuration to broader challenges in urban traffic management, emphasizing its significance for future transportation systems.",
+        "Contributes to transportation engineering, particularly in the areas of traffic management and autonomous vehicle integration."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include AVDL configuration, lane-specific paths, and user equilibrium (UE) model.",
+        "The logical relationship involves optimizing lane configuration to achieve traffic equilibrium, considering both AVs and HVs.",
+        "Assumes predetermined signal control strategies and no mixed-use lanes for simplicity.",
+        "The paper contributes by extending AVDL configuration to two dimensions and integrating intersection delays into the model."
+      ],
+      "Methodology": [
+        "Uses a bi-level solution method: upper-level MCTS for AVDL configuration and lower-level Frank Wolfe-type algorithm for UE problem.",
+        "Novelty lies in the two-dimensional approach and lane-specific path categorization.",
+        "Data includes traffic volumes, intersection delays, and lane capacities, with preprocessing steps to handle mixed traffic.",
+        "Experimental design is rigorous, using both a toy network and the Sioux-Falls network for validation.",
+        "Follows the theoretical paradigm of user equilibrium in traffic assignment."
+      ],
+      "Results": [
+        "Numerical experiments show the proposed model reduces travel costs compared to traditional methods, especially at higher AV penetration rates.",
+        "Results are reliable and stable, demonstrating consistent improvements across different demand scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with problem identification, followed by methodology development, and validation through experiments.",
+        "Key steps include defining lane-specific paths, incorporating intersection delays, and proving UE solution properties.",
+        "Strengths include comprehensive consideration of traffic dynamics; weaknesses may include assumptions like no mixed-use lanes."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Two-dimensional AVDL configuration, integration of intersection delays, and efficient solution method.",
+        "Limitations: Assumes no mixed-use lanes and predetermined signal control, which may not cover all real-world scenarios.",
+        "Theoretical paradigm constraints include reliance on user equilibrium, which may not capture all behavioral aspects."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on AV integration and traffic management, citing relevant studies to build authority.",
+        "Uses technical terminology and a formal tone, with rhetorical strategies emphasizing the novelty and necessity of the approach.",
+        "Citations are used to justify assumptions and relate to prior work, demonstrating a thorough literature review."
+      ],
+      "Conclusions_and_Implications": [
+        "The study concludes that the two-dimensional AVDL configuration improves traffic efficiency and provides a framework for future urban network design.",
+        "Future research could explore mixed-use lanes and dynamic signal control to enhance the model's applicability."
+      ]
+    }
+  }
+}

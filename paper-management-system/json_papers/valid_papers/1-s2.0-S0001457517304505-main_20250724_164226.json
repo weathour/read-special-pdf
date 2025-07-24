@@ -1,0 +1,81 @@
+{
+  "file_name": "1-s2.0-S0001457517304505-main.pdf",
+  "generated_at": "2025-07-24 16:42:26",
+  "structured_info": {
+    "title_cn": "高速公路联网车辆编队纵向安全评估",
+    "title_en": "Longitudinal safety evaluation of connected vehicles platooning on expressways",
+    "category": "Transportation Safety",
+    "topics": [
+      "Connected Vehicles",
+      "Traffic Safety",
+      "Platooning"
+    ],
+    "keywords": [
+      "Connected vehicles",
+      "Platooning",
+      "Managed-lanes",
+      "Longitudinal safety",
+      "Intelligent driver model",
+      "Surrogate safety measures",
+      "Time-to-collision",
+      "Rear-end crashes"
+    ],
+    "abstract": "Connected vehicles (CV) technology has recently drawn an increasing attention from governments, vehicle manufacturers, and researchers. One of the biggest issues facing CVs popularization associates it with the market penetration rate (MPR). The full market penetration of CVs might not be accomplished recently. Therefore, traffic flow will likely be composed of a mixture of conventional vehicles and CVs. In this context, the study of CV MPR is worthwhile in the CV transition period. The overarching goal of this study was to evaluate longitudinal safety of CV platoons by comparing the implementation of managed-lane CV platoons and all lanes CV platoons (with same MPR) over non-CV scenario. This study applied the CV concept on a congested expressway (SR408) in Florida to improve traffic safety. The Intelligent Driver Model (IDM) along with the platooning concept were used to regulate the driving behavior of CV platoons with an assumption that the CVs would follow this behavior in real-world. A high-level control algorithm of CVs in a managed-lane was proposed in order to form platoons with three joining strategies: rear join, front join, and cut-in joint. Five surrogate safety measures, standard deviation of speed, time exposed time-to-collision (TET), time integrated time-to-collision (TIT), time exposed rear-end crash risk index (TERCRI), and sideswipe crash risk (SSCR) were utilized as indicators for safety evaluation. The results showed that both CV approaches (i.e., managed-lane CV platoons, and all lanes CV platoons) significantly improved the longitudinal safety in the studied expressway compared to the non-CV scenario. In terms of surrogate safety measures, the managed-lane CV platoons significantly outperformed all lanes CV platoons with the same MPR. Different time-to-collision (TTC) thresholds were also tested and showed similar results on traffic safety. Results of this study provide useful insight for the management of CV MPR as managed-lane CV platoons.",
+    "methodology": "The study used the Intelligent Driver Model (IDM) along with the platooning concept to regulate the driving behavior of CV platoons. A high-level control algorithm was proposed for managed-lane CV platoons with three joining strategies: rear join, front join, and cut-in joint. Five surrogate safety measures were utilized for safety evaluation.",
+    "conclusion": "Both managed-lane CV platoons and all lanes CV platoons significantly improved longitudinal safety compared to the non-CV scenario. Managed-lane CV platoons outperformed all lanes CV platoons in terms of surrogate safety measures. Different TTC thresholds showed similar results on traffic safety.",
+    "authors": [
+      "Md Sharikur Rahman",
+      "Mohamed Abdel-Aty"
+    ],
+    "publication_year": "2018",
+    "venue": "Accident Analysis and Prevention",
+    "doi": "10.1016/j.aap.2017.12.012",
+    "bibtex_citation": "Rahman_Longitudinal_2018",
+    "analysis": {
+      "Overview": "The paper evaluates the longitudinal safety of connected vehicles (CV) platooning on expressways, comparing managed-lane CV platoons and all lanes CV platoons with the same market penetration rate (MPR) against a non-CV scenario. The study uses the Intelligent Driver Model (IDM) and surrogate safety measures to assess safety improvements.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of improving traffic safety during the transition period to full CV market penetration.",
+        "The motivation is to study the safety impact of CV MPR and the effectiveness of managed-lane CV platoons.",
+        "The authors argue that CV technology can prevent hundreds of thousands of crashes annually, but full MPR is not yet achieved, making the study of partial MPR crucial.",
+        "The study relates the specific problem of CV safety to the broader challenge of traffic safety during technological transitions.",
+        "The paper contributes to transportation safety and connected vehicle technology fields."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include CV platooning, managed-lanes, and surrogate safety measures.",
+        "The logical relationship involves using CV platooning to improve safety, measured by surrogate safety indicators.",
+        "Key assumptions include CVs following the IDM behavior in real-world and reliable V2V communication.",
+        "The paper contributes empirical evidence on the safety benefits of managed-lane CV platoons."
+      ],
+      "Methodology": [
+        "The core methods include the IDM for CV behavior, platooning strategies, and surrogate safety measures.",
+        "The methodology is novel in applying managed-lane CV platoons and comparing them with all lanes CV platoons.",
+        "Data sources include traffic data from a congested expressway in Florida, with preprocessing steps for simulation.",
+        "The experimental design is rigorous, with multiple simulation runs and sensitivity analysis for TTC thresholds.",
+        "The research follows a deterministic acceleration modeling framework for CV behavior."
+      ],
+      "Results": [
+        "Key results show managed-lane CV platoons significantly outperform all lanes CV platoons in safety measures.",
+        "The results are reliable and stable, supported by sensitivity analysis and multiple simulation runs."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure compares safety measures across three scenarios: non-CV, all lanes CV, and managed-lane CV.",
+        "Key steps include simulation setup, surrogate safety measurement, and statistical analysis.",
+        "Strengths include comprehensive surrogate measures and sensitivity analysis; limitations include uncalibrated IDM parameters."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include innovative managed-lane CV platoons and comprehensive safety evaluation.",
+        "Limitations include uncalibrated IDM parameters and assumptions about CV behavior.",
+        "The deterministic modeling framework may constrain conclusions about real-world variability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on CV safety and platooning.",
+        "Terminology includes technical terms like IDM and surrogate safety measures, with a formal tone.",
+        "Citations build authority by referencing previous studies on CV and traffic safety."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions highlight the safety benefits of managed-lane CV platoons.",
+        "Future research could optimize IDM parameters and explore combinations with other traffic management strategies."
+      ]
+    }
+  }
+}

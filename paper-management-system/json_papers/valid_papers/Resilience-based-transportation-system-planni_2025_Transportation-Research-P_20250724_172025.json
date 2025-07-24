@@ -1,0 +1,81 @@
+{
+  "file_name": "Resilience-based-transportation-system-planni_2025_Transportation-Research-P.pdf",
+  "generated_at": "2025-07-24 17:20:25",
+  "structured_info": {
+    "title_cn": "基于韧性的交通系统规划优化：专用自动驾驶车道的配置",
+    "title_en": "Resilience-based transportation system planning optimization through dedicated autonomous vehicle lanes configuration",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Transportation Network",
+      "Seismic Resilience",
+      "Connected and Autonomous Vehicles"
+    ],
+    "keywords": [
+      "Transportation network",
+      "Seismic resilience",
+      "Planning optimization",
+      "Connected and autonomous vehicles",
+      "Dedicated autonomous vehicle lanes"
+    ],
+    "abstract": "During the transition phase when connected and autonomous vehicles (CAVs) and human driven vehicles (HDVs) coexist on the road, it is essential to devise scientific lane management strategies for CAVs in enhancing the operational efficiency of the transportation system (TS). It is worth noting that most current studies do not incorporate the resilience requirements of the TS to effectively respond to seismic events in the planning process. In this study, a novel resilience-based planning optimization methodology through dedicated autonomous vehicle lanes (DAVLs) configuration is proposed in the form of bi-level structure. The optimal configuration scheme for generating DAVLs in the upper level has the optimization objective of minimizing the overall impedance of the TS while meeting the system's resilience constraints. In terms of the lower level, it quantifies the TS's functions, fully considering the impact of CAVs on the time value, fuel consumption, and link flow capacity. In order to balance the optimization performance and computational costs, a heuristic algorithm combining genetic algorithms and successive averaging method are integrated to solve the proposed bi-level programming model effectively. On this basis, the proposed methodology adopts a real-world large-scale transportation network regarding deterministic and stochastic earthquake damage scenarios. The sensitivity analysis outcomes show that the market penetration of CAVs and the predefined system resilience threshold have different mechanisms of actions on the optimal configuration strategy of DAVLs and the system performance of TS.",
+    "methodology": "Bi-level programming model combining genetic algorithms (GA) and method of successive averages (MSA).",
+    "conclusion": "The study proposes a novel resilience-based planning optimization methodology for TS through DAVLs configuration, ensuring operational efficiency during normal and emergency phases post-earthquake. The methodology effectively balances optimization performance and computational costs, validated through real-world case studies.",
+    "authors": [
+      "Taiyi Zhao",
+      "Zhiguo Sun",
+      "Jingquan Wang",
+      "Yuchun Tang",
+      "Liz Varga",
+      "Mirosław J. Skibniewski"
+    ],
+    "publication_year": "2025",
+    "venue": "Transportation Research Part E",
+    "doi": "10.1016/j.tre.2024.103939",
+    "bibtex_citation": "Zhao_Resilience_2025",
+    "analysis": {
+      "Overview": "The paper presents a bi-level optimization model for configuring dedicated autonomous vehicle lanes (DAVLs) in transportation systems to enhance operational efficiency and seismic resilience during the transition phase of mixed CAVs and HDVs traffic.",
+      "Background_and_Motivation": [
+        "Addresses the challenge of optimizing transportation systems during the coexistence phase of CAVs and HDVs.",
+        "Motivated by the lack of resilience considerations in current transportation network designs against seismic events.",
+        "Highlights the necessity of integrating resilience metrics to mitigate socio-economic losses post-earthquake.",
+        "Links specific problem of DAVLs configuration to broader challenges of urban transportation planning and emergency response.",
+        "Contributes to transportation engineering and urban planning, with interdisciplinary implications for disaster resilience."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: DAVLs configuration, seismic resilience, bi-level optimization.",
+        "Logical relationships: Upper level optimizes DAVLs placement and speed; lower level models traffic flow impacts.",
+        "Assumptions: CAVs prioritize DAVLs, HDVs use general purpose lanes (GPLs), fixed traffic demand post-earthquake.",
+        "Contribution: Novel integration of resilience metrics in transportation network design with CAVs."
+      ],
+      "Methodology": [
+        "Uses bi-level programming: upper level for DAVLs configuration, lower level for multiclass traffic assignment.",
+        "Novelty: Combines GA and MSA for efficient solution of the NP-hard bi-level problem.",
+        "Data: Real-world transportation network with 74 nodes, 127 links, and earthquake scenario data.",
+        "Experimental design: Sensitivity analysis on CAVs penetration and resilience thresholds.",
+        "Follows transportation network design problem (TNDP) theoretical framework."
+      ],
+      "Results": [
+        "Optimal DAVLs configuration improves system performance by up to 36.55% at 60% CAVs penetration.",
+        "Higher CAVs penetration increases DAVLs deployment, enhancing network resilience and efficiency."
+      ],
+      "Argumentation_and_Logic": [
+        "Structured argument: Need for resilience in TS → DAVLs as solution → Bi-level model → Validation.",
+        "Key steps: Problem formulation, solution algorithm, case study validation.",
+        "Strengths: Comprehensive model integrating resilience; Weaknesses: Assumes fixed post-earthquake demand."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel resilience integration, practical applicability, heuristic solution efficiency.",
+        "Limitations: Fixed demand assumption, computational intensity for large networks.",
+        "Constraints: Theoretical paradigm limits to deterministic and probabilistic scenarios."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "Positions within resilience and CAVs literature, citing recent works.",
+        "Uses technical terminology and empirical tone, building authority through extensive citations."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: DAVLs configuration enhances TS resilience and efficiency during CAVs-HDVs transition.",
+        "Future research: Incorporate dynamic demand, debris impacts, and advanced algorithms for scalability."
+      ]
+    }
+  }
+}

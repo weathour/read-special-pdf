@@ -1,0 +1,82 @@
+{
+  "file_name": "1-s2.0-S0968090X24003541-main.pdf",
+  "generated_at": "2025-07-24 16:02:01",
+  "structured_info": {
+    "title_cn": "复杂混合交通场景下的同质多车协同群决策方法",
+    "title_en": "A homogeneous multi-vehicle cooperative group decision-making method in complicated mixed traffic scenarios",
+    "category": "Autonomous Driving",
+    "topics": [
+      "Connected and Automated Vehicles",
+      "Decision-making",
+      "Risk assessment"
+    ],
+    "keywords": [
+      "Autonomous driving",
+      "Connected and automated vehicles",
+      "Decision-making",
+      "Risk assessment"
+    ],
+    "abstract": "Connected and Automated Vehicles (CAVs) are expected to reshape the transportation system, and cooperative group intelligence of CAVs has great potential for improving transportation efficiency and safety. One challenge for CAV group driving is the decision-making under scenarios mixed with CAV and human-driven vehicles (HDV). Current studies mainly use methods based on single physical rules such as platoon driving or formation switch control, failing to reach a balanced and homogeneous state of optimal efficiency and risk in mixed traffic environments. In addition, most studies focus only on one specific type of scene, lacking the scene adaptability to various surrounding conditions. This paper proposes a homogeneous multi-vehicle cooperative group decision-making method targeting mixed traffic scenarios. A bi-level framework composed of behavior-level and trajectory-level decision-making is established to achieve balanced optimal cooperation. A region-driven behavioral decision mechanism is designed to decompose vehicle actions into a unified form of sequential target regions. Solutions are derived based on Cooperative Driving Safety Field, a risk assessment module inspired by field energy theory. The trajectory-level decision module takes the target regions as input and generates the control quantities of the CAVs through target point selection, conflict reconciliation, and dynamic constraint consideration. Experimental results on 19 various scenarios and continuous traffic flow scenes indicate that the proposed method significantly increases passing efficiency, reduces driving risk, and improves scene adaptability. In addition, experiments on multiple kinds of scenarios including intersections, ramps, bottlenecks, etc. prove that our method can adapt to various road topology structures. Feasibility is also verified through scaled physical platform validations and real-vehicle road tests.",
+    "methodology": "A bi-level framework composed of behavior-level and trajectory-level decision-making is established. A region-driven behavioral decision mechanism is designed to decompose vehicle actions into a unified form of sequential target regions. Solutions are derived based on Cooperative Driving Safety Field, a risk assessment module inspired by field energy theory.",
+    "conclusion": "The proposed method significantly increases passing efficiency, reduces driving risk, and improves scene adaptability. It can adapt to various road topology structures and has been validated through scaled physical platform validations and real-vehicle road tests.",
+    "authors": [
+      "Yuning Wang",
+      "Jinhao Li",
+      "Tianqi Ke",
+      "Zehong Ke",
+      "Junkai Jiang",
+      "Shaobing Xu",
+      "Jianqiang Wang"
+    ],
+    "publication_year": "2024",
+    "venue": "Transportation Research Part C",
+    "doi": "10.1016/j.trc.2024.104833",
+    "bibtex_citation": "Wang_Homogeneous_2024",
+    "analysis": {
+      "Overview": "The paper proposes a homogeneous multi-vehicle cooperative group decision-making method for mixed traffic scenarios involving CAVs and HDVs. It introduces a bi-level framework for behavior-level and trajectory-level decision-making, enhancing efficiency, safety, and adaptability.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of CAV group decision-making in mixed traffic scenarios with HDVs.",
+        "Current methods fail to achieve balanced efficiency and risk, and lack scene adaptability.",
+        "The authors argue for the necessity of a unified decision framework to handle diverse and dynamic traffic conditions.",
+        "The problem is significant for improving transportation safety and mobility quality.",
+        "The paper contributes to autonomous driving and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include region-driven behavioral decision-making and Cooperative Driving Safety Field (CDSF).",
+        "The logical relationship involves decomposing actions into target regions and assessing risk via CDSF.",
+        "Key assumptions include high-quality real-time data availability and controllable CAVs.",
+        "The paper contributes a novel decision framework and risk assessment model to the field."
+      ],
+      "Methodology": [
+        "The methodology includes a bi-level decision framework, region-driven behavior mechanism, and CDSF-based risk assessment.",
+        "The approach is novel for its unified decision-making and adaptability to mixed traffic.",
+        "Data sources include CAV and HDV states, HD maps, and simulated traffic scenarios.",
+        "Experimental design is rigorous, with 19 test scenarios and continuous traffic flow evaluations.",
+        "The research follows a theoretical paradigm inspired by field energy theory and human cognition mechanisms."
+      ],
+      "Results": [
+        "Key results show improved passing efficiency, reduced driving risk, and enhanced scene adaptability.",
+        "Results are significant, reliable, and stable across various scenarios and validations."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure involves problem formulation, methodology design, experimental validation, and feasibility tests.",
+        "Key steps include behavior-level decision-making, trajectory planning, and conflict reconciliation.",
+        "Strengths include comprehensive scenario coverage and innovative risk assessment. Weaknesses may include computational complexity."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Unified decision framework, improved efficiency and safety, scene adaptability.",
+        "Limitations: Potential computational complexity and reliance on high-quality real-time data.",
+        "Theoretical constraints include assumptions about CAV controllability and HDV behavior."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on CAV decision-making and risk assessment.",
+        "Terminology includes technical terms like CDSF and region-driven decision-making.",
+        "Citations build authority by referencing prior work in autonomous driving and traffic safety."
+      ],
+      "Conclusions_and_Implications": [
+        "Main conclusions: The proposed method enhances efficiency, safety, and adaptability in mixed traffic.",
+        "Future research could explore real-world scalability and computational optimizations."
+      ]
+    }
+  }
+}

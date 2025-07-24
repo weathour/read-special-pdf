@@ -1,0 +1,80 @@
+{
+  "file_name": "Wei 等 - 2025 - Learning an Active Inference Model of Driver Perception and Control Application to Vehicle Car-Foll.pdf",
+  "generated_at": "2025-07-22 18:31:37",
+  "structured_info": {
+    "title_cn": "学习驾驶员感知与控制的主动推理模型：应用于车辆跟驰行为",
+    "title_en": "Learning an Active Inference Model of Driver Perception and Control: Application to Vehicle Car-Following",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Active Inference",
+      "Driver Behavior Modeling",
+      "Inverse Reinforcement Learning"
+    ],
+    "keywords": [
+      "Human perception and action",
+      "Partially Observable Markov Decision Process",
+      "Active Inference",
+      "Inverse Reinforcement Learning"
+    ],
+    "abstract": "In this paper we introduce a general estimation methodology for learning a model of human perception and control in a sensorimotor control task based upon a finite set of demonstrations. The model s structure consists of (i) the agent s internal representation of how the environment and associated observations evolve as a result of control actions and (ii) the agent s preferences over observable outcomes. We consider a model s structure specification consistent with active inference, a theory of human perception and behavior from cognitive science. According to active inference, the agent acts upon the world so as to minimize surprise defined as a measure of the extent to which an agent s current sensory observations differ from its preferred sensory observations. We propose a bi-level optimization approach to estimation which relies on a structural assumption on prior distributions that parameterize the statistical accuracy of the human agent s model of the environment. To illustrate the proposed methodology, we present the estimation of a model for car-following behavior based upon a naturalistic dataset. Overall, the results indicate that learning active inference models of human perception and control from data is a promising alternative to closed-box models of driving.",
+    "methodology": "Bi-level optimization approach for estimating a Partially Observable Markov Decision Process (POMDP) model of human perception and control, incorporating active inference principles.",
+    "conclusion": "The results indicate that learning active inference models from data is a promising alternative to closed-box models of driving as it provides a way to trace driving behaviors back to a human drivers  perception and preferences.",
+    "authors": [
+      "Ran Wei",
+      "Alfredo Garcia",
+      "Anthony McDonald",
+      "Gustav Markkula",
+      "Johan Engstrom",
+      "Matthew O Kelly"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2025.3574552",
+    "bibtex_citation": "Wei_Learning_2025",
+    "analysis": {
+      "Overview": "The paper introduces a methodology for learning models of human perception and control in sensorimotor tasks, specifically applied to car-following behavior. It leverages active inference, a cognitive science theory, to model driver behavior.",
+      "Background_and_Motivation": [
+        "The research addresses the challenge of modeling human perception and control in high-dimensional and complex observation spaces.",
+        "The motivation is to develop interpretable models of human behavior that can outperform traditional closed-box models in driving scenarios.",
+        "The authors argue for the necessity of this research by highlighting the limitations of existing models in handling partially observable states and the need for models that can explain behavior in terms of cognitive processes.",
+        "The specific problem of car-following is related to broader challenges in autonomous driving and human-vehicle interaction.",
+        "The paper contributes to cognitive science, machine learning, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include active inference, POMDP, and inverse reinforcement learning.",
+        "Active inference is logically related to POMDP through the minimization of surprise, which is operationalized as minimizing free energy.",
+        "Key assumptions include the independence of the agent's preferences and model of the environment, and the concentration of the environment model parameters on high-likelihood values.",
+        "The paper contributes a novel estimation methodology that integrates cognitive science principles into machine learning for behavior modeling."
+      ],
+      "Methodology": [
+        "The core method involves a bi-level optimization approach to estimate the primitives of a POMDP model (reward, transition, and observation probabilities) from demonstrations.",
+        "The novelty lies in the integration of active inference with POMDP and the use of a Bayesian approach for estimation.",
+        "Data is sourced from naturalistic driving datasets, preprocessed to extract relevant features, and evaluated for representativeness.",
+        "Experimental design includes comparison with baseline models (Behavior Cloning and Intelligent Driver Model) using both offline and online evaluation metrics.",
+        "The research follows the theoretical paradigm of active inference, influencing the perspective on how perception and action are modeled."
+      ],
+      "Results": [
+        "Key results show that the active inference-based model (AIDA) outperforms baseline models in certain scenarios, particularly in sparse traffic conditions.",
+        "The results are significant for interpretable modeling of driver behavior but are limited by dataset coverage of extreme scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the problem statement, followed by the theoretical framework, methodology, application, and results.",
+        "Key steps include the formulation of the POMDP model, the integration of active inference, and the empirical validation.",
+        "Strengths include the rigorous theoretical foundation and empirical validation. Weaknesses include limitations in extreme scenario performance, which the authors acknowledge and attribute to dataset limitations."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the interpretability of the model and its performance in average driving conditions.",
+        "Limitations include poor performance in extreme scenarios due to dataset constraints and the categorical nature of the belief representation.",
+        "The choice of active inference as a theoretical paradigm constrains the model to scenarios where cognitive principles are applicable."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on interpretable models in intelligent transportation systems and cognitive science.",
+        "The authors use technical terminology consistent with machine learning and cognitive science, and build authority through citations to foundational works in active inference and POMDPs."
+      ],
+      "Conclusions_and_Implications": [
+        "The main conclusion is that active inference models offer a promising alternative to traditional models for driver behavior modeling.",
+        "Future research should focus on extending the model to more diverse driving environments and addressing heterogeneity in human behavior."
+      ]
+    }
+  }
+}

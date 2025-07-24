@@ -1,0 +1,77 @@
+{
+  "file_name": "s44443-025-00009-2.pdf",
+  "generated_at": "2025-07-24 17:37:33",
+  "structured_info": {
+    "title_cn": "基于元胞自动机的主动换道模型以促进CAV车队",
+    "title_en": "Active lane changing model based on cellular automata to promote CAV platoon",
+    "category": "Transportation Engineering",
+    "topics": [
+      "Connected and Autonomous Vehicles",
+      "Traffic Flow Modeling",
+      "Lane Changing Strategies"
+    ],
+    "keywords": [
+      "Mixed traffic flow",
+      "Active lane-changing",
+      "CAV platoon intensity",
+      "CA model"
+    ],
+    "abstract": "To leverage the advantages of Connected and Autonomous Vehicles (CAVs) within mixed traffic environments, the implementation of effective driving strategies for CAVs is crucial for enhancing traffic efficiency and safety. This study introduces an Active Lane-Changing strategy with Platoon Formation (ALC-FP), specifically designed for scenarios involving the temporary closure of the inner lane on a three-lane highway. Recognizing the increased traffic capacity afforded by CAVs traveling in platoons, we hypothesize that CAVs positioned in the middle lane will proactively execute lane changes to the outer lane. This maneuver creates space for vehicles in the inner lane to change lanes concurrently, particularly when the rear vehicle in the target lane is also a CAV, thus allowing for necessary speed adjustments to facilitate the lane change. Utilizing a cellular automata (CA) model, we conducted simulation experiments to assess the efficacy of the ALC-FP strategy in comparison to the traditional Accident Warning Lane-Changing (AW-LC) strategy. The results indicate that in high-density scenarios, the ALC-FP strategy achieved a 76.36% reduction in delays and a 73.8% improvement in safety compared to the AW-LC strategy, particularly at an MPR of 0.8. These findings underscore the potential of ALC-FP to significantly enhance traffic management in mixed traffic systems.",
+    "methodology": "The study employs a cellular automata (CA) model to simulate mixed traffic flow scenarios involving CAVs and human-driven vehicles (HVs). The model incorporates car-following behaviors (Gipps model for HVs, ACC and CACC for CAVs), lane-changing rules, and platoon formation mechanisms. The ALC-FP strategy is tested against the AW-LC strategy under varying traffic densities and market penetration rates (MPRs) of CAVs.",
+    "conclusion": "The ALC-FP strategy significantly improves traffic efficiency and safety in mixed traffic environments, especially at high CAV penetration rates. It reduces delays by 76.36% and enhances safety by 73.8% compared to traditional strategies. The study highlights the importance of CAV collaboration and proactive lane-changing in managing traffic bottlenecks.",
+    "authors": [
+      "Jian Xu Zhang",
+      "Chun Xiang Wu"
+    ],
+    "publication_year": "2025",
+    "venue": "Journal of King Saud University - Computer and Information Sciences",
+    "doi": "10.1007/s44443-025-00009-2",
+    "bibtex_citation": "Zhang_Active_2025",
+    "analysis": {
+      "Overview": "The paper presents a novel Active Lane-Changing strategy with Platoon Formation (ALC-FP) for CAVs in mixed traffic environments, focusing on scenarios with temporary lane closures. The study uses a CA model to simulate and evaluate the strategy's impact on traffic efficiency and safety.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of mixed traffic flow, where CAVs and HVs coexist, and the need for effective strategies to manage traffic bottlenecks caused by lane closures.",
+        "The motivation stems from the potential of CAVs to enhance traffic capacity through platoon formation and coordinated lane-changing, which is underexplored in existing literature.",
+        "The authors argue that proactive lane-changing by CAVs can mitigate congestion and improve safety, especially in high-density scenarios.",
+        "The study connects the specific problem of lane closures to broader challenges in traffic management, emphasizing the significance of CAV collaboration.",
+        "The paper contributes to transportation engineering, specifically in the areas of traffic flow modeling and autonomous vehicle control."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include Active Lane-Changing (ALC), CAV platoon intensity, and mixed traffic flow modeling.",
+        "The logical relationship involves CAVs using V2V communication to coordinate lane changes and form platoons, thereby improving traffic flow.",
+        "Key assumptions include no communication delays, accurate sensor data, and adherence to traffic rules by all vehicles.",
+        "The paper contributes a new strategy (ALC-FP) and a quantitative measure for CAV platoon intensity, advancing knowledge in traffic management."
+      ],
+      "Methodology": [
+        "The core methods include a CA model for simulating mixed traffic flow, car-following models (Gipps, ACC, CACC), and lane-changing rules for CAVs and HVs.",
+        "The methodology is novel in integrating platoon formation with active lane-changing, applicable to high-density traffic scenarios.",
+        "Data sources are simulated traffic scenarios with varying MPRs and traffic levels. Preprocessing includes defining vehicle behaviors and traffic rules.",
+        "Experimental design is rigorous, with multiple simulations to assess delay, platoon intensity, and safety metrics.",
+        "The research follows a theoretical paradigm of traffic flow optimization, focusing on CAV collaboration."
+      ],
+      "Results": [
+        "Key results show a 76.36% reduction in delays and a 73.8% improvement in safety with ALC-FP at high MPRs.",
+        "Results are reliable and stable, supported by extensive simulations and comparative analysis with the AW-LC strategy."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure begins with the problem statement, followed by methodology, simulation results, and conclusions.",
+        "Key steps include defining the ALC-FP strategy, modeling traffic flow, and validating results through simulations.",
+        "Strengths include clear logical links and robust simulation results. Weaknesses include assumptions like no communication delays, which may not hold in real-world scenarios."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths include the innovative ALC-FP strategy and comprehensive simulations.",
+        "Limitations include idealized assumptions (e.g., no communication delays) and a focus on highway scenarios, which may not generalize to urban traffic.",
+        "The theoretical paradigm of traffic optimization may constrain conclusions to specific traffic conditions."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on CAV platoon formation and traffic management, citing relevant literature.",
+        "Terminology is specific to traffic engineering, with a formal tone and rhetorical strategies emphasizing the novelty and impact of the ALC-FP strategy.",
+        "Citations build authority by referencing foundational and recent works in CAV research."
+      ],
+      "Conclusions_and_Implications": [
+        "The ALC-FP strategy significantly improves traffic efficiency and safety in mixed traffic environments.",
+        "Future research should address real-world communication delays, urban traffic scenarios, and interactions with more complex traffic compositions."
+      ]
+    }
+  }
+}

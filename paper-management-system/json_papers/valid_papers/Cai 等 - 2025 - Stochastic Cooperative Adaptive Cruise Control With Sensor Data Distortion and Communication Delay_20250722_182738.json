@@ -1,0 +1,83 @@
+{
+  "file_name": "Cai 等 - 2025 - Stochastic Cooperative Adaptive Cruise Control With Sensor Data Distortion and Communication Delay.pdf",
+  "generated_at": "2025-07-22 18:27:38",
+  "structured_info": {
+    "title_cn": "具有传感器数据失真和通信延迟的随机协同自适应巡航控制",
+    "title_en": "Stochastic Cooperative Adaptive Cruise Control With Sensor Data Distortion and Communication Delay",
+    "category": "Intelligent Transportation Systems",
+    "topics": [
+      "Vehicle Platoon Control",
+      "Stochastic Systems",
+      "Communication Delay"
+    ],
+    "keywords": [
+      "CACC",
+      "string stability control",
+      "sensor data distortion",
+      "stochastic wind disturbance",
+      "communication delay"
+    ],
+    "abstract": "Despite been obtained for the connected and automated vehicles (CAVs) in last decades, various of realistic problems still exist, which exactly block the large-scale application of CAVs. Against this backdrop, this paper proposes a novel stochastic cooperative adaptive cruise control (CACC) strategy to realize the stable control of nonhomogeneous vehicle platoon system with simultaneously suffering from the on-board sensor data distortion, random wind disturbance, and communication delay. First, the dynamics model of the nonhomogeneous platoon with variant vehicle masses and lengths is built based on the predecessor-leader following (PLF) communication topology. Then, the simplified characteristic of sensor data distortion resulting from the limited sensing range is depicted in line with the variation of headway spacing. Thereafter, the random wind velocity is treated as the Gaussian white noise and incorporated into the platoon system via employing the Ito stochastic differential. The varying road slope and communication delay are also accommodated in unison. Next, the distributed robust H controller is generated via the stochastic Lyapunov-Krasovskii functional approach. Moreover, the condition for string stability is derived with the defined stochastic L2 stability criterion. Finally, numerical simulations and real-time hardware in loop (HiL) experiment demonstrate the feasibility of the proposed approach.",
+    "methodology": "The paper employs a stochastic Lyapunov-Krasovskii functional approach to design a distributed robust H controller for a nonhomogeneous vehicle platoon system. The methodology includes modeling sensor data distortion, stochastic wind disturbance, and communication delays, and deriving conditions for string stability using a stochastic L2 stability criterion.",
+    "conclusion": "The proposed stochastic CACC strategy effectively stabilizes nonhomogeneous vehicle platoons under sensor data distortion, random wind disturbance, and communication delays. Numerical simulations and HiL experiments validate the controller's feasibility and robustness.",
+    "authors": [
+      "Guoshun Cai",
+      "Guodong Yin",
+      "Ying Liu",
+      "Jiwei Feng",
+      "Jinhao Liang",
+      "Fanxun Wang",
+      "Haoji Liu"
+    ],
+    "publication_year": "2025",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/TITS.2025.3565857",
+    "bibtex_citation": "Cai_Stochastic_2025",
+    "analysis": {
+      "Overview": "The paper addresses the challenges of stabilizing nonhomogeneous vehicle platoons under sensor data distortion, stochastic wind disturbance, and communication delays. It proposes a stochastic CACC strategy using a robust controller derived via stochastic Lyapunov-Krasovskii functional approach.",
+      "Background_and_Motivation": [
+        "The research is motivated by the limitations of current CACC systems in handling realistic problems like sensor data distortion and communication delays, which hinder large-scale CAV applications.",
+        "The paper aims to solve the stability control of vehicle platoons under multiple disturbances, including sensor limitations, wind gusts, and delays.",
+        "The authors argue the necessity by highlighting the practical challenges in CAV deployment and the lack of comprehensive solutions addressing all these issues simultaneously.",
+        "The problem is linked to broader challenges in intelligent transportation systems, emphasizing the need for robust and scalable platoon control.",
+        "The paper contributes to control theory, stochastic systems, and intelligent transportation systems."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include stochastic CACC, sensor data distortion modeling, and string stability under stochastic disturbances.",
+        "The logical relationship involves modeling disturbances, designing a robust controller, and ensuring string stability.",
+        "Key assumptions include bounded disturbances, Gaussian white noise for wind, and piecewise linear sensor models.",
+        "The paper contributes a novel controller design and stability analysis for stochastic platoon systems."
+      ],
+      "Methodology": [
+        "The core methods include stochastic differential equations, Lyapunov-Krasovskii functionals, and LMI-based controller design.",
+        "The methodology is novel in integrating multiple disturbances and delays into a unified control framework.",
+        "Data sources include simulated and experimental vehicle platoon dynamics under stochastic conditions.",
+        "Experimental design includes numerical simulations and HiL tests to validate robustness.",
+        "The research follows a stochastic control paradigm, affecting the robustness and stability analysis."
+      ],
+      "Results": [
+        "Key results demonstrate stable platoon control under disturbances and delays, with validated string stability.",
+        "Results are significant for practical CAV applications, showing reliability and stability under realistic conditions."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure includes problem formulation, controller design, stability analysis, and experimental validation.",
+        "Logical steps involve disturbance modeling, controller derivation, and stability proof.",
+        "Strengths include comprehensive disturbance handling; weaknesses may include assumptions on disturbance bounds."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel integration of multiple disturbances, robust controller design, and experimental validation.",
+        "Limitations: Assumptions on disturbance bounds and sensor models may limit real-world applicability.",
+        "Theoretical constraints include reliance on stochastic stability criteria."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within vehicular control and stochastic systems discourse.",
+        "Terminology includes stochastic stability, L2 norms, and Lyapunov-Krasovskii functionals.",
+        "Citations build authority by referencing prior work in platoon control and stochastic systems."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions highlight the controller's effectiveness under combined disturbances.",
+        "Future research could explore asynchronous delays and more complex sensor models."
+      ]
+    }
+  }
+}

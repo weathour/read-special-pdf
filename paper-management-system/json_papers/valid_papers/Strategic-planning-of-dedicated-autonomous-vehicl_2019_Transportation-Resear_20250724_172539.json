@@ -1,0 +1,79 @@
+{
+  "file_name": "Strategic-planning-of-dedicated-autonomous-vehicl_2019_Transportation-Resear.pdf",
+  "generated_at": "2025-07-24 17:25:39",
+  "structured_info": {
+    "title_cn": "交通网络中专用自动驾驶车道和自动驾驶收费车道的战略规划",
+    "title_en": "Strategic planning of dedicated autonomous vehicle lanes and autonomous vehicle toll lanes in transportation networks",
+    "category": "Transportation Research",
+    "topics": [
+      "Autonomous Vehicles",
+      "Traffic Management",
+      "Network Optimization"
+    ],
+    "keywords": [
+      "Autonomous vehicles",
+      "Mixed traffic",
+      "Dedicated autonomous vehicle lanes",
+      "Autonomous vehicle toll lanes",
+      "Deployment planning",
+      "Robust optimization"
+    ],
+    "abstract": "Employing vehicle communication and automated control technologies, autonomous vehicles (AVs) can safely drive closer together than human-driven vehicles (HVs), thereby potentially improving traffic efficiency. Separation between AV and HV traffic through the deployment of dedicated AV lanes is foreseen as an effective method of amplifying the benefits of AVs and promoting their adoption. However, it is important to consider mixed AV and HV traffic in a transportation network. On the one hand, it may be impractical to deploy dedicated AV lanes throughout the network, while on the other hand, dedicated AV lanes may even reduce the total traffic efficiency of a road segment when the AV flow rate is low. In this study, we considered a new form of managed lanes for AVs, designated as autonomous vehicle toll (AVT) lanes, which grant free access to AVs while allowing HVs to access the lanes by paying a toll. We investigated the optimal deployment of dedicated AV lanes and AVT lanes in transportation networks with mixed AV and HV flows. The user equilibrium (UE) problem in a transportation network with mixed flows of AVs and HVs is first explored. We formulated the UE problem as a link-based variational inequality (VI) and identified that, with different impacts of AVs on road capacity, the UE problem can have unique or non-unique flow patterns. Considering that the UE problem may have non-unique flow distributions, we proposed a robust optimal deployment model, which is a generalized semi-infinite min-max program, to deploy the dedicated AV lanes and AVT lanes so that the system performance under the worst-case flow distributions is optimized. We proposed effective solution algorithms to solve these models and presented numerical studies to demonstrate the models and the solution algorithms. The results show that the system performance can be significantly improved through the deployment of dedicated AV lanes and AVT lanes.",
+    "methodology": "The study employs a variational inequality (VI) formulation for the user equilibrium (UE) problem in mixed AV and HV traffic. A robust optimal deployment model is proposed as a generalized semi-infinite min-max program to handle non-unique flow distributions. Solution algorithms include a genetic-algorithm-based approach for the robust deployment model.",
+    "conclusion": "The deployment of dedicated AV lanes and AVT lanes can significantly improve system performance in transportation networks with mixed AV and HV flows. The robust optimal deployment model ensures optimized system performance under worst-case flow distributions. Numerical studies demonstrate the effectiveness of the proposed models and algorithms.",
+    "authors": [
+      "Zhaocai Liu",
+      "Ziqi Song"
+    ],
+    "publication_year": "2019",
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "doi": "10.1016/j.trc.2019.07.022",
+    "bibtex_citation": "Liu_Song_Strategic_2019",
+    "analysis": {
+      "Overview": "The paper investigates the strategic deployment of dedicated autonomous vehicle (AV) lanes and autonomous vehicle toll (AVT) lanes in transportation networks with mixed AV and human-driven vehicle (HV) traffic. It addresses the challenges of optimizing traffic efficiency and system performance through robust modeling and solution algorithms.",
+      "Background_and_Motivation": [
+        "The research addresses the growing interest in AV technologies and their potential to improve traffic safety and efficiency.",
+        "The study aims to solve the problem of underutilized dedicated AV lanes when AV flow rates are low by introducing AVT lanes.",
+        "The authors argue for the necessity of considering mixed AV and HV traffic due to the long transition period before widespread AV adoption.",
+        "The problem is significant as it impacts traffic capacity and flow distribution in transportation networks.",
+        "The paper contributes to transportation engineering, traffic management, and network optimization."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts include dedicated AV lanes, AVT lanes, and human-driven vehicle equivalent (HVE).",
+        "The logical relationship involves converting mixed AV and HV flows into equivalent HV flows to capture the impact of AVs on road capacity.",
+        "Key assumptions include AVs following reduced time headways and HVs following traditional headways.",
+        "The paper contributes a novel UE model and robust deployment framework for AV and AVT lanes."
+      ],
+      "Methodology": [
+        "The core methods include variational inequality (VI) formulation for UE and a robust optimal deployment model.",
+        "The methodology is novel in handling non-unique flow distributions and optimizing worst-case performance.",
+        "Data sources include traffic flow simulations and analytical models from prior studies.",
+        "Experimental design is rigorous, with numerical studies on the Nguyen-Dupuis and Sioux Falls networks.",
+        "The research follows the theoretical paradigm of network equilibrium and robust optimization."
+      ],
+      "Results": [
+        "Key results show significant improvements in system performance with AV and AVT lane deployment.",
+        "The results are reliable and stable, demonstrating the effectiveness of the proposed models."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure includes problem formulation, model development, and numerical validation.",
+        "Key steps include UE model formulation, robust deployment model, and solution algorithms.",
+        "Strengths include comprehensive modeling; weaknesses include computational complexity."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Novel concepts (AVT lanes, HVE), robust modeling, and significant performance improvements.",
+        "Limitations: Assumes AVs reduce headways; conservative AV scenarios are not considered.",
+        "Theoretical constraints include the assumption of random AV distribution in mixed traffic."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within the discourse on AV integration and traffic management.",
+        "Terminology includes technical terms like HVE and AVT lanes; tone is academic and formal.",
+        "Citations build authority by referencing prior work on AV impacts and traffic modeling."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: AV and AVT lanes improve traffic efficiency; robust deployment optimizes worst-case performance.",
+        "Future research: Extend models to include mode choice, demand evolution, and equality considerations."
+      ]
+    }
+  }
+}

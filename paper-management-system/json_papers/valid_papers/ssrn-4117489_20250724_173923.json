@@ -1,0 +1,82 @@
+{
+  "file_name": "ssrn-4117489.pdf",
+  "generated_at": "2025-07-24 17:39:23",
+  "structured_info": {
+    "title_cn": "CAV-DeLOS：联网自动驾驶车辆专用车道优化模拟器",
+    "title_en": "CAV-DeLOS: Connected Automated Vehicles Dedicated Lanes Optimization Simulator",
+    "category": "Transportation Systems",
+    "topics": [
+      "Connected Automated Vehicles",
+      "Dedicated Lanes",
+      "Traffic Simulation"
+    ],
+    "keywords": [
+      "Simulation Platform",
+      "Connected Automated Vehicle (CAV)",
+      "Dedicated Lane (DL)",
+      "Flow-Density Diagram",
+      "Market Penetration Rate (MPR)"
+    ],
+    "abstract": "This study presents an integrated simulation platform for DL optimization, namely, the connected automated vehicle dedicated lanes optimization simulator (CAV-DeLOS). The developed CAV-DeLOS is based on the cyber-physical system (CPS) perspective and can be used to qualitatively and quantitatively evaluate the design parameters, operation modes, contingency plan, etc. of DL in a 'What You See Is What You Get' (Wysiwyg) style. First, we introduce the architecture and features of CAV-DeLOS, which comprises of SUMO, OMNeT++, and Unity3D. We implemented all experimental scripts for DL optimization in SUMO, including the configuration of the DLs, car-following models, lane-changing models, vehicle departure models, origin-destination demands, and 2D visualization of traffic and flow simulation. We used OMNeT++ for vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communication. Unity3D is a 3D visualization platform for simulations synchronized with SUMO. Connected with the driving simulator and paired with a virtual reality (VR) helmet, Unity3D can offer a high-fidelity immersive environment for all types of users. We developed a specific communication protocol to achieve data sharing and synchronization of all components of the CAV-DeLOS. Second, this paper depicts the functions of components of CAV-DeLOS in detail, including the modeling of road networks, vehicles, traffic flow, optimal design, and evaluation indicators of DL. Finally, by using the developed CAV-DeLOS, we demonstrated and analyzed three cases: (1) without DL vs. with DL, (2) inner lane vs. outer lane, and (3) without V2I vs. with V2I. The experimental results confirm the feasibility of the developed CAV-DeLOS, and yield some interesting findings, such as (1) market penetration rates (MPRs) are an important factor in deciding whether to deploy DLs, (2) the number of lane changes when the vehicle enters leaves the designated lane is the key criterion for determining the placement of the DLs, and (3) the cooperative vehicle-infrastructure system can offer AVs CAVs with better over-the-horizon perception capabilities, helping to improve the smoothness of traffic flow in the case of abnormal events.",
+    "methodology": "The study integrates SUMO, OMNeT++, and Unity3D to create a comprehensive simulation platform (CAV-DeLOS) for evaluating dedicated lanes (DLs) for connected automated vehicles (CAVs). The platform uses a cyber-physical system (CPS) perspective, combining traffic simulation (SUMO), communication network simulation (OMNeT++), and 3D visualization (Unity3D). Data synchronization is achieved through the Traffic Control Interface (TraCI), and the platform supports X-in-the-loop testing methods.",
+    "conclusion": "The developed CAV-DeLOS provides a new tool for the optimal design and evaluation of DLs for CAVs. Key findings include: (1) Market penetration rates (MPRs) are crucial in deciding whether to deploy DLs, (2) the number of lane changes when entering or leaving the designated lane is a key criterion for DL placement, and (3) the cooperative vehicle-infrastructure system enhances traffic flow smoothness during abnormal events. The platform is validated through three case studies, demonstrating its feasibility and functionality.",
+    "authors": [
+      "Xiangmo Zhao",
+      "Ying Gao",
+      "Shaojie Jin",
+      "Zhigang Xu",
+      "Zhiguang Liu",
+      "Wei Fan",
+      "Peng Liu"
+    ],
+    "publication_year": "2022",
+    "venue": "Preprint (not peer-reviewed)",
+    "doi": "10.2139/ssrn.4117489",
+    "bibtex_citation": "Zhao_CAV-DeLOS_2022",
+    "analysis": {
+      "Overview": "The paper presents CAV-DeLOS, an integrated simulation platform for optimizing dedicated lanes (DLs) for connected automated vehicles (CAVs). The platform combines traffic simulation, communication network simulation, and 3D visualization to evaluate DL design parameters and operational modes.",
+      "Background_and_Motivation": [
+        "The research addresses the challenges of mixed traffic flows involving CAVs and human-driven vehicles (HDVs), which raise safety concerns and reduce the benefits of CAV technology.",
+        "The motivation is to develop a realistic simulation platform to optimize DL deployment, improving traffic capacity and safety during the transition period of mixed traffic.",
+        "The authors highlight the necessity of DLs by citing studies showing their potential to improve traffic flow and safety, especially at certain CAV market penetration rates (MPRs).",
+        "The problem is significant for transportation systems, contributing to intelligent transportation systems (ITS) and cyber-physical systems (CPS)."
+      ],
+      "Conceptual_Framework_and_Innovations": [
+        "Core concepts: (1) Dedicated Lanes (DLs) - exclusive lanes for CAVs, (2) Market Penetration Rate (MPR) - the proportion of CAVs in traffic, (3) Cyber-Physical System (CPS) - integrating physical traffic simulation with cyber (communication) components.",
+        "Logical relationships: DLs improve traffic flow and safety at optimal MPRs, enabled by CPS integration.",
+        "Assumptions: CAVs can communicate via V2X, and DLs can be dynamically optimized based on traffic conditions.",
+        "Contribution: The paper provides a novel simulation platform that integrates multiple tools for comprehensive DL evaluation, advancing ITS research."
+      ],
+      "Methodology": [
+        "Core methods: Integration of SUMO (traffic simulation), OMNeT++ (communication simulation), and Unity3D (3D visualization) via TraCI for synchronization.",
+        "Novelty: The platform supports X-in-the-loop testing, 3D visualization, and real-time data synchronization.",
+        "Data: Uses realistic traffic demand models and road networks (e.g., Beijing-Xiong an Smart Expressway). Data optimization methods reduce computational overhead.",
+        "Experimental design: Validated through three case studies (DL deployment, lane placement, V2I impact). Metrics include flow-density diagrams and MPR analysis.",
+        "The research follows a CPS paradigm, blending physical and cyber components for holistic traffic simulation."
+      ],
+      "Results": [
+        "Key results: (1) DL deployment is beneficial at specific MPRs (e.g., 1 DL for MPR > 20%, 2 DLs for MPR > 40%), (2) Lane placement affects traffic flow smoothness, (3) V2I communication enhances traffic stability during anomalies.",
+        "Results are reliable and stable, supported by flow-density diagrams and multiple simulation scenarios."
+      ],
+      "Argumentation_and_Logic": [
+        "The argument structure: (1) Identify DL optimization challenges, (2) Propose CAV-DeLOS as a solution, (3) Validate through case studies.",
+        "Key steps: Platform architecture, data synchronization, case study validation.",
+        "Strengths: Comprehensive integration of tools, realistic simulations. Weaknesses: Limited to simulated environments; real-world validation needed."
+      ],
+      "Strengths_and_Limitations": [
+        "Strengths: Integrates multiple simulation tools, supports X-in-the-loop testing, provides 3D visualization.",
+        "Limitations: Computational complexity, reliance on simulated data, and lack of real-world deployment validation.",
+        "The CPS framework constrains conclusions to simulated scenarios, limiting generalizability."
+      ],
+      "Academic_Discourse_and_Rhetoric": [
+        "The paper positions itself within ITS and CPS research, citing prior work on DLs and traffic simulation.",
+        "Terminology: Emphasizes 'cyber-physical system,' 'X-in-the-loop,' and 'market penetration rate.' Rhetoric focuses on practical applicability for traffic planners.",
+        "Citations build authority by referencing established simulation tools (SUMO, OMNeT++) and prior DL studies."
+      ],
+      "Conclusions_and_Implications": [
+        "Conclusions: CAV-DeLOS is a feasible tool for DL optimization, with MPR being a critical factor.",
+        "Future research: Real-world validation, scalability testing, and integration with more advanced CAV technologies."
+      ]
+    }
+  }
+}

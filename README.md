@@ -1,220 +1,406 @@
 
-# Paper Manager Project 全功能使用文档
+# PaperReader - 智能学术论文管理系统
 
-> 集成：论文库管理系统（paper-management-system）+ PDF/JSON匹配与校验工具（pdf-json-checker）+ 智能PDF笔记生成器（pdf-note-generator）+ 论文在库在线检查API与浏览器插件
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8+-green.svg)
+![Flask](https://img.shields.io/badge/flask-2.1+-red.svg)
 
----
+PaperReader 是一个功能强大的学术论文管理生态系统，集成了论文检索、PDF处理、笔记生成和去重管理等多项功能，为研究人员提供了完整的文献管理解决方案。
 
-## 📑 项目结构
+## 📋 目录
+
+- [主要功能](#-主要功能)
+- [系统架构](#-系统架构)
+- [快速开始](#-快速开始)
+- [模块详解](#-模块详解)
+- [API 文档](#-api-文档)
+- [使用指南](#-使用指南)
+- [配置说明](#-配置说明)
+- [开发指南](#-开发指南)
+- [常见问题](#-常见问题)
+- [贡献指南](#-贡献指南)
+
+## 🚀 主要功能
+
+### 核心功能
+- **📚 论文管理**: 智能检索、分类管理、去重处理
+- **🔍 智能匹配**: 基于DOI、标题、作者的多策略匹配算法
+- **📊 统计分析**: 多维度数据统计和可视化展示
+- **📄 PDF处理**: PDF文件组织、文本提取、笔记生成
+- **🌐 Web界面**: 响应式Web管理界面
+- **🔌 浏览器扩展**: Chrome/Firefox扩展，快速论文信息捕获
+
+### 特色功能
+- **JSON验证器**: 自动验证和修复论文元数据
+- **重复检测**: 基于DOI和标题的智能去重
+- **多格式支持**: 支持多种学术数据格式
+- **批量处理**: 高效的批量导入和处理能力
+
+## 🏗️ 系统架构
 
 ```
-project-root/
-├── paper-management-system/
-│   ├── app.py / paper_manager.py
-│   ├── templates/...
-│   ├── static/...
-│   └── ...（核心Web服务、数据库、本地管理）
-├── pdf-json-checker/
-│   ├── organizer.py / pdf_json_organizer.py
-│   └── ...（PDF/JSON文件校验与孤立项检测）
-├── pdf-note-generator/
-│   ├── main_optimized.py
-│   └── ...（AI笔记批量生成与校验）
-└── README.md
+PaperReader/
+├── paper-management-system/     # 论文管理核心系统
+├── pdf-json-checker/           # PDF-JSON检查和组织工具
+├── pdf-note-generator/         # PDF笔记生成器
+├── browser_extension/          # 浏览器扩展
+└── shared/                     # 共享组件和工具
 ```
 
----
+### 技术栈
+- **后端**: Python 3.8+, Flask, SQLite
+- **前端**: HTML5, JavaScript, CSS3, Bootstrap
+- **数据处理**: JSON, Pandas, jieba
+- **浏览器扩展**: Chrome Extension API
+- **文档处理**: PyPDF2, Markdown
 
-## 📦 功能总览
+## 🎯 快速开始
 
-### 1. **论文库管理与检索**（paper-management-system）
-- Web界面管理/模糊检索/录入/去重/JSON批量导入/数据库统计等
-- 智能导入时自动验证JSON合规性
-- 支持基于 DOI/文件名 的查重与去重
-- 支持批量/单个论文的详细数据浏览&纠错
+### 环境要求
+- Python 3.8+
+- Node.js 14+ (用于浏览器扩展开发)
+- SQLite 3
 
-### 2. **PDF—JSON校验匹配/文件整理**（pdf-json-checker）
-- 批量检测 PDF 是否已被结构化、已入库
-- 检出孤立 PDF / 孤立 JSON 文件，支持格式和内容比对
-- 支持与数据库 papers.db 自动联动校验（支持模糊匹配、相似度算法）
+### 安装步骤
 
-### 3. **AI智能PDF笔记生成**（pdf-note-generator）
-- 批量智能生成 PDF 笔记、结构化摘要
-- 支持一次性大批量自动生成+后续二次校验标记
+1. **克隆项目**
+```bash
+git clone https://github.com/weathour/read-special-pdf
+cd read-special-pdf
+```
 
-### 4. **在线API+浏览器插件**
-- 提供论文查库API（FastAPI/Flask，局域网通用）
-- 配套谷歌学术论文在库浏览器插件，自动高亮/统计页面论文在库情况
+2. **安装依赖**
+```bash
+pip install -r requirements.txt
+```
 
----
+3. **初始化数据库**
+```bash
+cd read-special-pdf/paper-management-system
+python paper_manager.py
+```
 
-## 🚀 快速开始
+4. **启动系统**
+```bash
+python run_paper_manager.py
+```
 
-### 1. 安装依赖
+5. **访问应用**
+打开浏览器访问: http://localhost:5001
 
-分别进入三个子模块目录，安装依赖（推荐使用虚拟环境）：
+## 📦 模块详解
 
+### 1. 论文管理系统 (paper-management-system)
+
+核心的论文管理Web应用，提供完整的论文管理功能。
+
+#### 主要组件
+- **`paper_manager.py`**: 核心管理类，处理数据库操作和论文CRUD
+- **`paper_matcher.py`**: 智能匹配引擎，支持多策略论文匹配
+- **`paper_checker_api.py`**: RESTful API服务，提供程序化访问接口
+- **`json_validator.py`**: JSON数据验证和清洗工具
+
+#### Web模板
+```
+templates/
+├── base.html              # 基础模板
+├── index.html            # 主页
+├── search.html           # 搜索页面
+├── paper_detail.html     # 论文详情
+├── author_papers.html    # 作者论文列表
+├── venue_papers.html     # 期刊论文列表
+├── statistics.html       # 统计页面
+├── deduplication.html    # 去重管理
+└── import.html          # 数据导入
+```
+
+### 2. PDF-JSON检查器 (pdf-json-checker)
+
+专门用于PDF文件和JSON元数据的同步和验证。
+
+#### 核心功能
+- **`pdf_manager.py`**: PDF文件状态管理和追踪
+- **`pdf_organizer.py`**: 智能文件组织和分类
+- **`json_validator.py`**: JSON格式验证和修复
+
+#### 使用示例
+```python
+from pdf_organizer import PDFOrganizer
+
+organizer = PDFOrganizer()
+summary = organizer.organize_and_copy("./output")
+```
+
+### 3. PDF笔记生成器 (pdf-note-generator)
+
+自动化PDF处理和笔记生成工具。
+
+#### 主要组件
+- **`note_generator.py`**: 智能笔记生成引擎
+- **`pdf_processor_optimized.py`**: 优化的PDF文本提取
+- **`main_optimized.py`**: 主处理流程
+- **`app.py`**: Web应用界面
+
+### 4. 浏览器扩展 (browser_extension)
+
+Chrome/Firefox扩展，提供便捷的论文信息采集功能。
+
+#### 文件结构
+- **`manifest.json`**: 扩展配置文件
+- **`background.js`**: 后台服务脚本
+- **`content.js`**: 内容脚本
+- **`popup.html/js`**: 扩展弹出界面
+
+## 🔌 API 文档
+
+### 基础API
+
+#### 健康检查
+```http
+GET /api/health
+```
+
+**响应示例:**
+```json
+{
+  "status": "ok",
+  "message": "Paper Checker API is running",
+  "version": "1.0.0"
+}
+```
+
+#### 论文检查
+```http
+POST /api/check-paper
+Content-Type: application/json
+
+{
+  "title": "论文标题",
+  "authors": ["作者1", "作者2"],
+  "doi": "10.1000/example",
+  "year": "2023"
+}
+```
+
+**响应示例:**
+```json
+{
+  "found": true,
+  "matches": [
+    {
+      "id": 1,
+      "title": "匹配的论文标题",
+      "authors": ["作者1", "作者2"],
+      "confidence": 0.95,
+      "match_method": "doi"
+    }
+  ],
+  "count": 1
+}
+```
+
+#### 统计信息
+```http
+GET /api/stats
+```
+
+#### 搜索建议
+```http
+GET /api/search_suggestions?q=机器学习
+```
+
+### 高级API
+
+#### 去重管理
+```http
+POST /api/auto-deduplicate
+DELETE /api/delete-paper/<paper_id>
+POST /api/merge-papers
+```
+
+## 📖 使用指南
+
+### 1. 导入论文数据
+
+#### 通过Web界面导入
+1. 访问 `/import` 页面
+2. 输入JSON文件夹路径
+3. 点击"导入"按钮
+4. 查看导入结果和验证报告
+
+#### 通过命令行导入
 ```bash
 cd paper-management-system
-pip install -r requirements.txt
-
-cd ../pdf-json-checker
-pip install -r requirements.txt
-
-cd ../pdf-note-generator
-pip install -r requirements.txt
+python -c "
+from paper_manager import PaperManager
+pm = PaperManager()
+count, failed, report = pm.import_json_folder_with_validation('./json_papers')
+print(f'导入成功: {count} 个文件')
+"
 ```
 
-如有AI/LLM相关笔记生成功能，请参考 `pdf-note-generator` 子目录下的详细说明。
+### 2. 论文检索
 
----
+#### 基础搜索
+- 关键词搜索：在搜索框输入关键词
+- 高级筛选：按分类、作者、期刊、年份筛选
 
-### 2. 启动论文管理系统 Web API
+#### API搜索
+```python
+import requests
 
-（假定主服务端口为 5001，API端口可自定义）
+response = requests.post('http://localhost:5001/api/check-paper', 
+                        json={'title': '深度学习', 'authors': ['张三']})
+print(response.json())
+```
 
+### 3. PDF文件管理
+
+#### 组织PDF文件
 ```bash
-# 启动本地论文库管理后台
-cd paper-management-system
-python app.py   # 或 python paper_manager.py
+cd pdf-json-checker
+python run_organizer.py
 ```
 
-- 默认后台地址：http://localhost:5001
-    - 主界面：数据库管理、查重、去重、批量导入、详细查看
-    - `/import` 提供批量JSON文件校验、导入与报告
-    - `/api/*` 提供自动化论文比对与查库API（供插件/自动化工具调用）
-
----
-
-### 3. 启动 PDF/JSON 校验器
-
+#### 生成处理报告
 ```bash
-cd ../pdf-json-checker
-python organizer.py  # 或 python pdf_json_organizer.py
-# 按实际文件夹配置 PDF、JSON、数据库路径运行
+python pdf_organizer.py --output-dir ./reports
 ```
-- 主要功能：
-    - 检查 PDF 是否有对应 JSON/数据库入库条目
-    - 可自动分类「已入库」「孤立PDF」「孤立JSON」
-    - 支持详细校验报告导出
 
----
+### 4. 笔记生成
 
-### 4. 启动笔记生成工具
-
+#### 批量处理PDF
 ```bash
-cd ../pdf-note-generator
-python main_optimized.py
-# 批量生成/校验 PDF 笔记或结构摘要
+cd pdf-note-generator
+python main_optimized.py --input-dir ./pdfs --output-dir ./notes
 ```
-- 可根据实际部署LLM/OpenAI Key自定义参数
+
+#### Web界面处理
+1. 访问笔记生成器Web界面
+2. 上传PDF文件
+3. 选择处理选项
+4. 下载生成的笔记
+
+## ⚙️ 配置说明
+
+### 主配置文件 (config.py)
+
+```python
+class Config:
+    # 数据库配置
+    DATABASE_PATH = '../papers.db'
+    
+    # API配置
+    API_HOST = '0.0.0.0'
+    API_PORT = 5000
+    API_DEBUG = False
+    
+    # CORS配置
+    CORS_ORIGINS = [
+        'http://localhost:3000',
+        'https://your-domain.com'
+    ]
+    
+    # 文件路径配置
+    PDF_FOLDER = './pdfs'
+    JSON_FOLDER = './json_papers'
+```
+
+### 环境变量
+```bash
+export PAPERREADER_DB_PATH="/path/to/papers.db"
+export PAPERREADER_API_PORT=5001
+export PAPERREADER_DEBUG=true
+```
+
+## 🛠️ 开发指南
+
+### 本地开发环境搭建
+
+1. **创建虚拟环境**
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate   # Windows
+```
+
+2. **安装开发依赖**
+```bash
+pip install -r requirements-dev.txt
+```
+
+3. **运行测试**
+```bash
+python -m pytest tests/
+```
+
+### 代码结构约定
+
+- 使用Python PEP 8代码风格
+- 函数使用docstring文档
+- 类使用类型注解
+- 模块级别的日志记录
+
+### 添加新功能
+
+1. 在对应模块中添加功能代码
+2. 编写单元测试
+3. 更新API文档
+4. 提交Pull Request
+
+## ❓ 常见问题
+
+### Q: 数据库初始化失败？
+A: 确保SQLite已安装，并检查数据库文件路径权限。
+
+### Q: PDF文件无法访问？
+A: 检查PDF文件夹路径配置和文件权限设置。
+
+### Q: 浏览器扩展无法连接API？
+A: 确认API服务已启动，检查CORS配置。
+
+### Q: 大量数据导入很慢？
+A: 使用批量导入模式，考虑增加数据库索引。
+
+## 🤝 贡献指南
+
+我们欢迎各种形式的贡献！
+
+### 如何贡献
+
+1. **Fork 项目**
+2. **创建特性分支** (`git checkout -b feature/AmazingFeature`)
+3. **提交更改** (`git commit -m 'Add some AmazingFeature'`)
+4. **推送到分支** (`git push origin feature/AmazingFeature`)
+5. **提交Pull Request**
+
+### 贡献类型
+- 🐛 Bug修复
+- ✨ 新功能开发
+- 📚 文档改进
+- 🎨 界面优化
+- ⚡ 性能提升
+
+### 开发规范
+- 遵循PEP 8代码风格
+- 添加适当的测试用例
+- 更新相关文档
+- 保持向后兼容性
+
+
+## 👥 团队
+
+- **维护者**: [Yang XJ]
+
+## 🔗 相关链接
+
+- [项目主页](https://github.com/weathour/read-special-pdf)
+
+
 
 ---
 
-### 5. 启动并安装谷歌学术论文检查插件
+如果您觉得这个项目有用，请给我们一个 ⭐ 星标支持！
 
-**（首次使用建议OpenAPI启动在本机localhost）**
-
-- 依赖 paper-management-system 的 API 服务（假定 5002 端口）
-- Chrome/Edge 浏览器进入插件开发者模式，加载
-  ```
-  paper-management-system/browser_extension/
-  ```
-  文件夹（详见结构与 manifest.json）
-- 浏览器插件将使您在 Google Scholar 实时看到哪些论文已在本地数据库
-
----
-
-## 🛠️ 常用功能和典型用法
-
-### 1. **论文入库/批量导入（含自动校验）**
-
-- 在 paper-management-system 前端 `/import` 页面
-    - 输入JSON文件夹路径，一键完成校验+导入
-    - 无效文件自动预警，全部校验日志透明输出
-
-- 支持通过命令行批量校验/整理
-    ```bash
-    python json_validator.py validate -s ./json_papers/
-    python json_validator.py organize -s ./json_papers/ --success ./valid/ --failure ./invalid/
-    ```
-
----
-
-### 2. **PDF与数据库/JSON自动校验整理**
-
-- 检查 PDF 文件、JSON 文件、数据库三方同步
-- 检查 API 可用于自动标记未结构化/未入库条目
-- 核心脚本可用于周期性内容完整性巡检
-
----
-
-### 3. **论文查重/去重及DOI管理**
-
-- 内置 “重复DOI” 检查与一键去重功能（跳过 DOI: not available）
-- 支持安全预览/确认再去重，查重报告可导出
-
----
-
-### 4. **浏览器插件论文查库**
-
-**场景**：Google Scholar 打开任意论文列表，自动标记“已在库”“未在库”（高亮、悬浮、统计标识）
-- 可在插件弹窗开启/关闭自动查库、查看统计
-- 插件与本地 API 配合，无需上传任何隐私数据
-
-**API 支持批量/单篇查询**  
-> POST `/api/batch-check`、`/api/check-paper`
-
----
-
-### 5. **AI批量笔记与摘要生成**
-
-- 通过pdf-note-generator批量调用本地/云端大模型，一次性生成所有论文笔记/摘要
-- 支持校验与标签自动补充
-
----
-
-## 📊 典型工作流
-
-1. 新论文、旧论文批量收集
-2. 用pdf-json-checker检查孤立PDF/JSON，整理到标准格式
-3. 用 `/import` 页面批量将JSON导入数据库（校验后自动跳过不合规文件）
-4. 数据库提供综合论文管理、查重、去重、批量导出、统计
-5. 浏览器插件实时检测/标记谷歌学术页面的论文在库情况
-6. 可用AI工具生成或补齐论文笔记/结构化摘要
-
----
-
-## 🎨 基本界面效果
-
-- **论文库管理 Web**：一站式统一论文管理、查重、导入、统计、查库、批量编辑
-- **PDF/JSON校验**：孤立项报表、可视化匹配结果
-- **谷歌学术插件**：高亮标注、实时统计、查库结果一目了然
-- **AI笔记**：批量智能生成笔记/提要/核心要点
-
----
-
-## 📚 FAQ & 技术支持
-
-- **跨系统兼容**：推荐 Python 3.8-3.12，Win/Linux/Mac 通用
-- **批量导入遇到JSON格式报错？** 请先用 pdf-json-checker 或 json_validator 脚本校验
-- **孤立PDF/JSON怎么同步？** 用 organizer 或 Web前端“数据同步”部分
-- **API/插件无法联通？** 请确保 paper-management-system API 已经本地运行，且端口开放
-
----
-
-## ⏳ 未来可扩展方向
-
-- 支持多用户/远程同步/云端论文查重接口
-- GROBID、CrossRef等外部数据自动补全
-- 更丰富的AI工具链支持
-
----
-
-## 💡 联系与贡献
-
-欢迎PR、issue、功能建议！  
-- 核心仓库负责人：[mr.weathour@gmail.com]
-- 文档完善与部署说明欢迎反馈和补充
-
+如有问题或建议，请提交 [Issue](https://github.com/your-username/PaperReader/issues) 或联系维护者。
 
